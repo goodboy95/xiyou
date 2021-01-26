@@ -39,7 +39,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=5 where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '5']);	
@@ -75,15 +75,14 @@ $nowtime=date('Y-m-d H:i:s');
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=$hdcs where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => $hdcs]);	
 $ltmz1=$ltmz1+1;
 $q2="all_ltbw";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zlmb='$ltmz1' where id=$zlid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/ltbw_ini.php");
 $iniFile->updItem('占领膜拜', [$zlid => $ltmz1]);
 //记录膜拜

@@ -34,12 +34,11 @@ include("./sql/mysql.php");//调用数据库连接
 
 $q2="bp".$bpid;
 
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 $mm=0;
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 $mm=$mm+1;
 $iniFile->addCategory('序列', [$row[userid]=>$mm]);
 $iniFile->addCategory('名字', [$mm=> $row[usermz]]);

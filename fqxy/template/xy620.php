@@ -36,9 +36,8 @@ $ltid01=123;
 $ltid02=123;
 $nowtime=date('Y-m-d H:i:s');
 $q2="all_ltbw";
-mysql_query("set names utf8");
 $strsql = "update $q2 set wjid='$ltid01',wjmz='$ltid02',zltime='$nowtime',zlmb='0',lthp='0',ltgj='0',ltmg='0',ltfy='0',ltmp='0' where id=$zlidd";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/ltbw_ini.php");
 //'$ltid','$ltid01','$ltid02','$nowtime','0','0','0','0','0','0'
 $iniFile->updItem('玩家擂台排名', [$zlidd => $ltid01]);
@@ -82,9 +81,8 @@ $wd06=($iniFile->getItem('玩家信息','max魔攻'));
 $wd07=($iniFile->getItem('玩家信息','max防御'));
 
 $q2="all_ltbw";
-mysql_query("set names utf8");
 $strsql = "update $q2 set wjid='$wjid',wjmz='$wd01',zltime='$wd02',zlmb='$wd03',lthp='$wd04',ltgj='$wd05',ltmg='$wd06',ltfy='$wd07',ltmp='$wd08' where id=$zlid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/ltbw_ini.php");
 $ltzlwjid=($iniFile->getItem('占领玩家id',$zlid));
 

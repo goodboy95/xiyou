@@ -9,15 +9,15 @@ if($wpsl>=1){
 
 $q2="qt".$wjid;
 $strsql = "update $q2 set wpsl=$wpsll where wpid=$wpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem($wpzzz, [$wpid => $wpsll]);
 } else{
 
 $q2="qt".$wjid;
 $sql1 = "insert into $q2 (wpid,wpsl)  values('$wpid','$wpsll')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
  
  //更新缓存数据

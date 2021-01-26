@@ -40,13 +40,12 @@ if (file_exists($file)) {
 
     $q2 = "yxrw" . $wjid;
 
-    mysql_query("set names utf8");
-    $str = "select * from $q2";
-    $result = mysql_query($str) or die('SQL语句有误');
+        $str = "select * from $q2";
+    $result = mysqli_query($conn, $str) or die('SQL语句有误');
     //把有值的数据存入一个数组
     $m = 0;
 
-    while (!!$row = mysql_fetch_array($result)) {
+    while (!!$row = mysqli_fetch_array($result)) {
 
         if ($row[rwfl] == 1) {
             $iniFile->addItem('主线任务', [$row[rwid] => $row[rwid]]);

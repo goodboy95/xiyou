@@ -161,9 +161,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择方�
 	} elseif($npcc ==4){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set mpp=2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 		include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '2']);
@@ -178,9 +177,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 		} elseif($npcc ==5){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set mpp=3 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 		include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '3']);
@@ -195,13 +193,12 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 			} elseif($npcc ==6){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set mpp=1 where wjid=$wjid";//物品id号必改值
 		include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '1']);
 
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>将军府为物攻门派，物理攻击为五门派中最高！一套霸王枪法使出来是威势惊人，难以匹敌！</font><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -214,9 +211,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 			} elseif($npcc ==7){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set mpp=5 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 		include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
@@ -235,9 +231,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 			} elseif($npcc ==8){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set mpp=4 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 		include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)

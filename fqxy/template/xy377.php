@@ -206,7 +206,7 @@ $zbid2=$arr[1];
 
 $q2="cwzbb".$wjid; //数据库位置 
 $strsql = "update $q2 set $dkmz=0 where id='$zbid2'";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 //更新缓存数据

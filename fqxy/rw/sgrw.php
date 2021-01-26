@@ -20,9 +20,8 @@ echo "<font color=black>螃蟹泛滥（".$rw3."/".$rw4."）</font>"."<br>";
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -69,9 +68,8 @@ echo "<font color=black>任务：潮洞蟹成灾（".$rw3."/".$rw4."）</font>".
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -125,9 +123,8 @@ echo "<font color=black>任务：调查洞穴【大螃蟹】（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -182,9 +179,8 @@ echo "<font color=black>任务：159转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -224,9 +220,8 @@ if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){
 	$iniFile->updItem('要杀怪', [$str4 => '1']);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -268,9 +263,8 @@ if($rw3 >=$rw4&&$rw3!=""&&$rw4!=""){
 	$iniFile->updItem('要杀怪', [$str4 => '1']);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -310,9 +304,8 @@ if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){
 	$iniFile->updItem('要杀怪', [$str4 => '1']);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -352,9 +345,8 @@ $iniFile->updItem('已杀怪', [$str4 => '0']);
 $iniFile->updItem('要杀怪', [$str4 => '1']);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -392,9 +384,8 @@ echo "<font color=black>任务：159转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -431,9 +422,8 @@ echo "<font color=black>任务：159转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -473,9 +463,8 @@ echo "<font color=black>任务：199转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -529,9 +518,8 @@ echo "<font color=black>任务：199转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -571,9 +559,8 @@ echo "<font color=black>任务：199转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -618,9 +605,8 @@ $iniFile->updItem('已杀怪', [$str4 => '0']);
 $iniFile->updItem('要杀怪', [$str4 => '1']);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -662,9 +648,8 @@ echo "<font color=black>任务：199转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -713,9 +698,8 @@ echo "<font color=black>任务：199转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -760,9 +744,8 @@ echo "<font color=black>任务：199转职任务〖关键〗（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -808,9 +791,8 @@ echo "<font color=black>【董老板的请求】老鼠（".$rw3."/".$rw4."）</f
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -866,9 +848,8 @@ echo "<font color=black>【睡房打探】教训黑衣大汉（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -911,9 +892,8 @@ echo "<font color=black>【黑衣客人】教训黑衣头领（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -962,9 +942,8 @@ echo "<font color=black>【野蛮丫头】教训小流氓（".$rw3."/".$rw4."）
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1001,9 +980,8 @@ echo "<font color=black>【野蛮丫头】教训野蛮丫头（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1053,9 +1031,8 @@ echo "<font color=black>【患难之交】教训众酒客（".$rw3."/".$rw4."）
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1090,9 +1067,8 @@ echo "<font color=black>【天法长老】打倒项长老（".$rw3."/".$rw4."）
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1134,9 +1110,8 @@ echo "<font color=black>【追踪飞贼】教训飞贼（".$rw3."/".$rw4."）</f
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1164,9 +1139,8 @@ $rw3=($iniFile->getItem('已杀怪',$str4));
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1214,9 +1188,8 @@ echo "<font color=black>【调查真相】打败凌月（".$rw3."/".$rw4."）</f
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1264,9 +1237,8 @@ echo "<font color=black>【调查真相】打败绿衣女子（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1293,9 +1265,8 @@ echo "<font color=black>【调查真相】打败绿衣女子（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1344,9 +1315,8 @@ echo "<font color=black>【比武招亲】打败萧晓月（".$rw3."/".$rw4."）
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1383,9 +1353,8 @@ echo "<font color=black>【方寸奇遇】教训清风道长（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1421,9 +1390,8 @@ echo "<font color=black>【大雁塔除妖】杀死狐妖女（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1464,9 +1432,8 @@ echo "<font color=black>【大雁塔除妖】杀死蛇妖男（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1505,9 +1472,8 @@ echo "<font color=black>【赤血龙王】杀死喽罗（".$rw3."/".$rw4."）</f
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1546,9 +1512,8 @@ echo "<font color=black>【赤血龙王】杀死赤血龙王（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1590,9 +1555,8 @@ echo "<font color=black>【意外重逢】教训酒鬼（".$rw3."/".$rw4."）</f
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1629,9 +1593,8 @@ echo "<font color=black>【天法长老】打倒守门兵俑（".$rw3."/".$rw4."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1667,9 +1630,8 @@ echo "<font color=black>【每日】大唐国师的请求（1-20）（".$rw3."/"
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1717,9 +1679,8 @@ echo "<font color=black>【每日】大唐国师的请求（20-40）（".$rw3."/
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1766,9 +1727,8 @@ echo "<font color=black>【每日】大唐国师的请求（40-60）（".$rw3."/
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1817,9 +1777,8 @@ echo "<font color=black>【每日】大唐国师的请求（60-80）（".$rw3."/
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1866,9 +1825,8 @@ echo "<font color=black>【每日】大唐国师的请求（80-100）（".$rw3."
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1921,9 +1879,8 @@ echo "<font color=black>【每日】大唐国师的请求（100-120）（".$rw3.
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -1972,9 +1929,8 @@ echo "<font color=black>【每日】大唐国师的请求（120-140）（".$rw3.
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2023,9 +1979,8 @@ echo "<font color=black>【每日】宝象国国师的请求（10-20）【西瓜
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2076,9 +2031,8 @@ echo "<font color=black>【每日】宝象国国师的请求（20-40）【扫帚
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2128,9 +2082,8 @@ echo "<font color=black>【每日】宝象国国师的请求（40-60）【蜡烛
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2180,9 +2133,8 @@ echo "<font color=black>【每日】宝象国国师的请求（60-80）【青蛇
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2229,9 +2181,8 @@ echo "<font color=black>【每日】宝象国国师的请求（80-100）【僵�
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2279,9 +2230,8 @@ echo "<font color=black>【每日】宝象国国师的请求（100-120）【骷�
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2334,9 +2284,8 @@ echo "<font color=black>【每日】宝象国国师的请求（120-140）【野�
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2383,9 +2332,8 @@ echo "<font color=black>仙20转职任务〖关键〗（".$rw3."/".$rw4."）</fo
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2420,9 +2368,8 @@ echo "<font color=black>仙20转职任务〖关键〗（".$rw3."/".$rw4."）</fo
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
@@ -2459,9 +2406,8 @@ echo "<font color=black>仙20转职任务〖关键〗（".$rw3."/".$rw4."）</fo
 if($rw3 ==$rw4&&$rw3!=""&&$rw4!=""){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);

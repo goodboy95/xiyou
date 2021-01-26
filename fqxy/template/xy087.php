@@ -14,7 +14,7 @@ include("./wj/fbwc.php");//npc页面
 include("./sql/mysql.php");//调用数据库连接 
 $q2="fb".$wjid;
 $strsql = "update $q2 set wc=2 where id=$npcciid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $path='ache/'.$wjid;
 $file = $path."/".$inina1;	
 $iniFile = new iniFile($file);
@@ -24,7 +24,7 @@ $iniFile->updItem($npcciid, ['完成情况' => 2]);
 
 $q2="yxrw".$wjid;
 $strsql = "delete from $q2 where rwfl=3 and rwid=$npcciid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $inina='yxrw.ini';
 $path='./ache/'.$wjid;
 //判断ini文件是否存在	

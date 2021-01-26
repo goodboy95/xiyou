@@ -89,7 +89,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hbmoney";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 
 echo "<font color=red>恭喜你！！领取到了".$wjje."元现金红包奖励</font>"."<br>";
@@ -108,19 +108,17 @@ $zfzh2=($iniFile->getItem('微信','初始'));
 
  //获取最大值
 $q2="all_xjhb";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
  if($maxid ==""){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
 }
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,wjmz,wjje,zh1,zh2)  values('$maxidd','$wjid','$wjmz','$wjje','$zfzh1','$zfzh2')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 
  } else{

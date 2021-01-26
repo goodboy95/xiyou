@@ -4,10 +4,9 @@
 $nowtime=date('Y-m-d H:i:s');
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
-mysql_query("set names utf8");
 $sql = "insert into $q2 (hdid,hdtime,hdcs)  values('$npcc','$nowtime','0')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 //路径
 $inina="hd.ini";

@@ -17,8 +17,8 @@ $id= $_POST['sl'];
 if($id >=1&&$id<=9999999){//判断是否属于靓号
 include("./sql/mysql.php");//调用数据库连接 	
 $q2="all_zt";
-$sql1=mysql_query("select wjid from $q2 where lh=$id",$conn);
-$info1=@mysql_fetch_array($sql1);	
+$sql1=mysqli_query($conn, "select wjid from $q2 where lh=$id");
+$info1=@mysqli_fetch_array($sql1);	
 $lhid=$info1[wjid];
 
 if($lhid>=10000000){

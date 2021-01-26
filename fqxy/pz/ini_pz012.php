@@ -25,7 +25,7 @@ $lvl=$lvl+1;
 include("./sql/mysql.php");//调用数据库连接 
 
 $strsql = "update $q2 set cwdj=$lvl where id=$ztcwiid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/cw_ini.php");
 $iniFile->updItem('宠物等级', [$ztcwid => $lvl]);
 $iniFile->updItem('宠物经验', [$ztcwid => $jy3]);

@@ -53,7 +53,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -105,7 +105,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -157,7 +157,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -211,7 +211,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -263,7 +263,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -315,7 +315,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -367,7 +367,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -420,7 +420,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -473,7 +473,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -526,7 +526,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -578,7 +578,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -631,7 +631,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -684,7 +684,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -736,7 +736,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -789,7 +789,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -840,7 +840,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -895,7 +895,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -948,7 +948,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1001,7 +1001,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1055,7 +1055,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1107,7 +1107,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1160,7 +1160,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1213,7 +1213,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1266,7 +1266,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1320,7 +1320,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1373,7 +1373,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1426,7 +1426,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1480,7 +1480,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1535,7 +1535,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1589,7 +1589,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1643,7 +1643,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1695,7 +1695,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1748,7 +1748,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1800,7 +1800,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";
@@ -1852,7 +1852,7 @@ $iniFile->updItem('贡献', [$xl => $gjgx2]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=red>恭喜你！！兑换成功！！失去".$xygx."点国家贡献~~~</font><br>";
 $manzu1="";
 $kcrl="";

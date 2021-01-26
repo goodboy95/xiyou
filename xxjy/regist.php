@@ -155,9 +155,8 @@ if ($_POST['submit']) {
                                             include("../sql/mysql.php");//调用数据库连接
 
                                             //$q2="zem";
-                                            //mysql_query("set names utf8");
-                                            //$sql1=mysql_query("select * from $q2 where zem='$zczh5'",$conn);
-                                            //$info1=@mysql_fetch_array($sql1);
+                                            //                                            //$sql1=mysqli_query($conn, "select * from $q2 where zem='$zczh5'");
+                                            //$info1=@mysqli_fetch_array($sql1);
                                             //$zcm=$info1[zem];
                                             //$sy=$info1[sy];
 
@@ -166,21 +165,21 @@ if ($_POST['submit']) {
 
                                             //查询账号是否已占有
                                             $q2 = "o_user_list";
-                                            $sql1 = mysql_query("select uid from $q2 where username='$zczh1'", $conn);
-                                            $info1 = @mysql_fetch_array($sql1);
+                                            $sql1 = mysqli_query($conn, "select uid from $q2 where username='$zczh1'");
+                                            $info1 = @mysqli_fetch_array($sql1);
                                             $zczhpd = $info1[uid];
 
                                             if ($zczhpd == "") {
                                                 $q2 = "o_user_list";
-                                                $sql1 = mysql_query("select name from $q2 where name='$zczh6'", $conn);
-                                                $info1 = @mysql_fetch_array($sql1);
+                                                $sql1 = mysqli_query($conn, "select name from $q2 where name='$zczh6'");
+                                                $info1 = @mysqli_fetch_array($sql1);
                                                 $zczhpd1 = $info1[name];
                                                 if ($zczhpd1 != $zczh6) {
                                                     ini_set("error_reporting", "E_ALL & ~E_NOTICE");//防止报错代码
                                                     //获取最大值
                                                     $q2 = "o_user_list";
-                                                    $sql1 = mysql_query("select MAX(uid) from $q2");
-                                                    $abc = mysql_fetch_array($sql1);
+                                                    $sql1 = mysqli_query($conn, "select MAX(uid) from $q2");
+                                                    $abc = mysqli_fetch_array($sql1);
                                                     $maxid = $abc[0];
 
                                                     if ($maxid == "") {
@@ -201,10 +200,9 @@ if ($_POST['submit']) {
                                                     $s = date('s') * 1;
 
                                                     $q2 = "o_user_list";
-                                                    mysql_query("set names utf8");
-                                                    $sql = "insert into $q2 (uid,m_id,name,username,password,n,y,r,s,f,m,ma,aqm)  values('$maxidd','0','$zczh6','$zczh1','$zczh2','$y','$m','$d','$h','$i','$s','$ma','$aqm')";
-                                                    if (!mysql_query($sql, $conn)) {
-                                                        die('Error: ' . mysql_error());
+                                                                                                        $sql = "insert into $q2 (uid,m_id,name,username,password,n,y,r,s,f,m,ma,aqm)  values('$maxidd','0','$zczh6','$zczh1','$zczh2','$y','$m','$d','$h','$i','$s','$ma','$aqm')";
+                                                    if (!mysqli_query($conn, $sql)) {
+                                                        die('Error: ' . mysqli_error($conn));
                                                     }
 
                                                     $mysql002 = $maxidd + 10000000;
@@ -219,9 +217,8 @@ if ($_POST['submit']) {
                                                     }
 
                                                     //$q2="zem";
-                                                    //mysql_query("set names utf8");
-                                                    //$strsql = "update $q2 set sy=2 where zem='$zczh5'";//物品id号必改值
-                                                    //$result = mysql_query($strsql);
+                                                    //                                                    //$strsql = "update $q2 set sy=2 where zem='$zczh5'";//物品id号必改值
+                                                    //$result = mysqli_query($conn, $strsql);
 
                                                     include("../url/url.php");
 

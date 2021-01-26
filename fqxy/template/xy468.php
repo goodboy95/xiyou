@@ -86,8 +86,8 @@ include("./ini/jdjc_ini.php");
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_jdjc";
 //获取最大值	
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -97,11 +97,10 @@ $maxidd=$maxid+1;
 }
 
 $timex=time(true);
-mysql_query("set names utf8");
 $sql1 = "insert into $q2 (id,wjid,vip,wjmz,jcjg,cq,timex)  values('$maxidd','$wjid','$cqwjvip','$cqwjmz','$sl','1','$timex')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 //更新缓存数据
 $inina="jdjc.ini";

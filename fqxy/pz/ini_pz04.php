@@ -85,7 +85,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="wpp".$wjid;
 
 $strsql = "update $q2 set wpcs=$xwpsl,n=$y,y=$m,r=$d,s=$h,f=$i,m=$s where wpid=$wwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //数据库修改
 //缓存修改
 $iniFile->updItem('物品使用次数', [$wwpid => $xwpsl]);
@@ -125,7 +125,7 @@ if($day ==1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wpp".$wjid;
 $strsql = "update $q2 set wpcs=1,n=$y,y=$m,r=$d,s=$h,f=$i,m=$s where wpid=$wwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //缓存修改
 $iniFile->updItem('物品使用次数', [$wwpid => '1']);
 $iniFile->updItem('物品时间年', [$wwpid => $y]);
@@ -153,9 +153,9 @@ $iniFile->updItem('物品时间秒', [$wwpid => $s]);
 	
 
 $sql1 = "insert into $q2 (wpid,n,y,r,s,f,m,wpcs)  values('$npcc','$y','$m','$d','$h','$i','$s',1)";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
  	//新增数据
 //更新缓存数据

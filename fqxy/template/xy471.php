@@ -146,21 +146,19 @@ include("./sql/mysql.php");//调用数据库连接
 
 
 $q2="all_ylck";
-mysql_query("set names utf8");
-$sql1=mysql_query("select wjid,yl02 from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select wjid,yl02 from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjidpd=$info1[wjid];
 $yl02=$info1[yl02];
 $xcyl=$yl02+$qc03;
 if($wjidpd>10000000){
 $strsql = "update $q2 set yl02=$xcyl where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } else{	
-mysql_query("set names utf8");
 $sql1 = "insert into $q2 (wjid,yl01,yl02,yl03)  values('$wjid','0','$xcyl','0')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 } 
 
@@ -187,9 +185,8 @@ unlink($ininame); //删除文件
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_jdjc";
-mysql_query("set names utf8");
 $strsql = "delete from $q2 where id=$qc05 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/jdjc_ini.php");
 # 删除一个子项
 $iniFile->delItem('排行榜名字', $qc05);
@@ -285,21 +282,19 @@ echo $manzu1;
 include("./ini/ylck_ini.php");
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_ylck";
-mysql_query("set names utf8");
-$sql1=mysql_query("select wjid,yl02 from $q2 where wjid=$qc02",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select wjid,yl02 from $q2 where wjid=$qc02");
+$info1=@mysqli_fetch_array($sql1);
 $wjidpd=$info1[wjid];
 $yl02=$info1[yl02];
 $xcyl=$yl02+$qc03*2;
 if($wjidpd>10000000){
 $strsql = "update $q2 set yl02=$xcyl where wjid=$qc02";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } else{	
-mysql_query("set names utf8");
 $sql1 = "insert into $q2 (wjid,yl01,yl02,yl03)  values('$qc02','0','$xcyl','0')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 } 
 
@@ -315,9 +310,8 @@ unlink($ininame); //删除文件
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_jdjc";
-mysql_query("set names utf8");
 $strsql = "delete from $q2 where id=$qc05 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/jdjc_ini.php");
 # 删除一个子项
 $iniFile->delItem('排行榜名字', $qc05);

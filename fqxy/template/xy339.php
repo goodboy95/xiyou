@@ -60,10 +60,10 @@ if($gjwjmzid!=$cc01&&$gjwjmzid!=$cc02&&$gjwjmzid!=$cc03&&$gjwjmzid!=$cc04&&$gjwj
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set bpid=0,bpmz=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="bp".$bpid;
 $strsql = "delete from $q2 where userid=$wjid ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

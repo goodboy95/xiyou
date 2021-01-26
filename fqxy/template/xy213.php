@@ -41,7 +41,7 @@ $xtl=$xtl+1;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$xtl where wpid=266";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 
@@ -55,9 +55,8 @@ include("./sql/mysql.php");//调用数据库连接
 	//新增数据
 	//获取最大值	
 $q2="wp".$wjid;	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -68,9 +67,9 @@ $maxidd=$maxid+1;
 
 $q2="wp".$wjid;
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','266','1','4')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 
@@ -81,7 +80,7 @@ $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','266','1','4')";
 $wpsl=$wpsl-10;
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $inina="sc.ini";
 $path='ache/'.$wjid;
@@ -160,7 +159,7 @@ $xtl=$xtl+1;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$xtl where wpid=397";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 
@@ -174,9 +173,8 @@ include("./sql/mysql.php");//调用数据库连接
 	//新增数据
 	//获取最大值	
 $q2="wp".$wjid;	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -187,9 +185,9 @@ $maxidd=$maxid+1;
 
 $q2="wp".$wjid;
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','397','1','4')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 
@@ -200,7 +198,7 @@ $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','397','1','4')";
 $wpsl=$wpsl-10;
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $inina="sc.ini";
 $path='ache/'.$wjid;

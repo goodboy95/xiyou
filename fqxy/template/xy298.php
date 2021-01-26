@@ -54,9 +54,8 @@ if($tszf==1){
 include("./sql/mysql.php");//调用数据库连接 
 
 $q2="all_zt";
-mysql_query("set names utf8");
-$sql1=mysql_query("select username from $q2 where username='$wjtake'",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select username from $q2 where username='$wjtake'");
+$info1=@mysqli_fetch_array($sql1);
 $pdbp2=$info1[username];
 if($pdbp2==""){
 
@@ -64,9 +63,8 @@ if($pdbp2==""){
 
 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set username='$wjtake' where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['玩家名字' => $wjtake]);
@@ -135,7 +133,7 @@ echo "<font color=black>你选择了男性</font><br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set sex=1 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['性别' => '1']);
@@ -146,7 +144,7 @@ echo "<font color=black>你选择了女性</font><br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set sex=1 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['性别' => '2']);

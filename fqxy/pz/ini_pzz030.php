@@ -18,7 +18,7 @@ $dkmz="zbk5";
 
 $q2="cwzbb".$wjid; //数据库位置 
 $strsql = "update $q2 set $dkmz=1 where cwid='$cwid3' and id=$npccid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

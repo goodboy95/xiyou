@@ -28,10 +28,9 @@ $iniFile->addItem('领取情况',['初始' => 0]);
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="gz04";
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
- while(!!$row=mysql_fetch_array($result)){
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
+ while(!!$row=mysqli_fetch_array($result)){
 $iniFile->addCategory('id', [$row[id]=>$row[id]]);	 
 $iniFile->addCategory('玩家名字', [$row[wjid]=>$row[wjname]]);
 $iniFile->addCategory('玩家id', [$row[wjid]=>$row[wjid]]);

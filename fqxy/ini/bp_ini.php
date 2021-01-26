@@ -15,9 +15,8 @@ else
    
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_bp";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where bpid=$bpid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where bpid=$bpid",$conn);
+$info1=@mysqli_fetch_array($sql1);
 $bpid=$info1[bpid];
 $bpdj=$info1[bpdj];
 $bpmz=$info1[bpmz];

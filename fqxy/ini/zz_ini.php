@@ -32,9 +32,8 @@ $iniFile->addItem('收获时间',['初始' => 123]);
 include("./sql/mysql.php");//调用数据库连接 
 //判断表是否存在
 $q2="zz".$wjid;
-if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '". $q2."'"))==1) {
+if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $q2 
 (  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
 `zzdj` int( 11  )  NOT  NULL default  '0' COMMENT  '种植等级',
@@ -47,7 +46,7 @@ $sql = " CREATE  TABLE  $q2
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 
 
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 }
 //判断表是否存在
 
@@ -65,14 +64,14 @@ mysql_query($sql,$conn);
 
 $zzid=1;
 $q2="zz".$wjid;
-$sql1=mysql_query("select id from $q2 where id=$zzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select id from $q2 where id=$zzid");
+$info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1[id];
 if($xlpd ==""){
 //获取最大值
 $q2="zz".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -84,8 +83,8 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+999 day'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+999 day'));
 $sql = "insert into $q2 (id,zzdj,zzwpmz,zzwpid,zzwpsl,zztime,sftime,shtime)  values('$maxidd','1','0','0','0','$nowtime','$tiemxx1','$tiemxx')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
@@ -101,16 +100,15 @@ $sql = "insert into $q2 (id,zzdj,zzwpmz,zzwpid,zzwpsl,zztime,sftime,shtime)  val
 
 
 $q2="zz".$wjid;
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 $m=0;
 
 
 
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 
  
  

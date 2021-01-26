@@ -14,10 +14,10 @@ include("./sql/mysql.php");//调用数据库连接
  //书卷材料商城丹药任务农场宝箱重量  
 $q2="ckwp".$wjid;
 $str="select wpid,wpsl from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 
 $hm=0;
-while(!!$row=mysql_fetch_array($result)){
+while(!!$row=mysqli_fetch_array($result)){
 
 if ($row[wpsl]>0){
 $wpidd[]=$row[wpid];
@@ -57,10 +57,10 @@ $bwp=0;
  
  $q2="ckqt".$wjid;
 $str="select wpid,wpsl from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 
 $hm=0;
-while(!!$row=mysql_fetch_array($result)){
+while(!!$row=mysqli_fetch_array($result)){
 
 if ($row[wpsl]>0){
 $wpidd1[]=$row[wpid];
@@ -99,10 +99,10 @@ $bwp1=0;
   //装备重量 
 $q2="ckzb".$wjid;
 $str="select zbid from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 
 $hm=0;
-while(!!$row=mysql_fetch_array($result)){
+while(!!$row=mysqli_fetch_array($result)){
 
 
 $wpidd[]=$row[zbid];

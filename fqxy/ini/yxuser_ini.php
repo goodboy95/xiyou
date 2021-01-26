@@ -5,8 +5,8 @@ include("../sql/mysql.php");//调用数据库连接
 
 $sqid = $wjid . "_" . $xxjy_qy;
 $q2 = "o_user_list";
-$sql = mysql_query("select uid,password from $q2 where sqid='$sqid'", $conn);
-$info1 = @mysql_fetch_array($sql);
+$sql = mysqli_query($conn, "select uid,password from $q2 where sqid='$sqid'");
+$info1 = @mysqli_fetch_array($sql);
 $uid = $info1[uid];
 $pass1 = $info1[password];
 

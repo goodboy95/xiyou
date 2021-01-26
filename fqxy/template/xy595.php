@@ -132,7 +132,7 @@ $iniFile->updItem('国家信息', ['国家声望' => $bpcc03]);
 include("./sql/mysql.php");//调用数据库连接 	
 $q2="all_bp";
 $strsql = "update $q2 set bpdj=$bpdj,bprsmax=$bpbb01,bprsmax=$bpbb01,bpjymax=$bpbb02,bpyl=$bpcc01,bpsw=$bpcc03 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 echo "<font color=red>恭喜你！！成功将".$bpmz."升级到了".$bpdj."级！！</font><br>";
 echo "<font color=red>".$bpmz."人口提升为".$bpbb01."人口！！</font><br>";

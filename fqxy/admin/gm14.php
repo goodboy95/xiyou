@@ -16,7 +16,7 @@ $wjname=($iniFile->getItem('玩家信息','玩家名字'));
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_user";
 $strsql = "delete from $q2 where wjid=$wjid and fl=1 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
  
 //更新缓存数据

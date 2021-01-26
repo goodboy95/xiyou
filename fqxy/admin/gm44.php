@@ -9,7 +9,7 @@ include("./sql/mysql.php");//调用数据库连接
 //清空家具
 $q2="all_cz";
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 echo "<br>";
 echo "<font color=black>---------------------</font>"."<br>";

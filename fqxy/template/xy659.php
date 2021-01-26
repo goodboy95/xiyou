@@ -59,7 +59,7 @@ $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 
 
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);
@@ -100,7 +100,7 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+'.$time1.' minute'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);
@@ -141,7 +141,7 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+'.$time1.' minute'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);
@@ -182,7 +182,7 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+'.$time1.' minute'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);
@@ -223,7 +223,7 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+'.$time1.' minute'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);
@@ -263,7 +263,7 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+'.$time1.' minute'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);
@@ -304,7 +304,7 @@ $nowtime=date('Y-m-d H:i:s');
 $tiemxx=date('Y-m-d H:i:s',strtotime('+'.$time1.' minute'));
 $tiemxx1=date('Y-m-d H:i:s',strtotime('+'.$time2.' minute'));
 $strsql = "update $q2 set zzwpmz=='$wpdz1[0]',zzwpid='$wpdz3[0]',zzwpsl='$wpdz4[0]',zztime='$nowtime',sftime='$tiemxx',shtime='$tiemxx1' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植名字', ['1' => $wpdz1[0]]);
 $iniFile->updItem('种植物品', ['1' => $wpdz3[0]]);
 $iniFile->updItem('种植数量', ['1' => $wpdz4[0]]);

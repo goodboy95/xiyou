@@ -31,7 +31,7 @@ if($xwpsl >99999999999){
 include("./sql/mysql.php");//调用数据库连接 	
 $xwpsl=99999999999;
 $strsql = "update $q2 set bbyl=$xwpsl where wjid=$wjid";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 $ylmm=2;
 //更新本地数据
 # 修改一个分类下子项的值(也可以修改多个)
@@ -40,7 +40,7 @@ $iniFile->updItem($wpzzz, [$wwpid => $xwpsl]);
 	
 include("./sql/mysql.php");//调用数据库连接 
 $strsql = "update $q2 set bbyl=$xwpsl where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //数据库修改
 //缓存修改
 $iniFile->updItem($wpzzz, [$wwpid => $xwpsl]);
@@ -56,9 +56,9 @@ $ylmm=1;
 
 $ylmm=1;
 $sql = "insert into $q2 (wjid,bbyl,ckyl)  values($wjid,$wwpsl,'0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 	//新增数据
 //更新缓存数据

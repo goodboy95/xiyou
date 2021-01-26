@@ -37,7 +37,7 @@ if($czcw1==0){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="cw".$wjid;
 $strsql = "update $q2 set cwcz=2 where id=$npccid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //调用cw.ini是否存在
 
 $iniFile->updItem('宠物出战状态', [$zbid => '2']);

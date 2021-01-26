@@ -73,9 +73,8 @@ $cwidd1=$arr[0];
 $cwidd2=$arr[1];
 
 $q2="cw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set cwmz='$wjtake' where id=$cwidd2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 //调用cw.ini是否存在

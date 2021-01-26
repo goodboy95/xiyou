@@ -36,8 +36,8 @@ if($qgid==""){
 include("./sql/mysql.php");//调用数据库连接 
 //获取最大值
 $q2="all_qggz";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];	
 
 if($maxid ==""){
@@ -49,11 +49,10 @@ $maxidd=$maxid+1;
 
 
 $q2="all_qggz";
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,qgxx,qgmz,wjid,qgjg)  values('$maxidd','$wjtake10','$wjmz','$wjid','$wjjdqg')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 //更新缓存数据
@@ -70,7 +69,7 @@ $iniFile->updItem('商城数量', ['127'=> $kcjd]);
 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$kcjd where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

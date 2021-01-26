@@ -100,8 +100,8 @@ $user=0;
 
 
 $q2="o_user_list";
-$sql1=mysql_query("select uid,username,ma from $q2 where username='$zczh1'",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select uid,username,ma from $q2 where username='$zczh1'");
+$info1=@mysqli_fetch_array($sql1);
 $pass2=$info1[ma];
 $pass1=$info1[username];
 $uid=$info1[uid];
@@ -119,7 +119,7 @@ $pass3=md5($zczh3.'ALL_PS');
 
 $q2="o_user_list";
 $strsql = "update $q2 set password='$pass3',ma='$pass3' where username='$zczh1'";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 error_reporting(E_ALL & ~E_NOTICE); 
 include("../class/iniclass.php");//调用iniclass文件
 	//调用user.ini是否存在

@@ -27,11 +27,10 @@ if ($txid!="") {
   
 include("./sql/mysql.php");//调用数据库连接 
 $q2="tx".$wjid;
-mysql_query("set names utf8");
 $sql = "insert into $q2 (txid,txxs)  values($npcc,'1')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 unlink($ininame); //删除文件  
 

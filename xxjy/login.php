@@ -77,9 +77,8 @@ if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     //连接数据库
     include("../sql/mysql.php");//调用数据库连接
-    mysql_query("set names utf8");
-    $sql = mysql_query("select uid,password,name from o_user_list where username='$username'", $conn);
-    $info1 = @mysql_fetch_array($sql);
+        $sql = mysqli_query($conn, "select uid,password,name from o_user_list where username='$username'");
+    $info1 = @mysqli_fetch_array($sql);
     $pass1 = $info1[password];
     $uid = $info1[uid];
     $pass = md5($_POST['password'] . 'ALL_PS');

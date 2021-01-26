@@ -28,18 +28,16 @@ if($yl>=100000000&&$wpsl>=5){
 //查询国家名字是否存在
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_bp";
-mysql_query("set names utf8");
-$sql1=mysql_query("select bpid from $q2 where bpmz='$wjtake'",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bpid from $q2 where bpmz='$wjtake'");
+$info1=@mysqli_fetch_array($sql1);
 $pdbp2=$info1[bpid];
 if($pdbp2==""){
 
 
 
 $q2="all_bp";	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(bpid) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(bpid) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -49,18 +47,16 @@ $maxidd=$maxid+1;
 }
 
 $q2="all_bp";	
-mysql_query("set names utf8");
 $sql = "insert into $q2 (bpid,bpdj,bpmz,cbpmz,cwjid,xbpmz,xwjid,ccmz01,ccid01,ccmz02,ccid02,
 ccmz03,ccid03,ccmz04,ccid04,ccmz05,ccid05,ccmz06,ccid06,bprsmax,bpjymax,bpyl,bpsw)  values('$maxidd','1','$wjtake',
 '$wjmz','$wjid','$wjmz','$wjid','0','0','0','0','0','0','0','0','0','0','0','0','20','1000','0','0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set bpid=$maxidd,bpmz='$wjtake' where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
  include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
@@ -70,7 +66,6 @@ $iniFile->updItem('玩家信息', ['帮派名字' => $wjtake]);
 $bpid=$maxidd;
 
 $mysql003="bp".$bpid;
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $mysql003 
 (  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '国家ID编号',
  `usermz` text NOT  NULL  COMMENT  '国家人员名字',
@@ -80,16 +75,15 @@ $sql = " CREATE  TABLE  $mysql003
 `bpjf` int( 11  )  NOT  NULL default  '0' COMMENT  '国战积分',
 `lsgx` int( 11  )  NOT  NULL default  '0' COMMENT  '历史贡献')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 
 
 
-mysql_query("set names utf8");
 $sql = "insert into $mysql003 (id,usermz,userid,gx,bpswcs,bpjf,lsgx)  values('1','$wjmz','$wjid',
 '0','0','0','0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 

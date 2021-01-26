@@ -14,9 +14,8 @@ unlink($ininame); //删除文件
 include("./sql/mysql.php");//调用数据库连接 
 //获取最大值
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -25,8 +24,8 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,rwid,rwbl,rwmz,ysg,yisg,rwfl)  values('$maxidd','$rwidd','1','$rwmz','0','0',$rwfl)";
- if (!mysql_query($sql,$conn)){
- die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+ die('Error: ' . mysqli_error($conn));
  }
 include("./ini/zxrw_ini.php");
 } else {

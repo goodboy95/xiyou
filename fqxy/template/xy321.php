@@ -19,15 +19,15 @@ if($qgjd>=1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_qggz";
 $strsql = "delete from $q2 where wjid=$wjid ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/sc_ini.php");
 $jd=($iniFile->getItem('商城数量','127'));	
 
 $jdd=$qgjd+$jd;
 if($jd==""){  
 $q2="wp".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -36,9 +36,9 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','127','$jdd','4')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //更新缓存数据
 $inina="sc.ini";
@@ -50,7 +50,7 @@ unlink($ininame); //删除文件
 } else{
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$jdd where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/sc_ini.php");
 $iniFile->updItem('商城数量', ['127'=> $jdd]);
 }

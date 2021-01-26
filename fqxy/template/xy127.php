@@ -104,7 +104,7 @@ $iniFile->delItem('装备镶嵌5', $zbid);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="zb".$wjid;
 $strsql = "delete from $q2 where id=$npccid;";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 /////////////////////////////////数据库删除////////////////////////////
 

@@ -19,9 +19,8 @@ include("./sql/mysql.php");//调用数据库连接
 //写入日常
 //获取最大值
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -31,8 +30,8 @@ $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,rwid,rwbl,rwmz,ysg,yisg,rwfl)  values('$maxidd','$npcc','0','$fbmz','0','0','3')";
 
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 $inina='yxrw.ini';
 $path='./ache/'.$wjid;
@@ -49,7 +48,7 @@ unlink($ininame); //删除文件
 $nowtime=date('Y-m-d H:i:s');
 $q2="fb".$wjid;
 $strsql = "update $q2 set fb='$nowtime',wc=1,cs=0 where id=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //路径
 $path='./ache/'.$wjid;

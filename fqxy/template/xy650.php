@@ -11,7 +11,7 @@ include("./ini/zgvip_ini.php");
 include("./sql/mysql.php");//调用数据库连接 
 $q2="zgvip".$wjid;
 $strsql = "update $q2 set xs=1 where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('尊贵vip开关', ['1' => '1']);
 include("template/xy060.php");
 //不走xy.php直接调用xy文件需要加pz01配置

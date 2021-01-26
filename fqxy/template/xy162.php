@@ -10,7 +10,7 @@ if($zsspd==1){
 include("./sql/mysql.php");//调用数据库连接 	
 $q2="jj".$wjid;
 $strsql = "update $q2 set jjbf=2 where jjid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $jjid=$npcc;
 //调用物品信息
 include("./wp/jjxx.php");

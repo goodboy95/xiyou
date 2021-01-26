@@ -26,14 +26,14 @@ $gjmz=($iniFile->getItem('国家信息','国家名字'));
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set bpid=0,bpmz=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="all_bp";
 $strsql = "delete from $q2 where bpid=$bpid ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $bpbb="bp".$bpid;
 
 $sql = "DROP TABLE $bpbb";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 
 
 

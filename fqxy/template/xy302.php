@@ -30,7 +30,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -80,7 +80,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -1088,7 +1088,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -1445,7 +1445,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 echo "<font color=red>恭喜你！签到成功！！</font>"."<br>";	
@@ -1509,7 +1509,7 @@ include("./sql/mysql.php");//调用数据库连接
 $hdcs=$hdcs-1;
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=$hdcs where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 $iniFile->updItem('活动次数', [$npcc => $hdcs]);
@@ -1572,7 +1572,7 @@ include("./sql/mysql.php");//调用数据库连接
 $hdcs=$hdcs-1;
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=$hdcs where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 $iniFile->updItem('活动次数', [$npcc => $hdcs]);
@@ -1631,7 +1631,7 @@ include("./sql/mysql.php");//调用数据库连接
 $hdcs=$hdcs-1;
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=$hdcs where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 $iniFile->updItem('活动次数', [$npcc => $hdcs]);
@@ -1696,7 +1696,7 @@ include("./sql/mysql.php");//调用数据库连接
 $hdcs=$hdcs-1;
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=$hdcs where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 $iniFile->updItem('活动次数', [$npcc => $hdcs]);
@@ -1764,7 +1764,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -1817,7 +1817,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -1866,7 +1866,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -2025,7 +2025,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -2088,7 +2088,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -2162,7 +2162,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 
@@ -2206,7 +2206,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 

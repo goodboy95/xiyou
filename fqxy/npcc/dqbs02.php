@@ -19,7 +19,7 @@ $wpsl=$wpsl-$sl;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qt".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 
@@ -97,7 +97,7 @@ $wpsl=$wpsl-$sl;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qt".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

@@ -86,9 +86,8 @@ $wpmz=($iniFile->getItem('拍卖名字',$npcc));
 //验证时间戳
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_pm";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where id=$npcc",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=$npcc");
+$info1=@mysqli_fetch_array($sql1);
 $pmsjc=$info1[pmsjc];
 $pmwjid=$info1[wjid];
 $pmwpidd=$info1[pmwpid];
@@ -113,20 +112,20 @@ if($br1<=$br2){
 
 $q2="all_pm";
 $strsql = "delete from $q2 where id=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 //查询如果没有则添加
 $q2="wp".$wjid;
-$sql1=mysql_query("select * from $q2 where wpid=$pmmwpid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wpid=$pmmwpid");
+$info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1[wpid];
 $ckwpsl=$info1[wpsl];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -140,15 +139,15 @@ $npcc=$pmmwpid;
 include("./wp/wpxx.php");
 $q2="wp".$wjid;
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','$pmmwpid','$ckwpsl','$wpfl')";
- if (!mysql_query($sql,$conn)){
-die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+die('Error: ' . mysqli_error($conn));
 }
 } else{
 $q2="wp".$wjid;	
 $ckwpsl=$ckwpsl+$wpsl;
 
 $strsql = "update $q2 set wpsl=$ckwpsl where wpid=$ckwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 
 
 

@@ -75,14 +75,14 @@ if($ymid==269){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qt".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //仓库加
 
 
 //查询如果没有则添加
 $q2="ckqt".$wjid;
-$sql1=mysql_query("select * from $q2 where wpid=$npcc",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
+$info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1[wpid];
 $ckwpsl=$info1[wpsl];
 
@@ -94,15 +94,15 @@ $q2="ckqt".$wjid;
 $sql = "insert into $q2 (wpid,wpsl)  values('$npcc','$ckwpsl')";
 
 
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 
 } else{
 $q2="ckqt".$wjid;	
 $ckwpsl=$ckwpsl+$sl;
 $strsql = "update $q2 set wpsl=$ckwpsl where wpid=$ckwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 
 
 //
@@ -226,15 +226,15 @@ if($ymid==269){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qt".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //仓库加
 
 
 //查询如果没有则添加
 $q2="ckqt".$wjid;
-$sql1=mysql_query("select * from $q2 where wpid=$npcc",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
+$info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1[wpid];
 $ckwpsl=$info1[wpsl];
 if($ckwpid==""){
@@ -246,15 +246,15 @@ $q2="ckqt".$wjid;
 $sql = "insert into $q2 (wpid,wpsl)  values('$npcc','$ckwpsl')";
 
 
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 
 } else{
 $q2="ckqt".$wjid;	
 $ckwpsl=$ckwpsl+$sl;
 $strsql = "update $q2 set wpsl=$ckwpsl where wpid=$ckwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 
 
 } else{

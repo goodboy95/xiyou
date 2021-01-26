@@ -58,8 +58,8 @@ include("./sql/mysql.php");//调用数据库连接
 ///////////////////////////////////////////银两修改////////////////////////////////////
 $wjid=$ckid;//对方
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl+$zssl;
 if($wjyll>=99999999999){
@@ -68,7 +68,7 @@ $wjyll=99999999999;
 
 } 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
 $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 
@@ -80,8 +80,8 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 ///////////////////////////////////////////银两修改////////////////////////////////////
 $wjid=$wjid1;//自己
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl-($zssl+$ylsxf);
 if($wjyll<=0){
@@ -91,7 +91,7 @@ $wjyll=0;
 } 
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
 $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 

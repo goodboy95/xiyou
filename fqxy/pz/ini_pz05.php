@@ -25,7 +25,7 @@ $bbrlb=50+$bbrlb;
 
 include("./sql/mysql.php");//调用数据库连接 
 $strsql = "update $q2 set dj=$lvl,bbrl=$bbrlb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('玩家信息', ['等级' => $lvl]);
 $iniFile->updItem('玩家信息', ['经验' => $jy3]);
 $iniFile->updItem('玩家信息', ['背包容量' => $bbrlb]);

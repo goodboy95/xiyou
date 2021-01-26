@@ -51,7 +51,7 @@ $tiemxx=date("Y-m-d H:i:s",strtotime("$sftime1   $time1   minute"));
 
 
 $strsql = "update $q2 set sftime='$tiemxx' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
 
 

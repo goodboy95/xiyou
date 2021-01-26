@@ -39,19 +39,19 @@ $q2="zf".$wjid;
 if($xx2 <$zfsj&&$xx2>0){
 include("./sql/mysql.php");//调用数据库连接 
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $sql1 = "insert into $q2 (wpid,n,y,r,s,f,m)  values('$npcc','$y','$m','$d','$h','$i','$s')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 	
 } else{
 include("./sql/mysql.php");//调用数据库连接 
 $sql1 = "insert into $q2 (wpid,n,y,r,s,f,m)  values('$npcc','$y','$m','$d','$h','$i','$s')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 }

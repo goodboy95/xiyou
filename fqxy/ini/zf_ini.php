@@ -36,16 +36,15 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="zf".$wjid;
 
 
-mysql_query("set names utf8");
 $str="select wpid,n,y,r,s,f,m from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 $m=0;
 
 
 
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 
 $m=$m+1;
 $npcc=$row[wpid];

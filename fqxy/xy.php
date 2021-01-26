@@ -419,7 +419,7 @@ header("Content-type: text/html; charset=utf-8");
             //}
 
             //$strsql = "update $q2 set ymid=$q5,npccid=$npcc where id=0";//物品id号必改值
-            //$result = mysql_query($strsql);
+            //$result = mysqli_query($conn, $strsql);
 
             //if($ym==""){
             //$ym=0;

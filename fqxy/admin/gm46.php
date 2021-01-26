@@ -23,9 +23,8 @@ if($zsspd==1&&$all_lock2==1){
 echo "<font color=red>【小轩西游红包管理】</font>"."<br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_xjhb";
-mysql_query("set names utf8");
 $strsql = "delete from $q2 where id=$hbid ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>清理完毕</font>"."<br>";
 
 echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=45'><font color=blue>【返回红包管理】</font></a>"."<br>";

@@ -105,21 +105,21 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开【�
 
 
 $q2="boss";
-$sql1=mysql_query("select * from $q2 where id=1",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=1");
+$info1=@mysqli_fetch_array($sql1);
 $yjdm=$info1[hp];
 
 $q2="yj".$fqidd;
 $strsql = "truncate table $q2";//清空自己在遗迹的数据
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="msg".$fqidd;
 $strsql = "truncate table $q2";//清空自己在消息列表
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 if($yjdm>=1){
 $q2="yl".$fqidd;
 $strsql = "update $q2 set slid=1 where id=0";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;

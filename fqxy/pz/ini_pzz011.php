@@ -3,9 +3,8 @@
 
 $q2="zb".$wjid;
 //获取最大值	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -27,9 +26,9 @@ $zbcc10=0;
 $zbcc11=0;
 $zbcc12=0;
 $sql1 = "insert into $q2 (id,zbid,zbxj,zbk1,zbxq1,zbk2,zbxq2,zbk3,zbxq3,zbk4,zbxq4,zbk5,zbxq5,zbpd)  values('$maxidd','$zbid1','$zbcc1','$zbcc2','$zbcc3','$zbcc4','$zbcc5','$zbcc6','$zbcc7','$zbcc8','$zbcc9','$zbcc10','$zbcc11','$zbcc12')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 echo "<font color=black>得到了".$jjmz."</font>"."<br>"; 
 //更新缓存数据

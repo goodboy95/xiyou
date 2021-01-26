@@ -37,7 +37,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_money";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 //调用msg.ini是否存在
  $wjtake="恭喜你！！充值的".$csbyq."个红包已到账！！请到娱乐【红包挖宝】查看！！";

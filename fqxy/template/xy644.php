@@ -9,7 +9,7 @@ include("./sql/mysql.php");//调用数据库连接
 //清空上次数据	
 $q2="all_hdph03";
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 //更新缓存数据
 $inina="phb15.ini";

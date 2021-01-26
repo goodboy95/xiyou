@@ -8,14 +8,14 @@ $viptime1=date("Y-m-d H:i:s",strtotime("$viptime   $addtime   day"));   //日期
 include("./sql/mysql.php");//调用数据库连接 
 $q2="zgvip".$wjid;
 $strsql = "update $q2 set zgviptime=1 where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('尊贵vip', ['1' => $viptime1]);
 } else{
 $viptime1=date("Y-m-d H:i:s",strtotime("$nowtime   $addtime   day"));   //日期天数相加函数
 include("./sql/mysql.php");//调用数据库连接 
 $q2="zgvip".$wjid;
 $strsql = "update $q2 set zgviptime=1 where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('尊贵vip', ['1' => $viptime1]);	
 } 
 echo "<font color=red>恭喜你！！获得了尊享VIP特权".$addtime."天（到期时间：".$viptime1."）</font>"."<br>";

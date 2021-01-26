@@ -35,7 +35,7 @@ if ($pd==2) {
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set sex=2 where wjid=$wjijd";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['性别' => 2]);
@@ -76,7 +76,7 @@ if ($pd==2) {
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set sex=1 where wjid=$wjijd";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['性别' => 1]);

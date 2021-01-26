@@ -50,7 +50,7 @@ if($minute > 0){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_user";
 $strsql = "delete from $q2 where wjid=$wjid and fl=1 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 $jy03="";
@@ -61,7 +61,7 @@ $jy03="";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_user";
 $strsql = "delete from $q2 where wjid=$wjid and fl=1 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $jy03="";
 } 
@@ -95,8 +95,8 @@ if($jy03==""){
 include("./sql/mysql.php");//调用数据库连接 
 //获取最大值
 $q2="all_user";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -106,10 +106,9 @@ $maxidd=$maxid+1;
 }
 $time=604800;
 $nowtime=date('Y-m-d H:i:s');
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,wjname,wjtime,utime,fl,yj)  values('$maxidd','$wjid','$wjname','$nowtime','$time','1','2')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
  
  

@@ -29,7 +29,7 @@ if($jh02>10000000){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
 $strsql = "update $q2 set peiou='0',peiouid=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 $pomz=($iniFile->getItem('玩家信息','配偶名字'));
 $iniFile->updItem('玩家信息', ['配偶名字' => '0']);
@@ -44,7 +44,7 @@ $jhh02=($iniFile->getItem('玩家信息','配偶id'));
 if($jh02==$wjid){
 $q2="all_zt";
 $strsql = "update $q2 set peiou='0',peiouid=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['配偶名字' => '0']);
 $iniFile->updItem('玩家信息', ['配偶id' => '0']);

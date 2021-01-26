@@ -20,7 +20,7 @@ $wpsy=2;//使用成功
 $q2="dyxx".$wjid;
 include("./sql/mysql.php");//调用数据库连接 
 $strsql = "update $q2 set sycs=$wpsycs where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 if($xzcs1<1){
 echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</font><br>";
 } elseif($xzcs1 >=1){
@@ -68,9 +68,9 @@ $q2="dyxx".$wjid;
 //新增数据
 include("./sql/mysql.php");//调用数据库连接 
 $sql1 = "insert into $q2 (wpid,sycs)  values('$npcc','$wpsycs')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 if($xzcs1<1){

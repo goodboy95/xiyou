@@ -25,8 +25,8 @@ $iniFile->addItem('国战判断时间',['初始' => 0]);
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="xtbl";
-$sql1=mysql_query("select * from $q2 where id=1",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=1");
+$info1=@mysqli_fetch_array($sql1);
 $xtbl1=$info1[bl1];
 $xtbl2=$info1[bl2];
 $iniFile->addCategory('国战判断时间', ['月'=>$xtbl1,'日'=>$xtbl2 ]);

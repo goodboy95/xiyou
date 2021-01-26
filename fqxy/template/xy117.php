@@ -22,7 +22,7 @@ $wpmz=($iniFile->getItem('好友名字',$xlh));
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hy".$wjid;
 $strsql = "delete from $q2 where id=$xlh ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 # 删除一个子项
 $iniFile->delItem('序列', $npcc);

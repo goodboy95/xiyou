@@ -26,7 +26,7 @@ if ($pd==2) {
 include("./sql/mysql.php");//调用数据库连接 
 $q2="xp".$wjid;
 $strsql = "update $q2 set xpkq=2 where id=$xpiddd";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 $inina="xp.ini";
 $path='ache/'.$wjid;

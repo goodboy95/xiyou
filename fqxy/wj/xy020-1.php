@@ -433,9 +433,8 @@ $m= date('m')*1;
 $d= date('d')*1;
 $q2="gz02";
 include("./sql/mysql.php");//调用数据库连接 
-mysql_query("set names utf8");	
-$sql1=mysql_query("select * from $q2 where gjid=$bpid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gjid=$bpid");
+$info1=@mysqli_fetch_array($sql1);
 $gjmz=$info1[gjmz];
 
 if($gjmz==""){
@@ -464,7 +463,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 include("./ini/zt_ini.php");
@@ -493,15 +492,15 @@ $q2="bp".$bpid;
 if($bpzw>=2&&$bpzw<=7){
 $sw=20;
 $strsql = "update $q2 set bpswcs=$sw,bpjf=0 where userid=$wjid";//国家官员死亡次数
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($bpzw==8){
 $sw=30;
 $strsql = "update $q2 set bpswcs=$sw,bpjf=0 where userid=$wjid";//君主死亡次数
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($bpzw==1){
 $sw=10;
 $strsql = "update $q2 set bpswcs=$sw,bpjf=0 where userid=$wjid";//普通成员死亡次数
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } else{
 
 $sw=0;
@@ -802,7 +801,7 @@ include("./sql/mysql.php");//调用数据库连接
 //清空上次数据	
 $q2="all_hdph03";
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 //更新缓存数据
 $inina="phb15.ini";

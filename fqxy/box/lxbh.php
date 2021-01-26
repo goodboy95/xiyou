@@ -393,7 +393,7 @@ if($wnys1 ==0){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "delete from $q2 where wpid=$ysid ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 # 获取一个分类下某个子项的值
@@ -412,7 +412,7 @@ $iniFile->delItem('商城名字', $ysid);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wnys1 where wpid=$ysid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 # 修改一个分类下子项的值(也可以修改多个)

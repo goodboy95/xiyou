@@ -52,7 +52,7 @@ $wpsl=$wpsl-$sl;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 /////////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 
@@ -176,7 +176,7 @@ include("./pz/pz01.php");
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 /////////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 include("./wp/wpxx.php");

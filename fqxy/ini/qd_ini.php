@@ -20,14 +20,13 @@ else
 include("./sql/mysql.php");//调用数据库连接 
    
 $q2="all_qd";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $id=$info1[id];
 if($id ==""){
 
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -39,13 +38,12 @@ $qdsj=0;
 $qdcs=0;
 
 $sql = "insert into $q2 (id,wjid,qdcs,qdy,qd1,qd2,qd3,qd4,qd5)  values('$maxidd','$wjid','$qdcs','$qdy','1','1','1','1','1')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
  
- mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+ $sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
   
 
 $qdcs=$info1[qdcs];

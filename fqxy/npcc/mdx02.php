@@ -26,7 +26,7 @@ $yll=$yl-$wp3pd;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yl"; //数据库位置 
 $strsql = "update $q2 set bbyl=$yll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
 //缓存修改
 $iniFile->updItem('背包仓库银两', ['背包银两' => $yll]);

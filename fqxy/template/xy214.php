@@ -107,12 +107,10 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set peiou='$ltbl1',peiouid=$wjid1 where wjid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
-mysql_query("set names utf8");
+$result = mysqli_query($conn, $strsql);
 $strsql = "update $q2 set peiou='$pomz',peiouid=$npcc where wjid=$wjid1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

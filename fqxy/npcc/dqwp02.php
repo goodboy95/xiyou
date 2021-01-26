@@ -22,12 +22,12 @@ if($ymid==35){ //背包其他
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qt".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } else{
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);		
+$result = mysqli_query($conn, $strsql);		
 } 
 
 
@@ -189,12 +189,12 @@ if($ymid==35){ //背包其他
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qt".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } else{
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 
 
 

@@ -89,14 +89,13 @@ if ($zsspd == 1) {
                 $nowtime = date('Y-m-d H:i:s');
                 include("./sql/mysql.php");//调用数据库连接
                 $q2 = "all_ip";
-                mysql_query("set names utf8");
-                $strsql = "delete from $q2 where wjid='$wjid'";//物品id号必改值
-                $result = mysql_query($strsql);
+                                $strsql = "delete from $q2 where wjid='$wjid'";//物品id号必改值
+                $result = mysqli_query($conn, $strsql);
 
                 $nowtime = date('Y-m-d H:i:s');
                 $sql = "insert into $q2 (ip,iptime,wjid,wjname)  values('$ip1','$nowtime','$wjid','$wjname')";
-                if (!mysql_query($sql, $conn)) {
-                    die('Error: ' . mysql_error());
+                if (!mysqli_query($conn, $sql)) {
+                    die('Error: ' . mysqli_error($conn));
                 }
                 //更新缓存数据
                 $inina = "all_ip_ini.ini";
@@ -119,10 +118,9 @@ if ($zsspd == 1) {
                 $nowtime = date('Y-m-d H:i:s');
                 include("./sql/mysql.php");//调用数据库连接
                 $q2 = "all_ip";
-                mysql_query("set names utf8");
-                $sql = "insert into $q2 (ip,iptime,wjid,wjname)  values('$ip1','$nowtime','$wjid','$wjname')";
-                if (!mysql_query($sql, $conn)) {
-                    die('Error: ' . mysql_error());
+                                $sql = "insert into $q2 (ip,iptime,wjid,wjname)  values('$ip1','$nowtime','$wjid','$wjname')";
+                if (!mysqli_query($conn, $sql)) {
+                    die('Error: ' . mysqli_error($conn));
                 }
                 //更新缓存数据
                 $inina = "all_ip_ini.ini";
@@ -141,14 +139,13 @@ if ($zsspd == 1) {
 
             $q2 = "all_ip";
 
-            mysql_query("set names utf8");
-            $str = "select ip from $q2";
-            $result = mysql_query($str) or die('SQL语句有误');
+                        $str = "select ip from $q2";
+            $result = mysqli_query($conn, $str) or die('SQL语句有误');
             //把有值的数据存入一个数组
             $m = 0;
 
 
-            while (!!$row = mysql_fetch_array($result)) {
+            while (!!$row = mysqli_fetch_array($result)) {
 
                 if ($row[ip] == $ip1) {
                     $m = $m + 1;
@@ -220,7 +217,7 @@ if ($zsspd == 1) {
             include("./sql/mysql.php");//调用数据库连接
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
-            $result = mysql_query($strsql);
+            $result = mysqli_query($conn, $strsql);
             include("./ini/hd_ini.php");
             $iniFile->updItem('活动时间', [$hdid => $nowtime]);
             $iniFile->updItem('活动次数', [$hdid => '0']);
@@ -268,16 +265,16 @@ if ($zsspd == 1) {
 
             include("./sql/mysql.php");//调用数据库连接
             $q2 = "all_phb";
-            $sql1 = mysql_query("select wjid from $q2 where wjid=$wjid", $conn);
-            $info1 = @mysql_fetch_array($sql1);
+            $sql1 = mysqli_query($conn, "select wjid from $q2 where wjid=$wjid");
+            $info1 = @mysqli_fetch_array($sql1);
             $phwjid = $info1[wjid];
 
 
             if ($phwjid == "") {
                 //获取最大值
                 $q2 = "all_phb";
-                $sql1 = mysql_query("select MAX(id) from $q2");
-                $abc = mysql_fetch_array($sql1);
+                $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
+                $abc = mysqli_fetch_array($sql1);
                 $maxid = $abc[0];
 
                 if ($maxid == "") {
@@ -288,11 +285,10 @@ if ($zsspd == 1) {
                 }
 
                 $q2 = "all_phb";
-                mysql_query("set names utf8");
-                $sql = "insert into $q2 (id,wjid,wjmz,vip,phb1,phb2,phb3,phb4,phb5,phb6,phb7,phb8)  values('$maxidd','$wjid','$wjmz','$vip','$phb1','$phb2','$phb3','$phb4','$phb5','$phb6','$phb7','$phb8')";
+                                $sql = "insert into $q2 (id,wjid,wjmz,vip,phb1,phb2,phb3,phb4,phb5,phb6,phb7,phb8)  values('$maxidd','$wjid','$wjmz','$vip','$phb1','$phb2','$phb3','$phb4','$phb5','$phb6','$phb7','$phb8')";
 
-                if (!mysql_query($sql, $conn)) {
-                    die('Error: ' . mysql_error());
+                if (!mysqli_query($conn, $sql)) {
+                    die('Error: ' . mysqli_error($conn));
                 }
 
 
@@ -300,7 +296,7 @@ if ($zsspd == 1) {
 
                 $q2 = "all_phb";
                 $strsql = "update $q2 set phb1='$phb1',phb2='$phb2',phb3='$phb3',phb4='$phb4',phb5='$phb5',phb6='$phb6',phb7='$phb7',phb8='$phb8',vip='$vip' where wjid=$wjid";//物品id号必改值
-                $result = mysql_query($strsql);
+                $result = mysqli_query($conn, $strsql);
 
 
             }

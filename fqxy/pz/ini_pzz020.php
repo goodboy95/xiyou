@@ -8,12 +8,12 @@ $wpsll=$wpsl-$wpkc;
 if($wpsll>=1){
 $q2="qt".$wjid;
 $strsql = "update $q2 set wpsl=$wpsll where wpid=$wpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem($wpzzz, [$wpid => $wpsll]);
 } elseif($wpsll ==0){
 $q2="qt".$wjid;
 $strsql = "delete from $q2 where wpid=$wpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 # 获取一个分类下某个子项的值
 $xlh=($iniFile->getItem($pzinimz1,$wpid));

@@ -50,14 +50,13 @@ include("./sql/mysql.php");//调用数据库连接
 
 	//判断表是否存在
 $q2="cw".$wjid;
-if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '". $q2."'"))==1) {
+if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 
 } else {
 //建立新表	
 $mysql002=$wjid;
 //宠物
 $mysql003="cw".$mysql002;
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $mysql003 
 (  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
 `cwid` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物id',
@@ -68,7 +67,7 @@ $sql = " CREATE  TABLE  $mysql003
 `cwxb` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物品质',
 `cwcz` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物出战')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 
 }
 
@@ -88,12 +87,11 @@ mysql_query($sql,$conn);
 
 
 $q2="cw".$wjid;
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 $m=0;
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 
 
 $m=$m+1;

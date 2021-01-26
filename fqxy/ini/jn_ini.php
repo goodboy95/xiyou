@@ -22,12 +22,11 @@ if (file_exists($file)) {
     $iniFile->addItem('技能等级', ['初始' => 123]);
     include("./sql/mysql.php");//调用数据库连接
     $q2 = "jnn" . $wjid;
-    mysql_query("set names utf8");
-    $str = "select id,jnid,jndj from $q2";
-    $result = mysql_query($str) or die('SQL语句有误');
+        $str = "select id,jnid,jndj from $q2";
+    $result = mysqli_query($conn, $str) or die('SQL语句有误');
     //把有值的数据存入一个数组
     $m = 0;
-    while (!!$row = mysql_fetch_array($result)) {
+    while (!!$row = mysqli_fetch_array($result)) {
         $m = $m + 1;
         $iniFile->addCategory('序列', [$row[jnid] => $m]);
         $iniFile->addCategory('技能id', [$m => $row[jnid]]);

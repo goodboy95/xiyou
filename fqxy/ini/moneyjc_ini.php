@@ -24,15 +24,15 @@ $iniFile->addItem('财神币总和',['初始' => 0]);
 $iniFile->addItem('财神币总和',['初始1' => 0]); 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_moneyjc";
-$sql1=mysql_query("select * from $q2 where id=1",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=1");
+$info1=@mysqli_fetch_array($sql1);
 $mwjmoney=$info1[money];
 
  if($mwjmoney!==""){	
 $q2="all_moneyjc";	
 $sql = "insert into $q2 (id,money)  values('1','0')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 $iniFile->addCategory('财神币总和', ['初始'=>'0']);
 } else{
@@ -42,15 +42,15 @@ $iniFile->addCategory('财神币总和', ['初始'=>$mwjmoney]);
 
 
 $q2="all_moneyjc";
-$sql1=mysql_query("select * from $q2 where id=2",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=2");
+$info1=@mysqli_fetch_array($sql1);
 $mwjmoney=$info1[money];
 
  if($mwjmoney!==""){	
 $q2="all_moneyjc";	
 $sql = "insert into $q2 (id,money)  values('2','0')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 $iniFile->addCategory('财神币总和', ['初始1'=>'0']);
 } else{

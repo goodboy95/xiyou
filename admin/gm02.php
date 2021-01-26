@@ -62,9 +62,8 @@ $a1=randomkeys(35);
 $a2="【小|轩|家|园|注册码|】[".$a1."]";	
 //获取最大值
 $q2="zem";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
 if($maxid ==""){
@@ -74,11 +73,10 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $q2="zem";
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,zem,sy)  values('$maxidd','$a2','1')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 

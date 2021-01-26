@@ -677,7 +677,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="wp".$wjid;
 $kcjd=$jd-$jdjg;
 $strsql = "update $q2 set wpsl=$kcjd where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 include("./ini/sc_ini.php");
 $iniFile->updItem('商城数量', ['127'=> $kcjd]);
@@ -687,9 +687,8 @@ $wjname=($iniFile->getItem('玩家信息','玩家名字'));
 
 
 $q2="all_gzhoures";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -702,16 +701,14 @@ $fziidd=$gzid;
 $fzname=$fzname;//房子名字
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,fzid,wjmz,fzmz,fzfl,fzgm)  values('$maxidd','$wjid','$gzid','$wjname','$fzname','$fzfl','$fzgm')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zzid=$gzid,zzmz='$fzname',zzfl=$fzfl where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 include("./ini/zt_ini.php");

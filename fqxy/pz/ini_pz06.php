@@ -19,7 +19,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_zt";                //数据库位置               //
 
 $strsql = "update $q2 set $ccc=$ckrl1 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 //缓存修改

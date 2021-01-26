@@ -60,9 +60,8 @@ if($txsl >=0&&$txsl <$txxs4){
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="tx".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set txxs=2 where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 /////////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
@@ -86,9 +85,8 @@ echo "<font color=black>对不起！！称号最多只能展示".$txxs4."个</fo
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="tx".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set txxs=1 where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 /////////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 # 修改一个分类下子项的值(也可以修改多个)

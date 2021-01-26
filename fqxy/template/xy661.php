@@ -59,7 +59,7 @@ $zzdj=1;
 } else{
 } 
 $strsql = "update $q2 set zzdj='$zzdj' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植等级', ['1' => $zzdj]);
 
 

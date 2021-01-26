@@ -29,8 +29,8 @@ if($tszf==1){
 if($wjjdqg >=1&&$wjjdqg<=9999999){//判断是否属于靓号
 include("./sql/mysql.php");//调用数据库连接 	
 $q2="all_zt";
-$sql1=mysql_query("select wjid from $q2 where lh=$wjjdqg",$conn);
-$info1=@mysql_fetch_array($sql1);	
+$sql1=mysqli_query($conn, "select wjid from $q2 where lh=$wjjdqg");
+$info1=@mysqli_fetch_array($sql1);	
 $lhid=$info1[wjid];
 
 if($lhid>=10000000){
@@ -59,8 +59,8 @@ if($wjjdqg!=$wjid){
 include("./sql/mysql.php");//调用数据库连接 
 $wjjdqgp=$wjjdqg-10000000;
 $q2="o_user_list";
-$sql1=mysql_query("select uid from $q2 where uid=$wjjdqgp",$conn);
-$info1=@mysql_fetch_array($sql1);	
+$sql1=mysqli_query($conn, "select uid from $q2 where uid=$wjjdqgp");
+$info1=@mysqli_fetch_array($sql1);	
 $uid=$info1[uid];
 if($uid!=""){
 include("./ini/zt_ini.php");
@@ -119,7 +119,7 @@ $wpsl=$wpsl-1;
 $iniFile->updItem('商城数量', ['397' => $wpsl]);
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=397";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 		
 		
 		

@@ -76,9 +76,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd01_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'免费次数' => $hdydcs]);
 
@@ -165,9 +164,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd01_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'收费次数' => $hdydcs]);
 
@@ -179,9 +177,8 @@ include("./ini/hdjc_ini.php");
 $hdjc=($iniFile->getItem('奖金池',$jcfl));
 $hdjc=$jdsl+$hdjc;
 $q2="all_jc";
-mysql_query("set names utf8");
 $strsql = "update $q2 set jc=$hdjc where xlid=$jcfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $iniFile->updItem('奖金池', [$jcfl => $hdjc]);
 
@@ -241,9 +238,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd02";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd02_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'免费次数' => $hdydcs]);
 //路径
@@ -322,9 +318,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd02";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd02_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'收费次数' => $hdydcs]);
 
@@ -336,9 +331,8 @@ include("./ini/hdjc_ini.php");
 $hdjc=($iniFile->getItem('奖金池',$jcfl));
 $hdjc=$jdsl+$hdjc;
 $q2="all_jc";
-mysql_query("set names utf8");
 $strsql = "update $q2 set jc=$hdjc where xlid=$jcfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $iniFile->updItem('奖金池', [$jcfl => $hdjc]);
 
@@ -397,9 +391,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd03";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd03_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'免费次数' => $hdydcs]);
 //路径
@@ -479,9 +472,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd03";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd03_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'收费次数' => $hdydcs]);
 
@@ -493,9 +485,8 @@ include("./ini/hdjc_ini.php");
 $hdjc=($iniFile->getItem('奖金池',$jcfl));
 $hdjc=$jdsl*50000000+$hdjc;
 $q2="all_jc";
-mysql_query("set names utf8");
 $strsql = "update $q2 set jc=$hdjc where xlid=$jcfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $iniFile->updItem('奖金池', [$jcfl => $hdjc]);
 
@@ -558,9 +549,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd04";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd04_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'免费次数' => $hdydcs]);
 //路径
@@ -641,9 +631,8 @@ $ds01=$hdyd[今日点数]+$bz;
 $ds02=$hdyd[活动点数]+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd04";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd04_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => $ds01,'活动点数' => $ds02,'收费次数' => $hdydcs]);
 
@@ -655,9 +644,8 @@ include("./ini/hdjc_ini.php");
 $hdjc=($iniFile->getItem('奖金池',$jcfl));
 $hdjc=$jdsl*50000000+$hdjc;
 $q2="all_jc";
-mysql_query("set names utf8");
 $strsql = "update $q2 set jc=$hdjc where xlid=$jcfl";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $iniFile->updItem('奖金池', [$jcfl => $hdjc]);
 

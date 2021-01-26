@@ -17,7 +17,7 @@ $bp=($iniFile->getCategory('国家信息'));
 $yl1=$sl+$bp[国家资金];
 $q2="all_bp";
 $strsql = "update $q2 set bpyl=$yl1 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/bp_ini.php");
 $iniFile->updItem('国家信息', ['国家资金' => $yl1]);
 
@@ -25,7 +25,7 @@ $yl2=$yl-$sl;
 
 $q2="all_yl";
 $strsql = "update $q2 set bbyl=$yl2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
 $iniFile->updItem('背包仓库银两', ['背包银两' => $yl2]);
 	
@@ -41,7 +41,7 @@ $iniFile->updItem('贡献', [$xl => $gx]);
 $iniFile->updItem('历史贡献', [$xl => $gx]);
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gx,lsgx=$lsgx where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

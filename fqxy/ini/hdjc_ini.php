@@ -29,14 +29,14 @@ include("./sql/mysql.php");//调用数据库连接
 ///////////////////////////摇点奖金池/////////////金豆
 $xlidd=1;
 $q2="all_jc";
-$sql1=mysql_query("select xlid from $q2 where xlid=$xlidd",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
+$info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1[xlid];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -45,8 +45,8 @@ $maxidd=$maxid+1;
 }
 
 $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','500')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
@@ -65,14 +65,14 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','500')";
 
 $xlidd=2;
 $q2="all_jc";
-$sql1=mysql_query("select xlid from $q2 where xlid=$xlidd",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
+$info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1[xlid];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -80,8 +80,8 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','1000')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
@@ -99,14 +99,14 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','1000')";
 
 $xlidd=3;
 $q2="all_jc";
-$sql1=mysql_query("select xlid from $q2 where xlid=$xlidd",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
+$info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1[xlid];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -114,22 +114,22 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','2500000000')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
 
 $xlidd=4;
 $q2="all_jc";
-$sql1=mysql_query("select xlid from $q2 where xlid=$xlidd",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
+$info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1[xlid];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -137,8 +137,8 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','5000000000')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
@@ -151,14 +151,13 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','5000000000')";
 	
 	
 $q2="all_jc";
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 $m=0;
 
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 	 
 	 
 $iniFile->addCategory('奖金池', [$row[xlid]=> $row[jc]]);

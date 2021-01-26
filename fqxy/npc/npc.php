@@ -338,17 +338,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=3",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=3");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【玄武居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -396,17 +395,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=5",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=5");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【欢欢居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -498,17 +496,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=2",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=2");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【朱雀居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -568,17 +565,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=6",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=6");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【喜喜居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -626,17 +622,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=7",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=7");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【梦之居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -719,17 +714,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=4",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=4");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【白虎居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -777,17 +771,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=8",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=8");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【水仙居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -823,17 +816,16 @@ $clj[]=10;
 $npc[]=0;
 
 $q2="gzhoures";
-$sql1=mysql_query("select * from $q2 where gzid=9",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gzid=9");
+$info1=@mysqli_fetch_array($sql1);
 $gzid=$info1[fzid];
 $npcname="【天然居】";
 if ($gzid!="") {
 
 
 $q2="houres";
-mysql_query("set names gb2312");
-$sql1=mysql_query("select * from $q2 where fzid=$gzid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
+$info1=@mysqli_fetch_array($sql1);
 $wjmz=$info1[wjmz];
 $wjid=$info1[wjid];
 
@@ -3259,21 +3251,21 @@ echo "<font color=black>南城客栈的小二，卖些稀有的补品。</font>"
 
 
 $q2="yl".$fqidd;
-$sql1=mysql_query("select * from $q2 where id=0",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=0");
+$info1=@mysqli_fetch_array($sql1);
 $yl=$info1[yl];	
 $xyyl=500;
 if ($yl>=$xyyl) {
 $q2="yl".$fqidd;
 $yll=$yl-$xyyl;
 $strsql = "update $q2 set yl=$yll where id=0";//物品id号必改值
-$result = mysql_query($strsql);  
+$result = mysqli_query($conn, $strsql);  
 	
 include("wj/zf.php");
 include("wj/ztt.php");
 $q2="zt".$fqidd;
 $strsql = "update $q2 set hp=$maxhp,mp=$maxmp where id=0";//物品id号必改值
-$result = mysql_query($strsql);  
+$result = mysqli_query($conn, $strsql);  
 echo "<font color=black>你花了500两银子，往床上一躺，睡了一会，只觉精力充沛！	</font>"."<br>"; 
 
 
@@ -7655,8 +7647,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
 
 //查询是否的参观模式
 $q2="bl".$fqidd;
-$sql1=mysql_query("select * from $q2 where id=2",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=2");
+$info1=@mysqli_fetch_array($sql1);
 $bll1=$info1[bll1];
 
 if ($bll1>=1) {
@@ -8203,7 +8195,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
@@ -8955,7 +8947,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
@@ -9282,7 +9274,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
@@ -9636,7 +9628,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
@@ -12643,7 +12635,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$npcc => $nowtime]);
 

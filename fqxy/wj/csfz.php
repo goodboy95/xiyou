@@ -21,20 +21,19 @@ $fz001=1000000;//民宅价格100万
 $q2="all_yl";
 $yll=$yl+$fz001;
 $strsql = "update $q2 set bbyl=$yll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 $q2="all_houres";
 $strsql="delete from $q2 where fzid=$fz";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zzid=0,zzmz='0',zzfl=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //清空家具
 $q2="jj".$wjid;
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 //更新缓存数据
 $inina="jj.ini";
@@ -68,18 +67,17 @@ $jd=($iniFile->getItem('商城数量','127'));
 
 $q2="all_houres";
 $strsql="delete from $q2 where fzid=$fz";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zzid=0,zzmz='0',zzfl=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 
 //清空家具
 $q2="jj".$wjid;
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 //更新缓存数据
 $inina="jj.ini";
@@ -107,8 +105,8 @@ $kcjd=$jd+50;
 
 if($jd==""){  
 $q2="wp".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -119,9 +117,9 @@ $maxidd=$maxid+1;
 
 
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','127','$kcjd','4')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 
@@ -138,7 +136,7 @@ unlink($ininame); //删除文件
 	
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$kcjd where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

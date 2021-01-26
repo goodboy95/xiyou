@@ -22,7 +22,7 @@ include("./sql/mysql.php");//调用数据库连接
 $qdcs=$qdxx[签到次数]+1;
 $q2="all_qd";
 $strsql = "update $q2 set qdcs=$qdcs where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到次数' => $qdcs]);
 
 
@@ -43,7 +43,7 @@ $iniFile->updItem('签到信息', ['签到次数' => $qdcs]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_qd";
 $strsql = "update $q2 set qdcs=1,qdy=$qdy,qd1=1,qd2=1,qd3=1,qd4=1,qd5=1 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到次数' => '1']);
 $iniFile->updItem('签到信息', ['签到月' => $qdy]);
 $iniFile->updItem('签到信息', ['签到1' => '1']);

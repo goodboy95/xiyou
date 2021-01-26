@@ -105,7 +105,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hbmoney";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 
 $csbbjc=$csbzh-$csbyq-$ylsxf;
@@ -113,13 +113,13 @@ include("./ini/hbmoneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始' => $csbbjc]);
 $q2="all_hbmoneyjc";
 $strsql = "update $q2 set money=$csbbjc where id=1";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 //保存盈利
 $csbzh1=$csbzh1-$csbyq;
 include("./ini/hbmoneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始1' => $csbzh1]);
 $strsql = "update $q2 set money=$csbzh1 where id=2";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 //保存盈利
 
 $ds= rand(1, 3);
@@ -153,7 +153,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hbmoney";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 $csbbjc=$csbzh+$csbyq-$ylsxf;
 
@@ -161,13 +161,13 @@ include("./ini/hbmoneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始' => $csbbjc]);
 $q2="all_hbmoneyjc";
 $strsql = "update $q2 set money=$csbbjc where id=1";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 //保存盈利
 $csbzh1=$csbzh1+$csbyq;
 include("./ini/hbmoneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始1' => $csbzh1]);
 $strsql = "update $q2 set money=$csbzh1 where id=2";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 //保存盈利
 
 $ds= rand(4, 6);	

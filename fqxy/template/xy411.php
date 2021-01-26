@@ -25,7 +25,7 @@ if($qdxx2[签到1]==1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
 $strsql = "update $q2 set qd1=2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到1' => '2']);
 
 echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
@@ -112,7 +112,7 @@ if($qdxx2[签到2]==1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
 $strsql = "update $q2 set qd2=2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到2' => '2']);
 
 echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
@@ -196,7 +196,7 @@ if($qdxx2[签到3]==1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
 $strsql = "update $q2 set qd3=2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到3' => '2']);
 echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
 
@@ -296,7 +296,7 @@ if($qdxx2[签到4]==1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
 $strsql = "update $q2 set qd4=2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到4' => '2']);
 echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
 
@@ -395,7 +395,7 @@ if($qdxx2[签到5]==1){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
 $strsql = "update $q2 set qd5=2 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到5' => '2']);
 echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
 include("./ini/zt_ini.php");

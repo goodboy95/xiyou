@@ -3,11 +3,10 @@
 echo "<font color=red>【小轩西游充值管理】</font>"."<br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_cz";
-mysql_query("set names utf8");
 $str="select id from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 $id[]=$row[id];
 $m=$m+1;
 }
@@ -17,8 +16,8 @@ $ii=0;
 for($d=0;$d<$m;$d++){
 $ii=$ii+1;
 $i=$i+1;
-$sql1=mysql_query("select * from $q2 where id=$id[$i]",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=$id[$i]",$conn);
+$info1=@mysqli_fetch_array($sql1);
 $cz01=$info1[czid];
 $cz02=$info1[czje];
 $cz03=$info1[cztime];

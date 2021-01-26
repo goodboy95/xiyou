@@ -83,9 +83,8 @@ $wd07=$wjxx1[max防御];
 
 
 $q2="all_ltbw";
-mysql_query("set names utf8");
 $strsql = "update $q2 set wjid='$wjid',wjmz='$wd01',lthp='$wd04',ltgj='$wd05',ltmg='$wd06',ltfy='$wd07',ltmp='$wd08' where id=$zlid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/ltbw_ini.php");
 $iniFile->updItem('玩家擂台排名', [$zlid => $wjid]);
 $iniFile->updItem('占领玩家', [$zlid => $wd01]);

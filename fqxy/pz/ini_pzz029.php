@@ -22,7 +22,7 @@ $fbbb3=$fb3-$fbb3;
 $iniFile->updItem('背包仓库银两', ['背包银两' => $fbbb3]);
 $q2="all_yl";  
 $strsql = "update $q2 set bbyl=$fbbb3 where wjid=$wjid";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 
 $npcc=$zbidx;

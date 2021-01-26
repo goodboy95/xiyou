@@ -94,8 +94,8 @@ if(preg_match('/^[\w-\.]{6,12}$/', $zczh3)){
 //连接数据库
 include("../sql/mysql.php");//调用数据库连接
 $user=0;
-$sql=mysql_query("select * from o_user_list where username='$zczh1'",$conn);
-$info1=@mysql_fetch_array($sql);
+$sql=mysqli_query($conn, "select * from o_user_list where username='$zczh1'");
+$info1=@mysqli_fetch_array($sql);
 $pass1=$info1[aqm];
 $uid=$info1[uid];
 $wjid=$uid+10000000;
@@ -114,7 +114,7 @@ if($zczh4==$pass1){
 $pass3=md5($zczh3.'ALL_PS');
 $q2="o_user_list";
 $strsql = "update $q2 set password='$pass3',ma='$pass3' where username='$zczh1'";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 error_reporting(E_ALL & ~E_NOTICE); 
 include("../class/iniclass.php");//调用iniclass文件
 	//调用user.ini是否存在

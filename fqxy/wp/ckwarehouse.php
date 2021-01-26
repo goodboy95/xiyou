@@ -32,7 +32,7 @@ include("./sql/mysql.php");//调用数据库连接
 //更新数据库数据
 $q2="all_yl";
 $strsql = "update $q2 set ckyl=99999999999 where wjid=$wjid";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 //更新本地数据
 # 修改一个分类下子项的值(也可以修改多个)

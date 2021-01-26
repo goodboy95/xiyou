@@ -14,9 +14,8 @@ if (file_exists($file)) {
     include("./sql/mysql.php");//调用数据库连接
 
     $q2 = "all_zt";
-    mysql_query("set names utf8");
-    $sql1 = mysql_query("select * from $q2 where wjid=$wjid", $conn);
-    $info1 = @mysql_fetch_array($sql1);
+        $sql1 = mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+    $info1 = @mysqli_fetch_array($sql1);
     $uname = $info1[username];
     $sex = $info1[sex];
     $tx = $info1[tx];

@@ -26,10 +26,9 @@ $iniFile->addItem('国战判断时间',['初始' => 0]);
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="gz05";
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
- while(!!$row=mysql_fetch_array($result)){
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
+ while(!!$row=mysqli_fetch_array($result)){
 $iniFile->addCategory('国战判断时间', [$row[id]=>$row[gztime]]);
 
 }

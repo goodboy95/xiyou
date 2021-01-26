@@ -16,9 +16,8 @@ else
 include("./sql/mysql.php");//调用数据库连接 
    
 $q2="all_yl";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $bbyl=$info1[bbyl];
 $ckyl=$info1[ckyl];
 
@@ -35,9 +34,9 @@ $ckyl=0;
 }
 if($bbyl==""&&$ckyl==""){
 $sql = "insert into $q2 (wjid,bbyl,ckyl)  values($wjid,$bbyl,$ckyl)";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 }else{
 }

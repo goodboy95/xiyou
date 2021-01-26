@@ -34,9 +34,8 @@ include("./sql/mysql.php");//调用数据库连接
 
 //判断表是否存在
 $q2="all_pm";
-if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '". $q2."'"))==1) {
+if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $q2 
 (  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '标识',
 `wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
@@ -49,7 +48,7 @@ $sql = " CREATE  TABLE  $q2
 `pmsjc` int( 11  )  NOT  NULL default  '0' COMMENT  '拍卖时间搓',
 `pmwpfl` int( 11  )  NOT  NULL default  '0' COMMENT  '拍卖物品分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 }
 //判断表是否存在 
    
@@ -77,15 +76,14 @@ mysql_query($sql,$conn);
 $q2="all_pm";
 
 
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 
 
 
 
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 
 if($row[pmwpfl]==5){
 if($row[pmwpsl]>0){  

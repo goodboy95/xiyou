@@ -47,15 +47,14 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_pm";
 
 
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 
 
 
 
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 
 
 if($row[pmwpsl]>0&&$row[wjid]==$wjid){  

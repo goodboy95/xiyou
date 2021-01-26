@@ -109,8 +109,8 @@ $cwxb=6;
 include("./sql/mysql.php");//调用数据库连接 
 //获取最大值
 $q2="cw".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -119,10 +119,9 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $q2="cw".$wjid;
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,cwid,cwmz,cwdj,cwxj,cwby,cwxb,cwcz)  values('$maxidd','$cwid','$nname','$ndj','$cwxj','$cwby','$cwxb','$cwcz')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
  //更新缓存数据
 $inina="cw.ini";

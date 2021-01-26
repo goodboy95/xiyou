@@ -24,10 +24,10 @@ $iniFile->updItem('财神币总和', ['初始' => 0]);
 $iniFile->updItem('财神币总和', ['初始1' => 0]);
 $q2="all_moneyjc";
 $strsql = "update $q2 set money=0 where id=1";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 $q2="all_moneyjc";
 $strsql = "update $q2 set money=0 where id=2";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 
 

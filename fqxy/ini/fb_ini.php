@@ -42,8 +42,8 @@ $fbid=1;
 
 
 $q2="fb".$wjid;
-$sql1=mysql_query("select * from $q2 where id=$fbid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=$fbid");
+$info1=@mysqli_fetch_array($sql1);
 $fbsj=$info1[fb];
 $fb01=$info1[wc];
 $fb02=$info1[cs];
@@ -53,8 +53,8 @@ $fbsj1=2;
 $fbsj=date('Y-m-d H:i:s',strtotime("-1 day"));
 
 $sql = "insert into $q2 (id,fb,wc,cs)  values('$fbid','$fbsj','3','0')";
- if (!mysql_query($sql,$conn)){
-die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+die('Error: ' . mysqli_error($conn));
  }
 
 $fb01=3;

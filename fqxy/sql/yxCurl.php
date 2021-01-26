@@ -24,8 +24,8 @@ if ($yxhe == 2) {
     //include("/mysql.php");//调用数据库连接
     //$sqid=$wjid."_".$qy;
     //$q2="o_user_list";
-    //$sql=mysql_query("select password from $q2 where sqid='$sqid'",$conn);
-    //$info1=@mysql_fetch_array($sql);
+    //$sql=mysqli_query($conn, "select password from $q2 where sqid='$sqid'");
+    //$info1=@mysqli_fetch_array($sql);
     //$pass=$info1[password];
 
     //社区验证游戏
@@ -73,7 +73,7 @@ if ($yxhe == 2) {
             include("mysql.php");//调用数据库连接
             $q2 = "o_user_list";
             $strsql = "update $q2 set password='$xxjy_pass' where sqid='$sqid'";//物品id号必改值
-            $result = mysql_query($strsql);
+            $result = mysqli_query($conn, $strsql);
 
             $inina = "yxuser.ini";
             //路径

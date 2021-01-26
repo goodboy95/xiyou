@@ -4,9 +4,8 @@
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="yxrw".$wjid;
-mysql_query("set names utf8");
 $strsql = "update $q2 set rwbl=$rwjc1,yisg=$rwjc2,ysg=$rwjc3,rwmz='$rwjc4' where rwid=$rw1 and rwfl=$rw5";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

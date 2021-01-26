@@ -24,9 +24,8 @@ $iniFile = new iniFile($file);
 $iniFile->addItem('财神币',['初始' => 0]); 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hbmoney";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $mwjid=$info1[wjid];
 $mwjmz=$info1[wjmz];
 $mwjmoney=$info1[money];
@@ -41,10 +40,9 @@ $mwjmoney=$info1[money];
  
  if($mwjid==""){	
 $q2="all_hbmoney";	
-mysql_query("set names utf8");
 $sql = "insert into $q2 (wjid,wjmz,money)  values('$wjid','$wjmz','0')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 $iniFile->addCategory('财神币', ['初始'=>'0']);
 } else{

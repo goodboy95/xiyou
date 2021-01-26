@@ -27,11 +27,10 @@ $iniFile->addItem('好友名字',['初始' => 123]);
 	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hy".$wjid;
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 $m=0;
-while(!!$row=mysql_fetch_array($result)){
+while(!!$row=mysqli_fetch_array($result)){
 $m=$m+1;
 $iniFile->addCategory('序列', [$row[hyid]=>$row[id] ]);
 $iniFile->addCategory('好友id', [$row[id]=> $row[hyid]]);

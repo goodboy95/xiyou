@@ -67,9 +67,8 @@ $iniFile->updItem('国家信息', ['国家人数'=> $bprspd]);
 	include("./sql/mysql.php");//调用数据库连接 
 
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set bpid=$bpid,bpmz='$bpmz' where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 include("bp_ini.php");
@@ -102,9 +101,8 @@ $iniFile->updItem('玩家信息', ['帮派职务' => $bpzw2]);
 
 	
 	$q2="bp".$bpid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -113,11 +111,10 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 		$q2="bp".$bpid;
-	mysql_query("set names utf8");
-$sql = "insert into $q2 (id,usermz,userid,gx,lsgx)  values('$maxidd','$wjmz','$wjid','0','0')";
- if (!mysql_query($sql,$conn))
+	$sql = "insert into $q2 (id,usermz,userid,gx,lsgx)  values('$maxidd','$wjmz','$wjid','0','0')";
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 

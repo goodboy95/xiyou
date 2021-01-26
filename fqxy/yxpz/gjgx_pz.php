@@ -31,7 +31,7 @@ $iniFile->updItem('贡献', [$xl => $gx]);
 $iniFile->updItem('历史贡献', [$xl => $gx]);
 $q2="bp".$bpid;
 $strsql = "update $q2 set gx=$gx,lsgx=$lsgx where userid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 
@@ -48,7 +48,7 @@ $iniFile->updItem('国家信息', ['国家声望' => $bpcc03]);
 
 $q2="all_bp";
 $strsql = "update $q2 set bpsw=$bpcc03 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

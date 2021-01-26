@@ -22,37 +22,35 @@ include("./sql/mysql.php");//调用数据库连接
 	
 //判断表是否存在
 $q2="jfdj".$wjid;
-if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '". $q2."'"))==1) {
+if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $q2 
 (  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
 `jfdj` int( 11  )  NOT  NULL default  '0' COMMENT  '解封等级')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 }
 //判断表是否存在
 
 
 
 $q2="jfdj".$wjid;
-$sql1=mysql_query("select id from $q2 where id=1",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select id from $q2 where id=1");
+$info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1[id];
 if($xlpd ==""){
 
 $sql = "insert into $q2 (id,jfdj)  values('1','159')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
 
 
 $q2="jfdj".$wjid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where id=1",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=1");
+$info1=@mysqli_fetch_array($sql1);
 $wjjfdj=$info1[jfdj];
 
 

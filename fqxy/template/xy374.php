@@ -46,9 +46,8 @@ echo "<font color=red>".$cwmz1."卸下了".$zbmz."！！</font>"."<br>";
 $q2="zb".$wjid;
 include("./sql/mysql.php");//调用数据库连接
 //获取最大值	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -59,15 +58,14 @@ $maxidd=$maxid+1;
 
 $sql1 = "insert into $q2 (id,zbid,zbxj,zbk1,zbxq1,zbk2,zbxq2,zbk3,zbxq3,zbk4,zbxq4,zbk5,zbxq5,zbpd) 
 values('$maxidd','$xw01','$xvjj','$zbkk1','$zbxqq1','$zbkk2','$zbxqq2','$zbkk3','$zbxqq3','$zbkk4','$zbxqq4','$zbkk5','$zbxqq5','0')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
  
  $q2="cwzbb".$wjid;
-mysql_query("set names utf8");
 $strsql = "delete from $q2 where cwid='$cwidx' and id=$xw02";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
  

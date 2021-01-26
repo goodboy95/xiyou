@@ -46,14 +46,14 @@ $fbbb2=$fb2-$fbb2;
 $iniFile->updItem('背包仓库银两', ['背包银两' => $fbbb2]);
 $q2="all_yl";  
 $strsql = "update $q2 set bbyl=$fbbb2 where wjid=$wjid";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 include("./ini/sw_ini.php");
 $fbbb3=$fb3-$fbb3;
 $iniFile->updItem('声望值', ['西游声望' => $fbbb3]);
 $q2="sw".$wjid;  
 $strsql = "update $q2 set swzz=$fbbb3 where swid=8";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 
 include("./ini/sc_ini.php");
@@ -61,7 +61,7 @@ $fbbb4=$fb4-$fbb4;
 $iniFile->updItem('商城数量', ['127' => $fbbb4]);
 $q2="wp".$wjid;  
 $strsql = "update $q2 set wpsl=$fbbb4 where wpid=127";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 
 //修炼等级提升
@@ -75,7 +75,7 @@ $rwxldj=$rwxldj+1;
 $iniFile->updItem('修炼等级', ['1' => $rwxldj]);
 $q2="xl".$wjid;  
 $strsql = "update $q2 set xldj=$rwxldj where xlid=1";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 //修炼等级提升
 //更新缓存数据
 $inina="ztt.ini";
@@ -131,14 +131,14 @@ $fbbb2=$fb2-$fbb2;
 $iniFile->updItem('背包仓库银两', ['背包银两' => $fbbb2]);
 $q2="all_yl";  
 $strsql = "update $q2 set bbyl=$fbbb2 where wjid=$wjid";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 include("./ini/sw_ini.php");
 $fbbb3=$fb3-$fbb3;
 $iniFile->updItem('声望值', ['西游声望' => $fbbb3]);
 $q2="sw".$wjid;  
 $strsql = "update $q2 set swzz=$fbbb3 where swid=8";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 
 
 //修炼等级提升
@@ -157,7 +157,7 @@ $iniFile->updItem('修炼等级', ['1' => $rwxldj]);
 
 $q2="xl".$wjid;  
 $strsql = "update $q2 set xldj=$rwxldj where xlid=1";
-$result = @mysql_query($strsql);
+$result = @mysqli_query($conn, $strsql);
 //修炼等级提升
 
 //更新缓存数据

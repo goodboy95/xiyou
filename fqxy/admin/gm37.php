@@ -10,13 +10,12 @@
 include("./sql/mysql.php");//调用数据库连接 
 
 $q2="all_zt";
-mysql_query("set names utf8");
 $str="select wjid from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 $xxcc=0;
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 $sxwjid[]=$row[wjid];
 $xxcc=$xxcc+1;
 
@@ -27,7 +26,7 @@ $sxi=-1;
 //清空
 $q2="all_phb";
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 $maxidd=0;
 for($d=0;$d<$xxcc;$d++){
@@ -50,10 +49,9 @@ $wjxx=($iniFile->getCategory('玩家信息'));
 if($wjxx[玩家名字]!=""){
 $maxidd=$maxidd+1;
 $q2="all_phb";
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,wjmz,vip,phb1,phb2,phb3,phb4,phb5,phb6,phb7,phb8)  values('$maxidd','$wjid','$wjxx[玩家名字]','$wjxx[vip等级]','$wjxx1[血]','$wjxx1[max攻击]','$wjxx1[max魔攻]','$wjxx1[max防御]','$wjxx[等级]','0','0','0')";
-if (!mysql_query($sql,$conn)){
-die('Error: ' . mysql_error());
+if (!mysqli_query($conn, $sql)){
+die('Error: ' . mysqli_error($conn));
 }
 } else{	
 }

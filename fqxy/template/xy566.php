@@ -115,7 +115,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_money";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 
 $csbbjc=$csbzh-$csbyq-$ylsxf;
@@ -124,14 +124,14 @@ include("./ini/moneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始' => $csbbjc]);
 $q2="all_moneyjc";
 $strsql = "update $q2 set money=$csbbjc where id=1";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 //保存盈利
 $csbzh1=$csbzh1-$csbyq;
 include("./ini/hbmoneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始1' => $csbzh1]);
 $strsql = "update $q2 set money=$csbzh1 where id=2";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 //保存盈利
 
 
@@ -161,7 +161,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_money";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 $csbbjc=$csbzh+$csbyq-$ylsxf;
 
@@ -169,7 +169,7 @@ include("./ini/moneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始' => $csbbjc]);
 $q2="all_moneyjc";
 $strsql = "update $q2 set money=$csbbjc where id=1";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 //保存盈利
 $csbzh1=$csbzh1+$csbyq;
@@ -177,7 +177,7 @@ $csbzh1=$csbzh1+$csbyq;
 include("./ini/moneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始1' => $csbzh1]);
 $strsql = "update $q2 set money=$csbzh1 where id=2";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 //保存盈利
 
 
@@ -230,8 +230,8 @@ echo "<font color=black>恭喜你！获得".$xysw1."财神积分</font><br>";
 	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hdph01";
-$sql1=mysql_query("select ds01 from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select ds01 from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $ds01=$info1[ds01];
 if($ds01 ==""){
 include("./ini/zt_ini.php");
@@ -239,25 +239,23 @@ $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $vip=($iniFile->getItem('玩家信息','vip等级'));
 //获取最大值
 $q2="all_hdph01";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
 }
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,wjmz,vip,ds01)  values('$maxidd','$wjid','$wjmz','$vip','$xysw1')";
- if (!mysql_query($sql,$conn)){
- die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+ die('Error: ' . mysqli_error($conn));
  }
 } else{	
 $xysw1=$xysw1+$ds01;
 $q2="all_hdph01";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=$xysw1 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 	
 //路径
 $inina="phb13.ini";

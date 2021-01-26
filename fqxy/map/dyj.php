@@ -105,8 +105,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开【�
 
 
 $q2="boss";
-$sql1=mysql_query("select * from $q2 where id=2",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where id=2");
+$info1=@mysqli_fetch_array($sql1);
 $yjdm=$info1[hp];
 
 
@@ -114,7 +114,7 @@ $yjdm=$info1[hp];
 if($yjdm>=1){
 $q2="yl".$fqidd;
 $strsql = "update $q2 set slid=2 where id=0";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;

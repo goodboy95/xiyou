@@ -41,7 +41,7 @@ include("./sql/mysql.php");//调用数据库连接
 //清空报名表
 $q2="gz02";
 $strsql = "truncate table $q2";
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 $inina="gz02.ini";
 $path='acher/guoz';
@@ -53,8 +53,8 @@ if($xtbl1==""){
 //新增数据
 $q2="xtbl";
 $sql = "insert into $q2 (id,bl1,bl2)  values('1','$m','$d')";
-if (!mysql_query($sql,$conn)){
-die('Error: ' . mysql_error());
+if (!mysqli_query($conn, $sql)){
+die('Error: ' . mysqli_error($conn));
 }
 
 //更新缓存数据
@@ -68,7 +68,7 @@ unlink($ininame); //删除文件
 //修改数据
 $q2="xtbl";
 $strsql = "update $q2 set bl1=$m,bl2=$d where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/xtbl_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('国战判断时间', ['月' => $m]);
@@ -124,9 +124,8 @@ if($gztime==""){
 include("./sql/mysql.php");//调用数据库连接 
 $nowtime=date('Y-m-d H:i:s');	
 $q2="gz05";
-mysql_query("set names utf8");	
 $sql = "insert  into $q2(id,gztime)  values('1','$nowtime')";
-$query = mysql_query($sql);
+$query = mysqli_query($conn, $sql);
 //更新缓存数据
 $inina="gz05.ini";
 $path='acher/guoz';
@@ -161,16 +160,16 @@ if($gztime1==$nowtime1&&$gztime1!=""){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 	
 $q2="gz03";
 $strsql = "truncate table $q2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="gz05";
 $strsql = "truncate table $q2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 //重新写入排行榜计时
 $nowtime=date('Y-m-d H:i:s');
 //添加时间
 $sql = "insert  into $q2(id,gztime)  values('1','$nowtime') ";
-$query = mysql_query($sql);
+$query = mysqli_query($conn, $sql);
 
 
 //更新缓存数据
@@ -198,10 +197,9 @@ if($gztime==""){
 	
 include("./sql/mysql.php");//调用数据库连接 
 $nowtime=date('Y-m-d H:i:s');	
-$q2="gz05";
-mysql_query("set names utf8");	
+$q2="gz05";	
 $sql = "insert  into $q2(id,gztime)  values('2','$nowtime')";
-$query = mysql_query($sql);
+$query = mysqli_query($conn, $sql);
 //更新缓存数据
 $inina="gz05.ini";
 $path='acher/guoz';
@@ -232,16 +230,16 @@ if($gztime1==$nowtime1&&$gztime1!=""){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 	
 $q2="gz04";
 $strsql = "truncate table $q2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="gz05";
 $strsql = "truncate table $q2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 //重新写入排行榜计时
 $nowtime=date('Y-m-d H:i:s');
 //添加时间
 $sql = "insert  into $q2(id,gztime)  values('2','$nowtime') ";
-$query = mysql_query($sql);
+$query = mysqli_query($conn, $sql);
 //更新缓存数据
 $inina="gz04.ini";
 $path='acher/guoz';
@@ -260,9 +258,8 @@ unlink($ininame); //删除文件
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="gz02";	
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where gjmz='$bpmzr'",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where gjmz='$bpmzr'");
+$info1=@mysqli_fetch_array($sql1);
 $gjmz=$info1[gjmz];
 
 
@@ -271,30 +268,28 @@ if($gjmz!=$bpmzr){
 
 ////////////////////将报名的国家写入国战2表内////////////////////////
 $q2="gz02";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
 if($maxid ==""){
-mysql_query("set names utf8");
 $maxid=0;
 $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,gjmz,gjid,jzmz,jzid,gjjf)  values('$maxidd','$bpmzr','$bpid','$xbzmz','$xwjid','0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 
 } else{
 
-mysql_query("set names utf8");
 
 $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,gjmz,gjid,jzmz,jzid,gjjf)  values('$maxidd','$bpmzr','$bpid','$xbzmz','$xwjid','0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 
@@ -319,20 +314,19 @@ $gjmz=($iniFile->getItem('已报名国家','国家名字'));
 if($gjmz==""){
 
 $q2="gz03";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
 if($maxid ==""){
 
-mysql_query("set names utf8");
 $maxid=0;
 $maxidd=$maxid+1;
 
 $sql = "insert into $q2 (id,gjmz,gjid,jzmz,jzid,gjjf,lq)  values('$maxidd','$bpmzr','$bpid','$xbzmz','$xwjid','0','0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //更新缓存数据
 $inina="gz03.ini";
@@ -344,13 +338,12 @@ unlink($ininame); //删除文件
 
 } else{
 
-mysql_query("set names utf8");
 
 $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,gjmz,gjid,jzmz,jzid,gjjf,lq)  values('$maxidd','$bpmzr','$bpid','$xbzmz','$xwjid','0','0')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 }
 //更新缓存数据
@@ -364,7 +357,7 @@ unlink($ininame); //删除文件
 } else{
 $q2="gz03";
 $strsql = "update $q2 set gjjf=0,lq=0 where gjid=$bpid";//国家官员死亡次数
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 

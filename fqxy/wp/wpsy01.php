@@ -74,9 +74,8 @@ include("./sql/mysql.php");//调用数据库连接
    	
 //获取最大值	
 $q2="jnn".$wjid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -86,9 +85,9 @@ $maxidd=$maxid+1;
 }
 
 $sql = "insert into $q2 (id,jnid,jndj)  values($maxidd,'2','1')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //强制更新jn-ini
  //ini文件名字
@@ -140,9 +139,8 @@ include("./sql/mysql.php");//调用数据库连接
    	
 //获取最大值	
 $q2="jnn".$wjid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -152,9 +150,9 @@ $maxidd=$maxid+1;
 }
 
 $sql = "insert into $q2 (id,jnid,jndj)  values($maxidd,'3','1')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //强制更新jn-ini
  //ini文件名字
@@ -266,9 +264,8 @@ include("./sql/mysql.php");//调用数据库连接
    	
 //获取最大值	
 $q2="jnn".$wjid;
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -280,9 +277,9 @@ $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,jnid,jndj)  values($maxidd,$jjid1,'1')";
 
 
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //include("./sql/mysql.php");//调用数据库连接 
    
@@ -292,9 +289,9 @@ $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,jnid,jndj)  values($maxidd,$jjid2,'1')";
 
 
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //强制更新jn-ini
  //ini文件名字
@@ -835,7 +832,7 @@ $iniFile->updItem('声望值', ['傲来国声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=13";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."傲来国声望！！</font><br>";
 
 } elseif($npcc ==10){//1000宝象国声望
@@ -864,7 +861,7 @@ $iniFile->updItem('声望值', ['宝象国声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=9";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."宝象国声望！！</font><br>";
 
 
@@ -895,7 +892,7 @@ $iniFile->updItem('声望值', ['将军府声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."将军府声望！！</font><br>";
 
 
@@ -926,7 +923,7 @@ $iniFile->updItem('声望值', ['普陀山声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=5";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."普陀山声望！！</font><br>";
 
 } elseif($npcc ==13){//1000龙宫声望
@@ -955,7 +952,7 @@ $iniFile->updItem('声望值', ['龙宫声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=3";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."龙宫声望！！</font><br>";
 
 } elseif($npcc ==14){//1000月宫声望
@@ -984,7 +981,7 @@ $iniFile->updItem('声望值', ['月宫声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=6";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."月宫声望！！</font><br>";
 
 
@@ -1017,7 +1014,7 @@ $iniFile->updItem('声望值', ['方寸山声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=4";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."方寸山声望！！</font><br>";
 
 
@@ -1051,7 +1048,7 @@ $iniFile->updItem('声望值', ['天宫声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=11";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."天宫声望！！</font><br>";
 
 } elseif($npcc ==17){//1000地府声望
@@ -1080,7 +1077,7 @@ $iniFile->updItem('声望值', ['地府声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=12";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."地府声望！！</font><br>";
 
 } elseif($npcc ==18){//1000西游声望
@@ -1109,7 +1106,7 @@ $iniFile->updItem('声望值', ['西游声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=8";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."西游声望！！</font><br>";
 
 
@@ -1139,7 +1136,7 @@ $iniFile->updItem('声望值', ['乌鸡国声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=10";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."乌鸡国声望！！</font><br>";
 
 
@@ -1169,7 +1166,7 @@ $iniFile->updItem('声望值', ['恶魔广场声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=7";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."恶魔广场声望！！</font><br>";
 
 
@@ -1199,7 +1196,7 @@ $iniFile->updItem('声望值', ['夫妻声望' => $sw]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 echo "<font color=black>获得".$syz."夫妻声望！！</font><br>";
 
 

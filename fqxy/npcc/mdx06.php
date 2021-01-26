@@ -35,7 +35,7 @@ $wpzzz="商城数量";
 
 if($yll==0){
 $strsql = "delete from $q2 where wpid=128 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/sc_ini.php");
 
   
@@ -52,7 +52,7 @@ $iniFile->delItem($pzinimz3, '128');
 
 } else {
 $strsql = "update $q2 set wpsl=$yll where wpid=128";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/sc_ini.php");
 //缓存修改
 $iniFile->updItem('商城数量', ['128' => $yll]);

@@ -82,9 +82,8 @@ if($yd01>=1||$yd02>=1){
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=0,ds02=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd01_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => '0','活动点数' => '0']);
 
@@ -103,9 +102,8 @@ $hdyd="";
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
-mysql_query("set names utf8");
 $strsql = "update $q2 set dy01_time='$nowtime',ds01='0',yd01='0',yd02='0' where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd01_ini.php");
 $iniFile->updItem('摇点信息', ['摇点时间' => $nowtime,'今日点数' => '0','免费次数' => '0','收费次数' => '0']);
 include("./ini/yd01_ini.php");
@@ -203,9 +201,8 @@ if($yd01>=1||$yd02>=1){
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
-mysql_query("set names utf8");
 $strsql = "update $q2 set ds01=0,ds02=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yd01_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => '0','活动点数' => '0']);
 

@@ -6,7 +6,7 @@ echo "<font color=black>所有奖池已初始化完毕</font>"."<br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_jc";
 $strsql="truncate table $q2";
-$result=mysql_query($strsql);
+$result=mysqli_query($conn, $strsql);
 
 $inina="hdjc.ini";
 $path='acher/hdjc';

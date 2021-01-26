@@ -28,12 +28,12 @@ if($wpbd==1){
 	//扣除手续费	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl-$ylsxf;
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
 $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 //数字转汉字
@@ -70,15 +70,15 @@ $wpsl=$wpsl-$sl;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //仓库加
 
 
 
 //获取最大值
 $q2="all_pm";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -93,10 +93,9 @@ $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $timex=time(true);
 $nowtime=date('Y-m-d H:i:s');
 $q2="all_pm";
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,wjmz,pmtime,pmwpid,pmwpmz,pmwpsl,pmwpjg,pmsjc,pmwpfl)  values('$maxidd','$wjid','$wjmz','$nowtime','$npcc','$wpmz','$sl','$gsjg','$timex','$wpfl')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 
 
@@ -380,7 +379,7 @@ $wpsl=$wpsl-$sl;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //仓库加
 
@@ -388,8 +387,8 @@ $result = mysql_query($strsql);
 
 //获取最大值
 $q2="all_pm";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -404,10 +403,9 @@ $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $timex=time(true);
 $nowtime=date('Y-m-d H:i:s');
 $q2="all_pm";
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,wjmz,pmtime,pmwpid,pmwpmz,pmwpsl,pmwpjg,pmsjc,pmwpfl)  values('$maxidd','$wjid','$wjmz','$nowtime','$npcc','$wpmz','$sl','$gsjg','$timex','$wpfl')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 
 

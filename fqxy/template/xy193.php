@@ -65,10 +65,9 @@ $iniFile->updItem('夺仗人id', ['100' => $wjid]);
 } else{
 include("./sql/mysql.php");//调用数据库连接 
 $q2="gz01";
-mysql_query("set names utf8");
 $sql = "insert into $q2 (zcid,zlgj,zlgjid,gjjz,gjjzid,czz,czzid)  values('100','$bpmz','$bpid','$xbzmz','$xwjid','$uname','$wjid')";
- if (!mysql_query($sql,$conn)){
- die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+ die('Error: ' . mysqli_error($conn));
  }
  //更新缓存数据
 $inina="gz01.ini";
@@ -209,9 +208,8 @@ $iniFile->updItem('个人积分', [$wjid => $gjjf]);
 } else{
 include("./sql/mysql.php");//调用数据库连接 
 $q2="gz04";	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -220,12 +218,11 @@ $maxid=0;
 include("./ini/zt_ini.php");
 $uname=($iniFile->getItem('玩家信息','玩家名字'));
 $q2="gz04";	
-mysql_query("set names utf8");
 $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,wjid,wjname,wjgzjf,wjlq)  values('$maxidd','$wjid','$uname','$gjjf','1')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
  //更新缓存数据
 $inina="gz04.ini";

@@ -165,7 +165,7 @@ $zbid2=$arr[1];
 
 $q2="zbb".$wjid; //数据库位置 
 $strsql = "update $q2 set $dkmz=$xxid where zbid=$zbid1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 $inina="zbb.ini";
 $path='ache/'.$wjid;

@@ -18,9 +18,8 @@ if($wjtake10!=""){
 	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_sdk";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where sdk='$wjtake10'",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where sdk='$wjtake10'");
+$info1=@mysqli_fetch_array($sql1);
 $sdk1=$info1[sdkid];
 $sdk2=$info1[sdktime];
 $sdk3=$info1[sdkfl];
@@ -34,7 +33,7 @@ $nowtime=date('Y-m-d H:i:s');
 if($nowtime<=$sdk2){	
 $q2="all_sdk";
 $strsql = "update $q2 set sdksy=2 where sdk='$wjtake10'";//物品id号必改值
-$result = mysql_query($strsql);		
+$result = mysqli_query($conn, $strsql);		
 
 if($sdk3==1){
 $sdkmz="宣传SDK码";

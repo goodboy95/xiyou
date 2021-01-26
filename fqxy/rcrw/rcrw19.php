@@ -173,7 +173,7 @@ include("./rwmap/rwget.php");
 
 $q2="yxrw".$wjid;
 $strsql = "delete from $q2 where rwid=$rwidd and rwfl=$rwfl ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zxrw_ini.php");
 $rwstr=$rwidd."_".$rwfl;
 # 删除一个子项
@@ -193,7 +193,7 @@ $iniFile->delItem('任务名字', $rwstr);
 	$hdcs=$hdcs+1;
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdcs=$hdcs where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动次数', [$hdid => $hdcs]);	
 

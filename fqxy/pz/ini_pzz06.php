@@ -3,8 +3,8 @@ $jjdj=1;//家具等级
 $jjbf=1;//家具摆放
 //获取最大值
 $q2="jj".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -13,9 +13,9 @@ $maxidd=$maxid+1;
 $maxidd=$maxid+1;
 }
 $sql = "insert into $q2 (id,jjid,jjdj,jjbf)  values('$maxidd','$jjid','$jjdj','$jjbf')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 //更新缓存数据
 $inina="jj.ini";

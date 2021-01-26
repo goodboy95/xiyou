@@ -27,9 +27,8 @@ $iniFile->addItem('排行榜值6',['初始' => 0]);
 include("./sql/mysql.php");//调用数据库连接 
 //判断表是否存在
 $q2="all_jdjc";
-if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '". $q2."'"))==1) {
+if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $q2 
 (  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
 `wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
@@ -39,18 +38,17 @@ $sql = " CREATE  TABLE  $q2
 `cq` int( 11  )  NOT  NULL default  '0' COMMENT  '出拳',
 `timex` text NOT  NULL  COMMENT  '竞猜时间')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 }
 //判断表是否存在
 
 
 $q2="all_jdjc";
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 
- while(!!$row=mysql_fetch_array($result)){
+ while(!!$row=mysqli_fetch_array($result)){
 
  
 $iniFile->addCategory('排行榜名字', [$row[id]=> $row[wjmz]]);

@@ -19,9 +19,8 @@ else
 include("./sql/mysql.php");//调用数据库连接 
    
 $q2="all_user";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid and fl=1",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid and fl=1");
+$info1=@mysqli_fetch_array($sql1);
 $uname=$info1[wjname];
 $wjuserid=$info1[wjid];
 $wjtime=$info1[wjtime];
@@ -51,9 +50,8 @@ $iniFile->addCategory('禁言信息', ['玩家名字' => $uname, '禁言时间' 
 
 
 $q2="all_user";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid and fl=2",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid and fl=2");
+$info1=@mysqli_fetch_array($sql1);
 $uname=$info1[wjname];
 $wjuserid=$info1[wjid];
 $wjtime=$info1[wjtime];

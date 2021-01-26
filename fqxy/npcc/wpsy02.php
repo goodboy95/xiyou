@@ -243,7 +243,7 @@ if($wpfl==1||$wpfl==2||$wpfl==4||$wpfl==5||$wpfl==6||$wpfl==7||$wpfl==8){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } else{
 
 
@@ -496,7 +496,7 @@ if($wpfl==1||$wpfl==2||$wpfl==4||$wpfl==5||$wpfl==6||$wpfl==7||$wpfl==8){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="wp".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 } else{
 

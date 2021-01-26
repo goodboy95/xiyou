@@ -37,31 +37,30 @@ $gjwjmzid=($iniFile->getItem('名字id',$xl));
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
-mysql_query("set names utf8");
 if($npccid==2){  
 $bpzw1="辅助大臣";
 $strsql = "update $q2 set ccmz01=$gjwjmz,ccid01=$gjwjmzid where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($npccid==3){  
 $bpzw1="军机大臣";
 $strsql = "update $q2 set ccmz02=$gjwjmz,ccid02=$gjwjmzid where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($npccid==4){  
 $bpzw1="财政大臣";
 $strsql = "update $q2 set ccmz03=$gjwjmz,ccid03=$gjwjmzid where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($npccid==5){  
 $bpzw1="工部大臣";
 $strsql = "update $q2 set ccmz04=$gjwjmz,ccid04=$gjwjmzid where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($npccid==6){  
 $bpzw1="外交大臣";
 $strsql = "update $q2 set ccmz05=$gjwjmz,ccid05=$gjwjmzid where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($npccid==7){  
 $bpzw1="军团长";
 $strsql = "update $q2 set ccmz06=$gjwjmz,ccid06=$gjwjmzid where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } elseif($npccid==1){  
 $bpzw1="君主";
 } else{

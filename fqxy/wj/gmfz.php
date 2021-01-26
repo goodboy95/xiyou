@@ -12,9 +12,8 @@ include("./ini/zt_ini.php");
 $wjname=($iniFile->getItem('玩家信息','玩家名字'));	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_houres";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -27,20 +26,18 @@ $fziidd=$maxidd;
 $fzname="民宅";//房子名字
 $fzfl=1;//房子类型
 $fzgm=0;//房子改名
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,fzid,wjmz,fzmz,fzfl,fzgm)  values('$maxidd','$wjid','$fziidd','$wjname','$fzname','$fzfl','$fzgm')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zzid=$fziidd,zzmz='$fzname',zzfl=$fzfl where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="all_yl";
 $yll=$yl-$fz01;
 $strsql = "update $q2 set bbyl=$yll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 include("./ini/zt_ini.php");
@@ -70,9 +67,8 @@ include("./ini/zt_ini.php");
 $wjname=($iniFile->getItem('玩家信息','玩家名字'));	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_houres";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -85,19 +81,17 @@ $fziidd=$maxidd;
 $fzname="豪宅";//房子名字
 $fzfl=2;//房子类型
 $fzgm=1;//房子改名
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,fzid,wjmz,fzmz,fzfl,fzgm)  values('$maxidd','$wjid','$fziidd','$wjname','$fzname','$fzfl','$fzgm')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zzid=$fziidd,zzmz='$fzname',zzfl=$fzfl where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$kcjd where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['住宅id'=> $fziidd]);
 $iniFile->updItem('玩家信息', ['住宅分类'=> $fzfl]);
@@ -128,9 +122,8 @@ include("./ini/zt_ini.php");
 $wjname=($iniFile->getItem('玩家信息','玩家名字'));	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_houres";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -143,21 +136,19 @@ $fziidd=$maxidd;
 $fzname="豪宅";//房子名字
 $fzfl=2;//房子类型
 $fzgm=1;//房子改名
-mysql_query("set names utf8");
 $sql = "insert into $q2 (id,wjid,fzid,wjmz,fzmz,fzfl,fzgm)  values('$maxidd','$wjid','$fziidd','$wjname','$fzname','$fzfl','$fzgm')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 $q2="all_zt";
-mysql_query("set names utf8");
 $strsql = "update $q2 set zzid=$fziidd,zzmz='$fzname',zzfl=$fzfl where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$kcjd where wpid=127";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $strsql = "update $q2 set wpsl=$kcyhj where wpid=396";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['住宅id'=> $fziidd]);

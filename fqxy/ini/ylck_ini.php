@@ -15,24 +15,22 @@ if(file_exists($file)){
 include("./sql/mysql.php");//调用数据库连接 
  //判断表是否存在
 $q2="all_ylck";
-if(mysql_num_rows(mysql_query("SHOW TABLES LIKE '". $q2."'"))==1) {
+if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
-mysql_query("set names utf8");
 $sql = " CREATE  TABLE  $q2 
 (`wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
 `yl01` text NOT  NULL  COMMENT  '银两',
 `yl02` text NOT  NULL  COMMENT  '金豆',
 `yl03` text NOT  NULL  COMMENT  '金带')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
-mysql_query($sql,$conn);
+mysqli_query($conn, $sql);
 }
 //判断表是否存在  
 
 
 $q2="all_ylck";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $yl01=$info1[yl01];
 $yl02=$info1[yl02];
 $yl03=$info1[yl03];

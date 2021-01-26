@@ -24,9 +24,8 @@ include("./sql/mysql.php");//调用数据库连接
 
 //获取最大值
 $q2="all_sdk";
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
 if($maxid ==""){
@@ -39,11 +38,10 @@ $q2="all_sdk";
 
 $viptime1=date("Y-m-d H:i:s",strtotime("$viptime   $addtime   day"));   //日期天数相加函数
 
-mysql_query("set names utf8");
 $sql = "insert into $q2 (sdkid,sdk,sdktime,sdkfl,sdksy)  values('$maxidd','$a2','$viptime1','$sdkfl','1')";
- if (!mysql_query($sql,$conn))
+ if (!mysqli_query($conn, $sql))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }
 
 

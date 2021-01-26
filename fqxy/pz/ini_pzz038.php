@@ -5,7 +5,7 @@ include("./ini/jfdj_ini.php");
 include("./sql/mysql.php");//调用数据库连接 
 $q2="jfdj".$wjid; //数据库位置 
 $strsql = "update $q2 set jfdj=$wpjfdj where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 //更新缓存数据

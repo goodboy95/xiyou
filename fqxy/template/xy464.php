@@ -35,7 +35,7 @@ include("./pz/ini_pz03.php");
 
 $q2="all_ylck";
 $strsql = "update $q2 set yl01='0' where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 $inina="ylck.ini";
 $path='ache/'.$wjid;
@@ -85,7 +85,7 @@ $kcrl=$wpkc*$wpzl;
 include("./pz/ini_pzz09.php");
 $q2="all_ylck";
 $strsql = "update $q2 set yl02='0' where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //更新缓存数据
 $inina="ylck.ini";
 $path='ache/'.$wjid;

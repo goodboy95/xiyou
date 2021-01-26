@@ -40,12 +40,11 @@ include("./sql/mysql.php");//调用数据库连接
  
  
 $q2="all_gzhoures";
-mysql_query("set names utf8");
 $str="select * from $q2";
-$result=mysql_query($str) or die('SQL语句有误');
+$result=mysqli_query($conn, $str) or die('SQL语句有误');
  //把有值的数据存入一个数组
 $m=0;
-  while(!!$row=mysql_fetch_array($result)){
+  while(!!$row=mysqli_fetch_array($result)){
  
  $iniFile->addItem('官宅id',[$row[fzid] => $row[fzid]]); 
  

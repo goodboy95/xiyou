@@ -182,7 +182,7 @@ echo "<font color=red>对不起！！由于您未在施肥时间前来施肥作�
 include("./sql/mysql.php");//调用数据库连接 
 $q2="zz".$wjid;
 $strsql = "delete from $q2 where id=1 ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //更新缓存数据
 $inina="zz.ini";

@@ -22,15 +22,14 @@ else
 include("./sql/mysql.php");//调用数据库连接 
    
 $q2="all_yd01";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $ydid=$info1[wjid];
 if($ydid ==""){
 //获取最大值
 $q2="all_yd01";
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxidd=$maxid+1;
@@ -39,8 +38,8 @@ $maxidd=$maxid+1;
 }
 $nowtime=date('Y-m-d H:i:s');
 $sql = "insert into $q2 (id,wjid,wjmz,vip,ds01,ds02,dy01_time,yd01,yd02)  values('$maxidd','$wjid','$wjxx[玩家名字]','$wjxx[vip等级]','0','0','$nowtime','yd01','yd02')";
- if (!mysql_query($sql,$conn)){
-   die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+   die('Error: ' . mysqli_error($conn));
  }
 } else{
 }
@@ -50,9 +49,8 @@ $sql = "insert into $q2 (id,wjid,wjmz,vip,ds01,ds02,dy01_time,yd01,yd02)  values
  
  
 $q2="all_yd01";
-mysql_query("set names utf8");
-$sql1=mysql_query("select * from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $ds01=$info1[ds01];
 $ds02=$info1[ds02];
 $dy01_time=$info1[dy01_time];

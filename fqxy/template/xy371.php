@@ -27,13 +27,11 @@ $arr = explode("_",$cwidd);
 $cwidd1=$arr[0];
 $cwidd2=$arr[1];
 $q2="cw".$wjid;
-mysql_query("set names utf8");
 $strsql = "delete from $q2 where id=$cwidd2";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="cwzbb".$wjid;
-mysql_query("set names utf8");
 $strsql = "delete from $q2 where cwid='$cwidd'";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //执行代码
 
 

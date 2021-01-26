@@ -37,9 +37,8 @@ echo "<br>";
 
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_pm";
-mysql_query("set names utf8");
-$sql1=mysql_query("select pmsjc from $q2 where id=$pxid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select pmsjc from $q2 where id=$pxid");
+$info1=@mysqli_fetch_array($sql1);
 $pmsjc=$info1[pmsjc];
 if($wpsjc==$pmsjc){
 	
@@ -47,8 +46,8 @@ if($wpsjc==$pmsjc){
 	
 	
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$pmmwjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$pmmwjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl+$sl*$wpjgg;
 if($wjyll>=99999999999){
@@ -57,7 +56,7 @@ $wjyll=99999999999;
 
 } 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$pmmwjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //ini文件名字
 $inina="yl.ini";
@@ -78,8 +77,8 @@ unlink($ininame); //删除文件
 
 
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl-($sl*$wpjgg+$ylsxf);
 if($wjyll<=0){
@@ -89,7 +88,7 @@ $wjyll=0;
 } 
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 //ini文件名字
 $inina="yl.ini";
 //路径
@@ -111,22 +110,22 @@ unlink($ininame); //删除文件
 $wpsl=$wpsl-$sl;
 $q2="all_pm";
 $strsql = "update $q2 set pmwpsl=$wpsl where id=$pxid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 
 
 //查询如果没有则添加
 $q2="wp".$wjid;
-$sql1=mysql_query("select * from $q2 where wpid=$pmmwpid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wpid=$pmmwpid");
+$info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1[wpid];
 $ckwpsl=$info1[wpsl];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -140,14 +139,14 @@ $npcc=$pmmwpid;
 include("./wp/wpxx.php");
 $q2="wp".$wjid;
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','$pmmwpid','$ckwpsl','$wpfl')";
- if (!mysql_query($sql,$conn)){
-die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+die('Error: ' . mysqli_error($conn));
 }
 } else{
 $q2="wp".$wjid;	
 $ckwpsl=$ckwpsl+$sl;
 $strsql = "update $q2 set wpsl=$ckwpsl where wpid=$ckwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 
 
 
@@ -388,9 +387,8 @@ echo "<br>";
 //验证时间戳
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_pm";
-mysql_query("set names utf8");
-$sql1=mysql_query("select pmsjc from $q2 where id=$pxid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select pmsjc from $q2 where id=$pxid");
+$info1=@mysqli_fetch_array($sql1);
 $pmsjc=$info1[pmsjc];
 if($wpsjc==$pmsjc){
 
@@ -400,8 +398,8 @@ if($wpsjc==$pmsjc){
 	
 	
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$pmmwjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$pmmwjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl+$sl*$wpjgg;
 if($wjyll>=99999999999){
@@ -410,7 +408,7 @@ $wjyll=99999999999;
 
 } 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$pmmwjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 //ini文件名字
 $inina="yl.ini";
@@ -429,8 +427,8 @@ unlink($ininame); //删除文件
 
 
 $q2="all_yl";
-$sql1=mysql_query("select bbyl from $q2 where wjid=$wjid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
+$info1=@mysqli_fetch_array($sql1);
 $wjyl=$info1[bbyl];
 $wjyll=$wjyl-($sl*$wpjgg+$ylsxf);
 if($wjyll<=0){
@@ -440,7 +438,7 @@ $wjyll=0;
 } 
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
 //ini文件名字
 $inina="yl.ini";
@@ -465,20 +463,20 @@ unlink($ininame); //删除文件
 
 $q2="all_pm";
 $strsql = "delete from $q2 where id=$pxid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 
 //查询如果没有则添加
 $q2="wp".$wjid;
-$sql1=mysql_query("select * from $q2 where wpid=$pmmwpid",$conn);
-$info1=@mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select * from $q2 where wpid=$pmmwpid");
+$info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1[wpid];
 $ckwpsl=$info1[wpsl];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -492,14 +490,14 @@ $npcc=$pmmwpid;
 include("./wp/wpxx.php");
 $q2="wp".$wjid;
 $sql = "insert into $q2 (id,wpid,wpsl,wpfl)  values('$maxidd','$pmmwpid','$ckwpsl','$wpfl')";
- if (!mysql_query($sql,$conn)){
-die('Error: ' . mysql_error());
+ if (!mysqli_query($conn, $sql)){
+die('Error: ' . mysqli_error($conn));
 }
 } else{
 $q2="wp".$wjid;	
 $ckwpsl=$ckwpsl+$sl;
 $strsql = "update $q2 set wpsl=$ckwpsl where wpid=$ckwpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 } 
 
 

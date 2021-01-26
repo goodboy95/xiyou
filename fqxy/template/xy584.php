@@ -61,7 +61,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hbmoney";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 
 
 echo "<font color=black>恭喜你！！获得〖红包〗x".$csbyq."</font>"."<br>";
@@ -103,7 +103,7 @@ $iniFile->updItem('财神币', ['初始' => $csbb]);
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hbmoney";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);	
+$result = mysqli_query($conn, $strsql);	
 echo "<font color=black>失去〖红包〗x".$csbyq."</font>"."<br>";
 $manzu1="";
 $kcrl="";

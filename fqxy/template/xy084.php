@@ -40,12 +40,11 @@ $sszbxqq5=($iniFile->getItem('装备镶嵌5',$szbid));
 	 $q2="zbb".$wjid;
 include("./sql/mysql.php");//调用数据库连接
 $strsql = "delete from $q2 where zbid=$npcc ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
  $q2="zb".$wjid; 
 	//获取最大值	
-mysql_query("set names utf8");
-$sql1=mysql_query("select MAX(id) from $q2");
-$abc=mysql_fetch_array($sql1);
+$sql1=mysqli_query($conn, "select MAX(id) from $q2");
+$abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
@@ -55,9 +54,9 @@ $maxidd=$maxid+1;
 }
 
 $sql1 = "insert into $q2 (id,zbid,zbxj,zbk1,zbxq1,zbk2,zbxq2,zbk3,zbxq3,zbk4,zbxq4,zbk5,zbxq5,zbpd)  values('$maxidd','$npcc','$ssxvjj','$sszbkk1','$sszbxqq1','$sszbkk2','$sszbxqq2','$sszbkk3','$sszbxqq3','$sszbkk4','$sszbxqq4','$sszbkk5','$sszbxqq5','0')";
- if (!mysql_query($sql1,$conn))
+ if (!mysqli_query($conn, $sql1))
  {
-   die('Error: ' . mysql_error());
+   die('Error: ' . mysqli_error($conn));
  }	
 
 

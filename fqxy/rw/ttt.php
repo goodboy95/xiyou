@@ -1031,7 +1031,7 @@ $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdcs=$hdcs+1;
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdcs=$hdcs where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动次数', [$hdid => $hdcs]);	
 

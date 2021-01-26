@@ -51,7 +51,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="zz".$wjid;
 $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期天数相加函数
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
 echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
 } else{
@@ -99,7 +99,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="zz".$wjid;
 $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期天数相加函数
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
 echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
 } else{
@@ -147,7 +147,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="zz".$wjid;
 $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期天数相加函数
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
 echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
 } else{
@@ -194,7 +194,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="zz".$wjid;
 $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期天数相加函数
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
 echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
 } else{

@@ -174,7 +174,7 @@ if($t>=10){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_pm";
 $strsql = "delete from $q2 where id=$keypmxxl[$imb]";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/pm_nc_ini.php");
 # 删除一个子项
 $iniFile->delItem('排序', $keypmxxl[$imb]);

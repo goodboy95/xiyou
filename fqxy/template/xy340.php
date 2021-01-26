@@ -39,7 +39,7 @@ if($cc02==$wjid){
 
 $q2="all_bp";
 $strsql = "update $q2 set ccmz01=0,ccid01=0 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['辅助大臣'=> 0]);
 $iniFile->updItem('国家信息', ['辅助大臣id'=> 0]);
 
@@ -47,7 +47,7 @@ $iniFile->updItem('国家信息', ['辅助大臣id'=> 0]);
 } elseif($cc03==$wjid){  
 $q2="all_bp";
 $strsql = "update $q2 set ccmz02=0,ccid02=0 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['军机大臣'=> 0]);
 $iniFile->updItem('国家信息', ['军机大臣id'=> 0]);
 
@@ -55,27 +55,27 @@ $iniFile->updItem('国家信息', ['军机大臣id'=> 0]);
 
 $q2="all_bp";
 $strsql = "update $q2 set ccmz03=0,ccid03=0 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['财政大臣'=> 0]);
 $iniFile->updItem('国家信息', ['财政大臣id'=> 0]);
 } elseif($cc05==$wjid){  
 $q2="all_bp";
 $strsql = "update $q2 set ccmz04=0,ccid04=0 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['工部大臣'=> 0]);
 $iniFile->updItem('国家信息', ['工部大臣id'=> 0]);
 
 } elseif($cc06==$wjid){  
 $q2="all_bp";
 $strsql = "update $q2 set ccmz05=0,ccid05=0 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['外交大臣'=> 0]);
 $iniFile->updItem('国家信息', ['外交大臣id'=> 0]);
 
 } elseif($cc07==$wjid){  
 $q2="all_bp";
 $strsql = "update $q2 set ccmz06=0,ccid06=0 where bpid=$bpid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['军团长'=> 0]);
 $iniFile->updItem('国家信息', ['军团长id'=> 0]);
 } else{
@@ -85,10 +85,10 @@ $iniFile->updItem('国家信息', ['军团长id'=> 0]);
 
 $q2="all_zt";
 $strsql = "update $q2 set bpid=0,bpmz=0 where wjid=$wjid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 $q2="bp".$bpid;
 $strsql = "delete from $q2 where userid=$wjid ";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 
 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)

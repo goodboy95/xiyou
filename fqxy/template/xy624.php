@@ -90,7 +90,7 @@ if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 include("./sql/mysql.php");//调用数据库连接 
 $q2="hd".$wjid;
 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$hdid";//物品id号必改值
-$result = mysql_query($strsql);
+$result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 
