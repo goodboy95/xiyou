@@ -33,7 +33,7 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 获取一个分类下所有数据$
 $wjxx=($iniFile->getCategory('玩家信息'));
-$ckname=$wjxx[玩家名字];
+$ckname=$wjxx['玩家名字'];
 
 
 	//调用hy.ini是否存在
@@ -53,7 +53,6 @@ $ivdd=($iniFile->getItem('序列',$wjid1));
 $ivdd1=($iniFile->getItem('好友分类',$ivdd));
 if($ivdd==""){
 $ivdd1=1;
-} else{
 }
 
 
@@ -77,7 +76,6 @@ if($wjtake10!=""){
 if($wjtakes2>0&&$wjtakes2<=20||$wjtakes2>0&&$wjtakes2<=20){
 if($wjtakes2>0){
 $wjtake=$wjtake10;
-} else{
 }
 	
 	
@@ -129,8 +127,7 @@ foreach( $arr1 as $k=>$v) {
 $ltmax1=max($arr1);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -175,7 +172,6 @@ foreach( $arr2 as $k1=>$v1) {
 $lttmax1=max($arr2);
 if($lttmax1=="排序"){
 $lttmax1=0;
-	} else{
 	}
 
 $lttmax1=$lttmax1+1;
@@ -286,7 +282,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

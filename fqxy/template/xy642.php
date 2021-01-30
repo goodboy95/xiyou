@@ -11,8 +11,8 @@ include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 include("wj/ztt.php");
 include("wj/zfzt.php");
-$ohp=$wjxx[红];
-$omaxhp=$wjxx1[血];	
+$ohp=$wjxx['红'];
+$omaxhp=$wjxx1['血'];	
 
 echo "<font color=red>【诛仙台属性】:</font>"."<br>";
 //显示自己

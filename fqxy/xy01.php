@@ -201,8 +201,7 @@ include("template/xy099.php");//交易
 include("template/xy100.php");//加好友
 
 
-} else{
-} 
+}
 
 
 

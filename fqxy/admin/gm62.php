@@ -20,18 +20,16 @@ $wjid=$i+10000000;
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select wpsl from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpsl=$info1[wpsl];
+$ckwpsl=$info1['wpsl'];
 if($ckwpsl ==""){
 $ckwpsl=0;
-} else{
 }
 $q2="ckwp".$wjid;
 $sql1=mysqli_query($conn, "select wpsl from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpsl1=$info1[wpsl];
+$ckwpsl1=$info1['wpsl'];
 if($ckwpsl1 ==""){
 $ckwpsl1=0;
-} else{
 }
 
 if($ckwpsl >=1||$ckwpsl1 >=1){
@@ -45,12 +43,10 @@ echo "<font color=red>【YES】</font>玩家ID（".$wjid."）所属物品ID：�
 } else{	
 if($ckwpsl >=1){
 echo "<font color=red>【YES】</font>玩家ID（".$wjid."）所属物品ID：【".$czid."】====<font color=red>背包数量：【".$ckwpsl."】</font>====仓库数量：【".$ckwpsl1."】</br>";
-} else{
-} 
+}
 if($ckwpsl1 >=1){
 echo "<font color=red>【YES】</font>玩家ID（".$wjid."）所属物品ID：【".$czid."】====背包数量：【".$ckwpsl."】====<font color=red>仓库数量：【".$ckwpsl1."】</font></br>";
-} else{
-} 
+}
 } 
 
 

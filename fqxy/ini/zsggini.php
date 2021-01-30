@@ -7,11 +7,7 @@ if ($wjid==10000001) {//gm号可看
 
 echo "<font color=black>操作公共资源：</font>".$ininalock1."<br>";
 
-} else{
-
-
-	
-} 
+}
 
 
 $zspd1=0;
@@ -40,8 +36,7 @@ if(flock($fp1,LOCK_EX | LOCK_NB)){
 	if($zspd1>=25){
 	$zsspd1=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 

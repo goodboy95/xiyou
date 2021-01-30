@@ -34,9 +34,9 @@ $iniFile = new iniFile($ininame);
 
 # 获取一个分类下多个子项的值
 $wjxx=($iniFile->getItem('玩家信息',['背包容量','仓库容量']));
-$bbrlb=$wjxx[背包容量];
+$bbrlb=$wjxx['背包容量'];
 
-$cbbrlb=$wjxx[仓库容量];
+$cbbrlb=$wjxx['仓库容量'];
 	
 	
 	
@@ -273,7 +273,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

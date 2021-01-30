@@ -38,8 +38,6 @@ $clj[]=10;
 $npc[]=603;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九趾蟠龙】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -49,9 +47,7 @@ $clj[]=10;
 $npc[]=609;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九趾蟠龙】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -59,8 +55,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=615;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九趾蟠龙】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -71,8 +65,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=689;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九趾蟠龙】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -177,8 +169,6 @@ $clj[]=10;
 $npc[]=604;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九天应龙】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -188,9 +178,7 @@ $clj[]=10;
 $npc[]=610;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九天应龙】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -198,8 +186,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=616;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九天应龙】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -210,8 +196,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=690;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九天应龙】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -327,8 +311,6 @@ $clj[]=10;
 $npc[]=605;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金眼狻猊】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -338,9 +320,7 @@ $clj[]=10;
 $npc[]=611;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金眼狻猊】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -348,8 +328,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=617;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金眼狻猊】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -361,8 +339,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=691;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金眼狻猊】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -569,8 +545,6 @@ $clj[]=10;
 $npc[]=606;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【赤足青鸟】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -580,9 +554,7 @@ $clj[]=10;
 $npc[]=612;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【赤足青鸟】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -590,8 +562,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=618;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【赤足青鸟】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -603,8 +573,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=692;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【赤足青鸟】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -813,8 +781,6 @@ $clj[]=10;
 $npc[]=607;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【昊冥玄鸟】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -824,9 +790,7 @@ $clj[]=10;
 $npc[]=613;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【昊冥玄鸟】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -834,8 +798,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=619;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【昊冥玄鸟】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -846,8 +808,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=693;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【昊冥玄鸟】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -996,8 +956,6 @@ $clj[]=10;
 $npc[]=608;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【麒麟兄弟】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -1007,9 +965,7 @@ $clj[]=10;
 $npc[]=614;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【麒麟兄弟】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1017,8 +973,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=620;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【麒麟兄弟】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -1030,8 +984,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=694;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【麒麟兄弟】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 //npc

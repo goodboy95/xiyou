@@ -29,8 +29,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -79,8 +78,7 @@ if ($hm>0){
 rsort($fb);
 rsort($xb);
 
-} else{
-} 
+}
 
 
 $mt=0;

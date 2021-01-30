@@ -70,8 +70,6 @@ $clj[]=293;
 $npc[]=$npcc;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取出全部</font></a>"."<br>";
 
-} else{
-
 }
 
 
@@ -280,7 +278,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

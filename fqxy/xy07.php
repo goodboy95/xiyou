@@ -224,8 +224,7 @@ include("template/xy685.php");//详情
 
 
 
-} else{
-} 
+}
 
 
 

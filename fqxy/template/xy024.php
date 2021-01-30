@@ -54,7 +54,6 @@ $iniFile->updItem('页面id', ['私聊页面' => $ym]);
 
 
 
-} else{
 }
 
 
@@ -144,9 +143,7 @@ $ltmax=$ltmin1-1+$ltsl;
 
 }
 
-	} else{
-		
-}
+	}
 		
 } elseif($ltymid>$ltsl1){
 $ltsl=$m%10;
@@ -155,8 +152,7 @@ $ltmin=$ltmin1-1;
 $ltmax=$ltmin1-1+$ltsl;
 
 		
-	} else{
-}
+	}
 
 
 
@@ -184,7 +180,7 @@ $pxwjname[]=$keyltwjname[$ltmax];
 $pxwjtake[]=$keyltwjtake[$ltmax];
 $pxwjvip[]=$keyltwjvip[$ltmax];
 
-echo "<font color=black>[私聊]</font></a>";
+echo "<font color=black>['私聊']</font></a>";
 
 
 $img='pic/vip/'."vip".$pxwjvip[$i].'.png';
@@ -326,7 +322,6 @@ echo "<font color=black>----------------------</font></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

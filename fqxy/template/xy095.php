@@ -91,7 +91,6 @@ $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
 
 
-} else{
 }
 }
 
@@ -103,7 +102,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -116,7 +114,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -129,7 +126,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -144,7 +140,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -354,7 +349,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

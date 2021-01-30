@@ -40,8 +40,6 @@ $vipqy=1;
 if($vipqy == 1){
 echo "<font color=red>【银矿山】区域时间已到，【银矿财神】已走了！！</font>"."<br>";
 
-} else{
-
 }
 include("./ini/kswin_ini.php");
 $win=($iniFile->getItem('矿山','初始'));

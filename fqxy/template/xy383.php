@@ -38,10 +38,7 @@ include("./zbdz/zbsj04.php");//装备描述
 } elseif($npcc>=401&&$npcc<=500){
 include("./zbdz/zbsj05.php");//装备描述
 
-} else{
-
-
-}
+} 
 
 
 echo "<br>";
@@ -64,8 +61,7 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

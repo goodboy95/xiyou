@@ -5,7 +5,7 @@
 * @version v1.0
 * @link https://xinyu19.com
 * 注：ini文件由节、键、值组成，为了方便
-* 类中的[节]我们叫做[分类]，[键=>值]称为[子项]
+* 类中的['节']我们叫做['分类']，['键=>值']称为['子项']
 */
  
 class iniFile
@@ -36,7 +36,7 @@ class iniFile
 		}
 		$this->save();
 	}
-	//增加子项[可在添加分类的同时添加子项]
+	//增加子项['可在添加分类的同时添加子项']
 	public function addItem($category_name, array $item){
 		foreach ($item as $key => $value) {
 			$this->iniFileHandle[$category_name][$key] = $value;

@@ -36,8 +36,6 @@ $bsid=($iniFile->getItem('装备镶嵌4',$zbid));
 } elseif($ks==5){  
 $dkmz="zbxq5";
 $bsid=($iniFile->getItem('装备镶嵌5',$zbid));
-} else{
-
 }
 
 
@@ -273,7 +271,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

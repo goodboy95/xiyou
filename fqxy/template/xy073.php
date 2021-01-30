@@ -8,8 +8,6 @@ include("./ini/zbb_ini.php");
 $zbid=($iniFile->getItem('装备星级','初始'));
 if($cmdd==73){
 $iniFile->updItem('装备孔1', ['初始' => $npcc]);
-} else{
-
 }
 //保存页面id方便分页使用
 
@@ -20,8 +18,6 @@ if($cmdd==73){
 include("./ini/yl_ini.php");
 
 $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
-} else{
-
 }
 
 
@@ -52,7 +48,7 @@ $wpsl=($iniFile->getCategory('其他数量'));
 $m=count($wpid,0)-1; 
 $i=0;
 
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 
 $km=0;
 
@@ -310,7 +306,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

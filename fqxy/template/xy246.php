@@ -41,10 +41,6 @@ include("./npcmdx/mdx03.php");//杨中顺买东西
 } elseif($npcc ==4){
 include("./npcmdx/mdx04.php");//卖糖人买东西
 
-} else{
-
-
-
 }
 
 
@@ -61,7 +57,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

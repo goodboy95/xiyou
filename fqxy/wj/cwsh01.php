@@ -51,12 +51,12 @@ $guaiwu=($iniFile->getCategory('怪物1号属性'));
 
 
 
-$gw1=$guaiwu[冰攻]-$cwsx[冰防];
-$gw2=$guaiwu[火攻]-$cwsx[火防];
-$gw3=$guaiwu[雷攻]-$cwsx[雷防];
-$gw4=$cwsx[冰攻]-$guaiwu[冰防];
-$gw5=$cwsx[火攻]-$guaiwu[火防];
-$gw6=$cwsx[雷攻]-$guaiwu[火防];
+$gw1=$guaiwu['冰攻']-$cwsx['冰防'];
+$gw2=$guaiwu['火攻']-$cwsx['火防'];
+$gw3=$guaiwu['雷攻']-$cwsx['雷防'];
+$gw4=$cwsx['冰攻']-$guaiwu['冰防'];
+$gw5=$cwsx['火攻']-$guaiwu['火防'];
+$gw6=$cwsx['雷攻']-$guaiwu['火防'];
 $gg1=$gw1+$gw2+$gw3;
 $gg2=$gw4+$gw5+$gw6;
 //伤害公式

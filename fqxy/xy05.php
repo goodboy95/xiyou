@@ -279,8 +279,7 @@ include("template/xy498.php");//拍卖页面
 include("template/xy499.php");//拍卖页面
 } elseif($cmdd==500){   
 include("template/xy500.php");//拍卖页面
-} else{
-} 
+}
 
 
 

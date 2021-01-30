@@ -5,8 +5,8 @@
 $q2="qt".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$bsid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 

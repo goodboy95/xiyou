@@ -122,10 +122,10 @@ $wd03=0;
 include("./wj/ztt.php");
 include("./wj/zfzt.php");
 
-$wd04=$wjxx1[血];
-$wd05=$wjxx1[max攻击];
-$wd06=$wjxx1[max魔攻];
-$wd07=$wjxx1[max防御];
+$wd04=$wjxx1['血'];
+$wd05=$wjxx1['max攻击'];
+$wd06=$wjxx1['max魔攻'];
+$wd07=$wjxx1['max防御'];
 
 
 $q2="all_ltbw";
@@ -198,7 +198,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 
 //解锁当前使用的ini

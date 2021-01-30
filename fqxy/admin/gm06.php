@@ -40,13 +40,10 @@ echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font col
 }
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //
-
-}else{
 
 }
 

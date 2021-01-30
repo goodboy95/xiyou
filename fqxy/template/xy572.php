@@ -28,7 +28,6 @@ $csbyq1=$csbyq;
 $bfb=floor($csbyq*0.1);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 
@@ -72,11 +71,9 @@ if($csbyw<=$csbym){
 $bj=$i;
 
 	
-} else{		
-} 	
+}
 } 
-} else{		
-} 	
+}
 //奖励1-10倍暴击	
 //随机
 $sjbz= rand(1, 10);	
@@ -88,8 +85,7 @@ $csbyq=$csbyq*$bj;
 } else{	
 if($bj==2){	
 $csbyq=$csbyq*$bj;
-} else{	
-} 
+}
 } 
 } else{	
 $bj=1;
@@ -200,7 +196,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上�
 
 
 
-} else{	
 }
 
 

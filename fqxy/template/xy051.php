@@ -18,8 +18,8 @@ $iniFile = new iniFile($ininame);
 $wjxx=($iniFile->getItem('玩家信息',['修炼经验', '等级']));
 
 
-$lvl=$wjxx[等级];
-$wjxljy=$wjxx[修炼经验];
+$lvl=$wjxx['等级'];
+$wjxljy=$wjxx['修炼经验'];
 
 
 //页面值
@@ -75,7 +75,6 @@ $clj[]=1;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

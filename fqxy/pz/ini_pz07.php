@@ -29,7 +29,6 @@ if ($bnsy!=2){
 if($wpzz2!="蓝"){
 //动态祝福加成数据
 include("wj/zfzt.php");
-} else{
 }
 
 

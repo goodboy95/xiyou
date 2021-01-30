@@ -55,8 +55,6 @@ $inina="rw.ini";
 $inina="nc.ini";
 } elseif($wpfl ==8){
 $inina="bx.ini";
-} else{
-
 }
 
 

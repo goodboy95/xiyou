@@ -180,8 +180,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc4.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
 if ($m==1) {
 	

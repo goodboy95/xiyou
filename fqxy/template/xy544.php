@@ -72,8 +72,6 @@ if($cmdd==538||$cmdd==539||$cmdd==540||$cmdd==541||$cmdd==542||$cmdd==543||$cmdd
 include("./ini/yl_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
-} else{
-
 }
 
 //显示搜索结果
@@ -196,7 +194,6 @@ $wpmz=($iniFile->getItem('农场名字',$npcc));
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
 $wpmz=($iniFile->getItem('宝箱名字',$npcc));
-} else{
 }
 
 if($wpsl>=1){
@@ -230,8 +227,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>赠送</fo
 
 
 
-}else{
-
 }
 
 
@@ -239,8 +234,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>赠送</fo
 
 
 
-
-}else{
 
 }
 
@@ -276,7 +269,7 @@ if($cb01==$cb02&&$cb01==$cb03&&$cb01==$cb04&&$cb02==$cb03&&$cb02==$cb04&&$cb03==
 $m=count($wpid,0)-1; 
 $i=0;
 
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 
 $km=0;
 
@@ -520,7 +513,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -71,7 +71,6 @@ echo "<font color=black>你还未加入任何国家！！（无法获得国家�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jjsini.php");
@@ -79,7 +78,6 @@ include("./ini/jjsini.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -93,7 +93,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 
@@ -112,9 +111,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
 $hdcs=0;
 
-} else{	
-
-} 
+}
 
 //如果跨天则重置次数和时间
 
@@ -139,8 +136,7 @@ $vipqytime=1200;//秒数30分钟
 $vipqytime=1200;//秒数30分钟
 } elseif ($hdcs==9) {
 $vipqytime=3600;//秒数30分钟
-} else{
-} 
+}
 
 
 
@@ -182,8 +178,6 @@ $clj[]=307;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
 
-} else{
-
 }
 
 if($vipqy ==2){	
@@ -193,8 +187,6 @@ $cdid[]=$cmid;
 $clj[]=308;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>领取</font></a>"."<br>";
-} else{
-
 }
 
 
@@ -267,7 +259,6 @@ echo "<font color=blue>VIP19级：【万能果】x20和〖金豆〗x20（2亿银
 echo "<font color=blue>VIP20级：【万能果】x30和〖金豆〗x30（2亿银两）</font>";
 
 
-} else{	
 }
 
 
@@ -304,7 +295,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

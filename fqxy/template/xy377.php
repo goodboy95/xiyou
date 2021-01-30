@@ -49,9 +49,7 @@ $bsid=($iniFile->getItem('装备镶嵌4',$zbid));
 } elseif($ks==5){  
 $dkmz="zbxq5";
 $bsid=($iniFile->getItem('装备镶嵌5',$zbid));
-} else{
-
-}
+} 
 
 
 //提供需要扣除的物品作为判读依据
@@ -310,8 +308,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 }
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

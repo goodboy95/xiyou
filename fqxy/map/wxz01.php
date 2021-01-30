@@ -67,8 +67,7 @@ $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=177;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【万象阵】（随机）</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 $tttid=365;
@@ -972,8 +971,7 @@ $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=180;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八门阵】（随机）</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=407;
 include("./rcrw/ttt.php");
@@ -1160,8 +1158,7 @@ $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=182;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八卦阵】（随机）</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=416;
 include("./rcrw/ttt.php");
@@ -1666,8 +1663,7 @@ $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=184;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八阵图】（随机）</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 

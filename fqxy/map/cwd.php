@@ -34,9 +34,7 @@ $vipqy=1;
 if($vipqy == 1){
 echo "<font color=red>宠物岛停留时间已到，所有宠物逃跑了！！</font>"."<br>";
 
-} else{
-
-}
+} 
 
 if ($dty==0) {
 

@@ -28,8 +28,8 @@ $iniFile = new iniFile($ininame);
 # 获取一个分类下所有数据$
 $wjxx=($iniFile->getCategory('玩家信息'));
 
-$cklh=$wjxx[靓号];
-$img='pic/vip/'."vip".$wjxx[vip等级].'.png';
+$cklh=$wjxx['靓号'];
+$img='pic/vip/'."vip".$wjxx['vip等级'].'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 echo "<br>";	
@@ -160,45 +160,45 @@ echo "<font color=black>头衔：暂无</font>"."<br>";
 }
 
 
-if($wjxx[恶名值]>=1&&$wjxx[恶名值]<=20){
-$em="【坏蛋】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=21&&$wjxx[恶名值]<=40){
-$em="【匪徒】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=41&&$wjxx[恶名值]<=60){
-$em="【恶人】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=61&&$wjxx[恶名值]<=80){
-$em="【恶棍】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=81&&$wjxx[恶名值]<=100){
-$em="【恶霸】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=101&&$wjxx[恶名值]<=150){
-$em="【凶人】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=151&&$wjxx[恶名值]<=250){
-$em="【凶徒】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=251&&$wjxx[恶名值]<=300){
-$em="【凶手】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=301&&$wjxx[恶名值]<=350){
-$em="【暴徒】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=351&&$wjxx[恶名值]<=400){
-$em="【暴君】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=401&&$wjxx[恶名值]<=450){
-$em="【嗜血成性】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=451&&$wjxx[恶名值]<=500){
-$em="【赶尽杀绝】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=501&&$wjxx[恶名值]<=600){
-$em="【杀人如麻】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=601&&$wjxx[恶名值]<=700){
-$em="【十恶不赦】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=701&&$wjxx[恶名值]<=800){
-$em="【血流成河】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=801&&$wjxx[恶名值]<=900){
-$em="【血染山河】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=901&&$wjxx[恶名值]<=1000){
-$em="【十方俱灭】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=1001){
-$em="【神档杀神~佛档杀佛】"."(".$wjxx[恶名值]."点)";
+if($wjxx['恶名值']>=1&&$wjxx['恶名值']<=20){
+$em="【坏蛋】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=21&&$wjxx['恶名值']<=40){
+$em="【匪徒】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=41&&$wjxx['恶名值']<=60){
+$em="【恶人】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=61&&$wjxx['恶名值']<=80){
+$em="【恶棍】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=81&&$wjxx['恶名值']<=100){
+$em="【恶霸】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=101&&$wjxx['恶名值']<=150){
+$em="【凶人】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=151&&$wjxx['恶名值']<=250){
+$em="【凶徒】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=251&&$wjxx['恶名值']<=300){
+$em="【凶手】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=301&&$wjxx['恶名值']<=350){
+$em="【暴徒】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=351&&$wjxx['恶名值']<=400){
+$em="【暴君】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=401&&$wjxx['恶名值']<=450){
+$em="【嗜血成性】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=451&&$wjxx['恶名值']<=500){
+$em="【赶尽杀绝】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=501&&$wjxx['恶名值']<=600){
+$em="【杀人如麻】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=601&&$wjxx['恶名值']<=700){
+$em="【十恶不赦】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=701&&$wjxx['恶名值']<=800){
+$em="【血流成河】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=801&&$wjxx['恶名值']<=900){
+$em="【血染山河】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=901&&$wjxx['恶名值']<=1000){
+$em="【十方俱灭】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=1001){
+$em="【神档杀神~佛档杀佛】"."(".$wjxx['恶名值']."点)";
 } else{
 	
-$em="【与世无争】"."(".$wjxx[恶名值]."点)";	
+$em="【与世无争】"."(".$wjxx['恶名值']."点)";	
 } 
 echo "<font color=red>恶名：".$em."</font><br>";
 
@@ -206,15 +206,15 @@ echo "<font color=red>恶名：".$em."</font><br>";
 
 
 
-echo "<font color=black>昵称：</font>".$wjxx[玩家名字]."<br>";
+echo "<font color=black>昵称：</font>".$wjxx['玩家名字']."<br>";
 
 
 
-if($wjxx[性别]==1){
+if($wjxx['性别']==1){
 echo "<font color=black>性别：男</font><br>";
 
 
-} elseif ($wjxx[性别]==2){
+} elseif ($wjxx['性别']==2){
 echo "<font color=black>性别：女</font><br>";
 } else{
 
@@ -223,9 +223,9 @@ echo "<font color=black>性别：人妖</font><br>";
 
 }
 
-if($wjxx[配偶id]>=10000000){
+if($wjxx['配偶id']>=10000000){
 
-echo "<font color=black>配偶：</font>".$wjxx[配偶名字]."<br>";
+echo "<font color=black>配偶：</font>".$wjxx['配偶名字']."<br>";
 } else{
 	
 echo "<font color=black>配偶：暂无</font><br>";	
@@ -234,27 +234,27 @@ echo "<font color=black>配偶：暂无</font><br>";
 	
 
 
-if($wjxx[住宅id]>=1){
+if($wjxx['住宅id']>=1){
 
-if($wjxx[住宅分类]==1){
+if($wjxx['住宅分类']==1){
 $zz="住宅";
-} elseif ($wjxx[住宅分类]==2){
+} elseif ($wjxx['住宅分类']==2){
 $zz="豪宅";	
-} elseif ($wjxx[住宅分类]==3){
+} elseif ($wjxx['住宅分类']==3){
 $zz="官宅";
 } else{
 $zz="住宅";
 }
 
-echo "<font color=black>".$zz."：</font>".$wjxx[住宅名字]."<br>";
+echo "<font color=black>".$zz."：</font>".$wjxx['住宅名字']."<br>";
 } else{
 	
 echo "<font color=black>住宅：暂无</font><br>";	
 
 } 
 	
-if($wjxx[帮派id]>=1){
-echo "<font color=black>国家：</font>".$wjxx[帮派名字]."<br>";
+if($wjxx['帮派id']>=1){
+echo "<font color=black>国家：</font>".$wjxx['帮派名字']."<br>";
 
 } else{
 echo "<font color=black>国家：无</font><br>";
@@ -262,16 +262,16 @@ echo "<font color=black>国家：无</font><br>";
 }
 
 
-if($wjxx[门派]>=1){
-if($wjxx[门派]==1){
+if($wjxx['门派']>=1){
+if($wjxx['门派']==1){
 $menp="将军府";
-} elseif($wjxx[门派]==2){
+} elseif($wjxx['门派']==2){
 $menp="龙宫";
-} elseif($wjxx[门派]==3){
+} elseif($wjxx['门派']==3){
 $menp="月宫";
-} elseif($wjxx[门派]==4){
+} elseif($wjxx['门派']==4){
 $menp="方寸山";
-} elseif($wjxx[门派]==5){
+} elseif($wjxx['门派']==5){
 $menp="普陀山";
 } else{
 
@@ -285,23 +285,23 @@ echo "<font color=black>门派：</font>".$menp."<br>";
 echo "<font color=black>门派：无门派</font><br>";
 
 }
-if($wjxx[等级]>=201){
-$wjdj=$wjxx[等级]-200;
+if($wjxx['等级']>=201){
+$wjdj=$wjxx['等级']-200;
 $wjdj="仙（".$wjdj."级）";	
 } else{
-$wjdj=$wjxx[等级]."级";
+$wjdj=$wjxx['等级']."级";
 } 
 
 echo "<font color=black>等级：</font>".$wjdj."<br>";
 
 
-echo  "<font color=black>HP：</font>".$wjxx[红]."<font color=black>/</font>".$wjxx1[血]."<br>";
-echo  "<font color=black>MP：</font>".$wjxx[蓝]."<font color=black>/</font>".$wjxx1[蓝]."<br>";
-echo "<font color=black>攻击：</font>".$wjxx1[攻击]."<font color=black>-</font>".$wjxx1[max攻击]."<br/>";
-echo "<font color=black>魔攻：</font>".$wjxx1[魔攻]."<font color=black>-</font>".$wjxx1[max魔攻]."<br/>";
-echo "<font color=black>防御：</font>".$wjxx1[防御]."<font color=black>-</font>".$wjxx1[max防御]."<br/>";
-echo  "<font color=black>攻击元素：冰+</font>".$wjxx1[冰攻]."<font color=black>&nbsp火+</font>".$wjxx1[火攻]."<font color=black>&nbsp雷+</font>".$wjxx1[雷攻]."<br>";
-echo  "<font color=black>防御元素：冰+</font>".$wjxx1[冰防]."<font color=black>&nbsp火+</font>".$wjxx1[火防]."<font color=black>&nbsp雷+</font>".$wjxx1[雷防]."<br>";
+echo  "<font color=black>HP：</font>".$wjxx['红']."<font color=black>/</font>".$wjxx1['血']."<br>";
+echo  "<font color=black>MP：</font>".$wjxx['蓝']."<font color=black>/</font>".$wjxx1['蓝']."<br>";
+echo "<font color=black>攻击：</font>".$wjxx1['攻击']."<font color=black>-</font>".$wjxx1['max攻击']."<br/>";
+echo "<font color=black>魔攻：</font>".$wjxx1['魔攻']."<font color=black>-</font>".$wjxx1['max魔攻']."<br/>";
+echo "<font color=black>防御：</font>".$wjxx1['防御']."<font color=black>-</font>".$wjxx1['max防御']."<br/>";
+echo  "<font color=black>攻击元素：冰+</font>".$wjxx1['冰攻']."<font color=black>&nbsp火+</font>".$wjxx1['火攻']."<font color=black>&nbsp雷+</font>".$wjxx1['雷攻']."<br>";
+echo  "<font color=black>防御元素：冰+</font>".$wjxx1['冰防']."<font color=black>&nbsp火+</font>".$wjxx1['火防']."<font color=black>&nbsp雷+</font>".$wjxx1['雷防']."<br>";
 
 
 
@@ -325,7 +325,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

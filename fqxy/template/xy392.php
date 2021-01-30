@@ -24,7 +24,7 @@ $username=($iniFile->getItem('玩家信息','玩家名字'));
 		include("./ini/zt_ini.php");
 
 
-$iniFile->updItem('玩家信息', ['红' => $wjxx1[血]]);	
+$iniFile->updItem('玩家信息', ['红' => $wjxx1['血']]);
 
 
 
@@ -64,7 +64,6 @@ include("fhgame.php");
 	
 	$wjid1=$wjid;
 
-} else{	
 }
 
 //解锁当前使用的ini

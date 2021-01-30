@@ -25,8 +25,7 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
-}
+} 
 
 //如果跨天则重置次数和时间
 $nowtime=date('Y-m-d H:i:s');
@@ -47,9 +46,7 @@ $hdcs=5;
 
 
 
-} else{	
-
-} 
+}  
 
 if ($hdcs>=1) {
 
@@ -137,8 +134,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}  
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -183,8 +179,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
-}
+} 
 
 //解锁当前使用的ini
 include("./ini/all_lock1.php");

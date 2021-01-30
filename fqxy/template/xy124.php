@@ -30,7 +30,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 
 
@@ -76,10 +75,6 @@ include("./wp/wpxx.php");
 $bsid=$npcc;
 include("./wp/zbbs.php");
 $wpmz=$bsmz;
-} else{
-
-
-
 }
 include("npcc/dqwp01.php");
 
@@ -174,10 +169,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
 }
 
 
@@ -231,13 +222,10 @@ include("npcc/dqwp02.php");
 
 
 
-} else{
-
-} 
+}
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -29,8 +29,6 @@ $vipqy=1;
 if($vipqy == 1){
 echo "<font color=red>恶魔广场时间已到，【恶魔小怪】已经离开了！！</font>"."<br>";
 
-} else{
-
 }
 
 if ($dty==0) {

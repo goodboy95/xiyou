@@ -36,8 +36,6 @@ $fz02="民宅";
 $fz02="豪宅";
 } elseif($fz02==3){ 
 $fz02="官宅";
-} else{
-
 }
 if($fz03==3){
 echo "<font color=black>你已经拥有了【".$fz01."】(".$fz02."),每人限购一套房子</font>"."<br>";
@@ -72,7 +70,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

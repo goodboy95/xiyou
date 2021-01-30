@@ -25,9 +25,7 @@ include("./ini/ckrl_ini.php");
 
 
 
-} else{
-
-}
+} 
 //////仓库已用容量/////////
 
 

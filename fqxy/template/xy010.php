@@ -73,7 +73,6 @@ $cwidd=($iniFile->getItem('怪物1号属性','初始'));//宠物出战id
 include("./npc/npcxx.php");//攻击模板
 
 
-} else{	
 }
 
 
@@ -94,9 +93,8 @@ $cww01=($iniFile->getItem('宠物名字',$zbid));
 $cww02=($iniFile->getItem('宠物hp',$zbid));
 $zbid=$cwidd;
 include("./wj/cwztt.php");
-$cww03=$cwxx1[血];
-} else{
-} 
+$cww03=$cwxx1['血'];
+}
 
 
 
@@ -203,12 +201,12 @@ echo "<font color=black>内力:(".$nmp."/".$nmaxmp.")</font>"."<br>";
 echo "<font color=black>----------</font>"."<br>";
 echo "<font color=red>自己:</font>"."<br>";
 if($cmdd==348||$cmdd==249&&$mppppd!=1){
-echo "<font color=black>体力:(".$wjxx[红]."/".$wjxx1[血].")-".$wjsh."</font>"."<br>";
+echo "<font color=black>体力:(".$wjxx['红']."/".$wjxx1['血'].")-".$wjsh."</font>"."<br>";
 } else{	
-echo "<font color=black>体力:(".$wjxx[红]."/".$wjxx1[血].")</font>"."<br>";
+echo "<font color=black>体力:(".$wjxx['红']."/".$wjxx1['血'].")</font>"."<br>";
 }
 
-echo "<font color=black>内力:(".$wjxx[蓝]."/".$wjxx1[蓝].")</font>"."<br>";
+echo "<font color=black>内力:(".$wjxx['蓝']."/".$wjxx1['蓝'].")</font>"."<br>";
 
 
 
@@ -227,8 +225,7 @@ echo "<font color=black>体力:(".$cww02."/".$cww03.")</font>"."<br>";
 echo "<font color=red>宠物:</font>"."<br>";	
 echo "<font color=red>".$cww01."（已阵亡）</font>"."<br>";	
 
-} else{
-} 
+}
 
 echo "<font color=black>----------</font>"."<br>";
 
@@ -291,7 +288,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

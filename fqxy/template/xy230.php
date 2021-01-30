@@ -71,7 +71,6 @@ $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
 
 
-} else{
 }
 }
 
@@ -83,7 +82,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -96,7 +94,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -109,7 +106,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -124,7 +120,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -334,7 +329,6 @@ echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

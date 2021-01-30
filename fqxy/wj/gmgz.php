@@ -740,8 +740,6 @@ unlink($ininame); //删除文件
 
 
 
-} else{
-
 }
 
 
@@ -777,8 +775,6 @@ $fz02="民宅";
 $fz02="豪宅";
 } elseif($fz02==3){ 
 $fz02="官宅";
-} else{
-
 }
 if($fz03==3){
 echo "<font color=black>你已经拥有了【".$fz01."】(".$fz02."),每人限购一套房子</font>"."<br>";

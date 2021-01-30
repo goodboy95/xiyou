@@ -28,13 +28,13 @@ if (file_exists($file)) {
     $m = 0;
     while (!!$row = mysqli_fetch_array($result)) {
         $m = $m + 1;
-        $iniFile->addCategory('序列', [$row[jnid] => $m]);
-        $iniFile->addCategory('技能id', [$m => $row[jnid]]);
-        $iniFile->addCategory('技能等级', [$row[jnid] => $row[jndj]]);
-        $jnidd = $row[jnid];
+        $iniFile->addCategory('序列', [$row['jnid'] => $m]);
+        $iniFile->addCategory('技能id', [$m => $row['jnid']]);
+        $iniFile->addCategory('技能等级', [$row['jnid'] => $row['jndj']]);
+        $jnidd = $row['jnid'];
         //调用技能信息
         include("./wp/jnxx.php");
-        $iniFile->addCategory('技能名字', [$row[jnid] => $jnmz]);
+        $iniFile->addCategory('技能名字', [$row['jnid'] => $jnmz]);
     }
 }
 

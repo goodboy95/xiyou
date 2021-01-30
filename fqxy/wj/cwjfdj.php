@@ -29,7 +29,6 @@ $wjjfdj=159;
 
 if($wjjfdj >$jfdj){
 $jfdj=$wjjfdj;
-} else{
 }
 
 

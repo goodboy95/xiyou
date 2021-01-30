@@ -30,9 +30,7 @@ $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
 
 
 
-} else{
-
-}
+} 
 
 
 
@@ -65,7 +63,7 @@ $cb07=count($pmsjc,0);
 
 $i=0;
 
-$ym=$pmwpid[初始];
+$ym=$pmwpid['初始'];
 
 $km=0;
 
@@ -388,8 +386,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jszsini.php");
 //解锁当前使用的ini

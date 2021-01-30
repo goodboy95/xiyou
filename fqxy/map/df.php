@@ -994,7 +994,6 @@ $vipqy=1;
 }
 if($vipqy == 1){
 echo "<font color=red>恭喜你！！孟婆的汤已为你熬制好了~~~</font>"."<br>";
-} else{
 }
 
 
@@ -1070,7 +1069,6 @@ $vipqy=1;
 }
 if($vipqy == 1){
 echo "<font color=red>恭喜你！！孟婆的汤已为你熬制好了~~~</font>"."<br>";
-} else{
 }
     //地名
     $cmid=$cmid+1;

@@ -29,7 +29,7 @@ $iniFile->updItem('世界BOSS属性', ['血' => $dxssh]);
 }else{
 if ($cwdxsh>0) {
 
-$dxssh=$guaiwu[hp]-$cwdxsh;
+$dxssh=$guaiwu['hp']-$cwdxsh;
 include("./ini/npc_ini.php");
 $iniFile->updItem('怪物1号属性', ['hp' => $dxssh]);
 

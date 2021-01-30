@@ -44,9 +44,7 @@ echo "<font color=black>！</font>";
 
 }  
 	  
-	} else{  
-	  
-	  }
+	} 
 	  
 	  
 	  

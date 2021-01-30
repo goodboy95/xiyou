@@ -52,7 +52,7 @@ $sw=($iniFile->getCategory('声望值'));
 
 $wpzz=10000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[西游声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['西游声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['西游声望' => $sw]);	
 ///缓存更新

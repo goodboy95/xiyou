@@ -44,9 +44,9 @@ $fbid=1;
 $q2="fb".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where id=$fbid");
 $info1=@mysqli_fetch_array($sql1);
-$fbsj=$info1[fb];
-$fb01=$info1[wc];
-$fb02=$info1[cs];
+$fbsj=$info1['fb'];
+$fb01=$info1['wc'];
+$fb02=$info1['cs'];
 $fbsj1=1;
 if($fbsj==""){	
 $fbsj1=2;
@@ -59,8 +59,7 @@ die('Error: ' . mysqli_error($conn));
 
 $fb01=3;
 $fb02=0;
-} else{
-} 
+}
 
 $iniFile->addItem($fbid,['激活时间' => $fbsj]);
 $iniFile->addItem($fbid,['完成情况' => $fb01]);
@@ -68,12 +67,10 @@ $iniFile->addItem($fbid,['重置次数' => $fb02]);
 $ffbb=($iniFile->getItem($fbid,'怪物1'));
 if($ffbb==""){	
 $fbsj1=2;
-} else{
-} 
+}
 if($fbsj1==2){	
 $iniFile->addCategory($fbid, ['怪物1' => '1', '怪物2' => '1', '怪物3' => '1', '怪物4' => '1','怪物5' => '1', '怪物6' => '1', '怪物7' => '1', '怪物8' => '1', '怪物9' => '1']);
-} else{
-} 
+}
 
 
 

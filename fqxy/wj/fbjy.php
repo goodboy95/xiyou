@@ -1,7 +1,7 @@
 <?php
 
-$lvl=$wjxx[等级];
-$xljy=$wjxx[法宝经验];
+$lvl=$wjxx['等级'];
+$xljy=$wjxx['法宝经验'];
 
 
 

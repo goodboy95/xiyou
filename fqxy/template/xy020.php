@@ -21,8 +21,6 @@ $ininame1 = $path1."/".$inina1;
 unlink($ininame1); //删除文件 
 
 //更新缓存数据
-} else{
-
 }
 		
 //删除掉住宅参观变量	
@@ -638,14 +636,11 @@ include("./wj/xy020-1.php");
 
 
 
-} else{
-
 }
 
 include("./template/xy002.php");//游戏主页
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

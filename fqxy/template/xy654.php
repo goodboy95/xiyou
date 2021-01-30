@@ -158,7 +158,6 @@ echo "<font color=black>很遗憾！！你的愿望落空了【如来佛祖】�
 
 
 
-} else{
 }
 
 
@@ -198,7 +197,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

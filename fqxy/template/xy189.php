@@ -1,7 +1,7 @@
 <?php
 
 
-echo "<font color=black>[攻城-地图]</font>"."<br>";
+echo "<font color=black>['攻城-地图']</font>"."<br>";
 
 //调用选择的位置信息
 if($npcc ==1){

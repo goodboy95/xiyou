@@ -48,8 +48,6 @@ $result = mysqli_query($conn, $strsql);
 include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['配偶名字' => '0']);
 $iniFile->updItem('玩家信息', ['配偶id' => '0']);
-} else{	
-
 }
 
 
@@ -84,8 +82,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 
@@ -122,7 +119,6 @@ echo "<font color=red>对不起！你还是单身</font>"."<br>";
 
 
 
-} else{	
 }
 
 //解锁当前使用的ini

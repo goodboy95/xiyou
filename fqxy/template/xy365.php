@@ -22,7 +22,6 @@ $cw02x=($iniFile->getItem('宠物名字',$zbid));
 
 if($cw02x==""){
 $cw02x="无";	
-} else{	
 }
 
 $cw03x=($iniFile->getItem('宠物星级',$zbid));
@@ -144,13 +143,13 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp&nbsp
 
 
 echo  "<font color=black>等级：".$cw20x."&nbsp&nbsp级</font><br>";
-echo  "<font color=black>HP：".$cw05x."/".$cwxx1[血]."</font><br>";
-echo  "<font color=black>MP：".$cwxx1[蓝]."/".$cwxx1[蓝]."</font><br>";
-echo "<font color=black>攻击：".$cwxx1[攻击]."-".$cwxx1[max攻击]."</font><br/>";
-echo "<font color=black>魔攻：".$cwxx1[魔攻]."-".$cwxx1[max魔攻]."</font><br/>";
-echo "<font color=black>防御：".$cwxx1[防御]."-".$cwxx1[max防御]."</font><br/>";
-echo  "<font color=black>攻击元素：冰+</font>".$cwxx1[冰攻]."<font color=black>&nbsp火+</font>".$cwxx1[火攻]."<font color=black>&nbsp雷+</font>".$cwxx1[雷攻]."<br>";
-echo  "<font color=black>防御元素：冰+</font>".$cwxx1[冰防]."<font color=black>&nbsp火+</font>".$cwxx1[火防]."<font color=black>&nbsp雷+</font>".$cwxx1[雷防]."<br>";
+echo  "<font color=black>HP：".$cw05x."/".$cwxx1['血']."</font><br>";
+echo  "<font color=black>MP：".$cwxx1['蓝']."/".$cwxx1['蓝']."</font><br>";
+echo "<font color=black>攻击：".$cwxx1['攻击']."-".$cwxx1['max攻击']."</font><br/>";
+echo "<font color=black>魔攻：".$cwxx1['魔攻']."-".$cwxx1['max魔攻']."</font><br/>";
+echo "<font color=black>防御：".$cwxx1['防御']."-".$cwxx1['max防御']."</font><br/>";
+echo  "<font color=black>攻击元素：冰+</font>".$cwxx1['冰攻']."<font color=black>&nbsp火+</font>".$cwxx1['火攻']."<font color=black>&nbsp雷+</font>".$cwxx1['雷攻']."<br>";
+echo  "<font color=black>防御元素：冰+</font>".$cwxx1['冰防']."<font color=black>&nbsp火+</font>".$cwxx1['火防']."<font color=black>&nbsp雷+</font>".$cwxx1['雷防']."<br>";
 echo "<font color=black>经验：</font>";
 include("./wj/cwjy.php");
 
@@ -229,7 +228,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

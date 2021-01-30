@@ -31,8 +31,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -66,7 +65,7 @@ $filename = $ininame;
 if(!file_exists($filename)){
 $counter_file=$ininame;//文件名及路径,在当前目录下新建aa.txt文件 
 $fopen=fopen($counter_file,   'wb ');//新建文件命令 
-fputs($fopen,   '[地图信息]');//向文件中写入内容; 
+fputs($fopen,   '[地图信息]');//向文件中写入内容;
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 
@@ -84,7 +83,7 @@ $iniFile = new iniFile($ininame);
 $dt=($iniFile->getCategory('玩家id值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('玩家id值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
@@ -109,14 +108,14 @@ $iniFile->addItem('玩家id值'.$dtx.'x'.$dty,[$wjid => $wjid]);
 $dt=($iniFile->getCategory('玩家名字值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('玩家名字值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
-$iniFile->addCategory('玩家名字值'.$dtx.'x'.$dty, [$wjid => $wjxx[玩家名字]]);
+$iniFile->addCategory('玩家名字值'.$dtx.'x'.$dty, [$wjid => $wjxx['玩家名字']]);
 }else{
 # 添加一个子项(如果子项存在，则覆盖;)
-$iniFile->addItem('玩家名字值'.$dtx.'x'.$dty,[$wjid => $wjxx[玩家名字]]);
+$iniFile->addItem('玩家名字值'.$dtx.'x'.$dty,[$wjid => $wjxx['玩家名字']]);
 }
 
 
@@ -133,14 +132,14 @@ $iniFile->addItem('玩家名字值'.$dtx.'x'.$dty,[$wjid => $wjxx[玩家名字]]
 $dt=($iniFile->getCategory('玩家vip值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('玩家vip值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
-$iniFile->addCategory('玩家vip值'.$dtx.'x'.$dty, [$wjid => $wjxx[vip等级]]);
+$iniFile->addCategory('玩家vip值'.$dtx.'x'.$dty, [$wjid => $wjxx['vip等级']]);
 }else{
 # 添加一个子项(如果子项存在，则覆盖;)
-$iniFile->addItem('玩家vip值'.$dtx.'x'.$dty,[$wjid => $wjxx[vip等级]]);
+$iniFile->addItem('玩家vip值'.$dtx.'x'.$dty,[$wjid => $wjxx['vip等级']]);
 }
 
 
@@ -160,7 +159,7 @@ $wjdate=$y*60*60*24*365+$m*60*60*24*30+$d*60*60*24+$h*60*60+$i*60+$s;
 $dt=($iniFile->getCategory('玩家时间值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('玩家时间值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
@@ -174,7 +173,7 @@ $iniFile->addItem('玩家时间值'.$dtx.'x'.$dty,[$wjid => $wjdate]);
 $dt=($iniFile->getCategory('国家名字值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('国家名字值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
@@ -187,7 +186,7 @@ $iniFile->addItem('国家名字值'.$dtx.'x'.$dty,[$wjid => $bpmz]);
 $dt=($iniFile->getCategory('国家职务名字值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('国家职务名字值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
@@ -207,14 +206,14 @@ $iniFile->addItem('国家职务名字值'.$dtx.'x'.$dty,[$wjid => $bpzw]);
 $dt=($iniFile->getCategory('玩家国家名字值'.$dtx.'x'.$dty));
 
 
-	if($dt[初始]==""){
+	if($dt['初始']==""){
 # 添加一个分类并直接添加子项
 $iniFile->addCategory('玩家国家名字值'.$dtx.'x'.$dty, ['初始' => 888]);		
 # 添加一个分类并直接添加子项
-$iniFile->addCategory('玩家国家名字值'.$dtx.'x'.$dty, [$wjid => $wjxx[玩家名字]]);
+$iniFile->addCategory('玩家国家名字值'.$dtx.'x'.$dty, [$wjid => $wjxx['玩家名字']]);
 }else{
 # 添加一个子项(如果子项存在，则覆盖;)
-$iniFile->addItem('玩家国家名字值'.$dtx.'x'.$dty,[$wjid => $wjxx[玩家名字]]);
+$iniFile->addItem('玩家国家名字值'.$dtx.'x'.$dty,[$wjid => $wjxx['玩家名字']]);
 }
 
 
@@ -323,7 +322,6 @@ echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
-} else{
 }
 
 //cmd及超链接值

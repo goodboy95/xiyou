@@ -124,8 +124,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 
@@ -211,7 +210,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jjsini.php");
@@ -219,7 +217,6 @@ include("./ini/jjsini.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -1707,11 +1707,7 @@ echo "<font color=black>【黄鼠精】(地狱)x1,"."已完成x".$gw4."</font>".
 
 
 
-} else{
-
-
-
-} 
+}
 
 
 
@@ -1744,7 +1740,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -206,8 +206,7 @@ include("template/xy399.php");//对手已离开
 } elseif($cmdd==400){   
 include("template/xy400.php");//物品详情
 
-} else{
-} 
+}
 
 
 

@@ -27,8 +27,6 @@ $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
 
 
 
-} else{
-
 }
 
 
@@ -52,7 +50,7 @@ $wpjg=($iniFile->getCategory('其他价格'));
 $m=count($wpid,0)-1; 
 $i=0;
 
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 
 $km=0;
 
@@ -312,7 +310,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

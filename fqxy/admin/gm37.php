@@ -16,7 +16,7 @@ $result=mysqli_query($conn, $str) or die('SQL语句有误');
 $xxcc=0;
 
  while(!!$row=mysqli_fetch_array($result)){
-$sxwjid[]=$row[wjid];
+$sxwjid[]=$row['wjid'];
 $xxcc=$xxcc+1;
 
 }
@@ -46,21 +46,19 @@ include("wj/ztt.php");
 include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 
-if($wjxx[玩家名字]!=""){
+if($wjxx['玩家名字']!=""){
 $maxidd=$maxidd+1;
 $q2="all_phb";
-$sql = "insert into $q2 (id,wjid,wjmz,vip,phb1,phb2,phb3,phb4,phb5,phb6,phb7,phb8)  values('$maxidd','$wjid','$wjxx[玩家名字]','$wjxx[vip等级]','$wjxx1[血]','$wjxx1[max攻击]','$wjxx1[max魔攻]','$wjxx1[max防御]','$wjxx[等级]','0','0','0')";
+$sql = "insert into $q2 (id,wjid,wjmz,vip,phb1,phb2,phb3,phb4,phb5,phb6,phb7,phb8)  values('$maxidd','$wjid','$wjxx['玩家名字']','$wjxx['vip等级']','$wjxx1['血']','$wjxx1['max攻击']','$wjxx1['max魔攻']','$wjxx1['max防御']','$wjxx['等级']','0','0','0')";
 if (!mysqli_query($conn, $sql)){
 die('Error: ' . mysqli_error($conn));
 }
-} else{	
 }
 
 
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

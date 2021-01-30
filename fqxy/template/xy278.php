@@ -29,8 +29,6 @@ $iniFile = new iniFile($file);
 
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
-} else{
-
 }
 
 include("./ini/ckrl_ini.php");
@@ -48,9 +46,9 @@ $iniFile = new iniFile($ininame);
 
 # 获取一个分类下多个子项的值
 $wjxx=($iniFile->getItem('玩家信息',['背包容量','仓库容量']));
-$bbrlb=$wjxx[背包容量];
+$bbrlb=$wjxx['背包容量'];
 
-$cbbrlb=$wjxx[仓库容量];
+$cbbrlb=$wjxx['仓库容量'];
 include("wp/bbrl.php");
 echo "<font color=black>物品负重：".$bbrla."/".$bbrlb."</font></a>"."<br>";
 
@@ -173,7 +171,7 @@ $wpsl=($iniFile->getCategory('书卷数量'));
 $m=count($wpid,0)-1; 
 $i=0;
 
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 
 $km=0;
 
@@ -408,7 +406,6 @@ echo "<font color=black>----------------------</font></a>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

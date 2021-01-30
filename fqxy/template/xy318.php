@@ -135,7 +135,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
 
-} else{	
 }
 
 
@@ -163,7 +162,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -191,7 +189,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -218,7 +215,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -246,7 +242,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -274,7 +269,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -301,7 +295,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -328,7 +321,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -356,7 +348,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -385,7 +376,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -413,7 +403,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -440,7 +429,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -469,7 +457,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -498,7 +485,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -526,7 +512,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -554,7 +539,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -582,7 +566,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -610,7 +593,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -639,7 +621,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -667,7 +648,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -695,7 +675,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -723,7 +702,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -754,7 +732,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -783,7 +760,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -813,7 +789,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -843,7 +818,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -872,7 +846,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -901,7 +874,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -930,7 +902,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 include("./ini/cl_ini.php");
 $wpsl1=($iniFile->getItem('材料数量','105'));
@@ -956,7 +927,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -983,7 +953,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1012,7 +981,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1040,7 +1008,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -1067,7 +1034,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1097,7 +1063,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1125,7 +1090,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1154,7 +1118,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -1181,7 +1144,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1209,7 +1171,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1238,7 +1199,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1266,7 +1226,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1295,7 +1254,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1324,7 +1282,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -1351,7 +1308,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -1378,7 +1334,6 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*500;
-} else{	
 }
 
 
@@ -1525,8 +1480,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}  
+}
 	  
 	  
 	  
@@ -1560,8 +1514,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}   
+}
 	  
 	  
 	  
@@ -1596,8 +1549,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}   
+}
 	  
 	  
  
@@ -1630,8 +1582,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}   
+}
 	  	  
 	  
 	  
@@ -1664,8 +1615,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}   
+}
 	  	  
 	  
 	  
@@ -1699,8 +1649,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}   
+}
 	  	    
 	  
 	  
@@ -1733,8 +1682,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}   
+}
 	  	    
 	  
 	  
@@ -1768,8 +1716,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}    
+}
 	  
 
 	  	
@@ -1801,8 +1748,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1000;
 
-} else{	
-}    
+}
   
   
   if ($xysw1>0) {
@@ -1901,8 +1847,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}  
+}
 	  
 	  
 	  
@@ -1936,8 +1881,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}   
+}
 	  
 	  
 	  
@@ -1972,8 +1916,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}   
+}
 	  
 	  
  
@@ -2006,8 +1949,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}   
+}
 	  	  
 	  
 	  
@@ -2040,8 +1982,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}   
+}
 	  	  
 	  
 	  
@@ -2075,8 +2016,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}   
+}
 	  	    
 	  
 	  
@@ -2109,8 +2049,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}   
+}
 	  	    
 	  
 	  
@@ -2144,8 +2083,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
-}    
+}
 	  
 
 	  	
@@ -2177,7 +2115,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*5000;
 
-} else{	
 }
 
 
@@ -2281,8 +2218,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
 include("./ini/wp_ini.php");
 
@@ -2311,8 +2247,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
 include("./ini/wp_ini.php");
@@ -2342,8 +2277,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
   
@@ -2374,8 +2308,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
 include("./ini/wp_ini.php");
 
@@ -2404,8 +2337,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
 include("./ini/wp_ini.php");
@@ -2435,8 +2367,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
 include("./ini/wp_ini.php");
@@ -2466,8 +2397,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
 include("./ini/wp_ini.php");
@@ -2497,8 +2427,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
 include("./ini/wp_ini.php");
 
 
@@ -2526,8 +2455,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
   
@@ -2558,8 +2486,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
   
@@ -2590,8 +2517,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
   
@@ -2622,8 +2548,7 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*200;
 
-} else{	
-}  
+}
   
   
   
@@ -2664,9 +2589,7 @@ echo "<font color=black>对不起,你没有任意一样区域或者师门卷轴�
   
   
   
-  } else{	
-
-	}
+  }
   
 
 
@@ -2684,7 +2607,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

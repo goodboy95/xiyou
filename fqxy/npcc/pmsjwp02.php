@@ -14,7 +14,6 @@ if($gsjg>=1000&&$gsjg<=99999999999){
 $bfb=floor($sl*$gsjg*0.01);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $ylmm=$ylsxf;
@@ -30,7 +29,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-$ylsxf;
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -222,10 +221,6 @@ $path='acher/pm';
 //判断ini文件是否存在	
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
-
-
-
-} else{
 
 
 
@@ -533,10 +528,6 @@ unlink($ininame); //删除文件
 
 
 
-} else{
-
-
-
 }
 
 
@@ -726,10 +717,6 @@ unlink($ininame); //删除文件
 
 
 
-} else{
-
-
-
 }
 
 
@@ -827,10 +814,6 @@ echo "<br>";
 
 if($ymid==""){//背包书卷
 $ymid=27;
-} else{
-
-
-
 }
 
 

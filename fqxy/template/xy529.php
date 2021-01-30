@@ -85,7 +85,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*50;
 
-} else{	
 }
 
 
@@ -118,7 +117,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*50;
 
-} else{	
 }
 
 include("./ini/cl_ini.php");
@@ -149,7 +147,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*50;
 
-} else{	
 }
 
 
@@ -181,7 +178,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*50;
 
-} else{	
 }
 
 
@@ -214,7 +210,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*50;
 
-} else{	
 }
 
 
@@ -248,7 +243,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*50;
 
-} else{	
 }
 
 
@@ -283,7 +277,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -30,8 +30,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -54,8 +53,8 @@ if($npcc ==1){//免费摇点
 $hdydtz=6;
 include("./ini/yd01_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[免费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[免费次数]+1;
+if($hdyd['免费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['免费次数']+1;
 //随机
 
 
@@ -72,8 +71,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（黄金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -117,17 +116,16 @@ $hdyd=($iniFile->getCategory('摇点信息'));
 
 	include("./ini/yd01_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[收费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[收费次数]+1;
+if($hdyd['收费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['收费次数']+1;
 
 
 
 
 
-$jdsl=($hdyd[收费次数]+1)*10;
+$jdsl=($hdyd['收费次数']+1)*10;
 if($jdsl ==""){
 $jdsl=999;	
-} else{
 }
 $pd=0;//初始
 $wpts="";//初始	
@@ -160,8 +158,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（黄金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd01";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -220,8 +218,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回继�
 $hdydtz=6;
 include("./ini/yd02_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[免费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[免费次数]+1;
+if($hdyd['免费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['免费次数']+1;
 //随机
 $bz= rand(1, 6);
 
@@ -234,8 +232,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（铂金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd02";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -271,17 +269,16 @@ $hdyd=($iniFile->getCategory('摇点信息'));
 
 	include("./ini/yd02_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[收费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[收费次数]+1;
+if($hdyd['收费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['收费次数']+1;
 
 
 
 
 
-$jdsl=($hdyd[收费次数]+1)*20;
+$jdsl=($hdyd['收费次数']+1)*20;
 if($jdsl ==""){
 $jdsl=999;	
-} else{
 }
 $pd=0;//初始
 $wpts="";//初始	
@@ -314,8 +311,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（铂金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd02";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -373,8 +370,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回继�
 $hdydtz=6;
 include("./ini/yd03_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[免费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[免费次数]+1;
+if($hdyd['免费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['免费次数']+1;
 //随机
 $bz= rand(1, 6);
 
@@ -387,8 +384,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（黄金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd03";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -425,17 +422,16 @@ $hdyd=($iniFile->getCategory('摇点信息'));
 
 	include("./ini/yd03_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[收费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[收费次数]+1;
+if($hdyd['收费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['收费次数']+1;
 
 
 
 
 
-$jdsl=($hdyd[收费次数]+1)*10;
+$jdsl=($hdyd['收费次数']+1)*10;
 if($jdsl ==""){
 $jdsl=999;	
-} else{
 }
 $pd=0;//初始
 $wpts="";//初始	
@@ -468,8 +464,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（黄金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd03";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -530,8 +526,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回继�
 $hdydtz=6;
 include("./ini/yd04_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[免费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[免费次数]+1;
+if($hdyd['免费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['免费次数']+1;
 //随机
 //随机
 $bz= rand(1, 6);
@@ -545,8 +541,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（铂金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd04";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd01=$hdydcs where wjid=$wjid";//物品id号必改值
@@ -583,17 +579,16 @@ $hdyd=($iniFile->getCategory('摇点信息'));
 
 	include("./ini/yd04_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-if($hdyd[收费次数]<$hdydtz){//判断是否超限制
-$hdydcs=$hdyd[收费次数]+1;
+if($hdyd['收费次数']<$hdydtz){//判断是否超限制
+$hdydcs=$hdyd['收费次数']+1;
 
 
 
 
 
-$jdsl=($hdyd[收费次数]+1)*10;
+$jdsl=($hdyd['收费次数']+1)*10;
 if($jdsl ==""){
 $jdsl=999;	
-} else{
 }
 $pd=0;//初始
 $wpts="";//初始	
@@ -627,8 +622,8 @@ include("./msg/msgg02.php");
 } else{	
 echo "<font color=red>恭喜你！在疯狂摇一摇（铂金场）中摇到了".$bz."点</font><br>";
 } 
-$ds01=$hdyd[今日点数]+$bz;
-$ds02=$hdyd[活动点数]+$bz;
+$ds01=$hdyd['今日点数']+$bz;
+$ds02=$hdyd['活动点数']+$bz;
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_yd04";
 $strsql = "update $q2 set ds01=$ds01,ds02=$ds02,yd02=$hdydcs where wjid=$wjid";//物品id号必改值

@@ -30,10 +30,6 @@ $wpsl=($iniFile->getItem('其他数量',$npcc));
 
 
 
-} else{
-
-
-
 }
 
 
@@ -52,10 +48,6 @@ if($ymid==236){ //背包其他
 $bsid=$npcc;
 include("./wp/zbbs.php");
 $wpmz=$bsmz;
-} else{
-
-
-
 }
 
 include("npcc/xgsqt01.php");
@@ -74,10 +66,6 @@ $cdid[]=$cmid;
 $clj[]=236;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
-
-
-
-} else{
 
 
 
@@ -161,7 +149,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -28,7 +28,7 @@ $wjid=$ckid;
 include("./ini/zt_ini.php");
 $username=($iniFile->getItem('玩家信息','玩家名字'));
 $bpid=($iniFile->getItem('玩家信息','帮派id'));
-$iniFile->updItem('玩家信息', ['红' => $nwjxx[hp]]);	
+$iniFile->updItem('玩家信息', ['红' => $nwjxx['hp']]);
 
 
 
@@ -46,7 +46,7 @@ $filename = $ininame;
 if(!file_exists($filename)){
 $counter_file=$ininame;//文件名及路径,在当前目录下新建aa.txt文件 
 $fopen=fopen($counter_file,   'wb ');//新建文件命令 
-fputs($fopen,   '[地图信息]');//向文件中写入内容; 
+fputs($fopen,   '[地图信息]');//向文件中写入内容;
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 fclose($fopen); 
@@ -160,7 +160,6 @@ $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
-} else{
 }
 include("./ini/zt_ini.php");
 $uname=($iniFile->getItem('玩家信息','玩家名字'));
@@ -253,7 +252,6 @@ include("fhgame.php");
 	
 	$wjid1=$wjid;
 
-} else{	
 }
 
 //解锁当前使用的ini

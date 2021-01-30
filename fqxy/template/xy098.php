@@ -130,8 +130,7 @@ foreach( $arr1 as $k=>$v) {
 $ltmax1=max($arr1);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 
 $inina="bl.ini";

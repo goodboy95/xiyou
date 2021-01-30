@@ -31,18 +31,14 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_zt";
 $sql1=mysqli_query($conn, "select wjid from $q2 where lh=$wjjdqg");
 $info1=@mysqli_fetch_array($sql1);	
-$lhid=$info1[wjid];
+$lhid=$info1['wjid'];
 
 if($lhid>=10000000){
 	$wjjdqg=$lhid;
 	
-} else{
+}
 	
-} 
-	
-	} else{
-	
-	} 
+	}
 	if($wjjdqg>10000000&&$wjjdqg<=99999999){
 	
 	$sll=preg_match('/^\d+$/i', $wjjdqg);
@@ -61,7 +57,7 @@ $wjjdqgp=$wjjdqg-10000000;
 $q2="o_user_list";
 $sql1=mysqli_query($conn, "select uid from $q2 where uid=$wjjdqgp");
 $info1=@mysqli_fetch_array($sql1);	
-$uid=$info1[uid];
+$uid=$info1['uid'];
 if($uid!=""){
 include("./ini/zt_ini.php");
 $jh01=($iniFile->getItem('玩家信息','性别'));
@@ -102,8 +98,7 @@ if($tmp1 == $v) unset($arr1[$k]);
 $ltmax1=max($arr1);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $wjzd1=($iniFile->getItem('玩家排序1',$wjid1));
 $wjzd=($iniFile->getItem('玩家结婚',$wjzd1));
@@ -207,7 +202,6 @@ echo "<font color=red>求婚宣言不能为空</font>"."<br>";
 }
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -302,8 +302,7 @@ include("template/xy599.php");//五级国家商城
 include("template/xy600.php");//六级国家商城
 
 
-} else{
-} 
+}
 
 
 

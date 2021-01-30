@@ -16,24 +16,18 @@ $hdtime=1;
 $date=date("H:i:s");
 if($date> $mbbtime01 && $date < $mbbtime02){
 $hdtime=2;
-}else{
-	
 }
 
 
 $date=date("H:i:s");
 if($date> $mbbtime03 && $date < $mbbtime04){
 $hdtime=2;
-}else{
-	
 }
 
 
 $date=date("H:i:s");
 if($date> $mbbtime05 && $date < $mbbtime06){
 $hdtime=2;
-}else{
-	
 }
 
 

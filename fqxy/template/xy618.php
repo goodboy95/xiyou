@@ -43,11 +43,11 @@ $nwjmp=$n007;
 //动态祝福加成数据
 
 include("./wj/zfzt.php");
-$ohp=$wjxx[红];
-$omaxhp=$wjxx1[血];
-$omaxgj=$wjxx1[max攻击];
-$omaxmg=$wjxx1[max魔攻];
-$omaxfy=$wjxx1[max防御];
+$ohp=$wjxx['红'];
+$omaxhp=$wjxx1['血'];
+$omaxgj=$wjxx1['max攻击'];
+$omaxmg=$wjxx1['max魔攻'];
+$omaxfy=$wjxx1['max防御'];
 
 include("./ini/user_ini.php");
 $yymid=($iniFile->getItem('最后页面id','页面id'));
@@ -86,8 +86,8 @@ $n003=($iniFile->getItem('擂台玩家属性','玩家maxhp'));
 $nmz=$n001;
 $nhp=$n002;
 $nmaxhp=$n003;
-$ohp=$wjxx[红];
-$omaxhp=$wjxx1[血];	
+$ohp=$wjxx['红'];
+$omaxhp=$wjxx1['血'];
 	
 
 if($nhp<=1){
@@ -95,8 +95,7 @@ include("template/xy620.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 exit;
-} else{
-} 
+}
 
 if($ohp<=1){
 
@@ -107,8 +106,7 @@ include("template/xy619.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 exit;
-} else{
-} 
+}
 
 
 
@@ -290,7 +288,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

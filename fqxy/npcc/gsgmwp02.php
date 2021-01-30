@@ -11,7 +11,6 @@ $npccid=$arr[1];
 $bfb=floor($sl*$wpjgg*0.01);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $ylmm=$sl*$wpjgg+$ylsxf;
@@ -46,7 +45,7 @@ $bbrlb=($iniFile->getItem('玩家信息',['背包容量']));
 
 
 
-//$cbbrlb=$wjxx[挂售容量];
+//$cbbrlb=$wjxx['挂售容量'];
 	
 include("./ini/bbrl_ini.php");
 $ckbbrla=($iniFile->getItem('背包已用容量','容量'));
@@ -82,13 +81,11 @@ $result = mysqli_query($conn, $strsql);
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl+$sl*$wpjgg;
 if($wjyll>=99999999999){
 $wjyll=99999999999;
-} else{
-
-} 
+}
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
@@ -103,8 +100,8 @@ $wjid=$wjid1;//自己
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -144,13 +141,11 @@ $result = mysqli_query($conn, $strsql);
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-($sl*$wpjgg+$ylsxf);
 if($wjyll<=0){
 $wjyll=0;
-} else{
-
-} 
+}
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -248,10 +243,6 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
-} else{
-
-
-
 }
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
@@ -331,8 +322,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -384,13 +374,11 @@ $result = mysqli_query($conn, $strsql);
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl+$sl*$wpjgg;
 if($wjyll>=99999999999){
 $wjyll=99999999999;
-} else{
-
-} 
+}
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -414,8 +402,8 @@ $wjid=$wjid1;//自己
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -453,14 +441,12 @@ $result = mysqli_query($conn, $strsql);
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-($sl*$wpjgg+$ylsxf);
 
 if($wjyll<=0){
 $wjyll=0;
-} else{
-
-} 
+}
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
@@ -569,10 +555,6 @@ unlink($ininame); //删除文件
 
 
 
-} else{
-
-
-
 }
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
@@ -652,8 +634,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 

@@ -33,8 +33,6 @@ include("./ini/sc_ini.php");
 $xyc1=($iniFile->getItem('商城数量','126'));
 if($xyc1==""){
 $xyc1=($iniFile->getItem('商城数量','307'));
-} else{
-
 }
 
 
@@ -54,8 +52,6 @@ $cgl=$cgl+$xyc;
 if($cgl>=100){
 $cgl=100;
 }
-} else{
-
 }
 
 
@@ -132,9 +128,7 @@ include("fhgame.php");
 
 
 
-} else{	
-
-} 
+}
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

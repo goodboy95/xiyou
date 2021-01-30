@@ -46,7 +46,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 	$sl=$wpsl;
 	
@@ -77,7 +76,6 @@ include("./wj/dyxx.php");
 if($wpzz2!="蓝"){
 //动态祝福加成数据
 include("wj/zfzt.php");
-} else{
 }
 
 
@@ -86,12 +84,8 @@ $sl1=$wpsl1;
 
 if($sl>=$sl1){
 $sl=$sl1;
-} else{
-
 }
 
-
-} else{
 
 }
 
@@ -130,7 +124,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 	$sl=$wpsl;
 	
@@ -165,21 +158,16 @@ if($sl >=$dywpsl){
 $sl=$sxsl;
 if($dywpsl>=sl){
 $sl=$sxsl;
-} else{
 }
-} else{
-}	
+}
 } elseif($wpsycs ==""){
 
 if($sl >=$xzcs){	
 $sl=$sxsl;
 if($dywpsl>=sl){
 $sl=$sxsl;
-} else{
 }
-} else{
 }
-} else{
 }
 
 
@@ -208,8 +196,6 @@ $sl=$sxsl;
 
 
 
-
-} else{
 
 }
 
@@ -244,10 +230,6 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
-} else{
-
-
-
 }
 
 
@@ -279,7 +261,6 @@ $iniFile->updItem('农场数量', [$npcc => $wpsl]);
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $iniFile->updItem('宝箱数量', [$npcc => $wpsl]);
-} else{
 }
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 
@@ -347,8 +328,6 @@ include("template/xy002.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{
-
 }
 
 
@@ -405,10 +384,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -460,10 +435,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 }
@@ -497,9 +468,6 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="wp".$wjid;
 $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
-
-} else{
-
 
 }
 
@@ -597,7 +565,6 @@ $iniFile->delItem('序列', $npcc);
 $iniFile->delItem('宝箱数量', $npcc);
 # 删除一个子项
 $iniFile->delItem('宝箱名字', $npcc);
-} else{
 }
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
@@ -679,8 +646,6 @@ include("template/xy002.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{
-
 }
 
 
@@ -727,10 +692,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 

@@ -265,8 +265,7 @@ $wp1=$zbxjj.$xxxbs.$clname;
 
 
  echo "<font color=black>你卸下了".$wp1."</font>"."<br>"; 
- } else{
-} 
+ }
  
  } else{
 if($cwp1 !=""){
@@ -318,8 +317,7 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 //更新缓存数据
- } else{
- } 
+ }
 
 }
 
@@ -379,7 +377,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装�
 
 } 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

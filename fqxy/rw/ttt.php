@@ -1020,9 +1020,7 @@ $hdid=54;
  
  
  
-} else{
-
-}
+} 
 
 include("./sql/mysql.php");//调用数据库连接 
 include("./ini/hd_ini.php");
@@ -1037,20 +1035,7 @@ $iniFile->updItem('活动次数', [$hdid => $hdcs]);
 
 
 
-} else{
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+} 
 
 
 

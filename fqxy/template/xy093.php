@@ -27,20 +27,20 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 获取一个分类下所有数据$
 $wjxx=($iniFile->getCategory('玩家信息'));
-$cksex=$wjxx[性别];
-$ckname=$wjxx[玩家名字];
-$ckpoid=$wjxx[配偶id];
-$ckponame=$wjxx[配偶名字];
-$ckzzid=$wjxx[住宅id];
-$ckzzfl=$wjxx[住宅分类];
-$ckzzmz=$wjxx[住宅名字];
-$ckbpid=$wjxx[帮派id];
-$ckbpmz=$wjxx[帮派名字];
-$ckmpp=$wjxx[门派];
-$cklh=$wjxx[靓号];
+$cksex=$wjxx['性别'];
+$ckname=$wjxx['玩家名字'];
+$ckpoid=$wjxx['配偶id'];
+$ckponame=$wjxx['配偶名字'];
+$ckzzid=$wjxx['住宅id'];
+$ckzzfl=$wjxx['住宅分类'];
+$ckzzmz=$wjxx['住宅名字'];
+$ckbpid=$wjxx['帮派id'];
+$ckbpmz=$wjxx['帮派名字'];
+$ckmpp=$wjxx['门派'];
+$cklh=$wjxx['靓号'];
 
 
-$img='pic/vip/'."vip".$wjxx[vip等级].'.png';
+$img='pic/vip/'."vip".$wjxx['vip等级'].'.png';
 echo '<img src="'.$img.' "alt="图片">';
 echo "<br>";	
 echo "<br>";	
@@ -163,45 +163,45 @@ include("./ini/post_ini.php");
 $iniFile->updItem('赠送人ID', ['初始' => $ckid]);
 $iniFile->updItem('赠送人', ['初始' => $ckname]);
 //更改赠银赠物对象
-if($wjxx[恶名值]>=1&&$wjxx[恶名值]<=20){
-$em="【坏蛋】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=21&&$wjxx[恶名值]<=40){
-$em="【匪徒】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=41&&$wjxx[恶名值]<=60){
-$em="【恶人】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=61&&$wjxx[恶名值]<=80){
-$em="【恶棍】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=81&&$wjxx[恶名值]<=100){
-$em="【恶霸】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=101&&$wjxx[恶名值]<=150){
-$em="【凶人】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=151&&$wjxx[恶名值]<=250){
-$em="【凶徒】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=251&&$wjxx[恶名值]<=300){
-$em="【凶手】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=301&&$wjxx[恶名值]<=350){
-$em="【暴徒】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=351&&$wjxx[恶名值]<=400){
-$em="【暴君】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=401&&$wjxx[恶名值]<=450){
-$em="【嗜血成性】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=451&&$wjxx[恶名值]<=500){
-$em="【赶尽杀绝】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=501&&$wjxx[恶名值]<=600){
-$em="【杀人如麻】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=601&&$wjxx[恶名值]<=700){
-$em="【十恶不赦】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=701&&$wjxx[恶名值]<=800){
-$em="【血流成河】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=801&&$wjxx[恶名值]<=900){
-$em="【血染山河】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=901&&$wjxx[恶名值]<=1000){
-$em="【十方俱灭】"."(".$wjxx[恶名值]."点)";
-} elseif ($wjxx[恶名值]>=1001){
-$em="【神档杀神~佛档杀佛】"."(".$wjxx[恶名值]."点)";
+if($wjxx['恶名值']>=1&&$wjxx['恶名值']<=20){
+$em="【坏蛋】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=21&&$wjxx['恶名值']<=40){
+$em="【匪徒】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=41&&$wjxx['恶名值']<=60){
+$em="【恶人】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=61&&$wjxx['恶名值']<=80){
+$em="【恶棍】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=81&&$wjxx['恶名值']<=100){
+$em="【恶霸】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=101&&$wjxx['恶名值']<=150){
+$em="【凶人】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=151&&$wjxx['恶名值']<=250){
+$em="【凶徒】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=251&&$wjxx['恶名值']<=300){
+$em="【凶手】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=301&&$wjxx['恶名值']<=350){
+$em="【暴徒】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=351&&$wjxx['恶名值']<=400){
+$em="【暴君】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=401&&$wjxx['恶名值']<=450){
+$em="【嗜血成性】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=451&&$wjxx['恶名值']<=500){
+$em="【赶尽杀绝】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=501&&$wjxx['恶名值']<=600){
+$em="【杀人如麻】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=601&&$wjxx['恶名值']<=700){
+$em="【十恶不赦】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=701&&$wjxx['恶名值']<=800){
+$em="【血流成河】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=801&&$wjxx['恶名值']<=900){
+$em="【血染山河】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=901&&$wjxx['恶名值']<=1000){
+$em="【十方俱灭】"."(".$wjxx['恶名值']."点)";
+} elseif ($wjxx['恶名值']>=1001){
+$em="【神档杀神~佛档杀佛】"."(".$wjxx['恶名值']."点)";
 } else{
 	
-$em="【与世无争】"."(".$wjxx[恶名值]."点)";	
+$em="【与世无争】"."(".$wjxx['恶名值']."点)";	
 } 
 echo "<font color=red>恶名：".$em."</font><br>";
 
@@ -413,7 +413,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

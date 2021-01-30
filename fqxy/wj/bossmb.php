@@ -67,9 +67,6 @@ unlink($ininame); //删除文件
 $xtxx=$bossmz."已经复活~~请大佬们前往击杀~~击杀！！";
 include("./msg/msgg02.php");
 }
-} else{
-
-
 }
 
 

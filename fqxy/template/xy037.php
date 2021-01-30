@@ -47,7 +47,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 
 
@@ -148,10 +147,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
 }
 
 //cmd及超链接值
@@ -216,10 +211,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -256,9 +247,7 @@ include("npcc/wpsy02.php");
 
 
 
-} else{
-
-} 
+}
 
 
 
@@ -296,7 +285,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 if($wpsl!=""){
 include("wp/wpsy.php");
@@ -358,10 +346,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 } else{
@@ -424,10 +408,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 	
 	
@@ -443,7 +423,6 @@ include("./pz/pz01.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -22,7 +22,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_qd";
 $sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$id=$info1[id];
+$id=$info1['id'];
 if($id ==""){
 
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
@@ -46,8 +46,8 @@ $sql = "insert into $q2 (id,wjid,qdcs,qdy,qd1,qd2,qd3,qd4,qd5)  values('$maxidd'
 $info1=@mysqli_fetch_array($sql1);
   
 
-$qdcs=$info1[qdcs];
-$qdy=$info1[qdy];
+$qdcs=$info1['qdcs'];
+$qdy=$info1['qdy'];
 $qd1=$info1[qd1];
 $qd2=$info1[qd2];
 $qd3=$info1[qd3];
@@ -57,8 +57,8 @@ $qd5=$info1[qd5];
  } else{	
  
 
-$qdcs=$info1[qdcs];
-$qdy=$info1[qdy];
+$qdcs=$info1['qdcs'];
+$qdy=$info1['qdy'];
 $qd1=$info1[qd1];
 $qd2=$info1[qd2];
 $qd3=$info1[qd3];

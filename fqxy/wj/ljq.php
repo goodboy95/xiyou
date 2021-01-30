@@ -146,7 +146,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 

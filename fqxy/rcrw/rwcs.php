@@ -9,7 +9,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 //如果跨天则重置次数和时间
 $nowtime=date('Y-m-d H:i:s');
@@ -24,7 +23,6 @@ include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
 $hdcs=0;
-} else{	
-} 
+}
 
 ?>

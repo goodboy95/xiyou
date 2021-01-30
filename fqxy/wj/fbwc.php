@@ -826,7 +826,6 @@ $ii=$ii+1;
 $wpbv3=$wpbv3+1;
 if ($wpbv3==1) {//符合条件爆出
 include("./sql/mysql.php");//调用数据库连接 
-} else{
 }
 if ($wpdz2[$ii]==3) {//装备
 $jjmz=$wpdz1[$ii];
@@ -857,7 +856,6 @@ $kcrl=$wpkc*$wpzl+$kcrl;
 if ($kcrl!="") {
 include("./pz/ini_pzz09.php");
 echo $manzu1;
-} else{
 }
 
 

@@ -91,8 +91,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -165,8 +164,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -219,8 +217,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -252,7 +249,6 @@ include("template/xy002.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

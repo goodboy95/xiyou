@@ -113,8 +113,7 @@ include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."经历了千辛万苦，将".$cw01x."提升至了极品".$cw03x."星！！";
 include("./msg/msgg02.php");
-} else{
-} 
+}
 
 
 
@@ -199,7 +198,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

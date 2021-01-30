@@ -41,38 +41,34 @@ unlink($ininame); //删除文件
 include("./wj/ztt.php");
 
 if ($max1>0) {
-$maxq=$wjxx1[血];
+$maxq=$wjxx1['血'];
 $maxq=$maxq+$max1;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['血' => $maxq]);
-} else{
-} 
+}
 if ($max2>0) {
-$maxq=$wjxx1[max攻击];
+$maxq=$wjxx1['max攻击'];
 $maxq=$maxq+$max1;
 $maxk = ceil(($maxq)/ 1.3);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['攻击'  => $maxk,'max攻击'  => $maxq]);
-} else{
-} 
+}
 
 
 if ($max3>0) {
-$maxq=$wjxx1[max防御];
+$maxq=$wjxx1['max防御'];
 $maxq=$maxq+$max1;
 $maxk = ceil(($maxq)/ 1.3);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['防御'  => $maxk,'max防御'  => $maxq]);
-} else{
-} 
+}
 if ($max3>0) {
-$maxq=$wjxx1[max魔攻];
+$maxq=$wjxx1['max魔攻'];
 $maxq=$maxq+$max1;
 $maxk = ceil(($maxq)/ 1.3);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['魔攻'  => $maxk,'max魔攻'  => $maxq]);
-} else{
-} 
+}
 ///////////////////////////////更新状态数据////////////////	
 
 

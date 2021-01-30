@@ -5,11 +5,7 @@ if ($wjid==10000001) {//gm号可看
 echo "<font color=black>操作ID：</font>".$wjid."<br>";
 
 
-} else{
-
-
-	
-} 
+}
 
 
 
@@ -41,8 +37,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 

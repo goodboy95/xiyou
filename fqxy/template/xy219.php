@@ -33,8 +33,6 @@ $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
 
 
 
-} else{
-
 }
 
 
@@ -62,7 +60,7 @@ if($m>0){
 
 $i=0;
 
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 
 $km=0;
 
@@ -300,7 +298,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

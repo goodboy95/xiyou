@@ -33,8 +33,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}  
 
 }
 
@@ -65,7 +64,7 @@ echo "<font color=black>活动截止：".$endtime."晚上23:55</font><br>";
 
 include("./ini/yd02_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-$hdtime=$hdyd[摇点时间];
+$hdtime=$hdyd['摇点时间'];
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
 
@@ -76,8 +75,8 @@ if($time3<=$time1&&$time3>=$time2){
 //如果大于1则改掉自己的点数
 include("./ini/yd02_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-$yd01=$hdyd[今日点数];
-$yd02=$hdyd[活动点数];
+$yd01=$hdyd['今日点数'];
+$yd02=$hdyd['活动点数'];
 if($yd01>=1||$yd02>=1){
 
 include("./sql/mysql.php");//调用数据库连接 
@@ -87,12 +86,9 @@ $result = mysqli_query($conn, $strsql);
 include("./ini/yd02_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => '0','活动点数' => '0']);
 
-} else{	
-} 
+}  
 
-} else{	
-
-} 
+}  
 
 
 $nowtime1 = substr($nowtime,0,10); 	
@@ -109,21 +105,19 @@ $iniFile->updItem('摇点信息', ['摇点时间' => $nowtime,'今日点数' => 
 include("./ini/yd02_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
 
-} else{	
-
-} 
+}  
 
 
 
 
 echo "<font color=red>娱乐项目-【疯狂摇一摇】（铂金场）</font>"."<br>";
 echo "<font color=black>今日点数：</font>";
-echo "<font color=red>".$hdyd[今日点数]."&nbsp点</font>"."<br>";
+echo "<font color=red>".$hdyd['今日点数']."&nbsp点</font>"."<br>";
 echo "<font color=black>活动点数：</font>";
-echo "<font color=red>".$hdyd[活动点数]."&nbsp点</font>"."<br>";
+echo "<font color=red>".$hdyd['活动点数']."&nbsp点</font>"."<br>";
 echo "<br>";
 echo "<font color=black>免费摇点：</font>";
-echo "<font color=red>(".$hdyd[免费次数]."/6次)</font>";
+echo "<font color=red>(".$hdyd['免费次数']."/6次)</font>";
 
 
 //cmd及超链接值
@@ -134,7 +128,7 @@ $npc[]=3;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【免费摇一摇】</font></a>"."<font color=black></font>"."<br>";
 echo "<br>";
 echo "<font color=black>金豆摇点：</font>";
-echo "<font color=red>(".$hdyd[收费次数]."/4次)</font>";
+echo "<font color=red>(".$hdyd['收费次数']."/4次)</font>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -188,8 +182,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱�
 //如果大于1则改掉自己的点数
 include("./ini/yd02_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
-$yd01=$hdyd[今日点数];
-$yd02=$hdyd[活动点数];
+$yd01=$hdyd['今日点数'];
+$yd02=$hdyd['活动点数'];
 if($yd01>=1||$yd02>=1){
 
 include("./sql/mysql.php");//调用数据库连接 
@@ -199,8 +193,7 @@ $result = mysqli_query($conn, $strsql);
 include("./ini/yd02_ini.php");
 $iniFile->updItem('摇点信息', ['今日点数' => '0','活动点数' => '0']);
 
-} else{	
-} 
+}  
 
 
 echo "<font color=red>活动尚未开始或者已结束</font><br>";

@@ -42,8 +42,7 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=$bosid;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$bossmz."</font></a>";
-} else{
-} 
+}
 
 
 

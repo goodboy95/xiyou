@@ -11,16 +11,16 @@ $m=0;
 
  while(!!$row=mysqli_fetch_array($result)){
 $q2="all_user";
-$sql1=mysqli_query($conn, "select wjid from $q2 where wjid=$row[wjid]");
+$sql1=mysqli_query($conn, "select wjid from $q2 where wjid=$row['wjid']");
 $info1=@mysqli_fetch_array($sql1);
-$fh=$info1[wjid];
+$fh=$info1['wjid'];
 if($fh >=1){
-echo "<font color=blue>【违规封号】玩家【:".$row[username]."（". $row[wjid]."）】====充值总额：【".$row[vipjy]."】</font></br>";		
+echo "<font color=blue>【违规封号】玩家【:".$row['username']."（". $row['wjid']."）】====充值总额：【".$row['vipjy']."】</font></br>";
 } else{	
-if($row[vipjy] >=1){	
-echo "<font color=red>【YES】玩家【:".$row[username]."（". $row[wjid]."）】====充值总额：【".$row[vipjy]."】</font></br>";	
+if($row['vipjy'] >=1){
+echo "<font color=red>【YES】玩家【:".$row['username']."（". $row['wjid']."）】====充值总额：【".$row['vipjy']."】</font></br>";
 } else{
-echo "<font color=balck>【NO】玩家【:".$row[username]."（". $row[wjid]."）】====充值总额：【".$row[vipjy]."】</font></br>";			
+echo "<font color=balck>【NO】玩家【:".$row['username']."（". $row['wjid']."）】====充值总额：【".$row['vipjy']."】</font></br>";
 } 	
 
 } 

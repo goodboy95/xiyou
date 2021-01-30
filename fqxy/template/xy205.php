@@ -33,15 +33,11 @@ $iniFile->updItem('显示设置', ['场景公告' => '2']);
 
 
 
-} else{
-
-
 }
 
 include("template/xy204.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

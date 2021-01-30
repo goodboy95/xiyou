@@ -43,8 +43,7 @@ include("./ini/ojsini.php");
 include("template/xy399.php");
 include("./pz/pz01.php");
 break;
-} else{	
-}
+} 
 
 
 

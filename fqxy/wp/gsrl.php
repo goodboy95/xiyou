@@ -24,8 +24,6 @@ include("./ini/gsrl_ini.php");
 
 
 
-} else{
-
 }
 //////强制更新掉背包容量/////////
 

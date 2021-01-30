@@ -69,7 +69,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_pay";
 $sql1=mysqli_query($conn, "select payid from $q2 where paywjid='$wjid'");
 $info1=@mysqli_fetch_array($sql1);
-$payid1=$info1[payid];
+$payid1=$info1['payid'];
 
 $str="select payid from $q2";
 $result=mysqli_query($conn, $str) or die('SQL语句有误');
@@ -78,7 +78,7 @@ $result=mysqli_query($conn, $str) or die('SQL语句有误');
 $payid=0;
  while(!!$row=mysqli_fetch_array($result)){
 	 
-	if($row[payid]==$payid1){   
+	if($row['payid']==$payid1){   
 $payid=$payid+1;
  }
  }
@@ -91,12 +91,11 @@ $payid=$payid+1;
 if($payid!=""&&$payid>=1){
 $sql1=mysqli_query($conn, "select payzf,price from $q2 where payid='$payid1'");
 $info1=@mysqli_fetch_array($sql1);
-$payzf=$info1[payzf];
-$price=$info1[price];
+$payzf=$info1['payzf'];
+$price=$info1['price'];
 
 echo "充值已到账请重新进下增值仓库"."</br>";
-} else{
-} 
+}
 
 if($payzf==1){
 
@@ -169,8 +168,8 @@ $wpfl=4;
 $q2="zzck".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 
@@ -219,8 +218,8 @@ $wpfl=4;
 $q2="zzck".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 
@@ -268,8 +267,8 @@ $wpfl=4;
 $q2="zzck".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 
@@ -406,8 +405,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 	$ltbl2=-1;
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
@@ -424,12 +422,7 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 		
-		} else{
-		
-
-		
-		
-		} 
+		}
 		
 
    
@@ -459,15 +452,15 @@ $m=0;
  while(!!$row=mysqli_fetch_array($result)){
 
 
-if($row[wpsl]>0){  
+if($row['wpsl']>0){  
 $m=$m+1;
-$npcc=$row[wpid];
-$iniFile->addCategory('序列', [$row[wpid]=>$m ]);
-$iniFile->addCategory('id', [$m=> $row[wpid]]);
-$iniFile->addCategory('数量', [$row[wpid]=> $row[wpsl]]);
+$npcc=$row['wpid'];
+$iniFile->addCategory('序列', [$row['wpid']=>$m ]);
+$iniFile->addCategory('id', [$m=> $row['wpid']]);
+$iniFile->addCategory('数量', [$row['wpid']=> $row['wpsl']]);
 //调用物品信息
 include("./wp/wpxx.php");
-$iniFile->addCategory('名字', [$row[wpid]=> $wpmz]);  
+$iniFile->addCategory('名字', [$row['wpid']=> $wpmz]);  
 
    
 

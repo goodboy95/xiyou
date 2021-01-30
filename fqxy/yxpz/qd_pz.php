@@ -17,9 +17,9 @@ $qdxx=($iniFile->getCategory('签到信息'));
 $qdy= date('m')*1;
 
 
-if($qdxx[签到月]==$qdy){
+if($qdxx['签到月']==$qdy){
 include("./sql/mysql.php");//调用数据库连接 
-$qdcs=$qdxx[签到次数]+1;
+$qdcs=$qdxx['签到次数']+1;
 $q2="all_qd";
 $strsql = "update $q2 set qdcs=$qdcs where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -122,8 +122,6 @@ $wpdz3[]=5;//物品id
 $wpdz4[]=1;//	量
 $wpdz5[]=1;//	重量
 //得到物品代码
-} else{
-
 }
 	
 

@@ -56,8 +56,7 @@ echo "<font color=black>很遗憾！！种植产物升级失败了！！</font>"
 } 
 if($zzdj<1){
 $zzdj=1;
-} else{
-} 
+}  
 $strsql = "update $q2 set zzdj='$zzdj' where id=1";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('种植等级', ['1' => $zzdj]);
@@ -102,8 +101,7 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

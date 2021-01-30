@@ -76,8 +76,6 @@ echo "<font color=black>需求：〖练星符〗（橙）x50+300w西游声望+20
 
 
 
-} else{
-
 }
 
 

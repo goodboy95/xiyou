@@ -21,7 +21,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -71,7 +70,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1045,9 +1043,7 @@ include("./msg/msgg02.php");
 
 
 
-} else{	
-
-} 
+}
 
 
 
@@ -1079,7 +1075,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1432,7 +1427,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 
 
@@ -1499,7 +1493,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1562,7 +1555,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1621,7 +1613,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1685,7 +1676,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1755,7 +1745,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1808,7 +1797,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -1857,7 +1845,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -2016,7 +2003,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -2077,7 +2063,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -2153,7 +2138,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -2197,7 +2181,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -2225,7 +2208,6 @@ $wpdz3[]=944;//物品id
 $wpdz4[]=1;//	量
 $wpdz5[]=1;//	重量
 echo "<font color=red>意外的触发获得了〖紫星币〗x1</font></br>"; 
-} else{	
 }
 
 
@@ -2265,7 +2247,6 @@ echo "<font color=red>对不起！你今日已经获取过〖小公主の激素�
 
 
 
-} else{	
 }
 
 
@@ -2292,7 +2273,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -32,8 +32,7 @@ if(flock($fp2,LOCK_EX | LOCK_NB)){
 	if($zspd2>=25){
 	$zsspd2=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 

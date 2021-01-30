@@ -19,8 +19,7 @@ if($bz==10){
 $bz= rand(1, 10);
 $aa0=1+$bz/10;
 $aa4=calc($aa4,$aa0,'mul');
-} else{	
-} 
+}
 $s=$aa4*1.3;	
 } else{	
 $s=0;	
@@ -50,8 +49,7 @@ if($bz==10){
 $bz= rand(1, 10);
 $aa0=1+$bz/10;
 $aa4=calc($aa4,$aa0,'mul');
-} else{	
-} 
+}
 $s=$aa4*1.1;	
 
 } else{	
@@ -72,8 +70,7 @@ if($bz==10){
 $bz= rand(1, 10);
 $aa0=1+$bz/10;
 $aa4=calc($aa4,$aa0,'mul');
-} else{	
-} 
+}
 $s=$aa4*1.2;	
 
 } else{	

@@ -31,7 +31,7 @@ $xlidd=1;
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
@@ -48,7 +48,6 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','500')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 ///////////////////////////摇点奖金池/////////////10金豆
 
@@ -67,7 +66,7 @@ $xlidd=2;
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
@@ -83,7 +82,6 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','1000')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 ///////////////////////////摇点奖金池/////////////20金豆
@@ -101,7 +99,7 @@ $xlidd=3;
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
@@ -117,14 +115,13 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','2500000000')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 $xlidd=4;
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="all_jc";
@@ -140,7 +137,6 @@ $sql = "insert into $q2 (id,xlid,jc)  values('$maxidd','$xlidd','5000000000')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 
@@ -160,7 +156,7 @@ $m=0;
  while(!!$row=mysqli_fetch_array($result)){
 	 
 	 
-$iniFile->addCategory('奖金池', [$row[xlid]=> $row[jc]]);
+$iniFile->addCategory('奖金池', [$row['xlid']=> $row['jc']]);
 }
 
 

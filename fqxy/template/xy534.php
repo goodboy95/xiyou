@@ -27,7 +27,6 @@ include("./pz/ini_pzz04.php");//扣除
 
 if($jnypsc==2){//使用完清理快捷键防止空白
 
-} else{	
 }
 
 
@@ -39,7 +38,6 @@ $kcrl=$sl;
 //背包容量变更
 include("./pz/ini_pzz05.php");
 
-} else{	
 }
 
 
@@ -78,7 +76,6 @@ include("./pz/pz01.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

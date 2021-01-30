@@ -36,7 +36,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 	$sl=$wpsl;
 	
@@ -71,7 +70,6 @@ include("./wj/dyxx.php");
 if($wpzz2!="蓝"){
 //动态祝福加成数据
 include("wj/zfzt.php");
-} else{
 }
 
 
@@ -121,17 +119,13 @@ $sl=$dywpsl;
 
 
 
-} else{
 }
 	
 } elseif($wpsycs ==""){
 if($sl >=$xzcs){	
 $sl=$xzcs;
 
-} else{
 }
-} else{
-
 }
 
 
@@ -180,7 +174,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 $wpsl2=$wpsl;
 $sydy=1;
@@ -197,10 +190,7 @@ if($sydy1==1){
 		} elseif($wpsl2 >$sl){
 			$sydy=2;
 			
-		} else{
-	
-	
-	}
+		}
 	} else{
 		$sl=$wpsl;
 
@@ -258,7 +248,6 @@ $iniFile->updItem('农场数量', [$npcc => $wpsl]);
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $iniFile->updItem('宝箱数量', [$npcc => $wpsl]);
-} else{
 }
 
 
@@ -361,7 +350,6 @@ $iniFile->delItem('序列', $npcc);
 $iniFile->delItem('宝箱数量', $npcc);
 # 删除一个子项
 $iniFile->delItem('宝箱名字', $npcc);
-} else{
 }
 
 
@@ -448,10 +436,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -504,10 +488,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -536,7 +516,6 @@ include("./wp/wpsy.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

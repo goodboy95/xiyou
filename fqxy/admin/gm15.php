@@ -40,9 +40,7 @@ $minute=floor($minute1/60);
 $second=$minute1%60;
 if($minute > 0){	
 
-} else{
-
-} 
+}
 } else{
 	
 
@@ -64,13 +62,7 @@ $result = mysqli_query($conn, $strsql);
 
 $jy03="";
 } 
-} else{	
-
-
-
 }
-
-} else{	
 
 }
 
@@ -149,7 +141,6 @@ echo "<font color=black>对不起！".$wjname."正处于封号状态！！</font
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

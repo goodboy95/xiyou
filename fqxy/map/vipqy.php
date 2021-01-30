@@ -35,8 +35,6 @@ $vipqy=1;
 if($vipqy == 1){
 echo "<font color=red>VIP练级区域时间已到，【唐小僧】已前往西天取经去了！！</font>"."<br>";
 
-} else{
-
 }
 
 if ($dty==0) {

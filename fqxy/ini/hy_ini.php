@@ -32,10 +32,10 @@ $result=mysqli_query($conn, $str) or die('SQL语句有误');
 $m=0;
 while(!!$row=mysqli_fetch_array($result)){
 $m=$m+1;
-$iniFile->addCategory('序列', [$row[hyid]=>$row[id] ]);
-$iniFile->addCategory('好友id', [$row[id]=> $row[hyid]]);
-$iniFile->addCategory('好友分类', [$row[id]=> $row[hyfl]]);
-$iniFile->addCategory('好友名字', [$row[id]=> $row[hymz]]);  
+$iniFile->addCategory('序列', [$row['hyid']=>$row['id'] ]);
+$iniFile->addCategory('好友id', [$row['id']=> $row['hyid']]);
+$iniFile->addCategory('好友分类', [$row['id']=> $row['hyfl']]);
+$iniFile->addCategory('好友名字', [$row['id']=> $row['hymz']]);
 
 }
 	

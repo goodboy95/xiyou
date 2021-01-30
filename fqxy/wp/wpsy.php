@@ -46,12 +46,7 @@ include("wpsyts.php");
 
 
 
-	} else{
-
-
-
-
-	} 
+	}
 
 
 

@@ -33,8 +33,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '1']);	
 
 $hdcs=1;
-} else{	
-} 
+}
 
 
 

@@ -38,14 +38,13 @@ $xlidd=1;
 $q2="zgvip".$wjid;
 $sql1=mysqli_query($conn, "select xlid from $q2 where id=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$id=$info1[id];
+$id=$info1['id'];
 if($id ==""){
 $nowtime=date('Y-m-d H:i:s');	
 $sql = "insert into $q2 (id,zgviptime,xs)  values('$xlidd','$nowtime','1')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 
@@ -58,8 +57,8 @@ $result=mysqli_query($conn, $str) or die('SQL语句有误');
 //把有值的数据存入一个数组
 $m=0;
  while(!!$row=mysqli_fetch_array($result)){
-$iniFile->addCategory('尊贵vip', [$row[id]=> $row[zgviptime]]);
-$iniFile->addCategory('尊贵vip开关', [$row[id]=> $row[xs]]);
+$iniFile->addCategory('尊贵vip', [$row['id']=> $row['zgviptime']]);
+$iniFile->addCategory('尊贵vip开关', [$row['id']=> $row['xs']]);
 
 
 

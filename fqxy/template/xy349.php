@@ -7,7 +7,7 @@ echo "<font color=black>你被".$nname."打得遍体鳞伤，奄奄一息的死�
 
 //被干死恢复满血满蓝
 include("./ini/zt_ini.php");
-$iniFile->updItem('玩家信息', ['红' => $wjxx1[血],'蓝' => $wjxx1[蓝]]);
+$iniFile->updItem('玩家信息', ['红' => $wjxx1['血'],'蓝' => $wjxx1['蓝']]);
 	
 
 

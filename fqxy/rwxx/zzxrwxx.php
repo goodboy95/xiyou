@@ -11,11 +11,7 @@ echo "任务进程值：".$rw2."号<br>";
 echo "任务名称：【".$rw6."】<br>";
 echo "<font color=red>==========任务调试信息==1=======</font>"."<br>";
 
-} else{
-
-
-	
-} 
+}
 
 $rid=$rw2;
 $xysg=$rw4;

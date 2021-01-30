@@ -172,8 +172,7 @@ $cdid[]=$cmid;
 $clj[]=310;
 $npc[]=11;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打磨</font></a>"."<br>";
-} else{
-} 
+}
 
 echo "<br>";
 } elseif($jjid ==25){
@@ -319,8 +318,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打磨</fo
 
 
 
-} else{
-} 
+}
 
 
 
@@ -492,8 +490,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打磨</fo
 
 
 
-} else{
-} 
+}
 
 
 
@@ -567,9 +564,6 @@ $clj[]=160;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
 
-} else{
-
-
 }
 
 
@@ -606,7 +600,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

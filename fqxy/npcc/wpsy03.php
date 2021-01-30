@@ -21,7 +21,6 @@ include("./wj/dyxx.php");
 if($wpzz2!="蓝"){
 //动态祝福加成数据
 include("wj/zfzt.php");
-} else{
 }
 
 
@@ -32,9 +31,6 @@ $wpsl1=ceil(($maxhp-$hp)/$xl);
 if($wpsl>=$wpsl1){
 $wpsl=$wpsl1;
 $sydy=2;
-} else{
-
-
 }
 
 if($wpsl>=1){
@@ -87,10 +83,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 exit;
 }

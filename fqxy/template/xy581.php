@@ -13,7 +13,6 @@ if($wjtake10!=""){
 if($wjtakes2>0&&$wjtakes2<=60||$wjtakes2>0&&$wjtakes2<=60){
 if($wjtakes2>0){
 $wjtake=$wjtake10;
-} else{
 }
 	
 	

@@ -1,6 +1,6 @@
 <?php
 $weekarray=array("7","1","2","3","4","5","6");
-$week=$weekarray[date("w")];
+$week=$weekarray['date("w")'];
 if($week==6){
 echo "<font color=black>全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
 } else{
@@ -25,8 +25,8 @@ $gjgx2=($iniFile->getItem('历史贡献',$xl));
 include("./ini/bp_ini.php");	
 # 获取一个分类下所有数据$
 $bp=($iniFile->getCategory('国家信息'));
-$xbzmz=$bp[现任君主];
-$xwjid=$bp[现任君主id];
+$xbzmz=$bp['现任君主'];
+$xwjid=$bp['现任君主id'];
 
 
 	
@@ -260,7 +260,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="gz02";	
 $sql1=mysqli_query($conn, "select * from $q2 where gjmz='$bpmzr'");
 $info1=@mysqli_fetch_array($sql1);
-$gjmz=$info1[gjmz];
+$gjmz=$info1['gjmz'];
 
 
 if($gjmz!=$bpmzr){

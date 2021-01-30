@@ -281,9 +281,7 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 }
 
 
-} else{
-
-} 
+}
 
 
 
@@ -307,7 +305,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

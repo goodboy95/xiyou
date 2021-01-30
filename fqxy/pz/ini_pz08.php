@@ -25,7 +25,6 @@ if($xzcs1<1){
 echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</font><br>";
 } elseif($xzcs1 >=1){
 echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（还可服用".$xzcs1."次）</font><br>";	
-} else{
 }
 //缓存修改
 $iniFile->updItem('物品使用次数', [$npcc => $wpsycs]);
@@ -45,8 +44,6 @@ $maxk = ceil(($maxq)/ 1.3);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem($wpzz1, [$wpzz3 => $maxk,$wpzz2 => $maxq]);
 
-
-} else{
 
 }
 
@@ -77,9 +74,6 @@ if($xzcs1<1){
 echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</font><br>";
 } elseif($xzcs1 >=1){
 echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（还可服用".$xzcs1."次）</font><br>";	
-} else{
-
-
 }
 //更新缓存数据
 unlink($ininame); //删除文件  

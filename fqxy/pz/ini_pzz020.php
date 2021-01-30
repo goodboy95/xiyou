@@ -26,12 +26,7 @@ $iniFile->delItem($wpzzz, $wpid);
 # 删除一个子项
 $iniFile->delItem($pzinimz3, $wpid);
 
-} else{
-
-
-
-
-} 
+}
 
 
 

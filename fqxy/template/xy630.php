@@ -20,7 +20,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 //如果跨天则重置次数和时间
@@ -69,7 +68,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

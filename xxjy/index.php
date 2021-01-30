@@ -4,8 +4,8 @@ header("Content-type: text/html; charset=utf-8");
 
 error_reporting(E_ALL & ~E_NOTICE);
 include("../class/iniclass.php");//调用iniclass文件
-$wjid = $_GET['wjid'];//wjid = 用户id
-$password = $_GET['pass'];//pass = 密码hash
+$wjid = $_GET['wjid'] ?? null;//wjid = 用户id
+$password = $_GET['pass'] ?? null;//pass = 密码hash
 if ($wjid != "" || $password != "") {
     //调用user.ini是否存在
     include("../ini/user_ini.php");
@@ -261,7 +261,7 @@ if ($wjid != "" || $password != "") {
             var buttons = $('.voice');
             for (var i = 0; i < buttons.length; i++) {
 
-                buttons[i].onclick = function () {
+                buttons['i'].onclick = function () {
                     /* var audio = document.getElementById("bgMusic"); */
                     var audioId = $(this).attr("i");
                     var audio = document.getElementById(audioId);

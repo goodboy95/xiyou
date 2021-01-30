@@ -74,10 +74,7 @@ include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."在国庆活动中敲碎了【3号金蛋】获得了大量奖励";
 include("./msg/msgg02.php");
-} else{
-	
-
-} 	
+}
 	
 
 
@@ -107,7 +104,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

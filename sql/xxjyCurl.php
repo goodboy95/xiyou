@@ -20,12 +20,9 @@ if ($xxyou_url == $url) {
         include("../class/iniclass.php");//调用iniclass文件
         //调用user.ini是否存在
         include("../ini/user_ini.php");
-
         //验证合法性
         if ($hf == 2) {
             $pass = ($iniFile->getItem('验证信息', '玩家验证'));
-        } else {
-
         }
 
         if ($pass == $xxjy_pass && $xxjy_pass != "" && $pass != "") {
@@ -50,10 +47,8 @@ if ($xxyou_url == $url) {
 
 //将信息回调给游戏
 $post_data = $yxhe . '|' . $wjid . '|' . $xxjy_pass . '|' . $xxyou_qy;
-
 //初始化 curl
 $ch = curl_init();
-
 //将玩家id和md5值传送给服务器验证防止人为修改
 curl_setopt($ch, CURLOPT_URL, 'http://' . $xxyou_url . '/fqxy/sql/yxCurl.php');
 //这里设置成 post 方式
@@ -66,6 +61,4 @@ $response = curl_exec($ch);
 //打印服务器返回的数据
 //var_dump($response);
 curl_close($ch);
-
-
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 
-echo "<font color=black>[攻城-说明]</font>"."<br>";
+echo "<font color=black>['攻城-说明']</font>"."<br>";
 
 echo "<font color=black>【攻城攻略】</font>"."<br>";
 echo "<font color=black>攻城需要提前5分钟报名,报名需要玄铁令与1两银子,攻城开始后陆续进场。攻城入口在6.5,需要攻打3.3大门2.2中门,密道守卫才能攻打密室神兽获取权杖</font>"."<br>";

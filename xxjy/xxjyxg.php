@@ -89,9 +89,9 @@ if($zczh4!=""){
 	if($zczh3==$zczh4){	
 	
 		
-if(preg_match('/^[\w-\.]{6,12}$/', $zczh3)){	
+if(preg_match('/^['\w-\.']{6,12}$/', $zczh3)){	
 
-if(preg_match('/^[\w-\.]{6,12}$/', $zczh4)){
+if(preg_match('/^['\w-\.']{6,12}$/', $zczh4)){
 
 
 //连接数据库
@@ -102,9 +102,9 @@ $user=0;
 $q2="o_user_list";
 $sql1=mysqli_query($conn, "select uid,username,ma from $q2 where username='$zczh1'");
 $info1=@mysqli_fetch_array($sql1);
-$pass2=$info1[ma];
-$pass1=$info1[username];
-$uid=$info1[uid];
+$pass2=$info1['ma'];
+$pass1=$info1['username'];
+$uid=$info1['uid'];
 $wjid=$uid+10000000;
 
 
@@ -193,10 +193,6 @@ $zcxx="<font color=red>密码不能为空</font>";
 
 $zcxx="<font color=red>账号不能为空</font>";
 }
-
-}else{
-
-
 
 }
 

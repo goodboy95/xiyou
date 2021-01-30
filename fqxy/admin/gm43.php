@@ -7,7 +7,7 @@ $str="select id from $q2";
 $result=mysqli_query($conn, $str) or die('SQL语句有误');
 
  while(!!$row=mysqli_fetch_array($result)){
-$id[]=$row[id];
+$id[]=$row['id'];
 $m=$m+1;
 }
 if($m >=1){
@@ -18,10 +18,10 @@ $ii=$ii+1;
 $i=$i+1;
 $sql1=mysqli_query($conn, "select * from $q2 where id=$id[$i]",$conn);
 $info1=@mysqli_fetch_array($sql1);
-$cz01=$info1[czid];
-$cz02=$info1[czje];
-$cz03=$info1[cztime];
-$cz04=$info1[czfl];
+$cz01=$info1['czid'];
+$cz02=$info1['czje'];
+$cz03=$info1['cztime'];
+$cz04=$info1['czfl'];
 echo $ii;
 echo ".";
 echo "（".$cz02."元）";

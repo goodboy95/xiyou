@@ -41,7 +41,6 @@ if($zssl>=1000&&$zssl<=99999999999){
 $bfb=floor($zssl*0.02);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $ylmm=$zssl+$ylsxf;
@@ -60,13 +59,11 @@ $wjid=$ckid;//对方
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl+$zssl;
 if($wjyll>=99999999999){
 $wjyll=99999999999;
-} else{
-
-} 
+}
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 include("./ini/yl_ini.php");
@@ -82,13 +79,11 @@ $wjid=$wjid1;//自己
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-($zssl+$ylsxf);
 if($wjyll<=0){
 $wjyll=0;
-} else{
-
-} 
+}
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -160,8 +155,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -202,10 +196,8 @@ echo "<font color=red>赠送银两必须大于1000两并且小于999亿9999万99
 } else{	
 echo "<font color=red>输入有误，或者不能为空</font><br>";
 }	
-} else{	
 }
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");
@@ -251,7 +243,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

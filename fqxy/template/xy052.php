@@ -18,7 +18,7 @@ $iniFile = new iniFile($ininame);
 $wjxx=($iniFile->getItem('玩家信息',['修炼经验开关']));
 
 
-$xljykg=$wjxx[修炼经验开关];
+$xljykg=$wjxx['修炼经验开关'];
 
 
 //页面值
@@ -42,8 +42,6 @@ $iniFile->updItem('玩家信息', ['修炼经验开关' => 0]);
 echo "<font color=black>你关闭了修炼经验将获得经验(开启后获得修炼经验)</font>"."<br>";
 
 
-
-} else{
 
 }
 
@@ -76,7 +74,6 @@ echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

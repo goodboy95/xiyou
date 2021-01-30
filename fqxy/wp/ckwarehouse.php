@@ -16,7 +16,7 @@ $wjxx=($iniFile->getItem('背包仓库银两',['仓库银两']));
 
 
 
-$yl=$wjxx[仓库银两];
+$yl=$wjxx['仓库银两'];
 
 
 

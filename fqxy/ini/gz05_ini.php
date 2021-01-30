@@ -29,7 +29,7 @@ $q2="gz05";
 $str="select * from $q2";
 $result=mysqli_query($conn, $str) or die('SQL语句有误');
  while(!!$row=mysqli_fetch_array($result)){
-$iniFile->addCategory('国战判断时间', [$row[id]=>$row[gztime]]);
+$iniFile->addCategory('国战判断时间', [$row['id']=>$row['gztime']]);
 
 }
 

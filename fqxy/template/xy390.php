@@ -50,9 +50,8 @@ $zbid=$ncwidd;
 $cwidd=$zbid;
 include("./wj/cwztt.php");
 $ncwxx1=($iniFile->getCategory('宠物信息'));
-$ncww03=$ncwxx1[血];
-} else{
-} 
+$ncww03=$ncwxx1['血'];
+}
 
 	
 	
@@ -65,9 +64,9 @@ $nwjxx=($iniFile->getCategory('怪物1号属性'));
 
 include("./wp/jnxx.php");
 if($ncww02 ==2){//优先获得宠物数据
-echo "<font color=black>你对".$nwjxx[名字]."的".$ncww01."使用了一招".$jnmz."</font>"."<br>";
+echo "<font color=black>你对".$nwjxx['名字']."的".$ncww01."使用了一招".$jnmz."</font>"."<br>";
 } else{
-echo "<font color=black>你对".$nwjxx[名字]."使用了一招".$jnmz."</font>"."<br>";	
+echo "<font color=black>你对".$nwjxx['名字']."使用了一招".$jnmz."</font>"."<br>";
 } 
 
 include("./ini/npc_ini.php");
@@ -101,14 +100,11 @@ $zbid=$cwidd;
 $cwidd=$zbid;
 include("./wj/cwztt.php");
 $cwxx1=($iniFile->getCategory('宠物信息'));
-$cww03=$cwxx1[血];
-} else{
-} 
+$cww03=$cwxx1['血'];
+}
 $cwpdsh=2;
 include("./wj/cwsh01.php");//调用怪物和自己基础数据
 include("./wj/cwsh02.php");//调用怪物和自己基础数据
-
-} else{
 
 }
 
@@ -118,8 +114,7 @@ include("./ini/npc_ini.php");
 $cwidd=($iniFile->getItem('怪物1号属性','初始'));//宠物出战id
 include("./wj/cwsh01.php");//调用怪物和自己基础数据
 include("./wj/cwsh02.php");//调用怪物和自己基础数据
-} else{
-} 
+}
 
 
 
@@ -141,12 +136,12 @@ include("template/xy391.php");
 include("./pz/pz01.php");
 
 
-} elseif ($wjxx[红]<0){
+} elseif ($wjxx['红']<0){
 	
 	
 	
 
-} elseif ($wjxx[红]>0&&$ncwwjsh1>0) {//正在战斗未分出胜负
+} elseif ($wjxx['红']>0&&$ncwwjsh1>0) {//正在战斗未分出胜负
 
 
 //解锁当前使用的ini
@@ -191,7 +186,6 @@ include("./pz/pz01.php");
 
 
 
-} else{	
 }
 
 

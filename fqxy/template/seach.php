@@ -16,7 +16,6 @@ if($wjtake10!=""){
 if($wjtakes2>0&&$wjtakes2<=10||$wjtakes2>0&&$wjtakes2<=10){	
 if($wjtakes2>0){
 $wjtake=$wjtake10;
-} else{
 }
 if(preg_match("/[a-zA-Z0-9';~`@#$%^&+=)(<>{}]|\]|\[|\/|\\\|\"|\|/",$wjtake)){ 
 $tszf=2;
@@ -331,9 +330,6 @@ echo "<font color=red>关键字不能为空</font><br>";
 echo"<font color=black>骚年~~需要Vip3级使用此项功能</font></a></br>";	
 
 }
-
-} else{
-	
 
 }
 

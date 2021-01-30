@@ -87,17 +87,17 @@ if($zczh4!=""){
 	if($zczh2==$zczh3){	
 	
 		
-if(preg_match('/^[\w-\.]{6,12}$/', $zczh2)){	
+if(preg_match('/^['\w-\.']{6,12}$/', $zczh2)){	
 
-if(preg_match('/^[\w-\.]{6,12}$/', $zczh3)){
+if(preg_match('/^['\w-\.']{6,12}$/', $zczh3)){
 
 //连接数据库
 include("../sql/mysql.php");//调用数据库连接
 $user=0;
 $sql=mysqli_query($conn, "select * from o_user_list where username='$zczh1'");
 $info1=@mysqli_fetch_array($sql);
-$pass1=$info1[aqm];
-$uid=$info1[uid];
+$pass1=$info1['aqm'];
+$uid=$info1['uid'];
 $wjid=$uid+10000000;
 
 
@@ -195,12 +195,6 @@ $zcxx="<font color=red>安全码不能为空</font>";
 $zcxx="<font color=red>账号不能为空</font>";
 }
 
-}else{
-
-
-
-
-
 }
 
 
@@ -245,7 +239,7 @@ $zcxx="<font color=red>账号不能为空</font>";
 账&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号：<input  type="text" name="zc1" placeholder="账号"id='search'><font color=black></font><br>
 新的密码：<input  type="text" name="zc2" placeholder="设置新密码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
 确认密码：<input  type="text" name="zc3" placeholder="确认新密码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
-[安全码]&nbsp&nbsp：<input  type="text" name="zc4" placeholder="注册时的安全码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
+['安全码']&nbsp&nbsp：<input  type="text" name="zc4" placeholder="注册时的安全码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
 <input  type="submit" name="submit"  value="修改密码" id="search1"><br>
 </form>
 

@@ -38,7 +38,6 @@ if($xyc1==""){
 $xyc1=($iniFile->getItem('商城数量','307'));
 $xycid=307;
 $xycmz="大幸运草";
-} else{
 }
 //幸运草几率
 if($xyc1!=""){
@@ -69,9 +68,7 @@ $wpdz2[]=4;//物品分类
 $wpdz3[]=$xycid;//物品id
 $wpdz4[]=1;//	需要扣除的量
 $wpdz5[]=1;//	重量
-} else{
-
-} 
+}
 
 
 if($xj>=27){
@@ -81,9 +78,7 @@ $wpdz3[]=$xyclid1;//物品id
 $wpdz4[]=1;//	需要扣除的量
 $wpdz5[]=1;//	重量
 
-} else{
-
-} 
+}
 
 
 if($xj >=0&&$xj <=8){//铁星
@@ -98,8 +93,7 @@ $xycmz="〖金魂〗";
 $xycmz="〖钻魂〗";
 } elseif($xj >=45&&$xj <=53){//陨星
 $xycmz="〖陨魂〗";
-} else{
-} 
+}
 
 $wpdz1[]=$xycmz;//名字
 $wpdz2[]=2;//物品分类
@@ -303,9 +297,7 @@ include("fhgame.php");
 
 
 
-} else{	
-
-} 
+}
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

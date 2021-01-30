@@ -335,8 +335,6 @@ echo "<font color=red>你对".$nmz."使用了一招迷魂心法</font>"."<br>";
 
 
 
-} else{
-
 }
 
 

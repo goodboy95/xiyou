@@ -62,8 +62,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*【恶魔
 
 echo "<br>";
 
-} else{
-
 }
 
 

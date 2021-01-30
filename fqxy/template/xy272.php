@@ -49,7 +49,6 @@ $ininame = $path."/".$inina;
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 
-} else{
 }
 
 
@@ -100,7 +99,6 @@ $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
 
 
-} else{
 }
 }
 
@@ -112,7 +110,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -125,7 +122,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -138,7 +134,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -153,7 +148,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -362,8 +356,6 @@ $clj[]=280;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>"."<br>";
 
-} else{
-
 }
 
 echo "<br>";
@@ -384,7 +376,6 @@ echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

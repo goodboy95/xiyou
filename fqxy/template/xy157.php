@@ -17,9 +17,6 @@ $fz="民宅";
 $fz="豪宅";
 } elseif($fzfl ==3){
 $fz="官宅";
-} else{
-
-
 }
 	  	if ($wjvip!="") {	 
 $img='pic/vip/'."vip".$wjvip.'.png';
@@ -27,7 +24,6 @@ echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
-} else{
 }
 
 echo "<font color=black>".$fzzr."的".$fz."可打造的家具如下：</font>"."<br>";
@@ -57,7 +53,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=1;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -76,7 +71,6 @@ $clj[]=159;
 $npc[]=2;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -94,7 +88,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=3;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -113,7 +106,6 @@ $clj[]=159;
 $npc[]=4;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -132,7 +124,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=5;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -150,7 +141,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=6;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -168,7 +158,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=7;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -187,7 +176,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=22;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -206,7 +194,6 @@ $clj[]=159;
 $npc[]=25;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -224,7 +211,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=36;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -243,7 +229,6 @@ $clj[]=159;
 $npc[]=37;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 ////////////////////////////
-} else{
 }
 
 
@@ -269,7 +254,6 @@ $npc[]=8;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
 
-} else{
 }
 
 
@@ -290,7 +274,6 @@ $clj[]=159;
 $npc[]=9;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -310,7 +293,6 @@ $clj[]=159;
 $npc[]=10;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -330,7 +312,6 @@ $clj[]=159;
 $npc[]=11;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -352,7 +333,6 @@ $npc[]=12;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
 
-} else{
 }
 
 
@@ -372,7 +352,6 @@ $clj[]=159;
 $npc[]=13;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -392,7 +371,6 @@ $clj[]=159;
 $npc[]=14;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -411,7 +389,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=23;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -431,7 +408,6 @@ $clj[]=159;
 $npc[]=26;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -451,7 +427,6 @@ $clj[]=159;
 $npc[]=27;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -470,7 +445,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=38;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -490,7 +464,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=39;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -516,7 +489,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=15;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -537,7 +509,6 @@ $npc[]=16;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
 
-} else{
 }
 
 
@@ -555,7 +526,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=17;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -575,7 +545,6 @@ $clj[]=159;
 $npc[]=18;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -595,7 +564,6 @@ $clj[]=159;
 $npc[]=19;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -615,7 +583,6 @@ $clj[]=159;
 $npc[]=20;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -633,7 +600,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=21;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -653,7 +619,6 @@ $clj[]=159;
 $npc[]=24;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -673,7 +638,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=28;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -693,7 +657,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=29;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -712,7 +675,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=30;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -732,7 +694,6 @@ $clj[]=159;
 $npc[]=31;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -751,7 +712,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=32;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -771,7 +731,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=33;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -790,7 +749,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=34;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -810,7 +768,6 @@ $clj[]=159;
 $npc[]=35;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
 
-} else{
 }
 
 
@@ -828,7 +785,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=40;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -846,7 +802,6 @@ $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=41;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
-} else{
 }
 
 
@@ -898,7 +853,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

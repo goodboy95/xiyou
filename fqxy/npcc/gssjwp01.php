@@ -141,10 +141,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
 }
 
 

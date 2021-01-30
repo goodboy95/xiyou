@@ -13,14 +13,14 @@ $qdxx2=($iniFile->getCategory('签到信息'));
 $qdy= date('m')*1;
 
 
-if($qdxx2[签到月]==$qdy){
+if($qdxx2['签到月']==$qdy){
 
 
 
 if($npcc==1){//2日签到占用
 
 $qdcs=2;//签到领取
-if($qdxx2[签到次数]>=$qdcs){	
+if($qdxx2['签到次数']>=$qdcs){	
 if($qdxx2[签到1]==1){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
@@ -99,7 +99,7 @@ include("./rwmap/rwget.php");
 echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
 } 
 } else{		
-$qdcs=$qdcs-$qdxx2[签到次数];	
+$qdcs=$qdcs-$qdxx2['签到次数'];	
 echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
 } 
 
@@ -107,7 +107,7 @@ echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）<
 
 } elseif ($npcc==2) {//5日签到
 $qdcs=5;//签到领取
-if($qdxx2[签到次数]>=$qdcs){	
+if($qdxx2['签到次数']>=$qdcs){	
 if($qdxx2[签到2]==1){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
@@ -186,12 +186,12 @@ include("./rwmap/rwget.php");
 echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
 } 
 } else{		
-$qdcs=$qdcs-$qdxx2[签到次数];	
+$qdcs=$qdcs-$qdxx2['签到次数'];	
 echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
 } 
 } elseif ($npcc==3) {//10日签到
 $qdcs=10;//签到领取
-if($qdxx2[签到次数]>=$qdcs){	
+if($qdxx2['签到次数']>=$qdcs){	
 if($qdxx2[签到3]==1){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
@@ -285,13 +285,13 @@ include("./rwmap/rwget.php");
 echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
 } 
 } else{		
-$qdcs=$qdcs-$qdxx2[签到次数];	
+$qdcs=$qdcs-$qdxx2['签到次数'];	
 echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
 } 
 } elseif ($npcc==4) {//15日签到
 
 $qdcs=15;//签到领取
-if($qdxx2[签到次数]>=$qdcs){	
+if($qdxx2['签到次数']>=$qdcs){	
 if($qdxx2[签到4]==1){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="qd".$wjid;
@@ -380,7 +380,7 @@ include("./rwmap/rwget.php");
 echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
 } 
 } else{		
-$qdcs=$qdcs-$qdxx2[签到次数];	
+$qdcs=$qdcs-$qdxx2['签到次数'];	
 echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
 } 
 
@@ -388,7 +388,7 @@ echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）<
 
 
 $qdcs=25;//签到领取
-if($qdxx2[签到次数]>=$qdcs){	
+if($qdxx2['签到次数']>=$qdcs){	
 if($qdxx2[签到5]==1){	
 
 
@@ -479,7 +479,7 @@ include("./rwmap/rwget.php");
 echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
 } 
 } else{		
-$qdcs=$qdcs-$qdxx2[签到次数];	
+$qdcs=$qdcs-$qdxx2['签到次数'];	
 echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
 } 
 
@@ -495,10 +495,7 @@ echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）<
 
 
 
-} else{	
-
-
-} 
+}
 
 
 
@@ -541,7 +538,6 @@ include("./pz/pz01.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -111,8 +111,6 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
-} else{
-
 }
 
 
@@ -1314,7 +1312,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

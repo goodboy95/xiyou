@@ -824,7 +824,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[傲来国声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['傲来国声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['傲来国声望' => $sw]);	
 ///缓存更新
@@ -853,7 +853,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[宝象国声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['宝象国声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['宝象国声望' => $sw]);	
 ///缓存更新
@@ -884,7 +884,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[将军府声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['将军府声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['将军府声望' => $sw]);	
 ///缓存更新
@@ -915,7 +915,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[普陀山声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['普陀山声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['普陀山声望' => $sw]);	
 ///缓存更新
@@ -944,7 +944,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[龙宫声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['龙宫声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['龙宫声望' => $sw]);	
 ///缓存更新
@@ -973,7 +973,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[月宫声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['月宫声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['月宫声望' => $sw]);	
 ///缓存更新
@@ -1006,7 +1006,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[方寸山声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['方寸山声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['方寸山声望' => $sw]);	
 ///缓存更新
@@ -1040,7 +1040,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[天宫声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['天宫声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['天宫声望' => $sw]);	
 ///缓存更新
@@ -1069,7 +1069,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[地府声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['地府声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['地府声望' => $sw]);	
 ///缓存更新
@@ -1098,7 +1098,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[西游声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['西游声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['西游声望' => $sw]);	
 ///缓存更新
@@ -1128,7 +1128,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[乌鸡国声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['乌鸡国声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['乌鸡国声望' => $sw]);	
 ///缓存更新
@@ -1158,7 +1158,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[恶魔广场声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['恶魔广场声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['恶魔广场声望' => $sw]);	
 ///缓存更新
@@ -1188,7 +1188,7 @@ $sw=($iniFile->getCategory('声望值'));
 	
 $wpzz=1000;//此wpid使用后所加的单个值
 $syz=$sl*$wpzz;////此wpid使用后所加的总共值
-$sw=$sw[夫妻声望]+$syz;//此wpid使用后所得到的总共值
+$sw=$sw['夫妻声望']+$syz;//此wpid使用后所得到的总共值
 ///缓存更新
 $iniFile->updItem('声望值', ['夫妻声望' => $sw]);	
 ///缓存更新

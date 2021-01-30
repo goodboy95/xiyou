@@ -74,8 +74,6 @@ $zbdd1=2;                    //用于数据位置1为否2为是
 include("./pz/ini_pzz02.php");//调用更改配置
 //上述判断成功后扣除及其的到代码
   
-} else{
-
 }
 
 
@@ -94,9 +92,7 @@ include("fhgame.php");
 
 
 
-} else{	
-
-} 
+}
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

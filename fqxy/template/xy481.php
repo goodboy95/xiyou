@@ -500,8 +500,6 @@ echo "<font color=red>〖活动〗紫霞仙子：原来你是我苦苦寻找已�
 	
 	
 	
-} else{	
-
 }
 
 
@@ -589,7 +587,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

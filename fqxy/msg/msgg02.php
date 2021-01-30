@@ -21,7 +21,6 @@ $file01="./msg/msg03.php";
 $file01="./msg/msg04.php";
 } elseif($i == 5){
 $file01="./msg/msg05.php";
-} else{
 }
 if(file_exists($file01)){
 $a=filemtime($file01);
@@ -37,7 +36,7 @@ $xtmsg=1;
 unlink($file01); //删除文件  
 $xtmsg=2;	
 file_put_contents($file01,"<?
-echo '<font color=".$msgcolor.">[系统]".$msg."</font>';
+echo '<font color=".$msgcolor.">['系统']".$msg."</font>';
 ?>");	
 } 
 
@@ -56,21 +55,19 @@ unlink($file01); //删除文件
 $file01="msg01.php";
 $xtmsg=2;	
 file_put_contents($file01,"<?
-echo '<font color=".$msgcolor.">[系统]".$msg."</font>';
+echo '<font color=".$msgcolor.">['系统']".$msg."</font>';
 ?>");	
 
 break;		
-}else{
 }
 }else{
 $xtmsg=2;	
 file_put_contents($file01,"<?
-echo '<font color=".$msgcolor.">[系统]".$msg."</font>';
+echo '<font color=".$msgcolor.">['系统']".$msg."</font>';
 ?>");	
 }
 if($xtmsg == 2){
 	break;
-}else{
 }
 }
 

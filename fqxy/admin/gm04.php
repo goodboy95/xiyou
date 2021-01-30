@@ -19,18 +19,14 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_zt";
 $sql1=mysqli_query($conn, "select wjid from $q2 where lh=$id");
 $info1=@mysqli_fetch_array($sql1);	
-$lhid=$info1[wjid];
+$lhid=$info1['wjid'];
 
 if($lhid>=10000000){
 	$id=$lhid;
 	
-} else{
+}
 	
-} 
-	
-	} else{
-	
-	} 
+	}
 
 
 
@@ -54,7 +50,7 @@ echo "<font color=red>查询成功玩家信息如下：</font>"."<br>";
 include("./ini/zt_ini.php");
 # 获取一个分类下所有数据$
 $wjxx=($iniFile->getCategory('玩家信息'));
-$img='pic/vip/'."vip".$wjxx[vip等级].'.png';
+$img='pic/vip/'."vip".$wjxx['vip等级'].'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 echo "<br>";	
@@ -63,14 +59,14 @@ echo "<br>";
 	
 	
 
-if($wjxx[靓号] >=100000&&$wjxx[靓号]<=9999999){
+if($wjxx['靓号'] >=100000&&$wjxx['靓号']<=9999999){
 
 
 echo "<font color=black>ID：</font>";
 $img='pic/txpic/lh.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
-echo "<font color=red>【".$wjxx[靓号]."】</font><br>";	
+echo "<font color=red>【".$wjxx['靓号']."】</font><br>";
 } else{
 
 
@@ -89,49 +85,49 @@ echo "<br>";
 
 
 
-echo "<font color=black>昵称:".$wjxx[玩家名字]."</font>"."<br>";
-if($wjxx[性别]==1){
+echo "<font color=black>昵称:".$wjxx['玩家名字']."</font>"."<br>";
+if($wjxx['性别']==1){
 echo "<font color=black>性别：男</font><br>";
-} elseif ($wjxx[性别]==2){
+} elseif ($wjxx['性别']==2){
 echo "<font color=black>性别：女</font><br>";
 } else{
 echo "<font color=black>性别：人妖</font><br>";
 }
-if($wjxx[配偶id]>=10000000){
-echo "<font color=black>配偶：</font>".$wjxx[配偶名字]."<br>";
+if($wjxx['配偶id']>=10000000){
+echo "<font color=black>配偶：</font>".$wjxx['配偶名字']."<br>";
 } else{
 echo "<font color=black>配偶：暂无</font><br>";	
 } 
-if($wjxx[住宅id]>=1){
-if($wjxx[住宅分类]==1){
+if($wjxx['住宅id']>=1){
+if($wjxx['住宅分类']==1){
 $zz="住宅";
-} elseif ($wjxx[住宅分类]==2){
+} elseif ($wjxx['住宅分类']==2){
 $zz="豪宅";	
-} elseif ($wjxx[住宅分类]==3){
+} elseif ($wjxx['住宅分类']==3){
 $zz="官宅";
 } else{
 $zz="住宅";
 }
-echo "<font color=black>".$zz."：</font>".$wjxx[住宅名字]."<br>";
+echo "<font color=black>".$zz."：</font>".$wjxx['住宅名字']."<br>";
 } else{
 echo "<font color=black>住宅：暂无</font><br>";	
 } 	
-if($wjxx[帮派id]>=1){
-echo "<font color=black>国家：</font>".$wjxx[帮派名字]."<br>";
+if($wjxx['帮派id']>=1){
+echo "<font color=black>国家：</font>".$wjxx['帮派名字']."<br>";
 } else{
 echo "<font color=black>国家：无</font><br>";
 }
 
-if($wjxx[门派]>=1){
-if($wjxx[门派]==1){
+if($wjxx['门派']>=1){
+if($wjxx['门派']==1){
 $menp="将军府";
-} elseif($wjxx[门派]==2){
+} elseif($wjxx['门派']==2){
 $menp="龙宫";
-} elseif($wjxx[门派]==3){
+} elseif($wjxx['门派']==3){
 $menp="月宫";
-} elseif($wjxx[门派]==4){
+} elseif($wjxx['门派']==4){
 $menp="方寸山";
-} elseif($wjxx[门派]==5){
+} elseif($wjxx['门派']==5){
 $menp="普陀山";
 } else{
 $menp="无门派";
@@ -183,7 +179,7 @@ $jyts="[剩余：".$minute."分".$second."秒]";
 
 
 } else{
-$jyts1="[是]";	
+$jyts1="[是]";
 $jyts="[剩余：".$second."秒]";
 } 
 
@@ -207,8 +203,7 @@ echo "<font color=red>禁言状态：".$jyts1.$jyts."</font>";
 
 if($jyts1=="[是]"){
 echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=14&&user=$wjid'><font color=blue>解除</font></a>";
-} else{	
-} 
+}
 
 echo "<br>";
 
@@ -256,7 +251,7 @@ $jyts="[剩余：".$minute."分".$second."秒]";
 
 
 } else{
-$jyts1="[是]";	
+$jyts1="[是]";
 $jyts="[剩余：".$second."秒]";
 } 
 
@@ -278,11 +273,10 @@ echo "<font color=red>封号状态：".$jyts1.$jyts."</font>";
 
 if($jyts1=="[是]"){
 echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=20&&user=$wjid'><font color=blue>解除</font></a>";
-} else{	
-} 
+}
 
 echo "<br>";
-echo "<font color=black>【请选择对".$wjxx[玩家名字]."(".$wjid.")的操作】</font>"."<br>";
+echo "<font color=black>【请选择对".$wjxx['玩家名字']."(".$wjid.")的操作】</font>"."<br>";
 
 echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>发放物品</font></a>"."<br>";
 
@@ -330,7 +324,6 @@ echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=19&&user=$wjid'><font co
 
 echo "<br>";
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");
@@ -344,8 +337,6 @@ echo "<br>";
 
 
 
-
-}else{
 
 }
 ?>

@@ -18,8 +18,8 @@ $iniFile = new iniFile($ininame);
 $wjxx=($iniFile->getItem('玩家信息',['经验', '等级']));
 
 
-$lvl=$wjxx[等级];
-$wjjy=$wjxx[经验];
+$lvl=$wjxx['等级'];
+$wjjy=$wjxx['经验'];
 
 //页面值
 $q5=50;
@@ -92,7 +92,6 @@ echo "----------------------"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

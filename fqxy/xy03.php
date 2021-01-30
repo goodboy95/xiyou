@@ -176,8 +176,7 @@ include("template/xy298.php");//游戏开局名字
 include("template/xy299.php");//攻略客服
 
 
-} else{
-} 
+}
 
 
 

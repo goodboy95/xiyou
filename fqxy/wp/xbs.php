@@ -13,8 +13,7 @@ $bsid=$zbxqq1;
 if($bsid>0){
 include("wp/zbbsmz.php");//npc页面
 $bsmzz[]=$bsmz;
-} else{	
-}	
+}
 
 
 }
@@ -24,8 +23,7 @@ $bsid=$zbxqq2;
 if($bsid>0){
 include("wp/zbbsmz.php");//npc页面
 $bsmzz[]=$bsmz;
-} else{	
-}	
+}
 }
 
 
@@ -34,8 +32,7 @@ $bsid=$zbxqq3;
 if($bsid>0){
 include("wp/zbbsmz.php");//npc页面
 $bsmzz[]=$bsmz;
-} else{	
-}	
+}
 }
 
 if($zbkk4>0){
@@ -43,8 +40,7 @@ $bsid=$zbxqq4;
 if($bsid>0){
 include("wp/zbbsmz.php");//npc页面
 $bsmzz[]=$bsmz;
-} else{	
-}	
+}
 }
 
 if($zbkk5>0){
@@ -52,8 +48,7 @@ $bsid=$zbxqq5;
 if($bsid>0){
 include("wp/zbbsmz.php");//npc页面
 $bsmzz[]=$bsmz;
-} else{	
-}	
+}
 }
 
 
@@ -84,7 +79,6 @@ $tt[]="三".$g[$ii];
 $tt[]="四".$g[$ii];
 } elseif($b[$c] ==5){
 $tt[]="五".$g[$ii];
-} else{
 }
 
 }
@@ -103,7 +97,6 @@ $tt[]="三".$g[0];
 $tt[]="四".$g[0];
 } elseif($b[$c] ==5){
 $tt[]="五".$g[0];
-} else{
 }
 
 
@@ -125,8 +118,6 @@ $xbs=$tt[0].$tt[1].$tt[2].$tt[3];
 } elseif($z ==5){
 $xbs=$tt[0].$tt[1].$tt[2].$tt[3].$tt[4];
 
-
-} else{
 
 }
 

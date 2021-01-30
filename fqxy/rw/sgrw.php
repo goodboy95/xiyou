@@ -38,14 +38,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -86,19 +81,13 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
-
-} else{
 
 }
 
 
 	
 	
-
-} else{
 
 }
 
@@ -141,19 +130,13 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
-
-} else{
 
 }
 
 
 	
 	
-
-} else{
 
 }
 
@@ -185,16 +168,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -226,16 +203,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -269,16 +240,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -310,16 +275,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -351,16 +310,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -390,16 +343,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -428,16 +375,10 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -485,16 +426,10 @@ $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -526,16 +461,10 @@ $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -567,16 +496,10 @@ $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -613,16 +536,10 @@ $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -656,16 +573,10 @@ $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -705,16 +616,10 @@ $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -751,16 +656,10 @@ $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 
-} else{
+}
 
 }
 
-} else{
-
-}
-
-
-} else{
 
 }
 
@@ -811,19 +710,13 @@ $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
 
 
-} else{
-
 }
-
-} else{
 
 }
 
 
 	
 	
-
-} else{
 
 }
 
@@ -854,19 +747,13 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
-
-} else{
 
 }
 
 
 	
 	
-
-} else{
 
 }
 
@@ -898,11 +785,7 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
-
-} else{
 
 }
 
@@ -917,8 +800,6 @@ $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 	
 	
-
-} else{
 
 }
 
@@ -948,15 +829,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-
-} else{
 
 }
 
@@ -986,11 +861,7 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
-
-} else{
 
 }
 
@@ -1005,8 +876,6 @@ $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
 	
 	
-
-} else{
 
 }
 
@@ -1037,15 +906,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 if($npcc ==703){//杀项长老
@@ -1073,15 +936,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1116,9 +973,6 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-	
-
 }
 
 
@@ -1145,23 +999,16 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-	
-
 }
 	
 	
 	
-	} else{
-	
-	} 
+	}
 	
 	
 	
 
 }
-} else{
-
 }
 
 
@@ -1194,15 +1041,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1243,11 +1084,7 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
-
-} else{
 
 }
 
@@ -1271,17 +1108,11 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
-
-} else{
 
 }
 
 
-
-} else{
 
 }
 
@@ -1321,15 +1152,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1359,15 +1184,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1396,15 +1215,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1438,15 +1251,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1478,15 +1285,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1518,15 +1319,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1561,15 +1356,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1599,15 +1388,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -1648,14 +1431,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1697,14 +1475,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1745,14 +1518,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1795,14 +1563,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1843,14 +1606,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1897,14 +1655,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1947,14 +1700,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -1997,14 +1745,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2049,14 +1792,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2100,14 +1838,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2151,14 +1884,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2199,14 +1927,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2248,14 +1971,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2302,14 +2020,9 @@ $cdid[]=$cmid;
 $clj[]=313;
 $npc[]=$ydzb;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快速进行任务（".$ylxx."两）</font></a>"."<br>";
-} else{
-
 }
 
-} else{
-
 }
-} else{
 }
 
 
@@ -2338,15 +2051,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 if($npcc ==890){//杀玉皇大帝
@@ -2374,15 +2081,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 
@@ -2412,15 +2113,9 @@ include("./ini/zxrw_ini.php");
 $rwcurl=$rwid."_".$rwfl;
 $iniFile->updItem('任务变量', [$rwcurl => $rwbl]);
 
-} else{
-
 }
 
-} else{
-
 }
-} else{
-
 }
 
 

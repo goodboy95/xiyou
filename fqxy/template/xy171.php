@@ -15,7 +15,6 @@ if($wjtake10!=""){
 if($wjtakes2>0&&$wjtakes2<=7||$wjtakes2>0&&$wjtakes2<=7){
 if($wjtakes2>0){
 $wjtake=$wjtake10;
-} else{
 }
 	
 	
@@ -85,7 +84,6 @@ echo "<font color=red>国家名不能为空</font><br>";
 echo "<font color=black>请输入你要建立的国家名字</font>"."<br>";
 	
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

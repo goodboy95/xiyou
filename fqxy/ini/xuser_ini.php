@@ -1,19 +1,17 @@
 <?php
-
+echo 'step0';
 $inina = "user.ini";
 $path = '../ache/' . $wjid;
 $file = $path . "/" . $inina;
 //随机产生一个玩家的特征码写入数据库验证网址信息
-function randomkeys($length)
-{
+function randomkeys($length) {
     $returnStr = '';
     $pattern = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLOMNOPQRSTUVWXYZ';
     for ($i = 0; $i < $length; $i++) {
-        $returnStr .= $pattern{mt_rand(0, 61)}; //生成php随机数
+        $returnStr .= $pattern[mt_rand(0, 61)]; //生成php随机数
     }
     return $returnStr;
 }
-
 if (file_exists($file)) {
     $ka1 = randomkeys(30);
     $kcmid = 0;
@@ -39,7 +37,6 @@ if (file_exists($file)) {
     $kh = date('H');
     $ki = date('i');
     $ks = date('s');
-
     //创建文件
     file_put_contents($file, "[" . $wjid . "]");
     $iniFile = new iniFile($file);
@@ -49,9 +46,6 @@ if (file_exists($file)) {
     $iniFile->addItem('超链接值', ['初始' => 123]);
     //file_put_contents($file,"[超链接值]");
     //file_put_contents($file,"[超链接npc值]");
-
 }
 $iniFile = new iniFile($file);
-
-
 ?>

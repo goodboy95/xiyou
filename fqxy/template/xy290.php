@@ -107,10 +107,6 @@ $wpsl=($iniFile->getItem('其他数量',$npcc));
 
 
 
-} else{
-
-
-
 }
 
 
@@ -135,10 +131,6 @@ include("./wp/wpxx.php");
 $bsid=$npcc;
 include("./wp/zbbs.php");
 $wpmz=$bsmz;
-} else{
-
-
-
 }
 
 include("npcc/qcwp01.php");
@@ -232,10 +224,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
 }
 
 
@@ -289,14 +277,11 @@ include("npcc/qcwp02.php");
 
 
 
-} else{
-
-} 
+}
 
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

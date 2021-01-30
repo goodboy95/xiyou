@@ -28,7 +28,7 @@ $m=0;
 $m=count($hyfl,0)-1; 
 $i=0;
 
-$ym=$hyfl[初始];
+$ym=$hyfl['初始'];
 
 $km=0;
 
@@ -75,8 +75,6 @@ if($svl ==2){
 
 } elseif($svl ==1){
 	$xxh=$xxh+1;
-} else{
-
 }
 
 }
@@ -142,8 +140,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>删除</fo
 	
 	
 	
-} else{
-
 }
 
 
@@ -159,8 +155,6 @@ if($xxh ==0){
 	echo "<font color=black>目前还没有结交到好友</font>"."<br>";
 	
 	
-} else{
-
 }
 
 

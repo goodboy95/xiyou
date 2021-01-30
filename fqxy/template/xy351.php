@@ -612,8 +612,6 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
 
-} else{
-
 }
 
 
@@ -639,7 +637,6 @@ echo "<font color=red>对不起【副本如意传送门】需要vip3级以上使
 include("./template/xy002.php");//游戏主页
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

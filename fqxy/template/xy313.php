@@ -76,7 +76,6 @@ echo "<font color=red>对不起，快速传送需要银两".$ylxx."两</font></a
 include("./template/xy002.php");//游戏主页
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -115,10 +115,6 @@ $wpsl=($iniFile->getItem('其他数量',$npcc));
 
 
 
-} else{
-
-
-
 }
 if($ymid==261||$ymid==262||$ymid==264||$ymid==265||$ymid==266||$ymid==267||$ymid==268){
 //调用物品信息
@@ -131,10 +127,6 @@ include("./wp/wpxx.php");
 $bsid=$npcc;
 include("./wp/zbbs.php");
 $wpmz=$bsmz;
-} else{
-
-
-
 }
 
 
@@ -231,10 +223,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
 }
 
 
@@ -256,15 +244,10 @@ echo "<font color=black>----------------------</font></a>"."<br>";
 include("fhgame.php");
 
 
-} else{
-
-
-
 }
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

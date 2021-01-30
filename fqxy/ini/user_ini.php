@@ -26,7 +26,7 @@ if (file_exists($file)) {
         $returnStr = '';
         $pattern = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLOMNOPQRSTUVWXYZ';
         for ($i = 0; $i < $length; $i++) {
-            $returnStr .= $pattern{mt_rand(0, 61)}; //生成php随机数
+            $returnStr .= $pattern[mt_rand(0, 61)]; //生成php随机数
         }
         return $returnStr;
     }

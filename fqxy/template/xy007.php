@@ -13,11 +13,7 @@ echo "<font color=red>==========调试信息=========</font>"."<br>";
 echo "NPC编号：".$npcc."号<br>";
 echo "<font color=red>==========调试信息=========</font>"."<br>";
 
-} else{
-
-
-	
-} 
+}
 
 
 
@@ -33,7 +29,6 @@ include("./ini/npc_ini.php");
 $gwid=($iniFile->getItem('怪物编号','1号'));
 if($gwid!=$npcc){
 $iniFile->updItem('怪物编号', ['1号' => $npcc]);
-} else{	
 }
 
 
@@ -49,7 +44,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -6,9 +6,7 @@ $bpid=($iniFile->getItem('玩家信息','帮派id'));
 if($bpid>=1){
 $bpmz=($iniFile->getItem('玩家信息','帮派名字'));
 $bpzw=($iniFile->getItem('玩家信息','帮派职务'));
-} else{
-
-	} 
+}
 	
 	
 	$mapdx=2;
@@ -50,8 +48,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -85,7 +82,7 @@ $filename = $ininame;
 if(!file_exists($filename)){
 $counter_file=$ininame;//文件名及路径,在当前目录下新建aa.txt文件 
 $fopen=fopen($counter_file,   'wb ');//新建文件命令 
-fputs($fopen,   '[地图信息]');//向文件中写入内容; 
+fputs($fopen,   '[地图信息]');//向文件中写入内容;
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 
@@ -185,7 +182,6 @@ echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
-} else{
 }
 if($keydtt01!=$wjid&&$keydtt01!=""&&$wjid!=""){
 //cmd及超链接值
@@ -230,7 +226,6 @@ echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
-} else{
 }
 if($keydtt01!=$wjid&&$keydtt01!=""&&$wjid!=""){
 //cmd及超链接值
@@ -276,7 +271,6 @@ echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
-} else{
 }
 if($keydtt01!=$wjid&&$keydtt01!=""&&$wjid!=""){
 //cmd及超链接值

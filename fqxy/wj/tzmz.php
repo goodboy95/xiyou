@@ -75,7 +75,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -133,7 +132,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -190,7 +188,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -255,7 +252,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -314,7 +310,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -380,7 +375,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -438,7 +432,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -495,7 +488,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -552,7 +544,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -614,7 +605,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -688,7 +678,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -749,7 +738,6 @@ echo "<font color=black>".$tzms."</font></a>";
 
 
 
-} else{
 }
 /////////套装//////////
 
@@ -778,7 +766,6 @@ echo "<font color=red>【心心】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -797,7 +784,6 @@ echo "<font color=red>【灵犀】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -815,7 +801,6 @@ echo "<font color=red>【海誓】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -834,7 +819,6 @@ echo "<font color=red>【比翼】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -853,7 +837,6 @@ echo "<font color=red>【心心】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -872,7 +855,6 @@ echo "<font color=red>【海枯】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -893,7 +875,6 @@ echo "<font color=red>【天作】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -913,7 +894,6 @@ echo "<font color=red>【一生所爱】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -931,7 +911,6 @@ echo "<font color=red>【恋人未满】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -950,7 +929,6 @@ echo "<font color=red>【缘定今生】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -969,7 +947,6 @@ echo "<font color=red>【天赐良缘】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -990,7 +967,6 @@ echo "<font color=red>【天仙之恋】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 
@@ -1010,7 +986,6 @@ echo "<font color=red>【天尊之恋】(".count($arr3)."/2)</font></a>"."<br>";
 include("./wj/tzmzxx.php");
 include("./wj/tzmzxx01.php");
 echo "<font color=black>".$tzms."</font></a>";
-} else{
 }
 /////////套装//////////
 

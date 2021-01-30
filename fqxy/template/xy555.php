@@ -32,8 +32,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -89,8 +88,7 @@ if ($hm>0){
 rsort($fb);
 rsort($xb);
 
-} else{
-} 
+}
 
 
 $mt=0;
@@ -179,8 +177,7 @@ echo "<font color=red>[奖励220金豆]</font>";
 echo "<font color=red>[奖励150金豆]</font>";
 } elseif($ik==10){ 
 echo "<font color=red>[奖励100金豆]</font>";
-} else{
-} 
+}
 
 */
 

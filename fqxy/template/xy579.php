@@ -40,8 +40,6 @@ $bdzh=$bdzh+1;
 
 if($bdzh==2){
 echo "<font color=red>当前绑定：未绑定（请先绑定哦）</font>";	
-} else{
-
 }
 
 

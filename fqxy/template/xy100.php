@@ -43,7 +43,7 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 获取一个分类下所有数据$
 $wjxx=($iniFile->getCategory('玩家信息'));
-$ckname=$wjxx[玩家名字];
+$ckname=$wjxx['玩家名字'];
 
 $wjid=$wjid1;
 
@@ -109,7 +109,6 @@ include("template/xy093.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

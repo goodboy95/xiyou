@@ -66,7 +66,7 @@ $zzid=1;
 $q2="zz".$wjid;
 $sql1=mysqli_query($conn, "select id from $q2 where id=$zzid");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[id];
+$xlpd=$info1['id'];
 if($xlpd ==""){
 //获取最大值
 $q2="zz".$wjid;
@@ -86,7 +86,6 @@ $sql = "insert into $q2 (id,zzdj,zzwpmz,zzwpid,zzwpsl,zztime,sftime,shtime)  val
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 
@@ -114,14 +113,14 @@ $m=0;
  
 
 
-$iniFile->addCategory('编号id', [$row[id]=> $row[id]]);
-$iniFile->addCategory('种植等级', [$row[id]=> $row[zzdj]]);
-$iniFile->addCategory('种植名字', [$row[id]=> $row[zzwpmz]]);
-$iniFile->addCategory('种植物品', [$row[id]=> $row[zzwpid]]);
-$iniFile->addCategory('种植数量', [$row[id]=> $row[zzwpid]]);
-$iniFile->addCategory('种植时间', [$row[id]=> $row[zztime]]);
-$iniFile->addCategory('施肥时间', [$row[id]=> $row[sftime]]);
-$iniFile->addCategory('收获时间', [$row[id]=> $row[shtime]]);
+$iniFile->addCategory('编号id', [$row['id']=> $row['id']]);
+$iniFile->addCategory('种植等级', [$row['id']=> $row['zzdj']]);
+$iniFile->addCategory('种植名字', [$row['id']=> $row['zzwpmz']]);
+$iniFile->addCategory('种植物品', [$row['id']=> $row['zzwpid']]);
+$iniFile->addCategory('种植数量', [$row['id']=> $row['zzwpid']]);
+$iniFile->addCategory('种植时间', [$row['id']=> $row['zztime']]);
+$iniFile->addCategory('施肥时间', [$row['id']=> $row['sftime']]);
+$iniFile->addCategory('收获时间', [$row['id']=> $row['shtime']]);
 
 
 

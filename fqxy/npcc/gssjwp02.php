@@ -14,7 +14,6 @@ if($gsjg>=1000&&$gsjg<=99999999999){
 $bfb=floor($sl*$gsjg*0.01);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $ylmm=$ylsxf;
@@ -31,7 +30,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-$ylsxf;
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -60,9 +59,9 @@ $iniFile = new iniFile($ininame);
 
 # 获取一个分类下多个子项的值
 $wjxx=($iniFile->getItem('玩家信息',['背包容量','挂售容量']));
-$bbrlb=$wjxx[背包容量];
+$bbrlb=$wjxx['背包容量'];
 
-$cbbrlb=$wjxx[挂售容量];
+$cbbrlb=$wjxx['挂售容量'];
 	
 	
 	
@@ -262,10 +261,6 @@ $iniFile->updItem('其他数量', [$npcc => $wpsl]);
 
 
 
-} else{
-
-
-
 }
 //ini文件名字
 $inina="gswp.ini";
@@ -392,10 +387,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-
-
-} else{
-
 
 
 }
@@ -640,10 +631,6 @@ $iniFile->delItem('其他名字', $npcc);
 
 
 
-} else{
-
-
-
 }
 
 //ini文件名字
@@ -790,10 +777,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-
-
-} else{
-
 
 
 }

@@ -377,8 +377,6 @@ echo "<font color=black>请前往无底洞击杀4大【地狱】BOSS！！</font
 
 
 
-} else{
-
 }
 
 

@@ -127,178 +127,97 @@ header("Content-type: text/html; charset=utf-8");
 <?php
 ini_set("date.timezone", "PRC");//时间效准代码
 error_reporting(E_ALL & ~E_NOTICE);
-if ($_POST['submit']) {
-
-    //内测完后删除
-    //$zczh5= $_POST['zc5'];
-
-    //if($zczh5!=""){
-    //内测完后删除
-
+$isSubmit = $_POST['submit'] ?? null;
+if ($isSubmit) {
     $zczh1 = $_POST['zc1'];
-
-    if ($zczh1 != "") {
-        $zczh2 = $_POST['zc2'];
-        if ($zczh2 != "") {
-            $zczh3 = $_POST['zc3'];
-            if ($zczh3 != "") {
-                $zczh4 = '12345678';
-                if ($zczh4 != "") {
-                    $zczh6 = $_POST['zc6'];
-                    if ($zczh6 != "") {
-                        if (preg_match('/^[\w-\.]{6,12}$/', $zczh1)) {
-                            if (preg_match('/^[\w-\.]{6,12}$/', $zczh2)) {
-                                if (preg_match('/^[\w-\.]{6,12}$/', $zczh3)) {
-                                    if (preg_match('/^[\w-\.]{6,12}$/', $zczh4)) {
-                                        if (strlen($zczh6) <= 16) {
-                                            //连接数据库
-                                            include("../sql/mysql.php");//调用数据库连接
-
-                                            //$q2="zem";
-                                            //                                            //$sql1=mysqli_query($conn, "select * from $q2 where zem='$zczh5'");
-                                            //$info1=@mysqli_fetch_array($sql1);
-                                            //$zcm=$info1[zem];
-                                            //$sy=$info1[sy];
-
-                                            //if($zczh5==$zcm){
-                                            //if($sy==1){
-
-                                            //查询账号是否已占有
-                                            $q2 = "o_user_list";
-                                            $sql1 = mysqli_query($conn, "select uid from $q2 where username='$zczh1'");
-                                            $info1 = @mysqli_fetch_array($sql1);
-                                            $zczhpd = $info1[uid];
-
-                                            if ($zczhpd == "") {
-                                                $q2 = "o_user_list";
-                                                $sql1 = mysqli_query($conn, "select name from $q2 where name='$zczh6'");
-                                                $info1 = @mysqli_fetch_array($sql1);
-                                                $zczhpd1 = $info1[name];
-                                                if ($zczhpd1 != $zczh6) {
-                                                    ini_set("error_reporting", "E_ALL & ~E_NOTICE");//防止报错代码
-                                                    //获取最大值
-                                                    $q2 = "o_user_list";
-                                                    $sql1 = mysqli_query($conn, "select MAX(uid) from $q2");
-                                                    $abc = mysqli_fetch_array($sql1);
-                                                    $maxid = $abc[0];
-
-                                                    if ($maxid == "") {
-                                                        $maxid = 0;
-                                                        $maxidd = $maxid + 1;
-                                                    } else {
-                                                        $maxidd = $maxid + 1;
-                                                    }
-
-                                                    $ma = md5($zczh2 . ALL_PS);;
-                                                    $aqm = md5($zczh4 . ALL_PS);
-                                                    $zczh2 = md5($zczh2 . ALL_PS);
-                                                    $y = date('Y') * 1;
-                                                    $m = date('m') * 1;
-                                                    $d = date('d') * 1;
-                                                    $h = date('H') * 1;
-                                                    $i = date('i') * 1;
-                                                    $s = date('s') * 1;
-
-                                                    $q2 = "o_user_list";
-                                                                                                        $sql = "insert into $q2 (uid,m_id,name,username,password,n,y,r,s,f,m,ma,aqm)  values('$maxidd','0','$zczh6','$zczh1','$zczh2','$y','$m','$d','$h','$i','$s','$ma','$aqm')";
-                                                    if (!mysqli_query($conn, $sql)) {
-                                                        die('Error: ' . mysqli_error($conn));
-                                                    }
-
-                                                    $mysql002 = $maxidd + 10000000;
-
-                                                    //加入ini
-                                                    //路径
-                                                    $path = '../ache/' . $mysql002;
-                                                    $dir = iconv("UTF-8", "GBK", "$path");
-                                                    if (!file_exists($dir)) {
-                                                        mkdir($dir, 0777, true);
-                                                    } else {
-                                                    }
-
-                                                    //$q2="zem";
-                                                    //                                                    //$strsql = "update $q2 set sy=2 where zem='$zczh5'";//物品id号必改值
-                                                    //$result = mysqli_query($conn, $strsql);
-
-                                                    include("../url/url.php");
-
-                                                    $xyurl = "http://" . $xxjyurl . "/xxjy/xxjyzc.php?zh=$zczh1&&mm=$zczh3&&aqm=$zczh4";
-
-                                                    echo "<META HTTP-EQUIV=REFRESH CONTENT='0;URL=$xyurl'>";
-                                                } else {
-                                                    $zcxx = "<font color=red>对不起！这个昵称太火了换一个吧</font>";
-                                                }
-                                            } else {
-                                                $zcxx = "<font color=red>对不起该账号已存在了</font>";
-                                            }
-
-                                            //}else{
-                                            //echo "<font color=red>对不起!该注册码已被使用过了</font>"."<br>";
-                                            //
-                                            //}
-                                            //}else{
-                                            //echo "<font color=red>对不起!你的注册码不正确</font>"."<br>";
-                                            //
-                                            //}
-
-                                        } else {
-                                            $zcxx = "<font color=red>昵称超过了最大限制</font>";
-                                        }
-                                    } else {
-                                        $zcxx = "<font color=red>安全码只能为6-12位字母或数字</font>";
-                                    }
-                                } else {
-                                    $zcxx = "<font color=red>密码只能为6-12位字母或数字</font>";
-                                }
-                            } else {
-                                $zcxx = "<font color=red>密码只能为6-12位字母或数字</font>";
-                            }
-                        } else {
-                            $zcxx = "<font color=red>账号只能为6-12位字母或数字</font>";
-                        }
-                    } else {
-                        $zcxx = "<font color=red>昵称不能为空</font>";
-                    }
-                } else {
-                    $zcxx = "<font color=red>安全码不能为空</font>";
-                }
+    $zczh2 = $_POST['zc2'];
+    $zczh3 = $_POST['zc3'];
+    $zczh4 = '12345678';
+    $zczh6 = $_POST['zc6'];
+    if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh1)) {
+        $zcxx = "<font color=red>账号只能为6-12位字母或数字</font>";
+    }
+    if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh2)) {
+        $zcxx = "<font color=red>密码只能为6-12位字母或数字</font>";
+    }
+    if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh3)) {
+        $zcxx = "<font color=red>密码只能为6-12位字母或数字</font>";
+    }
+    if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh4)) {
+        $zcxx = "<font color=red>安全码只能为6-12位字母或数字</font>";
+    }
+    if ($zczh6 == "" || strlen($zczh6) > 16) {
+        $zcxx = "<font color=red>昵称为空或超过了最大限制</font>";
+    }
+    //连接数据库
+    include("../sql/mysql.php");//调用数据库连接
+    //查询账号是否已占有
+    $q2 = "o_user_list";
+    $sql1 = mysqli_query($conn, "select uid from $q2 where username='$zczh1'");
+    $info1 = @mysqli_fetch_array($sql1);
+    $zczhpd = $info1['uid'] ?? null;
+    if ($zczhpd == null) {
+        $q2 = "o_user_list";
+        $sql1 = mysqli_query($conn, "select name from $q2 where name='$zczh6'");
+        $info1 = @mysqli_fetch_array($sql1);
+        $zczhpd1 = $info1['name'] ?? null;
+        if ($zczhpd1 != $zczh6) {
+            ini_set("error_reporting", "E_ALL & ~E_NOTICE");//防止报错代码
+            //获取最大值
+            $q2 = "o_user_list";
+            $sql1 = mysqli_query($conn, "select MAX(uid) from $q2");
+            $abc = mysqli_fetch_array($sql1);
+            $maxid = $abc[0];
+            if ($maxid == "") {
+                $maxid = 0;
+                $maxidd = $maxid + 1;
             } else {
-                $zcxx = "<font color=red>密码不能为空</font>";
+                $maxidd = $maxid + 1;
             }
+            $ma = md5($zczh2 . "ALL_PS");
+            $aqm = md5($zczh4 . "ALL_PS");
+            $zczh2 = md5($zczh2 . "ALL_PS");
+            $y = date('Y') * 1;
+            $m = date('m') * 1;
+            $d = date('d') * 1;
+            $h = date('H') * 1;
+            $i = date('i') * 1;
+            $s = date('s') * 1;
+            $q2 = "o_user_list";
+            $sql = "insert into $q2 (uid,m_id,name,username,password,n,y,r,s,f,m,ma,aqm)  values('$maxidd','0','$zczh6','$zczh1','$zczh2','$y','$m','$d','$h','$i','$s','$ma','$aqm')";
+            if (!mysqli_query($conn, $sql)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            $mysql002 = $maxidd + 10000000;
+            //加入ini
+            $path = '../ache/' . $mysql002;
+            $dir = iconv("UTF-8", "GBK", "$path");
+            if (!file_exists($dir)) {
+                mkdir($dir, 0777, true);
+            }
+            include("../url/url.php");
+            $xyurl = "http://" . $xxjyurl . "/xxjy/xxjyzc.php?zh=$zczh1&&mm=$zczh3&&aqm=$zczh4";
+            echo "<META HTTP-EQUIV=REFRESH CONTENT='0;URL=$xyurl'>";
         } else {
-            $zcxx = "<font color=red>密码不能为空</font>";
+            $zcxx = "<font color=red>对不起！这个昵称太火了换一个吧</font>";
         }
     } else {
-        $zcxx = "<font color=red>账号不能为空</font>";
+        $zcxx = "<font color=red>对不起该账号已存在了</font>";
     }
-    //内测完后删除
-    //}else{
-    //
-    //$zcxx="<font color=red>对不起!注册码不能为空</font>";
-    //}
-
-} else {
-
 }
 ?>
 
-
 <div class="g-hd f-cb">
-
     <img src="../images/logo1.jpg" alt="">
-
     <div align="right">
         <div style="margin-right: 10px;" class="m-icon-list">
             <br/>
-
         </div>
     </div>
 </div>
 <div class="g-mn">
     <div class="m-box">
         <div class="m-box-hd" style="margin-left: 3%;">
-
-
             <div class="tt">
                 <? echo $zcxx; ?><br>
                 小轩一站式通行证注册
@@ -312,32 +231,19 @@ if ($_POST['submit']) {
                 账----号：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc1" placeholder="账号" id='search'><font color=red>（6-12位的字母或数字）</font><br>
                 密----码：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc2" placeholder="密码" id='search'><font color=red>（6-12位的字母或数字）</font><br>
                 确认密码：&nbsp&nbsp<input type="text" name="zc3" placeholder="确认密码" id='search'><font color=red>（6-12位的字母或数字）</font><br>
-                <!--[安全码]：&nbsp&nbsp&nbsp<input  type="text" name="zc4" placeholder="安全码"id='search'><font color=red>（6-12位的字母或数字）</font><br>-->
-                <!--[注册码]：&nbsp&nbsp&nbsp<input  type="text" name="zc5" placeholder="注册码"id='search'><font color=red>（请向加QQ群54665469索要）</font><br>-->
+                <!--['安全码']：&nbsp&nbsp&nbsp<input  type="text" name="zc4" placeholder="安全码"id='search'><font color=red>（6-12位的字母或数字）</font><br>-->
+                <!--['注册码']：&nbsp&nbsp&nbsp<input  type="text" name="zc5" placeholder="注册码"id='search'><font color=red>（请向加QQ群54665469索要）</font><br>-->
                 <input type="submit" name="submit" value="注册" id="search1"/><br>
             </form>
-
-
             <br>
             <a href='/xxjy/login.php'><font color=blue>返回登录</font></a>
-            <br>
-            <br>
-            <br>
-
-
-            <div class="article-content" style="font-size: 15px;margin-top: 10px;">
-
-            </div>
+            <br><br><br>
+            <div class="article-content" style="font-size: 15px;margin-top: 10px;"></div>
         </div>
     </div>
 </div>
 <div class="g-ft f-cb">
-
     <div class="f-fr"><a href="../index.php" class="to-top">返回官网</a><br/></div>
 </div>
 </body>
 </html>
-
-
-
-

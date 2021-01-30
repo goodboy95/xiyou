@@ -30,7 +30,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_bp";
 $sql1=mysqli_query($conn, "select bpid from $q2 where bpmz='$wjtake'");
 $info1=@mysqli_fetch_array($sql1);
-$pdbp2=$info1[bpid];
+$pdbp2=$info1['bpid'];
 if($pdbp2==""){
 
 

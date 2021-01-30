@@ -232,7 +232,6 @@ echo "<font color=red>对不起！！兑换〖求婚玫瑰〗金豆不足</font>
 
 
 
-} else{	
 }
 echo "<br/>";
 //cmd及超链接值
@@ -243,7 +242,6 @@ $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

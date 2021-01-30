@@ -591,13 +591,8 @@ include("template/xy002.php");//游戏主页
 
 
 
-} else{
-
-
-
 }
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

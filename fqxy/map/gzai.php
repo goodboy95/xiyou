@@ -34,7 +34,6 @@ include("./ini/jj_ini.php");
 $jjxx2=($iniFile->getCategory('家具等级'));
 $jjxx3=($iniFile->getCategory('家具摆放'));
 $jjxx4=($iniFile->getCategory('家具名字'));
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");
@@ -86,7 +85,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=17;//家具id
 if($jjxx3[$jjid]==2){
@@ -96,7 +94,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=18;//家具id
 if($jjxx3[$jjid]==2){
@@ -106,7 +103,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=19;//家具id
 if($jjxx3[$jjid]==2){
@@ -116,7 +112,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 echo "<font color=black>请选择出口</font>"."<br>";
 $cmid=$cmid+1;
@@ -168,7 +163,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 $jjid=29;//家具id
@@ -179,7 +173,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 $jjid=30;//家具id
@@ -190,7 +183,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 
@@ -250,7 +242,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 $jjid=41;//家具id
@@ -261,7 +252,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 echo "<font color=black>请选择出口</font>"."<br>";
@@ -303,7 +293,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=21;//家具id
 if($jjxx3[$jjid]==2){
@@ -313,7 +302,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 echo "<font color=black>请选择出口</font>"."<br>";
 
@@ -389,7 +377,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=16;//家具id
 if($jjxx3[$jjid]==2){
@@ -399,7 +386,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=32;//家具id
 if($jjxx3[$jjid]==2){
@@ -409,7 +395,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 
@@ -519,7 +504,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 
@@ -558,7 +542,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=34;//家具id
 if($jjxx3[$jjid]==2){
@@ -568,7 +551,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 $jjid=35;//家具id
 if($jjxx3[$jjid]==2){
@@ -578,7 +560,6 @@ $cdid[]=$cmid;
 $clj[]=161;
 $npc[]=$jjid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jjxx4[$jjid]."(".$jjxx2[$jjid]."级)</font></a>"."<br>";
-} else{
 }
 
 echo "<font color=black>请选择出口</font>"."<br>";

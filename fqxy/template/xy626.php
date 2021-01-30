@@ -20,7 +20,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 //如果跨天则重置次数和时间
@@ -42,9 +41,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '5']);	
 $hdcs=5;
 echo "<font color=red>恭喜你！！今日大楼已自动重置成功，是男人就爬上了1000层大楼</font>"."<br>";
-} else{	
-
-} 	
+}
 	
 	
 	
@@ -88,8 +85,6 @@ $cdid[]=$cmid;
 $clj[]=629;
 $npc[]=$mqlc;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>领取第".$mqlc."楼奖励</font></a>"."<br>";
-} else{
-
 }
 
 
@@ -121,7 +116,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

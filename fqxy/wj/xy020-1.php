@@ -405,18 +405,18 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
 $weekarray=array("7","1","2","3","4","5","6");
-$week=$weekarray[date("w")];
+$week=$weekarray['date("w")'];
 
 
 $h= date('H')*1;
 $i= date('i')*1;
 if($week==6){
-echo "<font color=red>[系统]全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
+echo "<font color=red>['系统']全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
 } else{
 
 if($h!=21||$h==21&&$i>30){
 
-echo "<font color=red>[系统]参与国战的时间已过或者国战已结束！</font>"."<br>";
+echo "<font color=red>['系统']参与国战的时间已过或者国战已结束！</font>"."<br>";
 
 } else{
 
@@ -435,10 +435,10 @@ $q2="gz02";
 include("./sql/mysql.php");//调用数据库连接 
 $sql1=mysqli_query($conn, "select * from $q2 where gjid=$bpid");
 $info1=@mysqli_fetch_array($sql1);
-$gjmz=$info1[gjmz];
+$gjmz=$info1['gjmz'];
 
 if($gjmz==""){
-echo "<font color=red>[系统]对不起！你还未加入国家或者你的国家没有报名参与本次国家！</font>"."<br>";
+echo "<font color=red>['系统']对不起！你还未加入国家或者你的国家没有报名参与本次国家！</font>"."<br>";
 } else{
 	
 
@@ -452,7 +452,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 
 
@@ -817,7 +816,6 @@ file_put_contents($file01,"<?
 $zlmb='".$nowtime."';
 ?>");
 
-} else{
 }
 //更新排行
  } else{
@@ -856,9 +854,7 @@ $zb= rand(1, 10);
 if($zb <=6){//作弊
 //触发作弊
 $bz= rand(1, 8);
-} else{
 }
-} else{
 }
 
 
@@ -921,9 +917,7 @@ $zb= rand(1, 10);
 if($zb <=6){//作弊
 //触发作弊
 $bz= rand(1, 7);
-} else{
 }
-} else{
 }
 
 
@@ -974,9 +968,7 @@ $zb= rand(1, 10);
 if($zb <=6){//作弊
 //触发作弊
 $bz= rand(1, 7);
-} else{
 }
-} else{
 }
 
 
@@ -1028,9 +1020,7 @@ $zb= rand(1, 10);
 if($zb <=6){//作弊
 //触发作弊
 $bz= rand(1, 7);
-} else{
 }
-} else{
 }
 
 
@@ -1243,7 +1233,6 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
 
-} else{
 }
 
 ?>

@@ -38,7 +38,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdidd));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -207,8 +206,6 @@ $wpdz3[]=127;//物品id
 $wpdz4[]=$jddsl;//	量
 $wpdz5[]=1;//	重量
 
-} else{	
-
 }
 
 
@@ -250,7 +247,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

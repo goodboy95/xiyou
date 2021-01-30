@@ -12,8 +12,8 @@ $bpmz=($iniFile->getItem('玩家信息','帮派名字'));
 include("./ini/bp_ini.php");	
 # 获取一个分类下所有数据$
 $bp=($iniFile->getCategory('国家信息'));
-$xbzmz=$bp[现任君主];
-$xwjid=$bp[现任君主id];
+$xbzmz=$bp['现任君主'];
+$xwjid=$bp['现任君主id'];
 //点击国家权杖合法代码
 $bossid=1;
 include("./ini/boss_ini.php");
@@ -213,8 +213,7 @@ $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
-} else{
-}
+} 
 include("./ini/zt_ini.php");
 $uname=($iniFile->getItem('玩家信息','玩家名字'));
 $q2="gz04";	

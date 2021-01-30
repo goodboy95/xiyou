@@ -52,7 +52,7 @@ $gjmzid=($iniFile->getCategory('名字id'));
 $gjlsgx=($iniFile->getCategory('历史贡献'));
 $m=count($gjid,0)-1; 
 $i=0;
-$ym=$gjid[初始];
+$ym=$gjid['初始'];
 $km=0;
 if($m>1){
 
@@ -151,19 +151,19 @@ echo "<font color=red>".$clname.".</font>";
 
 
 
-if($bp[辅助大臣id]==$xxid){  
+if($bp['辅助大臣id']==$xxid){  
 $bpzw1="辅助大臣";
-} elseif($bp[军机大臣id]==$xxid){  
+} elseif($bp['军机大臣id']==$xxid){  
 $bpzw1="军机大臣";
-} elseif($bp[财政大臣id]==$xxid){  
+} elseif($bp['财政大臣id']==$xxid){  
 $bpzw1="财政大臣";
-} elseif($bp[工部大臣id]==$xxid){  
+} elseif($bp['工部大臣id']==$xxid){  
 $bpzw1="工部大臣";
-} elseif($bp[外交大臣id]==$xxid){  
+} elseif($bp['外交大臣id']==$xxid){  
 $bpzw1="外交大臣";
-} elseif($bp[军团长id]==$xxid){  
+} elseif($bp['军团长id']==$xxid){  
 $bpzw1="军团长";
-} elseif($bp[现任君主id]==$xxid){  
+} elseif($bp['现任君主id']==$xxid){  
 $bpzw1="君主";
 } else{
 $bpzw1="成员";
@@ -184,8 +184,6 @@ $cdid[]=$cmid;
 $clj[]=178;
 $npc[]=$xxxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任命".$bpzw."</font></a>";
-} else{
-
 }
 echo "</br>";
 
@@ -228,19 +226,19 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</f
 echo "<font color=red>".$clname.".</font>";
 }
 
-if($bp[辅助大臣id]==$xxid){  
+if($bp['辅助大臣id']==$xxid){  
 $bpzw1="辅助大臣";
-} elseif($bp[军机大臣id]==$xxid){  
+} elseif($bp['军机大臣id']==$xxid){  
 $bpzw1="军机大臣";
-} elseif($bp[财政大臣id]==$xxid){  
+} elseif($bp['财政大臣id']==$xxid){  
 $bpzw1="财政大臣";
-} elseif($bp[工部大臣id]==$xxid){  
+} elseif($bp['工部大臣id']==$xxid){  
 $bpzw1="工部大臣";
-} elseif($bp[外交大臣id]==$xxid){  
+} elseif($bp['外交大臣id']==$xxid){  
 $bpzw1="外交大臣";
-} elseif($bp[军团长id]==$xxid){  
+} elseif($bp['军团长id']==$xxid){  
 $bpzw1="军团长";
-} elseif($bp[现任君主id]==$xxid){  
+} elseif($bp['现任君主id']==$xxid){  
 $bpzw1="君主";
 } else{
 $bpzw1="成员";
@@ -259,8 +257,6 @@ $cdid[]=$cmid;
 $clj[]=178;
 $npc[]=$xxxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任命".$bpzw."</font></a>";
-} else{
-
 }
 echo "</br>";
 
@@ -295,19 +291,19 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</f
 echo "<font color=red>".$clname.".</font>";
 }
 
-if($bp[辅助大臣id]==$xxid){  
+if($bp['辅助大臣id']==$xxid){  
 $bpzw1="辅助大臣";
-} elseif($bp[军机大臣id]==$xxid){  
+} elseif($bp['军机大臣id']==$xxid){  
 $bpzw1="军机大臣";
-} elseif($bp[财政大臣id]==$xxid){  
+} elseif($bp['财政大臣id']==$xxid){  
 $bpzw1="财政大臣";
-} elseif($bp[工部大臣id]==$xxid){  
+} elseif($bp['工部大臣id']==$xxid){  
 $bpzw1="工部大臣";
-} elseif($bp[外交大臣id]==$xxid){  
+} elseif($bp['外交大臣id']==$xxid){  
 $bpzw1="外交大臣";
-} elseif($bp[军团长id]==$xxid){  
+} elseif($bp['军团长id']==$xxid){  
 $bpzw1="军团长";
-} elseif($bp[现任君主id]==$xxid){  
+} elseif($bp['现任君主id']==$xxid){  
 $bpzw1="君主";
 } else{
 $bpzw1="成员";
@@ -324,8 +320,6 @@ $cdid[]=$cmid;
 $clj[]=178;
 $npc[]=$xxxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任命".$bpzw."</font></a>";
-} else{
-
 }
 
 echo "</br>";
@@ -449,7 +443,6 @@ echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jjsini.php");
@@ -457,7 +450,6 @@ include("./ini/jjsini.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

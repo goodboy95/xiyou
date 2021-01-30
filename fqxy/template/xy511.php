@@ -76,8 +76,7 @@ $mt=$mt+1;
 if ($hm>0){
 sort($fb);
 sort($xb);
-} else{
-} 
+}
 
 
 

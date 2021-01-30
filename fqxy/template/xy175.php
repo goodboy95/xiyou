@@ -30,7 +30,7 @@ $gjmzid=($iniFile->getCategory('名字id'));
 $gjlsgx=($iniFile->getCategory('历史贡献'));
 $m=count($gjid,0)-1; 
 $i=0;
-$ym=$gjid[初始];
+$ym=$gjid['初始'];
 $km=0;
 if($m>1){
 
@@ -131,19 +131,19 @@ echo "<font color=red>".$clname.".</font>";
 
 
 
-if($bp[辅助大臣id]==$xxid){  
+if($bp['辅助大臣id']==$xxid){
 $bpzw1="辅助大臣";
-} elseif($bp[军机大臣id]==$xxid){  
+} elseif($bp['军机大臣id']==$xxid){
 $bpzw1="军机大臣";
-} elseif($bp[财政大臣id]==$xxid){  
+} elseif($bp['财政大臣id']==$xxid){
 $bpzw1="财政大臣";
-} elseif($bp[工部大臣id]==$xxid){  
+} elseif($bp['工部大臣id']==$xxid){
 $bpzw1="工部大臣";
-} elseif($bp[外交大臣id]==$xxid){  
+} elseif($bp['外交大臣id']==$xxid){
 $bpzw1="外交大臣";
-} elseif($bp[军团长id]==$xxid){  
+} elseif($bp['军团长id']==$xxid){
 $bpzw1="军团长";
-} elseif($bp[现任君主id]==$xxid){  
+} elseif($bp['现任君主id']==$xxid){
 $bpzw1="君主";
 } else{
 $bpzw1="成员";
@@ -151,7 +151,7 @@ $bpzw1="成员";
 
 
 //辅助大臣和君主权限
-if($bp[辅助大臣id]==$wjid||$wjid==$bp[现任君主id]){
+if($bp['辅助大臣id']==$wjid||$wjid==$bp['现任君主id']){
 
 echo "<font color=black>[".$bpzw1."]|".$lsgx."点|</font>";
 
@@ -169,9 +169,8 @@ $gzzid=5;
 $gzzid=6;
 } elseif($bpzw1=="军团长"){  
 $gzzid=7;
-} else{
 }
-if($xxid!=$bp[现任君主id]){
+if($xxid!=$bp['现任君主id']){
 
 $xxxid=$xxid."_".$gzzid;	
 //cmd及超链接值
@@ -183,13 +182,10 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>罢免官�
 
 echo "<font color=black>|</font>";
 
-} else{
 }
-} else{
-
 }
 
-if($xxid!=$bp[现任君主id]){
+if($xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -197,22 +193,18 @@ $cdid[]=$cmid;
 $clj[]=184;
 $npc[]=$xxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>";
-} else{
-
 }
 
-
-} else{
 
 }
 
 echo "</br>";
 
 //工部大臣和军团长辅助大臣和君主权限
-} elseif($bp[军机大臣id]==$wjid||$bp[财政大臣id]==$wjid||$bp[工部大臣id]==$wjid||$bp[外交大臣id]==$wjid||$bp[军团长id]==$wjid){   
+} elseif($bp['军机大臣id']==$wjid||$bp['财政大臣id']==$wjid||$bp['工部大臣id']==$wjid||$bp['外交大臣id']==$wjid||$bp['军团长id']==$wjid){
 echo "<font color=black>[".$bpzw1."]|".$lsgx."点|</font>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp[现任君主id]){
+if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -220,8 +212,6 @@ $cdid[]=$cmid;
 $clj[]=184;
 $npc[]=$xxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>";
-} else{
-
 }
 echo "</br>";
 
@@ -268,19 +258,19 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</f
 echo "<font color=red>".$clname.".</font>";
 }
 
-if($bp[辅助大臣id]==$xxid){  
+if($bp['辅助大臣id']==$xxid){
 $bpzw1="辅助大臣";
-} elseif($bp[军机大臣id]==$xxid){  
+} elseif($bp['军机大臣id']==$xxid){
 $bpzw1="军机大臣";
-} elseif($bp[财政大臣id]==$xxid){  
+} elseif($bp['财政大臣id']==$xxid){
 $bpzw1="财政大臣";
-} elseif($bp[工部大臣id]==$xxid){  
+} elseif($bp['工部大臣id']==$xxid){
 $bpzw1="工部大臣";
-} elseif($bp[外交大臣id]==$xxid){  
+} elseif($bp['外交大臣id']==$xxid){
 $bpzw1="外交大臣";
-} elseif($bp[军团长id]==$xxid){  
+} elseif($bp['军团长id']==$xxid){
 $bpzw1="军团长";
-} elseif($bp[现任君主id]==$xxid){  
+} elseif($bp['现任君主id']==$xxid){
 $bpzw1="君主";
 } else{
 $bpzw1="成员";
@@ -288,7 +278,7 @@ $bpzw1="成员";
 
 
 //辅助大臣和君主权限
-if($bp[辅助大臣id]==$wjid||$wjid==$bp[现任君主id]){
+if($bp['辅助大臣id']==$wjid||$wjid==$bp['现任君主id']){
 
 echo "<font color=black>[".$bpzw1."]|".$lsgx."点|</font>";
 if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
@@ -305,9 +295,8 @@ $gzzid=5;
 $gzzid=6;
 } elseif($bpzw1=="军团长"){  
 $gzzid=7;
-} else{
 }
-if($xxid!=$bp[现任君主id]){
+if($xxid!=$bp['现任君主id']){
 
 $xxxid=$xxid."_".$gzzid;	
 //cmd及超链接值
@@ -319,12 +308,9 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>罢免官�
 
 echo "<font color=black>|</font>";
 
-} else{
 }
-} else{
-
 }
-if($xxid!=$bp[现任君主id]){
+if($xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -332,27 +318,21 @@ $cdid[]=$cmid;
 $clj[]=184;
 $npc[]=$xxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>";
-} else{
-
 }
-} else{
-
 }
 echo "</br>";
 
 //工部大臣和军团长辅助大臣和君主权限
-} elseif($bp[军机大臣id]==$wjid||$bp[财政大臣id]==$wjid||$bp[工部大臣id]==$wjid||$bp[外交大臣id]==$wjid||$bp[军团长id]==$wjid){   
+} elseif($bp['军机大臣id']==$wjid||$bp['财政大臣id']==$wjid||$bp['工部大臣id']==$wjid||$bp['外交大臣id']==$wjid||$bp['军团长id']==$wjid){
 echo "<font color=black>[".$bpzw1."]|".$lsgx."点|</font>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp[现任君主id]){
+if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp['现任君主id']){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=184;
 $npc[]=$xxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>";
-} else{
-
 }
 echo "</br>";
 
@@ -397,19 +377,19 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</f
 echo "<font color=red>".$clname.".</font>";
 }
 
-if($bp[辅助大臣id]==$xxid){  
+if($bp['辅助大臣id']==$xxid){
 $bpzw1="辅助大臣";
-} elseif($bp[军机大臣id]==$xxid){  
+} elseif($bp['军机大臣id']==$xxid){
 $bpzw1="军机大臣";
-} elseif($bp[财政大臣id]==$xxid){  
+} elseif($bp['财政大臣id']==$xxid){
 $bpzw1="财政大臣";
-} elseif($bp[工部大臣id]==$xxid){  
+} elseif($bp['工部大臣id']==$xxid){
 $bpzw1="工部大臣";
-} elseif($bp[外交大臣id]==$xxid){  
+} elseif($bp['外交大臣id']==$xxid){
 $bpzw1="外交大臣";
-} elseif($bp[军团长id]==$xxid){  
+} elseif($bp['军团长id']==$xxid){
 $bpzw1="军团长";
-} elseif($bp[现任君主id]==$xxid){  
+} elseif($bp['现任君主id']==$xxid){
 $bpzw1="君主";
 } else{
 $bpzw1="成员";
@@ -417,7 +397,7 @@ $bpzw1="成员";
 
 
 //辅助大臣和君主权限
-if($bp[辅助大臣id]==$wjid||$wjid==$bp[现任君主id]){
+if($bp['辅助大臣id']==$wjid||$wjid==$bp['现任君主id']){
 
 echo "<font color=black>[".$bpzw1."]|".$lsgx."点|</font>";
 if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
@@ -434,10 +414,9 @@ $gzzid=5;
 $gzzid=6;
 } elseif($bpzw1=="军团长"){  
 $gzzid=7;
-} else{
 }
 
-if($xxid!=$bp[现任君主id]){
+if($xxid!=$bp['现任君主id']){
 
 $xxxid=$xxid."_".$gzzid;	
 //cmd及超链接值
@@ -449,14 +428,11 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>罢免官�
 
 echo "<font color=black>|</font>";
 
-} else{
 }
-
-} else{
 
 }
 
-if($xxid!=$bp[现任君主id]){
+if($xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -464,20 +440,16 @@ $cdid[]=$cmid;
 $clj[]=184;
 $npc[]=$xxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>";
-} else{
-
 }
-
-} else{
 
 }
 echo "</br>";
 
 //工部大臣和军团长辅助大臣和君主权限
-} elseif($bp[军机大臣id]==$wjid||$bp[财政大臣id]==$wjid||$bp[工部大臣id]==$wjid||$bp[外交大臣id]==$wjid||$bp[军团长id]==$wjid){   
+} elseif($bp['军机大臣id']==$wjid||$bp['财政大臣id']==$wjid||$bp['工部大臣id']==$wjid||$bp['外交大臣id']==$wjid||$bp['军团长id']==$wjid){
 echo "<font color=black>[".$bpzw1."]|".$lsgx."点|</font>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp[现任君主id]){
+if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -485,8 +457,6 @@ $cdid[]=$cmid;
 $clj[]=184;
 $npc[]=$xxid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>";
-} else{
-
 }
 echo "</br>";
 
@@ -629,7 +599,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jjsini.php");
@@ -637,7 +606,6 @@ include("./ini/jjsini.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

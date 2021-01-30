@@ -50,8 +50,7 @@ include("template/xy034.php");
 include("./pz/pz01.php");
 
 
-} else{
-}
+} 
 
 
 

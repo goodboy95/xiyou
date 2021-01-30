@@ -169,10 +169,7 @@ $wpdz3[]=730;//物品id
 $wpdz4[]=$sl;//	量
 $wpdz5[]=1;//	重量
 
-} else{
-	
-
-} 	
+}
 	
 
 
@@ -217,7 +214,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -284,8 +284,6 @@ echo "<font color=red>〖活动〗潇道长：恭喜你~~你顺利的解开了�
 	
 	
 	
-} else{	
-
 }
 
 
@@ -373,7 +371,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -41,9 +41,7 @@ $minute=floor($minute1/60);
 $second=$minute1%60;
 if($minute > 0){	
 
-} else{
-
-} 
+}
 } else{
 	
 
@@ -65,13 +63,7 @@ $result = mysqli_query($conn, $strsql);
 
 $jy03="";
 } 
-} else{	
-
-
-
 }
-
-} else{	
 
 }
 
@@ -153,8 +145,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -195,7 +186,6 @@ echo "<font color=black>对不起！".$wjname."正处于禁言状态！！</font
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -34,22 +34,14 @@ $wpsl=($iniFile->getItem('其他数量',$npcc));
 
 
 
-} else{
-
-
-
-}
+} 
 
 if($ymid==286){ //背包其他
 //调用物品信息
 $bsid=$npcc;
 include("./wp/zbbs.php");
 $wpmz=$bsmz;
-} else{
-
-
-
-}
+} 
 
 
 
@@ -148,11 +140,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
-}
+} 
 
 
 
@@ -172,16 +160,11 @@ echo "<font color=black>----------------------</font></a>"."<br>";
 include("fhgame.php");
 
 
-} else{
+} 
 
 
 
-}
-
-
-
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

@@ -18,19 +18,17 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$bbyl=$info1[bbyl];
-$ckyl=$info1[ckyl];
+$bbyl=$info1['bbyl'];
+$ckyl=$info1['ckyl'];
 
  //echo $uname;
  
  
 if($bbyl==""){
 $bbyl=0;
-}else{
 }
 if($ckyl==""){
 $ckyl=0;
-}else{
 }
 if($bbyl==""&&$ckyl==""){
 $sql = "insert into $q2 (wjid,bbyl,ckyl)  values($wjid,$bbyl,$ckyl)";
@@ -38,7 +36,6 @@ $sql = "insert into $q2 (wjid,bbyl,ckyl)  values($wjid,$bbyl,$ckyl)";
  {
    die('Error: ' . mysqli_error($conn));
  }
-}else{
 }
 
 

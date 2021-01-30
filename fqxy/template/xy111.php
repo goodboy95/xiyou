@@ -28,8 +28,6 @@ if ($dwid!=$wjid1){
 $wjid=$dwid;
 } elseif($dwid!=$wjid1){
 $wjid=$wjid1;
-} else{
-
 }
 
 
@@ -113,9 +111,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyltwj
 
 
 echo "</br>";
-	} else{
-
-	} 
+	}
 
 
 }
@@ -167,9 +163,7 @@ echo "</br>";
 	} 
 
 
-	} else{
-
-	} 
+	}
 
 
 

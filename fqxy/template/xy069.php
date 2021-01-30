@@ -30,8 +30,6 @@ if($xyc1==""){
 $xyc1=($iniFile->getItem('商城数量','307'));
 $xycid=307;
 $xycmz="大幸运草";
-} else{
-
 }
 
 
@@ -51,8 +49,6 @@ $cgl=$cgl+$xyc;
 if($cgl>=100){
 $cgl=100;
 }
-} else{
-
 }
 
 
@@ -72,9 +68,7 @@ $wpdz2[]=4;//物品分类
 $wpdz3[]=$xycid;//物品id
 $wpdz4[]=1;//	需要扣除的量
 $wpdz5[]=1;//	重量
-} else{
-
-} 
+}
 
 if($ks==1){
 $xycmz="〖打孔器〗";
@@ -86,8 +80,6 @@ $xycmz="〖高级打孔器〗";
 $xycmz="〖强化打孔器〗";
 } elseif($ks==5){  
 $xycmz="〖究极打孔器〗";
-} else{
-
 }
 $wpdz1[]=$xycmz;//名字
 $wpdz2[]=2;//物品分类
@@ -287,9 +279,7 @@ include("fhgame.php");
 
 
 
-} else{	
-
-} 
+}
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

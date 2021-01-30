@@ -27,8 +27,7 @@ if($cwcz2==2){
 $cwidd=($iniFile->getItem('怪物1号属性','初始'));//宠物出战id
 include("./wj/cwsh01.php");//调用怪物和宠物基础数据
 include("./wj/cwsh02.php");//运算伤害数据
-} else{
-} 
+}
 
 
 //宠物
@@ -87,9 +86,7 @@ include("fhgame.php");
 
 
 
-} else{	
-
-} 
+}
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

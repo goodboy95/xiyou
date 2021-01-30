@@ -57,8 +57,6 @@ include("./ini/yl_ini.php");
 $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
 $wjid=$ckid;
 
-} else{
-
 }
 	
 	
@@ -96,7 +94,7 @@ if($cmdd!=232){
 //调用gswp.ini是否存在
 include("./ini/gszb_ini.php");
 $uwpid=($iniFile->getCategory('装备id'));
-$ym=$uwpid[初始];
+$ym=$uwpid['初始'];
 }elseif($cmdd==232){
 	//调用gswp.ini是否存在
 include("./ini/gszb_ini.php");
@@ -108,7 +106,7 @@ $ym=1;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('装备id', ['初始' => $ym]);
 } else{
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 }
 
 
@@ -422,7 +420,6 @@ include("fhgame.php");
 	
 	
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

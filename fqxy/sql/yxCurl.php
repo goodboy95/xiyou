@@ -11,39 +11,23 @@ $yxhe = $a[0];
 $wjid = $a[1];
 $xxjy_pass = $a[2];
 $xxjy_qy = $a[3];
-
 //合法信息
 if ($yxhe == 2) {
     //生成社区玩家在此游戏的id和验证
     $qy = 1;
-
     include("../class/iniclass.php");//调用iniclass文件
     //o_user_list中查询是否存在，返回是否合法，合法2，不合法1
     include("../ini/yxuser_ini.php");
-
-    //include("/mysql.php");//调用数据库连接
-    //$sqid=$wjid."_".$qy;
-    //$q2="o_user_list";
-    //$sql=mysqli_query($conn, "select password from $q2 where sqid='$sqid'");
-    //$info1=@mysqli_fetch_array($sql);
-    //$pass=$info1[password];
-
     //社区验证游戏
-
     //验证成功是合法的信息
     if ($hf == 2) {
         $pass = ($iniFile->getItem('验证信息', '玩家验证'));
-    } else {
-
     }
-
     if ($pass == $xxjy_pass && $xxjy_pass != "" && $pass != "") {
         //存在用户的信息
-
         $wjid = $wjini;
-
+        echo 'beforehand';
         include("../ini/xuser_ini.php");
-
         # 获取一个分类下某个子项的值
         $uwjid = ($iniFile->getItem('验证信息', '玩家id'));
         $a10 = ($iniFile->getItem('验证信息', '玩家游戏码'));
@@ -86,7 +70,7 @@ if ($yxhe == 2) {
             //更新缓存数据
             unlink($ininame); //删除文件
             //更新缓存数据
-
+            include("../url/url.php");
             include("../xxjyindex.php");
 
             //检测uid是否存在如果存在整么社区号修改过密码需要重新更新游戏数据

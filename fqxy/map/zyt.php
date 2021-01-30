@@ -38,8 +38,6 @@ $clj[]=10;
 $npc[]=579;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -49,9 +47,7 @@ $clj[]=10;
 $npc[]=584;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -59,8 +55,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=589;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -72,8 +66,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=681;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -177,8 +169,6 @@ $clj[]=10;
 $npc[]=580;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -188,9 +178,7 @@ $clj[]=10;
 $npc[]=585;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -198,8 +186,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=590;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -210,8 +196,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=682;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -317,8 +301,6 @@ $clj[]=10;
 $npc[]=581;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -328,9 +310,7 @@ $clj[]=10;
 $npc[]=586;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -338,8 +318,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=591;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -350,8 +328,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=683;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -548,8 +524,6 @@ $clj[]=10;
 $npc[]=582;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -559,9 +533,7 @@ $clj[]=10;
 $npc[]=587;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -569,8 +541,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=592;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -582,8 +552,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=684;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -786,8 +754,6 @@ $clj[]=10;
 $npc[]=583;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(普通)</font></a>"."<br>";
 
-} else{
-
 }
  if($gw2 ==1&&$wcqk2!=3){
 //cmd及超链接值
@@ -797,9 +763,7 @@ $clj[]=10;
 $npc[]=588;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(困难)</font></a>"."<br>";
 
-} else{
-
-}   
+}
  if($gw3 ==1&&$wcqk3!=3){
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -807,8 +771,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=593;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(梦魇)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -819,8 +781,6 @@ $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=685;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(地狱)</font></a>"."<br>";
-
-} else{
 
 }
 

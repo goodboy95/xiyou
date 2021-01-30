@@ -68,8 +68,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 	$ltbl2=-1;
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
@@ -100,7 +99,6 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><fo
 
 
 
-} else{	
 }
 
 

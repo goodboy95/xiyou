@@ -39,8 +39,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -136,7 +135,6 @@ include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 $xysw1=$xysw1+$sjwpsl1*1;
 
-} else{	
 }
 
 

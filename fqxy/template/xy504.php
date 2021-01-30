@@ -88,11 +88,11 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_pm";
 $sql1=mysqli_query($conn, "select * from $q2 where id=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$pmsjc=$info1[pmsjc];
-$pmwjid=$info1[wjid];
-$pmwpidd=$info1[pmwpid];
+$pmsjc=$info1['pmsjc'];
+$pmwjid=$info1['wjid'];
+$pmwpidd=$info1['pmwpid'];
 
-$pmwpsll=$info1[pmwpsl];
+$pmwpsll=$info1['pmwpsl'];
 
 
 
@@ -119,8 +119,8 @@ $result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$pmmwpid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -306,10 +306,6 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
-} else{
-
-
-
 }
 
 echo "<font color=red>恭喜你！！取回了".$wpmz."x".$wpsl."</font>"."<br>";
@@ -369,7 +365,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jszsini.php");

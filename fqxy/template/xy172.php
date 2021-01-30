@@ -33,8 +33,8 @@ include("./ini/bp_ini.php");
 $bp=($iniFile->getCategory('国家信息'));
 
 
-echo "<font color=black>".$bp[国家名字]."（".$bp[国家等级]."级）</font>";
-if($bp[现任君主id]>1){
+echo "<font color=black>".$bp['国家名字']."（".$bp['国家等级']."级）</font>";
+if($bp['现任君主id']>1){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -42,8 +42,6 @@ $cdid[]=$cmid;
 $clj[]=595;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>升级</font></a>";
-} else{
-
 }
 
 echo "<br>";
@@ -53,51 +51,51 @@ echo "<br>";
 
 
 
-echo "<font color=black>【首任君主】:".$bp[首任君主]."(".$bp[首任君主id].")</font><br>";
-echo "<font color=black>【现任君主】:".$bp[现任君主]."(".$bp[现任君主id].")</font><br>";
+echo "<font color=black>【首任君主】:".$bp['首任君主']."(".$bp['首任君主id'].")</font><br>";
+echo "<font color=black>【现任君主】:".$bp['现任君主']."(".$bp['现任君主id'].")</font><br>";
 
 
-if($bp[辅助大臣id]>1){
-echo "<font color=black>【辅助大臣】:".$bp[辅助大臣]."(".$bp[辅助大臣id].")</font><br>";
+if($bp['辅助大臣id']>1){
+echo "<font color=black>【辅助大臣】:".$bp['辅助大臣']."(".$bp['辅助大臣id'].")</font><br>";
 } else{
 echo "<font color=black>【辅助大臣】:暂无</font><br>";
 }
 
-if($bp[军机大臣id]>1){
-echo "<font color=black>【军机大臣】:".$bp[军机大臣]."(".$bp[军机大臣id].")</font><br>";
+if($bp['军机大臣id']>1){
+echo "<font color=black>【军机大臣】:".$bp['军机大臣']."(".$bp['军机大臣id'].")</font><br>";
 } else{
 echo "<font color=black>【军机大臣】:暂无</font><br>";
 }
-if($bp[财政大臣id]>1){
-echo "<font color=black>【财政大臣】:".$bp[财政大臣]."(".$bp[财政大臣id].")</font><br>";
+if($bp['财政大臣id']>1){
+echo "<font color=black>【财政大臣】:".$bp['财政大臣']."(".$bp['财政大臣id'].")</font><br>";
 } else{
 echo "<font color=black>【财政大臣】:暂无</font><br>";
 }
-if($bp[工部大臣id]>1){
-echo "<font color=black>【工部大臣】:".$bp[工部大臣]."(".$bp[工部大臣id].")</font><br>";
+if($bp['工部大臣id']>1){
+echo "<font color=black>【工部大臣】:".$bp['工部大臣']."(".$bp['工部大臣id'].")</font><br>";
 } else{
 echo "<font color=black>【工部大臣】:暂无</font><br>";
 }
-if($bp[外交大臣id]>1){
-echo "<font color=black>【外交大臣】:".$bp[外交大臣]."(".$bp[外交大臣id].")</font><br>";
+if($bp['外交大臣id']>1){
+echo "<font color=black>【外交大臣】:".$bp['外交大臣']."(".$bp['外交大臣id'].")</font><br>";
 } else{
 echo "<font color=black>【外交大臣】:暂无</font><br>";
 }
-if($bp[军团长id]>1){
-echo "<font color=black>【军团长】:".$bp[军团长]."(".$bp[军团长id].")</font><br>";
+if($bp['军团长id']>1){
+echo "<font color=black>【军团长】:".$bp['军团长']."(".$bp['军团长id'].")</font><br>";
 } else{
 echo "<font color=black>【军团长】:暂无</font><br>";
 }
 
-echo "<font color=black>国家人数:".$bp[国家人数]."/".$bp[国家人数max]."</font><br>";
-echo "<font color=black>国家经验:".$bp[国家经验]."/".$bp[国家经验max]."</font><br>";
+echo "<font color=black>国家人数:".$bp['国家人数']."/".$bp['国家人数max']."</font><br>";
+echo "<font color=black>国家经验:".$bp['国家经验']."/".$bp['国家经验max']."</font><br>";
 echo "<font color=red>国家资金:";
 //调用阿拉伯数字转汉字
-$yl=$bp[国家资金];
+$yl=$bp['国家资金'];
 include("./wp/ylxx.php");
 echo "</font><br>";
 
-echo "<font color=black>国家声望:".$bp[国家声望]."</font><br>";
+echo "<font color=black>国家声望:".$bp['国家声望']."</font><br>";
 echo "<font color=black>可用贡献:".$gjgx1."点</font><br>";
 echo "<font color=black>历史贡献:".$gjgx2."点</font><br>";
 
@@ -128,7 +126,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>捐献银�
 
 
 
-if($wjid==$bp[现任君主id]){
+if($wjid==$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -184,7 +182,6 @@ echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jjsini.php");
@@ -192,7 +189,6 @@ include("./ini/jjsini.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

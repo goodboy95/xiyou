@@ -9,8 +9,6 @@ $hdtime=1;
 $date=date("H:i:s");
 if($date> $mbbtime01 && $date < $mbbtime02){
 $hdtime=2;
-}else{
-	
 }
 
 

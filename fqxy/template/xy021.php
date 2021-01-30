@@ -55,7 +55,6 @@ $ym=1;
 $iniFile->updItem('页面id', ['公共页面' => $ym]);
 
 
-} else{
 }
 
 
@@ -164,7 +163,6 @@ if($wjtake10!=""){
 if($wjtakes2>0&&$wjtakes2<=100||$wjtakes2>0&&$wjtakes2<=100){
 if($wjtakes2>0){
 $wjtake=$wjtake10;
-} else{
 }
 	
 	
@@ -242,8 +240,7 @@ foreach( $arr1 as $k=>$v) {
 $ltmax1=max($arr1);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -299,8 +296,7 @@ echo "<font color=red>内容不能为空</font><br>";
 	
 	
 	
-	} else{
-}
+	}
 
 }
 
@@ -399,9 +395,7 @@ $ltmax=$ltmin1-1+$ltsl;
 
 }
 
-	} else{
-		
-}
+	}
 		
 } elseif($ltymid>$ltsl1){
 $ltsl=$m%10;
@@ -410,8 +404,7 @@ $ltmin=$ltmin1-1;
 $ltmax=$ltmin1-1+$ltsl;
 
 		
-	} else{
-}
+	}
 
 
 
@@ -439,7 +432,7 @@ $pxwjname[]=$keyltwjname[$ltmax];
 $pxwjtake[]=$keyltwjtake[$ltmax];
 $pxwjvip[]=$keyltwjvip[$ltmax];
 
-echo "<font color=black>[公共]</font></a>";
+echo "<font color=black>['公共']</font></a>";
 
 
 $img='pic/vip/'."vip".$pxwjvip[$i].'.png';
@@ -595,7 +588,6 @@ echo "<font color=black>----------------------</font></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsggini.php");

@@ -51,8 +51,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -100,8 +99,7 @@ if ($hm>0){
 rsort($fb);
 rsort($xb);
 
-} else{
-} 
+}
 
 
 $mt=0;
@@ -502,20 +500,14 @@ $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."领取了【采花大盗】第".$ik."名奖励！！得到百花仙子的青睐~~~";
 include("./msg/msgg02.php");
 break;
-} else{	
-	
-} 	
+}
 	
 	
 	
 	
 
 
-} else{
-
-
-
-} 
+}
 
 
 

@@ -14,7 +14,7 @@ include("./sql/mysql.php");//调用数据库连接
 include("./ini/bp_ini.php");
 # 获取一个分类下所有数据$
 $bp=($iniFile->getCategory('国家信息'));	
-$yl1=$sl+$bp[国家资金];
+$yl1=$sl+$bp['国家资金'];
 $q2="all_bp";
 $strsql = "update $q2 set bpyl=$yl1 where bpid=$bpid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);

@@ -33,13 +33,13 @@ $q2="gz01";
 $str="select * from $q2";
 $result=mysqli_query($conn, $str) or die('SQL语句有误');
  while(!!$row=mysqli_fetch_array($result)){
-$iniFile->addCategory('id', [$row[zcid]=>$row[zlgj]]);	 
-$iniFile->addCategory('国家名字', [$row[zcid]=>$row[zlgj]]);
-$iniFile->addCategory('国家id', [$row[zcid]=>$row[zlgjid]]);
-$iniFile->addCategory('君主名字', [$row[zcid]=>$row[gjjz]]);
-$iniFile->addCategory('君主id', [$row[zcid]=>$row[gjjzid]]);
-$iniFile->addCategory('夺仗人', [$row[zcid]=>$row[czz]]);
-$iniFile->addCategory('夺仗人id', [$row[zcid]=>$row[czzid]]);
+$iniFile->addCategory('id', [$row['zcid']=>$row['zlgj']]);	 
+$iniFile->addCategory('国家名字', [$row['zcid']=>$row['zlgj']]);
+$iniFile->addCategory('国家id', [$row['zcid']=>$row['zlgjid']]);
+$iniFile->addCategory('君主名字', [$row['zcid']=>$row['gjjz']]);
+$iniFile->addCategory('君主id', [$row['zcid']=>$row['gjjzid']]);
+$iniFile->addCategory('夺仗人', [$row['zcid']=>$row['czz']]);
+$iniFile->addCategory('夺仗人id', [$row['zcid']=>$row['czzid']]);
 
 }
 

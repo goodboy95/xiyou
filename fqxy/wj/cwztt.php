@@ -94,8 +94,6 @@ $zbhp=$zbhp+$bsxl;
 $zbgj=$zbgj+$bsgj;
 $zbmg=$zbmg+$bsmg;
 $zbfy=$zbfy+$bsfy;
-} else{
-
 }
 
 $bsid=$keyzbxq2[$i];
@@ -106,8 +104,6 @@ $zbhp=$zbhp+$bsxl;
 $zbgj=$zbgj+$bsgj;
 $zbmg=$zbmg+$bsmg;
 $zbfy=$zbfy+$bsfy;
-} else{
-
 }
 $bsid=$keyzbxq3[$i];
 if($bsid>=1){
@@ -117,8 +113,6 @@ $zbhp=$zbhp+$bsxl;
 $zbgj=$zbgj+$bsgj;
 $zbmg=$zbmg+$bsmg;
 $zbfy=$zbfy+$bsfy;
-} else{
-
 }
 $bsid=$keyzbxq4[$i];
 if($bsid>=1){
@@ -128,8 +122,6 @@ $zbhp=$zbhp+$bsxl;
 $zbgj=$zbgj+$bsgj;
 $zbmg=$zbmg+$bsmg;
 $zbfy=$zbfy+$bsfy;
-} else{
-
 }
 
 $bsid=$keyzbxq5[$i];
@@ -140,8 +132,6 @@ $zbhp=$zbhp+$bsxl;
 $zbgj=$zbgj+$bsgj;
 $zbmg=$zbmg+$bsmg;
 $zbfy=$zbfy+$bsfy;
-} else{
-
 }
 
 

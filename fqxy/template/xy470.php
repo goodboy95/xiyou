@@ -28,8 +28,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -75,7 +74,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_ylck";
 $sql1=mysqli_query($conn, "select wjid,yl02 from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjidpd=$info1[wjid];
+$wjidpd=$info1['wjid'];
 $yl02=$info1[yl02];
 $xcyl=$yl02+$qc03;
 if($wjidpd>10000000){

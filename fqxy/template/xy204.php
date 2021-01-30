@@ -22,7 +22,7 @@ $xtsz=($iniFile->getCategory('显示设置'));
 
 echo "<font color=black>【显示设置】</font><br>";
 echo "<font color=black>图片显示&nbsp</font>";
-if($xtsz[图片显示]==2){
+if($xtsz['图片显示']==2){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -50,7 +50,7 @@ echo "<br>";
 
 
 echo "<font color=black>公共信息&nbsp</font>";
-if($xtsz[公共信息]==2){
+if($xtsz['公共信息']==2){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -78,7 +78,7 @@ echo "<br>";
 
 
 echo "<font color=black>国家信息&nbsp</font>";
-if($xtsz[国家信息]==2){
+if($xtsz['国家信息']==2){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -106,7 +106,7 @@ echo "<br>";
 
 
 echo "<font color=black>私聊信息&nbsp</font>";
-if($xtsz[私聊信息]==2){
+if($xtsz['私聊信息']==2){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -134,7 +134,7 @@ echo "<br>";
 
 
 echo "<font color=black>场景公告&nbsp</font>";
-if($xtsz[场景公告]==2){
+if($xtsz['场景公告']==2){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -192,7 +192,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

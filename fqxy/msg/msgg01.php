@@ -16,7 +16,6 @@ $file01="./msg/msg03.php";
 $file01="./msg/msg04.php";
 } elseif($i == 5){
 $file01="./msg/msg05.php";
-} else{
 }
 if(file_exists($file01)){
 $a=filemtime($file01);
@@ -38,8 +37,6 @@ unlink($file01); //删除文件
 
 } 
 
-
-}else{
 
 }
 }

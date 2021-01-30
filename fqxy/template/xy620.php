@@ -155,8 +155,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}  
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -169,16 +168,14 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 $wjid=$wjid1;//自己
 
 
-} else{	
-}
+} 
 
 
 
 
 
 
-} else{	
-}
+} 
 
 echo "<font color=red>恭喜你！！比武胜利了~~</font>"."<br>";
 
@@ -201,8 +198,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
-}
+} 
 
 //解锁当前使用的ini
 include("./ini/all_lock1.php");

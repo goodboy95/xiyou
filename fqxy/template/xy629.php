@@ -685,8 +685,6 @@ include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."在【幸运大富翁】领取了第".$mqlc."楼的丰厚奖励！！";
 include("./msg/msgg02.php");
-} else{
-
 }
 
 } else{	
@@ -718,7 +716,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

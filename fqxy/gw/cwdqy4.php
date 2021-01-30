@@ -31,8 +31,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 	if($zspd>=25){
 	$zsspd=2;	
 	  break;
-	} else{	
-	} 
+	}
 
 }
 
@@ -61,7 +60,6 @@ include("cw.php");//调用boss
 
 
 echo "</br>";
-	} else{	
 	}
 
 	} else{	

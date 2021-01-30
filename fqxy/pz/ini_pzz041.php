@@ -68,10 +68,7 @@ $wprl=$bbrla-$rl;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
-} else{
-
-
-} 
+}
 
 
 

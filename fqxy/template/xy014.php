@@ -16,10 +16,6 @@ if($cljpost==389){
 //获取返回战斗页面
 include("./ini/pkxx_ini.php");
 $pkwjid=($iniFile->getItem('怪物编号','1号'));
-} else{
-
-
-
 }
 
 
@@ -153,7 +149,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

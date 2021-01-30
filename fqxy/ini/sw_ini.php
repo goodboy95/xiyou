@@ -41,9 +41,9 @@ $result=mysqli_query($conn, $str) or die('SQL语句有误');
 
 
 //调用声望信息
-$swid=$row[swid];
+$swid=$row['swid'];
 include("./wp/swxx.php");
-$iniFile->addCategory('声望值', [$swmz=> $row[swzz]]);
+$iniFile->addCategory('声望值', [$swmz=> $row['swzz']]);
 
 }
 

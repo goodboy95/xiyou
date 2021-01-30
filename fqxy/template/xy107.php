@@ -5295,9 +5295,6 @@ echo "<font color=black>14.蚂蚁花呗消费送充值金额的百分之10现金
 echo "<br>";
 
 
-} else{
-
-
 }
 
 

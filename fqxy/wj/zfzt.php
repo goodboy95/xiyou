@@ -30,8 +30,6 @@ $zffy=$zffy+$zffy1;
 $zfgj=$zfgj+$zfgj1;
 $zfmg=$zfmg+$zfmg1;
 
-} else{
-
 }
 
 
@@ -52,8 +50,6 @@ $zffy=$zffy+$zffy1;
 $zfgj=$zfgj+$zfgj1;
 $zfmg=$zfmg+$zfmg1;
 
-} else{
-
 }
 //获取神秘人参果时间
 $wwpid1=138;
@@ -68,8 +64,6 @@ $zfhp=$zfhp+$zfhp1;
 $zffy=$zffy+$zffy1;
 $zfgj=$zfgj+$zfgj1;
 $zfmg=$zfmg+$zfmg1;
-
-} else{
 
 }
 
@@ -93,9 +87,7 @@ $zfbf=$zfbf+200;
 $zfhf=$zfhf+200;
 $zflf=$zflf+200;
 
-} else{	
 }
-} else{	
 }
 
 
@@ -105,10 +97,9 @@ $zflf=$zflf+200;
 
 
 if($zfhp>0){
-$wjxx1[血]=$wjxx1[血]+$zfhp;
-$maxhp=$wjxx1[血];
+$wjxx1['血']=$wjxx1['血']+$zfhp;
+$maxhp=$wjxx1['血'];
 
-} else{
 }
 
 
@@ -116,53 +107,44 @@ $maxhp=$wjxx1[血];
 if($zfgj>0){
 
 
-$wjxx1[max攻击]=$wjxx1[max攻击]+$zfgj;
+$wjxx1['max攻击']=$wjxx1['max攻击']+$zfgj;
 
-$wjxx1[攻击] = ceil(($wjxx1[max攻击])/ 1.3);
+$wjxx1['攻击'] = ceil(($wjxx1['max攻击'])/ 1.3);
 
-} else{
 }
 
 
 
 if($zffy>0){
-$wjxx1[max防御]=$wjxx1[max防御]+$zffy;
-$wjxx1[防御] = ceil(($wjxx1[max防御])/ 1.3);
-} else{
+$wjxx1['max防御']=$wjxx1['max防御']+$zffy;
+$wjxx1['防御'] = ceil(($wjxx1['max防御'])/ 1.3);
 }
 
 if($zfmg>0){
-$wjxx1[max魔攻]=$wjxx1[max魔攻]+$zfmg;
-$wjxx1[魔攻] = ceil(($wjxx1[max魔攻])/ 1.3);
+$wjxx1['max魔攻']=$wjxx1['max魔攻']+$zfmg;
+$wjxx1['魔攻'] = ceil(($wjxx1['max魔攻'])/ 1.3);
 
-} else{
 }
 
 
 if($zfbg>0){
-$wjxx1[冰攻]=$wjxx1[冰攻]+$zfbg;
-} else{
+$wjxx1['冰攻']=$wjxx1['冰攻']+$zfbg;
 }
 if($zfhg>0){
-$wjxx1[火攻]=$wjxx1[火攻]+$zfhg;
-} else{
+$wjxx1['火攻']=$wjxx1['火攻']+$zfhg;
 }
 if($zflg>0){
-$wjxx1[雷攻]=$wjxx1[雷攻]+$zflg;
-} else{
+$wjxx1['雷攻']=$wjxx1['雷攻']+$zflg;
 }
 
 if($zfbf>0){
-$wjxx1[冰防]=$wjxx1[冰防]+$zfbf;
-} else{
+$wjxx1['冰防']=$wjxx1['冰防']+$zfbf;
 }
 if($zfhf>0){
-$wjxx1[火防]=$wjxx1[火防]+$zfhf;
-} else{
+$wjxx1['火防']=$wjxx1['火防']+$zfhf;
 }
 if($zflf>0){
-$wjxx1[雷防]=$wjxx1[雷防]+$zflf;
-} else{
+$wjxx1['雷防']=$wjxx1['雷防']+$zflf;
 }
 
 

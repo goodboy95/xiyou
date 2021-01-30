@@ -19,8 +19,7 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
-}
+} 
 
 //如果跨天则重置次数和时间
 $nowtime=date('Y-m-d H:i:s');
@@ -41,9 +40,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '5']);	
 $hdcs=5;
 
-} else{	
-
-} 
+}  
 /*
 include("./ini/ltmb_ini.php");	
 $ltgx=($iniFile->getItem('擂台更新','初始'));
@@ -131,44 +128,34 @@ $ltpmid="【暂无排名】";
 
 if($ltmz1==123){
 $ltmz1="【暂无】";	
-} else{	
-}
+} 
 if($ltmz2==123){
 $ltmz2="【暂无】";	
-} else{	
-}
+} 
 if($ltmz3==123){
 $ltmz3="【暂无】";	
-} else{	
-}
+} 
 if($ltmz4==123){
 $ltmz4="【暂无】";	
-} else{	
-}
+} 
 if($ltmz5==123){
 $ltmz5="【暂无】";	
-} else{	
-}
+} 
 if($ltmz6==123){
 $ltmz6="【暂无】";	
-} else{	
-}
+} 
 if($ltmz7==123){
 $ltmz7="【暂无】";	
-} else{	
-}
+} 
 if($ltmz8==123){
 $ltmz8="【暂无】";	
-} else{	
-}
+} 
 if($ltmz9==123){
 $ltmz9="【暂无】";	
-} else{	
-}
+} 
 if($ltmz10==123){
 $ltmz10="【暂无】";	
-} else{	
-}
+} 
 
 
 
@@ -410,8 +397,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
-}
+} 
 
 //解锁当前使用的ini
 include("./ini/all_lock1.php");

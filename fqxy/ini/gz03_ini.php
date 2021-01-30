@@ -32,12 +32,12 @@ $q2="gz03";
 $str="select * from $q2";
 $result=mysqli_query($conn, $str) or die('SQL语句有误');
  while(!!$row=mysqli_fetch_array($result)){
-$iniFile->addCategory('id', [$row[gjid]=>$row[gjmz]]);	 
-$iniFile->addCategory('国家名字', [$row[gjid]=>$row[gjmz]]);
-$iniFile->addCategory('君主名字', [$row[gjid]=>$row[jzmz]]);
-$iniFile->addCategory('君主id', [$row[gjid]=>$row[jzid]]);
-$iniFile->addCategory('国家积分', [$row[gjid]=>$row[gjjf]]);
-$iniFile->addCategory('领取', [$row[gjid]=>$row[lq]]);
+$iniFile->addCategory('id', [$row['gjid']=>$row['gjmz']]);	 
+$iniFile->addCategory('国家名字', [$row['gjid']=>$row['gjmz']]);
+$iniFile->addCategory('君主名字', [$row['gjid']=>$row['jzmz']]);
+$iniFile->addCategory('君主id', [$row['gjid']=>$row['jzid']]);
+$iniFile->addCategory('国家积分', [$row['gjid']=>$row['gjjf']]);
+$iniFile->addCategory('领取', [$row['gjid']=>$row['lq']]);
 
 }
 

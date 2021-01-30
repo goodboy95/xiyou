@@ -27,9 +27,9 @@ include("./ini/gsrl_ini.php");
 
 # 获取一个分类下多个子项的值
 $wjxx=($iniFile->getItem('玩家信息',['背包容量','挂售容量']));
-$bbrlb=$wjxx[背包容量];
+$bbrlb=$wjxx['背包容量'];
 
-$cbbrlb=$wjxx[挂售容量];
+$cbbrlb=$wjxx['挂售容量'];
 	
 	
 	
@@ -258,8 +258,7 @@ include("template/xy229.php");
 include("./pz/pz01.php");
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

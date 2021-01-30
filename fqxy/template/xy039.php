@@ -19,7 +19,7 @@ $iniFile = new iniFile($file);
 $shuax=($iniFile->getItem('玩家信息','刷新过快'));
 
 
-$shuaxx=$shuax[刷新过快];
+$shuaxx=$shuax['刷新过快'];
 
 
 $inina="yl.ini";
@@ -418,8 +418,6 @@ $iniFile->updItem('拍卖物品id', ['初始' => $ym]);
 
 
 
-} else{
-
 }
 
 
@@ -547,11 +545,8 @@ include("template/xy545.php");//赠送宝箱类
 } elseif($ymid==546){  
 include("template/xy546.php");//赠送其他类
 
-} else{
-
 }
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

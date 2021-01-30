@@ -95,10 +95,6 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 获取一个分类下某个子项的值
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
-
-
-
 }
 
 //调用物品信息
@@ -114,7 +110,6 @@ include("npcc/dqwp02.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

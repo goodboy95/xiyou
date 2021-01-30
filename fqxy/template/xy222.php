@@ -65,8 +65,6 @@ $wjid=$ckid;
 //echo $wjid;
 
 
-} else{
-
 }
 
 
@@ -93,7 +91,7 @@ if($cmdd!=222){
 //调用gswp.ini是否存在
 include("./ini/gswp_ini.php");
 $uwpid=($iniFile->getCategory('物品id'));
-$ym=$uwpid[初始];
+$ym=$uwpid['初始'];
 
 }elseif($cmdd==222){
 
@@ -107,7 +105,7 @@ $ym=1;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('物品id', ['初始' => $ym]);
 } else{
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 }
 
 $i=0;
@@ -378,7 +376,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

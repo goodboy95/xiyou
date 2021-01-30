@@ -41,10 +41,10 @@ include("../sql/mysql.php");//调用数据库连接
 
 $sql=mysqli_query($conn, "select uid,password,name from o_user_list where password='$password'");
 $info1=@mysqli_fetch_array($sql);
-$pass1=$info1[password];
-$uid=$info1[uid];
+$pass1=$info1['password'];
+$uid=$info1['uid'];
 $pass=md5($_POST['password'].'ALL_PS');
-$name=$info1[name];
+$name=$info1['name'];
 $wjini=$uid+10000000;
 
 if($uid!=""){
@@ -76,7 +76,6 @@ if(rmdir("$path"))	{
 if($hf==2){
 
 $iniFile = new iniFile($file);
-}else{
 }
 
 ?>

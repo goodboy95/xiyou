@@ -28,9 +28,9 @@ $iniFile = new iniFile($ininame);
 
 # 获取一个分类下多个子项的值
 $wjxx=($iniFile->getItem('玩家信息',['背包容量','仓库容量']));
-$bbrlb=$wjxx[背包容量];
+$bbrlb=$wjxx['背包容量'];
 
-$cbbrlb=$wjxx[仓库容量];
+$cbbrlb=$wjxx['仓库容量'];
 	
 	
 	
@@ -78,8 +78,8 @@ $result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -120,11 +120,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="qt".$wjid;
 $strsql = "update $q2 set wpsl=$wpsl where wpid=$npcc";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
-} else{
-
-
-
-}
+} 
 
 
 
@@ -296,11 +292,7 @@ unlink($ininame); //删除文件
 
 
 
-} else{
-
-
-
-}
+} 
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 
@@ -324,11 +316,7 @@ include("./wp/zbbs.php");
 $wpmz=$bsmz;
 $wpzl=$bszl;
 
-} else{
-
-
-
-}
+} 
 
 
 
@@ -433,11 +421,7 @@ include("./pz/pz01.php");
 include("template/xy286.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
-}
+} 
 
 
 
@@ -461,8 +445,8 @@ $result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -503,11 +487,7 @@ $strsql = "delete from $q2 where wpid=$npcc ";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 
 
-} else{
-
-
-
-}
+} 
 
 ///////////////////////////////////////////////////////////////////////////////////数据库修改///////////////////////////////////////////////////
 
@@ -754,11 +734,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
 
-} else{
-
-
-
-}
+} 
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 
@@ -786,11 +762,7 @@ include("./wp/zbbs.php");
 $wpmz=$bsmz;
 $wpzl=$bszl;
 
-} else{
-
-
-
-}
+} 
 
 
 
@@ -904,11 +876,7 @@ include("./pz/pz01.php");
 include("template/xy286.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
-}
+} 
 
 
 } else {

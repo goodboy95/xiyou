@@ -90,7 +90,6 @@ echo "<font color=red>月宫弟子不能转为男性</font>"."<br>";
 } else{
 echo "<font color=red>你本来就是男性！！别以为我看不出来哦</font>"."<br>";
 }
-} else{
 }
 
 

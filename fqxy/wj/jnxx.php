@@ -10,7 +10,6 @@ $yymid=($iniFile->getItem('怪物2号属性','初始'));
 //获取返回战斗页面
 
 
-}else{
 }
 if($yymid==130){
 $cljpost=348;
@@ -81,7 +80,6 @@ $szmz="快捷7";
 $szmz="快捷8";
 } elseif($szid ==9){
 $szmz="快捷9";
-}else{
 }
 include("./ini/zd_ini.php");
 $iniFile->updItem('快捷技能id', [$szmz => '0']);
@@ -114,10 +112,6 @@ $clj[]=19;
 $npc[]=$npcc;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jnname."</font></a>";
 
-
-	
-}else{
-	
 
 	
 }

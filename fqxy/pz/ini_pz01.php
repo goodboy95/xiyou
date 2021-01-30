@@ -76,8 +76,6 @@ $wpzzz="其他数量";
 $inina="qt.ini";
 //调用qt.ini是否存在
 include("./ini/qt_ini.php");
-} else{
-
 }
 //路径
 $path='ache/'.$wjid;

@@ -39,8 +39,6 @@ echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=40&&user=$wjid'><font co
 
 
 
-}else{
-
 }
 
 

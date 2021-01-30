@@ -26,8 +26,6 @@ include("./ini/yl_ini.php");
 $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
 
 
-} else{
-
 }
 	
 	
@@ -59,7 +57,7 @@ $wpjg=($iniFile->getCategory('挂售价格'));
 $m=count($zbid,0)-1; 
 
 if($m>0){
-$ym=$zbid[初始];
+$ym=$zbid['初始'];
 
 
 $km=0;
@@ -373,7 +371,6 @@ include("fhgame.php");
 	
 	
 	
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

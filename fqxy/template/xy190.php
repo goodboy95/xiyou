@@ -43,7 +43,6 @@ $mt=$mt+1;
 if ($hm>0){
 rsort($fb);
 rsort($xb);
-} else{
 }
 
 $gjpm=0;
@@ -74,35 +73,29 @@ include("./ini/gz01_ini.php");
 $zlf1=($iniFile->getItem('国家名字','1'));
 if($zlf1 ==""){
 $zlf1="未";
-} else{
 }
 $zlf2=($iniFile->getItem('国家名字','2'));
 if($zlf2 ==""){
 $zlf2="未";
-} else{
 }
 $zlf3=($iniFile->getItem('国家名字','3'));
 if($zlf3 ==""){
 $zlf3="未";
-} else{
 }
 $zlf4=($iniFile->getItem('国家名字','4'));
 if($zlf4 ==""){
 $zlf4="未";
-} else{
 }
 $zlf5=($iniFile->getItem('国家名字','5'));
 if($zlf5 ==""){
 $zlf5="未";
-} else{
 }
 $zlf7=($iniFile->getItem('国家名字','7'));
 if($zlf7 ==""){
 $zlf7="未";
-} else{
 }
 $weekarray=array("7","1","2","3","4","5","6");
-$week=$weekarray[date("w")];
+$week=$weekarray['date("w")'];
 if($week ==6){
 $zlgj="无";
 $gjjz="休整";
@@ -146,7 +139,7 @@ $zcwz="无";
 
 
 
-echo "<font color=black>[攻城-信息]</font>"."<br>";
+echo "<font color=black>['攻城-信息']</font>"."<br>";
 echo "<font color=black>编号/位置/占领方</font>"."<br>";
 echo "<font color=black>1.傲来国|（".$zlf1."占领）</font>"."<br>";
 echo "<font color=black>2.宝象国|（".$zlf2."占领）</font>"."<br>";

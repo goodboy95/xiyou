@@ -107,7 +107,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开【�
 $q2="boss";
 $sql1=mysqli_query($conn, "select * from $q2 where id=1");
 $info1=@mysqli_fetch_array($sql1);
-$yjdm=$info1[hp];
+$yjdm=$info1['hp'];
 
 $q2="yj".$fqidd;
 $strsql = "truncate table $q2";//清空自己在遗迹的数据

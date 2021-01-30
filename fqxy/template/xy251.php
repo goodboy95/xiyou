@@ -24,7 +24,7 @@ $txxs=($iniFile->getCategory('头衔显示'));
 $m=count($wpid,0)-1; 
 $i=0;
 
-$ym=$wpid[初始];
+$ym=$wpid['初始'];
 
 $km=0;
 
@@ -80,8 +80,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>显示</fo
 	
 	
 	
-} else{
-
 }
 
 
@@ -97,8 +95,6 @@ if($i ==0){
 	echo "<font color=black>目前还未获得任何称号</font>"."<br>";
 	
 	
-} else{
-
 }
 
 

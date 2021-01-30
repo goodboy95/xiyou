@@ -5,7 +5,6 @@
 $bfb=floor($sl*$wpjgg*0.01);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $ylmm=$sl*$wpjgg+$ylsxf;
@@ -39,7 +38,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_pm";
 $sql1=mysqli_query($conn, "select pmsjc from $q2 where id=$pxid");
 $info1=@mysqli_fetch_array($sql1);
-$pmsjc=$info1[pmsjc];
+$pmsjc=$info1['pmsjc'];
 if($wpsjc==$pmsjc){
 	
 /////////////////////////////操作对方银子////////////////////	
@@ -48,13 +47,11 @@ if($wpsjc==$pmsjc){
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$pmmwjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl+$sl*$wpjgg;
 if($wjyll>=99999999999){
 $wjyll=99999999999;
-} else{
-
-} 
+}
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$pmmwjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 
@@ -79,13 +76,11 @@ unlink($ininame); //删除文件
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-($sl*$wpjgg+$ylsxf);
 if($wjyll<=0){
 $wjyll=0;
-} else{
-
-} 
+}
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -119,8 +114,8 @@ $result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$pmmwpid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -177,7 +172,6 @@ include("./ini/pm_rw_ini.php");
 include("./ini/pm_nc_ini.php");
 } elseif($wpfl==8){ 
 include("./ini/pm_bx_ini.php");
-} else{
 }
 
 
@@ -263,10 +257,6 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
-} else{
-
-
-
 }
 
 
@@ -307,8 +297,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -389,7 +378,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_pm";
 $sql1=mysqli_query($conn, "select pmsjc from $q2 where id=$pxid");
 $info1=@mysqli_fetch_array($sql1);
-$pmsjc=$info1[pmsjc];
+$pmsjc=$info1['pmsjc'];
 if($wpsjc==$pmsjc){
 
 
@@ -400,13 +389,11 @@ if($wpsjc==$pmsjc){
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$pmmwjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl+$sl*$wpjgg;
 if($wjyll>=99999999999){
 $wjyll=99999999999;
-} else{
-
-} 
+}
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$pmmwjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 
@@ -429,13 +416,11 @@ unlink($ininame); //删除文件
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-($sl*$wpjgg+$ylsxf);
 if($wjyll<=0){
 $wjyll=0;
-} else{
-
-} 
+}
 
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -470,8 +455,8 @@ $result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$pmmwpid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -535,7 +520,6 @@ include("./ini/pm_rw_ini.php");
 include("./ini/pm_nc_ini.php");
 } elseif($wpfl==8){ 
 include("./ini/pm_bx_ini.php");
-} else{
 }
 
 
@@ -656,10 +640,6 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
-} else{
-
-
-
 }
 
 
@@ -703,8 +683,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 

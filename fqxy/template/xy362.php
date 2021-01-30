@@ -26,9 +26,9 @@ $cwcz=($iniFile->getCategory('宠物出战状态'));
 $cwby=($iniFile->getCategory('宠物变异'));
 $cwbx=($iniFile->getCategory('宠物品质'));
 $m=count($xl,0)-1; 
-$ym=$cwid[初始];
+$ym=$cwid['初始'];
 $km=$m;
-$kmcs=$cwmz[初始];
+$kmcs=$cwmz['初始'];
 
 echo "<font color=black>容量：（".$km."/".$kmcs."）</font>"."<br>";
 
@@ -88,15 +88,15 @@ $cw04x=$keycwbx[$ym*10-9+$i];
 if($cw04x==1){
 $cw04x="";	
 } elseif($cw04x==2){  
-$cw04x="<font color=red>[极品]</font>";	
+$cw04x="<font color=red>['极品']</font>";
 } elseif($cw04x==3){  
-$cw04x="<font color=red>[灵品]</font>";	
+$cw04x="<font color=red>['灵品']</font>";
 } elseif($cw04x==4){  
-$cw04x="<font color=red>[仙品]</font>";	
+$cw04x="<font color=red>['仙品']</font>";
 } elseif($cw04x==5){  
-$cw04x="<font color=red>[神品]</font>";	
+$cw04x="<font color=red>['神品']</font>";
 } elseif($cw04x==6){  
-$cw04x="<font color=red>[圣品]</font>";	
+$cw04x="<font color=red>['圣品']</font>";
 } else{	
 $cw04x="";	
 }
@@ -104,15 +104,15 @@ $cw04x="";
 if($cw19x==1){
 $cw19x="";	
 } elseif($cw19x==2){  
-$cw19x="<font color=red>[一变]</font>";	
+$cw19x="<font color=red>['一变']</font>";
 } elseif($cw19x==3){  
-$cw19x="<font color=red>[二变]</font>";	
+$cw19x="<font color=red>['二变']</font>";
 } elseif($cw19x==4){  
-$cw19x="<font color=red>[三变]</font>";	
+$cw19x="<font color=red>['三变']</font>";
 } elseif($cw19x==5){  
-$cw19x="<font color=red>[四变]</font>";	
+$cw19x="<font color=red>['四变']</font>";
 } elseif($cw19x==6){  
-$cw19x="<font color=red>[五变]</font>";	
+$cw19x="<font color=red>['五变']</font>";
 } else{	
 $cw19x="";	
 }
@@ -255,8 +255,7 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

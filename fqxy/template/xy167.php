@@ -31,17 +31,13 @@ $wjid=$wjid1;
 if($dty==22||$dty==23){
 if($dtx==22){
 $sw=2;	
-} else{
-} 
-} else{
-} 
+}
+}
 if($dty==46||$dty==47){
 if($dtx==1){
 $sw=2;	
-} else{
-} 
-} else{
-} 
+}
+}
 
 
 
@@ -69,8 +65,7 @@ foreach( $arr1 as $k=>$v) {
 $ltmax1=max($arr1);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 	
 	$wjzd1=($iniFile->getItem('玩家排序1',$wjid1));
@@ -155,7 +150,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/ojsini.php");

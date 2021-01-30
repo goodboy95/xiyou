@@ -47,16 +47,11 @@ $cwby=5;
 $bz= rand(1, 100);//随机		
 if($bz >=1&&$bz<=50){
 $cwby=6;	
-} else{
-} 
-} else{
-} 
-} else{
-} 
-} else{
-} 
-} else{
-} 
+}
+}
+}
+}
+}
 //随机变异
 //随机品质
  $bz= rand(1, 100);//随机
@@ -75,16 +70,11 @@ $cwxb=5;
 $bz= rand(1, 100);//随机	
 if($bz >=1&&$bz<=50){
 $cwxb=6;	
-} else{
-} 
-} else{
-} 
-} else{
-} 
-} else{
-} 
-} else{
-} 
+}
+}
+}
+}
+}
 //随机品质
 
 include("./sql/mysql.php");//调用数据库连接 

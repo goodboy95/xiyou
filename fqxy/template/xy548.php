@@ -40,7 +40,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 
 
@@ -91,7 +90,6 @@ $iniFile->updItem('农场数量', [$npcc => $wpsl]);
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $iniFile->updItem('宝箱数量', [$npcc => $wpsl]);
-} else{
 }
 include("./ini/bbrl_ini.php");
 # 获取一个分类下某个子项的值
@@ -149,8 +147,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -171,8 +168,8 @@ $wjid=$ckid;//对方
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 
 //获取最大值
@@ -255,7 +252,6 @@ $path='ache/'.$wjid;
 //判断ini文件是否存在	
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件 
-} else{
 }
 include("./ini/bbrl_ini.php");
 # 获取一个分类下某个子项的值
@@ -372,7 +368,6 @@ $iniFile->delItem('序列', $npcc);
 $iniFile->delItem('宝箱数量', $npcc);
 # 删除一个子项
 $iniFile->delItem('宝箱名字', $npcc);
-} else{
 }
 
 
@@ -406,8 +401,8 @@ $wjid=$ckid;//对方
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 
 //获取最大值
@@ -490,7 +485,6 @@ $path='ache/'.$wjid;
 //判断ini文件是否存在	
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件 
-} else{
 }
 
 include("./ini/bbrl_ini.php");
@@ -543,8 +537,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -575,7 +568,6 @@ echo "<font color=red>输入有误请重新输入</font>"."<br>";
 echo "<br>";
 } 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");
@@ -627,7 +619,6 @@ $clj[]=538;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

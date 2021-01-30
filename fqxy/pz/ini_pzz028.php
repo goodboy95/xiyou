@@ -14,8 +14,6 @@ if($wpsl1 >=$sjcs){
 $clll[]=$wpsl1;
 $cllx[]=$cll1;
 $cl[]=$cl1;
-} else{
-
 }
 
 
@@ -23,37 +21,27 @@ if($wpsl2 >=$sjcs){
 $clll[]=$wpsl2;
 $cllx[]=$cll2;
 $cl[]=$cl2;
-} else{
-
 }
 if($wpsl3 >=$sjcs){
 $clll[]=$wpsl3;
 $cllx[]=$cll3;
 $cl[]=$cl3;
-} else{
-
 }
 
 if($wpsl4 >=$sjcs){
 $clll[]=$wpsl4;
 $cllx[]=$cll4;
 $cl[]=$cl4;
-} else{
-
 }
 if($wpsl5 >=$sjcs){
 $clll[]=$wpsl5;
 $cllx[]=$cll5;
 $cl[]=$cl5;
-} else{
-
 }
 if($wpsl6 >=$sjcs){
 $clll[]=$wpsl6;
 $cllx[]=$cll6;
 $cl[]=$cl6;
-} else{
-
 }
 
 $mkk=count($clll,0); 

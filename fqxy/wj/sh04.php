@@ -74,7 +74,7 @@ $wjid=$wjid1;
 
 }else{
 if ($dxsh>0) {
-$dxssh=$guaiwu[hp]-$dxsh;
+$dxssh=$guaiwu['hp']-$dxsh;
 include("./ini/npc_ini.php");
 $iniFile->updItem('怪物1号属性', ['hp' => $dxssh]);
 }else {

@@ -107,7 +107,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开【�
 $q2="boss";
 $sql1=mysqli_query($conn, "select * from $q2 where id=2");
 $info1=@mysqli_fetch_array($sql1);
-$yjdm=$info1[hp];
+$yjdm=$info1['hp'];
 
 
 

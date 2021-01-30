@@ -26,18 +26,14 @@ $sw=1;
 if($dty==22||$dty==23){
 if($dtx==22){
 $sw=2;	
-} else{
-} 
-} else{
-} 
+}
+}
 
 if($dty==46||$dty==47){
 if($dtx==1){
 $sw=2;	
-} else{
-} 
-} else{
-} 
+}
+}
 
 $wjid=$wjid1;
 if($sw==1){
@@ -60,8 +56,6 @@ $pkqy=2;
 
 if($wjid==10000001){
 $pkqy=1;
-} else{
-	
 }
 
 
@@ -112,11 +106,8 @@ $aa = md5(uniqid(microtime(true),true));
 
 if($pkk003==123){
 $iniFile->updItem('pk验证', ['初始' => $aa]);
-} else{
-
-} 
-} else{
-} 
+}
+}
 
 } elseif($yymid==522){  
 
@@ -127,13 +118,7 @@ $wjid1=$wjid;
 $wjid=$ckid;
 include("./ini/pksw_ini.php");
 $pkk003=($iniFile->getItem('pk验证','初始'));
-} else{
-	
-	
-
-
-	
-} 
+}
 
 
 //验证是否在同一地点	
@@ -157,7 +142,6 @@ if($yymid==93){
 $wjid=$wjid1;
 include("./ini/pkyz_ini.php");
 $iniFile->updItem('pk验证', ['初始' => $pkk003]);
-} else{
 }
 	
 } 
@@ -190,25 +174,24 @@ include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 include("./wj/ztt.php");
 include("./wj/zfzt.php");
-$nmz=$wjxx[玩家名字];
-$nhp=$wjxx[红];
-$nmp=$wjxx[蓝];
-$nmaxhp=$wjxx1[血];
-$nmaxmp=$wjxx1[蓝];
+$nmz=$wjxx['玩家名字'];
+$nhp=$wjxx['红'];
+$nmp=$wjxx['蓝'];
+$nmaxhp=$wjxx1['血'];
+$nmaxmp=$wjxx1['蓝'];
 
 
 if($yymid==522){
-$nmaxgj=$wjxx1[max攻击];
-$nmaxmg=$wjxx1[max魔攻];
-$nmaxfy=$wjxx1[max防御];
-$nbg=$wjxx1[冰攻];
-$nhg=$wjxx1[火攻];
-$nlg=$wjxx1[雷攻];
-$nbf=$wjxx1[冰防];
-$nhf=$wjxx1[火防];
-$nlf=$wjxx1[雷防];
-} else{
-} 
+$nmaxgj=$wjxx1['max攻击'];
+$nmaxmg=$wjxx1['max魔攻'];
+$nmaxfy=$wjxx1['max防御'];
+$nbg=$wjxx1['冰攻'];
+$nhg=$wjxx1['火攻'];
+$nlg=$wjxx1['雷攻'];
+$nbf=$wjxx1['冰防'];
+$nhf=$wjxx1['火防'];
+$nlf=$wjxx1['雷防'];
+}
 
 //获取对方玩家的属性
 
@@ -221,24 +204,23 @@ include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 include("./wj/ztt.php");
 include("./wj/zfzt.php");
-$omz=$wjxx[玩家名字];
-$ohp=$wjxx[红];
-$omp=$wjxx[蓝];
-$omaxhp=$wjxx1[血];
-$omaxmp=$wjxx1[蓝];
+$omz=$wjxx['玩家名字'];
+$ohp=$wjxx['红'];
+$omp=$wjxx['蓝'];
+$omaxhp=$wjxx1['血'];
+$omaxmp=$wjxx1['蓝'];
 
 if($yymid==522){
-$omaxgj=$wjxx1[max攻击];
-$omaxmg=$wjxx1[max魔攻];
-$omaxfy=$wjxx1[max防御];
-$obg=$wjxx1[冰攻];
-$ohg=$wjxx1[火攻];
-$olg=$wjxx1[雷攻];
-$obf=$wjxx1[冰防];
-$ohf=$wjxx1[火防];
-$olf=$wjxx1[雷防];
-} else{
-} 
+$omaxgj=$wjxx1['max攻击'];
+$omaxmg=$wjxx1['max魔攻'];
+$omaxfy=$wjxx1['max防御'];
+$obg=$wjxx1['冰攻'];
+$ohg=$wjxx1['火攻'];
+$olg=$wjxx1['雷攻'];
+$obf=$wjxx1['冰防'];
+$ohf=$wjxx1['火防'];
+$olf=$wjxx1['雷防'];
+}
 
 //获取自己的属性
 
@@ -249,8 +231,7 @@ $wjid=$wjid1;
 //运算伤害
 if($yymid==522){
 include("./wj/pk01.php");
-} else{
-} 
+}
 
 
 
@@ -264,11 +245,11 @@ include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 include("./wj/ztt.php");
 include("./wj/zfzt.php");
-$nmz=$wjxx[玩家名字];
-$nhp=$wjxx[红];
-$nmp=$wjxx[蓝];
-$nmaxhp=$wjxx1[血];
-$nmaxmp=$wjxx1[蓝];
+$nmz=$wjxx['玩家名字'];
+$nhp=$wjxx['红'];
+$nmp=$wjxx['蓝'];
+$nmaxhp=$wjxx1['血'];
+$nmaxmp=$wjxx1['蓝'];
 
 
 
@@ -283,11 +264,11 @@ include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 include("./wj/ztt.php");
 include("./wj/zfzt.php");
-$omz=$wjxx[玩家名字];
-$ohp=$wjxx[红];
-$omp=$wjxx[蓝];
-$omaxhp=$wjxx1[血];
-$omaxmp=$wjxx1[蓝];
+$omz=$wjxx['玩家名字'];
+$ohp=$wjxx['红'];
+$omp=$wjxx['蓝'];
+$omaxhp=$wjxx1['血'];
+$omaxmp=$wjxx1['蓝'];
 
 
 
@@ -347,8 +328,7 @@ $pkzzz=$pkzzz+1;
 $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
 echo "<font color=red>由于你主动发起恶名值+1（当前恶名:".$pkzzz."）</font>"."<br>";
 //加pk值
-} else{
-} 
+}
 
 } 
 
@@ -399,8 +379,7 @@ include("./ini/ojsini.php");
 exit;
 
 
-} else{
-} 
+}
 
 if($ohp<=1){
 
@@ -468,8 +447,7 @@ $pkzzz=$pkzzz+1;
 $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
 echo "<font color=red>由于你主动发起恶名值+1（当前恶名:".$pkzzz."）</font>"."<br>";
 //加pk值
-} else{
-} 
+}
 
 
 
@@ -525,8 +503,7 @@ exit;
 
 
 
-} else{
-} 
+}
 
 
 
@@ -552,8 +529,7 @@ $iniFile->delItem('玩家伤害', $ckid);
 //提取玩家伤害语
 if($pk004!=""){
 echo "<font color=red>".$pk004."造成了".$pk003."点伤害</font>"."<br>";
-} else{
-} 
+}
 
 
 include("./ini/zd_ini.php");
@@ -795,7 +771,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-} else{	
 }
 
 //解锁当前使用的ini

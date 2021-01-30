@@ -36,7 +36,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 	$sl=$wpsl;
 	
@@ -61,7 +60,6 @@ include("./wj/dyxx.php");
 if($wpzz2!="蓝"){
 //动态祝福加成数据
 include("wj/zfzt.php");
-} else{
 }
 
 $wpsl1=ceil(($maxhp-$hp)/$xl);
@@ -73,8 +71,6 @@ $sl=5;
 } else{
 $sl=$sl1;
 }
-
-} else{
 
 }
 
@@ -108,7 +104,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 	$sl=$wpsl;
 
@@ -139,21 +134,16 @@ if($sl >=$dywpsl){
 $sl=$sxsl;
 if($dywpsl>=sl){
 $sl=$sxsl;
-} else{
 }
-} else{
-}	
+}
 } elseif($wpsycs ==""){
 
 if($sl >=$xzcs){	
 $sl=$sxsl;
 if($dywpsl>=sl){
 $sl=$sxsl;
-} else{
 }
-} else{
 }
-} else{
 }
 
 
@@ -171,8 +161,6 @@ $sl=$sxsl;
 
 
 
-
-} else{
 
 }
 
@@ -205,7 +193,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 
 
@@ -272,7 +259,6 @@ $iniFile->updItem('农场数量', [$npcc => $wpsl]);
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $iniFile->updItem('宝箱数量', [$npcc => $wpsl]);
-} else{
 }
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
@@ -359,10 +345,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -467,7 +449,6 @@ $iniFile->delItem('序列', $npcc);
 $iniFile->delItem('宝箱数量', $npcc);
 # 删除一个子项
 $iniFile->delItem('宝箱名字', $npcc);
-} else{
 }
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -553,10 +534,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -607,10 +584,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 
@@ -642,7 +615,6 @@ include("./wp/wpsy.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

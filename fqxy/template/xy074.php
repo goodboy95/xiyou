@@ -21,8 +21,6 @@ $dkmz="zbxq3";
 $dkmz="zbxq4";
 } elseif($ks==5){  
 $dkmz="zbxq5";
-} else{
-
 }
 
 $bsid=$npcc;
@@ -242,7 +240,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

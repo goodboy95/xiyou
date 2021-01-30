@@ -15,13 +15,11 @@ if($wpsycs >=1&&$wpsycs <$xzcs){
 $dywpsl=$xzcs-$wpsycs;	
 if($wpsl >$dywpsl){	
 $wpsl=$dywpsl;
-} else{
 }
 	
 } elseif($wpsycs ==""){
 if($wpsl >$xzcs){	
 $wpsl=$xzcs;
-} else{
 }
 } else{
 //include("./wj/wpxx.php");
@@ -71,10 +69,6 @@ include("./pz/pz01.php");
 include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} else{
-
-
-
 }
 
 

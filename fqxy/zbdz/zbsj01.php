@@ -12416,9 +12416,6 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 	
 
-} else{
-
-
 }
 
 ?>

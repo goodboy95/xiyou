@@ -214,8 +214,7 @@ echo "<font color=red>需要：".$ms2."</font>"."<br>";
 
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

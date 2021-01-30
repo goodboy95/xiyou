@@ -142,9 +142,7 @@ echo "<font color=red>对不起！！你的红包不足".$csbyq."个（无法领
  
  
  
- } else{
-
-}
+ }
 
 
 
@@ -174,7 +172,6 @@ $clj[]=579;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
 
-} else{	
 }
 
 

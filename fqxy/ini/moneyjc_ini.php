@@ -26,7 +26,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_moneyjc";
 $sql1=mysqli_query($conn, "select * from $q2 where id=1");
 $info1=@mysqli_fetch_array($sql1);
-$mwjmoney=$info1[money];
+$mwjmoney=$info1['money'];
 
  if($mwjmoney!==""){	
 $q2="all_moneyjc";	
@@ -44,7 +44,7 @@ $iniFile->addCategory('财神币总和', ['初始'=>$mwjmoney]);
 $q2="all_moneyjc";
 $sql1=mysqli_query($conn, "select * from $q2 where id=2");
 $info1=@mysqli_fetch_array($sql1);
-$mwjmoney=$info1[money];
+$mwjmoney=$info1['money'];
 
  if($mwjmoney!==""){	
 $q2="all_moneyjc";	

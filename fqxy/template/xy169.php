@@ -18,7 +18,7 @@ $fz03=($iniFile->getCategory('房间人vip'));
 
 $m=count($fz01,0)-1; 
 
-$ym=$fz01[初始];
+$ym=$fz01['初始'];
 
 $km=0;
 if($m >=1){
@@ -121,7 +121,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

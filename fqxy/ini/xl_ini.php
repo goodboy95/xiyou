@@ -50,7 +50,7 @@ $xlidd=1;
 $q2="xl".$wjid;
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="xl".$wjid;
@@ -66,14 +66,13 @@ $sql = "insert into $q2 (id,xlid,xldj)  values('$maxidd','$xlidd','0')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 $xlidd=2;
 $q2="xl".$wjid;
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="xl".$wjid;
@@ -89,14 +88,13 @@ $sql = "insert into $q2 (id,xlid,xldj)  values('$maxidd','$xlidd','0')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 $xlidd=3;
 $q2="xl".$wjid;
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="xl".$wjid;
@@ -112,14 +110,13 @@ $sql = "insert into $q2 (id,xlid,xldj)  values('$maxidd','$xlidd','0')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 $xlidd=4;
 $q2="xl".$wjid;
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[xlid];
+$xlpd=$info1['xlid'];
 if($xlpd ==""){
 //获取最大值
 $q2="xl".$wjid;
@@ -135,7 +132,6 @@ $sql = "insert into $q2 (id,xlid,xldj)  values('$maxidd','$xlidd','0')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 
@@ -168,7 +164,7 @@ $m=0;
  
 
 
-$iniFile->addCategory('修炼等级', [$row[xlid]=> $row[xldj]]);
+$iniFile->addCategory('修炼等级', [$row['xlid']=> $row['xldj']]);
 
 
 

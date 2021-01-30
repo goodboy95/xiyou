@@ -130,7 +130,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间','30'));
 $hdlq=2;
-} else{	
 }
 $hdlq=2;
 $nowtime=date('Y-m-d H:i:s');
@@ -212,7 +211,7 @@ $npc[]=5;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【领取】</font></a>"."<br>";
 
 
-echo "<font color=red>本月已累计签到&nbsp".$qdxx1[签到次数]."&nbsp次</font><br>";
+echo "<font color=red>本月已累计签到&nbsp".$qdxx1['签到次数']."&nbsp次</font><br>";
 
 echo "<font color=black>介绍：玩家每天可签到一次，每月1日清零</font><br>";
 echo "<font color=black>当累计达到2,5,10,15,25可领取丰厚的奖励</font><br>";
@@ -244,7 +243,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

@@ -113,8 +113,6 @@ if($jnsh >=1){
 
 echo "<font color=black>伤害:</font>".$jnsh."-".$maxjnsh."点</font>"."<br>";
 
-} else{
-
 }
 
 if($jnid==3||$jnid==15){
@@ -149,7 +147,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 echo "<font color=black>----------------------</font>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

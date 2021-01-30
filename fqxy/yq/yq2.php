@@ -27,8 +27,7 @@ foreach( $arr2 as $k=>$v) {
 $ltmax1=max($arr2);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 //$ltmax1=$ltmax1+1;
 
 # 获取一个分类下某个子项的值
@@ -89,9 +88,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-	} else{
-
-	} 
+	}
 	
 	
 

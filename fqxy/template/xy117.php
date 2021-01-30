@@ -40,7 +40,6 @@ include("template/xy116.php");
 include("./pz/pz01.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

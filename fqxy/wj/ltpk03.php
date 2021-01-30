@@ -21,8 +21,7 @@ if($bz==10){
 $bz= rand(1, 20);
 $aa0=1+$bz/10;
 $aa4=calc($aa4,$aa0,'mul');
-} else{	
-} 
+}  
 $s=$aa4*1.3;	
 }else {
 $s=0;
@@ -43,8 +42,7 @@ if($bz==10){
 $bz= rand(1, 20);
 $aa0=1+$bz/10;
 $aa4=calc($aa4,$aa0,'mul');
-} else{	
-} 
+}  
 $s=$aa4*1.1;
 }else {
 $s=0;
@@ -69,8 +67,7 @@ if($bz==10){
 $bz= rand(1, 20) ;
 $aa0=1+$bz/10;
 $aa4=calc($aa4,$aa0,'mul');
-} else{	
-} 
+}  
 $s=$aa4*1.2;	
 }else {
 $s=0;
@@ -95,7 +92,7 @@ $wjsh=0;
 
 /*
 if ($wjsh>=0) {
-$wjssh=$wjxx[红]-$wjsh;
+$wjssh=$wjxx['红']-$wjsh;
 include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['红' => $wjssh]);
 }else {

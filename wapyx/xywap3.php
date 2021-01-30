@@ -1,6 +1,5 @@
 <?
 header("Content-type: text/html; charset=utf-8");
-
 error_reporting(E_ALL & ~E_NOTICE);
 include("../class/iniclass.php");//调用iniclass文件
 $wjid = $_GET['wjid'];

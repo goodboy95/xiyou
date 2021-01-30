@@ -77,7 +77,6 @@ $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
 
 
-} else{
 }
 }
 
@@ -89,7 +88,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -102,7 +100,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -115,7 +112,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 
@@ -130,7 +126,6 @@ $xqmg=$xqmg+$bsmg;
 $xqfy=$xqfy+$bsfy;
 $xqxl=$xqxl+$bsxl;
 $xqgj=$xqgj+$bsgj;
-} else{
 }
 }
 

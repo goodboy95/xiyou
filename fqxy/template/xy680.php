@@ -20,10 +20,10 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_sdk";
 $sql1=mysqli_query($conn, "select * from $q2 where sdk='$wjtake10'");
 $info1=@mysqli_fetch_array($sql1);
-$sdk1=$info1[sdkid];
-$sdk2=$info1[sdktime];
-$sdk3=$info1[sdkfl];
-$sdk4=$info1[sdksy];
+$sdk1=$info1['sdkid'];
+$sdk2=$info1['sdktime'];
+$sdk3=$info1['sdkfl'];
+$sdk4=$info1['sdksy'];
 //验证是否存在	
 if($sdk1!=""){
 //验证是否使用		
@@ -43,8 +43,7 @@ $sdkmz="拉人SDK码";
 $sdkmz="福利SDK码";
 } elseif($sdk3==4){ 
 $sdkmz="新区SDK码";
-} else{
-} 
+}
 echo "<font color=red>恭喜你！！兑换".$sdkmz."成功！！</font><br>";
 
 
@@ -268,8 +267,7 @@ include("./rwmap/rwget.php");
 
 
 
-} else{
-} 
+}
 
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
@@ -301,7 +299,6 @@ echo "<font color=red>对不起！！SDK码不能为空！！</font><br>";
 
 	
 }	
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsggini.php");

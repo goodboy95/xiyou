@@ -21,9 +21,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   
@@ -109,8 +107,6 @@ $img='pic/gz/gz11-1.gif';
 	echo "<br>";
 
 
-} else{
-
 }
   
     //cmd及超链接值
@@ -126,8 +122,6 @@ $img='pic/gz/gz11-2.gif';
 	echo "<br>";
 
 
-} else{
-
 }
 
 
@@ -137,8 +131,6 @@ $img='pic/gz/gz11-1.gif';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 
-
-} else{
 
 }
   
@@ -154,8 +146,6 @@ $img='pic/gz/gz11-2.gif';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 
-
-} else{
 
 }
 
@@ -515,9 +505,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -722,9 +710,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////					
 						
@@ -786,9 +772,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -834,9 +818,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -888,9 +870,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //npc
@@ -948,9 +928,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //npc
@@ -999,9 +977,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
  //npc
@@ -1054,9 +1030,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -1105,9 +1079,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -1158,9 +1130,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
  //npc
@@ -1215,9 +1185,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -1433,9 +1401,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
  //npc
@@ -1733,9 +1699,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
       //cmd及超链接值
@@ -1806,9 +1770,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
 
@@ -1877,9 +1839,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
 //cmd及超链接值
@@ -1979,9 +1939,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
 
@@ -2081,9 +2039,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
   //出口
@@ -2130,9 +2086,7 @@ $cdid[]=$cmid;
 $clj[]=613;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【天降秘宝】（活动）</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////天降秘宝活动////////////////////////////////
 //cmd及超链接值

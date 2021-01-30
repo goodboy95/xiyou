@@ -63,8 +63,7 @@ include("template/xy388.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 exit;
-} else{
-} 
+}  
 
 
 
@@ -115,8 +114,7 @@ include("template/xy397.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 exit;
-} else{
-} 
+}  
 //国战结束
 
 

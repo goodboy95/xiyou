@@ -25,8 +25,7 @@ $enddate=date('Y-m-d H:i:s');
 $iniFile->updItem('boss', [$npcc => $enddate]);	
 	
 	
-} else{
-}
+} 
 
 //宠物加时间
 

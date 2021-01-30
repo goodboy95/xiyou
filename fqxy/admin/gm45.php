@@ -28,7 +28,7 @@ $str="select id from $q2";
 $result=mysqli_query($conn, $str) or die('SQL语句有误');
 
  while(!!$row=mysqli_fetch_array($result)){
-$id[]=$row[id];
+$id[]=$row['id'];
 $m=$m+1;
 }
 if($m >=1){
@@ -39,11 +39,11 @@ $ii=$ii+1;
 $i=$i+1;
 $sql1=mysqli_query($conn, "select * from $q2 where id=$id[$i]");
 $info1=@mysqli_fetch_array($sql1);
-$cz01=$info1[wjid];
-$cz02=$info1[wjmz];
-$cz03=$info1[wjje];
-$cz04=$info1[zh1];
-$cz05=$info1[zh2];
+$cz01=$info1['wjid'];
+$cz02=$info1['wjmz'];
+$cz03=$info1['wjje'];
+$cz04=$info1['zh1'];
+$cz05=$info1['zh2'];
 echo $ii;
 echo ".";
 echo "（".$cz02."--".$cz01."）";
@@ -92,7 +92,6 @@ echo "<font color=black>---------------------</font>"."<br>";
 
 
 echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
-} else{	
 }
 
 

@@ -32,7 +32,6 @@ if($wjtake10!=""){
 if($wjtakes2>0&&$wjtakes2<=7||$wjtakes2>0&&$wjtakes2<=7){
 if($wjtakes2>0){
 $wjtake=$wjtake10;
-} else{
 }
 	
 	
@@ -56,7 +55,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_zt";
 $sql1=mysqli_query($conn, "select username from $q2 where username='$wjtake'");
 $info1=@mysqli_fetch_array($sql1);
-$pdbp2=$info1[username];
+$pdbp2=$info1['username'];
 if($pdbp2==""){
 
 
@@ -173,7 +172,6 @@ echo "<font color=black>你选择了女性</font><br>";
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

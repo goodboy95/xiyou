@@ -66,9 +66,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
   
@@ -118,9 +116,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 echo "<font color=black>请选择出口</font>"."<br>";
@@ -171,9 +167,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -227,9 +221,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 echo "<font color=black>请选择出口</font>"."<br>";
@@ -277,9 +269,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -332,9 +322,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -392,9 +380,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -452,9 +438,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -507,9 +491,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 echo "<font color=black>请选择出口</font>"."<br>";
@@ -560,9 +542,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -621,9 +601,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 echo "<font color=black>请选择出口</font>"."<br>";
@@ -681,9 +659,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -734,9 +710,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -788,9 +762,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -842,9 +814,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 
@@ -898,9 +868,7 @@ $cdid[]=$cmid;
 $clj[]=643;
 $npc[]=$mbid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【路边的野花】</font></a>"."<br>";
-} else{
 }
-} else{
 }
 /////////////////////////////////////////////////采花大盗活动////////////////////////////////
 

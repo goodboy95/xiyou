@@ -16,7 +16,6 @@ if($yl01>=1){
 $bfb=floor($yl01*0.05);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $yl01=$yl01-$ylsxf;
@@ -60,7 +59,6 @@ if($yl02>=1){
 $bfb=floor($yl02*0.02);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
 }
 $ylsxf=$bfb;
 $yl02=$yl02-$ylsxf;
@@ -109,7 +107,6 @@ echo "<font color=red>对不起！！你的小仓〖金带〗不足~~</font><br>
 	
 	
 	
-} else{	
 }
 
 

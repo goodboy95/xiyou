@@ -11,8 +11,6 @@ $dkmz="zbk3";
 $dkmz="zbk4";
 } elseif($ks==5){  
 $dkmz="zbk5";
-} else{
-
 }
 
 

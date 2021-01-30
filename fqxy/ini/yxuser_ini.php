@@ -1,15 +1,12 @@
 <?php
-
 //连接数据库
 include("../sql/mysql.php");//调用数据库连接
-
 $sqid = $wjid . "_" . $xxjy_qy;
 $q2 = "o_user_list";
 $sql = mysqli_query($conn, "select uid,password from $q2 where sqid='$sqid'");
 $info1 = @mysqli_fetch_array($sql);
-$uid = $info1[uid];
-$pass1 = $info1[password];
-
+$uid = $info1['uid'];
+$pass1 = $info1['password'];
 //游戏服id
 if ($xxjy_qy == 1) {
     $wjini = $uid + 10000000;
@@ -22,7 +19,6 @@ if ($xxjy_qy == 1) {
 } else {
     $uid = "";
 }
-
 if ($uid != "") {
     $inina = "yxuser.ini";
     $path = '../ache/' . $wjini;
@@ -38,8 +34,6 @@ if ($uid != "") {
         $dir = iconv("UTF-8", "GBK", "$path");
         if (!file_exists($dir)) {
             mkdir($dir, 0777, true);
-        } else {
-
         }
 
         if ($uid != "") {
@@ -51,21 +45,11 @@ if ($uid != "") {
             $iniFile->addCategory('验证信息', ['玩家id' => $wjini, '玩家验证' => $pass1, '社区id' => $wjid]);
         } else {
             $hf = 1;
-            if (rmdir("$path")) {
-
-            } else {
-
-            }
+            rmdir("$path");
         }
     }
-
     if ($hf == 2) {
         $iniFile = new iniFile($file);
-    } else {
-
     }
-} else {
-
 }
-
 ?>

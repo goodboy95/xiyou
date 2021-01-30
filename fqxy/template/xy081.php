@@ -54,7 +54,7 @@ $zbxq5=($iniFile->getCategory('装备镶嵌5'));
 $zbfl=($iniFile->getCategory('装备分类'));
 
 $m=count($zbid,0)-1; 
-$ym=$zbid[初始];
+$ym=$zbid['初始'];
 
 
 $km=0;
@@ -205,8 +205,6 @@ $czbmz11=$zbxjj.$xxxbs.$clname;
 $strr11=$str;
 
 
-
-} else{
 
 }
 
@@ -631,7 +629,6 @@ $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

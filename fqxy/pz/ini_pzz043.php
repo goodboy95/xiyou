@@ -30,7 +30,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 include("wj/ztt.php");
 include("./ini/zt_ini.php");
-$iniFile->updItem('玩家信息', ['红' => $wjxx1[血],'蓝' => $wjxx1[蓝]]);
+$iniFile->updItem('玩家信息', ['红' => $wjxx1['血'],'蓝' => $wjxx1['蓝']]);
 echo "<font color=red>恭喜你！升级了（目前等级：".$lvl."级）</font><br>";
 $npcc=$npcc1;
 } else{

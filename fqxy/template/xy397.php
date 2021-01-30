@@ -21,7 +21,7 @@ $filename = $ininame;
 if(!file_exists($filename)){
 $counter_file=$ininame;//文件名及路径,在当前目录下新建aa.txt文件 
 $fopen=fopen($counter_file,   'wb ');//新建文件命令 
-fputs($fopen,   '[地图信息]');//向文件中写入内容; 
+fputs($fopen,   '[地图信息]');//向文件中写入内容;
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 fclose($fopen); 
@@ -78,7 +78,6 @@ echo "<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

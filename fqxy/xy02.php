@@ -153,8 +153,7 @@ include("template/xy194.php");//国战大门神兽信息
 } elseif($cmdd==195){   
 include("template/xy195.php");//查询国战信息
 
-} else{
-} 
+}
 
 
 

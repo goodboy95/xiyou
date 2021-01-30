@@ -152,8 +152,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	
 $npcname="李白";
@@ -200,8 +198,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////		
 $npcname="张果老";
@@ -340,7 +336,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=3");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【玄武居】";
 if ($gzid!="") {
 
@@ -348,8 +344,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -397,7 +393,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=5");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【欢欢居】";
 if ($gzid!="") {
 
@@ -405,8 +401,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -498,7 +494,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=2");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【朱雀居】";
 if ($gzid!="") {
 
@@ -506,8 +502,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -567,7 +563,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=6");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【喜喜居】";
 if ($gzid!="") {
 
@@ -575,8 +571,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -624,7 +620,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=7");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【梦之居】";
 if ($gzid!="") {
 
@@ -632,8 +628,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -665,8 +661,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc10.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="水果贩子";
@@ -688,8 +682,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc11.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////				  
 $npcname="守城士兵";
@@ -716,7 +708,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=4");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【白虎居】";
 if ($gzid!="") {
 
@@ -724,8 +716,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -773,7 +765,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=8");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【水仙居】";
 if ($gzid!="") {
 
@@ -781,8 +773,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -818,7 +810,7 @@ $npc[]=0;
 $q2="gzhoures";
 $sql1=mysqli_query($conn, "select * from $q2 where gzid=9");
 $info1=@mysqli_fetch_array($sql1);
-$gzid=$info1[fzid];
+$gzid=$info1['fzid'];
 $npcname="【天然居】";
 if ($gzid!="") {
 
@@ -826,8 +818,8 @@ if ($gzid!="") {
 $q2="houres";
 $sql1=mysqli_query($conn, "select * from $q2 where fzid=$gzid");
 $info1=@mysqli_fetch_array($sql1);
-$wjmz=$info1[wjmz];
-$wjid=$info1[wjid];
+$wjmz=$info1['wjmz'];
+$wjid=$info1['wjid'];
 
 echo "<font color=red>$npcname</font>"."<br>";
 
@@ -861,8 +853,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc16.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="游侠儿";
@@ -941,8 +931,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc3.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="公孙大娘";
@@ -989,8 +977,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc3.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="【剧场负责人】";
@@ -1064,8 +1050,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc5.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -1145,8 +1129,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc4.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 	  
@@ -1211,8 +1193,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc5.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="大宰相.房玄龄";
@@ -1668,8 +1648,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc6.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="孔方兄";
@@ -1745,8 +1723,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc38.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 	  
@@ -1783,8 +1759,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc42.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 	  
@@ -1813,8 +1787,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc43.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  ////////////////////////// 
 	  
@@ -1921,8 +1893,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc8.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -1944,8 +1914,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc40.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -2037,8 +2005,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc31.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="卖糖人";
@@ -2068,8 +2034,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc32.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="小男孩";
@@ -2090,8 +2054,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc33.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="小女孩";
@@ -2112,8 +2074,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc34.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -2136,8 +2096,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc35.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="香客";
@@ -2159,8 +2117,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc4.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="进香客";
@@ -2182,8 +2138,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc35.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="许愿女";
@@ -2205,8 +2159,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc10.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 	  
@@ -2228,8 +2180,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc36.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="袁守诚";
@@ -2250,8 +2200,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc37.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="白衣秀士";
@@ -2287,8 +2235,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc38.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="贾二";
@@ -2308,8 +2254,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc39.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -2335,8 +2279,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc28.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 	  
@@ -2361,8 +2303,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc29.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
  
@@ -2386,8 +2326,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc27.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////   
 	  
@@ -2410,8 +2348,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc26.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////   
 	  
@@ -2433,8 +2369,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc25.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  ////////////////////////// 
     
@@ -2525,8 +2459,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc6.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 		  
@@ -2552,8 +2484,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc8.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 	  
@@ -2578,8 +2508,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc30.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 			
@@ -2641,8 +2569,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc13.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////			
 $npcname="老板娘萧晓";
@@ -2663,8 +2589,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc17.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 	  
@@ -2846,8 +2770,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc19.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////		  
 		  
@@ -2870,8 +2792,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc20.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////		  
 		  
@@ -2894,8 +2814,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc21.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////		  
 		  
@@ -2933,8 +2851,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc18.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="马官";
@@ -3020,8 +2936,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc24.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 		  
@@ -3089,8 +3003,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc14.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////				
 				
@@ -3114,8 +3026,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc14.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////				
 				
@@ -3136,8 +3046,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc23.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////				
 				
@@ -3158,8 +3066,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc22.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////		  
 $npcname="钱秀才";
@@ -3213,8 +3119,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc8.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 
@@ -3253,7 +3157,7 @@ echo "<font color=black>南城客栈的小二，卖些稀有的补品。</font>"
 $q2="yl".$fqidd;
 $sql1=mysqli_query($conn, "select * from $q2 where id=0");
 $info1=@mysqli_fetch_array($sql1);
-$yl=$info1[yl];	
+$yl=$info1['yl'];
 $xyyl=500;
 if ($yl>=$xyyl) {
 $q2="yl".$fqidd;
@@ -3311,8 +3215,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc6.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 	  
@@ -3332,8 +3234,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc7.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 	  
@@ -3545,8 +3445,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc12.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="渔夫李定";
@@ -3627,8 +3525,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc45.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="虾兵";
@@ -3648,8 +3544,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc46.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="蟹将";
@@ -3670,8 +3564,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc44.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
   
@@ -3738,8 +3630,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc49.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 	  
@@ -3901,8 +3791,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc47.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="龙表弟";
@@ -3923,8 +3811,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc47.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="龙王九子之饕餮";
@@ -3945,8 +3831,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc47.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -3968,8 +3852,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc47.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="龙王九子之睚眦";
@@ -4001,8 +3883,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc48.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="紫云公主龙女";
@@ -4320,8 +4200,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc50.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="山门迎客晨月";
@@ -4363,8 +4241,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc52.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -4408,8 +4284,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc56.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="菩提祖师";
@@ -4432,8 +4306,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc57.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 $npcname="青衣道童";
@@ -4455,8 +4327,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc57.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="小厨子晚风";
@@ -4594,8 +4464,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc51.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="猎户";
@@ -4618,8 +4486,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc58.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="知客僧";
@@ -4659,8 +4525,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc58.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="普陀山打扫僧";
@@ -4680,8 +4544,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc60.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -4794,8 +4656,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc61.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -4831,8 +4691,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc59.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 $npcname="普陀山掌厨僧";
@@ -4854,8 +4712,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc59.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="普陀山掌禅僧";
@@ -4906,8 +4762,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc62.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="看门大爷老余头";
@@ -4948,8 +4802,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc63.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	  
 	  
@@ -4972,8 +4824,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc64.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 $npcname="小乞丐";
@@ -5005,8 +4855,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc34.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////  
 	  
@@ -6950,8 +6798,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc41.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////	
 $npcname="李捕头";
@@ -6984,8 +6830,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc5.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 	
@@ -8182,7 +8026,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 
@@ -8201,9 +8044,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
 $hdcs=0;
 
-} else{	
-
-} 
+}
 
 //如果跨天则重置次数和时间
 
@@ -8934,7 +8775,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 
@@ -8953,9 +8793,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
 $hdcs=0;
 
-} else{	
-
-} 
+}
 
 //如果跨天则重置次数和时间
 
@@ -9261,7 +9099,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 
@@ -9280,9 +9117,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
 $hdcs=0;
 
-} else{	
-
-} 
+}
 
 //如果跨天则重置次数和时间
 
@@ -9615,7 +9450,6 @@ include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
 $hdlq=2;
-} else{	
 }
 
 
@@ -9634,9 +9468,7 @@ $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '0']);	
 $hdcs=0;
 
-} else{	
-
-} 
+}
 
 //如果跨天则重置次数和时间
 
@@ -11807,7 +11639,6 @@ $nowtime1 = substr($nowtime,0,10);
 if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 $nowtime=date('Y-m-d H:i:s');
 $iniFile->updItem('答题时间', ['初始' => $nowtime]);
-} else{	
 }
 //时间验证
 include("./ini/color_ini.php");
@@ -12149,7 +11980,6 @@ $nowtime1 = substr($nowtime,0,10);
 if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
 $nowtime=date('Y-m-d H:i:s');
 $iniFile->updItem('答题时间', ['初始' => $nowtime]);
-} else{	
 }
 //时间验证
 include("./ini/color1_ini.php");
@@ -12626,7 +12456,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$npcc));
 $hdlq=2;
-} else{	
 }
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
@@ -12646,9 +12475,7 @@ $iniFile->updItem('竞猜次数', ['初始' => '30']);
 $iniFile->updItem('竞猜购买', ['初始' => '1']);
 
 
-} else{	
-
-} 
+}
 
 
 
@@ -12699,7 +12526,6 @@ $iniFile->updItem('竞猜答案', ['初始' => $jcid]);
 $iniFile->updItem('竞猜答案1', ['初始' => $jcid2]);
 $iniFile->updItem('竞猜答案2', ['初始' => '1']);
 
-} else{	
 }
 
 

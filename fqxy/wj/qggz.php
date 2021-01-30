@@ -119,8 +119,6 @@ $fz02="民宅";
 $fz02="豪宅";
 } elseif($fz02==3){ 
 $fz02="官宅";
-} else{
-
 }
 if($fz03==3){
 echo "<font color=black>你已经拥有了【".$fz01."】(".$fz02."),不可以发布求购信息</font>"."<br>";
@@ -150,7 +148,6 @@ echo "<font color=red>对不起！！你的金豆不足".$wjjdqg."个</font>"."<
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

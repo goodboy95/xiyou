@@ -69,9 +69,7 @@ echo "<font color=black>1000楼：〖10亿修炼经验丹〗x15〖八倍掉宝�
 	
 	
 	
-} else{	
-	
-} 
+}
 	
 
 //cmd及超链接值

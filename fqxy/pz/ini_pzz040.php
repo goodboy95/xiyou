@@ -34,8 +34,7 @@ $iniFile->updItem('玩家信息', ['修炼经验' => $jy2]);
 
 	if($jyts !=""){
 echo "<font color=red>祝福：".$jyts."</font><br>";	
-	} else{
-	} 
+	}
 
 	//数字转汉字
 $yl=$jy;

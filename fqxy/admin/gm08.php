@@ -20,11 +20,8 @@ include("./msg/msgg02.php");
 if($xtmsg==2){
 echo"<font color=black>发布系统消息成功</font></a>";
 echo"<font color=black>发布内容：".$xtxx."</font></a>";
-}else{
 }
 
-
-}else{
 
 }
 ?>

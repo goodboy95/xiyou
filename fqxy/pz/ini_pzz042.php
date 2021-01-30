@@ -17,8 +17,8 @@ $wpfl=4;
 $q2="zzck".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 
@@ -66,8 +66,8 @@ $wpfl=4;
 $q2="zzck".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 
@@ -115,8 +115,8 @@ $wpfl=4;
 $q2="zzck".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 
 if($ckwpid==""){
 
@@ -274,8 +274,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}
 	$ltbl2=-1;
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;

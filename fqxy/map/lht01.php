@@ -87,8 +87,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -207,8 +206,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉三层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=37;
 include("./rcrw/ttt.php");
 
@@ -316,8 +314,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉四层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=40;
 include("./rcrw/ttt.php");
@@ -421,8 +418,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉五层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=43;
 include("./rcrw/ttt.php");
@@ -525,8 +521,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉六层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=46;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -630,8 +625,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉七层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=49;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -735,8 +729,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉八层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=52;
 include("./rcrw/ttt.php");
@@ -839,8 +832,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉九层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=55;
 include("./rcrw/ttt.php");
@@ -943,8 +935,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 $tttid=58;
@@ -1049,8 +1040,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十一层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=61;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1160,8 +1150,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十二层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -1280,8 +1269,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十三层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=71;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1387,8 +1375,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十四层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=74;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1494,8 +1481,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十五层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=77;
 include("./rcrw/ttt.php");
@@ -1604,8 +1590,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十六层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=80;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1712,8 +1697,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十七层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=83;
 include("./rcrw/ttt.php");
@@ -1822,8 +1806,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十八层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=86;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1929,8 +1912,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉十九层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=89;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -2038,8 +2020,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十层】</font></a>"."<br>";
-} else{	
-} 
+}
 $tttid=92;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -2145,8 +2126,7 @@ $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十一层】</font></a>"."<br>";
 
-} else{	
-} 
+}
 
 
 
@@ -2257,8 +2237,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十二层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=165;
 include("./rcrw/ttt.php");
@@ -2367,8 +2346,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十三层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=168;
 include("./rcrw/ttt.php");
@@ -2477,8 +2455,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十四层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=171;
 include("./rcrw/ttt.php");
@@ -2588,8 +2565,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十五层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=174;
 include("./rcrw/ttt.php");
@@ -2699,8 +2675,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十六层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 $tttid=177;
@@ -2808,8 +2783,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十七层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=180;
 include("./rcrw/ttt.php");
@@ -2918,8 +2892,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十八层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=183;
 include("./rcrw/ttt.php");
@@ -3029,8 +3002,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉二十九层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=186;
 include("./rcrw/ttt.php");
@@ -3139,8 +3111,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉三十层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 $tttid=189;
 include("./rcrw/ttt.php");
@@ -3250,8 +3221,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙一层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -3371,8 +3341,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙二层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -3488,8 +3457,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙三层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -3601,8 +3569,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙四层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -3715,8 +3682,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙五层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -3829,8 +3795,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙六层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -3945,8 +3910,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙七层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -4061,8 +4025,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙八层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -4176,8 +4139,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙九层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -4289,8 +4251,7 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【十八罗汉仙十层】</font></a>"."<br>";
-} else{	
-} 
+}
 
 
 
@@ -4416,8 +4377,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【�
 
 echo "<font color=res>进入【十八罗汉仙十一层】（封印中）</font></a>"."<br>";
 
-} else{	
-} 
+}
 
 
 

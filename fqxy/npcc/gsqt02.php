@@ -25,8 +25,7 @@ $wpzl=$bszl;
 $bfb=floor($sl*$gsjg*0.01);
 if ($bfb==0) {
 $bfb=1;	  
-} else{
-}
+} 
 $ylsxf=$bfb;
 $ylmm=$ylsxf;
 include("./ini/yl_ini.php");
@@ -42,7 +41,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select bbyl from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$wjyl=$info1[bbyl];
+$wjyl=$info1['bbyl'];
 $wjyll=$wjyl-$ylsxf;
 $strsql = "update $q2 set bbyl=$wjyll where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -65,9 +64,9 @@ include("./ini/jsini.php");
 
 
 
-$bbrlb=$wjxx[背包容量];
+$bbrlb=$wjxx['背包容量'];
 
-$cbbrlb=$wjxx[挂售容量];
+$cbbrlb=$wjxx['挂售容量'];
 	
 	
 
@@ -142,11 +141,7 @@ $sql = "insert into $q2 (id,wpid,wpsl,gsjg)  values('$maxidd','$npcc','$sl','$gs
 
 //
 
-} else{
-
-
-
-}
+} 
 
 
 
@@ -170,11 +165,7 @@ unlink($file); //删除文件
 
 
 
-} else{
-
-
-
-}
+} 
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 
@@ -195,11 +186,7 @@ include("./wp/zbbs.php");
 $wpmz=$bsmz;
 $wpzl=$bszl;
 
-} else{
-
-
-
-}
+} 
 
 
 
@@ -251,11 +238,7 @@ include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{
-
-
-
-}
+} 
 
 
 
@@ -339,11 +322,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
 
-} else{
-
-
-
-}
+} 
 
 /////////////////////////////////////////////////////////////////////////////////缓存修改//////////////////////////////////////////////////////////////
 
@@ -367,11 +346,7 @@ include("./wp/zbbs.php");
 $wpmz=$bsmz;
 $wpzl=$bszl;
 
-} else{
-
-
-
-}
+} 
 	
 //ini文件名字
 $inina="bbrl.ini";
@@ -456,11 +431,7 @@ include("template/xy035.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{
-
-
-
-}
+} 
 
 
 

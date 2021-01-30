@@ -321,7 +321,6 @@ echo "<font color=black>对不起！！你的".$wpdz1[0]."不足".$wpdz4[0]."</f
 
 
 
-} else{	
 }
 
 }
@@ -339,7 +338,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

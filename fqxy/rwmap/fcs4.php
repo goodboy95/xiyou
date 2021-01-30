@@ -181,8 +181,6 @@ if ($tpbl==1) {
 $img='pic/npc/npc56.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
-} else{
-
 }
   //////////////////////////////////////插入图片  //////////////////////////
 include("./rwmap/fcs4_ts.php");//任务提示	

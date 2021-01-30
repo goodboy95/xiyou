@@ -109,7 +109,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的状�
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

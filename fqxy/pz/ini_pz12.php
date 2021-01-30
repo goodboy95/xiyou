@@ -3,8 +3,8 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_zt";
 $sql1=mysqli_query($conn, "select wjid,username from $q2 where lh=$lh");
 $info1=@mysqli_fetch_array($sql1);	
-$lhid=$info1[wjid];
-$lhname=$info1[username];
+$lhid=$info1['wjid'];
+$lhname=$info1['username'];
 if($lhid>=10000000){
 echo "<font color=red>对不起！此靓号ID[".$lh."]已被".$lhname."占用，无法使用</font>"."<br>";		
 $wpsy=1;//使用失败

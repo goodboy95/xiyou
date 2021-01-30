@@ -88,8 +88,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -210,8 +209,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府三层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=108;
 include("./rcrw/ttt.php");
 
@@ -321,8 +319,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府四层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=111;
 include("./rcrw/ttt.php");
@@ -430,8 +427,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府五层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=114;
 include("./rcrw/ttt.php");
@@ -538,8 +534,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府六层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=117;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -647,8 +642,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府七层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=120;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -756,8 +750,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府八层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=123;
 include("./rcrw/ttt.php");
@@ -864,8 +857,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府九层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=126;
 include("./rcrw/ttt.php");
@@ -971,8 +963,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=129;
@@ -1081,8 +1072,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十一层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=132;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1194,8 +1184,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十二层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -1316,8 +1305,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十三层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=138;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1426,8 +1414,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十四层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=141;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1536,8 +1523,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十五层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=144;
 include("./rcrw/ttt.php");
@@ -1648,8 +1634,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十六层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=147;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1759,8 +1744,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十七层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=150;
 include("./rcrw/ttt.php");
@@ -1872,8 +1856,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十八层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=153;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1982,8 +1965,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府十九层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=156;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -2094,8 +2076,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=159;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -2203,8 +2184,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十一层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=162;
@@ -2320,8 +2300,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十二层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=195;
 include("./rcrw/ttt.php");
@@ -2430,8 +2409,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十三层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=198;
 include("./rcrw/ttt.php");
@@ -2540,8 +2518,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十四层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=201;
 include("./rcrw/ttt.php");
@@ -2651,8 +2628,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十五层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=204;
 include("./rcrw/ttt.php");
@@ -2762,8 +2738,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十六层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=207;
 include("./rcrw/ttt.php");
@@ -2872,8 +2847,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十七层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=210;
 include("./rcrw/ttt.php");
@@ -2982,8 +2956,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十八层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=213;
 include("./rcrw/ttt.php");
@@ -3093,8 +3066,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府二十九层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=216;
 include("./rcrw/ttt.php");
@@ -3203,8 +3175,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府三十层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=219;
 include("./rcrw/ttt.php");
@@ -3317,8 +3288,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔一层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=222;
@@ -3431,8 +3401,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔二层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -3547,8 +3516,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔三层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -3661,8 +3629,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔四层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -3778,8 +3745,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔五层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -3894,8 +3860,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔六层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -4010,8 +3975,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔七层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -4129,8 +4093,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔八层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -4243,8 +4206,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔九层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -4358,8 +4320,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔十层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -4477,8 +4438,7 @@ $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【阴曹地府魔尊一层】</font></a>"."<br>";
 
 
-} else{	
-} 
+}  
 
 
 
@@ -4573,8 +4533,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊二层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 
@@ -4655,8 +4614,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊三层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=340;
@@ -4733,8 +4691,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊四层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=343;
@@ -4810,8 +4767,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊五层】</font></a>"."<br>";
-} else{	
-} 
+}  
 $tttid=346;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -4885,8 +4841,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊六层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=349;
 include("./rcrw/ttt.php");
@@ -4964,8 +4919,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊七层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=352;
@@ -5041,8 +4995,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊八层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 $tttid=355;
 include("./rcrw/ttt.php");
@@ -5118,8 +5071,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊九层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=358;
@@ -5196,8 +5148,7 @@ $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔魔尊十层】</font></a>"."<br>";
-} else{	
-} 
+}  
 
 
 $tttid=361;
@@ -5278,8 +5229,7 @@ $clj[]=34;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔混沌魔尊一层】（封印中）</font></a>"."<br>";
 */
-} else{	
-} 
+}  
 
 
 $tttid=364;

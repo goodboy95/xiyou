@@ -74,19 +74,19 @@ $result = mysqli_query($conn, $strsql);
 include("bp_ini.php");
 # 获取一个分类下所有数据$
 $bpcs=($iniFile->getCategory('国家信息'));
-if($bpcs[辅助大臣id]==$wjid){  
+if($bpcs['辅助大臣id']==$wjid){
 $bpzw2="辅助大臣";
-} elseif($bpcs[军机大臣id]==$wjid){  
+} elseif($bpcs['军机大臣id']==$wjid){
 $bpzw2="军机大臣";
-} elseif($bpcs[财政大臣id]==$wjid){  
+} elseif($bpcs['财政大臣id']==$wjid){
 $bpzw2="财政大臣";
-} elseif($bpcs[工部大臣id]==$wjid){  
+} elseif($bpcs['工部大臣id']==$wjid){
 $bpzw2="工部大臣";
-} elseif($bpcs[外交大臣id]==$wjid){  
+} elseif($bpcs['外交大臣id']==$wjid){
 $bpzw2="外交大臣";
-} elseif($bpcs[军团长id]==$wjid){  
+} elseif($bpcs['军团长id']==$wjid){
 $bpzw2="军团长";
-} elseif($bpcs[现任君主id]==$wjid){  
+} elseif($bpcs['现任君主id']==$wjid){
 $bpzw2="君主";
 } else{
 $bpzw2="成员";
@@ -170,8 +170,7 @@ foreach( $arr3 as $k=>$v) {
 $ltmax1=max($arr3);
 if($ltmax1=="排序"){
 $ltmax1=0;
-	} else{
-	} 
+	}  
 $ltmax1=$ltmax1+1;
 $zbidd2=$wjid1."_".$ltmax1;
 $iniFile->addItem('玩家排序',[$zbidd2 => $ltmax1]); 
@@ -226,8 +225,7 @@ include("template/xy002.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/ojsini.php");
 //解锁当前使用的ini

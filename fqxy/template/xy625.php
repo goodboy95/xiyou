@@ -87,7 +87,6 @@ include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdlq=2;
-} else{	
 }
 
 
@@ -183,7 +182,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武�
 
 
 
-} else{	
 }
 
 //解锁当前使用的ini

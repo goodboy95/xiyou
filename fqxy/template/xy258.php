@@ -26,8 +26,8 @@ $wjxx=($iniFile->getItem('背包仓库银两',['背包银两','仓库银两']));
 
 
 
-$ssyl=$wjxx[背包银两];
-$ckssyl=$wjxx[仓库银两];
+$ssyl=$wjxx['背包银两'];
+$ckssyl=$wjxx['仓库银两'];
 if($ssyl>=$sl){
 $ylsx=$ckssyl+$sl;
 
@@ -43,8 +43,8 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_yl";
 $sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
-$bbyl=$info1[bbyl];
-$ckyl=$info1[ckyl];
+$bbyl=$info1['bbyl'];
+$ckyl=$info1['ckyl'];
 if($bbyl>=$sl){
 
 
@@ -168,7 +168,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

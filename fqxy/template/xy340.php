@@ -78,8 +78,6 @@ $strsql = "update $q2 set ccmz06=0,ccid06=0 where bpid=$bpid";//物品id号必�
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('国家信息', ['军团长'=> 0]);
 $iniFile->updItem('国家信息', ['军团长id'=> 0]);
-} else{
-
 }
 
 
@@ -170,7 +168,6 @@ include("fhgame.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jjsini.php");
@@ -178,7 +175,6 @@ include("./ini/jjsini.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

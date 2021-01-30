@@ -119,7 +119,6 @@ echo "<font color=red>求购官宅的信息不能为空</font>"."<br>";
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

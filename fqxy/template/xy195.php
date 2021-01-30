@@ -79,7 +79,6 @@ $mt=$mt+1;
 if ($hm>0){
 rsort($fb);
 rsort($xb);
-} else{
 }
 
 $mt=0;
@@ -108,9 +107,7 @@ $gjjf=($iniFile->getItem('国家积分',$xbbb));
 if ($gj04==0){
 if ($gjid==$bpid){
 $gj04=$mm+1;
-} else{
 }
-} else{
 }
 
 
@@ -137,14 +134,10 @@ echo "<font color=black>1".".".$phname[0]."(".$xue[0]."分)</font></a>"."<br>";
 if ($hm>=2){
 echo "<font color=black>2".".".$phname[1]."(".$xue[1]."分)</font></a>"."<br>";
 
-} else{
-
 }
 
 if ($hm>=3){
 echo "<font color=black>3".".".$phname[2]."(".$xue[2]."分)</font></a>"."<br>";
-
-} else{
 
 }
 
@@ -167,7 +160,7 @@ echo "<font color=black>当前无任何国家积分排名</font>"."<br>";
 
 //获取战场位置和时间变量
 $weekarray=array("7","1","2","3","4","5","6");
-$week=$weekarray[date("w")];
+$week=$weekarray['date("w")'];
 
 if($week ==1){
 $zcwz="傲来国";

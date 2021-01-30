@@ -43,7 +43,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 
 
@@ -154,10 +153,6 @@ $cdid[]=$cmid;
 $clj[]=269;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其他</font></a>"."<br>";
-
-
-
-} else{
 
 
 
@@ -295,10 +290,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-
-
 }
 
 
@@ -306,9 +297,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其�
 
 
 
-} else{
-
-} 
+}
 
 
 } else {
@@ -366,10 +355,6 @@ include("template/xy035.php");
 include("./pz/pz01.php");
 
 
-} else{
-
-
-
 }
 
 
@@ -378,7 +363,6 @@ include("./pz/pz01.php");
 
 
 }
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jszsini.php");

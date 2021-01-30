@@ -95,13 +95,10 @@ include("npcc/dqbs02.php");
 
 
 
-} else{
-
-} 
+}
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

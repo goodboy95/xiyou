@@ -31,18 +31,12 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 获取一个分类下某个子项的值
 $wpsl=($iniFile->getItem('数量',$npcc));
-} else{
-
-
-
 }
 
 
 if($ymid==336){
 //调用物品信息
 include("./wp/wpxx.php");
-} else{
-
 }
 
 if($wpsl >=1){
@@ -63,8 +57,8 @@ $result = mysqli_query($conn, $strsql);
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
-$ckwpid=$info1[wpid];
-$ckwpsl=$info1[wpsl];
+$ckwpid=$info1['wpid'];
+$ckwpsl=$info1['wpsl'];
 if($ckwpid==""){
 //获取最大值
 $q2="wp".$wjid;
@@ -153,8 +147,6 @@ $inina="rw.ini";
 $inina="nc.ini";
 } elseif($wpfl ==8){
 $inina="bx.ini";
-} else{
-
 }
 
 
@@ -203,7 +195,6 @@ include("./pz/pz01.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

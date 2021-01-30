@@ -25,7 +25,6 @@ $szmz="快捷7";
 $szmz="快捷8";
 } elseif($szid ==9){
 $szmz="快捷9";
-}else{
 }
 
 //$iniFile->updItem('快捷技能id', ['快捷1' => '888']);
@@ -48,8 +47,7 @@ include("./pz/pz01.php");
 
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

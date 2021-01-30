@@ -95,17 +95,17 @@ $m=0;
 
 
 $m=$m+1;
-$npcc=$row[cwid];
-$npcc1=$row[id];
+$npcc=$row['cwid'];
+$npcc1=$row['id'];
 $cwidd=$npcc."_".$npcc1;
 $iniFile->addCategory('序列', [$cwidd=>$m ]);
 $iniFile->addCategory('宠物id', [$cwidd=> $cwidd]);
-$iniFile->addCategory('宠物名字', [$cwidd=> $row[cwmz]]);
-$iniFile->addCategory('宠物等级', [$cwidd=> $row[cwdj]]);
-$iniFile->addCategory('宠物星级', [$cwidd=> $row[cwxj]]);
-$iniFile->addCategory('宠物变异', [$cwidd=> $row[cwby]]);
-$iniFile->addCategory('宠物品质', [$cwidd=> $row[cwxb]]);
-$iniFile->addCategory('宠物出战状态', [$cwidd=> $row[cwcz]]);
+$iniFile->addCategory('宠物名字', [$cwidd=> $row['cwmz']]);
+$iniFile->addCategory('宠物等级', [$cwidd=> $row['cwdj']]);
+$iniFile->addCategory('宠物星级', [$cwidd=> $row['cwxj']]);
+$iniFile->addCategory('宠物变异', [$cwidd=> $row['cwby']]);
+$iniFile->addCategory('宠物品质', [$cwidd=> $row['cwxb']]);
+$iniFile->addCategory('宠物出战状态', [$cwidd=> $row['cwcz']]);
 $cwid=$npcc;
 //调用宠物基础信息
 include("./cw/cwxx.php");

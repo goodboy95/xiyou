@@ -12,9 +12,7 @@ if ($jnid==1) {
 $pkmsg="对你使用了一招普攻";	
 } elseif ($jnidd==2) {
 	
-} else{
-
-}	
+} 	
 $wjid=$ckid;
 include("./ini/pkblxx_ini.php");
 $iniFile->updItem('玩家名字', [$wjid1 => $username]);
@@ -28,9 +26,7 @@ $pkhp=($iniFile->getItem('玩家信息','红'));
 $pkhp=$pkhp-$dxsh;
 $iniFile->updItem('玩家信息', ['红' => $pkhp]);
 //修改对方血量
-} else{
-
-}	
+} 	
 
 
 

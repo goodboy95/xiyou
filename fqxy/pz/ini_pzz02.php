@@ -15,9 +15,7 @@ include("./ini/yl_ini.php");
 $iniFile->updItem('背包仓库银两', ['背包银两' => $yll]);
 
 $manzu1=$manzu1."<font color=black>失去：".$kcyl01."银两</font>"."<br>";
-} else{
-
-}
+} 
 //银两扣除		
 	
 	
@@ -30,9 +28,7 @@ if($zbdd1==2){
 $zbid=$xyzbid1;//得到装备的id
 include("ini_pz11.php");//调用ini缓存位置
 //---------------------------------------------------
-} else{
-
-}
+} 
 //得到装备	
 	
 	

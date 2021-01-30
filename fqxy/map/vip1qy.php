@@ -40,8 +40,6 @@ $vipqy=1;
 if($vipqy == 1){
 echo "<font color=red>【铁矿山】区域时间已到，【铁矿财神】已走了！！</font>"."<br>";
 
-} else{
-
 }
 
 

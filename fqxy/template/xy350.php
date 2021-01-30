@@ -31,7 +31,6 @@ include("./ini/qyboss_ini.php");
 $enddate=date('Y-m-d H:i:s');
 
 $iniFile->updItem('boss', [$npcc => $enddate]);	
-} else{
 }
 
 //区域小boss加时间
@@ -49,7 +48,6 @@ $enddate=date('Y-m-d H:i:s');
 $iniFile->updItem('boss', [$npcc => $enddate]);	
 	
 	
-} else{
 }
 
 //宠物加时间
@@ -89,8 +87,7 @@ $npjy=100000;//经验
 } else{	
 $npjy=1;//经验
 } 
-} else{	
-} 
+}
 
 
 
@@ -111,7 +108,6 @@ if ($ztzf==1) {
 $zfjy=$npjy*2;
 $jy=$zfjy;
 $jyts="（小智慧果经验x2）";	
-} else{
 }
 //2倍经验
 //4倍经验
@@ -122,29 +118,26 @@ if ($ztzf==1) {
 $zfjy=$npjy*4+$zfjy;
 $jy=$zfjy;
 $jyts=$jyts."（大智慧果经验x4）";	
-} else{
 }
 //4倍经验
 //vip特权
-if ($wjxx[vip等级]==4) {
+if ($wjxx['vip等级']==4) {
 $zfjy=$npjy*2+$zfjy;
 $jy=$zfjy;	
-$jyts=$jyts."（vip".$wjxx[vip等级]."特权杀怪经验永久x2）";	
-} elseif ($wjxx[vip等级]==5) {
+$jyts=$jyts."（vip".$wjxx['vip等级']."特权杀怪经验永久x2）";
+} elseif ($wjxx['vip等级']==5) {
 $zfjy=$npjy*3+$zfjy;
 $jy=$zfjy;		
-$jyts=$jyts."（vip".$wjxx[vip等级]."特权杀怪经验永久x3）";	
-} elseif ($wjxx[vip等级]>=6) {
+$jyts=$jyts."（vip".$wjxx['vip等级']."特权杀怪经验永久x3）";
+} elseif ($wjxx['vip等级']>=6) {
 $zfjy=$npjy*4+$zfjy;
 $jy=$zfjy;	
-$jyts=$jyts."（vip".$wjxx[vip等级]."特权杀怪经验永久x4）";	
-} else{
+$jyts=$jyts."（vip".$wjxx['vip等级']."特权杀怪经验永久x4）";
 }
 //vip特权
 
 
 include("./pz/ini_pzz023.php");//调用ini缓存位置
-} else{
 }
 //得到经验
 
@@ -164,7 +157,6 @@ include("./pz/pz05.php");
 if ($ztzf==1) {
 $dbpd=2;//掉落x	
 $dbpd1="（双倍掉落中）";	
-} else{
 }
 //双倍掉宝
 	//四倍掉宝
@@ -174,7 +166,6 @@ include("./pz/pz05.php");
 if ($ztzf==1) {
 $dbpd=4;//掉落x	
 $dbpd1="（四倍掉落中）";	
-} else{
 }
 //四倍掉宝
 //八倍掉宝
@@ -184,7 +175,6 @@ include("./pz/pz05.php");
 if ($ztzf==1) {
 $dbpd=8;//掉落x	
 $dbpd1="（八倍掉落中）";	
-} else{
 }
 //八倍掉宝
 
@@ -216,7 +206,6 @@ if ($bz<=$wpbv2) {//符合条件爆出
 $wpbv3=$wpbv3+1;
 if ($wpbv3==1) {//符合条件爆出
 include("./sql/mysql.php");//调用数据库连接 
-} else{
 }
 
 if ($wpdz2[$ii]==3) {//装备
@@ -242,7 +231,6 @@ $wpzl=$wpdz5[$ii];//物品重量
 
 if ($wpid==453||$wpid==487||$wpid==659||$wpid==660||$wpid==661||$wpid==662||$wpid==663||$wpid==821||$wpid==127||$wpid==1099) {//pass掉财宝箱子云梯石碎银
 $wpkc=$wpdz4[$ii];
-} else{
 }
 
 
@@ -257,18 +245,15 @@ $kcrl=$wpkc*$wpzl+$kcrl;
 
 
 
-} else{
 }
 }
 if ($kcrl!="") {
 
 include("./pz/ini_pzz09.php");
 echo $manzu1;
-} else{
 }
 
 
-} else{
 }
 
 

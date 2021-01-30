@@ -17,8 +17,6 @@ $sql = "insert into $q2 (id,czid,czje,cztime,czfl)  values('$maxidd','$cz01','$c
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
-
 }
 
 

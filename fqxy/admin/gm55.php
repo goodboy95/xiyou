@@ -44,7 +44,6 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjiddd=$wjid&&pass=$password><
 
 
 
-} else{	
 }
 
 

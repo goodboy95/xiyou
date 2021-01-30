@@ -7,7 +7,6 @@ if($jnfor==1){
 
 
 
-}else{
 }
 
 
@@ -67,7 +66,6 @@ $szmz="快捷7";
 $szmz="快捷8";
 } elseif($szid ==9){
 $szmz="快捷9";
-}else{
 }
 include("./ini/zd_ini.php");
 $iniFile->updItem('快捷技能id', [$szmz => '0']);
@@ -86,10 +84,6 @@ echo "<font color=black>".$jnname."</font>";
 } elseif($jnfl ==4){//查看技能
 echo "<font color=black>".$jnname."</font>";
 
-
-	
-}else{
-	
 
 	
 }

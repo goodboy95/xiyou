@@ -37,21 +37,20 @@ mysqli_query($conn, $sql);
 $q2="jfdj".$wjid;
 $sql1=mysqli_query($conn, "select id from $q2 where id=1");
 $info1=@mysqli_fetch_array($sql1);
-$xlpd=$info1[id];
+$xlpd=$info1['id'];
 if($xlpd ==""){
 
 $sql = "insert into $q2 (id,jfdj)  values('1','159')";
  if (!mysqli_query($conn, $sql)){
    die('Error: ' . mysqli_error($conn));
  }
-} else{
 }
 
 
 $q2="jfdj".$wjid;
 $sql1=mysqli_query($conn, "select * from $q2 where id=1");
 $info1=@mysqli_fetch_array($sql1);
-$wjjfdj=$info1[jfdj];
+$wjjfdj=$info1['jfdj'];
 
 
 

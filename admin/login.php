@@ -81,10 +81,10 @@ include("../sql/mysql.php");//调用数据库连接
 
 $sql=mysqli_query($conn, "select uid,password,name from gmuser where username='$username'",$conn);
 $info1=@mysqli_fetch_array($sql);
-$pass1=$info1[password];
-$uid=$info1[uid];
+$pass1=$info1['password'];
+$uid=$info1['uid'];
 $pass=md5($_POST['password'].'ALL_PS');
-$name=$info1[name];
+$name=$info1['name'];
 //$ps = $us ? md5($_POST['password'].'ALL_PS' ) == $row['password'] : 'FALSE';
 
 
@@ -144,8 +144,6 @@ $user=1;
 if($user==1){
 
 $zcxx="<font color=red>用户名或密码错误</font>"."<br>";
-}else{
-
 }
 
 ?>

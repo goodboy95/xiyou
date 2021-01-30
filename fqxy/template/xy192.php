@@ -149,7 +149,7 @@ $iniFile->updItem('国战判断时间', ['日' => $d]);
 }	
 	
 }	
-echo "<font color=black>[攻城-已报名的国家]</font>"."<br>";
+echo "<font color=black>['攻城-已报名的国家']</font>"."<br>";
 
 //判断攻城报名表是否合法
 

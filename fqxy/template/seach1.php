@@ -21,7 +21,6 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 } elseif($wpfl==8){ //背包宝箱
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
-} else{
 }
 include("./ini/post_ini.php");
 $ckname=($iniFile->getItem('赠送人','初始'));
@@ -29,7 +28,6 @@ $ckid=($iniFile->getItem('赠送人ID','初始'));
 if($wpsl==""){ 
 
 $wpsl=0;
-} else{
 }
 
 echo "<font color=black>你要赠送给".$ckname."(".$ckid.")多少".$wpmz."呢？(最多可赠".$wpsl."个)</font><br>";

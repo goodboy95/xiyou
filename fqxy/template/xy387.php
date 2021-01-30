@@ -91,7 +91,6 @@ $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 if($maxid ==""){
 $maxid=0;
-} else{
 }
 include("./ini/zt_ini.php");
 $uname=($iniFile->getItem('玩家信息','玩家名字'));
@@ -361,7 +360,6 @@ echo "<font color=black>".$nname."已被".$name."击杀！！</font>"."<br>";
 
 
 
-} else{
 }
 
 //$zhblq=$npcc;

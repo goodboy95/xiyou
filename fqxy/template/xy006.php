@@ -4529,7 +4529,6 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 include("./template/xy002.php");//游戏主页
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

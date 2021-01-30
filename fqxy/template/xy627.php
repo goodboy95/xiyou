@@ -95,8 +95,6 @@ $xtxx= "恭喜玩家".$wjmz."在【幸运大富翁】惊扰到了大富翁产生
 include("./msg/msgg02.php");
 
 
-} else{
-
 }
 
 
@@ -135,12 +133,9 @@ $bz= rand(10,300);
 } else{
 $bz= rand(1,6);
 }
-} else{
-} 
-} else{
-} 
-} else{
-} 
+}
+}
+}
 
 
 
@@ -155,12 +150,9 @@ $bzz=$mqlc+$bz;
 
 
 
-} else{
-} 
-} else{
-} 
-} else{
-} 
+}
+}
+}
 //作弊重新摇
 
 
@@ -229,7 +221,6 @@ echo "<font color=black>----------------------</font>"."<br>";
 include("fhgame.php");
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

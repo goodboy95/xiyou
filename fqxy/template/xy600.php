@@ -193,16 +193,14 @@ include("fhgame.php");
 
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jjsini.php");
 //解锁当前使用的ini
 
 
 
-} else{	
-}
+} 
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini

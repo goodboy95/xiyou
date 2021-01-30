@@ -34,8 +34,6 @@ $dkmz="zbxq3";
 $dkmz="zbxq4";
 } elseif($ks==5){  
 $dkmz="zbxq5";
-} else{
-
 }
 
 $bsid=$npcc;
@@ -255,7 +253,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 }
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

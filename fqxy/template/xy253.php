@@ -98,9 +98,6 @@ $iniFile->updItem('头衔显示', [$npcc => 1]);
 
 
 	
-} else{
-
-	
 }
 
 
@@ -116,7 +113,6 @@ include("./pz/pz01.php");
 
 
 
-} else{	
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");
