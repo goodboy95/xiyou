@@ -1,11 +1,4 @@
 <?php
-$wpdz1 = [];//初始
-$wpdz2 = [];//初始
-$wpdz3 = [];//初始
-$wpdz4 = [];//初始
-$wpdz5 = [];//初始
-$wpdz6 = [];//初始
-$wpdz7 = [];//初始
 if ($npcc >= 1 && $npcc <= 100) {
     include("npcxx01.php");
 } elseif ($npcc >= 101 && $npcc <= 200) {

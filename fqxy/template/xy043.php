@@ -33,11 +33,7 @@ $rw4=($iniFile->getItem('要杀怪',$str4));
 $rw5=($iniFile->getItem('任务分类',$str4));
 $rw6=($iniFile->getItem('任务名字',$str4));
 
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
-$wpdz5="";//初始
+
 if($rw5==1){
 include("./rw/zxrw.php");//主线
 } elseif($rw5==2){

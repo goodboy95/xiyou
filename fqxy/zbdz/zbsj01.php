@@ -6,11 +6,11 @@ if($npcc==1){
 
 } elseif($npcc==3){//【白虎笑傲枪】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -184,11 +184,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==4){//【玄武枪】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -377,11 +377,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==5){//【玄武撼地枪】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -568,11 +568,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==6){//【朱雀枪】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -769,11 +769,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==8){//【应龙戟】（60）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -940,11 +940,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==9){//【应龙戟】（80）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1113,11 +1113,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==10){//【应龙戟】（80）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1288,11 +1288,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==11){//【应龙戟】（99）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1467,11 +1467,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==17){//【龙鳞破天叉】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -1645,11 +1645,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==18){//【青龙叉】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -1838,11 +1838,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==19){//【青龙在天叉】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -2029,11 +2029,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==20){//【天龙叉】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2230,11 +2230,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==22){//【五龙叉】（60）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2401,11 +2401,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==23){//【五龙叉】（80）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2574,11 +2574,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==24){//【五龙叉】（89）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2746,11 +2746,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==25){//【五龙叉】（99）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2918,11 +2918,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==31){//【七星逐月棍】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -3096,11 +3096,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==32){//【无极棍】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -3289,11 +3289,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==33){//【无极无道棍】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -3480,11 +3480,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==34){//【太乙棍】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3681,11 +3681,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==36){//【夸父棍】（60）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3852,11 +3852,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==37){//【夸父棍】（80）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4025,11 +4025,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==38){//【夸父棍】（89）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4197,11 +4197,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==39){//【夸父棍】（99）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4369,11 +4369,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==45){//【伏虎降龙杖】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -4547,11 +4547,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==46){//【金刚杖】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -4740,11 +4740,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==47){//【怒目金刚杖】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -4931,11 +4931,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==48){//【罗汉杖】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -5132,11 +5132,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==50){//【般若杖】（60）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -5303,11 +5303,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==51){//【般若杖】（80）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -5476,11 +5476,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==52){//【般若杖】（89）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -5648,11 +5648,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==53){//【般若杖】（99）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -5820,11 +5820,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==59){//【碧海青天剑】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -5998,11 +5998,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==60){//【银沙剑】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -6191,11 +6191,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==61){//【银沙瀚海剑】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="银两";//名字
@@ -6382,11 +6382,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==62){//【奔月剑】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -6583,11 +6583,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==64){//【碧落剑】（60）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -6754,11 +6754,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==65){//【碧落剑】（80）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -6927,11 +6927,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==66){//【碧落剑】（89）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -7099,11 +7099,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==67){//【碧落剑】（99）
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -7270,11 +7270,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==73){//【白虎笑傲铠】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -7453,11 +7453,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==78){//【玄武铠甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -7647,11 +7647,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==83){//【玄武撼地甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -7846,11 +7846,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==88){//【朱雀战甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -8064,11 +8064,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==75){//【龙鳞破天铠】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -8247,11 +8247,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==80){//【青龙铠甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -8441,11 +8441,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==85){//【青龙在天甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -8640,11 +8640,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==90){//【天龙战甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -8860,11 +8860,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==74){//【七星逐月铠】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -9043,11 +9043,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==79){//【无极铠甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -9237,11 +9237,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==84){//【无极无道甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -9436,11 +9436,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==89){//【太乙战甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -9658,11 +9658,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==76){//【伏虎降龙铠】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -9841,11 +9841,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==81){//【金刚铠甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -10035,11 +10035,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==86){//【怒目金刚甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -10234,11 +10234,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==91){//【罗汉战甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -10455,11 +10455,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==77){//【碧海青天铠】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -10638,11 +10638,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==82){//【银沙铠甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -10832,11 +10832,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==87){//【银沙瀚海甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -11031,11 +11031,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==92){//【奔月战甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -11251,11 +11251,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==98){//【刑天铁甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -11451,11 +11451,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc ==97||$npcc ==93||$npcc ==94||$npcc ==95||$npcc ==96){//【刑天铁甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -11622,11 +11622,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==7||$npcc==21||$npcc==35||$npcc==49||$npcc==63){//【元帅戟】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
@@ -11827,11 +11827,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==12||$npcc==26||$npcc==40||$npcc==54||$npcc==68){//【元帅戟】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
@@ -12033,11 +12033,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==14||$npcc==28||$npcc==42||$npcc==56||$npcc==70){//【幻想枪Ⅰ】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
@@ -12202,11 +12202,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==99){//【诛仙战甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 
 

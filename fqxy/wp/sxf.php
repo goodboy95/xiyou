@@ -3,7 +3,7 @@
 
 $b=mb_strlen($yl,'UTF8'); 
 
-//include("wp/func1.php");
+//include_once("wp/func1.php");
 
 if ($b==1||$b==2||$b==3||$b==4) {
 //将数据分割为两

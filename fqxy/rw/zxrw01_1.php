@@ -169,7 +169,7 @@ if ($npcc == 1) {
         $jy = 500;
         include("./pz/ini_pzz023.php");
 // 增加代码后的提示信息
-        include("wj/ts.php");
+        // include("wj/ts.php");
 //任务进程改变
         $rwjc1 = 15;//任务进程id
         $rwjc2 = 0;//任务已杀怪
@@ -298,6 +298,11 @@ if ($npcc == 1) {
     $npcname = "调查洞穴～";
     if ($rid == 10) {
         echo "<font color=black>你在洞穴级巡视了一下，发现了一只大蟹精，赶快去向村长报告！</font>" . "<br>";
+        //快速任务
+        $ydx = 0;//移动坐标x
+        $ydy = 0;//移动坐标y
+        $ydfy = 100;//传送费用
+        include("./rw/ksrw.php");
 //银两加
         $yl1 = 1000;
         $wwpsl = $yl1;
@@ -336,8 +341,8 @@ if ($npcc == 1) {
         include("./rw/jxl.php");
     } elseif ($rid == 18) {
         $npcc11 = $npcc;//存值
-        $pd = 0;//初始
-        $wpts = "";//初始
+
+
 //提供需要扣除的物品作为判读依据
         $wpdz1[] = "船票";//名字
         $wpdz2[] = 6;//物品分类
@@ -394,8 +399,8 @@ if ($npcc == 1) {
     $npcname = "店小二";
     if ($rid == 21) {
         $npcc11 = $npcc;//存值
-        $pd = 0;//初始
-        $wpts = "";//初始
+
+
 //提供需要扣除的物品作为判读依据
         $wpdz1[] = "村长的信";//名字
         $wpdz2[] = 6;//物品分类
@@ -555,8 +560,8 @@ if ($npcc == 1) {
         include("./rw/ksrw.php");
     } elseif ($rid == 58) {
         $npcc11 = $npcc;//存值
-        $pd = 0;//初始
-        $wpts = "";//初始
+
+
 //提供需要扣除的物品作为判读依据
         $wpdz1[] = "解药";//名字
         $wpdz2[] = 6;//物品分类

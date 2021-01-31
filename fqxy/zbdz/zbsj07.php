@@ -5,11 +5,11 @@ if($npcc==1){
 
 } elseif($npcc==601||$npcc==602){//帝王
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
@@ -197,11 +197,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 } elseif($npcc==562||$npcc==563||$npcc==564||$npcc==565){//【镇东神兽】青龙☯神
 	
 	$zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
@@ -390,11 +390,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 } elseif($npcc==607||$npcc==608||$npcc==609||$npcc==610){//【天尊神兽】（青龙）
 	
 	$zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
@@ -580,11 +580,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==621||$npcc==622||$npcc==623||$npcc==624||$npcc==625||$npcc==626||$npcc==627||$npcc==628||$npcc==629||$npcc==630){//2级时装
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖时装碎片〗";//名字
@@ -763,11 +763,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==631||$npcc==632||$npcc==633||$npcc==634||$npcc==635||$npcc==636||$npcc==637||$npcc==638||$npcc==639||$npcc==640){//3级时装
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖时装碎片〗";//名字
@@ -946,11 +946,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==641||$npcc==642||$npcc==643||$npcc==644||$npcc==645||$npcc==646||$npcc==647||$npcc==648||$npcc==649||$npcc==650){//4级时装
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖时装碎片〗";//名字
@@ -1128,11 +1128,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==651||$npcc==652||$npcc==653||$npcc==654||$npcc==655||$npcc==656||$npcc==657||$npcc==658||$npcc==659||$npcc==660){//5级时装
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖时装碎片〗";//名字
@@ -1312,11 +1312,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 } elseif($npcc>=601&&$npcc<=602){//仙尊套
 	
 	$zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖仙佑石〗";//名字
@@ -1502,11 +1502,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 } elseif($npcc>=671&&$npcc<=680){//仙尊套
 	
 	$zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖神佑石〗";//名字
@@ -1698,11 +1698,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 } elseif($npcc>=681&&$npcc<=690){//仙尊套
 	
 	$zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖圣佑石〗";//名字
@@ -1896,11 +1896,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 } elseif($npcc>=691&&$npcc<=700){//仙尊套
 	
 	$zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖混沌天佑石〗";//名字

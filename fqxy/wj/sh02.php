@@ -1,6 +1,6 @@
 <?php
 //调用大数运算
-include("./wp/func1.php");
+include_once("./wp/func1.php");
 if ($jnidd == 1) {
     // 普攻
     $mppppd = 2;

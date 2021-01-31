@@ -49,7 +49,7 @@ $jnsh=1;
 }
 
 //调用大数运算
-include("./wp/func1.php");
+include_once("./wp/func1.php");
 
 if ($jnid==1) {
 

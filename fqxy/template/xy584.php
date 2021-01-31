@@ -35,13 +35,7 @@ $csbyq=1000;
 } else{	
 $csbyq=0;
 }	
-$pd=0;//初始
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
-$wpdz5="";//初始
+
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖碎银块〗";//名字
 $wpdz2[]=4;//物品分类
@@ -107,11 +101,7 @@ $result = mysqli_query($conn, $strsql);
 echo "<font color=black>失去〖红包〗x".$csbyq."</font>"."<br>";
 $manzu1="";
 $kcrl="";
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
-$wpdz5="";//初始
+
 //物品加
 $wpdz1[]="〖碎银块〗";//名字
 $wpdz2[]=4;//物品分类

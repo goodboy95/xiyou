@@ -94,7 +94,7 @@ header("Content-type: text/html; charset=utf-8");
         $file = $path . "/" . $inina;
         # 获取一个分类下某个子项的值
         $stime2 = ($iniFile->getItem('毫秒时间', '时间'));
-        include("./wp/funk1.php");
+        include_once("./wp/func1.php");
         $stime1 = calc($stime1, '1000', 'mul');
         $stime2 = calc($stime2, '1000', 'mul');
         $stime3 = calc($stime1, $stime2, 'sub');
@@ -191,12 +191,6 @@ header("Content-type: text/html; charset=utf-8");
             $xx = $y * 60 * 60 * 24 * 365 + $m * 60 * 60 * 24 * 30 + $d * 60 * 60 * 24 + $h * 60 * 60 + $i * 60 + $s;
             $yy = $b1 * 60 * 60 * 24 * 365 + $b2 * 60 * 60 * 24 * 30 + $b3 * 60 * 60 * 24 + $b4 * 60 * 60 + $b5 * 60 + $b6;
             $xxx = $xx - $yy;
-            //if($xxx <=1200){
-            //} else{
-            //    echo '#3';
-            //    include("sx.php");
-            //exit;/
-            //}
             //修改时间信息方便下次验证时间
             if ($cmd >= $xcid && $cmd <= $dcid || $cmd == 1) {
                 $cmdd = $cid;
@@ -243,11 +237,16 @@ header("Content-type: text/html; charset=utf-8");
             $clj[] = "";
             $cdid[] = "";
             //npc
+            $ddfz = 0;//初始
+            $pd = 0;//初始
+
             $wpdz1=[];//初始
             $wpdz2=[];//初始
             $wpdz3=[];//初始
             $wpdz4=[];//初始
             $wpdz5=[];//初始
+            $wpdz6=[];//初始
+            $wpdz7=[];//初始
             if ($cmdd >= 1 && $cmdd <= 100) {
                 include("xy01.php");
             } elseif ($cmdd >= 101 && $cmdd <= 200) {

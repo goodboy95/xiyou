@@ -6,11 +6,11 @@ if($npcc==1){
 
 } elseif($npcc==204){//【玄武手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -202,11 +202,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==209){//【玄武撼手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -403,11 +403,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==214){//【朱雀手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -628,11 +628,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==205){//【无极手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -824,11 +824,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==210){//【无极无道手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1025,11 +1025,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==215){//【太乙手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1245,11 +1245,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==201){//【龙鳞破天手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1435,11 +1435,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==206){//【青龙手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1631,11 +1631,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==211){//【青龙在天手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -1832,11 +1832,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==216){//【天龙手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2057,11 +2057,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==232){//【诛仙手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 
 
@@ -2286,11 +2286,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==202){//【伏虎降龙手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2478,11 +2478,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==207){//【金刚手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2676,11 +2676,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==212){//【怒目金刚手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -2880,11 +2880,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==217){//【罗汉手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3101,11 +3101,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==203){//【碧海青天手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3291,11 +3291,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==208){//【银沙手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3487,11 +3487,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==213){//【银沙瀚海手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3688,11 +3688,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 		
 } elseif($npcc==218){//【奔月手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -3910,11 +3910,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==235){//【共工护符】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4111,11 +4111,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==224){//【祝融戒指】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4311,11 +4311,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc ==219||$npcc ==220||$npcc ==221||$npcc ==222||$npcc ==223){//【祝融戒指】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4482,11 +4482,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 	
 } elseif($npcc==236){//【巨灵宝甲】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -4683,11 +4683,11 @@ echo "<font color=red>".$bumanzu."</font>"."<br>";
 
 } elseif($npcc==237){//【巨灵手镯】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 
@@ -5460,11 +5460,11 @@ include("./pz/ini_pzz029.php");//代用代码
 
 } elseif($npcc==234){//【幻想手镯Ⅰ】
 $zbidx=$npcc;//当前装备id赋值
-$wpts="";//初始	
-$wpdz1="";//初始
-$wpdz2="";//初始
-$wpdz3="";//初始
-$wpdz4="";//初始
+
+
+
+
+
 
 //提供需要扣除的物品作为判读依据
 $wpdz1[]="〖金豆〗";//名字
