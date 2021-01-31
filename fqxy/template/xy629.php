@@ -19,7 +19,6 @@ echo "<font color=red>恭喜你！！领取到了第".$mqlc."楼奖励！！</fo
 if($mqlc==10){   
 
 $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖银星升星符〗";//名字
@@ -58,7 +57,6 @@ include("./rwmap/rwget.php");
 
 } elseif($mqlc==20){   
 $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖金星升星符〗";//名字
@@ -87,7 +85,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==50){   
 $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖钻星升星符〗";//名字
@@ -118,7 +115,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==60){   
 $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖陨星升星符〗x1";//名字
@@ -149,7 +145,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==80){   
 $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="【金秋的思念】";//名字
@@ -180,7 +175,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==100){  
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖时装契约〗";//名字
@@ -211,7 +205,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==150){ 
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖诛仙令〗";//名字
@@ -243,7 +236,6 @@ include("./rwmap/rwget.php");
 
 } elseif($mqlc==200){   
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖1亿修炼经验丹〗";//名字
@@ -276,7 +268,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==300){   
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖5亿修炼经验丹〗";//名字
@@ -308,7 +299,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==400){   
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖10亿修炼经验丹〗";//名字
@@ -341,7 +331,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==500){   
  $manzu1="";
-$kcrl="";
 
 
 
@@ -377,7 +366,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==600){   
  $manzu1="";
-$kcrl="";
 
 
 
@@ -417,7 +405,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==700){   
  $manzu1="";
-$kcrl="";
 
 
 
@@ -457,7 +444,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==800){   
  $manzu1="";
-$kcrl="";
 
 
 
@@ -498,7 +484,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==900){   
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖10亿修炼经验丹〗";//名字
@@ -547,7 +532,6 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 } elseif($mqlc==1000){   
  $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖10亿修炼经验丹〗";//名字

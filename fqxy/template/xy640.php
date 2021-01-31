@@ -20,8 +20,7 @@ if ($zsspd == 1) {
     $npcc = $npcc11;//返还存值
     if ($pd == 2) {
         $manzu1 = "";
-        $kcrl = "";
-        $bz = rand(1, 250);
+                $bz = rand(1, 250);
         if ($bz >= 1 && $bz <= 30) {
             $bz = rand(1, 10);
 //物品加

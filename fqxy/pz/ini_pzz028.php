@@ -58,8 +58,7 @@ if ($mkk >= 1) {//改动
     }
     include("./pz/ini_pzz026.php");
     $manzu1 = "";
-    $kcrl = "";
-    $i = -1;
+        $i = -1;
     for ($x = 0; $x < $mkk; $x++) {
         $i = $i + 1;
         $sjwpsl1 = floor($clll[$i] / $sjcs);//改动

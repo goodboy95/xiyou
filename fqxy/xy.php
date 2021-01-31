@@ -237,16 +237,16 @@ header("Content-type: text/html; charset=utf-8");
             $clj[] = "";
             $cdid[] = "";
             //npc
-            $ddfz = 0;//初始
-            $pd = 0;//初始
-
-            $wpdz1=[];//初始
-            $wpdz2=[];//初始
-            $wpdz3=[];//初始
-            $wpdz4=[];//初始
-            $wpdz5=[];//初始
-            $wpdz6=[];//初始
-            $wpdz7=[];//初始
+            $ddfz = 0;
+            $pd = 0;
+            $kcrl = 0;
+            $wpdz1=[];
+            $wpdz2=[];
+            $wpdz3=[];
+            $wpdz4=[];
+            $wpdz5=[];
+            $wpdz6=[];
+            $wpdz7=[];
             if ($cmdd >= 1 && $cmdd <= 100) {
                 include("xy01.php");
             } elseif ($cmdd >= 101 && $cmdd <= 200) {
@@ -340,14 +340,6 @@ header("Content-type: text/html; charset=utf-8");
                     $i = $i + 1;
                 }
             }
-            //if($npcc==""){
-            //$npcc=0;
-            //}
-            //$strsql = "update $q2 set ymid=$q5,npccid=$npcc where id=0";//物品id号必改值
-            //$result = mysqli_query($conn, $strsql);
-            //if($ym==""){
-            //$ym=0;
-            //}
             $etime = microtime(true);
             $total = $etime - $stime;
             $total = substr($total, 0, 5) * 1000;
@@ -393,7 +385,6 @@ header("Content-type: text/html; charset=utf-8");
             echo "<font color=black>上次页面ID(最后页面id-页面id)：" . $yymid . "</font>" . "<br>";
             echo "<font color=black>本次页面ID(cmid值)：" . $symid . "</font>" . "<br>";
             echo "<font color=red>----------调试信息-----------</font>" . "<br>";
-        } else {
         }
     } else {
         echo '#5';

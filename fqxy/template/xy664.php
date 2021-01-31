@@ -53,7 +53,6 @@ if ($zsspd == 1) {
 //调用物品信息
                     include("./wp/wpxx.php");
                     $manzu1 = "";
-                    $kcrl = "";
 
 
 

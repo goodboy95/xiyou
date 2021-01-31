@@ -138,8 +138,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -292,8 +291,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -446,8 +444,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -600,8 +597,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -754,8 +750,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -908,8 +903,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -1062,8 +1056,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -1216,8 +1209,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -1372,8 +1364,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -1526,8 +1517,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -1682,8 +1672,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石
@@ -1836,8 +1825,7 @@ if ($zsspd == 1) {
 //背包容量变更
                 include("./pz/ini_pzz05.php");
 //这里是得到宝石代码
-                $kcrl = "";
-                $bsid = $bsid1;//宝石id
+                                $bsid = $bsid1;//宝石id
                 $bssl = $bssl1;//宝石数量
                 $wpzl = $bszl1;//	需要扣物品的重量
                 include("./pz/ini_pzz08.php");//得到宝石

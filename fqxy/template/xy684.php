@@ -41,8 +41,7 @@ if ($zsspd == 1) {
         $npcc = $npcc11;//返还存值
         if ($pd == 2) {
             $manzu1 = "";
-            $kcrl = "";
-            include("./ini/jcyx_ini.php");
+                        include("./ini/jcyx_ini.php");
             $jccs = ($iniFile->getItem('竞猜次数', '初始'));
             $jccs = $jccs + 10;
             $iniFile->updItem('竞猜次数', ['初始' => $jccs]);

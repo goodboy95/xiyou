@@ -47,7 +47,6 @@ $wwpfl=$wpfl;
 include("./pz/ini_pz01.php");
 include("./pz/ini_pzz022.php");
 
-$kcrl="";
 //背包容量变更加
 $kcrl=$sl*$wpzl+$kcrl;
 include("./pz/ini_pzz09.php");

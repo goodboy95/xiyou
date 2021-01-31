@@ -85,8 +85,7 @@ if ($date > $time1 && $date < $time2) {
                         echo "<font color=red>恭喜你！！领取到了【采花大盗】第" . $ik . "名奖励，请明天继续加油哦~~</font>" . "<br>";
                         if ($ik == 1) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -116,8 +115,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 2) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -147,8 +145,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 3) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -178,8 +175,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 4) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -204,8 +200,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 5) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -230,8 +225,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 6) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -256,8 +250,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 7) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -282,8 +275,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 8) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -302,8 +294,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 9) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id
@@ -317,8 +308,7 @@ if ($date > $time1 && $date < $time2) {
                             break;
                         } elseif ($ik == 10) {
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加量
+                            //物品加量
                             $wpdz1[] = "〖金豆〗";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 127;//物品id

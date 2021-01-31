@@ -100,7 +100,6 @@ $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);	
 echo "<font color=black>失去〖财神币〗x".$csbyq."</font>"."<br>";
 $manzu1="";
-$kcrl="";
 
 //物品加
 $wpdz1[]="〖金豆〗";//名字

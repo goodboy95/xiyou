@@ -2,7 +2,6 @@
 
 $dlwpts="";
 $manzu1="";
-$kcrl="";
 
 
 

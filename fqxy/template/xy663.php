@@ -36,8 +36,7 @@ if ($zsspd == 1) {
                     include("./sql/mysql.php");//调用数据库连接 
                     $wpsl = $zzwpsl * $zzdj * $bz;
                     $manzu1 = "";
-                    $kcrl = "";
-//物品加
+                    //物品加
                     $wpdz1[] = $wpmz;//名字
                     $wpdz2[] = $wpfl;//物品分类
                     $wpdz3[] = $zzwpid;//物品id

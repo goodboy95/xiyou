@@ -1,4 +1,5 @@
 <?php
+include("./sql/mysql.php");//调用数据库连接
 if ($npcc == 1) {
     echo "<font color=red>村长</font>" . "<br>";
 //cmd及超链接值
@@ -9,7 +10,6 @@ if ($npcc == 1) {
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击村长</font></a>" . "<br>";
     echo "<font color=black>村长：哎！老了，不管事了！</font>" . "<br>";
     include("./rwmap/rwpdd2.php");//调用一个npc同时有两个任务
-//
 } elseif ($npcc == 2) {
     echo "<font color=red>大宝</font>" . "<br>";
     echo "<font color=black>大宝看起来憨厚老实</font>" . "<br>";
@@ -19,7 +19,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击大宝</font></a>" . "<br>";
-//
 } elseif ($npcc == 3) {
     echo "<font color=red>南极仙翁</font>" . "<br>";
     echo "<font color=black>一位得道成仙的仙人！</font>" . "<br>";
@@ -29,7 +28,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击南极仙翁</font></a>" . "<br>";
-//
 } elseif ($npcc == 4) {
     echo "<font color=red>渔夫</font>" . "<br>";
 //cmd及超链接值
@@ -40,7 +38,6 @@ if ($npcc == 1) {
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击渔夫</font></a>" . "<br>";
     echo "<font color=black>看起来强壮很结实的渔夫！</font>" . "<br>";
     include("./rwmap/rwpdd2.php");//调用一个npc同时有两个任务
-//
 } elseif ($npcc == 5) {
     echo "<font color=red>小兰</font>" . "<br>";
     echo "<font color=black>一位活波可爱的小姑娘！</font>" . "<br>";
@@ -50,7 +47,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击小兰</font></a>" . "<br>";
-//
 } elseif ($npcc == 6) {
     echo "<font color=red>张二妈</font>" . "<br>";
 //cmd及超链接值
@@ -82,7 +78,6 @@ if ($npcc == 1) {
     $npc[] = 1;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>南城客栈</font></a>" . "<br>";
     echo "<br>";
-//
 } elseif ($npcc == 8) {
     echo "<font color=red>渔夫海生</font>" . "<br>";
     echo "<font color=black>经常在外打鱼的渔夫！</font>" . "<br>";;
@@ -92,7 +87,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击渔夫海生</font></a>" . "<br>";
-//
 } elseif ($npcc == 11) {
     echo "<font color=red>天璇星君</font>" . "<br>";
     echo "<font color=black>小仙卿,找老夫有何贵干？</font>" . "<br>";
@@ -102,9 +96,8 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = 11;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击天璇星君</font></a>" . "<br>";
-//
 } elseif ($npcc == 20) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc2.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -141,9 +134,8 @@ if ($npcc == 1) {
     $clj[] = 20;
     $npc[] = 169;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>宠物岛（宠物捕捉）</font></a>" . "<br>";
-//
 } elseif ($npcc == 21) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc1.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -262,7 +254,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 23) {
     $npcname = "财神爷";
     $npctake = "快来看看我这里的活动吧！";
@@ -274,7 +265,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 24) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -307,7 +297,6 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 25) {
     $npcname = "赏金猎人";
     $npctake = "我这里有很多赏金任务,完成后我会给你大量奖励~";
@@ -319,7 +308,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 26) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -352,7 +340,6 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 27) {
     $npcname = "【上古超级神兽】";
     $npctake = "我身上全是宝贝哦看你有没有本事来取了";
@@ -364,7 +351,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 28) {
     $npcname = "金甲侍卫";
     $npctake = "大胆，皇宫圣地禁止擅闯！！";
@@ -376,7 +362,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 29) {
     $npcname = "冰晶塔守卫";
 //$npctake="大胆，皇宫圣地禁止擅闯！！";
@@ -395,7 +380,6 @@ if ($npcc == 1) {
     $clj[] = 20;
     $npc[] = 115;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>冰晶塔</font></a>" . "<br>";
-//
 } elseif ($npcc == 30) {
     $npcname = "金甲卫士";
     $npctake = "八宝铜锤 锁子甲 战靴 黑铁盔";
@@ -407,7 +391,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 31) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -440,7 +423,6 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 32) {
     $npcname = "疥顶小僧";
     $npctake = "施主,小僧有礼了！";
@@ -452,7 +434,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 33) {
     $npcname = "西域商人";
     $npctake = "老夫游历天下数十载，还是长安城气势不凡！";
@@ -464,7 +445,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 34) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -497,7 +477,6 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 35) {
     $npcname = "通天仙官";
     $npctake = "我这里可以进行通天仙塔活动哦！";
@@ -542,9 +521,8 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 37) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc10.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -561,9 +539,8 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 38) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc11.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -580,7 +557,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 39) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -613,7 +589,6 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 40) {
     $npcname = "幸运大使";
     $npctake = "人这一生每天的运气都是不一样的，你快来看看你今天的运气怎么样吧！";
@@ -625,7 +600,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 41) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -658,7 +632,6 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 42) {
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -691,9 +664,8 @@ if ($npcc == 1) {
         echo "<font color=black>" . $npcname . "还未出售,可前往开封广场进行购买</font>" . "<br>";
     }
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 43) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc16.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -722,7 +694,6 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 45) {
     $npcname = "神算子";
     $npctake = "修道之人,一心向道,易生执念,执念一出,心魔便起,为祸世人;若想修道有所大成,需勇斩心魔";
@@ -758,9 +729,8 @@ if ($npcc == 1) {
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 48) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc3.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -799,10 +769,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 611;
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>做变性手术</font></a>" . "<br>";
-//
-//
 } elseif ($npcc == 49) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc3.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -819,7 +787,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 50) {
     $npcname = "千金赌场";
     $npctake = "系统维护中";
@@ -831,7 +798,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 51) {
     $npcname = "大剧场看西游大笑话";
     $npctake = "大剧场看西游大笑话正在紧张更新中.........";
@@ -843,7 +809,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 52) {
     $npcname = "打包保命丸";
     $npctake = "暂时不提供打包服务！";
@@ -855,7 +820,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 53) {
     $npcname = "保命丸升级";
     $npctake = "〖保命丸〗+〖金豆〗x2+500万两银子升级为〖中保命丸〗！";
@@ -867,9 +831,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 54) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc5.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -892,7 +855,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 246;
     $npc[] = 3;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>买东西</font></a>" . "<br>";
-//
 } elseif ($npcc == 55) {
     $npcname = "召唤怪物分身";
     $npctake = "【金兜大王·分身】";
@@ -904,7 +866,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 56) {
     $npcname = "召唤神仙下凡";
     $npctake = "召唤需要〖大寻妖镜〗x1或者每天10次机会已经用完！";
@@ -916,7 +877,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 57) {
     $npcname = "斗神台";
     $npctake = "暂时无法开启此活动！";
@@ -928,9 +888,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 58) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc4.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -947,7 +906,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 59) {
     $npcname = "【烟雨楼】";
     $npctake = "【烟雨楼】设计中";
@@ -959,7 +917,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 60) {
     $npcname = "大学士贺知章";
     $npctake = "学而时习之,不亦乐乎。有朋自远方来..小仙卿来找我干啥？";
@@ -983,15 +940,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>转门派<
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 62) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc5.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "大宰相.房玄龄";
     $npctake = "小仙卿仪表不凡，可要好好努力为天下百姓谋福利啊！";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1031,7 +987,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至�
 */
     echo "<font color=red>报名参战正在抓紧制作中</font>" . "<br>";
     echo "<br>";
-//
 } elseif ($npcc == 63) {
     $npcname = "【飞仙居】";
     $npctake = "【飞仙居】设计中";
@@ -1043,7 +998,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 64) {
     $npcname = "武状元选拔大赛活动";
     $npctake = "设计中";
@@ -1055,7 +1009,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 65) {
     $npcname = "御林军校尉";
     $npctake = "大胆，皇宫圣地禁御林军校尉止擅闯！";
@@ -1067,7 +1020,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 66) {
     $npcname = "30金豆兑换〖共工护符〗";
     $npctake = "确定兑换设计中";
@@ -1079,7 +1031,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 67) {
     $npcname = "1金豆兑换〖英雄牌〗x5";
     $npctake = "1金豆兑换〖英雄牌〗x5二次确定！设计中";
@@ -1091,7 +1042,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 68) {
     $npcname = "【许愿池】";
     $npctake = "许愿池下诚心许愿，包你实现各种愿望";
@@ -1138,7 +1088,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 69) {
     $npcname = "最新活动列表";
     $npctake = "设计中";
@@ -1217,7 +1166,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 74) {
     $npcname = "大唐国师";
     $npctake = "神机妙算，在开国战争中立下不朽功劳。亲爱的玩家每天在我这可以进行每日国家任务哦！";
@@ -1322,7 +1270,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
         echo "<font color=red>你还未加入任何国家！！（需加入国家后才可领取）</font><br>";
     }
 } elseif ($npcc == 75) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc6.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1345,7 +1293,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 246;
     $npc[] = 1;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>买东西</font></a>" . "<br>";
-//
 } elseif ($npcc == 76) {
     $npcname = "存取物品";
     $npctake = "设计中";
@@ -1357,7 +1304,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 77) {
     $npcname = "钱庄掌柜·铁算盘";
     $npctake = "你这是要存钱还是取钱？";
@@ -1376,7 +1322,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>存取银两</font></a>" . "<br>";
 } elseif ($npcc == 78) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc38.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1393,7 +1339,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 79) {
     $npcname = "殷夫人";
     $npctake = "镖头萧升的夫人";
@@ -1405,15 +1350,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 80) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc42.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "官府告示";
     $npctake = "官府的告示锁放置地方！";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1424,9 +1368,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 81) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc43.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1443,7 +1386,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 82) {
     $npcname = "牢头";
     $npctake = "看管犯人的牢头，听说很贪财！";
@@ -1455,7 +1397,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
     include("./ini/zt_ini.php");
     $pkzzz = ($iniFile->getItem('玩家信息', '恶名值'));
     if ($pkzzz >= 1) {
@@ -1512,7 +1453,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
         echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
     }
 } elseif ($npcc == 83) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc8.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1529,9 +1470,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 84) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc40.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1548,7 +1488,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 85) {
     $npcname = "还愿!（开PK）";
     $npctake = "在我寺还愿可了却心念，坦然面对世间祸福劫难！施主可要考虑清楚了！（开启PK，现实时间1天内无法关闭）";
@@ -1560,7 +1499,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 86) {
     $npcname = "上香!（关PK）";
     $npctake = "在我寺还愿可了却心念，坦然面对世间祸福劫难！施主可要考虑清楚了！（开启PK，现实时间1天内无法关闭）";
@@ -1572,7 +1510,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 87) {
     $npcname = "大和尚";
     $npctake = "身穿僧袍 长筒靴 牛皮帽";
@@ -1584,7 +1521,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 88) {
     $npcname = "游方僧人";
     $npctake = "身穿浑铁杖 僧袍 长筒靴 牛皮帽<";
@@ -1596,7 +1532,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 89) {
     $npcname = "法明长老";
     $npctake = "身穿龙头杖 护法袈裟 行僧靴";
@@ -1608,9 +1543,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 90) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc31.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1633,9 +1567,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 246;
     $npc[] = 4;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>买东西</font></a>" . "<br>";
-//
 } elseif ($npcc == 91) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc32.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1652,15 +1585,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 92) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc33.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "小女孩";
     $npctake = "在小巷子玩耍的小孩";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1671,9 +1603,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 93) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc34.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1690,9 +1621,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 94) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc35.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1709,9 +1639,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 95) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc4.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1728,15 +1657,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 96) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc35.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "许愿女";
     $npctake = "我还有好多愿望没实现了";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1747,15 +1675,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 97) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc10.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "庙祝";
     $npctake = "一个老弱的庙祝，一阵风似乎都可以把他吹倒。";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1766,15 +1693,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 98) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc36.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "袁守诚";
     $npctake = "他就是当朝钦天监台正先生袁天罡的叔父，给人算命，十分厉害。";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1785,15 +1711,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 99) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc37.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "白衣秀士";
     $npctake = "一位风流书生，不过他看起来好像有满腹心事。";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1805,7 +1730,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 100) {
     $npcname = "古董老板";
     $npctake = "这位客官你需要什么？";
@@ -1817,9 +1741,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 101) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc38.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1836,9 +1759,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 102) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc39.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1855,15 +1777,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 103) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc28.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "小流氓";
     $npctake = "背阴巷的小流氓";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1874,15 +1795,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 104) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc29.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "穷汉";
     $npctake = "一个近六旬的穷汉";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -1893,9 +1813,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 105) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc27.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1912,9 +1831,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 106) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc26.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1931,9 +1849,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 107) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc25.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -1950,7 +1867,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 108) {
     $npcname = "大公鸡";
     $npctake = "咕~~咕~咕~";
@@ -1962,7 +1878,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 109) {
     $npcname = "中年妇女";
     $npctake = "一位年长的妇女";
@@ -1974,7 +1889,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 110) {
     $npcname = "丰永贵";
     $npctake = "牛皮靴 硬木盔";
@@ -1986,7 +1900,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 111) {
     $npcname = "打手";
     $npctake = "哪里来的野小子?快滚,否则对的不客气了!";
@@ -2010,15 +1923,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 113) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc6.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "老板魏录齐";
     $npctake = "老板魏录齐：你需要点什么呢?";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -2031,13 +1943,13 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
 //	  
 } elseif ($npcc == 114) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc8.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "王小二";
     $npctake = "客官有什么需要吗?";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -2048,15 +1960,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 115) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc30.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "苦力";
     $npctake = "一天没日没夜的干着活";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -2067,7 +1978,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 116) {
     $npcname = "李玉娘";
     $npctake = "貌美如花的李玉娘";
@@ -2091,7 +2001,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 118) {
     $npcname = "戴文重";
     $npctake = "这里可以进行拍卖或购买的地方";
@@ -2105,7 +2014,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
 //	  
 } elseif ($npcc == 119) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc13.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2122,9 +2031,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 120) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc17.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2153,7 +2061,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 122) {
     $npcname = "秦琼";
     $npctake = "秦琼是九门提督。";
@@ -2165,7 +2072,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 123) {
     $npcname = "白发老人";
     $npctake = "小仙卿～根骨奇佳～当真是块练武的好材料！（打造初级师门武器及60级初级白虎套装）";
@@ -2227,7 +2133,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 91;
     $npc[] = 7;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>" . "<br>";
-//
 } elseif ($npcc == 124) {
     $npcname = "罗成(拜师)";
     $npctake = "罗成是开国元勋之一。";
@@ -2239,7 +2144,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 125) {
     $npcname = "程咬金";
     $npctake = "程咬金是国老。";
@@ -2263,9 +2167,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 127) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc19.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2282,9 +2185,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 128) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc20.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2301,9 +2203,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 129) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc21.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2320,7 +2221,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 130) {
     $npcname = "汗血宝马";
     $npctake = "汗血宝马";
@@ -2332,9 +2232,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 131) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc18.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2351,7 +2250,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 132) {
     $npcname = "背水客";
     $npctake = "一个在曲江池里背水贩卖为生的人。";
@@ -2363,7 +2261,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 133) {
     $npcname = "僧人";
     $npctake = "慈恩寺里的和尚。";
@@ -2375,7 +2272,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 134) {
     $npcname = "慈恩法师(门派转换)";
     $npctake = "慈恩寺里的住持";
@@ -2387,7 +2283,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 135) {
     $npcname = "洗衣少女";
     $npctake = "一个在曲江池里洗衣服的少女。";
@@ -2399,7 +2294,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 136) {
     $npcname = "赏花公子";
     $npctake = "实际上是来曲江池赏美女的";
@@ -2411,15 +2305,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 137) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc24.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "守泉仙女";
     $npctake = "在此守仙泉的仙女，生得美丽绝伦。";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -2430,7 +2323,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 138) {
     $npcname = "仙童";
     $npctake = "一个生的眉清目秀的仙童";
@@ -2442,7 +2334,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 139) {
     echo "<font color=red>石碑</font>" . "<br>";
     echo "<font color=black>《子夜吴歌》 </font>" . "<br>";
@@ -2456,7 +2347,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 140) {
     echo "<font color=red>石碑</font>" . "<br>";
     echo "<font color=black>《江雪》 柳宗元</font>" . "<br>";
@@ -2470,9 +2360,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 141) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc14.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2489,9 +2378,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 142) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc14.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2508,9 +2396,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 143) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc23.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2527,9 +2414,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 144) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc22.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2570,13 +2456,13 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
             }
         }
     }
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc8.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     echo "<font color=red>店小二</font>" . "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
@@ -2596,7 +2482,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
         }
     }
     echo "<font color=black>南城客栈的小二，卖些稀有的补品。</font>" . "<br>";
-//
 } elseif ($npcc == 147) {
     $q2 = "yl" . $fqidd;
     $sql1 = mysqli_query($conn, "select * from $q2 where id=0");
@@ -2623,7 +2508,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 148) {
     $npcname = "存取物品";
     $npctake = "存取物品设计中";
@@ -2637,7 +2521,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
 //	
 } elseif ($npcc == 149) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc6.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2654,9 +2538,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 150) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc7.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2673,7 +2556,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 151) {
     $npcname = "裁缝店老板";
     $npctake = "想合成装备可以找我啊！";
@@ -2685,7 +2567,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 152) {
     $npcname = "守门僧";
     $npctake = "你想进入雷音寺吗？";
@@ -2703,7 +2584,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 129;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【小雷音寺】</font></a>" . "<br>";
-//
 } elseif ($npcc == 153) {
     $npctake = "你乘着船在海上漂流了很久很久...";
     echo "<font color=black>$npctake</font>" . "<br>";
@@ -2716,7 +2596,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $npc[] = 0;
     $npc[] = 136;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>" . "<br>";
-//
 } elseif ($npcc == 154) {
     $npcname = "巨角犀怪";
     $npctake = "巨角犀怪";
@@ -2728,7 +2607,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 155) {
     $npctake = "你乘着船在海上漂流了很久很久...";
     echo "<font color=black>$npctake</font>" . "<br>";
@@ -2741,7 +2619,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $npc[] = 0;
     $npc[] = 137;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>" . "<br>";
-//
 } elseif ($npcc == 156) {
     $npctake = "你走进了棺材，黑暗暗的一直往前走也不知道到了哪里！...";
     echo "<font color=black>$npctake</font>" . "<br>";
@@ -2754,7 +2631,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $npc[] = 0;
     $npc[] = 138;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>" . "<br>";
-//
 } elseif ($npcc == 157) {
     $npcname = "潜入泾水河底";
     $npctake = "潜入泾水河底设计中";
@@ -2766,7 +2642,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 158) {
     $npcname = "渡船(往普陀山)";
     $npctake = "渡船(往普陀山)设计中";
@@ -2778,7 +2653,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 159) {
     $npcname = "渡船(往灵异岛)";
     $npctake = "通道封印中";
@@ -2790,7 +2664,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 160) {
     $npcname = "城南荒野(区域)";
     $npctake = "城南荒野(区域)设计中";
@@ -2802,7 +2675,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 161) {
     $npcname = "棺材";
     $npctake = "棺材设计中";
@@ -2814,7 +2686,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 162) {
     $npcname = "进入修罗地狱";
     $npctake = "进入修罗地狱设计中";
@@ -2826,9 +2697,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 163) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc12.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2845,7 +2715,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 164) {
     $npcname = "盗墓者";
     $npctake = "盗墓者：我盗过许多古墓了，就是这修罗炼狱不敢进去，你敢进去的话我可以卖工具给你。";
@@ -2857,7 +2726,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 165) {
     $npcname = "士兵魂";
     $npctake = "士兵的魂魄在这皇陵游荡";
@@ -2869,7 +2737,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 166) {
     $npcname = "将军魂";
     $npctake = "将军的魂魄在这皇陵游荡";
@@ -2893,7 +2760,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 168) {
     $npcname = "东海渔村";
     $npctake = "东海渔村设计中";
@@ -2905,9 +2771,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 169) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc45.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2924,9 +2789,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 170) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc46.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -2943,15 +2807,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 171) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc44.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "龙宫大弟子";
     $npctake = "小仙卿面目清秀，根骨不俗，要是入我龙宫早晚能成为龙族";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -2981,7 +2844,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 23;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>海底莽林</font></a>" . "<br>";
-//
 } elseif ($npcc == 172) {
     $npcname = "宫娥";
     $npctake = "一位漂亮的宫娥。";
@@ -2993,7 +2855,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 173) {
     $npcname = "乌鲸力士";
     $npctake = "力大无穷的鲸鱼精。";
@@ -3005,15 +2866,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 174) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc49.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "鲸无敌";
     $npctake = "龙宫的将军鲸无敌。";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -3024,7 +2884,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 175) {
     $npcname = "金背海马";
     $npctake = "龙宫的金背海马。";
@@ -3036,7 +2895,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 176) {
     $npcname = "敖广";
     $npctake = "敖广是东海的龙王，其兄弟分别掌管东，南，西，北四海。";
@@ -3048,7 +2906,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 177) {
     $npcname = "龙婆";
     $npctake = "龙王的老婆，东海的太后";
@@ -3060,7 +2917,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 178) {
     $npcname = "霸下";
     $npctake = "龙王九子之霸下。";
@@ -3072,7 +2928,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 179) {
     $npcname = "龟八斗";
     $npctake = "龙宫里的军师，充满智慧。（打造初级师门武器及60级初级龙鳞套装）";
@@ -3134,9 +2989,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 91;
     $npc[] = 14;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>" . "<br>";
-//
 } elseif ($npcc == 180) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc47.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3153,9 +3007,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 181) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc47.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3172,9 +3025,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 182) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc47.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3191,15 +3043,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 183) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc47.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "龙王九子之睚眦";
     $npctake = "父王真软弱，海底莽林的龙族异类越来越猖狂！换了我早把他们赶尽杀绝了！";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -3210,7 +3061,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 184) {
     $npcname = "宫女";
     $npctake = "一个漂亮的宫女，专门服侍龙女的。";
@@ -3222,9 +3072,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 185) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc48.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3241,7 +3090,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 186) {
     $npcname = "贝嫂";
     $npctake = "一位漂亮的贝壳精，龙女身边的仆人。";
@@ -3253,7 +3101,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 187) {
     $npcname = "小虾米";
     $npctake = "一弹~又弹~再弹~";
@@ -3265,7 +3112,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 188) {
     $npcname = "采贝人";
     $npctake = "在海滨拾贝的采贝人，正在海边休息。";
@@ -3277,7 +3123,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 189) {
     $npcname = "月宫管家麻姑";
     $npctake = "月宫虽然深居世外，但是也一样食人间烟火，不能免俗～（打造初级师门武器及60级初级碧海套装）";
@@ -3339,7 +3184,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 91;
     $npc[] = 21;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>" . "<br>";
-//
 } elseif ($npcc == 190) {
     $npcname = "痴梦仙姑";
     $npctake = "痴梦仙姑不受金银之谢，但遇有缘者渡之！";
@@ -3364,7 +3208,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 40;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>傲来国</font></a>" . "<br>";
-//
 } elseif ($npcc == 191) {
     $npcname = "舞仙";
     $npctake = "月宫的舞仙";
@@ -3376,7 +3219,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 192) {
     $npcname = "西王母";
     $npctake = "传说西王母是元始天尊的女儿，三界十方的女仙都是她的下属";
@@ -3388,7 +3230,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 193) {
     $npcname = "玉女";
     $npctake = "西王母身边的玉女";
@@ -3400,7 +3241,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 194) {
     $npcname = "侍女润花";
     $npctake = "王母娘娘的随身侍女，现在是月宫里的仙子";
@@ -3412,7 +3252,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 195) {
     $npcname = "伺女锄药";
     $npctake = "这昆仑山上有不少名贵药材，月宫里也种的不少～都要精心料理";
@@ -3424,7 +3263,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 196) {
     $npcname = "嫦娥";
     $npctake = "嫦娥舞技精湛，尤盛其师";
@@ -3436,7 +3274,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 197) {
     $npcname = "玉兔";
     $npctake = "它是嫦娥的宠物";
@@ -3448,7 +3285,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 198) {
     $npcname = "织女";
     $npctake = "西王母的外甥女。因私自下凡与牛郎相爱，被罚银河永隔";
@@ -3460,7 +3296,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 199) {
     $npcname = "伺女抚琴";
     $npctake = "平常没事的时候，姐妹们便会互相切磋琴艺，我还要再多练练～";
@@ -3472,7 +3307,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 200) {
     $npcname = "桂花树";
     $npctake = "月宫桂花树";
@@ -3484,9 +3318,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 201) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc50.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3522,9 +3355,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 43;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>高家庄</font></a>" . "<br>";
-//
 } elseif ($npcc == 202) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc52.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3541,7 +3373,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 203) {
     $npcname = "小天师云阳真人";
     $npctake = "方寸山总管，壮年时降魔除妖无数";
@@ -3553,7 +3384,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 204) {
     $npcname = "清风道长";
     $npctake = "你找我有什么事？";
@@ -3565,15 +3395,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 205) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc56.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "菩提祖师";
     $npctake = "天下万物皆有道，道生则万物生，道灭则万物灭！";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -3584,15 +3413,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 206) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc57.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "青衣道童";
     $npctake = "仙卿请留步～此地乃祖师清修之地，无事请回！";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -3603,9 +3431,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 207) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc57.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3622,7 +3449,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 208) {
     $npcname = "老道士";
     $npctake = "悟道不分大小，没有先后，完全是看个人的悟性！（打造初级师门武器及60级初级七星套装）";
@@ -3684,7 +3510,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 91;
     $npc[] = 28;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>" . "<br>";
-//
 } elseif ($npcc == 209) {
     $npcname = "仙鹿";
     $npctake = "方寸山的仙鹿";
@@ -3696,9 +3521,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 210) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc51.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3715,9 +3539,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 211) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc58.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3753,9 +3576,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 46;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>紫竹北林(1000两)</font></a>" . "<br>";
-//
 } elseif ($npcc == 212) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc58.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3772,9 +3594,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 213) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc60.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3841,9 +3662,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 91;
     $npc[] = 35;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>" . "<br>";
-//
 } elseif ($npcc == 214) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc61.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3860,7 +3680,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 215) {
     $npcname = "【紫竹林】";
     $npctake = "【紫竹林】设计中";
@@ -3872,9 +3691,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 216) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc59.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3891,9 +3709,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 217) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc59.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3910,7 +3727,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 218) {
     $npcname = "出海";
     $npctake = "出海设计中";
@@ -3922,7 +3738,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 219) {
     $npcname = "听经石";
     $npctake = "石头上刻着一首诗：" . "<br>" . "见说盘陀著地灵" . "<br>" . "普门曾此坐谈经" . "<br>" . "二龟何事翻成石" . "<br>" . "想是当年不解听";
@@ -3934,9 +3749,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 220) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc62.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3972,9 +3786,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 49;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>方寸山(免费)</font></a>" . "<br>";
-//
 } elseif ($npcc == 221) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc63.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -3991,9 +3804,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 222) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc64.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -4010,7 +3822,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 223) {
     $npcname = "老板娘胖嫂";
     $npctake = "刘家布店老板，卖些自家做的衣服";
@@ -4022,9 +3833,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 224) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc34.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -4041,7 +3851,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 225) {
     $npcname = "烈炽灵狐";
     $npctake = "烈炽灵狐";
@@ -4053,7 +3862,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 226) {
     $npcname = "孟婆";
     $npctake = "喝过孟婆我用年轻时的青丝及这桥下的滚滚江水煮好的汤，忘记世间的一切，何必和那些亡魂一样变成孤魂野鬼呢？";
@@ -4065,7 +3873,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 227) {
     $npcname = "烈炽灵狐";
     $npctake = "烈炽灵狐";
@@ -4077,7 +3884,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 228) {
     $npcname = "钟馗(抓鬼)";
     $npctake = "现在恶鬼四处逃窜，你若能帮我消灭，我定将奖励你价值不菲的鬼灵珠";
@@ -4089,7 +3895,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 229) {
     $npcname = "烈炽灵狐";
     $npctake = "烈炽灵狐";
@@ -4131,7 +3936,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 38;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>鸟嘴元帅府</font></a>" . "<br>";
-//
 } elseif ($npcc == 231) {
     $npcname = "牛头";
     $npctake = "不管是杀恶鬼，还是度亡魂，都可以获得功德值";
@@ -4143,7 +3947,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 232) {
     $npcname = "马面";
     $npctake = "不管是杀恶鬼，还是度亡魂，都可以获得功德值";
@@ -4155,7 +3958,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 233) {
     $npcname = "烈炽灵狐";
     $npctake = "烈炽灵狐";
@@ -4177,7 +3979,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 236) {
     $npcname = "【勾魂】兑换【勾魂鬼玉】";
     $npctake = "【勾魂】兑换【勾魂鬼玉】设计中";
@@ -4189,7 +3990,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 237) {
     $npcname = "【引魄】兑换【引魄鬼玉】";
     $npctake = "【引魄】兑换【引魄鬼玉】设计中";
@@ -4201,7 +4001,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 238) {
     $npcname = "阎罗王";
     $npctake = "本王掌管着阴间的生杀大权，你若前世造了孽，本王必定把你打入一层、二层、三层......十八层地狱.....嗯，你阳寿未尽，还是速速离去吧！不要逼我哦！";
@@ -4213,7 +4012,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 239) {
     $npcname = "地藏王";
     $npctake = "眼见亡魂无处可归，着实让我心痛，不知道道友是否能将那些混混僵僵的亡魂带来，此乃功德无量的大好事啊";
@@ -4225,7 +4023,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 240) {
     $npcname = "【轮转玄居】";
     $npctake = "【轮转玄居】设计中";
@@ -4237,7 +4034,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 241) {
     $npcname = "〖金豆〗兑换宠物2次转生道具";
     $npctake = "〖金豆〗兑换宠物2次转生道具设计中";
@@ -4249,7 +4045,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 242) {
     $npcname = "兑换宠物2次转生道具";
     $npctake = "兑换宠物2次转生道具设计中";
@@ -4261,7 +4056,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 243) {
     $npcname = "轮转王";
     $npctake = "你阳寿未尽，还是速速离去吧！不要逼我哦！";
@@ -4273,7 +4067,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 244) {
     $npcname = "望乡台守卫";
     $npctake = "望乡台是亡魂看望家乡的地方，你到这做什么？";
@@ -4285,7 +4078,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 245) {
     $npcname = "夜游鬼";
     $npctake = "有钱能使鬼推磨不是假的！" . "<br>" . "夜游鬼：这枉死城冤气甚重，你真的要过去吗？我可以把你传送到晚上的枉死城去，现在那里极度危险！你确定要去那里吗？";
@@ -4304,7 +4096,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 111;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【枉死城】</font></a>" . "<br>";
-//
 } elseif ($npcc == 246) {
     $npcname = "白无常";
     $npctake = "世人都说：“喜荣华正好，恨无常又到”" . "<br>" . "你阳寿未尽，我小白先不和你一般计较了！";
@@ -4316,7 +4107,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 247) {
     $npcname = "黑无常";
     $npctake = "世人都说：“喜荣华正好，恨无常又到”" . "<br>" . "你阳寿未尽，我小黑先不和你一般计较了！";
@@ -4328,7 +4118,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 248) {
     $npcname = "【飞升居】";
     $npctake = "【飞升居】设计中";
@@ -4340,7 +4129,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
     //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 249) {
     $npcname = "接引仙子";
     $npctake = "我在这里就是为了接引各位初临仙界的小仙友！";
@@ -4383,7 +4171,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 20;
     $npc[] = 54;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>斩妖台(副本)</font></a>" . "<br>";
-//
 } elseif ($npcc == 250) {
     $npcname = "【招财进宝】";
     $npctake = "【招财进宝】设计中";
@@ -4395,7 +4182,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 251) {
     $npcname = "织女";
     $npctake = "纤云弄巧，飞星传恨，迢迢暗渡。金风玉露一相逢，便胜却人间无数。";
@@ -4407,7 +4193,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 252) {
     $npcname = "逆央神卫";
     $npctake = "掌管逆央仙境入口的守卫。";
@@ -4419,7 +4204,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 253) {
     $npcname = "【天元居】";
     $npctake = "【天元居】设计中";
@@ -4431,7 +4215,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 254) {
     $npcname = "拍卖行";
     $npctake = "拍卖行设计中";
@@ -4443,7 +4226,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 255) {
     $npcname = "太白金星";
     $npctake = "太白金星：小仙卿，是不是遇到了瓶颈，来找我那就对了！";
@@ -4455,7 +4237,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 256) {
     $npcname = "【凌霄宝殿】";
     $npctake = "【凌霄宝殿】设计中";
@@ -4467,7 +4248,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 257) {
     $npcname = "玉皇大帝";
     $npctake = "三界之帝，维护三界次序，身着金丝黄袍，闪闪发光。";
@@ -4479,7 +4259,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 258) {
     $npcname = "王母娘娘";
     $npctake = "玉帝的老婆，生性多嫉，对嫦娥充满仇恨。";
@@ -4491,7 +4270,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 259) {
     $npcname = "紫衣仙女";
     $npctake = "一个打扫王母住处的仙女。";
@@ -4503,7 +4281,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 260) {
     $npcname = "【三生三世】";
     $npctake = "【三生三世】设计中";
@@ -4515,7 +4292,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 261) {
     $npcname = "金童";
     $npctake = "你找我有什么事情吗？";
@@ -4527,7 +4303,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 262) {
     $npcname = "玉女";
     $npctake = "你找我有什么事情吗？";
@@ -4539,7 +4314,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 263) {
     $npcname = "【封神居】";
     $npctake = "【封神居】设计中";
@@ -4551,7 +4325,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 264) {
     $npcname = "姜子牙";
     $npctake = "主管封神的阐教弟子！";
@@ -4563,7 +4336,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 265) {
     $npcname = "土行孙";
     $npctake = "封神之战中幸存下来的修仙者。";
@@ -4575,7 +4347,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 266) {
     $npcname = "三清道人";
     $npctake = "混沌大阵是远古众神魔的试练之地，，实力不足者到此即可领取奖励离开";
@@ -4587,7 +4358,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 267) {
     $npcname = "神瑛侍卫";
     $npctake = "紫薇宫的守卫";
@@ -4599,7 +4369,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 268) {
     $npcname = "灵虚子";
     $npctake = "你找我有什么事情？";
@@ -4611,7 +4380,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 269) {
     $npcname = "马场主簿";
     $npctake = "马场管事的";
@@ -4623,7 +4391,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 270) {
     $npcname = "进入【蟠桃园】";
     $npctake = "进入【蟠桃园】设计中";
@@ -4635,7 +4402,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 271) {
     $npcname = "百花仙子";
     $npctake = "你找我有什么事情吗？";
@@ -4647,7 +4413,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 272) {
     $npcname = "进入【瑶池】";
     $npctake = "进入【瑶池】设计中";
@@ -4659,7 +4424,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 273) {
     $npcname = "2金豆兑换瑶池仙露";
     $npctake = "2金豆兑换瑶池仙露设计中";
@@ -4671,7 +4435,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 274) {
     $npcname = "【激活瑶池副本】";
     $npctake = "【激活瑶池副本】设计中";
@@ -4683,7 +4446,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 275) {
     $npcname = "进入【老君炉】";
     $npctake = "进入【老君炉】设计中";
@@ -4695,7 +4457,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 276) {
     $npcname = "太上老君";
     $npctake = "天地间最牛叉的炼丹大师。";
@@ -4707,7 +4468,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 277) {
     $npcname = "银角童子";
     $npctake = "太上老君的炼丹童子。";
@@ -4719,7 +4479,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 278) {
     $npcname = "金角童子";
     $npctake = "太上老君的炼丹童子。";
@@ -4731,7 +4490,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 279) {
     $npcname = "进入【斩妖台】";
     $npctake = "进入【斩妖台】设计中";
@@ -4743,7 +4501,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 280) {
     $npcname = "电母";
     $npctake = "电是一个奇特的东西。";
@@ -4755,7 +4512,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 281) {
     $npcname = "雷公";
     $npctake = "一个造型奇特的人";
@@ -4767,7 +4523,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 282) {
     $npcname = "李公明";
     $npctake = "你是来加入截教的吗？";
@@ -4779,7 +4534,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 283) {
     $npcname = "医神.华佗";
     $npctake = "华佗：悬壶济世乃行医者的本分！";
@@ -4791,7 +4545,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 284) {
     $npcname = "宝石升级";
     $npctake = "宝石升级设计中";
@@ -4803,7 +4556,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 285) {
     $npcname = "宝石分解";
     $npctake = "宝石分解设计中";
@@ -4815,7 +4567,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 286) {
     $npcname = "守护天神";
     $npctake = "每个人都有神灵为其默默守护，你愿意将你的守护请回去吗？";
@@ -4827,7 +4578,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 287) {
     $npcname = "文昌星君";
     $npctake = "此处是为仙界，尔等不可造次。";
@@ -4839,7 +4589,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 288) {
     $npcname = "太乙真人";
     $npctake = "好久没跟菩提老祖下棋了！";
@@ -4851,7 +4600,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 289) {
     $npcname = "李天王";
     $npctake = "你是来加入阐教的吗？";
@@ -4863,7 +4611,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 290) {
     $npcname = "天庭神匠";
     $npctake = "技艺高超的打铁师傅，曾经打造过万千神兵。";
@@ -4883,7 +4630,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要�
     $clj[] = 91;
     $npc[] = 36;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-//
 } elseif ($npcc == 291) {
     $npcname = "金顶大仙";
     $npctake = "主管坐骑的仙人。";
@@ -4969,7 +4715,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 91;
     $npc[] = 46;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-//
 } elseif ($npcc == 292) {
     $npcname = "伏羲传人";
     $npctake = "上古伏羲的再传弟子。";
@@ -4981,7 +4726,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 293) {
     $npcname = "哪吒三太子";
     $npctake = "仙界太闷了，还是两个哥哥自由自在！";
@@ -4993,7 +4737,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 294) {
     $npcname = "顺风耳";
     $npctake = "别说我坏话，我听着呢！";
@@ -5005,7 +4748,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 295) {
     $npcname = "千里眼";
     $npctake = "别做坏事，我看着呢！";
@@ -5017,7 +4759,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 296) {
     $npcname = "西王母";
     $npctake = "传说西王母这里能够挑选一件如意的披风哦。";
@@ -5067,7 +4808,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 26;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>水帘洞天(副本)</font></a>" . "<br>";
-//
 } elseif ($npcc == 298) {
     $npcname = "游方道人";
     $npctake = "一个游历天下的道人";
@@ -5079,7 +4819,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 299) {
     $npcname = "东方寒雨";
     $npctake = "武馆馆主东方寒雨";
@@ -5091,7 +4830,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 300) {
     $npcname = "阿七婆";
     $npctake = "我在傲来国已经生活一辈子了，真想去长安看看啊！";
@@ -5103,7 +4841,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 301) {
     $npcname = "山神";
     $npctake = "我就是这花果山的山神";
@@ -5115,7 +4852,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 302) {
     $npcname = "进入【水帘洞】";
     $npctake = "进入【水帘洞】设计中";
@@ -5127,7 +4863,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 303) {
     $npcname = "激活水帘洞天副本【普通】";
     $npctake = "激活水帘洞天副本【普通】设计中";
@@ -5139,7 +4874,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 304) {
     $npcname = "激活水帘洞天副本【困难】";
     $npctake = "激活水帘洞天副本【困难】设计中";
@@ -5151,7 +4885,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 305) {
     $npcname = "激活水帘洞天副本【梦魇】";
     $npctake = "激活水帘洞天副本【梦魇】设计中";
@@ -5163,7 +4896,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 306) {
     $npcname = "打造师门武器";
     $npctake = "打造师门武器设计中";
@@ -5175,7 +4907,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 307) {
     $npcname = "1金豆兑换【东海神铁】";
     $npctake = "1金豆兑换【东海神铁】设计中";
@@ -5187,7 +4918,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 308) {
     $npcname = "驿站驿官";
 //$npctake="你想要去哪里？";
@@ -5218,7 +4948,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 57;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>水帘洞天(副本)</font></a>" . "<br>";
-//
 } elseif ($npcc == 309) {
     $npcname = "进入车迟国";
     $npctake = "进入车迟国设计中";
@@ -5230,7 +4959,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 310) {
     $npcname = "进入【压龙山】";
     $npctake = "进入【压龙山】设计中";
@@ -5242,7 +4970,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 311) {
     $npcname = "进入【平顶山】";
     $npctake = "进入【平顶山】设计中";
@@ -5254,7 +4981,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 312) {
     $npcname = "进入【桃林】";
     $npctake = "进入【桃林】设计中";
@@ -5266,7 +4992,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 313) {
     $npcname = "乌鸡国国王";
     $npctake = "哎~~最近妖魔鬼怪又开始猖獗了";
@@ -5278,7 +5003,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 314) {
     $npcname = "边关守卫";
     $npctake = "常年镇守乌鸡国边疆的守卫";
@@ -5290,7 +5014,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 315) {
     $npcname = "宫兵";
     $npctake = "装备烈火鞭、黑铁盔、护法袈裟";
@@ -5351,7 +5074,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 34;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>平顶山(冒险区域)</font></a>" . "<br>";
-//
 } elseif ($npcc == 316) {
     $npcname = "宝象国王";
     $npctake = "现在妖魔横行，百姓生命朝不夕保，这如何是好？";
@@ -5363,7 +5085,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 317) {
     $npcname = "宫妃";
     $npctake = "三公主失踪那么多年了，不知道她现在到底在哪，哎~";
@@ -5375,7 +5096,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 318) {
     $npcname = "大臣";
     $npctake = "我们上个星期已经派了一只精锐的队伍去妖精经常出没的地方查探去了，应该很快就会有消息传过来了。";
@@ -5387,7 +5107,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 319) {
     $npcname = "渔夫";
     $npctake = "这位小仙卿来自大唐吗？";
@@ -5399,7 +5118,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 320) {
     $npcname = "宫兵";
     $npctake = "这里是宝象国王宫，请不要乱闯！";
@@ -5411,7 +5129,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 321) {
     $npcname = "软泥怪";
     $npctake = "一滩烂泥";
@@ -5423,7 +5140,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 322) {
     $npcname = "进入【双叉岭】";
     $npctake = "进入【双叉岭】设计中";
@@ -5435,7 +5151,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 323) {
     $npcname = "进入【黑松林】";
     $npctake = "进入【黑松林】设计中";
@@ -5447,7 +5162,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 324) {
     $npcname = "进入【金塔】";
     $npctake = "进入【金塔】设计中";
@@ -5459,7 +5173,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 325) {
     $npcname = "进入【白骨洞】";
     $npctake = "进入【白骨洞】设计中";
@@ -5471,7 +5184,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 326) {
     $npcname = "佝偻的老人";
     $npctake = "一位可怜的老人家";
@@ -5483,7 +5195,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 327) {
     $npcname = "进入【平顶山】";
     $npctake = "进入【平顶山】设计中";
@@ -5495,7 +5206,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 328) {
     $npcname = "进入【五庄观】";
     $npctake = "进入【五庄观】设计中";
@@ -5507,7 +5217,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 329) {
     $npcname = "驿站官员";
     $npctake = "亲爱的小仙友!你想移动到哪个区域呢?";
@@ -5525,7 +5234,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 139;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 330) {
     $npcname = "车迟国国王";
     $npctake = "最近妖魔横行,我的国家子民们该如何是好呢?";
@@ -5537,7 +5245,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 331) {
     $npcname = "内阁大臣";
     $npctake = "在车迟国就得守这里的规矩不要到处乱逛";
@@ -5549,7 +5256,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 332) {
     $npcname = "进入【通天水府】";
     $npctake = "进入【通天水府】设计中";
@@ -5561,7 +5267,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 333) {
     $npcname = "进入【子母河】";
     $npctake = "进入【子母河】设计中";
@@ -5573,7 +5278,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 334) {
     $npcname = "进入【通天河】";
     $npctake = "进入【通天河】设计中";
@@ -5585,7 +5289,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = 0;
 //echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>"."<br>";
-//
 } elseif ($npcc == 335) {
     $npcname = "螃蟹";
     $npctake = "";
@@ -5597,7 +5300,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 336) {
     $npcname = "潮水螃蟹";
     $npctake = "";
@@ -5609,7 +5311,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 386) {
     $npcname = "调查洞穴～";
     $npctake = "";
@@ -5626,7 +5327,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 5195) {
     $npcname = "和黑衣人说话";
     $npctake = "和黑衣人说话";
@@ -5638,9 +5338,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 451) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc41.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
@@ -5658,7 +5357,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 456) {
     $npcname = "村长吴文";
     $npctake = "村长吴文：我是这里的村长有什么事可以找我！";
@@ -5670,15 +5368,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 463) {
-    ///////////////////////////////////////插入图片 /////////////////////////////
+    ///////////////////////////////////////插入图片 ///////////////////////////
     if ($tpbl == 1) {
         $img = 'pic/npc/npc5.png';
         echo '<img src="' . $img . ' "alt="图片"/〉';
         echo "<br>";
     }
-    //////////////////////////////////////插入图片  //////////////////////////
+    //////////////////////////////////////插入图片  ////////////////////////
     $npcname = "太守";
     $npctake = "太守：大胆刁民见了本官还不下跪！";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -5689,7 +5386,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
 } elseif ($npcc == 466) {
     $npcname = "算命先生袁守诚";
     $npctake = "算命先生袁守诚：小仙卿，快过来老夫给你算上一卦";
@@ -5701,8 +5397,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 10;
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
-//
-//
 } elseif ($npcc == 621) {
     $npcname = "女儿国马夫";
     $npctake = "女儿国马夫：小仙卿，要移动到哪里去呢？";
@@ -5720,7 +5414,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 140;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 622) {
     $npcname = "祭赛国车夫";
     $npctake = "祭赛国车夫：小仙卿，要移动到哪里去呢？";
@@ -5738,7 +5431,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 141;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 623) {
     $npcname = "马倌";
     $npctake = "马倌：小仙卿，要移动到哪里去呢？";
@@ -5756,7 +5448,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 142;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 624) {
     $npcname = "比丘国车夫";
     $npctake = "比丘国车夫：小仙卿，要移动到哪里去呢？";
@@ -5774,7 +5465,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 143;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 625) {
     $npcname = "天法国车夫";
     $npctake = "天法国车夫：小仙卿，要移动到哪里去呢？";
@@ -5792,7 +5482,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 144;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 626) {
     $npcname = "凤仙郡车夫";
     $npctake = "凤仙郡车夫：小仙卿，要移动到哪里去呢？";
@@ -5810,7 +5499,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 145;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 627) {
     $npcname = "玉华郡车夫";
     $npctake = "玉华郡车夫：小仙卿，要移动到哪里去呢？";
@@ -5828,7 +5516,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 146;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 628) {
     $npcname = "金平府车夫";
     $npctake = "金平府车夫：小仙卿，要移动到哪里去呢？";
@@ -5846,7 +5533,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 147;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 629) {
     $npcname = "天竺国车夫";
     $npctake = "天竺国车夫：小仙卿，要移动到哪里去呢？";
@@ -5864,7 +5550,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 148;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 630) {
     $npcname = "止戈将军";
     $npctake = "止戈将军：小仙卿，要移动到哪里去呢？";
@@ -5888,7 +5573,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 151;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>因果岛</font></a>" . "<br>";
-//
 } elseif ($npcc == 631) {
     $npcname = "车夫";
     $npctake = "客官,你要去哪里呢?";
@@ -5907,7 +5591,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 154;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>长安城</font></a>" . "<br>";
-//
 } elseif ($npcc == 632) {
     $npcname = "宠物贩子";
     $npctake = "出来做点小生意养家糊口的小贩子";
@@ -5920,8 +5603,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $npc[] = $npcc;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻击$npcname</font></a>" . "<br>";
     echo "宠物技能书还在努力建设中....." . "<br>";
-//
-//
 } elseif ($npcc == 633) {
     $npcname = "兑换恶魔广场声望";
     $npctake = "你可以兑换的恶魔广场声望如下";
@@ -6037,7 +5718,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 20;
     $npc[] = 163;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>传送至恶魔广场</font></a>" . "<br>";
-//
 } elseif ($npcc == 635) {
     $npcname = "房屋管理员";
     $npctake = "你要购买什么房屋呢？";
@@ -6100,7 +5780,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看全区官宅（购买官宅）</font></a>" . "<br>";
     echo "<font color=black>-------------------------</font>" . "<br>";
-//
 } elseif ($npcc == 718) {
     $npcname = "宠物岛传送员";
     $npctake = "宠物岛最近又来了许多可爱的小宝贝们！想要获得他们就要看有没有这个缘分了";
@@ -6186,7 +5865,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $q2 = "bl" . $fqidd;
     $sql1 = mysqli_query($conn, "select * from $q2 where id=2");
     $info1 = @mysqli_fetch_array($sql1);
-    $bll1 = $info1[bll1];
+    $bll1 = $info1['bll1'];
     if ($bll1 >= 1) {
         $npcname = "管家";
         $npctake = "尊贵的贵客！！在这里到处走走可以可别把主人惹生气了哟";
@@ -6197,7 +5876,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
         $cdid[] = $cmid;
         $clj[] = 10;
         $npc[] = 0;
-//
     } else {
         $npcname = "管家";
         //调用zt.ini是否存在  
@@ -6237,7 +5915,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
             $clj[] = 169;
             $npc[] = 0;
             echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出玩家</font></a>" . "<br>";
-//
         } else {
             $npctake = "亲爱的客人！欢迎参观可不要惹主人生气哦";
             echo "<font color=red>$npcname</font>" . "<br>";
@@ -6276,7 +5953,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我要离婚</font></a>" . "<br>";
     echo "<br>";
-//
 } elseif ($npcc == 637) {
     $npcname = "如意传送员";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -6605,7 +6281,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
     if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
-        include("./sql/mysql.php");//调用数据库连接 
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -6847,7 +6522,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     echo "<font color=black>$npctake</font>" . "<br>";
 //801
     echo "<br>";
-//
 } elseif ($npcc == 640) {
     $npcname = "神仙姐姐";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -6870,7 +6544,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $npcname = "仙露";
     echo "<font color=red>$npcname</font>" . "<br>";
     echo "<br>";
-//
 } elseif ($npcc == 698) {
     $npcname = "黑衣大汉";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7147,7 +6820,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
     if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
-        include("./sql/mysql.php");//调用数据库连接 
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -7271,7 +6943,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
     $clj[] = 312;
     $npc[] = 81;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1004) {//
+} elseif ($npcc == 1004) {
     $npcc = $npcc1;
     $npcname = "〖活动〗苏于迟";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7342,7 +7014,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
     $clj[] = 312;
     $npc[] = 112;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>oh~yes兑换</font></a>" . "<br>";
-} elseif ($npcc == 1005) {//
+} elseif ($npcc == 1005) {
     $npcc = $npcc1;
     $npcname = "〖活动〗潇道长";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7366,7 +7038,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
     if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
-        include("./sql/mysql.php");//调用数据库连接 
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -7384,7 +7055,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
     $clj[] = 527;
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>开始猜生死（剩余" . $hdxzcs . "次）(每轮5亿银两)</font></a>" . "<br>";
-} elseif ($npcc == 1006) {//
+} elseif ($npcc == 1006) {
     $npcc = $npcc1;
     $npcname = "〖活动〗苏小白";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7538,7 +7209,7 @@ $clj[]=312;
 $npc[]=129;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>"."<br>";
 */
-} elseif ($npcc == 1007) {//
+} elseif ($npcc == 1007) {
     $npcc = $npcc1;
     $npcname = "〖活动〗蓝铮";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7573,7 +7244,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 312;
     $npc[] = 133;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1008) {//
+} elseif ($npcc == 1008) {
     $npcc = $npcc1;
     $npcname = "〖活动〗体育老师";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7595,7 +7266,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 312;
     $npc[] = 154;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1009) {//
+} elseif ($npcc == 1009) {
     $npcc1 = $npcc;
     $hdid = 228;
     $npcc = $hdid;
@@ -7614,7 +7285,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
     if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
-        include("./sql/mysql.php");//调用数据库连接 
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -7695,7 +7365,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</fo
     $clj[] = 312;
     $npc[] = 161;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>熔炼</font></a>" . "<br>";
-} elseif ($npcc == 1010) {//
+} elseif ($npcc == 1010) {
     $npcc = $npcc1;
     $npcname = "〖活动〗校长";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7756,10 +7426,10 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>提交</fo
 } elseif ($npcc == 1011) {
     $npcname = "李世民";
     echo "<font color=red>$npcname</font>" . "<br>";
-} elseif ($npcc == 1012) {//
-} elseif ($npcc == 1013) {//
-} elseif ($npcc == 1014) {//
-} elseif ($npcc == 1077) {//
+} elseif ($npcc == 1012) {
+} elseif ($npcc == 1013) {
+} elseif ($npcc == 1014) {
+} elseif ($npcc == 1077) {
     $npcc = $npcc1;
     $npcname = "〖世界〗BOSS狩猎员";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7800,7 +7470,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>提交</fo
     $clj[] = 312;
     $npc[] = 174;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1078) {//
+} elseif ($npcc == 1078) {
     $npcc = $npcc1;
     $npcname = "〖活动〗至尊宝（抢榜）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7813,7 +7483,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>提交</fo
     $clj[] = 563;
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>提交</font></a>" . "<br>";
-} elseif ($npcc == 1079) {//
+} elseif ($npcc == 1079) {
     $npcc = $npcc1;
     $npcname = "〖活动〗吴刚";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -7900,7 +7570,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>中秋赏�
     $clj[] = 312;
     $npc[] = 231;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1080) {//
+} elseif ($npcc == 1080) {
     $npcc = $npcc1;
     $npcname = "〖活动〗嫦娥姐姐";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8144,7 +7814,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 91;
     $npc[] = 80;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>" . "<br>";
-} elseif ($npcc == 1082) {//
+} elseif ($npcc == 1082) {
     $npcc = $npcc1;
     $npcname = "〖活动〗爱国富商（领红旗，升国旗）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8162,7 +7832,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 634;
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我要升国旗（需要【五星红旗】x1）</font></a>" . "<br>";
-} elseif ($npcc == 1083) {//
+} elseif ($npcc == 1083) {
     $npcc = $npcc1;
     $npcname = "〖活动〗国庆大使（字体兑换,抢榜）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8305,7 +7975,7 @@ $clj[]=637;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提交</font></a>"."<br>";
 */
-} elseif ($npcc == 1202) {//
+} elseif ($npcc == 1202) {
     $npcc = $npcc1;
     $npcname = "〖采花〗百花仙子";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8343,7 +8013,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 20;
     $npc[] = 175;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【百花秘境】（传送）（采花大盗活动）</font></a>" . "<br>";
-} elseif ($npcc == 1203) {//
+} elseif ($npcc == 1203) {
     $npcc = $npcc1;
     $npcname = "〖活动〗【小果】（制作蛋糕）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8420,7 +8090,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 312;
     $npc[] = 309;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>制作</font></a>" . "<br>";
-} elseif ($npcc == 1204) {//
+} elseif ($npcc == 1204) {
     $npcc = $npcc1;
     $npcname = "〖活动〗公主的小朋友（制作饼干）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8497,7 +8167,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 312;
     $npc[] = 319;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>制作</font></a>" . "<br>";
-} elseif ($npcc == 1205) {//
+} elseif ($npcc == 1205) {
     $npcc = $npcc1;
     $npcname = "〖活动〗及时雨【宋江】（制作面包）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8574,7 +8244,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 312;
     $npc[] = 329;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>制作</font></a>" . "<br>";
-} elseif ($npcc == 1206) {//
+} elseif ($npcc == 1206) {
     $npcc = $npcc1;
     $npcname = "〖活动〗南风（制作巧克力）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8651,7 +8321,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 312;
     $npc[] = 339;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>制作</font></a>" . "<br>";
-} elseif ($npcc == 1207) {//
+} elseif ($npcc == 1207) {
     $npcc = $npcc1;
     $npcname = "〖活动〗姝菟（抢积分榜）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8664,7 +8334,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 651;
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>提交</font></a>" . "<br>";
-} elseif ($npcc == 1208) {//
+} elseif ($npcc == 1208) {
     $npcc = $npcc1;
     $npcname = "〖活动〗永不言败（生日甜品礼盒）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8692,7 +8362,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 312;
     $npc[] = 342;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1209) {//
+} elseif ($npcc == 1209) {
     $npcc = $npcc1;
     $npcname = "〖活动〗LoKC（贩卖原材料）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -8982,7 +8652,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>一键提�
     $clj[] = 312;
     $npc[] = 382;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1210) {//
+} elseif ($npcc == 1210) {
     $npcc = $npcc1;
     $npcname = "〖日常〗伏羲仙人（福满阵）";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -9051,7 +8721,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换【�
     $clj[] = 20;
     $npc[] = 186;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【伏羲大阵】</font></a>" . "<br>";
-} elseif ($npcc == 1314) {//
+} elseif ($npcc == 1314) {
     $npcc = $npcc1;
     $npcname = "〖活动〗摔伤的老人";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -9135,7 +8805,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
     $clj[] = 312;
     $npc[] = 413;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1315) {//
+} elseif ($npcc == 1315) {
     $npcc = $npcc1;
     $npcname = "〖活动〗奇怪的商人";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -9261,7 +8931,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
     $npc[] = 409;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>购买</font></a>" . "<br>";
     echo "<font color=red>=============1000倍===============</font>" . "<br>";
-} elseif ($npcc == 1316) {//
+} elseif ($npcc == 1316) {
     $npcc = $npcc1;
     $npcname = "〖活动〗重阳婆婆";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -9345,7 +9015,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
     $clj[] = 667;
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>提交</font></a>" . "<br>";
-} elseif ($npcc == 1318) {//
+} elseif ($npcc == 1318) {
     $npcc = $npcc1;
     $npcname = "〖活动〗西方传教士";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -9648,7 +9318,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
             echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=$arr[7]>$arrmz</font></a>" . "<br>";
         }
     }
-} elseif ($npcc == 1319) {//
+} elseif ($npcc == 1319) {
     $npcc = $npcc1;
     $npcname = "〖活动〗西方传教士";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -9951,7 +9621,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
             echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=$arr[7]>$arrmz</font></a>" . "<br>";
         }
     }
-} elseif ($npcc == 1320) {//
+} elseif ($npcc == 1320) {
     $npcc = $npcc1;
     $npcname = "〖活动〗南瓜大仙";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -10061,7 +9731,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
     $clj[] = 312;
     $npc[] = 437;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>兑换</font></a>" . "<br>";
-} elseif ($npcc == 1321) {//
+} elseif ($npcc == 1321) {
     $npcc = $npcc1;
     $npcname = "〖活动〗竞猜使者";
     echo "<font color=red>$npcname</font>" . "<br>";
@@ -10081,7 +9751,6 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
     if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
-        include("./sql/mysql.php");//调用数据库连接 
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -10145,7 +9814,7 @@ echo "<font color=red>提示：活动期间每天可获取〖小公主の激素�
         echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>购买10次竞猜=【紫星币】x" . $zxb . "</font></a>" . "<br>";
     } else {
     }
-} elseif ($npcc == 1322) {//
+} elseif ($npcc == 1322) {
     $npcc = $npcc1;
     $npcname = "〖活动〗火鸡先生";
     echo "<font color=red>$npcname</font>" . "<br>";

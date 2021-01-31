@@ -185,7 +185,6 @@ $kcrl=$wpkc*$wpzl+$kcrl;
 //背包容量变更
 include("./pz/ini_pzz05.php");		
 
-$kcrl="";
 $wwpfl=9;//物品分类
 $wpid=$bsid;//物品id
 $wpkc=1;//	需要增加的量

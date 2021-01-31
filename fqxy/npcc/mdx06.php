@@ -77,7 +77,6 @@ $wpsl=($iniFile->getItem($wpzzz,$wpid));
 
 
 
-$kcrl="";
 //背包容量变更加
 $kcrl=$sl*$wpzl+$kcrl-$wp3pd;
 include("./pz/ini_pzz09.php");

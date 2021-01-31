@@ -15,8 +15,7 @@ if ($zsspd == 1) {
     $npcc = $npcc11;//返还存值
     if ($pd == 2) {
         $manzu1 = "";
-        $kcrl = "";
-        $bz = rand(1, 5);
+                $bz = rand(1, 5);
 //物品加
         $wpdz1[] = "〖金豆〗";//名字
         $wpdz2[] = 4;//物品分类

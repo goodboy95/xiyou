@@ -23,7 +23,6 @@ $npcc=$npcc11;//返还存值
 if ($pd==2) {
 
 $manzu1="";
-$kcrl="";
 
 $bz= rand(1,5);
 //物品加

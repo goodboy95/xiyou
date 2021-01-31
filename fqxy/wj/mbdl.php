@@ -17,7 +17,6 @@ echo"<font color=red>小轩：中秋节日快乐！游戏的同时别忘了多�
 
 
 $manzu1="";
-$kcrl="";
 
 //物品加
 $dlwpts="";
@@ -239,7 +238,6 @@ include("./pz/ini_pzz023.php");
 
 
 $manzu1="";
-$kcrl="";
 
 //物品加
 $dlwpts="";
@@ -453,7 +451,6 @@ include("./pz/ini_pzz023.php");
 
 
 $manzu1="";
-$kcrl="";
 
 //物品加
 $dlwpts="";

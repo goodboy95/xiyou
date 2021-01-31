@@ -13,8 +13,7 @@ if ($zsspd == 1) {
 //调用物品信息
         include("./wp/wpxx.php");
         $manzu1 = "";
-        $kcrl = "";
-//物品加
+        //物品加
         $wpdz1[] = $wpmz;//名字
         $wpdz2[] = 4;//物品分类
         $wpdz3[] = $wpid;//物品id

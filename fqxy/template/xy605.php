@@ -38,8 +38,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "【VIP练级卷】";//名字
                         $wpdz2[] = 1;//物品分类
                         $wpdz3[] = 5;//物品id
@@ -76,8 +75,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖师门声望礼包〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 162;//物品id
@@ -114,8 +112,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖宝象国声望礼包〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 163;//物品id
@@ -152,8 +149,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖天宫声望礼包〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 164;//物品id
@@ -190,8 +186,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖地府声望礼包〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 168;//物品id
@@ -228,8 +223,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖傲来国声望礼包〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 169;//物品id
@@ -266,8 +260,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖乌鸡国声望礼包〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 170;//物品id
@@ -304,8 +297,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖打孔器〗";//名字
                         $wpdz2[] = 2;//物品分类
                         $wpdz3[] = 302;//物品id
@@ -342,8 +334,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖普通打孔器〗";//名字
                         $wpdz2[] = 2;//物品分类
                         $wpdz3[] = 303;//物品id
@@ -380,8 +371,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖铁星升星符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 314;//物品id
@@ -418,8 +408,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖小智慧果〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 398;//物品id
@@ -456,8 +445,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖高级打孔器〗";//名字
                         $wpdz2[] = 2;//物品分类
                         $wpdz3[] = 304;//物品id
@@ -494,8 +482,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖铜星升星符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 315;//物品id
@@ -532,8 +519,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖大智慧果〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 399;//物品id
@@ -570,8 +556,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖强化打孔器〗";//名字
                         $wpdz2[] = 2;//物品分类
                         $wpdz3[] = 305;//物品id
@@ -608,8 +593,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖银星升星符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 316;//物品id
@@ -646,8 +630,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "小幸运草";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 126;//物品id
@@ -684,8 +667,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖究极打孔器〗";//名字
                         $wpdz2[] = 2;//物品分类
                         $wpdz3[] = 306;//物品id
@@ -722,8 +704,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖金星升星符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 317;//物品id
@@ -760,8 +741,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "大幸运草";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 307;//物品id
@@ -798,8 +778,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖仓库扩容卷〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 175;//物品id
@@ -836,8 +815,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖钻星升星符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 318;//物品id
@@ -874,8 +852,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖万能钥匙〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 401;//物品id
@@ -912,8 +889,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖背包扩容卷〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 400;//物品id
@@ -950,8 +926,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖陨星升星符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 319;//物品id
@@ -988,8 +963,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖1万法宝经验卷轴〗";//名字
                         $wpdz2[] = 1;//物品分类
                         $wpdz3[] = 423;//物品id
@@ -1026,8 +1000,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖1万西游声望卷轴〗";//名字
                         $wpdz2[] = 1;//物品分类
                         $wpdz3[] = 427;//物品id
@@ -1064,8 +1037,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖双倍掉宝符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 454;//物品id
@@ -1102,8 +1074,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖荣誉宝石包〗（2个）";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 494;//物品id
@@ -1140,8 +1111,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖四倍掉宝符〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 455;//物品id
@@ -1178,8 +1148,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖1亿修炼经验丹〗";//名字
                         $wpdz2[] = 5;//物品分类
                         $wpdz3[] = 625;//物品id
@@ -1216,8 +1185,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "【万能果】";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 128;//物品id
@@ -1254,8 +1222,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖5亿修炼经验丹〗";//名字
                         $wpdz2[] = 5;//物品分类
                         $wpdz3[] = 626;//物品id
@@ -1292,8 +1259,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖10亿修炼经验丹〗";//名字
                         $wpdz2[] = 5;//物品分类
                         $wpdz3[] = 627;//物品id
@@ -1330,8 +1296,7 @@ if ($zsspd == 1) {
                         $result = mysqli_query($conn, $strsql);
                         echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
                         $manzu1 = "";
-                        $kcrl = "";
-//物品加
+                        //物品加
                         $wpdz1[] = "〖金豆〗";//名字
                         $wpdz2[] = 4;//物品分类
                         $wpdz3[] = 127;//物品id

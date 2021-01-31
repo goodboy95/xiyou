@@ -42,8 +42,7 @@ if ($zsspd == 1 && $zsspd1 == 1) {
                         echo "<font color=red>恭喜你！！兑换" . $sdkmz . "成功！！</font><br>";
                         if ($sdk3 == 1) {//宣传
                             $manzu1 = "";
-                            $kcrl = "";
-//物品加
+                            //物品加
                             $wpdz1[] = "【尊享VIP】（1天）";//名字
                             $wpdz2[] = 4;//物品分类
                             $wpdz3[] = 865;//物品id

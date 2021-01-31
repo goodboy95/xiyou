@@ -31,8 +31,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -79,8 +78,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -127,8 +125,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -175,8 +172,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -228,8 +224,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -281,8 +276,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -334,8 +328,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -387,8 +380,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -440,8 +432,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
@@ -498,8 +489,7 @@ if ($zsspd == 1) {
                 if ($bssl >= 5 && $pd == 2) {
                     include("./pz/ini_pzz041.php");//扣除宝石
 //这里是得到宝石代码
-                    $kcrl = "";
-                    $bsid = $bsid10;//宝石id
+                                        $bsid = $bsid10;//宝石id
                     $bssl = $bssl10;//宝石数量
                     $wpzl = $bszl10;//	需要扣物品的重量
                     include("./pz/ini_pzz08.php");//得到宝石
