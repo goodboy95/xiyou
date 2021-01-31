@@ -411,12 +411,12 @@ $week=$weekarray['date("w")'];
 $h= date('H')*1;
 $i= date('i')*1;
 if($week==6){
-echo "<font color=red>['系统']全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
+echo "<font color=red>[系统]全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
 } else{
 
 if($h!=21||$h==21&&$i>30){
 
-echo "<font color=red>['系统']参与国战的时间已过或者国战已结束！</font>"."<br>";
+echo "<font color=red>[系统]参与国战的时间已过或者国战已结束！</font>"."<br>";
 
 } else{
 
@@ -438,7 +438,7 @@ $info1=@mysqli_fetch_array($sql1);
 $gjmz=$info1['gjmz'];
 
 if($gjmz==""){
-echo "<font color=red>['系统']对不起！你还未加入国家或者你的国家没有报名参与本次国家！</font>"."<br>";
+echo "<font color=red>[系统]对不起！你还未加入国家或者你的国家没有报名参与本次国家！</font>"."<br>";
 } else{
 	
 

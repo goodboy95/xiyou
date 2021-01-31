@@ -174,7 +174,7 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 108;
             $npc[] = $wjfyid;
-            echo "<font color=black>['系统']</font>";
+            echo "<font color=black>[系统]</font>";
             if ($wjfyvip >= 0 && $wjfyvip <= 998) {
                 $img = 'pic/vip/' . "vip" . $wjfyvip . '.png';
                 echo '<img src="' . $img . ' "alt="图片"/>';

@@ -32,7 +32,7 @@ for ($d = 0; $d < $m; $d++) {
             unlink($file01); //删除文件  
             $xtmsg = 2;
             file_put_contents($file01, "<?
-echo '<font color=" . $msgcolor . ">['系统']" . $msg . "</font>';
+echo '<font color=" . $msgcolor . ">[系统]" . $msg . "</font>';
 ?>");
         }
         if ($i == $m && $xtmsg == 1) {
@@ -49,14 +49,14 @@ echo '<font color=" . $msgcolor . ">['系统']" . $msg . "</font>';
             $file01 = "msg01.php";
             $xtmsg = 2;
             file_put_contents($file01, "<?
-echo '<font color=" . $msgcolor . ">['系统']" . $msg . "</font>';
+echo '<font color=" . $msgcolor . ">[系统]" . $msg . "</font>';
 ?>");
             break;
         }
     } else {
         $xtmsg = 2;
         file_put_contents($file01, "<?
-echo '<font color=" . $msgcolor . ">['系统']" . $msg . "</font>';
+echo '<font color=" . $msgcolor . ">[系统]" . $msg . "</font>';
 ?>");
     }
     if ($xtmsg == 2) {
