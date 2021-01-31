@@ -65,8 +65,7 @@ header("Content-type: text/html; charset=utf-8");
     $inina = $ip1 . ".ini";
     $path = './ip';
     $file = $path . "/" . $inina;
-    if (file_exists($file)) {
-    } else {
+    if (!file_exists($file)) {
         //创建文件
         file_put_contents($file, $ip1);
     }

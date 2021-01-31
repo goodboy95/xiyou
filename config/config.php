@@ -1,3 +1,3 @@
 <?php
 
-$config['host'] = 'xiyou.seekerhut.com';
+$config['host'] = 'localhost';
