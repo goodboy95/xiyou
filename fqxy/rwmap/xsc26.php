@@ -44,7 +44,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=43;
 $npc[]=$strr1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>调查洞穴～</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>调查洞穴～</p></a>"."<br>";
 
  } elseif ($rrw2==15) {
 
@@ -53,7 +53,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=445;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【大螃蟹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【大螃蟹】</p></a>"."<br>";
 } else {
 } 
 } else {
@@ -64,7 +64,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=7;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>调查洞穴～</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>调查洞穴～</p></a>"."<br>";
 
  } elseif ($rrw2==15) {
 
@@ -73,7 +73,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=445;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【大螃蟹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【大螃蟹】</p></a>"."<br>";
 } else {
 } 
 

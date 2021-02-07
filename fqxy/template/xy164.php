@@ -106,18 +106,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -131,13 +131,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 1;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -235,18 +235,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -260,16 +260,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 1;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖琉璃灯排〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖水晶珠帘〗////////////////////////////////////////
@@ -375,18 +375,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -400,13 +400,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 2;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -504,18 +504,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -529,16 +529,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 2;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖水晶珠帘〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖豹纹宝石屏风〗////////////////////////////////////////
@@ -634,18 +634,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -659,13 +659,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 3;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -753,18 +753,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -778,16 +778,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 3;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖豹纹宝石屏风〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖八卦宝石镜〗////////////////////////////////////////
@@ -883,18 +883,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -908,13 +908,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 4;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -1002,18 +1002,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1027,16 +1027,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 4;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖八卦宝石镜〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖松竹迎客图〗////////////////////////////////////////
@@ -1132,18 +1132,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1157,13 +1157,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 5;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -1251,18 +1251,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1276,16 +1276,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 5;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖松竹迎客图〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖豹头兵器架〗////////////////////////////////////////
@@ -1381,18 +1381,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1406,13 +1406,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 6;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -1500,18 +1500,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1525,16 +1525,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 6;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖豹头兵器架〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖铜角八卦台〗////////////////////////////////////////
@@ -1630,18 +1630,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1655,13 +1655,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 7;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -1749,18 +1749,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1774,16 +1774,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 7;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖铜角八卦台〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖七星灯排〗////////////////////////////////////////
@@ -1889,18 +1889,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1914,13 +1914,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 8;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -2019,18 +2019,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2044,13 +2044,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 8;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -2149,18 +2149,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2174,13 +2174,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 8;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -2279,18 +2279,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2304,16 +2304,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 8;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖七星灯排〗////////////////////////////////////////
         ///////////////////////////////////////////////////〖玛瑙珠帘〗////////////////////////////////////////
@@ -2419,18 +2419,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2444,13 +2444,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 9;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -2549,18 +2549,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2574,13 +2574,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 9;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -2679,18 +2679,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2704,13 +2704,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 9;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -2809,18 +2809,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2834,16 +2834,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 9;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖玛瑙珠帘〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖虎纹宝石屏风〗////////////////////////////////////////
@@ -2939,18 +2939,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -2964,13 +2964,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 10;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -3059,18 +3059,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3084,13 +3084,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 10;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -3179,18 +3179,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3204,13 +3204,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 10;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -3299,18 +3299,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3324,16 +3324,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 10;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖虎纹宝石屏风〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖太极宝石镜〗////////////////////////////////////////
@@ -3429,18 +3429,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3454,13 +3454,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 11;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -3549,18 +3549,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3574,13 +3574,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 11;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -3669,18 +3669,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3694,13 +3694,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 11;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -3789,18 +3789,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3814,16 +3814,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 11;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖太极宝石镜〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖福禄迎客图〗////////////////////////////////////////
@@ -3919,18 +3919,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -3944,13 +3944,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 12;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -4039,18 +4039,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4064,13 +4064,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 12;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -4159,18 +4159,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4184,13 +4184,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 12;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -4279,18 +4279,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4304,16 +4304,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 12;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖福禄迎客图〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖虎头兵器架〗////////////////////////////////////////
@@ -4409,18 +4409,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4434,13 +4434,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 13;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -4529,18 +4529,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4554,13 +4554,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 13;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -4649,18 +4649,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4674,13 +4674,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 13;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -4769,18 +4769,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4794,16 +4794,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 13;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖虎头兵器架〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖银角太极台〗////////////////////////////////////////
@@ -4899,18 +4899,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -4924,13 +4924,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 14;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -5019,18 +5019,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5044,13 +5044,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 14;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -5139,18 +5139,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5164,13 +5164,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 14;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -5259,18 +5259,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5284,16 +5284,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 14;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖银角太极台〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖乾坤灯排〗////////////////////////////////////////
@@ -5399,18 +5399,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5424,13 +5424,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -5529,18 +5529,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5554,13 +5554,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -5659,18 +5659,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5684,13 +5684,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -5789,18 +5789,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5814,13 +5814,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -5919,18 +5919,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -5944,13 +5944,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -6049,18 +6049,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6074,13 +6074,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -6179,18 +6179,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6204,13 +6204,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -6309,18 +6309,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6334,13 +6334,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -6439,18 +6439,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6464,16 +6464,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 15;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖乾坤灯排〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖翡翠珠帘〗////////////////////////////////////////
@@ -6579,18 +6579,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6604,13 +6604,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -6709,18 +6709,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6734,13 +6734,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -6839,18 +6839,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6864,13 +6864,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -6969,18 +6969,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -6994,13 +6994,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -7099,18 +7099,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7124,13 +7124,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -7229,18 +7229,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7254,13 +7254,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -7359,18 +7359,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7384,13 +7384,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -7489,18 +7489,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7514,13 +7514,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -7619,18 +7619,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7644,16 +7644,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 16;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖翡翠珠帘〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖龙纹宝石屏风〗////////////////////////////////////////
@@ -7749,18 +7749,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7774,13 +7774,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -7869,18 +7869,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -7894,13 +7894,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -7989,18 +7989,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8014,13 +8014,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -8119,18 +8119,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8144,13 +8144,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -8239,18 +8239,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8264,13 +8264,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -8359,18 +8359,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8384,13 +8384,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -8479,18 +8479,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8504,13 +8504,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -8599,18 +8599,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8624,13 +8624,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -8719,18 +8719,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8744,16 +8744,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 17;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖龙纹宝石屏风〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖无极宝石镜〗////////////////////////////////////////
@@ -8848,18 +8848,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8873,13 +8873,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -8968,18 +8968,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -8993,13 +8993,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -9088,18 +9088,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9113,13 +9113,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -9218,18 +9218,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9243,13 +9243,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -9338,18 +9338,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9363,13 +9363,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -9458,18 +9458,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9483,13 +9483,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -9578,18 +9578,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9603,13 +9603,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -9698,18 +9698,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9723,13 +9723,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -9818,18 +9818,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9843,16 +9843,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 18;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖无极宝石镜〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖八仙迎客图〗////////////////////////////////////////
@@ -9947,18 +9947,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -9972,13 +9972,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -10067,18 +10067,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10092,13 +10092,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -10187,18 +10187,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10212,13 +10212,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -10317,18 +10317,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10342,13 +10342,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -10437,18 +10437,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10462,13 +10462,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -10557,18 +10557,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10582,13 +10582,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -10677,18 +10677,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10702,13 +10702,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -10797,18 +10797,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10822,13 +10822,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -10917,18 +10917,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -10942,16 +10942,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 19;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖八仙迎客图〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖龙头兵器架〗////////////////////////////////////////
@@ -11046,18 +11046,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11071,13 +11071,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -11166,18 +11166,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11191,13 +11191,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -11286,18 +11286,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11311,13 +11311,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -11416,18 +11416,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11441,13 +11441,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -11536,18 +11536,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11561,13 +11561,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -11656,18 +11656,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11681,13 +11681,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -11776,18 +11776,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11801,13 +11801,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -11896,18 +11896,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -11921,13 +11921,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -12016,18 +12016,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12041,16 +12041,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 20;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖龙头兵器架〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖金角无极台〗////////////////////////////////////////
@@ -12145,18 +12145,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12170,13 +12170,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -12265,18 +12265,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12290,13 +12290,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -12385,18 +12385,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12410,13 +12410,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -12515,18 +12515,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12540,13 +12540,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -12635,18 +12635,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12660,13 +12660,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -12755,18 +12755,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12780,13 +12780,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -12875,18 +12875,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -12900,13 +12900,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -12995,18 +12995,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13020,13 +13020,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -13115,18 +13115,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13140,16 +13140,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 21;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖金角无极台〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖泥胚打磨台〗////////////////////////////////////////
@@ -13159,9 +13159,9 @@ if ($zsspd == 1) {
         $jjdj = ($iniFile->getItem('家具等级', $npcc));
         $jjmz = $jjmz . "（" . $jjdj . "级）";//要打造的名字
         if ($jjdj == 1) {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖泥胚打磨台〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖白玉打磨台〗////////////////////////////////////////
@@ -13171,9 +13171,9 @@ if ($zsspd == 1) {
         $jjdj = ($iniFile->getItem('家具等级', $npcc));
         $jjmz = $jjmz . "（" . $jjdj . "级）";//要打造的名字
         if ($jjdj == 1) {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖白玉打磨台〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖水晶打磨台〗////////////////////////////////////////
@@ -13183,9 +13183,9 @@ if ($zsspd == 1) {
         $jjdj = ($iniFile->getItem('家具等级', $npcc));
         $jjmz = $jjmz . "（" . $jjdj . "级）";//要打造的名字
         if ($jjdj == 1) {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖水晶打磨台〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖红木桌〗////////////////////////////////////////
@@ -13291,18 +13291,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13316,13 +13316,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 25;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -13420,18 +13420,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13445,16 +13445,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 25;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖红木桌〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖檀木桌〗////////////////////////////////////////
@@ -13560,18 +13560,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13585,13 +13585,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 26;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -13690,18 +13690,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13715,13 +13715,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 26;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -13820,18 +13820,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13845,13 +13845,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 26;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -13950,18 +13950,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -13975,16 +13975,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 26;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖檀木桌〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖高级盔甲陈列〗////////////////////////////////////////
@@ -14090,18 +14090,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14115,13 +14115,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 27;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -14220,18 +14220,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14245,13 +14245,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 27;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -14350,18 +14350,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14375,13 +14375,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 27;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -14480,18 +14480,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14505,16 +14505,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 27;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖高级盔甲陈列〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖沉香木桌〗////////////////////////////////////////
@@ -14620,18 +14620,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14645,13 +14645,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -14750,18 +14750,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14775,13 +14775,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -14880,18 +14880,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -14905,13 +14905,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -15010,18 +15010,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15035,13 +15035,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -15140,18 +15140,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15165,13 +15165,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -15270,18 +15270,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15295,13 +15295,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -15400,18 +15400,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15425,13 +15425,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -15530,18 +15530,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15555,13 +15555,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -15660,18 +15660,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15685,16 +15685,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 28;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖沉香木桌〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖精品盔甲陈列〗////////////////////////////////////////
@@ -15800,18 +15800,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15825,13 +15825,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -15930,18 +15930,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -15955,13 +15955,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -16060,18 +16060,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16085,13 +16085,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -16190,18 +16190,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16215,13 +16215,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -16320,18 +16320,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16345,13 +16345,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -16450,18 +16450,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16475,13 +16475,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -16580,18 +16580,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16605,13 +16605,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -16710,18 +16710,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16735,13 +16735,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -16840,18 +16840,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16865,16 +16865,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 29;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖精品盔甲陈列〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖战利品陈列〗////////////////////////////////////////
@@ -16969,18 +16969,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -16994,13 +16994,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -17089,18 +17089,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17114,13 +17114,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -17209,18 +17209,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17234,13 +17234,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -17339,18 +17339,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17364,13 +17364,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -17459,18 +17459,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17484,13 +17484,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -17579,18 +17579,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17604,13 +17604,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -17699,18 +17699,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17724,13 +17724,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -17819,18 +17819,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17844,13 +17844,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -17939,18 +17939,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -17964,16 +17964,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 30;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖战利品陈列〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖卦纹辟邪门神〗////////////////////////////////////////
@@ -18068,18 +18068,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18093,13 +18093,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -18188,18 +18188,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18213,13 +18213,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -18308,18 +18308,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18333,13 +18333,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -18438,18 +18438,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18463,13 +18463,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -18558,18 +18558,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18583,13 +18583,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -18678,18 +18678,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18703,13 +18703,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -18798,18 +18798,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18823,13 +18823,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -18918,18 +18918,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -18943,13 +18943,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -19038,18 +19038,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19063,16 +19063,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 31;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖卦纹辟邪门神〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖龙纹寒玉床〗////////////////////////////////////////
@@ -19167,18 +19167,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19192,13 +19192,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -19287,18 +19287,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19312,13 +19312,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -19407,18 +19407,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19432,13 +19432,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -19537,18 +19537,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19562,13 +19562,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -19657,18 +19657,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19682,13 +19682,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -19777,18 +19777,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19802,13 +19802,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -19897,18 +19897,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -19922,13 +19922,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -20017,18 +20017,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20042,13 +20042,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -20137,18 +20137,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20162,16 +20162,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 32;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖龙纹寒玉床〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖琉璃棋盘〗////////////////////////////////////////
@@ -20266,18 +20266,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20291,13 +20291,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -20386,18 +20386,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20411,13 +20411,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -20506,18 +20506,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20531,13 +20531,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -20636,18 +20636,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20661,13 +20661,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -20756,18 +20756,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20781,13 +20781,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -20876,18 +20876,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -20901,13 +20901,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -20996,18 +20996,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21021,13 +21021,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -21116,18 +21116,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21141,13 +21141,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -21236,18 +21236,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21261,16 +21261,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 33;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖琉璃棋盘〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖沉香雕花桌〗////////////////////////////////////////
@@ -21365,18 +21365,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21390,13 +21390,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -21485,18 +21485,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21510,13 +21510,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -21605,18 +21605,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21630,13 +21630,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -21735,18 +21735,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21760,13 +21760,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -21855,18 +21855,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -21880,13 +21880,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -21975,18 +21975,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22000,13 +22000,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -22095,18 +22095,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22120,13 +22120,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -22215,18 +22215,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22240,13 +22240,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -22335,18 +22335,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22360,16 +22360,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 34;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖沉香雕花桌〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖龙晶观音像〗////////////////////////////////////////
@@ -22464,18 +22464,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22489,13 +22489,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -22584,18 +22584,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22609,13 +22609,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -22704,18 +22704,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22729,13 +22729,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -22834,18 +22834,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22859,13 +22859,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -22954,18 +22954,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -22979,13 +22979,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -23074,18 +23074,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23099,13 +23099,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -23194,18 +23194,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23219,13 +23219,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -23314,18 +23314,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23339,13 +23339,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -23434,18 +23434,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23459,16 +23459,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 35;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖龙晶观音像〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖大木箱〗////////////////////////////////////////
@@ -23564,18 +23564,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23589,13 +23589,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 26;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -23683,18 +23683,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23708,16 +23708,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 26;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖大木箱〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖铜柜〗////////////////////////////////////////
@@ -23727,9 +23727,9 @@ if ($zsspd == 1) {
         $jjdj = ($iniFile->getItem('家具等级', $npcc));
         $jjmz = $jjmz . "（" . $jjdj . "级）";//要打造的名字
         if ($jjdj == 1) {
-            echo "<font color=black>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</p>" . "<br>";
         } else {
-            echo "<font color=black>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖铜柜〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖铁皮箱〗////////////////////////////////////////
@@ -23825,18 +23825,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23850,13 +23850,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 38;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -23945,18 +23945,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -23970,13 +23970,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 38;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -24065,18 +24065,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24090,13 +24090,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 38;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -24185,18 +24185,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24210,16 +24210,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 38;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖铁皮箱〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖银柜〗////////////////////////////////////////
@@ -24229,9 +24229,9 @@ if ($zsspd == 1) {
         $jjdj = ($iniFile->getItem('家具等级', $npcc));
         $jjmz = $jjmz . "（" . $jjdj . "级）";//要打造的名字
         if ($jjdj == 1) {
-            echo "<font color=black>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</p>" . "<br>";
         } else {
-            echo "<font color=black>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖银柜〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖方口宝箱〗////////////////////////////////////////
@@ -24326,18 +24326,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24351,13 +24351,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 2) {
 //提供需要扣除的物品作为判读依据
@@ -24446,18 +24446,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24471,13 +24471,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 3) {
 //提供需要扣除的物品作为判读依据
@@ -24566,18 +24566,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24591,13 +24591,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 4) {
 //提供需要扣除的物品作为判读依据
@@ -24696,18 +24696,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24721,13 +24721,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 5) {
 //提供需要扣除的物品作为判读依据
@@ -24816,18 +24816,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24841,13 +24841,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 6) {
 //提供需要扣除的物品作为判读依据
@@ -24936,18 +24936,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -24961,13 +24961,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 7) {
 //提供需要扣除的物品作为判读依据
@@ -25056,18 +25056,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -25081,13 +25081,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 8) {
 //提供需要扣除的物品作为判读依据
@@ -25176,18 +25176,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -25201,13 +25201,13 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } elseif ($jjdj == 9) {
 //提供需要扣除的物品作为判读依据
@@ -25296,18 +25296,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -25321,16 +25321,16 @@ if ($zsspd == 1) {
 //这里是升级家具代码
                 $jjid = 40;//家具id
                 include("./pz/ini_pzz07.php");//升级家具
-                echo "<font color=black>恭喜你！升级" . $jjmz . "成功</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！升级" . $jjmz . "成功</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！升级" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>" . $jjmz . "已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖方口宝箱〗////////////////////////////////////////
 ///////////////////////////////////////////////////〖金柜〗////////////////////////////////////////
@@ -25340,13 +25340,13 @@ if ($zsspd == 1) {
         $jjdj = ($iniFile->getItem('家具等级', $npcc));
         $jjmz = $jjmz . "（" . $jjdj . "级）";//要打造的名字
         if ($jjdj == 1) {
-            echo "<font color=black>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</p>" . "<br>";
         } else {
-            echo "<font color=black>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</font>" . "<br>";
+            echo "<p style='color: black'>" . $jjmz . "(" . $jjdj . "级)已达到满级无须升级</p>" . "<br>";
         }
 ///////////////////////////////////////////////////〖金柜〗////////////////////////////////////////
     } else {
-        echo "<font color=black>未获取到家具信息请联系gm进行解决</font>" . "<br>";
+        echo "<p style='color: black'>未获取到家具信息请联系gm进行解决</p>" . "<br>";
     }
     include("template/xy160.php");
 //不走xy.php直接调用xy文件需要加pz01配置

@@ -7,7 +7,7 @@ if($sll!=0){
 
 if($wpsl<$sl){
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入1</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入1</p>"."<br>";
 echo "<br>";
 
 } elseif($wpsl>$sl){  
@@ -313,7 +313,7 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('验证信息', ['cmid值' => $ymid]);
-echo "<font color=red>你使用了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你使用了".$wpmz."x".$sl."</p>"."<br>";
 
 //调用使用信息
 include("./wp/wpsy.php");
@@ -636,7 +636,7 @@ $iniFile = new iniFile($ininame);
 $iniFile->updItem('验证信息', ['cmid值' => $ymid]);
 //调用使用信息
 include("./wp/wpsy.php");
-echo "<font color=red>你使用了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你使用了".$wpmz."x".$sl."</p>"."<br>";
 //回城卷直接到游戏页面
 
 if($npcc==1){
@@ -740,7 +740,7 @@ include("./pz/pz01.php");
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

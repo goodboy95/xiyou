@@ -202,7 +202,7 @@ $m=count($wparr2,0);
 
 $i=-1;
 if($m>=1){
-echo "<font color=red>搜索关于【".$sea."】的物品如下：</font>"."<br>";
+echo "<p style='color: red'>搜索关于【".$sea."】的物品如下：</p>"."<br>";
 for($d=0;$d<$m;$d++){
 $i=$i+1;	
 $ivd=$wparr1[$i];
@@ -276,7 +276,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件 
 
 //更新缓存数据	
-echo "<font color=red>没有找到关于[".$sea."]的物品</font>";	
+echo "<p style='color: red'>没有找到关于[".$sea."]的物品</p>";
 }
 } else{
 //更新缓存数据
@@ -287,7 +287,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件 
 
 //更新缓存数据	
-echo "<font color=red>没有找到关于[".$sea."]的物品</font>";	
+echo "<p style='color: red'>没有找到关于[".$sea."]的物品</p>";
 }
 $ssl="";
 $iid="";
@@ -315,19 +315,19 @@ $wpsl="";
 
 
 } else{
-echo "<font color=red>你输入的关键包含敏感字符请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的关键包含敏感字符请重新输入</p>"."<br>";
 }
 } else{
-echo "<font color=red>长度不能超过5个字符</font><br>";
+echo "<p style='color: red'>长度不能超过5个字符</p><br>";
 }
 } else{
-echo "<font color=red>关键字不能为空</font><br>";
+echo "<p style='color: red'>关键字不能为空</p><br>";
 }
 
 
 
 } else{
-echo"<font color=black>骚年~~需要Vip3级使用此项功能</font></a></br>";	
+echo"<p style='color: black'>骚年~~需要Vip3级使用此项功能</p></a></br>";
 
 }
 

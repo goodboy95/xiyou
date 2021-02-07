@@ -13,7 +13,7 @@ $zqda=1;
 
 if($zqda ==2){//答对
 
-echo "<font color=red>我：So-esay太简单了，来真正有技术含量的~~~</font>"."<br>";
+echo "<p style='color: red'>我：So-esay太简单了，来真正有技术含量的~~~</p>"."<br>";
 
 //经验加
 $jy= rand(1000000, 10000000);
@@ -40,7 +40,7 @@ include("./rwmap/rwget.php");
 
 
 } else{	//答错
-echo "<font color=red>〖活动〗脑筋急转弯老师：你这木鱼脑袋瓜子这么简单的题都答不对（很遗憾答错了）</font>"."<br>";
+echo "<p style='color: red'>〖活动〗脑筋急转弯老师：你这木鱼脑袋瓜子这么简单的题都答不对（很遗憾答错了）</p>"."<br>";
 
 //经验加
 $jy= rand(50000, 1000000);
@@ -60,9 +60,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

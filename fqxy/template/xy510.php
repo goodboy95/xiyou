@@ -56,7 +56,7 @@ $gmsl=$wpsl;
 
 } else{
 $gmsl=0;
-echo "<font color=red>提示：你身上携带的银两不足哦！！</font>"."<br>";
+echo "<p style='color: red'>提示：你身上携带的银两不足哦！！</p>"."<br>";
 
 } 
 
@@ -85,7 +85,7 @@ include("npcc/pmgmwp02.php");
 
 
 
-echo "<font color=red>该物品已被下架或者被买走了！！</font>"."<br>";
+echo "<p style='color: red'>该物品已被下架或者被买走了！！</p>"."<br>";
 echo "<br>";
 
 
@@ -102,7 +102,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=509;
 $npc[]=$pmmwpid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 

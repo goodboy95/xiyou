@@ -96,7 +96,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -107,7 +107,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -115,7 +115,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>万年蛇妖</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>万年蛇妖</p></a>"."<br>";
 }
 
 
@@ -143,7 +143,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -154,7 +154,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -162,7 +162,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>万年蛇妖飞走消失</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>万年蛇妖飞走消失</p></a>"."<br>";
 }
 
 
@@ -193,14 +193,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=43;
 $npc[]=$strr1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>菩提祖师(转职)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>菩提祖师(转职)</p></a>"."<br>";
 } else {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=7;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>菩提祖师(转职)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>菩提祖师(转职)</p></a>"."<br>";
 }
 
 

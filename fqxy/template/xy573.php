@@ -119,12 +119,12 @@ $result = mysqli_query($conn, $strsql);
 //保存盈利
 
 $ds= rand(1, 3);
-echo "<font color=red>红包结果：【红包】（假）</font>"."<br>";
-echo "<font color=black>你选择了：【红包】（假）</font>"."<br>";
+echo "<p style='color: red'>红包结果：【红包】（假）</p>"."<br>";
+echo "<p style='color: black'>你选择了：【红包】（假）</p>"."<br>";
 
 if($bj>=2){
-echo "<font color=black>恭喜你！！获得了：红包+".$csbyq."个</font>"."<br>";	
-echo "<font color=red>本轮获得【红包挖宝".$bj."倍甜蜜大暴击】</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！获得了：红包+".$csbyq."个</p>"."<br>";
+echo "<p style='color: red'>本轮获得【红包挖宝".$bj."倍甜蜜大暴击】</p>"."<br>";
 
 
 include("./ini/zt_ini.php");
@@ -137,7 +137,7 @@ include("./msg/msgg02.php");
 
 
 } else{	
-echo "<font color=black>恭喜你！！获得了：红包+".$csbyq."个</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！获得了：红包+".$csbyq."个</p>"."<br>";
 
 } 
 
@@ -167,18 +167,18 @@ $result = mysqli_query($conn, $strsql);
 //保存盈利
 
 $ds= rand(4, 6);	
-echo "<font color=red>红包结果：【红包】（真）</font>"."<br>";
-echo "<font color=black>你选择了：【红包】（假）</font>"."<br>";
-echo "<font color=black>很遗憾！！红包-".$csbyq."个</font>"."<br>";
+echo "<p style='color: red'>红包结果：【红包】（真）</p>"."<br>";
+echo "<p style='color: black'>你选择了：【红包】（假）</p>"."<br>";
+echo "<p style='color: black'>很遗憾！！红包-".$csbyq."个</p>"."<br>";
 }
 } else{	
-echo "<font color=red>对不起！！你的红包不足".$csbyq."个~~</font>"."<br>";
+echo "<p style='color: red'>对不起！！你的红包不足".$csbyq."个~~</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=574;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>立即充值</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>立即充值</p></a>"."<p style='color: black'></p>"."<br>";
 
 }
 
@@ -193,7 +193,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=570;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

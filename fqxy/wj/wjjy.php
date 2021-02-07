@@ -54,7 +54,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=50;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$cpl</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$cpl</p></a>"."<br/>";
 
 
 

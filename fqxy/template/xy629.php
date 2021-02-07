@@ -15,7 +15,7 @@ $lccs=($iniFile->getItem($npcc,'初始'));
 
 if($lccs==1){
 $iniFile->updItem($mqlc, ['初始' => '2']);
-echo "<font color=red>恭喜你！！领取到了第".$mqlc."楼奖励！！</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！领取到了第".$mqlc."楼奖励！！</p>"."<br>";
 if($mqlc==10){   
 
 $manzu1="";
@@ -597,7 +597,7 @@ $wpdz5[]=1;//	重量
 
 include("./rwmap/rwget.php");
 } else{	
-echo "<font color=red>此项奖励未添加（联系GM处理）！！</font>"."<br>";
+echo "<p style='color: red'>此项奖励未添加（联系GM处理）！！</p>"."<br>";
 }
 if($mqlc==10||$mqlc==20||$mqlc==50||$mqlc==60||$mqlc==80||$mqlc==100||$mqlc==150||$mqlc==200||$mqlc==300||$mqlc==400||$mqlc==500||$mqlc==600||$mqlc==700
 ||$mqlc==80||$mqlc==900||$mqlc==1000){
@@ -608,7 +608,7 @@ include("./msg/msgg02.php");
 }
 
 } else{	
-echo "<font color=red>对不起！！你已领取过了".$mqlc."楼奖励！！</font>"."<br>";
+echo "<p style='color: red'>对不起！！你已领取过了".$mqlc."楼奖励！！</p>"."<br>";
 }
 
 
@@ -624,14 +624,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=626;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回第".$mqlc."层楼</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回第".$mqlc."层楼</p></a>"."<br>";
 
 
 
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

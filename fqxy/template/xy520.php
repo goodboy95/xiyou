@@ -150,15 +150,15 @@ if ($zsspd == 1) {
                 }
                 include("./rwmap/rwget.php");
 //得到物品代码
-                echo "<font color=red>恭喜你！！兑换成功</font></br>";
+                echo "<p style='color: red'>恭喜你！！兑换成功</p></br>";
             } else {
-                echo "<font color=red>对不起！！你的银两不足来兑换</font></br>";
+                echo "<p style='color: red'>对不起！！你的银两不足来兑换</p></br>";
             }
         } else {
-            echo "<font color=red>对不起！你今日兑换过了</font></br>";
+            echo "<p style='color: red'>对不起！你今日兑换过了</p></br>";
         }
     } else {
-        echo "<font color=red>对不起!小仙家等级还未满160级啊？伤不起~~伤不起~~</font></br>";
+        echo "<p style='color: red'>对不起!小仙家等级还未满160级啊？伤不起~~伤不起~~</p></br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -166,7 +166,7 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 307;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

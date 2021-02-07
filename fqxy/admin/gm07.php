@@ -1,6 +1,6 @@
 <?php
 
-echo "<font color=red>【发放成功通知】</font>"."<br>";
+echo "<p style='color: red'>【发放成功通知】</p>"."<br>";
 
 
 //阻塞代码防止出现脏数据
@@ -100,16 +100,16 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 
-echo "<font color=red>恭喜你！！向【".$wjname."】（".$wjid."）发放了[".$wpmz."（ID:".$wpid."）]x".$wpsl."成功！！</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！向【".$wjname."】（".$wjid."）发放了[".$wpmz."（ID:".$wpid."）]x".$wpsl."成功！！</p>"."<br>";
 echo "<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>返回继续发放</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>返回继续发放</p></a>"."<br>";
 } else{	
 
-echo "<font color=red>发送失败了！（值有问题）</font>"."<br>";
+echo "<p style='color: red'>发送失败了！（值有问题）</p>"."<br>";
 echo "<br>";
 
 echo "<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>返回重新发放</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>返回重新发放</p></a>"."<br>";
 
 
 
@@ -131,16 +131,16 @@ include("./ini/jsini.php");
 
 
 echo "<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=4'><font color=blue>返回查询玩家</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=4'><p style='color: blue'>返回查询玩家</p></a>"."<br>";
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 

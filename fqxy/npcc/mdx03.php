@@ -37,14 +37,14 @@ exit();
 }
 
 } else{
-echo "<font color=black>对不起".$wpmz."价格有误，联系Gm解决</font>"."<br>";
+echo "<p style='color: black'>对不起".$wpmz."价格有误，联系Gm解决</p>"."<br>";
 } 
 
 
 
 
 
-echo "<font color=black>请输入你要购买多少".$wpmz."呢？</font>"."<br>";
+echo "<p style='color: black'>请输入你要购买多少".$wpmz."呢？</p>"."<br>";
 
 
 ?>

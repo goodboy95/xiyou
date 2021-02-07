@@ -3,11 +3,7 @@
 $inina = "user.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-
-
-if (file_exists($file)) {
-
-} else {
+if (!file_exists($file)) {
     //ini文件名字
     $inina = "user.ini";
     //判断文件夹是否存在
@@ -16,10 +12,7 @@ if (file_exists($file)) {
     $dir = iconv("UTF-8", "GBK", "$path");
     if (!file_exists($dir)) {
         mkdir($dir, 0777, true);
-    } else {
-
     }
-
     //随机产生一个玩家的特征码写入数据库验证网址信息
     function randomkeys($length)
     {
@@ -30,7 +23,6 @@ if (file_exists($file)) {
         }
         return $returnStr;
     }
-
     $ka1 = randomkeys(30);
     $kcmid = 0;
     $ka4 = 1;
@@ -52,5 +44,4 @@ if (file_exists($file)) {
     //file_put_contents($file,"[超链接npc值]");
 }
 $iniFile = new iniFile($file);
-
 ?>

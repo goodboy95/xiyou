@@ -161,7 +161,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
 
-echo "<font color=red>你踢出了".$ltbl1,"</font>"."<br>";
+echo "<p style='color: red'>你踢出了".$ltbl1,"</p>"."<br>";
 $wjid=$wjid1;
 include("./ini/fzpp_ini.php");
 
@@ -188,14 +188,14 @@ include("template/xy166.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 } else{
-	echo "<font color=red>对方还在赶着去投胎了着什么急？!</font>"."<br>";
+	echo "<p style='color: red'>对方还在赶着去投胎了着什么急？!</p>"."<br>";
 		$wjid=$wjid1;
 		//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 		
 		

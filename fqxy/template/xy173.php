@@ -22,14 +22,14 @@ $xl=($iniFile->getItem('序列',$npcc));
 $gjwjmz=($iniFile->getItem('名字',$xl));
 include("./ini/bp_ini.php");
 $gjmz=($iniFile->getItem('国家信息','国家名字'));
-echo "<font color=red>你确定要将国家".$gjmz."解散掉么？？</font><br>";
+echo "<p style='color: red'>你确定要将国家".$gjmz."解散掉么？？</p><br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=341;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>是的，我已想好了</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>是的，我已想好了</p></a>"."<br>";
 
 
 echo "<br>";
@@ -40,7 +40,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=172;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>不，我点错了</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>不，我点错了</p></a>"."<br>";
 
 
 
@@ -56,11 +56,11 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=172;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回国家</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回国家</p></a>"."<br>";
 } else{
 	
 
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }
 
 
@@ -90,9 +90,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

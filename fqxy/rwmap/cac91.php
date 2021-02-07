@@ -98,7 +98,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -109,7 +109,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -117,7 +117,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>殷净年</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>殷净年</p></a>"."<br>";
 }
 
 
@@ -139,7 +139,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
 	
@@ -151,7 +151,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -159,7 +159,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>擂台上</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>擂台上</p></a>"."<br>";
 }
 
 if ($rid==216||$rid==217||$rid==219||$rid==220||$rid==221||$rid==222) {
@@ -179,7 +179,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -190,7 +190,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -198,7 +198,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>清清</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>清清</p></a>"."<br>";
 }
 
 if ($rid==195||$rid==196||$rid==197||$rid==198||$rid==199||$rid==200||$rid==204||$rid==205||$rid==206||$rid==207||$rid==222||$rid==223||$rid==224||$rid==225||$rid==226||$rid==227||$rid==228||$rid==233||$rid==234||$rid==235||$rid==240||$rid==241) {
@@ -218,7 +218,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -229,7 +229,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -237,7 +237,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>萧晓月</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>萧晓月</p></a>"."<br>";
 }
 
 
@@ -258,7 +258,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -269,7 +269,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -277,7 +277,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>殷净年</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>殷净年</p></a>"."<br>";
 }
 
 
@@ -300,7 +300,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -311,7 +311,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -319,7 +319,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>秋香</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>秋香</p></a>"."<br>";
 }
 
 
@@ -346,7 +346,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -357,7 +357,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -365,7 +365,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>算命仙</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>算命仙</p></a>"."<br>";
 }
 
 
@@ -395,7 +395,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -406,7 +406,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -414,7 +414,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上擂台比武</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上擂台比武</p></a>"."<br>";
 }
 
 
@@ -438,7 +438,7 @@ $img='pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -449,7 +449,7 @@ $img='pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -457,7 +457,7 @@ echo "<font color=black>？</font>";
 
 }
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打败萧晓月</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打败萧晓月</p></a>"."<br>";
 }
 
 
@@ -477,14 +477,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=43;
 $npc[]=$strr1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>总镖头萧升</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>总镖头萧升</p></a>"."<br>";
 } else {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=7;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>总镖头萧升</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>总镖头萧升</p></a>"."<br>";
 }
 
 

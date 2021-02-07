@@ -18,8 +18,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 15;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>技能</font></a>" . "<font color=black>|药品</font>" . "<br>";
-    echo "<font color=black>请选择指定的物品作为快捷键以便在战斗中直接使用</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>技能</p></a>" . "<p style='color: black'>|药品</p>" . "<br>";
+    echo "<p style='color: black'>请选择指定的物品作为快捷键以便在战斗中直接使用</p>" . "<br>";
     include("./ini/dy_ini.php");
 # 获取一个分类下所有数据
     $wpidd = ($iniFile->getCategory('丹药id'));
@@ -35,16 +35,16 @@ if ($zsspd == 1) {
             $i = $i + 1;
             $cc = $wpid[$i];
             $dymz = ($iniFile->getItem('丹药名字', $cc));
-            echo "<font color=black>" . $i . ".</font>";
+            echo "<p style='color: black'>" . $i . ".</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 247;
             $npc[] = $cc;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>" . $dymz . "</font></a>" . "</br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $dymz . "</p></a>" . "</br>";
         }
     } else {
-        echo "<font color=black>你还没有任何可用的丹药</font>" . "<br>";
+        echo "<p style='color: black'>你还没有任何可用的丹药</p>" . "<br>";
     }
     if ($cljpost == 389) {
         echo "<br>";
@@ -53,7 +53,7 @@ if ($zsspd == 1) {
         $cdid[] = $cmid;
         $clj[] = $cljpost;
         $npc[] = $pkwjid;
-        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
     } else {
         echo "<br>";
 //cmd及超链接值
@@ -61,9 +61,9 @@ if ($zsspd == 1) {
         $cdid[] = $cmid;
         $clj[] = $cljpost;
         $npc[] = 0;
-        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
     }
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

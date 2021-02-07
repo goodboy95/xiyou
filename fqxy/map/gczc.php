@@ -16,7 +16,7 @@ $gjqz=1;
 if($gjqz==1){	
 include("./ini/zt_ini.php");
 $bpid=($iniFile->getItem('玩家信息','帮派id'));
-echo "<font color=blue>【国家权杖】已被夺走了！！国家所有人员攻守位置进行调整！</font>"."<br>";
+echo "<p style='color: blue'>【国家权杖】已被夺走了！！国家所有人员攻守位置进行调整！</p>"."<br>";
 echo "</br>";
 
 
@@ -38,7 +38,7 @@ unlink($ininame); //删除文件
 
 
 if($zlbp==$bpid){
-echo "<font color=blue>温馨提示：目前我的国家变更为守城方</font>"."<br>";	
+echo "<p style='color: blue'>温馨提示：目前我的国家变更为守城方</p>"."<br>";
 include("./ini/user_ini.php");//修改地图坐标
 $dtx=74;
 $dty=8;
@@ -46,7 +46,7 @@ $dty=8;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } else{
-echo "<font color=black>温馨提示：目前我的国家变更为进攻方</font>"."<br>";	
+echo "<p style='color: black'>温馨提示：目前我的国家变更为进攻方</p>"."<br>";
 include("./ini/user_ini.php");//修改地图坐标
 $dtx=74;
 $dty=27;
@@ -92,17 +92,17 @@ $i= date('i')*1;
 $s= date('s')*1;
 $yjf=30-$i-1;
 $yjm=60-$s-1;
-echo "<font color=black>战场位置:【".$zcwz."】</font>"."<br>";
-echo "<font color=black>国战计时:</font>";
+echo "<p style='color: black'>战场位置:【".$zcwz."】</p>"."<br>";
+echo "<p style='color: black'>国战计时:</p>";
 if($yjf <=0){
 if($i <=29){
-echo "<font color=black>".$yjm."秒</font>"."<br>";
+echo "<p style='color: black'>".$yjm."秒</p>"."<br>";
 } else{
 $gzjs=1;
-echo "<font color=black>0秒</font>"."<br>";
+echo "<p style='color: black'>0秒</p>"."<br>";
 }
 } else{
-echo "<font color=black>".$yjf."分".$yjm."秒</font>"."<br>";
+echo "<p style='color: black'>".$yjf."分".$yjm."秒</p>"."<br>";
 }
 
 
@@ -135,9 +135,9 @@ exit;
 
 
 if($zlbp==$bpid){
-echo "<font color=black>【国家状态】--防守方--</font>"."<br>";
+echo "<p style='color: black'>【国家状态】--防守方--</p>"."<br>";
 } else{
-echo "<font color=black>【国家状态】--进攻方--</font>"."<br>";	
+echo "<p style='color: black'>【国家状态】--进攻方--</p>"."<br>";
 } 
 include("./ini/gz06_ini.php");//更新防守时间
 $hdtime=($iniFile->getItem('防守时间','初始'));
@@ -160,14 +160,14 @@ $vipqy=1;
 
 
 if($vipqy ==1){	
-  echo "<font color=black>【".$fsgj."】防守</font>";
+  echo "<p style='color: black'>【".$fsgj."】防守</p>";
 $minute1=$vipqytime-$minute;
 $minute=floor($minute1/60);
 $second=$minute1%60;
 if($minute > 0){		
-echo "<font color=black>[".$minute."分".$second."秒]</font>";
+echo "<p style='color: black'>[".$minute."分".$second."秒]</p>";
 } else{
-echo "<font color=black>[".$second."秒]</font>";
+echo "<p style='color: black'>[".$second."秒]</p>";
 } 
 } else{
 	
@@ -210,13 +210,13 @@ $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>密室(0,0)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>密室(0,0)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 //cmd及超链接值
@@ -224,31 +224,31 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=193;
 $npc[]=0;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【国家权杖】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【国家权杖】</p></a>"."<br>";
 
 
 
 
   //出
   
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(1,0)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(1,0)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
-echo "<font color=red>小提示：【国战内奸】前来时间（21：05，21：10，21：15，21：20，21：25）（防守方击杀获1国战积分和个人积分）</font>"."<br>"; 
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
+echo "<p style='color: red'>小提示：【国战内奸】前来时间（21：05，21：10，21：15，21：20，21：25）（防守方击杀获1国战积分和个人积分）</p>"."<br>";
 
    
    
   //地点描述
-  echo "<font color=black>密室(0,0)往哪里走呢？（这里就是放置国家权杖的地方了点击权杖后便可变为防守方）</font>"."<br>"; 
+  echo "<p style='color: black'>密室(0,0)往哪里走呢？（这里就是放置国家权杖的地方了点击权杖后便可变为防守方）</p>"."<br>";
 } elseif ($dty==1) {
 
 
@@ -257,14 +257,14 @@ echo "<font color=red>小提示：【国战内奸】前来时间（21：05，21�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>神兽守卫(1,0)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>神兽守卫(1,0)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
@@ -295,9 +295,9 @@ $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【前往密室】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【前往密室】</p></a>"."<br>";
 } else {
-echo "<font color=red>【密室】（封印中：需要击杀防守方四大【神兽守卫】方可开启）</font>"."<br>";
+echo "<p style='color: red'>【密室】（封印中：需要击杀防守方四大【神兽守卫】方可开启）</p>"."<br>";
 }
 
 
@@ -312,9 +312,9 @@ $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=8;//需要改动
 if($yjdm>=0){ 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 } 
 } elseif($yjdm>0){   
 //cmd及超链接值
@@ -322,7 +322,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 
 
 
@@ -332,7 +332,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=8;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 	
 }
 
@@ -349,7 +349,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽�
 	  
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
   
 
 
@@ -357,21 +357,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(2,0)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(2,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(1,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(1,1)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>神兽守卫(1,0)往哪里走呢？(提示：需要击败四大神兽守卫后密室大门方可从这里通往密室)</font>"."<br>";
+  echo "<p style='color: black'>神兽守卫(1,0)往哪里走呢？(提示：需要击败四大神兽守卫后密室大门方可从这里通往密室)</p>"."<br>";
   
   
 } elseif ($dty==2) {
@@ -382,14 +382,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>神兽守卫(1,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>神兽守卫(1,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 $bossid=5;
@@ -406,9 +406,9 @@ $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=7;//需要改动
 if($yjdm>=0){ 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 } 
 } elseif($yjdm>0){   
 //cmd及超链接值
@@ -416,45 +416,45 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=7;//需要改动
-	echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+	echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 	
 }
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(2,1)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(2,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(1,0)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(1,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(1,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(1,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>神兽守卫(1,1)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>神兽守卫(1,1)往哪里走呢？</p>"."<br>";
   
   } elseif ($dty==3) {
 
@@ -464,40 +464,40 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>无名(1,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(1,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>中门(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>中门(2,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(1,1)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(1,1)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(1,2)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(1,2)往哪里走呢？</p>"."<br>";
   
 	
 	 } elseif ($dty==4) {
@@ -508,14 +508,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>中门(2,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>中门(2,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
@@ -533,21 +533,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【进入中门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【进入中门】</p></a>"."<br>";
 if($yjdm>=0){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=4;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【城池中门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【城池中门】</p></a>"."<br>";
 } else {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=3;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【破损的城池中门】</font></a>"."<br>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【破损的城池中门】</p></a>"."<br>";
 }
 } else {
 if($yjdm>=0){
@@ -556,14 +556,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【城池中门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【城池中门】</p></a>"."<br>";
 } else {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=3;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【破损的城池中门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【破损的城池中门】</p></a>"."<br>";
 }
 }
 
@@ -579,7 +579,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【破损�
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
   
 
 
@@ -587,7 +587,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,2)</p></a>"."<br>";
 
   
 
@@ -595,16 +595,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(2,3)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(2,3)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>中门(2,2)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>中门(2,2)往哪里走呢？</p>"."<br>";
   
 	
 		 } elseif ($dty==5) {
@@ -615,14 +615,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>神兽守卫(2,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>神兽守卫(2,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
  
  
@@ -646,9 +646,9 @@ $npc[]=5;//需要改动
 
 
 if($yjdm>=0){ 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 } 
 } elseif($yjdm>0){   
 //cmd及超链接值
@@ -656,14 +656,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=5;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 }
 
 
@@ -679,31 +679,31 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽�
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(1,1)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(1,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(2,0)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(2,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>中门(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>中门(2,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>神兽守卫(2,1)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>神兽守卫(2,1)往哪里走呢？</p>"."<br>";
   
 	
 			 } elseif ($dty==6) {
@@ -714,14 +714,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>神兽守卫(2,0)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>神兽守卫(2,0)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 $bossid=4;
@@ -738,9 +738,9 @@ $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=6;//需要改动
 if($yjdm>=0){ 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 } 
 } elseif($yjdm>0){   
 //cmd及超链接值
@@ -748,7 +748,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】</p></a>"."<br>";
 } else {
 	
 		//cmd及超链接值
@@ -756,33 +756,33 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=6;//需要改动
-	echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神兽守卫】（阵亡）</font></a>"."<br>";
+	echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神兽守卫】（阵亡）</p></a>"."<br>";
 	
 }
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(1,0)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(1,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>神兽守卫(2,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>神兽守卫(2,1)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>神兽守卫(2,0)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>神兽守卫(2,0)往哪里走呢？</p>"."<br>";
   
 	
 	
@@ -795,40 +795,40 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>无名(2,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(2,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>大门(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>大门(3,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(2,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(2,3)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(2,3)往哪里走呢？</p>"."<br>";
   
 	
 	
@@ -840,14 +840,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>大门(3,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>大门(3,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
   
   
@@ -863,21 +863,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【进入大门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【进入大门】</p></a>"."<br>";
 if($yjdm>=0){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=2;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【城池大门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【城池大门】</p></a>"."<br>";
 } else {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=1;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【破损的城池大门】</font></a>"."<br>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【破损的城池大门】</p></a>"."<br>";
 }
 } else {
 if($yjdm>=0){
@@ -886,14 +886,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【城池大门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【城池大门】</p></a>"."<br>";
 } else {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=194;
 $npc[]=1;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【破损的城池大门】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【破损的城池大门】</p></a>"."<br>";
 }
 }
 	
@@ -906,7 +906,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【破损�
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 
 $cmid=$cmid+1;
@@ -916,7 +916,7 @@ $npc[]=0;
 
 
 
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,3)</p></a>"."<br>";
 
 
 /*
@@ -924,7 +924,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,2)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,2)</p></a>"."<br>";
 */
 //查看地图
 $cmid=$cmid+1;
@@ -933,10 +933,10 @@ $clj[]=8;
 $npc[]=0;
 
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>大门(3,3)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>大门(3,3)往哪里走呢？</p>"."<br>";
   
 	
 	
@@ -948,42 +948,42 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>无名(3,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(3,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(2,2)</p></a>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>大门(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>大门(3,3)</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(3,2)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(3,2)往哪里走呢？</p>"."<br>";
   
 	
 	
@@ -997,46 +997,46 @@ $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(4,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(4,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>大门(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>大门(3,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,3)</p></a>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,4)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,4)</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(4,3)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(4,3)往哪里走呢？</p>"."<br>";
   
 	
 								 } elseif ($dty==11) {
@@ -1048,45 +1048,45 @@ $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(4,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(4,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,4)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,3)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,3)</p></a>"."<br>";
 //$cmid=$cmid+1;
 //$cdid[]=$cmid;
 //$clj[]=6;
 //$npc[]=0;
-//echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,5)</font></a>"."<br>";
+//echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,5)</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(4,4)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(4,4)往哪里走呢？</p>"."<br>";
 	
 									 } elseif ($dty==12) {
 
@@ -1096,47 +1096,47 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>无名(4,5)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(4,5)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,5)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,5)</p></a>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,4)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,6)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,6)</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(4,5)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(4,5)往哪里走呢？</p>"."<br>";
 	
 	
 	
@@ -1149,31 +1149,31 @@ $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(4,6)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(4,6)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,6)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,6)</p></a>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,5)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,5)</p></a>"."<br>";
 
 
 //查看地图
@@ -1181,10 +1181,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(4,6)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(4,6)往哪里走呢？</p>"."<br>";
 		
 	
 										 } elseif ($dty==14) {
@@ -1196,35 +1196,35 @@ $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(3,6)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(3,6)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(2,6)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(2,6)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,6)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,6)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,6)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,6)</p></a>"."<br>";
 
 
 
@@ -1233,10 +1233,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(3,6)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(3,6)往哪里走呢？</p>"."<br>";
 		
 	
 										 } elseif ($dty==15) {
@@ -1247,31 +1247,31 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>无名(2,6)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(2,6)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,6)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,6)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻方墓地(2,5)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>攻方墓地(2,5)</p></a>"."<br>";
 
 
 
@@ -1280,10 +1280,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(2,6)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(2,6)往哪里走呢？</p>"."<br>";
 			
 	
 											 } elseif ($dty==16) {
@@ -1294,31 +1294,31 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>攻方墓地(2,5)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>攻方墓地(2,5)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,5)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,5)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(2,6)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(2,6)</p></a>"."<br>";
 
 
 
@@ -1327,10 +1327,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>攻方墓地(2,5)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>攻方墓地(2,5)往哪里走呢？</p>"."<br>";
 			
 			
 			
@@ -1343,35 +1343,35 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(3,5)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(3,5)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻方墓地(2,5)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>攻方墓地(2,5)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,5)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,5)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(3,6)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(3,6)</p></a>"."<br>";
 
 
 
@@ -1380,10 +1380,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(3,5)往哪里走呢？</font>"."<br>";
+  echo "<p style='color: black'>无名(3,5)往哪里走呢？</p>"."<br>";
 						
 			
 			
@@ -1396,35 +1396,35 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(5,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(5,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,4)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>入口通道(6,4)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>入口通道(6,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,3)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,3)</p></a>"."<br>";
 
 
 
@@ -1434,10 +1434,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(5,4)往哪里走呢？</font>"."<br>";		
+  echo "<p style='color: black'>无名(5,4)往哪里走呢？</p>"."<br>";
 			
 			
 			
@@ -1450,35 +1450,35 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(5,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(5,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(4,3)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(4,3)</p></a>"."<br>";
 //$cmid=$cmid+1;
 //$cdid[]=$cmid;
 //$clj[]=5;
 //$npc[]=0;
-//echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,2)</font></a>"."<br>";
+//echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,4)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,4)</p></a>"."<br>";
 
 
 
@@ -1488,10 +1488,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(5,3)往哪里走呢？</font>"."<br>";			
+  echo "<p style='color: black'>无名(5,3)往哪里走呢？</p>"."<br>";
 			
 			
 															 } elseif ($dty==20) {
@@ -1502,36 +1502,36 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(5,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(5,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,1)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,3)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,3)</p></a>"."<br>";
 
 
 
@@ -1541,10 +1541,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(5,2)往哪里走呢？</font>"."<br>";			
+  echo "<p style='color: black'>无名(5,2)往哪里走呢？</p>"."<br>";
 					
 			
 																 } elseif ($dty==21) {
@@ -1555,36 +1555,36 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(5,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(5,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,1)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>守方墓地(5,0)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>守方墓地(5,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,2)</p></a>"."<br>";
 
 
 
@@ -1594,10 +1594,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(5,1)往哪里走呢？</font>"."<br>";			
+  echo "<p style='color: black'>无名(5,1)往哪里走呢？</p>"."<br>";
 							
 			
 			
@@ -1610,31 +1610,31 @@ $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>守方墓地(5,0)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>守方墓地(5,0)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,0)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,1)</p></a>"."<br>";
 
 
 
@@ -1644,10 +1644,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>守方墓地(5,0)往哪里走呢？</font>"."<br>";			
+  echo "<p style='color: black'>守方墓地(5,0)往哪里走呢？</p>"."<br>";
 								
 			
 																				 } elseif ($dty==23) {
@@ -1658,32 +1658,32 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
 
-echo "<font color=black>无名(6,0)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(6,0)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>守方墓地(5,0)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>守方墓地(5,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,1)</p></a>"."<br>";
 
 
 
@@ -1693,10 +1693,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(6,0)往哪里走呢？</font>"."<br>";	
+  echo "<p style='color: black'>无名(6,0)往哪里走呢？</p>"."<br>";
   
   																				 } elseif ($dty==24) {
 
@@ -1706,36 +1706,36 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(6,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(6,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,1)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,0)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,0)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,2)</p></a>"."<br>";
 
 
 
@@ -1745,10 +1745,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(6,1)往哪里走呢？</font>"."<br>";	
+  echo "<p style='color: black'>无名(6,1)往哪里走呢？</p>"."<br>";
   
   
   
@@ -1761,31 +1761,31 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>无名(6,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(6,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,2)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,1)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,1)</p></a>"."<br>";
 
 
 
@@ -1796,10 +1796,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(6,2)往哪里走呢？</font>"."<br>";	
+  echo "<p style='color: black'>无名(6,2)往哪里走呢？</p>"."<br>";
   
   
   
@@ -1811,31 +1811,31 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地�
 $cdid[]=$cmid;
 $clj[]=195;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;//需要改动
-echo "<font color=black>入口通道(6,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>入口通道(6,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
 
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(5,4)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(5,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>无名(6,5)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>无名(6,5)</p></a>"."<br>";
 
 
 
@@ -1846,10 +1846,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>入口通道(6,4)往哪里走呢？</font>"."<br>";	
+  echo "<p style='color: black'>入口通道(6,4)往哪里走呢？</p>"."<br>";
   
   
      																				 } elseif ($dty==27) {
@@ -1862,7 +1862,7 @@ $clj[]=195;
 $npc[]=0;
 
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查询国战信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查询国战信息</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1870,7 +1870,7 @@ $clj[]=2;
 $npc[]=0;//需要改动
 
 
-echo "<font color=black>无名(6,5)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>无名(6,5)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
@@ -1879,17 +1879,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=159;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【离开战场】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【离开战场】</p></a>"."<br>";
 
   //出口
-  echo "<font color=black>请选择出口</font>"."<br>";
+  echo "<p style='color: black'>请选择出口</p>"."<br>";
 
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>入口通道(6,4)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>入口通道(6,4)</p></a>"."<br>";
 
 
 
@@ -1901,10 +1901,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   
   //地点描述
-  echo "<font color=black>无名(6,5)往哪里走呢？</font>"."<br>";	
+  echo "<p style='color: black'>无名(6,5)往哪里走呢？</p>"."<br>";
   
   
   

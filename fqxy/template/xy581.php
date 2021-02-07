@@ -32,17 +32,17 @@ if($tszf==1){
 	$zfzh=$wjtake;
 include("./ini/bdwx_ini.php");	
 $iniFile->updItem('微信', ['初始' => $zfzh]);
-echo "<font color=red>恭喜你！！成功绑定到了【微信】（".$zfzh."）</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！成功绑定到了【微信】（".$zfzh."）</p>"."<br>";
 
 
 	
 } else{
-echo "<font color=red>你输入的账号包含敏感字符请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的账号包含敏感字符请重新输入</p>"."<br>";
 }
 } else{
 
 
-echo "<font color=red>长度不能超过20个字符</font><br>";
+echo "<p style='color: red'>长度不能超过20个字符</p><br>";
 
 }
 
@@ -50,7 +50,7 @@ echo "<font color=red>长度不能超过20个字符</font><br>";
 } else{
 
 
-echo "<font color=red>账号不能为空</font><br>";
+echo "<p style='color: red'>账号不能为空</p><br>";
 
 
 }
@@ -61,7 +61,7 @@ echo "<font color=red>账号不能为空</font><br>";
 
 
 <form  action="" method="POST">
-<font color=black>请输入你的【微信】进行绑定:</font><br>
+<p style='color: black'>请输入你的【微信】进行绑定:</p><br>
 <input  type="text" name="wjtoke" placeholder="微信账号"id='search'><br>
 <input  type="submit" name="submit" value="绑定"id="search1" ><br>
 </form>
@@ -77,7 +77,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=579;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 ?>

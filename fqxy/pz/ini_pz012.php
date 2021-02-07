@@ -12,7 +12,7 @@ $jy=$jy*3;
 $jy2=$jy+$jy1;
 
 if($lvl>=$jfdj&&$jy2 >=$lvl1){
-echo "<font color=red>当前宠物等级已达到目前未解封等级".$jfdj."级（无法获得经验）</font><br>";	
+echo "<p style='color: red'>当前宠物等级已达到目前未解封等级".$jfdj."级（无法获得经验）</p><br>";
 include("./ini/cw_ini.php");
 
 $iniFile->updItem('宠物经验', [$ztcwid => $lvl1]);
@@ -34,8 +34,8 @@ $yl=$jy;
 include("./pz/ylts.php");
 
 
-echo "<font color=black>宠物获得：".$ylxx."经验</font><br>";	
-echo "<font color=red>升级了（目前宠物等级：".$lvl."级）</font><br>";
+echo "<p style='color: black'>宠物获得：".$ylxx."经验</p><br>";
+echo "<p style='color: red'>升级了（目前宠物等级：".$lvl."级）</p><br>";
 
 //升级更新属性
 
@@ -58,7 +58,7 @@ $iniFile->updItem('宠物经验', [$ztcwid => $jy2]);
 	//数字转汉字
 $yl=$jy;
 include("./pz/ylts.php");
-echo "<font color=black>宠物获得：".$ylxx."经验</font><br>";	
+echo "<p style='color: black'>宠物获得：".$ylxx."经验</p><br>";
 		
 		
 		

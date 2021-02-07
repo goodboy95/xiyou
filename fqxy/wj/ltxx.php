@@ -35,7 +35,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=618;
 $npc[]=$jnid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jnname."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$jnname."</p></a>";
 	
 	
 } elseif($jnfl ==2){//药品技能
@@ -45,7 +45,7 @@ $dysl=($iniFile->getItem('丹药数量',$jnid));
 
 
 if($dysl>=1){
-echo "<font color=black>".$jnname."</font>";
+echo "<p style='color: black'>".$jnname."</p>";
 }else{
 $szid=$jn;
 if($szid==1){
@@ -73,16 +73,16 @@ $iniFile->updItem('快捷分类', [$szmz => '0']);
 $iniFile->updItem('快捷名字', [$szmz => '0']);
 
 
-echo "<font color=black>快捷".$jn."</font>";
+echo "<p style='color: black'>快捷".$jn."</p>";
 
 	
 }
 
 
 } elseif($jnfl ==3){//捕捉技能
-echo "<font color=black>".$jnname."</font>";
+echo "<p style='color: black'>".$jnname."</p>";
 } elseif($jnfl ==4){//查看技能
-echo "<font color=black>".$jnname."</font>";
+echo "<p style='color: black'>".$jnname."</p>";
 
 
 	
@@ -96,7 +96,7 @@ echo "<font color=black>".$jnname."</font>";
 	
 	
 
-echo "<font color=black>快捷".$jn."</font>";
+echo "<p style='color: black'>快捷".$jn."</p>";
 
 }
 
@@ -105,7 +105,7 @@ echo "<font color=black>快捷".$jn."</font>";
 if($jn==3||$jn==6||$jn==9){
 echo "</br>";
 }else{
-echo "<font color=black>|</font>";
+echo "<p style='color: black'>|</p>";
 	
 }
 

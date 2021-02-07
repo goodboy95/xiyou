@@ -33,7 +33,7 @@ $iniFile->delItem('好友分类', $xlh);
 # 删除一个子项
 $iniFile->delItem('好友名字', $xlh);
 
-echo "<font color=red>你将：".$wpmz."移除了黑名单</font>"."<br>";
+echo "<p style='color: red'>你将：".$wpmz."移除了黑名单</p>"."<br>";
 
 include("template/xy116.php");
 //不走xy.php直接调用xy文件需要加pz01配置

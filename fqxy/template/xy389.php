@@ -171,7 +171,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
 //判断对手或者自己死亡
             if ($nhp <= 1) {
                 $wjid = $ckid;
-                echo "<font color=red>" . $nmz . "被你打死了</font>" . "<br>";
+                echo "<p style='color: red'>" . $nmz . "被你打死了</p>" . "<br>";
 //死亡
                 include("./ini/pksw_ini.php");
                 $nowtime = date('Y-m-d H:i:s');
@@ -207,7 +207,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                     $pkzzz=($iniFile->getItem('玩家信息','恶名值'));
                     $pkzzz=$pkzzz+1;
                     $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
-                    echo "<font color=red>由于你主动发起恶名值+1（当前恶名:".$pkzzz."）</font>"."<br>";
+                    echo "<p style='color: red'>由于你主动发起恶名值+1（当前恶名:".$pkzzz."）</p>"."<br>";
                     //加pk值
                     }
                     */
@@ -256,7 +256,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
             }
             if ($ohp <= 1) {
                 $wjid = $wjid1;
-                echo "<font color=red>很遗憾！！你被" . $nmz . "打死掉了</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！！你被" . $nmz . "打死掉了</p>" . "<br>";
 //死亡
                 include("./ini/pksw_ini.php");
                 $nowtime = date('Y-m-d H:i:s');
@@ -305,7 +305,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                     $pkzzz=($iniFile->getItem('玩家信息','恶名值'));
                     $pkzzz=$pkzzz+1;
                     $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
-                    echo "<font color=red>由于你主动发起恶名值+1（当前恶名:".$pkzzz."）</font>"."<br>";
+                    echo "<p style='color: red'>由于你主动发起恶名值+1（当前恶名:".$pkzzz."）</p>"."<br>";
                     //加pk值
                     }
                     */
@@ -351,7 +351,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
             $iniFile->delItem('玩家伤害', $ckid);
 //提取玩家伤害语
             if ($pk004 != "") {
-                echo "<font color=red>" . $pk004 . "造成了" . $pk003 . "点伤害</font>" . "<br>";
+                echo "<p style='color: red'>" . $pk004 . "造成了" . $pk003 . "点伤害</p>" . "<br>";
             }
             include("./ini/zd_ini.php");
 # 获取一个分类下所有数据
@@ -436,17 +436,17 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                 }
             }
 //显示对方
-            echo "<font color=black>" . $nmz . ":</font>" . "<br>";
-            echo "<font color=black>HP:(" . $nhp . "/" . $nmaxhp . ")" . $dxsh . "</font>" . "<br>";
-            echo "<font color=black>MP:(" . $nmp . "/" . $nmaxmp . ")</font>" . "<br>";
+            echo "<p style='color: black'>" . $nmz . ":</p>" . "<br>";
+            echo "<p style='color: black'>HP:(" . $nhp . "/" . $nmaxhp . ")" . $dxsh . "</p>" . "<br>";
+            echo "<p style='color: black'>MP:(" . $nmp . "/" . $nmaxmp . ")</p>" . "<br>";
 //显示对方
-            echo "<font color=black>----------</font>" . "<br>";
-            echo "<font color=red>自己:</font>" . "<br>";
+            echo "<p style='color: black'>----------</p>" . "<br>";
+            echo "<p style='color: red'>自己:</p>" . "<br>";
 //显示自己
-            echo "<font color=black>HP:(" . $ohp . "/" . $omaxhp . ")" . $wjsh . "</font>" . "<br>";
-            echo "<font color=black>MP:(" . $omp . "/" . $omaxmp . ")</font>" . "<br>";
+            echo "<p style='color: black'>HP:(" . $ohp . "/" . $omaxhp . ")" . $wjsh . "</p>" . "<br>";
+            echo "<p style='color: black'>MP:(" . $omp . "/" . $omaxmp . ")</p>" . "<br>";
 //显示自己
-            echo "<font color=black>----------</font>" . "<br>";
+            echo "<p style='color: black'>----------</p>" . "<br>";
             $jnfl = $jnfl4;
             $jnid = $jnid4;
             $jnnamex = $jnmz4;
@@ -477,9 +477,9 @@ if ($zsspd == 1 && $zsspd2 == 1) {
             $jnnamex = $jnmz9;
             $jn = 9;
             include("./wj/pkxxb.php");
-            echo "<font color=black>===================</font>" . "<br>";
+            echo "<p style='color: black'>===================</p>" . "<br>";
             echo "<br>";
-            echo "<font color=black>----------------------</font>" . "<br>";
+            echo "<p style='color: black'>----------------------</p>" . "<br>";
             $wjid = $wjid1;
 //cmd及超链接值
             include("fhgame.php");
@@ -488,22 +488,22 @@ if ($zsspd == 1 && $zsspd2 == 1) {
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
             $wjid = $wjid1;
             include("./ini/zt_ini.php");
             $username = ($iniFile->getItem('玩家信息', '玩家名字'));
             if ($pkk002 == $username) {
-                echo "<font color=black>对手已被你打死掉了！！</font>" . "<br>";
+                echo "<p style='color: black'>对手已被你打死掉了！！</p>" . "<br>";
             } else {
-                echo "<font color=black>已被" . $pkk002 . "打死掉了！！</font>" . "<br>";
+                echo "<p style='color: black'>已被" . $pkk002 . "打死掉了！！</p>" . "<br>";
             }
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } else {
         include("./ini/pkbl_ini.php");
@@ -514,16 +514,16 @@ if ($zsspd == 1 && $zsspd2 == 1) {
         $iniFile->delItem('玩家攻击语', $npcc);
         $iniFile->delItem('被打死', $npcc);
         if ($zl == 2) {
-            echo "<font color=black>对手正在蹲大牢~~</font>" . "<br>";
+            echo "<p style='color: black'>对手正在蹲大牢~~</p>" . "<br>";
         } else {
-            echo "<font color=black>对手还在投胎中（死亡状态）</font>" . "<br>";
+            echo "<p style='color: black'>对手还在投胎中（死亡状态）</p>" . "<br>";
         }
         //cmd及超链接值
         $cmid = $cmid + 1;
         $cdid[] = $cmid;
         $clj[] = 2;
         $npc[] = 0;
-        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
     }
 }
 //解锁当前使用的ini

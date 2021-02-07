@@ -32,13 +32,13 @@ if ($zsspd == 1) {
         $wpdz5[] = 1;//	重量
 //物品加
         include("./rwmap/rwget.php");
-        echo "<font color=red>爱国富商：恭喜你！！你缓缓的将【五星红旗】高高挂起扬我国威~~~</font>" . "<br>";
+        echo "<p style='color: red'>爱国富商：恭喜你！！你缓缓的将【五星红旗】高高挂起扬我国威~~~</p>" . "<br>";
         include("./ini/zt_ini.php");
         $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
         $xtxx = "恭喜玩家" . $wjmz . "将【五星红旗】高高挂起扬我国威~~~获得了大量奖励";
         include("./msg/msgg02.php");
     } else {
-        echo "<font color=red>爱国富商：对不起！！你虽然爱国热情高涨但是也得需要【五星红旗】啊，不然怎么升国旗</font>" . "<br>";
+        echo "<p style='color: red'>爱国富商：对不起！！你虽然爱国热情高涨但是也得需要【五星红旗】啊，不然怎么升国旗</p>" . "<br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -46,8 +46,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

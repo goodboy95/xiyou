@@ -23,28 +23,28 @@ include("wp/zbbs.php");//调用宝石信息
 
 
 
-echo "<font color=black>$bsmz</font>"."<br>";
-echo "<font color=black>描述：$bsms</font>"."<br>"; 	
+echo "<p style='color: black'>$bsmz</p>"."<br>";
+echo "<p style='color: black'>描述：$bsms</p>"."<br>";
 
 
 if($bsxl>0){
-echo "<font color=black>镶嵌血量：".$bsxl."</font>"."<br>";
+echo "<p style='color: black'>镶嵌血量：".$bsxl."</p>"."<br>";
 
 }
 if($bsgj>0){
 $wpp4 = ceil(($bsgj)/ 1.3);
-echo "<font color=black>镶嵌攻击：".$wpp4."-".$bsgj."</font>"."<br>";
+echo "<p style='color: black'>镶嵌攻击：".$wpp4."-".$bsgj."</p>"."<br>";
 
 }
 if($bsmg>0){
 $wpp5 = ceil(($bsmg)/ 1.3);
-echo "<font color=black>镶嵌魔攻：".$wpp5."-".$bsmg."</font>"."<br>";
+echo "<p style='color: black'>镶嵌魔攻：".$wpp5."-".$bsmg."</p>"."<br>";
 
 }
 if($bsfy>0){
 $wpp6 = ceil(($bsfy)/ 1.3);
 
-echo "<font color=black>镶嵌防御：".$wpp6."-".$bsfy."</font>"."<br>";
+echo "<p style='color: black'>镶嵌防御：".$wpp6."-".$bsfy."</p>"."<br>";
 }
 
 
@@ -54,14 +54,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=239;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br/>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=226;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回挂售</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回挂售</p></a>"."<br>";
 echo "<br>";
 
 //cmd及超链接值
@@ -69,7 +69,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br/>";
 
 
 
@@ -83,7 +83,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏首页</p></a>"."<br/>";
 
 
 

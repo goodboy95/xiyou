@@ -75,14 +75,14 @@ $result = mysqli_query($conn, $strsql);
 
 
 
-	echo "<font color=black>失去金豆x".$wjjdqg."</font>"."<br>";
+	echo "<p style='color: black'>失去金豆x".$wjjdqg."</p>"."<br>";
 
 
 
 
 
 
-		echo "<font color=red>发布求购信息成功等待好消息吧</font>"."<br>";
+		echo "<p style='color: red'>发布求购信息成功等待好消息吧</p>"."<br>";
 
 
 
@@ -102,7 +102,7 @@ break;
 
 } else{	
 
-echo "<font color=red>你已发布有求购信息了，请耐心等待买家</font>"."<br>";
+echo "<p style='color: red'>你已发布有求购信息了，请耐心等待买家</p>"."<br>";
 
 } 
 
@@ -121,9 +121,9 @@ $fz02="豪宅";
 $fz02="官宅";
 }
 if($fz03==3){
-echo "<font color=black>你已经拥有了【".$fz01."】(".$fz02."),不可以发布求购信息</font>"."<br>";
+echo "<p style='color: black'>你已经拥有了【".$fz01."】(".$fz02."),不可以发布求购信息</p>"."<br>";
 } else{
-echo "<font color=black>你已经拥有了".$fz01."(".$fz02."),不可以发布求购信息</font>"."<br>";
+echo "<p style='color: black'>你已经拥有了".$fz01."(".$fz02."),不可以发布求购信息</p>"."<br>";
 }
 
 
@@ -137,7 +137,7 @@ echo "<font color=black>你已经拥有了".$fz01."(".$fz02."),不可以发布�
 
 } else{	
 
-echo "<font color=red>对不起！！你的金豆不足".$wjjdqg."个</font>"."<br>";
+echo "<p style='color: red'>对不起！！你的金豆不足".$wjjdqg."个</p>"."<br>";
 
 } 
 

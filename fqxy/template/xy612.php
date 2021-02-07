@@ -23,15 +23,15 @@ if ($npcc == 2) {
                 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
                 $iniFile->updItem('玩家信息', ['性别' => 2]);
-                echo "<font color=red>恭喜你！！顺利的成为了女性！！</font>" . "<br>";
+                echo "<p style='color: red'>恭喜你！！顺利的成为了女性！！</p>" . "<br>";
             } else {
-                echo "<font color=red>做变性手续需要〖金豆〗x10哦</font>" . "<br>";
+                echo "<p style='color: red'>做变性手续需要〖金豆〗x10哦</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>普陀山弟子不能转为女性</font>" . "<br>";
+            echo "<p style='color: red'>普陀山弟子不能转为女性</p>" . "<br>";
         }
     } else {
-        echo "<font color=red>你本来就是女性！！别以为我看不出来哦</font>" . "<br>";
+        echo "<p style='color: red'>你本来就是女性！！别以为我看不出来哦</p>" . "<br>";
     }
 } elseif ($npcc == 1) {
     if ($sxe != 1) {
@@ -54,15 +54,15 @@ if ($npcc == 2) {
                 include("./ini/zt_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
                 $iniFile->updItem('玩家信息', ['性别' => 1]);
-                echo "<font color=red>恭喜你！！顺利的成为了男性！！</font>" . "<br>";
+                echo "<p style='color: red'>恭喜你！！顺利的成为了男性！！</p>" . "<br>";
             } else {
-                echo "<font color=red>做变性手续需要〖金豆〗x10哦</font>" . "<br>";
+                echo "<p style='color: red'>做变性手续需要〖金豆〗x10哦</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>月宫弟子不能转为男性</font>" . "<br>";
+            echo "<p style='color: red'>月宫弟子不能转为男性</p>" . "<br>";
         }
     } else {
-        echo "<font color=red>你本来就是男性！！别以为我看不出来哦</font>" . "<br>";
+        echo "<p style='color: red'>你本来就是男性！！别以为我看不出来哦</p>" . "<br>";
     }
 }
 //cmd及超链接值
@@ -70,5 +70,5 @@ $cmid = $cmid + 1;
 $cdid[] = $cmid;
 $clj[] = 2;
 $npc[] = 0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 ?>

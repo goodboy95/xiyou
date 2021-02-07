@@ -33,12 +33,12 @@ $lvl1=(($lvl+1)*($lvl+2)*($lvl+2)*($lvl+2)*($lvl+3)+10000);
 //数字转汉字
 $yl=$lvl1;
 include("./pz/ylts.php");
-echo "<font color=black>法宝经验最大储存:</font>".$ylxx."<font color=black>经验</font>"."<br>";
+echo "<p style='color: black'>法宝经验最大储存:</p>".$ylxx."<p style='color: black'>经验</p>"."<br>";
 //数字转汉字
 $yl=$wjxljy;
 include("./pz/ylts.php");
 
-echo "<font color=black>当前可用法宝经验:</font>".$ylxx."<font color=black>经验</font>"."<br>";
+echo "<p style='color: black'>当前可用法宝经验:</p>".$ylxx."<p style='color: black'>经验</p>"."<br>";
 
 
 
@@ -47,7 +47,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回状态</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回状态</p></a>"."<br/>";
 
 
 
@@ -58,7 +58,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br/>";
 
 
 
@@ -72,7 +72,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏首页</p></a>"."<br/>";
 
 
 }

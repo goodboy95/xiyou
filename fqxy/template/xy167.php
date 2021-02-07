@@ -98,7 +98,7 @@ $iniFile->addItem('玩家vip',[$ltmax1 => $ltbl2]);
 $iniFile->addItem('玩家名字',[$ltmax1 => $ltbl1]); 
 $iniFile->addItem('玩家住宅',[$ltmax1 => '2']); 
 		
-		echo "<font color=red>你发起了住宅邀请，请等待对方同意</font>"."<br>";
+		echo "<p style='color: red'>你发起了住宅邀请，请等待对方同意</p>"."<br>";
 		
 		
 		
@@ -112,14 +112,14 @@ $iniFile->addItem('玩家住宅',[$ltmax1 => '2']);
 		
 			} else{
 	
-echo "<font color=red>对不起！你已经邀请过了！请等待对方同意</font>"."<br>";
+echo "<p style='color: red'>对不起！你已经邀请过了！请等待对方同意</p>"."<br>";
 	}
 		
 
 
 } else{
 
-echo "<font color=red>对不起！对方已经把你拉黑，无法邀请对方进入住宅</font>"."<br>";
+echo "<p style='color: red'>对不起！对方已经把你拉黑，无法邀请对方进入住宅</p>"."<br>";
 
 }
 	
@@ -129,14 +129,14 @@ include("template/xy166.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 } else{
-	echo "<font color=red>对方还在赶着去投胎了着什么急？!</font>"."<br>";
+	echo "<p style='color: red'>对方还在赶着去投胎了着什么急？!</p>"."<br>";
 		$wjid=$wjid1;
 		//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 		
 		

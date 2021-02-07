@@ -25,7 +25,7 @@ if($bbyl>=$str3){
 $wpkc=$str3;
 $yl=$wpkc;
 include("./pz/ylts.php");
-echo "<font color=black>失去：".$ylxx."银两</font>"."<br>";
+echo "<p style='color: black'>失去：".$ylxx."银两</p>"."<br>";
 $kcyl01=$wpkc;
 include("./pz/ini_pzz012.php");//扣除
 
@@ -61,7 +61,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 //数字转汉字
 $yl=$str3;
 include("./pz/ylts.php");
-echo "<font color=red>对不起，快速传送需要银两".$ylxx."两</font></a>"."<br>";
+echo "<p style='color: red'>对不起，快速传送需要银两".$ylxx."两</p></a>"."<br>";
 
 
 }

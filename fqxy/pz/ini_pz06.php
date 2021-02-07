@@ -26,6 +26,6 @@ $result = mysqli_query($conn, $strsql);
 $iniFile->updItem($wpzz1, [$wpzz2 => $ckrl1]);
 //缓存修改
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！".$wpzz2."+".$ckkr."</font><br>";
+echo "<p style='color: black'>恭喜你！".$wpzz2."+".$ckkr."</p><br>";
 
 ?>

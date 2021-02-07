@@ -27,9 +27,9 @@ $iniFile->updItem('被打死', ['初始' => '999']);
 
 
 
-echo "<font color=black>玩家PK信息（战败）：</font><br>";
-echo "<font color=black>------------------------------</font><br>";
-echo "<font color=red>".$pk8."将你打死了，狠狠被鞭尸一万次"."</font><br>"."<br>";
+echo "<p style='color: black'>玩家PK信息（战败）：</p><br>";
+echo "<p style='color: black'>------------------------------</p><br>";
+echo "<p style='color: red'>".$pk8."将你打死了，狠狠被鞭尸一万次"."</p><br>"."<br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -37,9 +37,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=396;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>马上复活</font></a>"."<font color=black></font>"."<br>";
-echo "<font color=black>------------------------------</font><br>";
-echo "<font color=black>提示：现在出于死亡状态，复活后有再次受到攻击的危险！！</font><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>马上复活</p></a>"."<p style='color: black'></p>"."<br>";
+echo "<p style='color: black'>------------------------------</p><br>";
+echo "<p style='color: black'>提示：现在出于死亡状态，复活后有再次受到攻击的危险！！</p><br>";
 echo "<br>";
 
 //cmd及超链接值

@@ -7,7 +7,7 @@ if ($zsspd == 1) {
 # 获取一个分类下某个子项的值
     $zzwpid = ($iniFile->getItem('种植物品', '1'));
     if ($zzwpid >= 1) {//
-        echo "<font color=red>对不起！！您已经有种植产物了，请收获后再来种植哦~~~</font>" . "<br>";
+        echo "<p style='color: red'>对不起！！您已经有种植产物了，请收获后再来种植哦~~~</p>" . "<br>";
     } else {
         if ($npcc == 1) {//〖金豆〗
             $npcc11 = $npcc;//存值
@@ -37,9 +37,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         } elseif ($npcc == 2) {  //〖云梯石〗 
             $npcc11 = $npcc;//存值
@@ -69,9 +69,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         } elseif ($npcc == 3) {  //〖八倍掉宝符〗 
             $npcc11 = $npcc;//存值
@@ -101,9 +101,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         } elseif ($npcc == 4) {  //〖护身符〗 
             $npcc11 = $npcc;//存值
@@ -133,9 +133,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         } elseif ($npcc == 5) {  //〖尊享VIP〗（月卡）
             $npcc11 = $npcc;//存值
@@ -165,9 +165,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         } elseif ($npcc == 6) {  //〖至尊宝石包〗（1个）
             $npcc11 = $npcc;//存值
@@ -197,9 +197,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         } elseif ($npcc == 7) {  //〖帝王石〗
             $npcc11 = $npcc;//存值
@@ -229,9 +229,9 @@ if ($zsspd == 1) {
                 $iniFile->updItem('种植时间', ['1' => $nowtime]);
                 $iniFile->updItem('施肥时间', ['1' => $tiemxx]);
                 $iniFile->updItem('收获时间', ['1' => $tiemxx1]);
-                echo "<font color=black>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</font>" . "<br>";
+                echo "<p style='color: black'>恭喜您！！种植了" . $wpdz1[0] . "x" . $wpdz4[0] . "（请于" . $tiemxx . "前来施肥否则会枯萎）</p>" . "<br>";
             } else {
-                echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
             }
         }
     }
@@ -241,8 +241,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

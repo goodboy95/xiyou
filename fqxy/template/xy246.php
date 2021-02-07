@@ -12,8 +12,8 @@ include("./ini/zt_ini.php");
 # 获取一个分类下多个子项的值
 $bbrlb=($iniFile->getItem('玩家信息','背包容量'));
 include("./wp/bbrl.php");
-echo "<font color=black>物品负重：".$bbrla."/".$bbrlb."</font></a>"."<br>";
-echo"<font color=black>银两：</font></a>";
+echo "<p style='color: black'>物品负重：".$bbrla."/".$bbrlb."</p></a>"."<br>";
+echo"<p style='color: black'>银两：</p></a>";
 include("wp/warehouse.php");
 include("./ini/wp_ini.php");
 
@@ -50,9 +50,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

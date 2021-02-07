@@ -232,14 +232,14 @@ unlink($ininame); //删除文件
 //更新缓存数据
 } 
 
-echo "<font color=black>获得国家积分+10</font>"."<br>";
+echo "<p style='color: black'>获得国家积分+10</p>"."<br>";
 } else{	
-echo "<font color=blue>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</font>"."<br>";
+echo "<p style='color: blue'>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</p>"."<br>";
 
 
 }
 } else{	
-echo "<font color=blue>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</font>"."<br>";
+echo "<p style='color: blue'>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</p>"."<br>";
 
 
 }
@@ -275,7 +275,7 @@ include("./msg/msgg02.php");
 
 
 
-echo "<font color=black>恭喜你！你的国家".$bpmz."获得了【国家权杖】现在变为防守方请好好守护权杖吧！</font>"."<br>";
+echo "<p style='color: black'>恭喜你！你的国家".$bpmz."获得了【国家权杖】现在变为防守方请好好守护权杖吧！</p>"."<br>";
 echo "<br>";
 
 echo "<br>";
@@ -284,14 +284,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 
 
 } else{
-echo "<font color=black>无间道么！你怎么可以夺取自己国家的【国家权杖】？</font>"."<br>";
+echo "<p style='color: black'>无间道么！你怎么可以夺取自己国家的【国家权杖】？</p>"."<br>";
 echo "<br>";
 
 //cmd及超链接值
@@ -299,36 +299,36 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 }
 
 
 
 } else{
-echo "<font color=black>对不起！【国家权杖】已被".$zlgj."的".$czz."夺走了！！</font>"."<br>";
+echo "<p style='color: black'>对不起！【国家权杖】已被".$zlgj."的".$czz."夺走了！！</p>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=158;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回国战入口</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回国战入口</p></a>"."<br>";
 }
 
 } else{
-echo "<font color=black>对不起！你还未加入国家！！</font>"."<br>";
+echo "<p style='color: black'>对不起！你还未加入国家！！</p>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 }
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

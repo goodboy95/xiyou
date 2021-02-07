@@ -17,7 +17,7 @@ $img='./pic/ts/ts1.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -31,7 +31,7 @@ $img='./pic/ts/ts2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
 	echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 
 }
   //////////////////////////////////////插入图片  //////////////////////////
@@ -45,7 +45,7 @@ $img='./pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }		
 } else {
 } 

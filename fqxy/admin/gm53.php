@@ -18,39 +18,39 @@ if($zsspd==1&&$all_lock2==1){
 include("./ini/moneyjc_ini.php");	
 $csbzh=($iniFile->getItem('财神币总和','初始'));
 $csbzh1=($iniFile->getItem('财神币总和','初始1'));
-echo "<font color=red>【天降财神】（统计）</font>"."<br>";
+echo "<p style='color: red'>【天降财神】（统计）</p>"."<br>";
 
 
 
 
 
-echo "<font color=red>---------------------</font>"."<br>";
-echo "<font color=black>【当前奖金】：".$csbzh."个〖财神币〗</font>"."<br>";
-echo "<font color=black>【总共盈利】：".$csbzh1."个〖财神币〗</font>";
+echo "<p style='color: red'>---------------------</p>"."<br>";
+echo "<p style='color: black'>【当前奖金】：".$csbzh."个〖财神币〗</p>"."<br>";
+echo "<p style='color: black'>【总共盈利】：".$csbzh1."个〖财神币〗</p>";
 if($csbzh1>=1){
-echo "<font color=red>（盈利中）</font>"."<br>";
+echo "<p style='color: red'>（盈利中）</p>"."<br>";
 } elseif($csbzh1==0){ 
-echo "<font color=red>（持平）</font>"."<br>";
+echo "<p style='color: red'>（持平）</p>"."<br>";
 } else{	
-echo "<font color=red>（亏损中）</font>"."<br>";
+echo "<p style='color: red'>（亏损中）</p>"."<br>";
 }
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=55'><font color=blue>【清空所有】</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=55'><p style='color: blue'>【清空所有】</p></a>"."<br>";
 
-echo "<font color=red>---------------------</font>"."<br>";
-
-
+echo "<p style='color: red'>---------------------</p>"."<br>";
 
 
 
-echo "<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=52'><font color=blue>【返回上级】</font></a>"."<br>";
 
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=52'><p style='color: blue'>【返回上级】</p></a>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjiddd=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+
+
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjiddd=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 

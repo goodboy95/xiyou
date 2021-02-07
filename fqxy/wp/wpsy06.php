@@ -36,7 +36,7 @@ include("./box/zzbox.php");//调用使用代码
 $gzcardid=62;
 include("./pz/ini_pzz036.php");//调用ini缓存位置
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！获得黄金贵族特权（月卡每日领取福利一次）</font><br>";
+echo "<p style='color: black'>恭喜你！获得黄金贵族特权（月卡每日领取福利一次）</p><br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."开通了黄金贵族。从此西游路上横着走~~~~";
@@ -46,7 +46,7 @@ include("./msg/msgg02.php");
 $gzcardid=63;
 include("./pz/ini_pzz036.php");//调用ini缓存位置
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！获得铂金贵族特权（月卡每日领取福利一次）</font><br>";
+echo "<p style='color: black'>恭喜你！获得铂金贵族特权（月卡每日领取福利一次）</p><br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."开通了铂金贵族。从此西游路上横着走~~~~";
@@ -57,7 +57,7 @@ include("./msg/msgg02.php");
 $gzcardid=64;
 include("./pz/ini_pzz036.php");//调用ini缓存位置
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！获得钻石皇族特权（月卡每日领取福利一次）</font><br>";
+echo "<p style='color: black'>恭喜你！获得钻石皇族特权（月卡每日领取福利一次）</p><br>";
 
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
@@ -67,7 +67,7 @@ include("./msg/msgg02.php");
 $gzcardid=65;
 include("./pz/ini_pzz036.php");//调用ini缓存位置
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！获得至尊皇族特权（月卡每日领取福利一次）</font><br>";
+echo "<p style='color: black'>恭喜你！获得至尊皇族特权（月卡每日领取福利一次）</p><br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."开通了至尊皇族。从此西游路上横着走~~~~";
@@ -139,7 +139,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=8";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
-echo "<font color=black>获得".$syz."西游声望！！</font><br>";
+echo "<p style='color: black'>获得".$syz."西游声望！！</p><br>";
 
 } elseif($npcc ==565){//1万法宝经验
 
@@ -169,7 +169,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 } elseif($npcc ==567){//〖冠军宝石〗3个
@@ -191,7 +191,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -215,7 +215,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -238,7 +238,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -364,7 +364,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -388,7 +388,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -413,7 +413,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -436,7 +436,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 

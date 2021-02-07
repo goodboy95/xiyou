@@ -40,7 +40,7 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 if($zsspd==1){
 
 
-echo "<font color=red>娱乐项目-【拳头竞猜】（玩家场）</font>"."<br>";
+echo "<p style='color: red'>娱乐项目-【拳头竞猜】（玩家场）</p>"."<br>";
 
 
 
@@ -120,7 +120,7 @@ $i=$i+1;
 $ik=$ik+1;
 
 
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 
 $img='pic/vip/'."vip".$vvip[$i].'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
@@ -135,20 +135,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$phidd[$i];
-echo "<font color=black>".$phmz[$i]."</font></a>";
+echo "<p style='color: black'>".$phmz[$i]."</p></a>";
 
 //数字转汉字
 $yl=$phsx[$i];
 include("./pz/ylts.php");
 
-echo "<font color=red>&nbsp&nbsp&nbsp[".$ylxx."两]</font>";
+echo "<p style='color: red'>&nbsp&nbsp&nbsp[".$ylxx."两]</p>";
 $kkk=$icd[$i]."_".$itime[$i];
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=466;
 $npc[]=$kkk;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【撤销】</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【撤销】</p></a>";
 
 
 } else{
@@ -157,12 +157,12 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$phidd[$i];
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$phmz[$i]."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$phmz[$i]."</p></a>";
 //数字转汉字
 $yl=$phsx[$i];
 include("./pz/ylts.php");
 
-echo "<font color=red>&nbsp&nbsp&nbsp[".$ylxx."两]</font>";
+echo "<p style='color: red'>&nbsp&nbsp&nbsp[".$ylxx."两]</p>";
 
 
 $kkk=$icd[$i]."_".$itime[$i];
@@ -171,14 +171,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=460;
 $npc[]=$kkk;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【左手】</font></a>";
-echo "<font color=black>/</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【左手】</p></a>";
+echo "<p style='color: black'>/</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=461;
 $npc[]=$kkk;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【右手】</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【右手】</p></a>";
 
 
 } 
@@ -207,7 +207,7 @@ if ($ik>=100){
  
 
  } else{	
-echo "<font color=black>目前还没有【拳头竞猜】的玩家</font>"."<br>";
+echo "<p style='color: black'>目前还没有【拳头竞猜】的玩家</p>"."<br>";
 
 }
 
@@ -222,7 +222,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
 
  
  

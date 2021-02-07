@@ -8,7 +8,7 @@ if ($zsspd == 1) {
     include("./ini/hd_ini.php");
     $hdcs = ($iniFile->getItem('活动次数', $hdid));
     $csts = $hdcs + 1;
-    echo "<font color=black>恭喜你！！领取到了第" . $csts . "份【神秘礼物】</font>" . "<br>";
+    echo "<p style='color: black'>恭喜你！！领取到了第" . $csts . "份【神秘礼物】</p>" . "<br>";
     if ($hdcs == 0) {
         $bz = rand(1, 10);//随机
         if ($bz == 1) {
@@ -163,7 +163,7 @@ if ($zsspd == 1) {
             $wpdz3[] = 250;//物品id
             $wpdz4[] = 5;//	量
             $wpdz5[] = 1;//	重量
-            echo "<font color=black> 恭喜你，获得云南白药(超大捆)x" . $sl . "</font>" . "<br>";
+            echo "<p style='color: black'> 恭喜你，获得云南白药(超大捆)x" . $sl . "</p>" . "<br>";
         } else {
 //得到物品代码
             $wpdz1[] = "〖百年魔珠〗";//名字
@@ -440,8 +440,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

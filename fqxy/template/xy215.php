@@ -41,7 +41,7 @@ $iniFile->delItem('玩家vip', $ltpx);
 $iniFile->delItem('玩家名字', $ltpx);
 
 
-echo "<font color=red>你拒绝了结婚邀请！</font>"."<br>";
+echo "<p style='color: red'>你拒绝了结婚邀请！</p>"."<br>";
 
 
 

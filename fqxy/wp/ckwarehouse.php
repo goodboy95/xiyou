@@ -123,21 +123,21 @@ $yy=999;
 
 
 if ($y>0) {
-echo "<font color=black>$y</font>"."<font color=black>亿</font>";
+echo "<p style='color: black'>$y</p>"."<p style='color: black'>亿</p>";
 }
 
 
 if ($w>0) {
-echo "<font color=black>$w</font>"."<font color=black>万</font>";
+echo "<p style='color: black'>$w</p>"."<p style='color: black'>万</p>";
 }
 if ($yy>0) {
-echo "<font color=black>$yy</font>";
+echo "<p style='color: black'>$yy</p>";
 }
 if ($yl==0) {
-echo "<font color=black>$yl</font>";
+echo "<p style='color: black'>$yl</p>";
 }
 
-echo "<font color=black>两</font>"."<br>";
+echo "<p style='color: black'>两</p>"."<br>";
 
 
 

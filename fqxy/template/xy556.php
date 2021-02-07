@@ -17,14 +17,14 @@ include("./ini/czjf_ini.php");
 
 
 $czjf=($iniFile->getItem('充值积分','初始'));
-echo "<font color=black>当前BOSS已蓄力（".$czjf."/500）</font>"."<br>";
+echo "<p style='color: black'>当前BOSS已蓄力（".$czjf."/500）</p>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=557;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要召唤欢喜财神】（160-200）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【我要召唤欢喜财神】（160-200）</p></a>"."<br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -32,18 +32,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=558;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【我要召唤如意财神】（1-159）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【我要召唤如意财神】（1-159）</p></a>"."<br>";
 
-echo "<font color=red>提示：全区玩家每充值1元则可为财神蓄力+2满500点即可召唤【财神爷】</font>"."<br>";
-echo "<font color=black>1.两种财神分160以上和159以下打</font>"."<br>";
-echo "<font color=black>2.大概率掉落为〖金豆〗（1-200随机）〖金星升星符〗〖钻星升星符〗〖陨星升星符〗〖诛仙令〗〖双倍掉宝符〗〖四倍掉宝符〗〖八倍掉宝符〗〖荣誉宝石〗（随机）〖冠军宝石〗（随机）〖王者宝石〗（随机）</font>"."<br>";
+echo "<p style='color: red'>提示：全区玩家每充值1元则可为财神蓄力+2满500点即可召唤【财神爷】</p>"."<br>";
+echo "<p style='color: black'>1.两种财神分160以上和159以下打</p>"."<br>";
+echo "<p style='color: black'>2.大概率掉落为〖金豆〗（1-200随机）〖金星升星符〗〖钻星升星符〗〖陨星升星符〗〖诛仙令〗〖双倍掉宝符〗〖四倍掉宝符〗〖八倍掉宝符〗〖荣誉宝石〗（随机）〖冠军宝石〗（随机）〖王者宝石〗（随机）</p>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 }

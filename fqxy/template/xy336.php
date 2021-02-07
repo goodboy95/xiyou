@@ -85,7 +85,7 @@ $ym=$wpid['初始'];
 $km=0;
 
 if($m>=1){
-echo "<font color=red>尊敬的玩家你好！小轩西游充值或者奖励发放都在这里领取</font>"."<br>";
+echo "<p style='color: red'>尊敬的玩家你好！小轩西游充值或者奖励发放都在这里领取</p>"."<br>";
 
 
 //将ini值取出数组方便取出
@@ -157,13 +157,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=337;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>"."<font color=blue>x$cl|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>"."<p style='color: blue'>x$cl|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=338;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取出</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取出</p></a>"."<br>";
 
 
 }
@@ -186,14 +186,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=337;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>"."<font color=blue>x$cl|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>"."<p style='color: blue'>x$cl|</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=338;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取出</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取出</p></a>"."<br>";
 
 }
 } else{
@@ -210,14 +210,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=337;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>"."<font color=blue>x$cl|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>"."<p style='color: blue'>x$cl|</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=338;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取出</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取出</p></a>"."<br>";
 
 
 }
@@ -240,7 +240,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取出</fo
 	
 	
 	
-	echo "<font color=black>增值仓库空空如也，点击下面可进行充值，支持下小轩吧！！</font>"."<br>";
+	echo "<p style='color: black'>增值仓库空空如也，点击下面可进行充值，支持下小轩吧！！</p>"."<br>";
 	
 /*
 //cmd及超链接值
@@ -248,7 +248,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=301;
 $npc[]=0;
-echo "<a href='cz/index.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>立即充值</font></a>";
+echo "<a href='cz/index.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>立即充值</p></a>";
 */
 
 //cmd及超链接值
@@ -256,7 +256,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=533;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>立即充值</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>立即充值</p></a>";
 
 echo "<br>";
 }
@@ -269,7 +269,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br/>";
 
 echo "<br>";
 
@@ -283,7 +283,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏首页</p></a>"."<br/>";
 
 
 }

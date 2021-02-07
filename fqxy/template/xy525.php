@@ -22,9 +22,9 @@ $minute=floor($minute1/60);
 $second=$minute1%60;
 
 if($minute > 0){		
-echo "<font color=black>剩余：".$minute."分".$second."秒</font>"."<br>";
+echo "<p style='color: black'>剩余：".$minute."分".$second."秒</p>"."<br>";
 } else{
-echo "<font color=black>剩余：".$second."秒</font>"."<br>";
+echo "<p style='color: black'>剩余：".$second."秒</p>"."<br>";
 } 	
 $vipqy=2;	
 } else{
@@ -63,7 +63,7 @@ $iniFile->delItem('国家名字值'.$dtx.'x'.$dty, $wjid);
 $iniFile->delItem('国家职务名字值'.$dtx.'x'.$dty, $wjid);
 //清除附近位置
 
-echo "<font color=red>恭喜你！！孟婆的汤已为你熬制好了~~~</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！孟婆的汤已为你熬制好了~~~</p>"."<br>";
 
 
 
@@ -77,13 +77,13 @@ echo "<font color=red>恭喜你！！孟婆的汤已为你熬制好了~~~</font>
 
 if($hdtime==123||$vipqy==1){
 
-echo "<font color=red>你喝下了孟婆汤~~</font><br>";
+echo "<p style='color: red'>你喝下了孟婆汤~~</p><br>";
 
 
 
 } else{	
 
-echo "<font color=red>孟婆:找什么急啊？！老娘的汤甜吗？到后面排队去一个个来~~~</font><br>";
+echo "<p style='color: red'>孟婆:找什么急啊？！老娘的汤甜吗？到后面排队去一个个来~~~</p><br>";
 
 
 }
@@ -97,7 +97,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

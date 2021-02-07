@@ -142,7 +142,7 @@ $wwpsl=$yl1;
 include("./pz/ini_pz03.php");
 //银两加
 
-echo "<font color=black>恭喜你！！领取到了【天下第一武道会】领取了万人膜拜奖励</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！领取到了【天下第一武道会】领取了万人膜拜奖励</p>"."<br>";
 
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
@@ -156,7 +156,7 @@ include("./msg/msgg02.php");
 
 
 } else{	
-echo "<font color=red>对不起！你今日已经领取【天下第一武道会】万人膜拜奖励了（每日凌晨后方可更新）</font></br>"; 
+echo "<p style='color: red'>对不起！你今日已经领取【天下第一武道会】万人膜拜奖励了（每日凌晨后方可更新）</p></br>";
 } 
 
 
@@ -164,11 +164,11 @@ echo "<font color=red>对不起！你今日已经领取【天下第一武道会�
 
 
 } else{	
-echo "<font color=red>对不起！！【天下第一武道会】万人膜拜奖励风骚天数还未满一天不能领取</font>"."<br>";
+echo "<p style='color: red'>对不起！！【天下第一武道会】万人膜拜奖励风骚天数还未满一天不能领取</p>"."<br>";
 } 
 
 } else{	
-echo "<font color=red>对不起！！您还未在【天下第一武道会】拿到名次，无法领取奖励请继续加油</font>"."<br>";
+echo "<p style='color: red'>对不起！！您还未在【天下第一武道会】拿到名次，无法领取奖励请继续加油</p>"."<br>";
 }
 
 
@@ -178,7 +178,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武道场</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回武道场</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

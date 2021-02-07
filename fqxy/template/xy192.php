@@ -149,7 +149,7 @@ $iniFile->updItem('国战判断时间', ['日' => $d]);
 }	
 	
 }	
-echo "<font color=black>['攻城-已报名的国家']</font>"."<br>";
+echo "<p style='color: black'>['攻城-已报名的国家']</p>"."<br>";
 
 //判断攻城报名表是否合法
 
@@ -177,8 +177,8 @@ $gj01= $keygjmz[$i];
 $gj02=$keyjzmz[$i];
 if($gj01!=""){
 
-echo "<font color=black>".$ik.".</font>";
-echo "<font color=black>".$gj01."（".$gj02."）</font>"."<br>";
+echo "<p style='color: black'>".$ik.".</p>";
+echo "<p style='color: black'>".$gj01."（".$gj02."）</p>"."<br>";
 
 
 
@@ -192,7 +192,7 @@ echo "<font color=black>".$gj01."（".$gj02."）</font>"."<br>";
 
 } else{	
 
-echo "<font color=black>暂无任何国家报名参战</font>"."<br>";
+echo "<p style='color: black'>暂无任何国家报名参战</p>"."<br>";
 }
 
 
@@ -204,7 +204,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=187;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -219,9 +219,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

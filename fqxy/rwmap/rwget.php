@@ -22,7 +22,7 @@ for ($d = 0; $d < $ccm; $d++) {
         $wpid = $wpdz3[$ii];//物品id
         $wpkc = $wpdz4[$ii];//	需要量
         $wpzl = $wpdz5[$ii];//物品重量
-        $manzu1 = $manzu1 . "<font color=black>获得：" . $wpmz . "x" . $wpkc . $dbpd1 . "</font>" . "<br>";
+        $manzu1 = $manzu1 . "<p style='color: black'>获得：" . $wpmz . "x" . $wpkc . $dbpd1 . "</p>" . "<br>";
         include("./pz/ini_pz01.php");//缓存位置
         include("./pz/ini_pzz024.php");//增加
         //背包容量变更加

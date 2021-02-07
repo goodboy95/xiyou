@@ -43,7 +43,7 @@ $iniFile->updItem('竞猜关卡', ['初始' => $jcgk+1]);
 include("./ini/jcyx_ini.php");	
 $iniFile->updItem('竞猜关卡', ['初始' => '1']);	
 	
-echo "<font color=red>恭喜你！！竞猜已通关！！</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！竞猜已通关！！</p>"."<br>";
 $jc3=2;
 } 
 
@@ -55,7 +55,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=682;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【继续勇闯第".$jcgkk."关】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【继续勇闯第".$jcgkk."关】</p></a>"."<br>";
 } else {
 } 
 
@@ -71,6 +71,6 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 ?>

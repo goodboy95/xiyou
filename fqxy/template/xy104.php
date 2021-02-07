@@ -79,7 +79,7 @@ $ivdd=($iniFile->getItem('序列',$npcc));
 
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('好友分类', [$ivdd => '2']);
-echo "<font color=red>恭喜你！成功将".$ckname."拉进了黑名单</font>"."<br>";
+echo "<p style='color: red'>恭喜你！成功将".$ckname."拉进了黑名单</p>"."<br>";
 } elseif($ivdd1==""){
 
 
@@ -110,7 +110,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 //更新缓存数据
 
-echo "<font color=red>恭喜你！成功将".$ckname."拉进了黑名单</font>"."<br>";
+echo "<p style='color: red'>恭喜你！成功将".$ckname."拉进了黑名单</p>"."<br>";
 
 
 
@@ -118,7 +118,7 @@ echo "<font color=red>恭喜你！成功将".$ckname."拉进了黑名单</font>"
 
 } else{
 
-echo "<font color=red>对不起！玩家：".$ckname."已经在你的黑名单内</font>"."<br>";
+echo "<p style='color: red'>对不起！玩家：".$ckname."已经在你的黑名单内</p>"."<br>";
 
 }
 

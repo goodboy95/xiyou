@@ -7,7 +7,7 @@ include("./ini/zsini.php");
 if($zsspd==1){
 
 
-echo "<font color=black>我的宠物如下：</font>"."<br>";
+echo "<p style='color: black'>我的宠物如下：</p>"."<br>";
 
 # 修改一个分类下子项的值(也可以修改多个)
 $ymid=($iniFile->getItem('背包页面','页面id'));
@@ -30,7 +30,7 @@ $ym=$cwid['初始'];
 $km=$m;
 $kmcs=$cwmz['初始'];
 
-echo "<font color=black>容量：（".$km."/".$kmcs."）</font>"."<br>";
+echo "<p style='color: black'>容量：（".$km."/".$kmcs."）</p>"."<br>";
 
 if($m>=1){
 //将ini值存入数组方便使用
@@ -88,15 +88,15 @@ $cw04x=$keycwbx[$ym*10-9+$i];
 if($cw04x==1){
 $cw04x="";	
 } elseif($cw04x==2){  
-$cw04x="<font color=red>['极品']</font>";
+$cw04x="<p style='color: red'>['极品']</p>";
 } elseif($cw04x==3){  
-$cw04x="<font color=red>['灵品']</font>";
+$cw04x="<p style='color: red'>['灵品']</p>";
 } elseif($cw04x==4){  
-$cw04x="<font color=red>['仙品']</font>";
+$cw04x="<p style='color: red'>['仙品']</p>";
 } elseif($cw04x==5){  
-$cw04x="<font color=red>['神品']</font>";
+$cw04x="<p style='color: red'>['神品']</p>";
 } elseif($cw04x==6){  
-$cw04x="<font color=red>['圣品']</font>";
+$cw04x="<p style='color: red'>['圣品']</p>";
 } else{	
 $cw04x="";	
 }
@@ -104,15 +104,15 @@ $cw04x="";
 if($cw19x==1){
 $cw19x="";	
 } elseif($cw19x==2){  
-$cw19x="<font color=red>['一变']</font>";
+$cw19x="<p style='color: red'>['一变']</p>";
 } elseif($cw19x==3){  
-$cw19x="<font color=red>['二变']</font>";
+$cw19x="<p style='color: red'>['二变']</p>";
 } elseif($cw19x==4){  
-$cw19x="<font color=red>['三变']</font>";
+$cw19x="<p style='color: red'>['三变']</p>";
 } elseif($cw19x==5){  
-$cw19x="<font color=red>['四变']</font>";
+$cw19x="<p style='color: red'>['四变']</p>";
 } elseif($cw19x==6){  
-$cw19x="<font color=red>['五变']</font>";
+$cw19x="<p style='color: red'>['五变']</p>";
 } else{	
 $cw19x="";	
 }
@@ -126,7 +126,7 @@ include("wp/zbxj.php");
 if($clname!=""){
 
 
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -134,25 +134,25 @@ $cdid[]=$cmid;
 $clj[]=365;
 $npc[]=$str;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$xjname.$clname.$cw19x.$cw04x."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$xjname.$clname.$cw19x.$cw04x."</p></a>";
 if($cwczqq==1){
-echo "<font color=black>（休息中）</font>";
+echo "<p style='color: black'>（休息中）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=363;
 $npc[]=$str;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>出战</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>出战</p></a>"."<br>";
 } else{	
-echo "<font color=black>（出战中）</font>";
+echo "<p style='color: black'>（出战中）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=364;
 $npc[]=$str;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>休息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>休息</p></a>"."<br>";
 } 
 }
 }	
@@ -178,20 +178,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=40;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>首页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>首页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=39;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上页</p></a>";
 
 $f=1;
 
 }
 $mcc=$km/10;
 if($f>0&&$mcc>$ym){
-echo  "<font color=blue>|</font></a>";
+echo  "<p style='color: blue'>|</p></a>";
 }
 
 
@@ -204,15 +204,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=38;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=41;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>末页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>末页</p></a>";
 $f=1;
 }
 
@@ -233,7 +233,7 @@ echo "<br>";
 
 } else{	
 
-echo "<font color=black>你还未获得任何宠物</font>"."<br>";
+echo "<p style='color: black'>你还未获得任何宠物</p>"."<br>";
 }
 
 echo "<br>";
@@ -248,9 +248,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

@@ -40,7 +40,7 @@ include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '5']);	
 $hdcs=5;
-echo "<font color=red>恭喜你！！今日大楼已自动重置成功，是男人就爬上了1000层大楼</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！今日大楼已自动重置成功，是男人就爬上了1000层大楼</p>"."<br>";
 }
 	
 	
@@ -56,26 +56,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=630;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【每日免费重置1次大楼】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【每日免费重置1次大楼】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=669;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【紫星币x10重置1次大楼】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【紫星币x10重置1次大楼】</p></a>"."<br>";
 
 
 
 include("./ini/xydfw_ini.php");
 $mqlc=($iniFile->getItem('所处楼层','初始'));
-echo "<font color=black>目前楼层：</font><font color=red>【第".$mqlc."楼】</font>"."<br>";
+echo "<p style='color: black'>目前楼层：</p><p style='color: red'>【第".$mqlc."楼】</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=633;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【楼层奖励一览】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【楼层奖励一览】</p></a>"."<br>";
 
 if($mqlc==10||$mqlc==20||$mqlc==50||$mqlc==60||$mqlc==80||$mqlc==100||$mqlc==150||$mqlc==200||$mqlc==300||$mqlc==400||$mqlc==500||$mqlc==600||$mqlc==700
 ||$mqlc==800||$mqlc==900||$mqlc==1000){
@@ -84,7 +84,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=629;
 $npc[]=$mqlc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>领取第".$mqlc."楼奖励</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>领取第".$mqlc."楼奖励</p></a>"."<br>";
 }
 
 
@@ -94,7 +94,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=627;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【开始摇点】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【开始摇点】</p></a>"."<br>";
 
 
 
@@ -109,9 +109,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

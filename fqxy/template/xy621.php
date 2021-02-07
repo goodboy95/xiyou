@@ -57,7 +57,7 @@ include("./ini/ltmb_ini.php");
 $os=($iniFile->getCategory('膜拜人员'));
 
 if (in_array($ltmz0, $os)) {
-echo "<font color=black>你今日，已经膜拜过他/她了~~~</font>"."<br>";
+echo "<p style='color: black'>你今日，已经膜拜过他/她了~~~</p>"."<br>";
 
 } else{	
 
@@ -147,17 +147,17 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 $wjid=$wjid1;//自己
 	
-echo "<font color=black>恭喜你！！膜拜成功，求大佬包养~~~</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！膜拜成功，求大佬包养~~~</p>"."<br>";
 
 } 
 
 } else{	
-echo "<font color=black>对不起！！您今日膜拜次数已用完</font>"."<br>";
+echo "<p style='color: black'>对不起！！您今日膜拜次数已用完</p>"."<br>";
 } 
 
 
 } else{	
-echo "<font color=black>无间道么！？自己和自己膜拜自己？</font>"."<br>";
+echo "<p style='color: black'>无间道么！？自己和自己膜拜自己？</p>"."<br>";
 }
 
 
@@ -166,17 +166,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武道场</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回武道场</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 } 

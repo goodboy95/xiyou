@@ -14,7 +14,7 @@ $rcrwbl=($iniFile->getItem('任务变量',$rwstr));
 $rw5=$rwfl;
 $rw1=$rwidd;
 if ($rcrwbl==1) {
-echo "<font color=black>最近小雁塔来了一大批具有攻击性的怪物来了这可如何是好啊！</font>"."<br>";
+echo "<p style='color: black'>最近小雁塔来了一大批具有攻击性的怪物来了这可如何是好啊！</p>"."<br>";
 //任务进程改变
 $rwjc1=2;//任务进程id
 $rwjc2=0;//任务已杀怪
@@ -30,8 +30,8 @@ include("./rw/ksrw.php");
 //快速任务	
 
 } elseif ($rcrwbl==2) {
-echo "<font color=black>最近小雁塔来了一大批具有攻击性的怪物来了这可如何是好啊！</font>"."<br>";
-echo "<font color=black>需要除掉10只蜡烛怪，快去吧！</font>"."<br>";
+echo "<p style='color: black'>最近小雁塔来了一大批具有攻击性的怪物来了这可如何是好啊！</p>"."<br>";
+echo "<p style='color: black'>需要除掉10只蜡烛怪，快去吧！</p>"."<br>";
 
 //快速任务
 $ydx=18;//移动坐标x
@@ -41,7 +41,7 @@ include("./rw/ksrw.php");
 //快速任务	
 } elseif ($rcrwbl==3) {
 	
-echo "<font color=black>这是给你的奖励！拿好吧！</font>"."<br>";
+echo "<p style='color: black'>这是给你的奖励！拿好吧！</p>"."<br>";
 //任务进程改变
 $rwjc1=4;//任务进程id
 $rwjc2=0;//任务已杀怪
@@ -83,7 +83,7 @@ $iniFile->updItem('活动次数', [$hdid => $hdcs]);
 
 
 } else{	
-echo "<font color=red>对不起！请联系小轩GM处理</font></br>"; 	
+echo "<p style='color: red'>对不起！请联系小轩GM处理</p></br>";
 
 }
 

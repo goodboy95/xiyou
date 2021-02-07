@@ -39,7 +39,7 @@ if ($zsspd == 1 && $zsspd1 == 1) {
                         } elseif ($sdk3 == 4) {
                             $sdkmz = "新区SDK码";
                         }
-                        echo "<font color=red>恭喜你！！兑换" . $sdkmz . "成功！！</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换" . $sdkmz . "成功！！</p><br>";
                         if ($sdk3 == 1) {//宣传
                             $manzu1 = "";
                             //物品加
@@ -212,16 +212,16 @@ if ($zsspd == 1 && $zsspd1 == 1) {
                         $xtxx = "恭喜玩家" . $wjmz . "兑换了" . $sdkmz . "获得了超值奖励（具体详情请查看SDK码兑换功能）！！";
                         include("./msg/msgg02.php");
                     } else {
-                        echo "<font color=red>对不起！！此SDK码已过了最晚使用期限！！(有效期:" . $sdk2 . ")</font><br>";
+                        echo "<p style='color: red'>对不起！！此SDK码已过了最晚使用期限！！(有效期:" . $sdk2 . ")</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！此SDK码已被使用过了！！</font><br>";
+                    echo "<p style='color: red'>对不起！！此SDK码已被使用过了！！</p><br>";
                 }
             } else {
-                echo "<font color=red>对不起！！此SDK码不存在！！</font><br>";
+                echo "<p style='color: red'>对不起！！此SDK码不存在！！</p><br>";
             }
         } else {
-            echo "<font color=red>对不起！！SDK码不能为空！！</font><br>";
+            echo "<p style='color: red'>对不起！！SDK码不能为空！！</p><br>";
         }
     }
 }
@@ -230,7 +230,7 @@ include("./ini/jsggini.php");
 //解锁当前使用的ini
 ?>
 <form action="" method="POST">
-    <font color=black>请输入您的SDK兑换码:</font><br>
+    <p style='color: black'>请输入您的SDK兑换码:</p><br>
     <input type="text" name="wjtoke" placeholder="请输入您的SDK兑换码" id='search'><br>
     <input type="submit" name="submit" value="兑换" id="search1"><br>
 </form>
@@ -240,5 +240,5 @@ $cmid = $cmid + 1;
 $cdid[] = $cmid;
 $clj[] = 2;
 $npc[] = 0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 ?>

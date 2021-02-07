@@ -69,7 +69,7 @@ unlink($ininame); //删除文件
 
 } 
 
- echo "<font color=black>得到了".$wpmz."x".$wpkc."</font>"."<br>";
+ echo "<p style='color: black'>得到了".$wpmz."x".$wpkc."</p>"."<br>";
 
 
 ?>

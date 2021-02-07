@@ -165,11 +165,11 @@ $yl=$sl;
 
 
 	
-echo "<font color=red>恭喜你!为国家捐赠了";
+echo "<p style='color: red'>恭喜你!为国家捐赠了";
 include("./wp/ylxx.php");
 
 
-echo ",获得国家贡献".$gxx."点</font>"."<br>";
+echo ",获得国家贡献".$gxx."点</p>"."<br>";
 
 
 
@@ -191,16 +191,16 @@ break;
 
 
 } else {
-echo "<font color=red>你的银两不足不能进行捐献</font>"."<br>";
+echo "<p style='color: red'>你的银两不足不能进行捐献</p>"."<br>";
 }
 } else {
-echo "<font color=red>每次最多捐献100亿以下银两哦</font>"."<br>";
+echo "<p style='color: red'>每次最多捐献100亿以下银两哦</p>"."<br>";
 }
 } else {
-echo "<font color=red>每次最少捐献100万以上的银两哦</font>"."<br>";
+echo "<p style='color: red'>每次最少捐献100万以上的银两哦</p>"."<br>";
 }
 } else {
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 }
 ?>
 

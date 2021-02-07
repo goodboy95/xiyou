@@ -66,7 +66,7 @@ if ($zsspd == 1) {
                     $wpdz5[] = $wpzl;//	重量
 //物品加
                     include("./rwmap/rwget.php");
-                    echo "<font color=red>恭喜您！！使用〖紫星币〗意外收获到了" . $wpmz . "x" . $wpslxx . "（" . $bz . "倍）</font>" . "<br>";
+                    echo "<p style='color: red'>恭喜您！！使用〖紫星币〗意外收获到了" . $wpmz . "x" . $wpslxx . "（" . $bz . "倍）</p>" . "<br>";
                     include("./ini/zt_ini.php");
                     $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                     $xtxx = "恭喜玩家" . $wjmz . "使用〖紫星币〗意外收获到了" . $wpmz . "x" . $wpslxx . "（" . $bz . "倍）";
@@ -83,13 +83,13 @@ if ($zsspd == 1) {
                     unlink($ininame); //删除文件  
 //更新缓存数据
                 } else {
-                    echo "<font color=black>对不起！！此类收割需要〖紫星币〗x20</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！此类收割需要〖紫星币〗x20</p>" . "<br>";
                 }
             } else {
-                echo "<font color=red>对不起！！您还没有种植产物，还未成熟（收获时间未到）</font>" . "<br>";
+                echo "<p style='color: red'>对不起！！您还没有种植产物，还未成熟（收获时间未到）</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>对不起！！由于您未在施肥时间前来施肥作物已死亡（下次记得按时前来哦）</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！由于您未在施肥时间前来施肥作物已死亡（下次记得按时前来哦）</p>" . "<br>";
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "zz" . $wjid;
             $strsql = "delete from $q2 where id=1 ";//物品id号必改值
@@ -103,22 +103,22 @@ if ($zsspd == 1) {
 //更新缓存数据
         }
     } else {
-        echo "<font color=red>对不起！！您还没有种植产物，想不劳而获么？！</font>" . "<br>";
+        echo "<p style='color: red'>对不起！！您还没有种植产物，想不劳而获么？！</p>" . "<br>";
     }
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 658;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回农场</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回农场</p></a>" . "<br>";
     echo "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

@@ -43,7 +43,7 @@ $ydty=$dty;
 
 $csm=$npcc;
 
-echo "<font color=red>你使用了【副本如意传送门】来到了下个区域</font></a>"."<br>";
+echo "<p style='color: red'>你使用了【副本如意传送门】来到了下个区域</p></a>"."<br>";
 
 
 
@@ -617,7 +617,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
 } else{
-echo "<font color=red>对不起【副本如意传送门】需要vip3级以上使用</font></a>"."<br>";
+echo "<p style='color: red'>对不起【副本如意传送门】需要vip3级以上使用</p></a>"."<br>";
 
 }
 

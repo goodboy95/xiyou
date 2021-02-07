@@ -127,7 +127,7 @@ unlink($ininame); //删除文件
 
 
 
-echo "<font color=black>你卸下了".$wp1."</font>"."<br>"; 
+echo "<p style='color: black'>你卸下了".$wp1."</p>"."<br>";
 
 
 

@@ -6,7 +6,7 @@ if ($wjid==10000001) {//gm号可看
 
 
 
-echo "<font color=black>操作公共资源：</font>".$ininalock5."<br>";
+echo "<p style='color: black'>操作公共资源：</p>".$ininalock5."<br>";
 
 }
 

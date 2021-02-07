@@ -14,13 +14,14 @@ $xxyou_qy = $a[3];
 //判断区域是否正确防止网页修改
 $qy = $xxyou_qy;
 include("../url/yxurl.php");
-
+echo $url;
 if ($xxyou_url == $url) {
     if ($wjid > 10000000 && $xxjy_pass != "") {
         include("../class/iniclass.php");//调用iniclass文件
         //调用user.ini是否存在
         include("../ini/user_ini.php");
         //验证合法性
+
         if ($hf == 2) {
             $pass = ($iniFile->getItem('验证信息', '玩家验证'));
         }

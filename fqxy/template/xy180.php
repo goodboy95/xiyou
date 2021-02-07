@@ -130,7 +130,7 @@ unlink($ininame); //删除文件
 
  
  
- echo "<font color=red>你同意了入国邀请！</font>"."<br>";
+ echo "<p style='color: red'>你同意了入国邀请！</p>"."<br>";
  
  
  
@@ -195,7 +195,7 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 	
 	
 		} else{
-echo "<font color=black>对不起！该国家人口达到上限！！你不能再进入了</font><br>";
+echo "<p style='color: black'>对不起！该国家人口达到上限！！你不能再进入了</p><br>";
 }
 	
 
@@ -203,7 +203,7 @@ echo "<font color=black>对不起！该国家人口达到上限！！你不能�
 		
 		
 } else{
-echo "<font color=black>对不起，你已经有国家了</font><br>";
+echo "<p style='color: black'>对不起，你已经有国家了</p><br>";
 }
 
 

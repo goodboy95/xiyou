@@ -191,7 +191,7 @@ if ($zsspd == 1) {
                         $xxxbs = $xbs;
                         $zbxjj = $xvjk;
                         $wp1 = $zbxjj . $xxxbs . $clname;
-                        echo "<font color=black>你卸下了" . $wp1 . "</font>" . "<br>";
+                        echo "<p style='color: black'>你卸下了" . $wp1 . "</p>" . "<br>";
                     }
                 } else {
                     if ($cwp1 != "") {
@@ -238,43 +238,43 @@ if ($zsspd == 1) {
 //更新缓存数据
                     }
                 }
-                echo "<font color=black>你穿戴上了" . $cwp1 . "</font>" . "<br>";
+                echo "<p style='color: black'>你穿戴上了" . $cwp1 . "</p>" . "<br>";
                 echo "</br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 29;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>" . "<br>";
             } else {
-                echo "<font color=black>对不起！你还没有结婚不适合穿戴" . $wp1 . "</font>" . "<br>";
+                echo "<p style='color: black'>对不起！你还没有结婚不适合穿戴" . $wp1 . "</p>" . "<br>";
                 echo "</br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 29;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！你的目前的等级不适合穿戴" . $wp1 . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！你的目前的等级不适合穿戴" . $wp1 . "</p>" . "<br>";
             echo "</br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 29;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>" . "<br>";
         }
     } else {
-        echo "<font color=black>对不起！" . $wp1 . "职业不符合你穿戴</font>" . "<br>";
+        echo "<p style='color: black'>对不起！" . $wp1 . "职业不符合你穿戴</p>" . "<br>";
         echo "</br>";
 //cmd及超链接值
         $cmid = $cmid + 1;
         $cdid[] = $cmid;
         $clj[] = 29;
         $npc[] = 0;
-        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>" . "<br>";
+        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>" . "<br>";
     }
 }
 //解锁当前使用的ini

@@ -17,36 +17,36 @@ $dtx=($iniFile->getItem('地图坐标','x'));
 
 
 if($dtx==78||$dtx==79){
- echo "<font color=black>对不起！！你正在挑战内请先离开</font><br>";
+ echo "<p style='color: black'>对不起！！你正在挑战内请先离开</p><br>";
   	
 	
 } else{	
-echo "<font color=red>各项挑战如下：</font>"."<br>";
+echo "<p style='color: red'>各项挑战如下：</p>"."<br>";
  
 
  
-echo "<font color=black>1.</font>";
+echo "<p style='color: black'>1.</p>";
  
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=401;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【通天塔】</font></a>"."<br>";
-echo "<font color=black>2.</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【通天塔】</p></a>"."<br>";
+echo "<p style='color: black'>2.</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=451;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【阴曹地府】</font></a>"."<br>";
-echo "<font color=black>3.</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【阴曹地府】</p></a>"."<br>";
+echo "<p style='color: black'>3.</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=641;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【诛仙台】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【诛仙台】</p></a>"."<br>";
  
 }
  
@@ -57,7 +57,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

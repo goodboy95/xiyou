@@ -108,13 +108,13 @@ $name=($iniFile->getItem('验证信息','玩家昵称'));
 include("../url/url.php");
 
 $xyurl="http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password";
-$zcxx="<font color=red>登录成功</font>"."<br>";
-$zcxx1="<font color=red>".$name."欢迎您回来！！小轩游戏社区有你更精彩！！</font>"."<br>";
+$zcxx="<p style='color: red'>登录成功</p>"."<br>";
+$zcxx1="<p style='color: red'>".$name."欢迎您回来！！小轩游戏社区有你更精彩！！</p>"."<br>";
 } else {
 	include("../url/url.php");
 
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 
 }
 
@@ -122,7 +122,7 @@ $zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 
 ?>

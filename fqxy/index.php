@@ -85,7 +85,7 @@ $xxjyurl="";
 $xyurl="http://".$url."/fqxy/xyy.php?wjid=$wjid&&pass=$password";
 
 
-echo "<a href=$xyurl><font color=blue>梦轩西游（内测开发区）</font></a>"."<br>";
+echo "<a href=$xyurl><p style='color: blue'>梦轩西游（内测开发区）</p></a>"."<br>";
 
 
 

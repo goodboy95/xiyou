@@ -19,9 +19,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -36,9 +36,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -53,9 +53,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -69,9 +69,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -84,9 +84,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -99,9 +99,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -114,9 +114,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==8){  
@@ -128,9 +128,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==9){  
@@ -142,9 +142,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==10){  
@@ -156,9 +156,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -171,9 +171,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -186,9 +186,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==13){  
@@ -200,9 +200,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==14){  
@@ -214,9 +214,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -229,9 +229,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -244,9 +244,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==17){  
@@ -258,9 +258,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -274,9 +274,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -289,9 +289,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -304,9 +304,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -319,9 +319,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -337,9 +337,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -354,9 +354,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -371,9 +371,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -387,9 +387,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -402,9 +402,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -417,9 +417,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -432,9 +432,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==29){  
@@ -446,9 +446,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==30){  
@@ -460,9 +460,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==31){  
@@ -474,9 +474,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -489,9 +489,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -504,9 +504,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==34){  
@@ -518,9 +518,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==35){  
@@ -532,9 +532,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -547,9 +547,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -562,9 +562,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 } elseif($npcc==38){  
@@ -576,9 +576,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -592,9 +592,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -607,9 +607,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -622,9 +622,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -637,9 +637,9 @@ $gmgz=1;//房子改名
 $fzfl=3;//房子类型
 $fzgm=0;//房子改名
 $gzid=$npcc;//官宅ID
-echo "<font color=black>恭喜你,成功购买到了【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了【".$fzname."】</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."】</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足以来购买【".$fzname."】</p>"."<br>";
 }
 
 
@@ -660,7 +660,7 @@ echo "<font color=black>对不起,你的金豆不足以来购买【".$fzname."�
 
 } else{
 echo $npcc;
-echo "<font color=black>购买住宅出现未知错误请联系购买解决</font>"."<br>";
+echo "<p style='color: black'>购买住宅出现未知错误请联系购买解决</p>"."<br>";
 
 
 }
@@ -777,9 +777,9 @@ $fz02="豪宅";
 $fz02="官宅";
 }
 if($fz03==3){
-echo "<font color=black>你已经拥有了【".$fz01."】(".$fz02."),每人限购一套房子</font>"."<br>";
+echo "<p style='color: black'>你已经拥有了【".$fz01."】(".$fz02."),每人限购一套房子</p>"."<br>";
 } else{
-echo "<font color=black>你已经拥有了".$fz01."(".$fz02."),每人限购一套房子</font>"."<br>";
+echo "<p style='color: black'>你已经拥有了".$fz01."(".$fz02."),每人限购一套房子</p>"."<br>";
 }
 
 

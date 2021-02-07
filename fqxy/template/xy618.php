@@ -216,15 +216,15 @@ $wjsh="";
 
 
 //显示对方
-echo "<font color=black>".$nmz.":</font>"."<br>";
-echo "<font color=black>HP:(".$nhp."/".$nmaxhp.")".$dxsh."</font>"."<br>";
+echo "<p style='color: black'>".$nmz.":</p>"."<br>";
+echo "<p style='color: black'>HP:(".$nhp."/".$nmaxhp.")".$dxsh."</p>"."<br>";
 
 //显示对方
 
-echo "<font color=black>----------</font>"."<br>";
-echo "<font color=red>自己:</font>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
+echo "<p style='color: red'>自己:</p>"."<br>";
 //显示自己
-echo "<font color=black>HP:(".$ohp."/".$omaxhp.")".$wjsh."</font>"."<br>";
+echo "<p style='color: black'>HP:(".$ohp."/".$omaxhp.")".$wjsh."</p>"."<br>";
 
 //显示自己
 
@@ -260,7 +260,7 @@ $jnid=$jnid9;
 $jnnamex=$jnmz9;
 $jn=9;
 include("./wj/ltxx.php");
-echo "<font color=black>===================</font>"."<br>";
+echo "<p style='color: black'>===================</p>"."<br>";
 
 
 
@@ -270,7 +270,7 @@ echo "<br>";
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 
 
 
@@ -282,7 +282,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武道大会</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回武道大会</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

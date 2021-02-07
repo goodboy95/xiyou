@@ -36,14 +36,14 @@ if($dqwp==1){
 exit();
 }
 
-echo "<font color=red>你最多可丢弃".$wpmz."x".$wpsl."</font>"."<br>";
-echo "<font color=black>请输入你要丢弃多少".$wpmz."呢？</font>"."<br>";
+echo "<p style='color: red'>你最多可丢弃".$wpmz."x".$wpsl."</p>"."<br>";
+echo "<p style='color: black'>请输入你要丢弃多少".$wpmz."呢？</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=126;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>丢弃全部</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>丢弃全部</p></a>"."<br>";
 
 
 ?>

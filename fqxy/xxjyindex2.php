@@ -65,7 +65,7 @@ ini_set("error_reporting","E_ALL & ~E_NOTICE");//防止报错代码
 include("/url/url.php");
 //$xyurl="http://".$xxjyurl."/index.php";
 $xyurl="http://".$xxjyurl."/xxjy/index.php";
-$zcxx="<font color=red>(づ￣3￣)づ╭❤～亲爱的玩家您好！当前IP今日已被其他玩家占用（一号一IP，或者每日凌晨登录刷新IP）</font>"."<br>";
+$zcxx="<p style='color: red'>(づ￣3￣)づ╭❤～亲爱的玩家您好！当前IP今日已被其他玩家占用（一号一IP，或者每日凌晨登录刷新IP）</p>"."<br>";
 
 
 ?>

@@ -23,7 +23,7 @@ $yl01=$yl01-$ylsxf;
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>恭喜你！！提现成功(附带".$ylxx."两手续费)</font>"."<br>";	
+echo "<p style='color: red'>恭喜你！！提现成功(附带".$ylxx."两手续费)</p>"."<br>";
 
 include("./sql/mysql.php");//调用数据库连接 
 //银两加
@@ -48,7 +48,7 @@ unlink($ininame); //删除文件
 
 	
 } else{
-echo "<font color=red>对不起！！你的小仓银两不足~~</font>"."<br>";	
+echo "<p style='color: red'>对不起！！你的小仓银两不足~~</p>"."<br>";
 } 	
 } elseif($npcc ==2){
 
@@ -62,7 +62,7 @@ $bfb=1;
 }
 $ylsxf=$bfb;
 $yl02=$yl02-$ylsxf;
-echo "<font color=red>恭喜你！！提现成功(附带〖金豆〗x".$ylsxf."手续费)</font>"."<br>";	
+echo "<p style='color: red'>恭喜你！！提现成功(附带〖金豆〗x".$ylsxf."手续费)</p>"."<br>";
 
 include("./sql/mysql.php");//调用数据库连接 
 $wpmz="〖金豆〗";
@@ -70,7 +70,7 @@ $wwpfl=4;//物品分类
 $wpid=127;//物品id
 $wpkc=$yl02;//	需要量
 $wpzl=1;//物品重量
-echo "<font color=black>获得：".$wpmz."x".$wpkc."</font>"."<br>";
+echo "<p style='color: black'>获得：".$wpmz."x".$wpkc."</p>"."<br>";
 include("./pz/ini_pz01.php");//缓存位置
 include("./pz/ini_pzz024.php");//增加
 
@@ -94,15 +94,15 @@ unlink($ininame); //删除文件
 	
 	
 } else{
-echo "<font color=red>对不起！！你的小仓〖金豆〗不足~~</font><br>";	
+echo "<p style='color: red'>对不起！！你的小仓〖金豆〗不足~~</p><br>";
 } 	
 	
 } elseif($npcc ==3){
 if($yl03>=1){
-echo "<font color=red>恭喜你！！提现成功</font>"."<br>";		
+echo "<p style='color: red'>恭喜你！！提现成功</p>"."<br>";
 	
 } else{
-echo "<font color=red>对不起！！你的小仓〖金带〗不足~~</font><br>";	
+echo "<p style='color: red'>对不起！！你的小仓〖金带〗不足~~</p><br>";
 } 		
 	
 	
@@ -120,5 +120,5 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=463;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回小仓</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回小仓</p></a>"."<p style='color: black'></p>"."<br>";
 ?>

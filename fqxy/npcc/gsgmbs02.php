@@ -61,7 +61,7 @@ if($wprl<=$bbrlb){
 
 if($wpsl<$sl){
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 } elseif($wpsl>$sl&&$sl!=0){  
@@ -266,12 +266,12 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 
-echo "<font color=red>你用了".$ylxx."两，购买".$wpmz."x".$sl."</font>";
+echo "<p style='color: red'>你用了".$ylxx."两，购买".$wpmz."x".$sl."</p>";
 
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>(附带".$ylxx."两手续费)</font>";	
+echo "<p style='color: red'>(附带".$ylxx."两手续费)</p>";
 echo "<br>";
 
 
@@ -498,12 +498,12 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 
-echo "<font color=red>你用了".$ylxx."两，购买".$wpmz."x".$sl."</font>";
+echo "<p style='color: red'>你用了".$ylxx."两，购买".$wpmz."x".$sl."</p>";
 
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>(附带".$ylxx."两手续费)</font>";	
+echo "<p style='color: red'>(附带".$ylxx."两手续费)</p>";
 echo "<br>";
 
 
@@ -522,7 +522,7 @@ exit();
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -532,7 +532,7 @@ echo "<br>";
 } else{
 $dqwp=0;
 	//$qbwp=1;
-echo "<font color=red>对不起，你的背包已放不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的背包已放不下任何东西了</p>"."<br>";
 echo "<br>";
 
 
@@ -541,13 +541,13 @@ echo "<br>";
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
 } else {
 $dqwp=0;
-echo "<font color=red>该宝石已被下架或者被买走了！！</font>"."<br>";
+echo "<p style='color: red'>该宝石已被下架或者被买走了！！</p>"."<br>";
 echo "<br>";
 }
 
@@ -559,12 +559,12 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>对不起！你银两不足！</font>"."<br>";
+echo "<p style='color: red'>对不起！你银两不足！</p>"."<br>";
 echo "<br>";
 }
 

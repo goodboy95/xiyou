@@ -134,12 +134,12 @@ $result = mysqli_query($conn, $strsql);
 
 
 $ds= rand(1, 3);
-echo "<font color=red>财神点数：".$ds."点【小】</font>"."<br>";
-echo "<font color=black>你选择了【小】</font>"."<br>";
+echo "<p style='color: red'>财神点数：".$ds."点【小】</p>"."<br>";
+echo "<p style='color: black'>你选择了【小】</p>"."<br>";
 
 if($bj>=2){
-echo "<font color=black>恭喜你！！获得了：财神币+".$csbyq."个</font>"."<br>";	
-echo "<font color=red>本轮获得【财神".$bj."倍甜蜜大暴击】</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！获得了：财神币+".$csbyq."个</p>"."<br>";
+echo "<p style='color: red'>本轮获得【财神".$bj."倍甜蜜大暴击】</p>"."<br>";
 
 
 include("./ini/zt_ini.php");
@@ -152,7 +152,7 @@ include("./msg/msgg02.php");
 
 
 } else{	
-echo "<font color=black>恭喜你！！获得了：财神币+".$csbyq."个</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！获得了：财神币+".$csbyq."个</p>"."<br>";
 
 } 
 
@@ -186,9 +186,9 @@ $result = mysqli_query($conn, $strsql);
 
 
 $ds= rand(4, 6);	
-echo "<font color=red>财神点数：".$ds."点【大】</font>"."<br>";
-echo "<font color=black>你选择了【小】</font>"."<br>";
-echo "<font color=black>很遗憾！！财神币-".$csbyq."个</font>"."<br>";
+echo "<p style='color: red'>财神点数：".$ds."点【大】</p>"."<br>";
+echo "<p style='color: black'>你选择了【小】</p>"."<br>";
+echo "<p style='color: black'>很遗憾！！财神币-".$csbyq."个</p>"."<br>";
 }
 
 
@@ -274,7 +274,7 @@ $xysw1=$csbs+888;
 }
 
 
-echo "<font color=black>恭喜你！获得".$xysw1."财神积分</font><br>";	
+echo "<p style='color: black'>恭喜你！获得".$xysw1."财神积分</p><br>";
 	
 
 	
@@ -317,7 +317,7 @@ unlink($ininame); //删除文件
 
 	 flock($fp,LOCK_UN);
 	} else{	
-echo "<font color=black>服务器睡着了</font><br>";
+echo "<p style='color: black'>服务器睡着了</p><br>";
 
 		echo "<br>";
 //cmd及超链接值
@@ -325,7 +325,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 }
@@ -367,7 +367,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 } else{	
-echo "<font color=red>对不起！！你的财神币不足".$csbyq."个~~</font>"."<br>";
+echo "<p style='color: red'>对不起！！你的财神币不足".$csbyq."个~~</p>"."<br>";
 }
 
 
@@ -381,7 +381,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=564;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

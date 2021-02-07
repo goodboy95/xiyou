@@ -26,7 +26,7 @@ include("cwxx05.php");
 
 } else{
 
-echo "<font color=black>没有这个宠物id编号".$cwid."请尝试联系gm解决此问题！！</font><br>";
+echo "<p style='color: black'>没有这个宠物id编号".$cwid."请尝试联系gm解决此问题！！</p><br>";
 
 }
 

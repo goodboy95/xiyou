@@ -4,7 +4,7 @@ include("./ini/zt_ini.php");
 if ($jykg == 0) {
     $jy2 = $jy + $jy1;
     if ($lvl >= $jfdj && $jy2 >= $lvl1) {
-        echo "<font color=red>当前等级已达到目前未解封等级" . $jfdj . "级（无法获得经验）</font><br>";
+        echo "<p style='color: red'>当前等级已达到目前未解封等级" . $jfdj . "级（无法获得经验）</p><br>";
         $iniFile->updItem('玩家信息', ['经验' => $lvl1]);
     } else {
         if ($jy2 >= $lvl1) {
@@ -23,8 +23,8 @@ if ($jykg == 0) {
             //数字转汉字
             $yl = $jy;
             include("./pz/ylts.php");
-            echo "<font color=black>获得：" . $ylxx . "经验</font><br>";
-            echo "<font color=red>恭喜你！升级了（目前等级：" . $lvl . "级）</font><br>";
+            echo "<p style='color: black'>获得：" . $ylxx . "经验</p><br>";
+            echo "<p style='color: red'>恭喜你！升级了（目前等级：" . $lvl . "级）</p><br>";
 //升级更新属性
 //路径
             $inina = "ztt.ini";
@@ -38,12 +38,12 @@ if ($jykg == 0) {
         } else {
             $iniFile->updItem('玩家信息', ['经验' => $jy2]);
             if ($jyts != "") {
-                echo "<font color=red>祝福：" . $jyts . "</font><br>";
+                echo "<p style='color: red'>祝福：" . $jyts . "</p><br>";
             }
             //数字转汉字
             $yl = $jy;
             include("./pz/ylts.php");
-            echo "<font color=black>获得：" . $ylxx . "经验</font><br>";
+            echo "<p style='color: black'>获得：" . $ylxx . "经验</p><br>";
         }
     }
 } elseif ($jykg == 1) {
@@ -54,16 +54,16 @@ if ($jykg == 0) {
         } else {
             $iniFile->updItem('玩家信息', ['修炼经验' => $lvl2]);
         }
-        echo "<font color=red>对不起！修炼经验已满（升级提升修炼经验储备）</font><br>";
+        echo "<p style='color: red'>对不起！修炼经验已满（升级提升修炼经验储备）</p><br>";
     } else {
         $iniFile->updItem('玩家信息', ['修炼经验' => $jy2]);
         if ($jyts != "") {
-            echo "<font color=red>祝福：" . $jyts . "</font><br>";
+            echo "<p style='color: red'>祝福：" . $jyts . "</p><br>";
         }
         //数字转汉字
         $yl = $jy;
         include("./pz/ylts.php");
-        echo "<font color=black>获得：" . $ylxx . "修炼经验</font><br>";
+        echo "<p style='color: black'>获得：" . $ylxx . "修炼经验</p><br>";
     }
 }
 ?>

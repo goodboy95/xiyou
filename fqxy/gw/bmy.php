@@ -5,14 +5,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=372;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*马刀兵俑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>*马刀兵俑</p></a>";
 echo ",";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=372;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*马刀兵俑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>*马刀兵俑</p></a>";
 
 echo ",";
 //cmd及超链接值
@@ -20,21 +20,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=372;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*马刀兵俑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>*马刀兵俑</p></a>";
 echo ",";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=373;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*长矛兵俑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>*长矛兵俑</p></a>";
 echo ",";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=373;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*长矛兵俑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>*长矛兵俑</p></a>";
 
 echo ",";
 //cmd及超链接值
@@ -42,7 +42,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=373;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>*长矛兵俑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>*长矛兵俑</p></a>";
 
 
 

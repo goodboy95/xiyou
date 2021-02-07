@@ -58,7 +58,7 @@ $bdzh=$bdzh+1;
 
 
 if($bdzh==2){
-echo "<font color=red>未绑定（请先绑定哦）</font>";	
+echo "<p style='color: red'>未绑定（请先绑定哦）</p>";
 } else{
 
 
@@ -92,9 +92,9 @@ $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);	
 
 
-echo "<font color=red>恭喜你！！领取到了".$wjje."元现金红包奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！领取到了".$wjje."元现金红包奖励</p>"."<br>";
 
-echo "<font color=balck>失去红包：".$csbyq."个</font>"."<br>";
+echo "<p style='color: balck'>失去红包：".$csbyq."个</p>"."<br>";
 
 
 include("./ini/zt_ini.php");
@@ -123,7 +123,7 @@ $sql = "insert into $q2 (id,wjid,wjmz,wjje,zh1,zh2)  values('$maxidd','$wjid','$
 
  } else{
 
-echo "<font color=red>对不起！！你的红包不足".$csbyq."个（无法领取奖励）</font>"."<br>";
+echo "<p style='color: red'>对不起！！你的红包不足".$csbyq."个（无法领取奖励）</p>"."<br>";
 
 } 
  
@@ -170,7 +170,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=579;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 }
 

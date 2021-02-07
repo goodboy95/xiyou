@@ -22,9 +22,9 @@ include("./sql/mysql.php");//调用数据库连接
 $strsql = "update $q2 set sycs=$wpsycs where wpid=$npcc";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 if($xzcs1<1){
-echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</font><br>";
+echo "<p style='color: black'>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</p><br>";
 } elseif($xzcs1 >=1){
-echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（还可服用".$xzcs1."次）</font><br>";	
+echo "<p style='color: black'>恭喜你！".$wwpmz1."属性永久提升".$max1."！（还可服用".$xzcs1."次）</p><br>";
 }
 //缓存修改
 $iniFile->updItem('物品使用次数', [$npcc => $wpsycs]);
@@ -71,9 +71,9 @@ $sql1 = "insert into $q2 (wpid,sycs)  values('$npcc','$wpsycs')";
  }
 
 if($xzcs1<1){
-echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</font><br>";
+echo "<p style='color: black'>恭喜你！".$wwpmz1."属性永久提升".$max1."！（已达到上限）</p><br>";
 } elseif($xzcs1 >=1){
-echo "<font color=black>恭喜你！".$wwpmz1."属性永久提升".$max1."！（还可服用".$xzcs1."次）</font><br>";	
+echo "<p style='color: black'>恭喜你！".$wwpmz1."属性永久提升".$max1."！（还可服用".$xzcs1."次）</p><br>";
 }
 //更新缓存数据
 unlink($ininame); //删除文件  

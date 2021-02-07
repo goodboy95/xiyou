@@ -65,7 +65,7 @@ ini_set("error_reporting","E_ALL & ~E_NOTICE");//防止报错代码
 include("/url/url.php");
 //$xyurl="http://".$xxjyurl."/index.php";
 $xyurl="http://".$xxjyurl."/xxjy/index.php";
-$zcxx="<font color=red>(づ￣3￣)づ╭❤～亲爱的玩家您好！当前IP号段已被封禁（请不要使用代理IP）</font>"."<br>";
+$zcxx="<p style='color: red'>(づ￣3￣)づ╭❤～亲爱的玩家您好！当前IP号段已被封禁（请不要使用代理IP）</p>"."<br>";
 
 
 ?>

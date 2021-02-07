@@ -18,7 +18,7 @@ $strsql = "update $q2 set zgviptime=1 where id=1";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('尊贵vip', ['1' => $viptime1]);	
 } 
-echo "<font color=red>恭喜你！！获得了尊享VIP特权".$addtime."天（到期时间：".$viptime1."）</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！获得了尊享VIP特权".$addtime."天（到期时间：".$viptime1."）</p>"."<br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."获得了尊享VIP特权".$addtime."天（到期时间：".$viptime1."）";

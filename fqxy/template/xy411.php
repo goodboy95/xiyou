@@ -28,7 +28,7 @@ $strsql = "update $q2 set qd1=2 where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到1' => '2']);
 
-echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
+echo "<p style='color: red'>恭喜你！领取到了".$qdcs."次签到奖励</p></br>";
 
 
 include("./ini/zt_ini.php");
@@ -96,11 +96,11 @@ include("./rwmap/rwget.php");
 
 
 } else{		
-echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
+echo "<p style='color: red'>对不起！你已领取过".$qdcs."次签到奖励了</p></br>";
 } 
 } else{		
 $qdcs=$qdcs-$qdxx2['签到次数'];	
-echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
+echo "<p style='color: red'>对不起！你的签到次数不足（差".$qdcs."天）</p></br>";
 } 
 
 
@@ -115,7 +115,7 @@ $strsql = "update $q2 set qd2=2 where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到2' => '2']);
 
-echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
+echo "<p style='color: red'>恭喜你！领取到了".$qdcs."次签到奖励</p></br>";
 
 
 include("./ini/zt_ini.php");
@@ -183,11 +183,11 @@ include("./rwmap/rwget.php");
 	
 	
 } else{		
-echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
+echo "<p style='color: red'>对不起！你已领取过".$qdcs."次签到奖励了</p></br>";
 } 
 } else{		
 $qdcs=$qdcs-$qdxx2['签到次数'];	
-echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
+echo "<p style='color: red'>对不起！你的签到次数不足（差".$qdcs."天）</p></br>";
 } 
 } elseif ($npcc==3) {//10日签到
 $qdcs=10;//签到领取
@@ -198,7 +198,7 @@ $q2="qd".$wjid;
 $strsql = "update $q2 set qd3=2 where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到3' => '2']);
-echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
+echo "<p style='color: red'>恭喜你！领取到了".$qdcs."次签到奖励</p></br>";
 
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
@@ -282,11 +282,11 @@ include("./rwmap/rwget.php");
 	
 	
 } else{		
-echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
+echo "<p style='color: red'>对不起！你已领取过".$qdcs."次签到奖励了</p></br>";
 } 
 } else{		
 $qdcs=$qdcs-$qdxx2['签到次数'];	
-echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
+echo "<p style='color: red'>对不起！你的签到次数不足（差".$qdcs."天）</p></br>";
 } 
 } elseif ($npcc==4) {//15日签到
 
@@ -298,7 +298,7 @@ $q2="qd".$wjid;
 $strsql = "update $q2 set qd4=2 where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到4' => '2']);
-echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
+echo "<p style='color: red'>恭喜你！领取到了".$qdcs."次签到奖励</p></br>";
 
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
@@ -377,11 +377,11 @@ include("./rwmap/rwget.php");
 	
 	
 } else{		
-echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
+echo "<p style='color: red'>对不起！你已领取过".$qdcs."次签到奖励了</p></br>";
 } 
 } else{		
 $qdcs=$qdcs-$qdxx2['签到次数'];	
-echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
+echo "<p style='color: red'>对不起！你的签到次数不足（差".$qdcs."天）</p></br>";
 } 
 
 } elseif ($npcc==5) {//25日签到
@@ -397,7 +397,7 @@ $q2="qd".$wjid;
 $strsql = "update $q2 set qd5=2 where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('签到信息', ['签到5' => '2']);
-echo "<font color=red>恭喜你！领取到了".$qdcs."次签到奖励</font></br>"; 	
+echo "<p style='color: red'>恭喜你！领取到了".$qdcs."次签到奖励</p></br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."领取到了".$qdcs."次签到奖励！！获得了大量奖励！！";
@@ -476,11 +476,11 @@ include("./rwmap/rwget.php");
 	
 	
 } else{		
-echo "<font color=red>对不起！你已领取过".$qdcs."次签到奖励了</font></br>"; 	
+echo "<p style='color: red'>对不起！你已领取过".$qdcs."次签到奖励了</p></br>";
 } 
 } else{		
 $qdcs=$qdcs-$qdxx2['签到次数'];	
-echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）</font></br>"; 	
+echo "<p style='color: red'>对不起！你的签到次数不足（差".$qdcs."天）</p></br>";
 } 
 
 
@@ -509,7 +509,7 @@ echo "<font color=red>对不起！你的签到次数不足（差".$qdcs."天）<
 
 
 } else{	
-echo "<font color=red>对不起！不能领取上月签到奖励（点击签到后更新）</font></br>"; 
+echo "<p style='color: red'>对不起！不能领取上月签到奖励（点击签到后更新）</p></br>";
 } 
 
 

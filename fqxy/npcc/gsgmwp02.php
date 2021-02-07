@@ -27,7 +27,7 @@ if ($yl >= $ylmm) {
             if ($wprl <= $bbrlb) {
                 if ($wpsl < $sl) {
                     $dqwp = 0;
-                    echo "<font color=red>输入有误请重新输入</font>" . "<br>";
+                    echo "<p style='color: red'>输入有误请重新输入</p>" . "<br>";
                     echo "<br>";
                 } elseif ($wpsl > $sl && $sl != 0) {
                     $wpsl = $wpsl - $sl;
@@ -236,11 +236,11 @@ if ($yl >= $ylmm) {
                     $iniFile->addItem('玩家名字', [$ltmax1 => $ltbl1]);
                     $iniFile->addItem('玩家发言', [$ltmax1 => $wjtake]);
 ///////////////////////////////////////////////////////////写入对方消息///////////////////////////////////
-                    echo "<font color=red>你用了" . $ylxx . "两，购买" . $wpmz . "x" . $sl . "</font>";
+                    echo "<p style='color: red'>你用了" . $ylxx . "两，购买" . $wpmz . "x" . $sl . "</p>";
 //数字转汉字
                     $yl = $ylsxf;
                     include("./pz/ylts.php");
-                    echo "<font color=red>(附带" . $ylxx . "两手续费)</font>";
+                    echo "<p style='color: red'>(附带" . $ylxx . "两手续费)</p>";
                     echo "<br>";
                     $zsspd2 = 1;
 //解锁当前使用的ini
@@ -467,11 +467,11 @@ if ($yl >= $ylmm) {
                     $iniFile->addItem('玩家名字', [$ltmax1 => $ltbl1]);
                     $iniFile->addItem('玩家发言', [$ltmax1 => $wjtake]);
 ///////////////////////////////////////////////////////////写入对方消息///////////////////////////////////
-                    echo "<font color=red>你用了" . $ylxx . "两，购买" . $wpmz . "x" . $sl . "</font>";
+                    echo "<p style='color: red'>你用了" . $ylxx . "两，购买" . $wpmz . "x" . $sl . "</p>";
 //数字转汉字
                     $yl = $ylsxf;
                     include("./pz/ylts.php");
-                    echo "<font color=red>(附带" . $ylxx . "两手续费)</font>";
+                    echo "<p style='color: red'>(附带" . $ylxx . "两手续费)</p>";
                     echo "<br>";
                     $zsspd2 = 1;
 //解锁当前使用的ini
@@ -485,28 +485,28 @@ if ($yl >= $ylmm) {
                     exit();
                 } else {
                     $dqwp = 0;
-                    echo "<font color=red>输入有误请重新输入</font>" . "<br>";
+                    echo "<p style='color: red'>输入有误请重新输入</p>" . "<br>";
                     echo "<br>";
                 }
             } else {
                 $dqwp = 0;
                 //$qbwp=1;
-                echo "<font color=red>对不起，你的背包已放不下任何东西了</font>" . "<br>";
+                echo "<p style='color: red'>对不起，你的背包已放不下任何东西了</p>" . "<br>";
                 echo "<br>";
             }
         } else {
             $dqwp = 0;
-            echo "<font color=red>输入有误请重新输入</font>" . "<br>";
+            echo "<p style='color: red'>输入有误请重新输入</p>" . "<br>";
             echo "<br>";
         }
     } else {
         $dqwp = 0;
-        echo "<font color=red>输入有误请重新输入</font>" . "<br>";
+        echo "<p style='color: red'>输入有误请重新输入</p>" . "<br>";
         echo "<br>";
     }
 } else {
     $dqwp = 0;
-    echo "<font color=red>对不起！你银两不足！</font>" . "<br>";
+    echo "<p style='color: red'>对不起！你银两不足！</p>" . "<br>";
     echo "<br>";
 }
 ?>

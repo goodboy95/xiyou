@@ -9,7 +9,7 @@ if ($m == 1) {
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
         } else {
-            echo "<font color=black>！</font>";
+            echo "<p style='color: black'>！</p>";
         }
     }
     if ($rid == 2 || $rid == 5 || $rid == 7 || $rid == 15 || $rid == 10 || $rid == 17) {
@@ -19,7 +19,7 @@ if ($m == 1) {
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
         } else {
-            echo "<font color=black>？</font>";
+            echo "<p style='color: black'>？</p>";
         }
     }
 } else {
@@ -30,7 +30,7 @@ if ($m == 1) {
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
         } else {
-            echo "<font color=black>！</font>";
+            echo "<p style='color: black'>！</p>";
         }
     }
 }

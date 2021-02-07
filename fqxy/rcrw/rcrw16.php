@@ -14,9 +14,9 @@ $rcrwbl=($iniFile->getItem('任务变量',$rwstr));
 $rw5=$rwfl;
 $rw1=$rwidd;
 if ($rcrwbl==1) {
-echo "<font color=black>野外来了一些修炼成精了的家伙！快去击杀它们吧（能不能碰到就要看你的机缘了）</font>"."<br>";
+echo "<p style='color: black'>野外来了一些修炼成精了的家伙！快去击杀它们吧（能不能碰到就要看你的机缘了）</p>"."<br>";
 
-echo "<font color=black>击杀【扫帚怪】x1</font>"."<br>";
+echo "<p style='color: black'>击杀【扫帚怪】x1</p>"."<br>";
 //任务进程改变
 $rwjc1=2;//任务进程id
 $rwjc2=0;//任务已杀怪
@@ -32,8 +32,8 @@ include("./rw/ksrw.php");
 //快速任务	
 
 } elseif ($rcrwbl==2) {
-echo "<font color=black>野外来了一些修炼成精了的家伙！快去击杀它们吧（能不能碰到就要看你的机缘了）</font>"."<br>";
-echo "<font color=black>击杀【扫帚怪】x1</font>"."<br>";
+echo "<p style='color: black'>野外来了一些修炼成精了的家伙！快去击杀它们吧（能不能碰到就要看你的机缘了）</p>"."<br>";
+echo "<p style='color: black'>击杀【扫帚怪】x1</p>"."<br>";
 //快速任务
 $ydx=17;//移动坐标x
 $ydy=10;//移动坐标y
@@ -42,7 +42,7 @@ include("./rw/ksrw.php");
 //快速任务	
 } elseif ($rcrwbl==3) {
 	
-echo "<font color=black>这是给你的奖励！拿好吧！</font>"."<br>";
+echo "<p style='color: black'>这是给你的奖励！拿好吧！</p>"."<br>";
 //任务进程改变
 $rwjc1=4;//任务进程id
 $rwjc2=0;//任务已杀怪
@@ -203,7 +203,7 @@ $iniFile->updItem('活动次数', [$hdid => $hdcs]);
 
 
 } else{	
-echo "<font color=red>对不起！请联系小轩GM处理</font></br>"; 	
+echo "<p style='color: red'>对不起！请联系小轩GM处理</p></br>";
 
 }
 

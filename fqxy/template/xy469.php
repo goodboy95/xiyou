@@ -64,7 +64,7 @@ $wwpfl=4;//物品分类
 $wpid=127;//物品id
 $wpkc=$sl;//	需要扣除的量
 $wpzl=1;//	需要扣物品的重量
-$manzu1="<font color=black>失去：".$wpmz."x".$wpkc."</font>"."<br>";
+$manzu1="<p style='color: black'>失去：".$wpmz."x".$wpkc."</p>"."<br>";
 include("./pz/ini_pz01.php");//缓存位置
 include("./pz/ini_pzz04.php");//扣除
 $kcrl=$wpkc*$wpzl+$kcrl;
@@ -109,12 +109,12 @@ include("./msg/msgg02.php");
 //添加进库
 
 
-echo "<font color=red>恭喜你！使用花费了".$wpmz."x".$wpkc."进行【假吹泡】请等待结果！！</font></a>"."<br>";
+echo "<p style='color: red'>恭喜你！使用花费了".$wpmz."x".$wpkc."进行【假吹泡】请等待结果！！</p></a>"."<br>";
 
 
 } else {
 
-echo "<font color=black>对不起！你吹泡不足〖金豆〗x".$sl."</font>"."<br>";
+echo "<p style='color: black'>对不起！你吹泡不足〖金豆〗x".$sl."</p>"."<br>";
 
 }
 
@@ -146,13 +146,13 @@ echo "服务器开小差了";
 
 
 } else {
-echo "<font color=red>吹泡应该在10金豆-1万金豆之间</font>"."<br>";
+echo "<p style='color: red'>吹泡应该在10金豆-1万金豆之间</p>"."<br>";
 echo "<br>";
 }
 
 } else {
 
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -166,7 +166,7 @@ echo "<br>";
 
 
 }
-echo "<font color=balck>请输入你想假吹泡的价格（金豆）：</font>"."<br>";
+echo "<p style='color: balck'>请输入你想假吹泡的价格（金豆）：</p>"."<br>";
 ?>
 <form  action="" method="POST">
 <input type="tel" name="sl" placeholder="金豆"id='search'onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><br>
@@ -181,5 +181,5 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
 ?>

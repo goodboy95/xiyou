@@ -5,7 +5,7 @@
 
 $wpsy=2;//使用成功
 $ysmz1="【清凉宝箱】";
-echo "<font color=black>恭喜你！打开了".$ysmz1."</font><br>";
+echo "<p style='color: black'>恭喜你！打开了".$ysmz1."</p><br>";
 
 
 //随机

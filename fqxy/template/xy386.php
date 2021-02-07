@@ -12,7 +12,7 @@ include("npc/npcxx.php");//攻击模板
 
 
 include("./wp/jnxx.php");
-$dgts="<font color=black>你对".$nname."使用了一招".$jnmz."</font>"."<br>";
+$dgts="<p style='color: black'>你对".$nname."使用了一招".$jnmz."</p>"."<br>";
 include("./wj/sh01.php");//调用怪物和自己基础数据
 include("./wj/sh02.php");//运算伤害数据
 //人物
@@ -39,7 +39,7 @@ include("./wj/cwsh02.php");//运算伤害数据
 if($mppppd!=1){
 
 } else{	
-echo "<font color=black>对不起！你的MP不足以使用".$jnmz."</font>"."<br>";
+echo "<p style='color: black'>对不起！你的MP不足以使用".$jnmz."</p>"."<br>";
 } 
 
 
@@ -67,15 +67,15 @@ include("template/xy010.php");
 include("./pz/pz01.php");	
 	
 } else{	
-echo "<font color=black>对不起！战斗信息有误！联系GM解决</font>"."<br>";
+echo "<p style='color: black'>对不起！战斗信息有误！联系GM解决</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 echo "<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

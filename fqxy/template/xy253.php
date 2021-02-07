@@ -74,7 +74,7 @@ $iniFile->updItem('头衔显示', [$npcc => 2]);
 	
 } else{
 	
-echo "<font color=black>对不起！！称号最多只能展示".$txxs4."个</font>"."<br>";
+echo "<p style='color: black'>对不起！！称号最多只能展示".$txxs4."个</p>"."<br>";
 	
 	
 

@@ -167,12 +167,12 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=$fz02;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入".$gzname."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入".$gzname."</p></a>"."<br>";
 	} else{	
 
 
 
-echo "<font color=black>进入住宅出现问题请联系小轩GM解决</font>"."<br>";
+echo "<p style='color: black'>进入住宅出现问题请联系小轩GM解决</p>"."<br>";
 
 	
 }
@@ -185,19 +185,19 @@ echo "<font color=black>进入住宅出现问题请联系小轩GM解决</font>".
 
 
 } elseif ($gzfz01=="") {
-echo "<font color=black>".$gzname."还未出售，可前往开封广场进行购买</font>"."<br>";
+echo "<p style='color: black'>".$gzname."还未出售，可前往开封广场进行购买</p>"."<br>";
 
 
 
 } else{	
 
-echo "<font color=black>对不起！你无权进入".$gzname."归玩家".$gzfz02."所有</font>"."<br>";
+echo "<p style='color: black'>对不起！你无权进入".$gzname."归玩家".$gzfz02."所有</p>"."<br>";
 }
 
 
 
 } else{	
-echo "<font color=black>此处官宅有问题，请联系小轩GM解决此问题</font>"."<br>";
+echo "<p style='color: black'>此处官宅有问题，请联系小轩GM解决此问题</p>"."<br>";
 }
 
 
@@ -215,9 +215,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

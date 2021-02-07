@@ -26,35 +26,35 @@ $cw19=$cw19x;
 
 
 if($cw04x==1){
-$cw04x="<font color=black>品质：普品</font><br>";	
+$cw04x="<p style='color: black'>品质：普品</p><br>";
 } elseif($cw04x==2){  
-$cw04x="<font color=red>品质：极品</font><br>";
+$cw04x="<p style='color: red'>品质：极品</p><br>";
 } elseif($cw04x==3){  
-$cw04x="<font color=red>品质：灵品</font><br>";
+$cw04x="<p style='color: red'>品质：灵品</p><br>";
 } elseif($cw04x==4){  
-$cw04x="<font color=red>品质：仙品</font><br>";
+$cw04x="<p style='color: red'>品质：仙品</p><br>";
 } elseif($cw04x==5){  
-$cw04x="<font color=red>品质：神品</font><br>";
+$cw04x="<p style='color: red'>品质：神品</p><br>";
 } elseif($cw04x==6){  
-$cw04x="<font color=red>品质：圣品</font><br>";
+$cw04x="<p style='color: red'>品质：圣品</p><br>";
 } else{	
-$cw04x="<font color=black>品质：普品</font><br>";
+$cw04x="<p style='color: black'>品质：普品</p><br>";
 }
 $cw19x=($iniFile->getItem('宠物变异',$zbid));
 if($cw19x==1){
-$cw19x="<font color=black>变异：无变异</font><br>";	
+$cw19x="<p style='color: black'>变异：无变异</p><br>";
 } elseif($cw19x==2){  
-$cw19x="<font color=red>变异：一级变异</font><br>";
+$cw19x="<p style='color: red'>变异：一级变异</p><br>";
 } elseif($cw19x==3){  
-$cw19x="<font color=red>变异：二级变异</font><br>";
+$cw19x="<p style='color: red'>变异：二级变异</p><br>";
 } elseif($cw19x==4){  
-$cw19x="<font color=red>变异：三级变异</font><br>";
+$cw19x="<p style='color: red'>变异：三级变异</p><br>";
 } elseif($cw19x==5){  
-$cw19x="<font color=red>变异：四级变异</font><br>";
+$cw19x="<p style='color: red'>变异：四级变异</p><br>";
 } elseif($cw19x==6){  
-$cw19x="<font color=red>变异：五级变异</font><br>";
+$cw19x="<p style='color: red'>变异：五级变异</p><br>";
 } else{	
-$cw19x="<font color=black>变异：无变异</font><br>";
+$cw19x="<p style='color: black'>变异：无变异</p><br>";
 }
 
 
@@ -115,10 +115,10 @@ $bf=$nbf;
 $hf=$nhf;
 $lf=$nlf;
 
-echo  "<font color=red>【宠物初始属性一览】</font><br>";
+echo  "<p style='color: red'>【宠物初始属性一览】</p><br>";
 
 
-echo "<font color=red>品种：".$cw01x."</font>";
+echo "<p style='color: red'>品种：".$cw01x."</p>";
 
 
 
@@ -128,19 +128,19 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=370;
 $npc[]=$zbid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp&nbsp放生</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp&nbsp放生</p></a>"."<br>";
 
 echo $cw04x;
 echo $cw19x;
 
 
-echo  "<font color=black>HP：".$maxhp."</font><br>";
-echo  "<font color=black>MP：".$maxmp."</font><br>";
-echo "<font color=black>攻击：".$gjj."-".$maxgj."</font><br/>";
-echo "<font color=black>魔攻：".$mgg."-".$maxmg."</font><br/>";
-echo "<font color=black>防御：".$fyy."-".$maxfy."</font><br/>";
-echo  "<font color=black>攻击元素：冰+</font>".$bg."<font color=black>&nbsp火+</font>".$hg."<font color=black>&nbsp雷+</font>".$lg."<br>";
-echo  "<font color=black>防御元素：冰+</font>".$bf."<font color=black>&nbsp火+</font>".$hf."<font color=black>&nbsp雷+</font>".$lf."<br>";
+echo  "<p style='color: black'>HP：".$maxhp."</p><br>";
+echo  "<p style='color: black'>MP：".$maxmp."</p><br>";
+echo "<p style='color: black'>攻击：".$gjj."-".$maxgj."</p><br/>";
+echo "<p style='color: black'>魔攻：".$mgg."-".$maxmg."</p><br/>";
+echo "<p style='color: black'>防御：".$fyy."-".$maxfy."</p><br/>";
+echo  "<p style='color: black'>攻击元素：冰+</p>".$bg."<p style='color: black'>&nbsp火+</p>".$hg."<p style='color: black'>&nbsp雷+</p>".$lg."<br>";
+echo  "<p style='color: black'>防御元素：冰+</p>".$bf."<p style='color: black'>&nbsp火+</p>".$hf."<p style='color: black'>&nbsp雷+</p>".$lf."<br>";
 
 
 //cmd及超链接值
@@ -149,29 +149,29 @@ $cdid[]=$cmid;
 $clj[]=365;
 $npc[]=$cwidd;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=362;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宠物</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宠物</p></a>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
 
 } else{	
-echo "<font color=red>宠物有误！！请联系GM解决此问题</font>"."<br>";
+echo "<p style='color: red'>宠物有误！！请联系GM解决此问题</p>"."<br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -179,7 +179,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 }
 
 

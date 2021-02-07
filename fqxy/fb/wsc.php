@@ -21,14 +21,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【普通】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -41,21 +41,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【普通】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=50;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【普通】</p></a>"."<br>";
 
 } 
 	
@@ -72,14 +72,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=49;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【普通】</p></a>"."<br>";
 
 
 
@@ -113,14 +113,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【困难】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -133,21 +133,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【困难】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=52;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【困难】</p></a>"."<br>";
 
 } 
 	
@@ -164,14 +164,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=51;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【困难】</p></a>"."<br>";
 
 
 
@@ -198,14 +198,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【梦魇】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -218,21 +218,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【梦魇】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=54;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【梦魇】</p></a>"."<br>";
 
 } 
 	
@@ -248,14 +248,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=53;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【梦魇】</p></a>"."<br>";
 
 
 
@@ -282,14 +282,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【地狱】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -302,21 +302,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【地狱】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=48;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【地狱】</p></a>"."<br>";
 
 } 
 	
@@ -333,14 +333,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=77;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活枉死城副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活枉死城副本【地狱】</p></a>"."<br>";
 
 
 

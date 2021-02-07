@@ -101,18 +101,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -124,14 +124,14 @@ if ($zsspd == 1) {
             include("./pz/ini_pzz05.php");
 //这里是升级装备代码	
             $npcc = $zbidx;
-            echo "<font color=black>恭喜你！升星" . $wp1 . "成功</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！升星" . $wp1 . "成功</p>" . "<br>";
             include("./pz/ini_pzz031.php");//升星
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！升星" . $wp1 . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     } elseif ($xj == 9 || $xj == 10 || $xj == 11 || $xj == 12 || $xj == 13 || $xj == 14 || $xj == 15 || $xj == 16 || $xj == 17) {//铜星
         $zbidx = $npcc;//当前装备id赋值
@@ -216,18 +216,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -239,14 +239,14 @@ if ($zsspd == 1) {
             include("./pz/ini_pzz05.php");
 //这里是升级装备代码	
             $npcc = $zbidx;
-            echo "<font color=black>恭喜你！升星" . $wp1 . "成功</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！升星" . $wp1 . "成功</p>" . "<br>";
             include("./pz/ini_pzz031.php");//升星
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！升星" . $wp1 . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     } elseif ($xj == 18 || $xj == 19 || $xj == 20 || $xj == 21 || $xj == 22 || $xj == 23 || $xj == 24 || $xj == 25 || $xj == 26) {//银星
         $zbidx = $npcc;//当前装备id赋值
@@ -331,18 +331,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -354,14 +354,14 @@ if ($zsspd == 1) {
             include("./pz/ini_pzz05.php");
 //这里是升级装备代码	
             $npcc = $zbidx;
-            echo "<font color=black>恭喜你！升星" . $wp1 . "成功</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！升星" . $wp1 . "成功</p>" . "<br>";
             include("./pz/ini_pzz031.php");//升星
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！升星" . $wp1 . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     } elseif ($xj == 27 || $xj == 28 || $xj == 29 || $xj == 30 || $xj == 31 || $xj == 32 || $xj == 33 || $xj == 34 || $xj == 35) {//金星
         $zbidx = $npcc;//当前装备id赋值
@@ -446,18 +446,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -469,14 +469,14 @@ if ($zsspd == 1) {
             include("./pz/ini_pzz05.php");
 //这里是升级装备代码	
             $npcc = $zbidx;
-            echo "<font color=black>恭喜你！升星" . $wp1 . "成功</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！升星" . $wp1 . "成功</p>" . "<br>";
             include("./pz/ini_pzz031.php");//升星
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！升星" . $wp1 . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     } elseif ($xj == 36 || $xj == 37 || $xj == 38 || $xj == 39 || $xj == 40 || $xj == 41 || $xj == 42 || $xj == 43 || $xj == 44) {//钻星
         $zbidx = $npcc;//当前装备id赋值
@@ -561,18 +561,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -584,14 +584,14 @@ if ($zsspd == 1) {
             include("./pz/ini_pzz05.php");
 //这里是升级装备代码	
             $npcc = $zbidx;
-            echo "<font color=black>恭喜你！升星" . $wp1 . "成功</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！升星" . $wp1 . "成功</p>" . "<br>";
             include("./pz/ini_pzz031.php");//升星
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！升星" . $wp1 . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     } elseif ($xj == 45 || $xj == 46 || $xj == 47 || $xj == 48 || $xj == 49 || $xj == 50 || $xj == 51 || $xj == 52 || $xj == 53) {//陨星
         $zbidx = $npcc;//当前装备id赋值
@@ -676,18 +676,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -699,17 +699,17 @@ if ($zsspd == 1) {
             include("./pz/ini_pzz05.php");
 //这里是升级装备代码	
             $npcc = $zbidx;
-            echo "<font color=black>恭喜你！升星" . $wp1 . "成功</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！升星" . $wp1 . "成功</p>" . "<br>";
             include("./pz/ini_pzz031.php");//升星
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！升星" . $wp1 . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     } else {
-        echo "<font color=black>对不起！" . $wp1 . "已达到目前星级最高境界了！！</font>" . "<br>";
+        echo "<p style='color: black'>对不起！" . $wp1 . "已达到目前星级最高境界了！！</p>" . "<br>";
     }
     $cwid3 = $zbid . "_" . $cwid3;
 //cmd及超链接值
@@ -717,13 +717,13 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 367;
     $npc[] = $cwid3;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>" . "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
     echo "----------------------" . "<br>";
 //cmd及超链接值
     include("fhgame.php");

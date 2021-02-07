@@ -79,7 +79,7 @@ $m=count($cwzbid,0);
 
 
 if($m>=1){
-echo "<font color=black>可以给宠物穿戴的装备如下：</font><br>";
+echo "<p style='color: black'>可以给宠物穿戴的装备如下：</p><br>";
 
 $i=-1;
 $ik=0;
@@ -87,8 +87,8 @@ $ik=0;
 for($x=0;$x<=$m-1;$x++){	
 $i=$i+1;
 $ik=$ik+1;
-echo "<font color=black>".$ik.".</font>";
-echo "<font color=black>".$xvj[$i].$xxbs[$i].$cwzbmz[$i]."</font>";
+echo "<p style='color: black'>".$ik.".</p>";
+echo "<p style='color: black'>".$xvj[$i].$xxbs[$i].$cwzbmz[$i]."</p>";
 
 
 $strt=$cwzbid[$i]."_".$cwidd;
@@ -98,14 +98,14 @@ $cdid[]=$cmid;
 $clj[]=373;
 $npc[]=$strt;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>穿戴</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿戴</p></a>"."<br>";
 
 }
 
 
 
 } else{	
-echo "<font color=black>你还没有此类宠物装备</font>";
+echo "<p style='color: black'>你还没有此类宠物装备</p>";
 } 
 
 
@@ -116,7 +116,7 @@ echo "<br>";
 
 
 } else{	
-echo "<font color=black>你还没有此类宠物装备</font>";
+echo "<p style='color: black'>你还没有此类宠物装备</p>";
 } 
 echo "<br>";
 //cmd及超链接值
@@ -124,7 +124,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=366;
 $npc[]=$cwidx;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -133,14 +133,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=362;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宠物</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宠物</p></a>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
@@ -159,7 +159,7 @@ include("fhgame.php");
 
 
 } else{	
-echo "<font color=red>穿戴宠物装备有误！！请联系GM解决此问题</font>"."<br>";
+echo "<p style='color: red'>穿戴宠物装备有误！！请联系GM解决此问题</p>"."<br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -167,7 +167,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 }
 }
 //解锁当前使用的ini

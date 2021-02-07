@@ -2,7 +2,7 @@
 
 
 if ($wjid==10000001) {//gm号可看
-echo "<font color=black>操作ID：</font>".$wjid."<br>";
+echo "<p style='color: black'>操作ID：</p>".$wjid."<br>";
 
 
 }

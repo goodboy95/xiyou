@@ -32,14 +32,14 @@ if ($m == 1) {
     $cdid[] = $cmid;
     $clj[] = 43;
     $npc[] = $strr1;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>船夫</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>船夫</p></a>" . "<br>";
 } else {
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 7;
     $npc[] = $npcc;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>船夫</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>船夫</p></a>" . "<br>";
 }
 //查询npc是否有任务
 ?>

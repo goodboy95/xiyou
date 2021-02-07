@@ -4,7 +4,7 @@
 
 $wpsy=2;//使用成功
 $ysmz1="〖如意の称号宝箱〗";
-echo "<font color=black>恭喜你！打开了".$ysmz1."</font><br>";
+echo "<p style='color: black'>恭喜你！打开了".$ysmz1."</p><br>";
 
 
 
@@ -1091,7 +1091,7 @@ include("./pz/ini_pz01.php");//调用ini缓存位置
 	
 
 } else{
-echo "<font color=black>居然人品大爆发了居然是个空箱子</font>"."<br>";
+echo "<p style='color: black'>居然人品大爆发了居然是个空箱子</p>"."<br>";
 } 		
 
 	include("./ini/zt_ini.php");

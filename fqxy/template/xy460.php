@@ -67,7 +67,7 @@ if($qc04==1){
 	//数字转汉字
 $yl=$qc03;
 include("./pz/ylts.php");	
-echo "<font color=black>恭喜你！".$qc01."的【拳头竞猜】被你识破了，获得了".$ylxx."两（请到小仓提取）</font></a>"."<br>";
+echo "<p style='color: black'>恭喜你！".$qc01."的【拳头竞猜】被你识破了，获得了".$ylxx."两（请到小仓提取）</p></a>"."<br>";
 
 
 //////////////////////////////单发系统消息//////////////////////////////
@@ -185,7 +185,7 @@ $iniFile->delItem('排行榜值5', $qc05);
 
 
 } else{	
-echo "<font color=black>很遗憾！你出的【拳头竞猜】被".$qc01."识破破了</font></a>"."<br>";
+echo "<p style='color: black'>很遗憾！你出的【拳头竞猜】被".$qc01."识破破了</p></a>"."<br>";
 
 //数字转汉字
 $yl=$qc03;
@@ -298,13 +298,13 @@ $iniFile->delItem('排行榜值5', $qc05);
 }
 
 } else{	
-echo "<font color=black>已撤销，或者被其他玩家赢走了</font></a>"."<br>";
+echo "<p style='color: black'>已撤销，或者被其他玩家赢走了</p></a>"."<br>";
 
 } 
 
 
 } else{	
-echo "<font color=black>对不起！！你的银两不足！！</font></a>"."<br>";
+echo "<p style='color: black'>对不起！！你的银两不足！！</p></a>"."<br>";
 
 } 
 
@@ -323,7 +323,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=459;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一局</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一局</p></a>"."<p style='color: black'></p>"."<br>";
 
  
 

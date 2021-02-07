@@ -143,7 +143,7 @@ $user=1;
 
 if($user==1){
 
-$zcxx="<font color=red>用户名或密码错误</font>"."<br>";
+$zcxx="<p style='color: red'>用户名或密码错误</p>"."<br>";
 }
 
 ?>

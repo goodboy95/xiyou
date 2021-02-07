@@ -36,7 +36,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "【VIP练级卷】";//名字
@@ -47,10 +47,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 2) {
                 $xygx = 200;//所需要花费的贡献
@@ -73,7 +73,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖师门声望礼包〗";//名字
@@ -84,10 +84,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 3) {
                 $xygx = 200;//所需要花费的贡献
@@ -110,7 +110,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖宝象国声望礼包〗";//名字
@@ -121,10 +121,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 4) {
                 $xygx = 200;//所需要花费的贡献
@@ -147,7 +147,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖天宫声望礼包〗";//名字
@@ -158,10 +158,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 5) {
                 $xygx = 200;//所需要花费的贡献
@@ -184,7 +184,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖地府声望礼包〗";//名字
@@ -195,10 +195,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 6) {
                 $xygx = 200;//所需要花费的贡献
@@ -221,7 +221,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖傲来国声望礼包〗";//名字
@@ -232,10 +232,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 7) {
                 $xygx = 200;//所需要花费的贡献
@@ -258,7 +258,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖乌鸡国声望礼包〗";//名字
@@ -269,10 +269,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 8) {
                 $xygx = 50;//所需要花费的贡献
@@ -295,7 +295,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖打孔器〗";//名字
@@ -306,10 +306,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 9) {
                 $xygx = 50;//所需要花费的贡献
@@ -332,7 +332,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖普通打孔器〗";//名字
@@ -343,10 +343,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 10) {
                 $xygx = 50;//所需要花费的贡献
@@ -369,7 +369,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖铁星升星符〗";//名字
@@ -380,10 +380,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 11) {
                 $xygx = 50;//所需要花费的贡献
@@ -406,7 +406,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖小智慧果〗";//名字
@@ -417,10 +417,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 12) {
                 $xygx = 100;//所需要花费的贡献
@@ -443,7 +443,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖高级打孔器〗";//名字
@@ -454,10 +454,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 13) {
                 $xygx = 100;//所需要花费的贡献
@@ -480,7 +480,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖铜星升星符〗";//名字
@@ -491,10 +491,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 14) {
                 $xygx = 100;//所需要花费的贡献
@@ -517,7 +517,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖大智慧果〗";//名字
@@ -528,10 +528,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 15) {
                 $xygx = 150;//所需要花费的贡献
@@ -554,7 +554,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖强化打孔器〗";//名字
@@ -565,10 +565,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 16) {
                 $xygx = 200;//所需要花费的贡献
@@ -591,7 +591,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖银星升星符〗";//名字
@@ -602,10 +602,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 17) {
                 $xygx = 100;//所需要花费的贡献
@@ -628,7 +628,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "小幸运草";//名字
@@ -639,10 +639,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 18) {
                 $xygx = 200;//所需要花费的贡献
@@ -665,7 +665,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖究极打孔器〗";//名字
@@ -676,10 +676,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 19) {
                 $xygx = 500;//所需要花费的贡献
@@ -702,7 +702,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖金星升星符〗";//名字
@@ -713,10 +713,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 20) {
                 $xygx = 200;//所需要花费的贡献
@@ -739,7 +739,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "大幸运草";//名字
@@ -750,10 +750,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 21) {
                 $xygx = 500;//所需要花费的贡献
@@ -776,7 +776,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖仓库扩容卷〗";//名字
@@ -787,10 +787,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 22) {
                 $xygx = 1000;//所需要花费的贡献
@@ -813,7 +813,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖钻星升星符〗";//名字
@@ -824,10 +824,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 23) {
                 $xygx = 100;//所需要花费的贡献
@@ -850,7 +850,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖万能钥匙〗";//名字
@@ -861,10 +861,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 24) {
                 $xygx = 500;//所需要花费的贡献
@@ -887,7 +887,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖背包扩容卷〗";//名字
@@ -898,10 +898,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 25) {
                 $xygx = 3000;//所需要花费的贡献
@@ -924,7 +924,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖陨星升星符〗";//名字
@@ -935,10 +935,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 26) {
                 $xygx = 50;//所需要花费的贡献
@@ -961,7 +961,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖1万法宝经验卷轴〗";//名字
@@ -972,10 +972,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 27) {
                 $xygx = 200;//所需要花费的贡献
@@ -998,7 +998,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖1万西游声望卷轴〗";//名字
@@ -1009,10 +1009,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 28) {
                 $xygx = 1000;//所需要花费的贡献
@@ -1035,7 +1035,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖双倍掉宝符〗";//名字
@@ -1046,10 +1046,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 29) {
                 $xygx = 100;//所需要花费的贡献
@@ -1072,7 +1072,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖荣誉宝石包〗（2个）";//名字
@@ -1083,10 +1083,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 30) {
                 $xygx = 3000;//所需要花费的贡献
@@ -1109,7 +1109,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖四倍掉宝符〗";//名字
@@ -1120,10 +1120,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 31) {
                 $xygx = 1000;//所需要花费的贡献
@@ -1146,7 +1146,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖1亿修炼经验丹〗";//名字
@@ -1157,10 +1157,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 32) {
                 $xygx = 1000;//所需要花费的贡献
@@ -1183,7 +1183,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "【万能果】";//名字
@@ -1194,10 +1194,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 33) {
                 $xygx = 3000;//所需要花费的贡献
@@ -1220,7 +1220,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖5亿修炼经验丹〗";//名字
@@ -1231,10 +1231,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 34) {
                 $xygx = 6000;//所需要花费的贡献
@@ -1257,7 +1257,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖10亿修炼经验丹〗";//名字
@@ -1268,10 +1268,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } elseif ($npcc == 35) {
                 $xygx = 1000;//所需要花费的贡献
@@ -1294,7 +1294,7 @@ if ($zsspd == 1) {
                         $q2 = "bp" . $bpid;
                         $strsql = "update $q2 set gx=$gjgx2 where userid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);
-                        echo "<font color=red>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</font><br>";
+                        echo "<p style='color: red'>恭喜你！！兑换成功！！失去" . $xygx . "点国家贡献~~~</p><br>";
                         $manzu1 = "";
                         //物品加
                         $wpdz1[] = "〖金豆〗";//名字
@@ -1305,10 +1305,10 @@ if ($zsspd == 1) {
 //物品加
                         include("./rwmap/rwget.php");
                     } else {
-                        echo "<font color=red>对不起！！你的银两不足！！</font><br>";
+                        echo "<p style='color: red'>对不起！！你的银两不足！！</p><br>";
                     }
                 } else {
-                    echo "<font color=red>对不起！！你的国家贡献不足！！</font><br>";
+                    echo "<p style='color: red'>对不起！！你的国家贡献不足！！</p><br>";
                 }
             } else {
                 $xygx = 99999999999;//所需要花费的贡献
@@ -1321,9 +1321,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = $xygxym;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>你还未加入任何国家！！</font><br>";
+            echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
         }
         echo "<br>";
 //cmd及超链接值
@@ -1331,8 +1331,8 @@ if ($zsspd == 1) {
         $cdid[] = $cmid;
         $clj[] = 2;
         $npc[] = 0;
-        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-        echo "<font color=black>----------------------</font>" . "<br>";
+        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+        echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
         include("fhgame.php");
     }

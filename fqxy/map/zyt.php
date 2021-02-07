@@ -9,7 +9,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(4,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(4,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //副本如意传送门
 $csid=57;//传送id值
 include("./fb/rycs.php");
@@ -36,7 +36,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=579;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(普通)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九尾天狐】(普通)</p></a>"."<br>";
 
 }
  if($gw2 ==1&&$wcqk2!=3){
@@ -45,7 +45,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=584;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(困难)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九尾天狐】(困难)</p></a>"."<br>";
 
 }
  if($gw3 ==1&&$wcqk3!=3){
@@ -54,7 +54,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=589;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(梦魇)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九尾天狐】(梦魇)</p></a>"."<br>";
 
 }
 
@@ -65,7 +65,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=681;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】(地狱)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九尾天狐】(地狱)</p></a>"."<br>";
 
 }
 
@@ -76,26 +76,26 @@ include("./gw/zyt.php");
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,4)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,4)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(4,4)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(4,4)往哪里走呢？</p>"."<br>";
 
 
 
@@ -105,36 +105,36 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(3,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(3,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,4)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,4)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,4)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(3,4)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(3,4)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==2) {
@@ -143,7 +143,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(2,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(2,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //副本如意传送门
 $csid=58;//传送id值
 include("./fb/rycs.php");
@@ -167,7 +167,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=580;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(普通)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【双头雪妖】(普通)</p></a>"."<br>";
 
 }
  if($gw2 ==1&&$wcqk2!=3){
@@ -176,7 +176,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=585;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(困难)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【双头雪妖】(困难)</p></a>"."<br>";
 
 }
  if($gw3 ==1&&$wcqk3!=3){
@@ -185,7 +185,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=590;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(梦魇)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【双头雪妖】(梦魇)</p></a>"."<br>";
 
 }
 
@@ -195,7 +195,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=682;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双头雪妖】(地狱)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【双头雪妖】(地狱)</p></a>"."<br>";
 
 }
 
@@ -205,31 +205,31 @@ include("./gw/zyt.php");
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,4)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,4)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,4)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(2,4)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(2,4)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==3) {
@@ -238,34 +238,34 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(1,4)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(1,4)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 
 $npc[]=0;
 
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,3)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,4)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,4)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(1,4)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(1,4)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==4) {
@@ -274,7 +274,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(1,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(1,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //副本如意传送门
 $csid=59;//传送id值
 include("./fb/rycs.php");
@@ -299,7 +299,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=581;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(普通)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰晶雪后】(普通)</p></a>"."<br>";
 
 }
  if($gw2 ==1&&$wcqk2!=3){
@@ -308,7 +308,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=586;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(困难)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰晶雪后】(困难)</p></a>"."<br>";
 
 }
  if($gw3 ==1&&$wcqk3!=3){
@@ -317,7 +317,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=591;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(梦魇)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰晶雪后】(梦魇)</p></a>"."<br>";
 
 }
 
@@ -327,7 +327,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=683;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰晶雪后】(地狱)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰晶雪后】(地狱)</p></a>"."<br>";
 
 }
 
@@ -335,32 +335,32 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【�
 include("./gw/zyt.php");
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,4)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,3)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,3)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(1,3)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(1,3)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==5) {
@@ -369,43 +369,43 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(2,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(2,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,4)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,3)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,3)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(2,3)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(2,3)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==6) {
@@ -414,41 +414,41 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(3,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(3,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 include("./gw/zyt.php");
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,4)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,3)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,3)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,3)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(3,3)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(3,3)往哪里走呢？</p>"."<br>";
 
 
 
@@ -458,37 +458,37 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(4,3)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(4,3)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 include("./gw/zyt.php");
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,4)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,4)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,2)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,3)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(4,3)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(4,3)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==8) {
@@ -497,7 +497,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(4,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(4,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //副本如意传送门
 $csid=60;//传送id值
 include("./fb/rycs.php");
@@ -522,7 +522,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=582;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(普通)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【素衣雪女】(普通)</p></a>"."<br>";
 
 }
  if($gw2 ==1&&$wcqk2!=3){
@@ -531,7 +531,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=587;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(困难)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【素衣雪女】(困难)</p></a>"."<br>";
 
 }
  if($gw3 ==1&&$wcqk3!=3){
@@ -540,7 +540,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=592;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(梦魇)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【素衣雪女】(梦魇)</p></a>"."<br>";
 
 }
 
@@ -551,7 +551,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=684;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【素衣雪女】(地狱)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【素衣雪女】(地狱)</p></a>"."<br>";
 
 }
 
@@ -559,31 +559,31 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【�
 
 include("./gw/zyt.php");
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,3)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,1)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,2)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(4,2)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(4,2)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==9) {
@@ -592,43 +592,43 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(3,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(3,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,3)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,1)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(3,2)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(3,2)往哪里走呢？</p>"."<br>";
 
 
 
@@ -638,42 +638,42 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(2,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(2,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,3)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,1)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,2)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(2,2)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(2,2)往哪里走呢？</p>"."<br>";
 
 echo $bossts;
 
@@ -683,37 +683,37 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(1,2)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(1,2)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,3)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,3)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,1)</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,2)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(1,2)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(1,2)往哪里走呢？</p>"."<br>";
 
 } elseif ($dty==12) {
   //地名
@@ -721,14 +721,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(1,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(1,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=83;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【天宫】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【天宫】</p></a>"."<br>";
   //副本如意传送门
 $csid=61;//传送id值
 include("./fb/rycs.php");
@@ -752,7 +752,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=583;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(普通)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰火神兽】(普通)</p></a>"."<br>";
 
 }
  if($gw2 ==1&&$wcqk2!=3){
@@ -761,7 +761,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=588;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(困难)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰火神兽】(困难)</p></a>"."<br>";
 
 }
  if($gw3 ==1&&$wcqk3!=3){
@@ -770,7 +770,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=593;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(梦魇)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰火神兽】(梦魇)</p></a>"."<br>";
 
 }
 
@@ -780,7 +780,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=685;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火神兽】(地狱)</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰火神兽】(地狱)</p></a>"."<br>";
 
 }
 
@@ -789,19 +789,19 @@ include("./gw/zyt.php");
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,2)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,2)</p></a>"."<br>";
 
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,1)</p></a>"."<br>";
 
 
 //查看地图
@@ -809,10 +809,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(1,1)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(1,1)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==13) {
@@ -821,38 +821,38 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(2,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(2,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 //npc
 
 include("./gw/zyt.php");
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,2)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(1,1)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(1,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,1)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(2,1)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(2,1)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==14) {
@@ -861,38 +861,38 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(3,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(3,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 //npc
 
 include("./gw/zyt.php");
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,2)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(2,1)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(2,1)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
 $npc[]=0;
-echo "<font color=black>右:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,1)</font></a>"."<br>";
+echo "<p style='color: black'>右:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,1)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 
 //地点描述
-echo "<font color=black>【斩妖台】(3,1)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(3,1)往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==15) {
@@ -901,31 +901,31 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>【斩妖台】(4,1)</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>【斩妖台】(4,1)</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 include("./gw/zyt.php");
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(4,2)</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(4,2)</p></a>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
 $npc[]=0;
-echo "<font color=black>左:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【斩妖台】(3,1)</font></a>"."<br>";
+echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【斩妖台】(3,1)</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 
 //地点描述
-echo "<font color=black>【斩妖台】(4,1)往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>【斩妖台】(4,1)往哪里走呢？</p>"."<br>";
 
 
 

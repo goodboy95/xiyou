@@ -1,5 +1,5 @@
 <?php
-echo "<font color=black>你被".$nname."打得遍体鳞伤，奄奄一息的死掉了！！！</font>"."<br>";
+echo "<p style='color: black'>你被".$nname."打得遍体鳞伤，奄奄一息的死掉了！！！</p>"."<br>";
 
 
 
@@ -16,9 +16,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 echo "<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 ?>

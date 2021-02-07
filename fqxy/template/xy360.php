@@ -161,13 +161,13 @@ $cw19x="无变异";
 
 
  if($cwxb >=2&&$cwby>=2){
-echo "<font color=red>恭喜你！！抓捕到了".$cw19x."的".$nname."（".$cw04x."）！！</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！抓捕到了".$cw19x."的".$nname."（".$cw04x."）！！</p>"."<br>";
 } elseif ($cwxb >=2) {//宠物
-echo "<font color=red>恭喜你！！抓捕到了".$nname."（".$cw04x."）！！</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！抓捕到了".$nname."（".$cw04x."）！！</p>"."<br>";
  } elseif ($cwby >=2) {//宠物
-echo "<font color=red>恭喜你！！抓捕到了".$cw19x."的".$nname."！！</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！抓捕到了".$cw19x."的".$nname."！！</p>"."<br>";
  } else{
-echo "<font color=red>恭喜你！！抓捕到了".$nname."！！</font>"."<br>";  
+echo "<p style='color: red'>恭喜你！！抓捕到了".$nname."！！</p>"."<br>";
 	 
 } 
 
@@ -178,7 +178,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续走</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续走</p></a>"."<br>";
 
 
  
@@ -187,7 +187,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续走<
 } else{
 	
 	
-echo "<font color=black>对不起！您抓捕的这只宠物有误联系GM解决</font>"."<br>";
+echo "<p style='color: black'>对不起！您抓捕的这只宠物有误联系GM解决</p>"."<br>";
 	
 }
 
@@ -198,14 +198,14 @@ echo "<font color=black>对不起！您抓捕的这只宠物有误联系GM解决
 
 
 } else{
-echo "<font color=red>对不起，你的宠物背包已满了！请及时清理，以免错过绝世好宠哦</font>"."<br>";  
+echo "<p style='color: red'>对不起，你的宠物背包已满了！请及时清理，以免错过绝世好宠哦</p>"."<br>";
 	 
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续走</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续走</p></a>"."<br>";
 
 	
 	
@@ -224,10 +224,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

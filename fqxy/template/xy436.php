@@ -83,30 +83,30 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 //更新缓存数据
 
-echo "<font color=red>恭喜你！！【人物修炼（防）】成功，实力大幅度提升</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！【人物修炼（防）】成功，实力大幅度提升</p>"."<br>";
 //数字转汉字
 $yl=$fbb1;
 include("./pz/ylts.php");
 $fbb1=$ylxx;
-echo "<font color=red>失去：".$fbb1."修炼经验</font>"."<br>";
+echo "<p style='color: red'>失去：".$fbb1."修炼经验</p>"."<br>";
 //数字转汉字
 $yl=$fbb2;
 include("./pz/ylts.php");
 $fbb2=$ylxx;
-echo "<font color=red>失去：".$fbb2."银两</font>"."<br>";
+echo "<p style='color: red'>失去：".$fbb2."银两</p>"."<br>";
 //数字转汉字
 $yl=$fbb3;
 include("./pz/ylts.php");
 $fbb3=$ylxx;
-echo "<font color=red>失去：".$fbb3."西游声望</font>"."<br>";
-echo "<font color=red>失去：〖金豆〗x".$fbb4."</font>"."<br>";
+echo "<p style='color: red'>失去：".$fbb3."西游声望</p>"."<br>";
+echo "<p style='color: red'>失去：〖金豆〗x".$fbb4."</p>"."<br>";
 
 
 
 
 } else{	
-echo "<font color=red>对不起！！【人物修炼（防）】失败！！</font>"."<br>";
-echo "<font color=red>需要：".$ms2."</font>"."<br>";
+echo "<p style='color: red'>对不起！！【人物修炼（防）】失败！！</p>"."<br>";
+echo "<p style='color: red'>需要：".$ms2."</p>"."<br>";
 }
 } else{	
 
@@ -166,27 +166,27 @@ unlink($ininame); //删除文件
 
 
 
-echo "<font color=red>恭喜你！！【人物修炼（防）】成功，实力大幅度提升</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！【人物修炼（防）】成功，实力大幅度提升</p>"."<br>";
 
 //数字转汉字
 $yl=$fbb1;
 include("./pz/ylts.php");
 $fbb1=$ylxx;
-echo "<font color=red>失去：".$fbb1."修炼经验</font>"."<br>";
+echo "<p style='color: red'>失去：".$fbb1."修炼经验</p>"."<br>";
 //数字转汉字
 $yl=$fbb2;
 include("./pz/ylts.php");
 $fbb2=$ylxx;
-echo "<font color=red>失去：".$fbb2."银两</font>"."<br>";
+echo "<p style='color: red'>失去：".$fbb2."银两</p>"."<br>";
 //数字转汉字
 $yl=$fbb3;
 include("./pz/ylts.php");
 $fbb3=$ylxx;
-echo "<font color=red>失去：".$fbb3."西游声望</font>"."<br>";
+echo "<p style='color: red'>失去：".$fbb3."西游声望</p>"."<br>";
 
 } else{	
-echo "<font color=red>对不起！！【人物修炼（防）】失败！！</font>"."<br>";
-echo "<font color=red>需要：".$ms2."</font>"."<br>";
+echo "<p style='color: red'>对不起！！【人物修炼（防）】失败！！</p>"."<br>";
+echo "<p style='color: red'>需要：".$ms2."</p>"."<br>";
 }
 
 

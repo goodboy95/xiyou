@@ -35,7 +35,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>升级失败所需要的材料不足</font>" . "<br>";
+            echo "<p style='color: black'>升级失败所需要的材料不足</p>" . "<br>";
         }
     } elseif ($npcc == 2) {
         $npcc11 = $npcc;//存值
@@ -69,7 +69,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>升级失败所需要的材料不足</font>" . "<br>";
+            echo "<p style='color: black'>升级失败所需要的材料不足</p>" . "<br>";
         }
     } elseif ($npcc == 3) {
         $npcc11 = $npcc;//存值
@@ -103,7 +103,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>升级失败所需要的材料不足</font>" . "<br>";
+            echo "<p style='color: black'>升级失败所需要的材料不足</p>" . "<br>";
         }
     }
     echo "<br>";
@@ -112,7 +112,7 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

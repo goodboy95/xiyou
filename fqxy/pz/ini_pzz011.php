@@ -30,7 +30,7 @@ $sql1 = "insert into $q2 (id,zbid,zbxj,zbk1,zbxq1,zbk2,zbxq2,zbk3,zbxq3,zbk4,zbx
  {
    die('Error: ' . mysqli_error($conn));
  }	
-echo "<font color=black>得到了".$jjmz."</font>"."<br>"; 
+echo "<p style='color: black'>得到了".$jjmz."</p>"."<br>";
 //更新缓存数据
 $inina="zb.ini";
 $path='ache/'.$wjid;

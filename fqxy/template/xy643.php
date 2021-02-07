@@ -61,7 +61,7 @@ include("./wj/bhmj.php");
 
 
 }else{
-echo "<font color=red>对不起~~~【采花大盗】时间已过~~请于明日再来</font>"."<br>";
+echo "<p style='color: red'>对不起~~~【采花大盗】时间已过~~请于明日再来</p>"."<br>";
 }
 
 //cmd及超链接值
@@ -69,7 +69,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 }

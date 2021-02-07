@@ -53,16 +53,16 @@ $result = mysqli_query($conn, $strsql);
 
 
 
-echo "<font color=red>恭喜你！！获得国家贡献+".$gxx."</font><br>";	
-echo "<font color=red>恭喜你！！获得国家经验+".$gxx02."</font><br>";	
-echo "<font color=red>恭喜你！！获得国家声望+".$gxx03."</font><br>";		
+echo "<p style='color: red'>恭喜你！！获得国家贡献+".$gxx."</p><br>";
+echo "<p style='color: red'>恭喜你！！获得国家经验+".$gxx02."</p><br>";
+echo "<p style='color: red'>恭喜你！！获得国家声望+".$gxx03."</p><br>";
 	
 	
 	
 
 	
 } else{
-echo "<font color=black>你还未加入任何国家！！（无法获得国家贡献）</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！（无法获得国家贡献）</p><br>";
 }
 
 

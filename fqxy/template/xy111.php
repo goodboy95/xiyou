@@ -75,7 +75,7 @@ $keyltwjname[]=$ltwjname[$key];
 
 $m=count($ltpx,0)-1; 	
 $wjid=$wjid1;
-echo "<font color=black>当前队伍（".$m."/4）</font><br>";
+echo "<p style='color: black'>当前队伍（".$m."/4）</p><br>";
 
 
 
@@ -85,14 +85,14 @@ for($b=0;$b<$m;$b++){
 $i=$i+1;
 
 if ($dwid1==$keyltwjid[$i]){
-echo "<font color=black>队长：</font>";
+echo "<p style='color: black'>队长：</p>";
 $img='pic/vip/'."vip".$keyltwjvip[$i].'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 if ($wjid1==$keyltwjid[$i]){
 	
-	echo "<font color=black>".$keyltwjname[$i]."</font>";
+	echo "<p style='color: black'>".$keyltwjname[$i]."</p>";
 	
 		} else{
 //cmd及超链接值
@@ -100,7 +100,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keyltwjid[$i];
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyltwjname[$i]."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keyltwjname[$i]."</p></a>";
 
 	}
 
@@ -124,7 +124,7 @@ $i=$i+1;
 
 if ($dwid1!=$keyltwjid[$i]){
 	
-echo "<font color=black>队员：</font>";
+echo "<p style='color: black'>队员：</p>";
 
 
 $img='pic/vip/'."vip".$keyltwjvip[$i].'.png';
@@ -133,7 +133,7 @@ echo "<br>";
 
 if ($wjid1==$keyltwjid[$i]){
 	
-	echo "<font color=black>".$keyltwjname[$i]."</font>";
+	echo "<p style='color: black'>".$keyltwjname[$i]."</p>";
 	
 		} else{
 //cmd及超链接值
@@ -141,21 +141,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keyltwjid[$i];
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyltwjname[$i]."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keyltwjname[$i]."</p></a>";
 
 	}
 	
 	
 	if ($wjid1==$dwid1){
 	
-echo "<font color=black>|</font>";
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=112;
 $npc[]=$keyltwjid[$i];
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>踢出</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>踢出</p></a>"."<br>";
 	} else{
 		
 
@@ -178,7 +178,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=113;
 $npc[]=$wjid1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>解散队伍</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>解散队伍</p></a>"."<br>";
 	} else{
 		echo "</br>";
 //cmd及超链接值
@@ -186,7 +186,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=113;
 $npc[]=$dwid1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开队伍</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开队伍</p></a>"."<br>";
 	} 
 
 	
@@ -196,8 +196,8 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开队�
 
 
 	} else{
-echo "<font color=black>我的队伍：</font><br>";
-echo "<font color=black>当前还未有队伍</font><br>";
+echo "<p style='color: black'>我的队伍：</p><br>";
+echo "<p style='color: black'>当前还未有队伍</p><br>";
 	}
 
 
@@ -213,12 +213,12 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 
-echo "<font color=black>----------------------</font></a>"."<br>";
+echo "<p style='color: black'>----------------------</p></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

@@ -127,7 +127,7 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 //////////////////////////////////////////////////////////////////缓存背包容量修改/////////////////////////////////////////
 
 
-echo "<font color=black>你丢弃了".$zbxjj.$xxxbs.$clname."</font>"."<br>";
+echo "<p style='color: black'>你丢弃了".$zbxjj.$xxxbs.$clname."</p>"."<br>";
 
 
 
@@ -136,7 +136,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=29;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>"."<br>";
 
 
 echo "<br>";
@@ -146,7 +146,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

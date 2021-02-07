@@ -68,9 +68,9 @@ box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,0.6);
     $ma1=$_GET['mm'];
     $ma2=$_GET['aqm'];
     if($zh1 != "" && $ma1 != "" && $ma2 !="") {
-        $zcxx="<font color=red>恭喜你注册成功<br>请牢记你的帐号密码与安全码<br>帐号:".$zh1."<br>密码:".$ma1."</font>"."<br>";
+        $zcxx="<p style='color: red'>恭喜你注册成功<br>请牢记你的帐号密码与安全码<br>帐号:".$zh1."<br>密码:".$ma1."</p>"."<br>";
     }else{
-        $zzxx="<font color=red>对不起 ，你还没有进行过账号注册</font>"."<br>";
+        $zzxx="<p style='color: red'>对不起 ，你还没有进行过账号注册</p>"."<br>";
     }
 ?>
 
@@ -100,7 +100,7 @@ box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,0.6);
 
 
 <br>
-<a href='/xxjy/login.php'><font color=blue>返回登录</font></a>
+<a href='/xxjy/login.php'><p style='color: blue'>返回登录</p></a>
 <br>
 <br>
 <br>

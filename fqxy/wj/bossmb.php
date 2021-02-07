@@ -18,16 +18,16 @@ $time3=floor($time1/60);
 $time4=floor($time3/24);
 if($time4 > 0){	
 $time5=$time3%24;
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time4."天".$time5."小时</font>"."<br>";	
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time4."天".$time5."小时</p>"."<br>";
 } else{
 if($time3 > 0){	
 $second=$time1%60;
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time3."时".$second."分</font>"."<br>";	
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time3."时".$second."分</p>"."<br>";
 } else{
 if($time1 >0){
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time1."分钟后出现</font>"."<br>";	
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time1."分钟后出现</p>"."<br>";
 } else{
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time2."秒后出现</font>"."<br>";		
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time2."秒后出现</p>"."<br>";
 } 
 } 
 
@@ -52,7 +52,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=130;
 $npc[]=$bossid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>".$bossmz."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>".$bossmz."</p></a>"."<br>";
  include("./ini/boss_ini.php");
 $bossjs=($iniFile->getItem('世界BOSS属性','击杀'));
  if($time2 <1&&$bossjs==2){

@@ -59,7 +59,7 @@ $qc06=($iniFile->getItem('排行榜值6',$npcc));//时间搓
 
 if($qc04==1&&$qc05>=1&&$qc06==$npccid&&$qc06!=""&&$npccid!=""||$qc04==2&&$qc05>=1&&$qc06==$npccid&&$qc06!=""&&$npccid!=""){
 
-echo "<font color=black>恭喜你！撤销了此条记录".$qc03."银两（请到小仓提取）</font></a>"."<br>";
+echo "<p style='color: black'>恭喜你！撤销了此条记录".$qc03."银两（请到小仓提取）</p></a>"."<br>";
 //赢取奖励
 
 
@@ -120,7 +120,7 @@ $iniFile->delItem('排行榜值5', $qc05);
 
 
 } else{	
-echo "<font color=black>对不起！！已被其他玩家竞猜走了</font></a>"."<br>";
+echo "<p style='color: black'>对不起！！已被其他玩家竞猜走了</p></a>"."<br>";
 
 } 
  echo "</br>";
@@ -129,7 +129,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=459;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回竞猜</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回竞猜</p></a>"."<p style='color: black'></p>"."<br>";
 
  
 

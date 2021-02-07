@@ -19,7 +19,7 @@ $coco="颜色";
 $colorid=($iniFile->getItem('正确文字','初始'));
 $coco="文字";
 } else {
-echo "<font color=red>错误</font>"."<br>";		
+echo "<p style='color: red'>错误</p>"."<br>";
 }
 
 
@@ -44,11 +44,11 @@ $colormz="黄色";
 $colormz="粉色";
 } else {
 }		
-echo "<font color=red>恭喜你！！找出了【".$colormz.$coco."】糖果获得了糖果奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！找出了【".$colormz.$coco."】糖果获得了糖果奖励</p>"."<br>";
 
 
 $xysw1=1;
-echo "<font color=black>恭喜你！获得万圣节积分+1</font><br>";	
+echo "<p style='color: black'>恭喜你！获得万圣节积分+1</p><br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hdph01";
 $sql1=mysqli_query($conn, "select ds01 from $q2 where wjid=$wjid");
@@ -113,12 +113,12 @@ $colormz="黄色";
 $colormz="粉色";
 } else {
 }	
-echo "<font color=red>很遗憾！！我需要您找【".$colormz.$coco."】糖果（找错了）</font>"."<br>";	
+echo "<p style='color: red'>很遗憾！！我需要您找【".$colormz.$coco."】糖果（找错了）</p>"."<br>";
 
 
 
 $xysw1=1;
-echo "<font color=black>很遗憾！！万圣节积分-1</font><br>";	
+echo "<p style='color: black'>很遗憾！！万圣节积分-1</p><br>";
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_hdph01";
 $sql1=mysqli_query($conn, "select ds01 from $q2 where wjid=$wjid");
@@ -173,7 +173,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=7;
 $npc[]=1318;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -186,10 +186,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

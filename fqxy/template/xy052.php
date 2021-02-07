@@ -28,7 +28,7 @@ if ($xljykg==0) {
 
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['修炼经验开关' => 1]);
-echo "<font color=black>你打开了修炼经验将获得修炼经验(关闭后获得经验)</font>"."<br>";
+echo "<p style='color: black'>你打开了修炼经验将获得修炼经验(关闭后获得经验)</p>"."<br>";
 
 
 
@@ -39,7 +39,7 @@ echo "<font color=black>你打开了修炼经验将获得修炼经验(关闭后�
 
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['修炼经验开关' => 0]);
-echo "<font color=black>你关闭了修炼经验将获得经验(开启后获得修炼经验)</font>"."<br>";
+echo "<p style='color: black'>你关闭了修炼经验将获得经验(开启后获得修炼经验)</p>"."<br>";
 
 
 
@@ -55,14 +55,14 @@ $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回状态</p></a>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

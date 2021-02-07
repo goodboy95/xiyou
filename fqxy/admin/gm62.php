@@ -38,14 +38,14 @@ if($ckwpsl >=1||$ckwpsl1 >=1){
 	
 if($ckwpsl >=1&&$ckwpsl1 >=1){	
 	
-echo "<font color=red>【YES】</font>玩家ID（".$wjid."）所属物品ID：【".$czid."】====<font color=red>背包数量：【".$ckwpsl."】</font>====<font color=red>仓库数量：【".$ckwpsl1."】</font></br>";	
+echo "<p style='color: red'>【YES】</p>玩家ID（".$wjid."）所属物品ID：【".$czid."】====<p style='color: red'>背包数量：【".$ckwpsl."】</p>====<p style='color: red'>仓库数量：【".$ckwpsl1."】</p></br>";
 	
 } else{	
 if($ckwpsl >=1){
-echo "<font color=red>【YES】</font>玩家ID（".$wjid."）所属物品ID：【".$czid."】====<font color=red>背包数量：【".$ckwpsl."】</font>====仓库数量：【".$ckwpsl1."】</br>";
+echo "<p style='color: red'>【YES】</p>玩家ID（".$wjid."）所属物品ID：【".$czid."】====<p style='color: red'>背包数量：【".$ckwpsl."】</p>====仓库数量：【".$ckwpsl1."】</br>";
 }
 if($ckwpsl1 >=1){
-echo "<font color=red>【YES】</font>玩家ID（".$wjid."）所属物品ID：【".$czid."】====背包数量：【".$ckwpsl."】====<font color=red>仓库数量：【".$ckwpsl1."】</font></br>";
+echo "<p style='color: red'>【YES】</p>玩家ID（".$wjid."）所属物品ID：【".$czid."】====背包数量：【".$ckwpsl."】====<p style='color: red'>仓库数量：【".$ckwpsl1."】</p></br>";
 }
 } 
 
@@ -65,7 +65,7 @@ echo "【NO】玩家ID（".$wjid."）所属物品ID：【".$czid."】====背包�
 } 
 
 
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=3'><font color=blue>【返回上级】</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=3'><p style='color: blue'>【返回上级】</p></a>"."<br>";
 
 
 

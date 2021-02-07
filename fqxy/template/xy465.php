@@ -100,7 +100,7 @@ include("./msg/msgg02.php");
 //添加进库
 
 
-echo "<font color=red>恭喜你！使用花费了".$ylxx."银两进行【右开拳】猜拳请等待结果！！</font></a>"."<br>";
+echo "<p style='color: red'>恭喜你！使用花费了".$ylxx."银两进行【右开拳】猜拳请等待结果！！</p></a>"."<br>";
 
 
 } else {
@@ -108,7 +108,7 @@ echo "<font color=red>恭喜你！使用花费了".$ylxx."银两进行【右开�
 //数字转汉字
 $yl=$sl;
 include("./pz/ylts.php");
-echo "<font color=black>对不起！你开拳价格不足".$ylxx."两</font>";
+echo "<p style='color: black'>对不起！你开拳价格不足".$ylxx."两</p>";
 
 }
 
@@ -140,13 +140,13 @@ echo "服务器开小差了";
 
 
 } else {
-echo "<font color=red>开拳价格应该在1000万-100亿之间</font>"."<br>";
+echo "<p style='color: red'>开拳价格应该在1000万-100亿之间</p>"."<br>";
 echo "<br>";
 }
 
 } else {
 
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -160,7 +160,7 @@ echo "<br>";
 
 
 }
-echo "<font color=balck>请输入你想右开拳的价格（银两）：</font>"."<br>";
+echo "<p style='color: balck'>请输入你想右开拳的价格（银两）：</p>"."<br>";
 ?>
 <form  action="" method="POST">
 <input type="tel" name="sl" placeholder="银两"id='search'onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><br>
@@ -175,5 +175,5 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
 ?>

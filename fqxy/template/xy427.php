@@ -13,7 +13,7 @@ include("./ini/xl_ini.php");
 
 
 
-echo "<font color=black>我的修炼如下：</font>"."<br>";
+echo "<p style='color: black'>我的修炼如下：</p>"."<br>";
 $xl02="";
 $xldj1=($iniFile->getItem('修炼等级','1'));
 
@@ -28,7 +28,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=428;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人物修炼（血）】".$xl02."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人物修炼（血）】".$xl02."</p></a>"."<br>";
 
 $xl02="";
 $xldj2=($iniFile->getItem('修炼等级','2'));
@@ -44,7 +44,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=429;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人物修炼（攻）】".$xl02."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人物修炼（攻）】".$xl02."</p></a>"."<br>";
 
 
 $xl02="";
@@ -61,7 +61,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=430;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人物修炼（魔）】".$xl02."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人物修炼（魔）】".$xl02."</p></a>"."<br>";
 
 
 $xl02="";
@@ -78,7 +78,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=431;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人物修炼（防）】".$xl02."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人物修炼（防）】".$xl02."</p></a>"."<br>";
 echo "<br>";
 
 $xldjj1=$xldj1;
@@ -87,31 +87,31 @@ $xldjj3=$xldj3;
 $xldjj4=$xldj4;
 //调用比例换算
 include("./wj/xlxx01.php");
-echo "<font color=red>修炼（血）加成：</font>";
+echo "<p style='color: red'>修炼（血）加成：</p>";
 
 
 
-echo "<font color=black>".$xljc01."血量</font>";
+echo "<p style='color: black'>".$xljc01."血量</p>";
 echo "<br>";
 
-echo "<font color=red>修炼（攻）加成：</font>";
+echo "<p style='color: red'>修炼（攻）加成：</p>";
 
-echo "<font color=black>".$xljc02."攻击</font>";
+echo "<p style='color: black'>".$xljc02."攻击</p>";
 echo "<br>";
 
 
-echo "<font color=red>修炼（魔）加成：</font>";
+echo "<p style='color: red'>修炼（魔）加成：</p>";
 
 
 
 
-echo "<font color=black>".$xljc03."魔攻</font>";
+echo "<p style='color: black'>".$xljc03."魔攻</p>";
 
 
 echo "<br>";
-echo "<font color=red>修炼（防）加成：</font>";
+echo "<p style='color: red'>修炼（防）加成：</p>";
 
-echo "<font color=black>".$xljc04."防御</font>";
+echo "<p style='color: black'>".$xljc04."防御</p>";
 echo "<br>";
 
 
@@ -120,8 +120,8 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=432;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>人物修炼（介绍）</font></a>"."<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>人物修炼（介绍）</p></a>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 
 
 
@@ -130,7 +130,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -140,9 +140,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

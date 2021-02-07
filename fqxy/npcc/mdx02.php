@@ -35,7 +35,7 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $yll]);
 //数字转汉字
 $yl=$wp3pd;
 include("./pz/ylts.php");
-echo "<font color=black>失去：".$ylxx."银两</font>"."<br>";
+echo "<p style='color: black'>失去：".$ylxx."银两</p>"."<br>";
 
 $wpkc=$sl;
 $npcc1=$npcc;
@@ -61,21 +61,21 @@ include("template/xy246.php");
 include("./pz/pz01.php");
 } else{
 $dqwp=0;
-echo "<font color=red>对不起！购买".$wpmz."x".$sl."负重不足</font>"."<br>";
+echo "<p style='color: red'>对不起！购买".$wpmz."x".$sl."负重不足</p>"."<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>对不起！购买".$wpmz."x".$sl."所携带的银两不足</font>"."<br>";
+echo "<p style='color: red'>对不起！购买".$wpmz."x".$sl."所携带的银两不足</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>每次购买只能在1-1000之间</font>"."<br>";
+echo "<p style='color: red'>每次购买只能在1-1000之间</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

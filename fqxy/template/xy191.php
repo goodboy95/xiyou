@@ -2,13 +2,13 @@
 $weekarray=array("7","1","2","3","4","5","6");
 $week=$weekarray['date("w")'];
 if($week==6){
-echo "<font color=black>全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
+echo "<p style='color: black'>全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</p>"."<br>";
 } else{
 include("./wj/gztime.php");//调用国战时间
 
 
 if($gztime==2){
-echo "<font color=black>报名参与国战的时间已过或者国战已结束,请明天不要再迟到了哦（除周六每天00:00-20:55期间报名）</font>"."<br>";
+echo "<p style='color: black'>报名参与国战的时间已过或者国战已结束,请明天不要再迟到了哦（除周六每天00:00-20:55期间报名）</p>"."<br>";
 } else{
 
 //调用zt.ini是否存在  
@@ -475,10 +475,10 @@ unlink($ininame); //删除文件
 
 
 ////////////////////更新国战地图神兽大门血量//////////////
-echo "<font color=black>恭喜你报名成功！请于21:00整前来参加国战</font>"."<br>";
+echo "<p style='color: black'>恭喜你报名成功！请于21:00整前来参加国战</p>"."<br>";
 
 } else{
-echo "<font color=black>对不起！你的国家".$bpmzr."已经报名参与了今天的攻城战无需重复报名</font>"."<br>";
+echo "<p style='color: black'>对不起！你的国家".$bpmzr."已经报名参与了今天的攻城战无需重复报名</p>"."<br>";
 }
 
 
@@ -488,10 +488,10 @@ echo "<font color=black>对不起！你的国家".$bpmzr."已经报名参与了�
 
 
 } else{
-echo "<font color=black>对不起！报名参加国战需要国家官员或者君主来报名</font>"."<br>";
+echo "<p style='color: black'>对不起！报名参加国战需要国家官员或者君主来报名</p>"."<br>";
 }	
 } else{
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }		
 
 		
@@ -507,7 +507,7 @@ echo "<font color=black>你还未加入任何国家！！</font><br>";
 	
 	
 } else{
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }		
 
 
@@ -520,9 +520,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

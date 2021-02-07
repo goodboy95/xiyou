@@ -310,7 +310,7 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 	} else{
 
 
-echo "<font color=red>对不起，你的背包已放不下任何装备了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的背包已放不下任何装备了</p>"."<br>";
 //echo "<br>";
 
 
@@ -320,11 +320,11 @@ echo "<font color=red>对不起，你的背包已放不下任何装备了</font>
 	
 	
 } else {
-echo "<font color=red>对不起！你银两不足！</font>"."<br>";
+echo "<p style='color: red'>对不起！你银两不足！</p>"."<br>";
 echo "<br>";
 }
 } else{
-echo "<font color=red>该装备已被对方下架或者被买走了！！</font>"."<br>";
+echo "<p style='color: red'>该装备已被对方下架或者被买走了！！</p>"."<br>";
 
 } 
 

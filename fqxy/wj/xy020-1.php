@@ -411,12 +411,12 @@ $week=$weekarray['date("w")'];
 $h= date('H')*1;
 $i= date('i')*1;
 if($week==6){
-echo "<font color=red>[系统]全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</font>"."<br>";
+echo "<p style='color: red'>[系统]全体人员进行休整今天不开放国战哦！请于明天再来（周六停战）</p>"."<br>";
 } else{
 
 if($h!=21||$h==21&&$i>30){
 
-echo "<font color=red>[系统]参与国战的时间已过或者国战已结束！</font>"."<br>";
+echo "<p style='color: red'>[系统]参与国战的时间已过或者国战已结束！</p>"."<br>";
 
 } else{
 
@@ -438,7 +438,7 @@ $info1=@mysqli_fetch_array($sql1);
 $gjmz=$info1['gjmz'];
 
 if($gjmz==""){
-echo "<font color=red>[系统]对不起！你还未加入国家或者你的国家没有报名参与本次国家！</font>"."<br>";
+echo "<p style='color: red'>[系统]对不起！你还未加入国家或者你的国家没有报名参与本次国家！</p>"."<br>";
 } else{
 	
 
@@ -514,8 +514,8 @@ $iniFile->updItem('国战积分', [$xl => '0']);
 
 
 
-echo "<font color=red>恭喜你！来到了今日的战场！</font></br>"; 
-echo "<font color=red>温馨提示：国战期间一旦出去今天将无法再次参与</font></br>"; 
+echo "<p style='color: red'>恭喜你！来到了今日的战场！</p></br>";
+echo "<p style='color: red'>温馨提示：国战期间一旦出去今天将无法再次参与</p></br>";
 
 	
 # 实例化ini文件操作类，并载入 .ini文件
@@ -527,7 +527,7 @@ $dty=27;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } else{	
-echo "<font color=red>对不起！你今日已经参加过国战了</font></br>"; 
+echo "<p style='color: red'>对不起！你今日已经参加过国战了</p></br>";
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame1);
 //传送到攻城战场—74-0
@@ -554,7 +554,7 @@ $iniFile = new iniFile($ininame1);
 $dtx=1;
 $dty=25;
 # 修改一个分类下子项的值(也可以修改多个)	
-echo "<font color=red>对不起！你还没有国家</font>"."<br>";
+echo "<p style='color: red'>对不起！你还没有国家</p>"."<br>";
 } 
 
 
@@ -819,7 +819,7 @@ $zlmb='".$nowtime."';
 }
 //更新排行
  } else{
-	echo "<font color=red>对不起！！【采花大盗】时间还未开启请于每日".$time1."至".$time2."开放</font>"."<br>"; 
+	echo "<p style='color: red'>对不起！！【采花大盗】时间还未开启请于每日".$time1."至".$time2."开放</p>"."<br>";
 
 echo "</br>"; 
 //cmd及超链接值
@@ -827,7 +827,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
@@ -861,28 +861,28 @@ $bz= rand(1, 8);
 
 
 if($bz ==1){//地阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【地阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【地阵】</p>"."<br>";
 $dty=1;
 }elseif($bz ==2){//人阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【人阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【人阵】</p>"."<br>";
 $dty=2;
 }elseif($bz ==3){//风阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【风阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【风阵】</p>"."<br>";
 $dty=3;
 }elseif($bz ==4){//云阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【云阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【云阵】</p>"."<br>";
 $dty=4;
 }elseif($bz ==5){//龙阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【龙阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【龙阵】</p>"."<br>";
 $dty=5;
 }elseif($bz ==6){//虎阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【虎阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【虎阵】</p>"."<br>";
 $dty=6;
 }elseif($bz ==7){//神阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【神阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【神阵】</p>"."<br>";
 $dty=7;
 }elseif($bz ==8){//鬼阵
-echo "<font color=red>恭喜你！！来到了【万象阵】的【鬼阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【鬼阵】</p>"."<br>";
 $dty=8;
 } else{
 $dty=0;	
@@ -898,7 +898,7 @@ $dty=0;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 }elseif($csm ==179){//跳阵【八门阵】
-echo "<font color=red>恭喜你！！来到了【八门阵】的【死门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【死门】</p>"."<br>";
 $dtx=86;
 $dty=14;
 # 修改一个分类下子项的值(也可以修改多个)
@@ -923,25 +923,25 @@ $bz= rand(1, 7);
 
 
 if($bz ==1){//休门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【休门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【休门】</p>"."<br>";
 $dty=9;
 }elseif($bz ==2){//生门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【生门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【生门】</p>"."<br>";
 $dty=10;
 }elseif($bz ==3){//伤门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【伤门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【伤门】</p>"."<br>";
 $dty=11;
 }elseif($bz ==4){//杜门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【杜门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【杜门】</p>"."<br>";
 $dty=12;
 }elseif($bz ==5){//景门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【景门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【景门】</p>"."<br>";
 $dty=13;
 }elseif($bz ==6){//惊门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【惊门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【惊门】</p>"."<br>";
 $dty=15;
 }elseif($bz ==7){//开门
-echo "<font color=red>恭喜你！！来到了【八门阵】的【开门】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【开门】</p>"."<br>";
 $dty=16;
 } else{
 $dty=0;	
@@ -950,7 +950,7 @@ $dty=0;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 }elseif($csm ==181){//跳阵【八卦阵】
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【乾阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【乾阵】</p>"."<br>";
 $dtx=86;
 $dty=17;
 # 修改一个分类下子项的值(也可以修改多个)
@@ -974,25 +974,25 @@ $bz= rand(1, 7);
 
 
 if($bz ==1){//震阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【震阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【震阵】</p>"."<br>";
 $dty=18;
 }elseif($bz ==2){//坎阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【坎阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【坎阵】</p>"."<br>";
 $dty=19;
 }elseif($bz ==3){//艮阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【艮阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【艮阵】</p>"."<br>";
 $dty=20;
 }elseif($bz ==4){//坤阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【坤阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【坤阵】</p>"."<br>";
 $dty=21;
 }elseif($bz ==5){//巽阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【巽阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【巽阵】</p>"."<br>";
 $dty=22;
 }elseif($bz ==6){//离阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【离阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【离阵】</p>"."<br>";
 $dty=23;
 }elseif($bz ==7){//兑阵
-echo "<font color=red>恭喜你！！来到了【八卦阵】的【兑阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【兑阵】</p>"."<br>";
 $dty=24;
 
 } else{
@@ -1001,7 +1001,7 @@ $dty=0;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 }elseif($csm ==183){//跳阵【八阵图】
-echo "<font color=red>恭喜你！！来到了【八阵图】的【天覆阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【天覆阵】</p>"."<br>";
 $dtx=86;
 $dty=25;
 # 修改一个分类下子项的值(也可以修改多个)
@@ -1025,25 +1025,25 @@ $bz= rand(1, 7);
 
 
 if($bz ==1){//地载阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【地载阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【地载阵】</p>"."<br>";
 $dty=26;
 }elseif($bz ==2){//风扬阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【风扬阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【风扬阵】</p>"."<br>";
 $dty=27;
 }elseif($bz ==3){//云垂阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【云垂阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【云垂阵】</p>"."<br>";
 $dty=28;
 }elseif($bz ==4){//龙飞阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【龙飞阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【龙飞阵】</p>"."<br>";
 $dty=29;
 }elseif($bz ==5){//虎翼阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【虎翼阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【虎翼阵】</p>"."<br>";
 $dty=30;
 }elseif($bz ==6){//鸟翔阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【鸟翔阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【鸟翔阵】</p>"."<br>";
 $dty=31;
 }elseif($bz ==7){//蛇蟠阵
-echo "<font color=red>恭喜你！！来到了【八阵图】的【蛇蟠阵】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【蛇蟠阵】</p>"."<br>";
 $dty=32;
 } else{
 $dty=0;	
@@ -1052,7 +1052,7 @@ $dty=0;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 }elseif($csm ==185){//跳阵【神仙气阵图】
-echo "<font color=red>恭喜你！！来到了【神仙气阵图】</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！来到了【神仙气阵图】</p>"."<br>";
 $dtx=86;
 $dty=33;
 # 修改一个分类下子项的值(也可以修改多个)

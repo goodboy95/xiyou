@@ -61,7 +61,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=8";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
-echo "<font color=black>获得".$syz."西游声望！！</font><br>";
+echo "<p style='color: black'>获得".$syz."西游声望！！</p><br>";
 
 
 
@@ -869,7 +869,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 } elseif($npcc ==495){//〖荣誉宝石〗5个
@@ -891,7 +891,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 } elseif($npcc ==496){//〖荣誉宝石〗15个
@@ -913,7 +913,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 } elseif($npcc ==497){//〖荣誉宝石〗40个
 $bsid1=25;//宝石id
@@ -934,7 +934,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 } elseif($npcc ==498){//〖荣誉宝石〗100个
 $bsid1=25;//宝石id
@@ -955,7 +955,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 

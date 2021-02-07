@@ -308,7 +308,7 @@ unlink($ininame); //删除文件
 
 }
 
-echo "<font color=red>恭喜你！！取回了".$wpmz."x".$wpsl."</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！取回了".$wpmz."x".$wpsl."</p>"."<br>";
 //ini文件名字
 $inina="bbrl.ini";
 //路径
@@ -319,7 +319,7 @@ unlink($ininame); //删除文件
 
 } else{
 
-echo "<font color=red>对不起！负重不足</font>"."<br>";
+echo "<p style='color: red'>对不起！负重不足</p>"."<br>";
 }
 
 
@@ -338,7 +338,7 @@ $path='ache/'.$wjid;
 //判断ini文件是否存在	
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
-echo "<font color=red>对不起，拍卖取回出现位置错位错误</font>"."<br>";
+echo "<p style='color: red'>对不起，拍卖取回出现位置错位错误</p>"."<br>";
 
 
 }
@@ -357,7 +357,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=502;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回我的拍卖</font></a>"."<br>"; 
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回我的拍卖</p></a>"."<br>";
 echo "<br>"; 
 
 

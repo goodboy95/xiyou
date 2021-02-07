@@ -58,7 +58,7 @@ $wjid=$wjid1;
 
 if($wpsl<$sl){
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 } elseif($wpsl>$sl){  
@@ -103,7 +103,7 @@ $ckname=($iniFile->getItem('赠送人','初始'));
 $ckid=($iniFile->getItem('赠送人ID','初始'));
 
 
-echo "<font color=red>【你将".$wpmz."x".$sl."无偿赠送给了".$ckname."(".$ckid.")】</font>"."<br>";
+echo "<p style='color: red'>【你将".$wpmz."x".$sl."无偿赠送给了".$ckname."(".$ckid.")】</p>"."<br>";
 
 
 $wjid=$wjid1;
@@ -381,7 +381,7 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 include("./ini/post_ini.php");
 $ckname=($iniFile->getItem('赠送人','初始'));
 $ckid=($iniFile->getItem('赠送人ID','初始'));
-echo "<font color=red>【你将".$wpmz."x".$sl."无偿赠送给了".$ckname."(".$ckid.")】</font>"."<br>";
+echo "<p style='color: red'>【你将".$wpmz."x".$sl."无偿赠送给了".$ckname."(".$ckid.")】</p>"."<br>";
 
 $wjid1=$wjid;
 
@@ -564,7 +564,7 @@ $wjid=$wjid1;//自己
 
 
 } else {
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 } 
 
@@ -573,19 +573,19 @@ echo "<br>";
 include("./ini/jsini.php");
 } else{	
 
-echo "<font color=red>对方ID有误~~请重新赠送</font><br>";
+echo "<p style='color: red'>对方ID有误~~请重新赠送</p><br>";
 
 }
 
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 	
 } else{	
-echo"<font color=black>骚年~~需要Vip3级使用此项功能</font></a></br>";	
+echo"<p style='color: black'>骚年~~需要Vip3级使用此项功能</p></a></br>";
 
 }
 }
@@ -604,7 +604,7 @@ include("seach1.php");
 
 
 } else{	
-echo "<font color=red>".$wpmz."已绑定，无法赠送~~</font><br>";
+echo "<p style='color: red'>".$wpmz."已绑定，无法赠送~~</p><br>";
 
 
 } 
@@ -617,7 +617,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=538;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 }
 //解锁当前使用的ini

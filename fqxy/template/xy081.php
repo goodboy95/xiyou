@@ -6,14 +6,14 @@ $ininalock=$wjid."_lock".".txt";
 include("./ini/zsini.php");
 if($zsspd==1){
 
-echo "<font color=red>我的装备</font>";
-echo "<font color=black>|</font>";
+echo "<p style='color: red'>我的装备</p>";
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=615;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的时装</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我的时装</p></a>"."<br>";
 
 
 //调用zbb.ini是否存在
@@ -216,11 +216,11 @@ $strr11=$str;
 
 
 
-echo"<font color=black>您的装备如下：</font></a>"."<br>";
+echo"<p style='color: black'>您的装备如下：</p></a>"."<br>";
 
 
 if($czbmz1!=""){
-echo "<font color=black>法宝：</font></a>";	
+echo "<p style='color: black'>法宝：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -239,18 +239,18 @@ $color1="blue";
 //颜色控制
 
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color1.">".$czbmz1."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color1."'>".$czbmz1."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>法宝：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>法宝：".$zbmz1."</p></a>"."<br>";
 }
 
 
@@ -258,7 +258,7 @@ echo "<font color=black>法宝：".$zbmz1."</font></a>"."<br>";
 
 
 if($czbmz2!=""){
-echo "<font color=black>坐骑：</font></a>";	
+echo "<p style='color: black'>坐骑：</p></a>";
 
 //颜色控制
 $arr = explode("_",$strr2);
@@ -274,24 +274,24 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color2.">".$czbmz2."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color2."'>".$czbmz2."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>坐骑：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>坐骑：".$zbmz1."</p></a>"."<br>";
 }
 
 
 
 if($czbmz3!=""){
-echo "<font color=black>手持：</font></a>";	
+echo "<p style='color: black'>手持：</p></a>";
 
 //颜色控制
 $arr = explode("_",$strr3);
@@ -307,23 +307,23 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color3.">".$czbmz3."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color3."'>".$czbmz3."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>手持：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>手持：".$zbmz1."</p></a>"."<br>";
 }
 
 
 if($czbmz4!=""){
-echo "<font color=black>身穿：</font></a>";	
+echo "<p style='color: black'>身穿：</p></a>";
 //颜色控制
 $arr = explode("_",$strr4);
 $colorid=$arr[0];
@@ -338,22 +338,22 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color4.">".$czbmz4."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color4."'>".$czbmz4."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>身穿：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>身穿：".$zbmz1."</p></a>"."<br>";
 }
 
 if($czbmz5!=""){
-echo "<font color=black>头戴：</font></a>";	
+echo "<p style='color: black'>头戴：</p></a>";
 //颜色控制
 $arr = explode("_",$strr5);
 $colorid=$arr[0];
@@ -368,23 +368,23 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color5.">".$czbmz5."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color5."'>".$czbmz5."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>头戴：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>头戴：".$zbmz1."</p></a>"."<br>";
 }
 
 
 if($czbmz6!=""){
-echo "<font color=black>脚穿：</font></a>";	
+echo "<p style='color: black'>脚穿：</p></a>";
 //颜色控制
 $arr = explode("_",$strr6);
 $colorid=$arr[0];
@@ -399,18 +399,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color6.">".$czbmz6."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color6."'>".$czbmz6."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>脚穿：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>脚穿：".$zbmz1."</p></a>"."<br>";
 }
 
 
@@ -418,7 +418,7 @@ echo "<font color=black>脚穿：".$zbmz1."</font></a>"."<br>";
 
 
 if($czbmz7!=""){
-echo "<font color=black>佩戴：</font></a>";	
+echo "<p style='color: black'>佩戴：</p></a>";
 //颜色控制
 $arr = explode("_",$strr7);
 $colorid=$arr[0];
@@ -433,24 +433,24 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color7.">".$czbmz7."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color7."'>".$czbmz7."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>佩戴：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>佩戴：".$zbmz1."</p></a>"."<br>";
 }
 
 
 
 if($czbmz8!=""){
-echo "<font color=black>首饰：</font></a>";	
+echo "<p style='color: black'>首饰：</p></a>";
 //颜色控制
 $arr = explode("_",$strr8);
 $colorid=$arr[0];
@@ -465,25 +465,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color8.">".$czbmz8."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color8."'>".$czbmz8."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>首饰：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>首饰：".$zbmz1."</p></a>"."<br>";
 }
 
 
 
 
 if($czbmz9!=""){
-echo "<font color=black>婚戒：</font></a>";	
+echo "<p style='color: black'>婚戒：</p></a>";
 //颜色控制
 $arr = explode("_",$strr9);
 $colorid=$arr[0];
@@ -498,24 +498,24 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr9;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color9.">".$czbmz9."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color9."'>".$czbmz9."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr9;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>婚戒：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>婚戒：".$zbmz1."</p></a>"."<br>";
 }
 
 
 
 if($czbmz10!=""){
-echo "<font color=black>婚链：</font></a>";	
+echo "<p style='color: black'>婚链：</p></a>";
 //颜色控制
 $arr = explode("_",$strr10);
 $colorid=$arr[0];
@@ -531,18 +531,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr10;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color10.">".$czbmz10."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color10."'>".$czbmz10."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr10;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>婚链：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>婚链：".$zbmz1."</p></a>"."<br>";
 }
 
 
@@ -550,7 +550,7 @@ echo "<font color=black>婚链：".$zbmz1."</font></a>"."<br>";
 
 
 if($czbmz11!=""){
-echo "<font color=black>披风：</font></a>";	
+echo "<p style='color: black'>披风：</p></a>";
 //颜色控制
 $arr = explode("_",$strr11);
 $colorid=$arr[0];
@@ -566,18 +566,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$strr11;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=".$color11.">".$czbmz11."</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: ".$color11."'>".$czbmz11."</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=84;
 $npc[]=$strr11;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>卸下</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>卸下</p></a>"."<br>";
 
 } else{
 $zbmz1="无";
-echo "<font color=black>披风：".$zbmz1."</font></a>"."<br>";
+echo "<p style='color: black'>披风：".$zbmz1."</p></a>"."<br>";
 }
 
 
@@ -606,7 +606,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回状态</p></a>"."<br>";
 
 
 //cmd及超链接值
@@ -614,7 +614,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br/>";
 
 
 
@@ -628,7 +628,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏首页</p></a>"."<br/>";
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

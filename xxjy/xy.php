@@ -74,17 +74,17 @@ header("Content-type: text/html; charset=utf-8");
     ini_set("date.timezone", "PRC");//时间效准代码
 
 
-    echo "<font color=red>----------调试信息-----------</font>" . "<br>";
-    echo "<font color=black>上次页面ID：" . $yymid . "</font>" . "<br>";
-    echo "<font color=black>本次页面ID：" . $symid . "</font>" . "<br>";
-    echo "<font color=red>----------调试信息-----------</font>" . "<br>";
+    echo "<p style='color: red'>----------调试信息-----------</p>" . "<br>";
+    echo "<p style='color: black'>上次页面ID：" . $yymid . "</p>" . "<br>";
+    echo "<p style='color: black'>本次页面ID：" . $symid . "</p>" . "<br>";
+    echo "<p style='color: red'>----------调试信息-----------</p>" . "<br>";
 
 
     ?>
 
 </div>
 <form action="" method="POST">
-    <font color=black>请输入你要说的话:</font><br>
+    <p style='color: black'>请输入你要说的话:</p><br>
     <input type="text" name="wjtoke" placeholder="请输入你要说的话" id='search'><br>
     <input type="submit" name="submit" value="发送" id="search1"><br>
 </form>
@@ -92,7 +92,7 @@ header("Content-type: text/html; charset=utf-8");
 </html>
 
 <form action="" method="POST">
-    <font color=black>请输入你要说的话:</font><br>
+    <p style='color: black'>请输入你要说的话:</p><br>
     <input type="text" name="wjtoke" placeholder="请输入你要说的话" id='search'><br>
     <input type="submit" name="submit" value="发送" id="search1"><br>
 </form>

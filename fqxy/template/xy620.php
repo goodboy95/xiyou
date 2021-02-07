@@ -177,7 +177,7 @@ $wjid=$wjid1;//自己
 
 } 
 
-echo "<font color=red>恭喜你！！比武胜利了~~</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！比武胜利了~~</p>"."<br>";
 
 
 //cmd及超链接值
@@ -185,17 +185,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武道场</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回武道场</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 } 

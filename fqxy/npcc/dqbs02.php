@@ -5,7 +5,7 @@ if($sll!=0){
 
 if($wpsl<$sl){
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 } elseif($wpsl>$sl){   
@@ -70,7 +70,7 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
 //////////////////////////////////////////////////////////////////缓存背包容量修改/////////////////////////////////////////
 
-echo "<font color=red>你丢弃了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你丢弃了".$wpmz."x".$sl."</p>"."<br>";
 
 
 
@@ -180,7 +180,7 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
 
 
-echo "<font color=red>你丢弃了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你丢弃了".$wpmz."x".$sl."</p>"."<br>";
 
 echo "<br>";
 
@@ -205,7 +205,7 @@ include("./pz/pz01.php");
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

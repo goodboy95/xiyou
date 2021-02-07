@@ -134,8 +134,8 @@ $iniFile->addItem('玩家名字',[$ltmax1 => $ltbl1]);
 $iniFile->addItem('玩家结婚',[$ltmax1 => '2']); 
 
 
-echo "<font color=red>失去〖求婚玫瑰〗x1</font>"."<br>";
-echo "<font color=red>你发起了求婚，请等待对方同意</font>"."<br>";
+echo "<p style='color: red'>失去〖求婚玫瑰〗x1</p>"."<br>";
+echo "<p style='color: red'>你发起了求婚，请等待对方同意</p>"."<br>";
 		
 		
 		
@@ -147,40 +147,40 @@ include("./pz/pz01.php");
 break;
 
 } else{
-echo "<font color=red>对不起！求婚需要〖求婚玫瑰〗x1</font>"."<br>";
+echo "<p style='color: red'>对不起！求婚需要〖求婚玫瑰〗x1</p>"."<br>";
 }
 } else{
-echo "<font color=red>对不起！你已经向对方求过婚了！请等待对方同意</font>"."<br>";
+echo "<p style='color: red'>对不起！你已经向对方求过婚了！请等待对方同意</p>"."<br>";
 }
 } else{
-echo "<font color=red>对不起！对方已经把你拉黑，无法邀请对方</font>"."<br>";
+echo "<p style='color: red'>对不起！对方已经把你拉黑，无法邀请对方</p>"."<br>";
 }
 } else {
-echo "<font color=red>对不起！你不能和对方当好基友！！</font>"."<br>";
+echo "<p style='color: red'>对不起！你不能和对方当好基友！！</p>"."<br>";
 }
 } else {
-echo "<font color=red>对方已经有配偶了</font>"."<br>";
+echo "<p style='color: red'>对方已经有配偶了</p>"."<br>";
 }
 } else {
-echo "<font color=red>你已经有配偶了</font>"."<br>";
+echo "<p style='color: red'>你已经有配偶了</p>"."<br>";
 }
 } else {
-echo "<font color=red>没有这个玩家！ID有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>没有这个玩家！ID有误请重新输入</p>"."<br>";
 }
 } else {
-echo "<font color=red>你喝醉了吧？怎么可以和自己求婚呢？</font>"."<br>";
+echo "<p style='color: red'>你喝醉了吧？怎么可以和自己求婚呢？</p>"."<br>";
 }
 } else {
-echo "<font color=red>你输入的求婚对象ID误请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的求婚对象ID误请重新输入</p>"."<br>";
 }
 } else{
-echo "<font color=red>你输入的求婚对象ID误请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的求婚对象ID误请重新输入</p>"."<br>";
 } 
 } else{
-echo "<font color=red>你输入的官求婚宣言包含敏感字符请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的官求婚宣言包含敏感字符请重新输入</p>"."<br>";
 }
 } else{
-echo "<font color=red>求婚宣言不能为空</font>"."<br>";
+echo "<p style='color: red'>求婚宣言不能为空</p>"."<br>";
 }
 
 
@@ -209,7 +209,7 @@ include("./ini/jsini.php");
 
 ?>
 <form  action="<?echo "xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1";?>" method="POST">
-<font color=black>请输入你要求婚宣言已经对方ID:</font><br>
+<p style='color: black'>请输入你要求婚宣言已经对方ID:</p><br>
 求婚宣言：<input  type="text" name="jdqg" placeholder="请输入你的求婚宣言"id='search'><br>
 玩&nbsp&nbsp&nbsp家ID：<input type="tel" name="sl" placeholder="请输入对方ID"id='search'onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><br>
 
@@ -221,9 +221,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

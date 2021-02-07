@@ -36,7 +36,7 @@ if($dqwp==1){
 exit();
 }
 
-echo "<font color=red>你最多可挂售".$wpmz."x".$wpsl."</font>"."<br>";
+echo "<p style='color: red'>你最多可挂售".$wpmz."x".$wpsl."</p>"."<br>";
 
 
 
@@ -44,11 +44,11 @@ echo "<font color=red>你最多可挂售".$wpmz."x".$wpsl."</font>"."<br>";
 
 
 
-//echo "<font color=black>请输入你要挂售多少".$wpmz."呢？</font>"."<br>";
-echo "<font color=black>请输入你要挂售".$wpmz."数量和单价</font>"."<br>";
+//echo "<p style='color: black'>请输入你要挂售多少".$wpmz."呢？</p>"."<br>";
+echo "<p style='color: black'>请输入你要挂售".$wpmz."数量和单价</p>"."<br>";
 
 
-//echo "<font color=blue>挂售全部（后续更新）</font>"."<br>";
+//echo "<p style='color: blue'>挂售全部（后续更新）</p>"."<br>";
 ?>
 <form  action="" method="POST">
 数量：<input type="tel" name="sl" placeholder="数量"id='search'onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><br>

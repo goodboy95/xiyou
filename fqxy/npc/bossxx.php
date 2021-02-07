@@ -28,7 +28,7 @@ include("bossxx08.php");
 
 } else{
 
-echo "<font color=black>没有这个boss=id编号".$npcc."请尝试联系gm解决此问题！！</font><br>";
+echo "<p style='color: black'>没有这个boss=id编号".$npcc."请尝试联系gm解决此问题！！</p><br>";
 
 }
 

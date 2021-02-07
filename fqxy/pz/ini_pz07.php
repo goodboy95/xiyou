@@ -47,20 +47,20 @@ if ($xl2<$maxhp) {
 $iniFile->updItem($wpzz1, [$wpzz2 => $xl2]);
 //缓存修改
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！".$wpzz3."恢复".$xl*$sl."</font><br>";
+echo "<p style='color: black'>恭喜你！".$wpzz3."恢复".$xl*$sl."</p><br>";
 } elseif($xl2>=$maxhp&&$xl1<$maxhp){
 $xl2=$maxhp;
 //缓存修改
 $iniFile->updItem($wpzz1, [$wpzz2 => $xl2]);
 //缓存修改
 $wpsy=2;//使用成功
-echo "<font color=black>恭喜你！".$wpzz3."恢复".$xl*$sl."</font><br>";
+echo "<p style='color: black'>恭喜你！".$wpzz3."恢复".$xl*$sl."</p><br>";
 
 
 } else{
 $wpsy=1;//使用失败
 
-echo "<font color=black>对不起！你的".$wpzz3."已满不需要恢复了</font><br>";
+echo "<p style='color: black'>对不起！你的".$wpzz3."已满不需要恢复了</p><br>";
 
 
 }
@@ -69,7 +69,7 @@ echo "<font color=black>对不起！你的".$wpzz3."已满不需要恢复了</fo
 } else{
 $wpsy=1;//使用失败
 
-echo "<font color=black>对不起！此物品不能在快捷键使用</font><br>";
+echo "<p style='color: black'>对不起！此物品不能在快捷键使用</p><br>";
 
 
 }

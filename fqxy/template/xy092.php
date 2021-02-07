@@ -174,7 +174,7 @@ $keydtt03=$keydt03[$ym*10-9+$i];
 $keydtt04=$keydt04[$ym*10-9+$i];
 $keydtt05=$keydt05[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
-echo "<font color=black>".$xxh.".</font>";	
+echo "<p style='color: black'>".$xxh.".</p>";
 
  	if ($keydtt03!="") {	 
 $img='pic/vip/'."vip".$keydtt03.'.png';
@@ -190,15 +190,15 @@ $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keydtt01;
 if ($keydtt04!="") {	
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p></a>";
 } else{
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keydtt02."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."</p></a>";
 }
 } else{
 	if ($keydtt04!="") {	
-echo "<font color=red>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</font>";
+echo "<p style='color: red'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p>";
 } else{
-echo "<font color=red>".$keydtt02.".</font>";
+echo "<p style='color: red'>".$keydtt02.".</p>";
 }
 }
 echo "</br>";
@@ -218,7 +218,7 @@ $keydtt03=$keydt03[$ym*10-9+$i];
 $keydtt04=$keydt04[$ym*10-9+$i];
 $keydtt05=$keydt05[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
-echo "<font color=black>".$xxh.".</font>";	
+echo "<p style='color: black'>".$xxh.".</p>";
 
  	if ($keydtt03!="") {	 
 $img='pic/vip/'."vip".$keydtt03.'.png';
@@ -234,15 +234,15 @@ $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keydtt01;
 if ($keydtt04!="") {	
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p></a>";
 } else{
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keydtt02."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."</p></a>";
 }
 } else{
 	if ($keydtt04!="") {	
-echo "<font color=red>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</font>";
+echo "<p style='color: red'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p>";
 } else{
-echo "<font color=red>".$keydtt02.".</font>";
+echo "<p style='color: red'>".$keydtt02.".</p>";
 }
 }
 echo "</br>";
@@ -263,7 +263,7 @@ $keydtt03=$keydt03[$ym*10-9+$i];
 $keydtt04=$keydt04[$ym*10-9+$i];
 $keydtt05=$keydt05[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
-echo "<font color=black>".$xxh.".</font>";	
+echo "<p style='color: black'>".$xxh.".</p>";
 
  	if ($keydtt03!="") {	 
 $img='pic/vip/'."vip".$keydtt03.'.png';
@@ -279,15 +279,15 @@ $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keydtt01;
 if ($keydtt04!="") {	
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p></a>";
 } else{
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keydtt02."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."</p></a>";
 }
 } else{
 	if ($keydtt04!="") {	
-echo "<font color=red>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</font>";
+echo "<p style='color: red'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p>";
 } else{
-echo "<font color=red>".$keydtt02.".</font>";
+echo "<p style='color: red'>".$keydtt02.".</p>";
 }
 }
 echo "</br>";
@@ -311,20 +311,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=40;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>首页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>首页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=39;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上页</p></a>";
 
 $f=1;
 
 }
 $mcc=$m/10;
 if($f>0&&$mcc>$ym){
-echo  "<font color=blue>|</font></a>";
+echo  "<p style='color: blue'>|</p></a>";
 }
 
 
@@ -337,15 +337,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=38;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=41;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>末页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>末页</p></a>";
 $f=1;
 }
 
@@ -358,7 +358,7 @@ echo "<br>";
 	
 	
 	} else{
-echo "<font color=black>你周围没有更多的玩家了！！</font></a>"."<br>";
+echo "<p style='color: black'>你周围没有更多的玩家了！！</p></a>"."<br>";
 }
 
 	
@@ -374,9 +374,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

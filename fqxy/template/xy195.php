@@ -39,8 +39,8 @@ $gj02="防守方";
 $gj02="进攻方";
 }
 
-echo "<font color=red>".$bpmz."的国战信息</font>"."<br>";
-echo "<font color=black>国家积分前三甲排名：</font>"."<br>";
+echo "<p style='color: red'>".$bpmz."的国战信息</p>"."<br>";
+echo "<p style='color: black'>国家积分前三甲排名：</p>"."<br>";
 
 
 include("./ini/gz02_ini.php");
@@ -125,30 +125,30 @@ break;
 }
 
 if ($hm>=1){
-echo "<font color=black>1".".".$phname[0]."(".$xue[0]."分)</font></a>"."<br>";
+echo "<p style='color: black'>1".".".$phname[0]."(".$xue[0]."分)</p></a>"."<br>";
 
 
 
 
 
 if ($hm>=2){
-echo "<font color=black>2".".".$phname[1]."(".$xue[1]."分)</font></a>"."<br>";
+echo "<p style='color: black'>2".".".$phname[1]."(".$xue[1]."分)</p></a>"."<br>";
 
 }
 
 if ($hm>=3){
-echo "<font color=black>3".".".$phname[2]."(".$xue[2]."分)</font></a>"."<br>";
+echo "<p style='color: black'>3".".".$phname[2]."(".$xue[2]."分)</p></a>"."<br>";
 
 }
 
 } else{
 
-echo "<font color=black>当前无任何国家积分排名</font>"."<br>";
+echo "<p style='color: black'>当前无任何国家积分排名</p>"."<br>";
 
 }
 } else{
 
-echo "<font color=black>当前无任何国家积分排名</font>"."<br>";
+echo "<p style='color: black'>当前无任何国家积分排名</p>"."<br>";
 
 }
 
@@ -195,7 +195,7 @@ if($h ==21){
 if($yjf <=0){
 
 if($i <=29){
-echo "<font color=black>".$yjm."秒</font>"."<br>";
+echo "<p style='color: black'>".$yjm."秒</p>"."<br>";
 
 $zcsj=$yjm."秒";
 
@@ -212,20 +212,20 @@ $zcsj="0秒";
 }
 
 
-echo "<font color=black>----------------------</font>"."<br>";
-echo "<font color=black>国战剩余时间:".$zcsj."</font>"."<br>";
-echo "<font color=black>战场位置：【".$zcwz."】</font>"."<br>";
-echo "<font color=black>国家状态：【".$gj02."】</font>"."<br>";
-echo "<font color=blue>当前防守：".$gj01."</font>"."<br>";
-echo "<font color=black>国家排名：【第".$gj04."名】</font>"."<br>";
-echo "<font color=black>国家积分：【".$gj03."分】</font>"."<br>";
-echo "<font color=black>我的积分：【".$gj06."分】</font>"."<br>";
-echo "<font color=black>剩余死亡次数：【".$gj05."次】</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
+echo "<p style='color: black'>国战剩余时间:".$zcsj."</p>"."<br>";
+echo "<p style='color: black'>战场位置：【".$zcwz."】</p>"."<br>";
+echo "<p style='color: black'>国家状态：【".$gj02."】</p>"."<br>";
+echo "<p style='color: blue'>当前防守：".$gj01."</p>"."<br>";
+echo "<p style='color: black'>国家排名：【第".$gj04."名】</p>"."<br>";
+echo "<p style='color: black'>国家积分：【".$gj03."分】</p>"."<br>";
+echo "<p style='color: black'>我的积分：【".$gj06."分】</p>"."<br>";
+echo "<p style='color: black'>剩余死亡次数：【".$gj05."次】</p>"."<br>";
 
 
 } else{
 
-echo "<font color=red>对不起！你还没有国家</font>"."<br>";
+echo "<p style='color: red'>对不起！你还没有国家</p>"."<br>";
 }
 
 
@@ -236,9 +236,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

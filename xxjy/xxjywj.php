@@ -147,19 +147,19 @@ echo "<META HTTP-EQUIV=REFRESH CONTENT='0;URL=$xyurl'>";
 
 }else{
 
-$zcxx="<font color=red>你的帐号或安全码不正确</font>";
+$zcxx="<p style='color: red'>你的帐号或安全码不正确</p>";
 }
 	
 	
 	
 	
 }else{
-$zcxx="<font color=red>新的密码只能为6-12位字母或数字</font>";
+$zcxx="<p style='color: red'>新的密码只能为6-12位字母或数字</p>";
 }
 
 }else{
 
-$zcxx="<font color=red>新的密码只能为6-12位字母或数字</font>";
+$zcxx="<p style='color: red'>新的密码只能为6-12位字母或数字</p>";
 }
 
 
@@ -171,28 +171,28 @@ $zcxx="<font color=red>新的密码只能为6-12位字母或数字</font>";
 	
 	}else{
 
-$zcxx="<font color=red>两次新密码密码不一致</font>";
+$zcxx="<p style='color: red'>两次新密码密码不一致</p>";
 }	
 	
 	
 	
 	}else{
 
-$zcxx="<font color=red>安全码不能为空</font>";
+$zcxx="<p style='color: red'>安全码不能为空</p>";
 }	
 	}else{
 
-$zcxx="<font color=red>安全码不能为空</font>";
+$zcxx="<p style='color: red'>安全码不能为空</p>";
 }
 	
 }else{
 
-$zcxx="<font color=red>安全码不能为空</font>";
+$zcxx="<p style='color: red'>安全码不能为空</p>";
 }
 
 }else{
 
-$zcxx="<font color=red>账号不能为空</font>";
+$zcxx="<p style='color: red'>账号不能为空</p>";
 }
 
 }
@@ -236,16 +236,16 @@ $zcxx="<font color=red>账号不能为空</font>";
 
 
 <form  action="<?echo "xxjywj.php";?>" method="post">
-账&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号：<input  type="text" name="zc1" placeholder="账号"id='search'><font color=black></font><br>
-新的密码：<input  type="text" name="zc2" placeholder="设置新密码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
-确认密码：<input  type="text" name="zc3" placeholder="确认新密码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
-['安全码']&nbsp&nbsp：<input  type="text" name="zc4" placeholder="注册时的安全码"id='search'><font color=red>（6-12位的字母或数字）</font><br>
+账&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号：<input  type="text" name="zc1" placeholder="账号"id='search'><p style='color: black'></p><br>
+新的密码：<input  type="text" name="zc2" placeholder="设置新密码"id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>
+确认密码：<input  type="text" name="zc3" placeholder="确认新密码"id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>
+['安全码']&nbsp&nbsp：<input  type="text" name="zc4" placeholder="注册时的安全码"id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>
 <input  type="submit" name="submit"  value="修改密码" id="search1"><br>
 </form>
 
 
 <br>
-<a href='/xxjy/login.php'><font color=blue>返回登录</font></a>
+<a href='/xxjy/login.php'><p style='color: blue'>返回登录</p></a>
 <br>
 <br>
 <br>

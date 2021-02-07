@@ -61,7 +61,7 @@ $hm=0;
 
 $ik=0;
 $hm=count($phbzz2,0); 
-echo "<font color=black>【疯狂摇点(黄金场)排名前10名玩家】(金豆奖池)</font></a>"."<br>";
+echo "<p style='color: black'>【疯狂摇点(黄金场)排名前10名玩家】(金豆奖池)</p></a>"."<br>";
 
 if($hm>=1){
 
@@ -130,7 +130,7 @@ $i=$i+1;
 $ik=$ik+1;
 
 
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 
 $img='pic/vip/'."vip".$vvip[$i].'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
@@ -144,16 +144,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$phidd[$i];
-echo "<font color=red>".$phmz[$i]."</font></a>";
-echo "<font color=red>&nbsp&nbsp&nbsp[".$phsx[$i]."]</font>";
+echo "<p style='color: red'>".$phmz[$i]."</p></a>";
+echo "<p style='color: red'>&nbsp&nbsp&nbsp[".$phsx[$i]."]</p>";
 } else{
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$phidd[$i];
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$phmz[$i]."</font></a>";
-echo "<font color=black>&nbsp&nbsp&nbsp[".$phsx[$i]."]</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$phmz[$i]."</p></a>";
+echo "<p style='color: black'>&nbsp&nbsp&nbsp[".$phsx[$i]."]</p>";
 echo $phidd[$i];
 } 
 	
@@ -178,7 +178,7 @@ if ($ik>=10){
  
  
  } else{	
-echo "<font color=black>目前还无人上榜</font>"."<br>";
+echo "<p style='color: black'>目前还无人上榜</p>"."<br>";
 
 }
 
@@ -197,14 +197,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

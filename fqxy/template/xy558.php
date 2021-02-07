@@ -33,7 +33,7 @@ $iniFile->updItem('召唤1', ['初始' => '2']);
 
 
 
-echo "<font color=black>恭喜你~~成功召唤出来【如意财神爷】击杀高倍掉宝，美滋滋，美滋滋，伤不起~~~</font>"."<br>";
+echo "<p style='color: black'>恭喜你~~成功召唤出来【如意财神爷】击杀高倍掉宝，美滋滋，美滋滋，伤不起~~~</p>"."<br>";
 
 
 
@@ -50,7 +50,7 @@ $xtxx=$bossmz."蓄力已满已被召唤开启！！请各路仙友前往击杀�
 include("./msg/msgg02.php");
 } else{
 
-echo "<font color=black>对不起~~当前蓄力还未达到500点或者已召唤出来了</font>"."<br>";
+echo "<p style='color: black'>对不起~~当前蓄力还未达到500点或者已召唤出来了</p>"."<br>";
 
 
 
@@ -65,7 +65,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 } 
 //解锁当前使用的ini

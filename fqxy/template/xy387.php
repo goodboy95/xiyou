@@ -18,7 +18,7 @@ $name=($iniFile->getItem('玩家信息','玩家名字'));
 include("./ini/boss_ini.php");
 $iniFile->updItem('世界BOSS属性', ['击杀' => '2']);//写入战斗页面
 $iniFile->updItem('世界BOSS属性', ['击杀人' => $name]);//写入战斗页面
-echo "<font color=black>".$nname."被你打开了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."被你打开了！！！</p>"."<br>";
 
 
 $xtxx="众人拾柴火焰高战场".$nname."已被攻破！！请防守方加强防守！！";
@@ -28,7 +28,7 @@ include("./msg/msgg02.php");
 } else{
 include("./ini/boss_ini.php");	
 $name=($iniFile->getItem('世界BOSS属性','击杀人'));
-echo "<font color=black>".$nname."已被".$name."打开了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."已被".$name."打开了！！！</p>"."<br>";
 }
 
 
@@ -49,7 +49,7 @@ include("./ini/boss_ini.php");
 $iniFile->updItem('世界BOSS属性', ['击杀' => '2']);//写入战斗页面
 $iniFile->updItem('世界BOSS属性', ['击杀人' => $name]);//写入战斗页面
 
-echo "<font color=black>".$nname."被你打死了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."被你打死了！！！</p>"."<br>";
 
 //增加国战积分
 include("./ini/gz03_ini.php");
@@ -110,14 +110,14 @@ unlink($ininame); //删除文件
 //更新缓存数据
 } 
 
-echo "<font color=blue>击杀敌对国家玩家获得国家积分+10，个人积分+10</font>"."<br>";
+echo "<p style='color: blue'>击杀敌对国家玩家获得国家积分+10，个人积分+10</p>"."<br>";
 } else{	
-echo "<font color=blue>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</font>"."<br>";
+echo "<p style='color: blue'>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</p>"."<br>";
 
 
 }
 } else{	
-echo "<font color=blue>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</font>"."<br>";
+echo "<p style='color: blue'>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</p>"."<br>";
 
 
 }
@@ -129,13 +129,13 @@ echo "<font color=blue>不会获得任何积分（造成这种情况因为之前
 
 $xtxx="【神兽守卫】已被".$bpmz."的".$uname."击杀了，请防守方加强防守！！";
 include("./msg/msgg02.php");
-echo "<font color=black>获得国家积分+10</font>"."<br>";
+echo "<p style='color: black'>获得国家积分+10</p>"."<br>";
 
 
 } else{
 include("./ini/boss_ini.php");	
 $name=($iniFile->getItem('世界BOSS属性','击杀人'));
-echo "<font color=black>".$nname."已被".$name."击杀了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."已被".$name."击杀了！！！</p>"."<br>";
 
 
 }
@@ -169,34 +169,34 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=162;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【立即前往密室】</font></a>"."<br>";
-echo "<font color=red>提示：守方四大【神兽守卫】已阵亡，即刻可以立即传送到密室抢夺【国家权杖】</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【立即前往密室】</p></a>"."<br>";
+echo "<p style='color: red'>提示：守方四大【神兽守卫】已阵亡，即刻可以立即传送到密室抢夺【国家权杖】</p>"."<br>";
 include("./ini/gz01_ini.php");
 //多仗变量
 $iniFile->updItem('夺仗人', ['初始' => '1']);//写入战斗页面
 
 
 } else {
-echo "<font color=black>守方四大【神兽守卫】：</font>"."<br>";
+echo "<p style='color: black'>守方四大【神兽守卫】：</p>"."<br>";
 if($yjdm1<=0){
-echo "<font color=red>【神兽守卫】（1,1）已击杀</font>"."<br>";
+echo "<p style='color: red'>【神兽守卫】（1,1）已击杀</p>"."<br>";
 } else{
-echo "<font color=black>【神兽守卫】（1,1）</font>"."<br>";	
+echo "<p style='color: black'>【神兽守卫】（1,1）</p>"."<br>";
 }
 if($yjdm2<=0){
-echo "<font color=red>【神兽守卫】（2,1）已击杀</font>"."<br>";	
+echo "<p style='color: red'>【神兽守卫】（2,1）已击杀</p>"."<br>";
 } else{
-echo "<font color=black>【神兽守卫】（2,1）</font>"."<br>";		
+echo "<p style='color: black'>【神兽守卫】（2,1）</p>"."<br>";
 }
 if($yjdm3<=0){
-echo "<font color=red>【神兽守卫】（2,0）已击杀</font>"."<br>";	
+echo "<p style='color: red'>【神兽守卫】（2,0）已击杀</p>"."<br>";
 } else{
-echo "<font color=black>【神兽守卫】（2,0）</font>"."<br>";		
+echo "<p style='color: black'>【神兽守卫】（2,0）</p>"."<br>";
 }
 if($yjdm4<=0){
-echo "<font color=red>【神兽守卫】（1,0）已击杀</font>"."<br>";
+echo "<p style='color: red'>【神兽守卫】（1,0）已击杀</p>"."<br>";
 } else{
-echo "<font color=black>【神兽守卫】（1,0）</font>"."<br>";		
+echo "<p style='color: black'>【神兽守卫】（1,0）</p>"."<br>";
 }
 
 
@@ -220,7 +220,7 @@ include("./ini/bosstime_ini.php");
 $nowtime=date('Y-m-d H:i:s');
 $iniFile->updItem('死亡时间',['初始' => $nowtime]);
 
-echo "<font color=black>".$nname."被你击杀了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."被你击杀了！！！</p>"."<br>";
 include("./wj/bossdl07.php");
 
 $xtxx="众人拾柴火焰高世界boss".$nname."已被".$name."击杀！！获得".$dlwpts;
@@ -243,7 +243,7 @@ include("./msg/msgg02.php");
 } else{
 include("./ini/boss_ini.php");	
 $name=($iniFile->getItem('世界BOSS属性','击杀人'));
-echo "<font color=black>".$nname."已被".$name."击杀！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."已被".$name."击杀！！</p>"."<br>";
 }
 
 
@@ -266,7 +266,7 @@ include("./ini/bosstime_ini.php");
 $nowtime=date('Y-m-d H:i:s');
 $iniFile->updItem('死亡时间',['初始' => $nowtime]);
 
-echo "<font color=black>".$nname."被你击杀了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."被你击杀了！！！</p>"."<br>";
 
 include("./wj/bossdl11.php");
 $xtxx="众人拾柴火焰高世界boss".$nname."已被".$name."击杀！！获得".$dlwpts;
@@ -292,7 +292,7 @@ $iniFile->updItem('召唤', ['初始' => '0']);
 } else{
 include("./ini/boss_ini.php");	
 $name=($iniFile->getItem('世界BOSS属性','击杀人'));
-echo "<font color=black>".$nname."已被".$name."击杀！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."已被".$name."击杀！！</p>"."<br>";
 }
 
 
@@ -312,7 +312,7 @@ include("./ini/bosstime_ini.php");
 $nowtime=date('Y-m-d H:i:s');
 $iniFile->updItem('死亡时间',['初始' => $nowtime]);
 
-echo "<font color=black>".$nname."被你击杀了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."被你击杀了！！！</p>"."<br>";
 
 include("./wj/bossdl11.php");
 $xtxx="众人拾柴火焰高世界boss".$nname."已被".$name."击杀！！获得".$dlwpts;
@@ -338,7 +338,7 @@ $iniFile->updItem('召唤1', ['初始' => '0']);
 } else{
 include("./ini/boss_ini.php");	
 $name=($iniFile->getItem('世界BOSS属性','击杀人'));
-echo "<font color=black>".$nname."已被".$name."击杀！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."已被".$name."击杀！！</p>"."<br>";
 }
 
 
@@ -368,7 +368,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续走</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续走</p></a>"."<br>";
 
 
 echo "<br>";
@@ -377,10 +377,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 ?>

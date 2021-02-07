@@ -110,7 +110,7 @@ $iniFile->addItem('玩家vip',[$ltmax1 => $ltbl2]);
 $iniFile->addItem('玩家名字',[$ltmax1 => $ltbl1]); 
 $iniFile->addItem('玩家国家',[$ltmax1 => '2']); 
 		
-		echo "<font color=red>你发起了入国邀请，请等待对方同意</font>"."<br>";
+		echo "<p style='color: red'>你发起了入国邀请，请等待对方同意</p>"."<br>";
 		
 		
 		
@@ -122,14 +122,14 @@ $iniFile->addItem('玩家国家',[$ltmax1 => '2']);
 	
 		
 	} else{
-echo "<font color=black>你国家人口达到上限！！</font><br>";
+echo "<p style='color: black'>你国家人口达到上限！！</p><br>";
 }
 	
 	
 	
 	
 	} else{
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }
 	
 	
@@ -157,18 +157,18 @@ include("./ini/jsini.php");
 
 	} else{
 	
-echo "<font color=red>对不起！你已经邀请过了！请等待对方同意</font>"."<br>";
+echo "<p style='color: red'>对不起！你已经邀请过了！请等待对方同意</p>"."<br>";
 	}
 
 } else{
 
-echo "<font color=red>对不起！对方已经有国家了国家</font>"."<br>";
+echo "<p style='color: red'>对不起！对方已经有国家了国家</p>"."<br>";
 
 }
 	
 } else{
 
-echo "<font color=red>对不起！对方已经把你拉黑，无法邀请对方加入国家</font>"."<br>";
+echo "<p style='color: red'>对不起！对方已经把你拉黑，无法邀请对方加入国家</p>"."<br>";
 
 }
 	

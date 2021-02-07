@@ -6,7 +6,7 @@ if ($zsspd == 1) {
     include("./ini/xydfw_ini.php");
     $mqlc = ($iniFile->getItem('所处楼层', '初始'));
     if ($mqlc < 1000) {
-        echo "<font color=black>目前楼层：</font><font color=red>【第" . $mqlc . "楼】</font>" . "<br>";
+        echo "<p style='color: black'>目前楼层：</p><p style='color: red'>【第" . $mqlc . "楼】</p>" . "<br>";
         $npcc11 = $npcc;//存值
 //提供需要扣除的物品作为判读依据
         $wpdz1[] = "〖云梯石〗";//名字
@@ -105,26 +105,26 @@ if ($zsspd == 1) {
             }
 //作弊重新摇
             if ($sjbd <= $bdxx) {
-                echo "<font color=red>【大富翁】：@!#$%^&*(!@#$%^^&*（你惊扰到了大富翁摇点被爆点爆出【" . $bz . "】点）</font>" . "<br>";
+                echo "<p style='color: red'>【大富翁】：@!#$%^&*(!@#$%^^&*（你惊扰到了大富翁摇点被爆点爆出【" . $bz . "】点）</p>" . "<br>";
             } else {
-                echo "<font color=red>恭喜你！！摇到了" . $bz . "点</font>" . "<br>";
+                echo "<p style='color: red'>恭喜你！！摇到了" . $bz . "点</p>" . "<br>";
             }
             if ($bzz <= 1000) {
-                echo "<font color=red>确认摇攀爬到第【" . $bzz . "】楼吗？" . $mqlcc . "</font>" . "<br>";
+                echo "<p style='color: red'>确认摇攀爬到第【" . $bzz . "】楼吗？" . $mqlcc . "</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 628;
                 $npc[] = $bzz;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【确定爬楼】</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【确定爬楼】</p></a>" . "<br>";
             } else {
-                echo "<font color=red>很遗憾！！你爬过头了1000楼的大奖在向你招手！！！（超过1000重新来过）</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！！你爬过头了1000楼的大奖在向你招手！！！（超过1000重新来过）</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>对不起！！需要〖云梯石〗x1</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！需要〖云梯石〗x1</p>" . "<br>";
         }
     } else {
-        echo "<font color=red>对不起！！你已达到了1000楼已经没有楼层再爬了请于明日再来</font>" . "<br>";
+        echo "<p style='color: red'>对不起！！你已达到了1000楼已经没有楼层再爬了请于明日再来</p>" . "<br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -132,15 +132,15 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 626;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【返回重来】</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【返回重来】</p></a>" . "<br>";
     echo "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

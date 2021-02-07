@@ -88,21 +88,21 @@ $yy=999;
 
 
 if ($y>0) {
-echo "<font color=".$clor.">$y</font>"."<font color=".$clor.">亿</font>";
+echo "<p style='color: ".$clor."'>$y</p>"."<p style='color: ".$clor."'>亿</p>";
 }
 
 
 if ($w>0) {
-echo "<font color=".$clor.">$w</font>"."<font color=".$clor.">万</font>";
+echo "<p style='color: ".$clor."'>$w</p>"."<p style='color: ".$clor."'>万</p>";
 }
 if ($yy>0) {
-echo "<font color=".$clor.">$yy</font>";
+echo "<p style='color: ".$clor."'>$yy</p>";
 }
 if ($yl==0) {
-echo "<font color=".$clor.">$yl</font>";
+echo "<p style='color: ".$clor."'>$yl</p>";
 }
 
-echo "<font color=".$clor.">两</font>";
+echo "<p style='color: ".$clor."'>两</p>";
 
 
 ?>

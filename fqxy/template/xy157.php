@@ -26,7 +26,7 @@ echo "<br>";
 
 }
 
-echo "<font color=black>".$fzzr."的".$fz."可打造的家具如下：</font>"."<br>";
+echo "<p style='color: black'>".$fzzr."的".$fz."可打造的家具如下：</p>"."<br>";
 	
 	
 	
@@ -45,14 +45,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖琉璃灯排〗（1级）</font></a>";
-echo "<font color=black>（1金豆,红黄蓝宝石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖琉璃灯排〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,红黄蓝宝石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -62,14 +62,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖水晶珠帘〗（1级）</font></a>";
-echo "<font color=black>（1金豆,红黄蓝水晶二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖水晶珠帘〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,红黄蓝水晶二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -80,14 +80,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖豹纹宝石屏风〗（1级）</font></a>";
-echo "<font color=black>（1金豆,玄武石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖豹纹宝石屏风〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,玄武石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -97,14 +97,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖八卦宝石镜〗（1级）</font></a>";
-echo "<font color=black>（1金豆,佛印石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖八卦宝石镜〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,佛印石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -116,14 +116,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖松竹迎客图〗（1级）</font></a>";
-echo "<font color=black>（1金豆,金刚石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖松竹迎客图〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,金刚石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -133,14 +133,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖豹头兵器架〗（1级）</font></a>";
-echo "<font color=black>（1金豆,玄武石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖豹头兵器架〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,玄武石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -150,14 +150,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖铜角八卦台〗（1级）</font></a>";
-echo "<font color=black>（1金豆,佛印石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖铜角八卦台〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,佛印石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -168,14 +168,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=22;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖泥胚打磨台〗</font></a>";
-echo "<font color=black>（1金豆,百年魔珠×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖泥胚打磨台〗</p></a>";
+echo "<p style='color: black'>（1金豆,百年魔珠×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=22;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -185,14 +185,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=25;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖红木桌〗（1级）</font></a>";
-echo "<font color=black>（1金豆,红黄蓝宝石二×5）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖红木桌〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,红黄蓝宝石二×5）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=25;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -203,14 +203,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=36;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖大木箱〗（1级）</font></a>";
-echo "<font color=black>（1金豆,百年魔珠×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖大木箱〗（1级）</p></a>";
+echo "<p style='color: black'>（1金豆,百年魔珠×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=36;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -220,14 +220,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=37;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖铜柜〗</font></a>";
-echo "<font color=black>（1金豆,百年魔珠×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖铜柜〗</p></a>";
+echo "<p style='color: black'>（1金豆,百年魔珠×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=37;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 ////////////////////////////
 }
 
@@ -244,14 +244,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖七星灯排〗（1级）</font></a>";
-echo "<font color=black>（4金豆,红黄蓝宝石三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖七星灯排〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,红黄蓝宝石三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 
 }
@@ -265,14 +265,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=9;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖玛瑙珠帘〗（1级）</font></a>";
-echo "<font color=black>（4金豆,红黄蓝水晶三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖玛瑙珠帘〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,红黄蓝水晶三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=9;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -284,14 +284,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=10;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖虎纹宝石屏风〗（1级）</font></a>";
-echo "<font color=black>（4金豆,玄武石三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖虎纹宝石屏风〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,玄武石三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=10;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -303,14 +303,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=11;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖太极宝石镜〗（1级）</font></a>";
-echo "<font color=black>（4金豆,佛印石三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖太极宝石镜〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,佛印石三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=11;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -323,14 +323,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=12;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖福禄迎客图〗（1级）</font></a>";
-echo "<font color=black>（4金豆,金刚石三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖福禄迎客图〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,金刚石三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=12;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 
 }
@@ -343,14 +343,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=13;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖虎头兵器架〗（1级）</font></a>";
-echo "<font color=black>（4金豆,玄武石三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖虎头兵器架〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,玄武石三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=13;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -362,14 +362,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=14;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖银角太极台〗（1级）</font></a>";
-echo "<font color=black>（2金豆,佛印石三×10）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖银角太极台〗（1级）</p></a>";
+echo "<p style='color: black'>（2金豆,佛印石三×10）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=14;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -381,14 +381,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=23;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖白玉打磨台〗</font></a>";
-echo "<font color=black>（4金豆,百年魔珠×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖白玉打磨台〗</p></a>";
+echo "<p style='color: black'>（4金豆,百年魔珠×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=23;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -399,14 +399,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=26;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖檀木桌〗（1级）</font></a>";
-echo "<font color=black>（4金豆,红黄蓝宝石三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖檀木桌〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,红黄蓝宝石三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=26;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -418,14 +418,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=27;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖高级盔甲陈列〗（1级）</font></a>";
-echo "<font color=black>（4金豆,红黄蓝水晶三×20）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖高级盔甲陈列〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,红黄蓝水晶三×20）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=27;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -437,14 +437,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=38;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖铁皮箱〗（1级）</font></a>";
-echo "<font color=black>（4金豆,百年魔珠×50）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖铁皮箱〗（1级）</p></a>";
+echo "<p style='color: black'>（4金豆,百年魔珠×50）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=38;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -456,14 +456,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=39;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖银柜〗</font></a>";
-echo "<font color=black>（4金豆,百年魔珠×50）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖银柜〗</p></a>";
+echo "<p style='color: black'>（4金豆,百年魔珠×50）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=39;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -481,14 +481,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=15;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖乾坤灯排〗（1级）</font></a>";
-echo "<font color=black>（8金豆,红黄蓝宝石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖乾坤灯排〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,红黄蓝宝石四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=15;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -499,14 +499,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=16;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖翡翠珠帘〗（1级）</font></a>";
-echo "<font color=black>（8金豆,红黄蓝水晶四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖翡翠珠帘〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,红黄蓝水晶四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=16;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 
 }
@@ -518,14 +518,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=17;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖龙纹宝石屏风〗（1级）</font></a>";
-echo "<font color=black>（8金豆,玄武石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖龙纹宝石屏风〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,玄武石四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=17;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -536,14 +536,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=18;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖无极宝石镜〗（1级）</font></a>";
-echo "<font color=black>（8金豆,佛印石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖无极宝石镜〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,佛印石四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=18;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -555,14 +555,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=19;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖八仙迎客图〗（1级）</font></a>";
-echo "<font color=black>（8金豆,金刚石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖八仙迎客图〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,金刚石四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=19;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -574,14 +574,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=20;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖龙头兵器架〗（1级）</font></a>";
-echo "<font color=black>（8金豆,玄武石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖龙头兵器架〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,玄武石四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=20;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -592,14 +592,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=21;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖金角无极台〗（1级）</font></a>";
-echo "<font color=black>（8金豆,佛印石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖金角无极台〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,佛印石四×40）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=21;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -609,15 +609,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=24;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖水晶打磨台〗</font></a>";
-echo "<font color=black>（8金豆,百年魔珠×100）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖水晶打磨台〗</p></a>";
+echo "<p style='color: black'>（8金豆,百年魔珠×100）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=24;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -629,15 +629,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=28;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖沉香木桌〗（1级）</font></a>";
-echo "<font color=black>（8金豆,红黄蓝宝石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖沉香木桌〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,红黄蓝宝石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=28;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -648,15 +648,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=29;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖精品盔甲陈列〗（1级）</font></a>";
-echo "<font color=black>（8金豆,红黄蓝水晶四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖精品盔甲陈列〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,红黄蓝水晶四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=29;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -666,15 +666,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=30;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖战利品陈列〗（1级）</font></a>";
-echo "<font color=black>（8金豆,玄武石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖战利品陈列〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,玄武石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=30;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -684,15 +684,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=31;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖卦纹辟邪门神〗（1级）</font></a>";
-echo "<font color=black>（8金豆,玄武石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖卦纹辟邪门神〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,玄武石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=31;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -703,15 +703,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=32;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖龙纹寒玉床〗（1级）</font></a>";
-echo "<font color=black>（8金豆,佛印石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖龙纹寒玉床〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,佛印石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=32;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -722,15 +722,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=33;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖琉璃棋盘〗（1级）</font></a>";
-echo "<font color=black>（8金豆,金刚石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖琉璃棋盘〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,金刚石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=33;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -740,15 +740,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=34;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖沉香雕花桌〗（1级）</font></a>";
-echo "<font color=black>（8金豆,佛印石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖沉香雕花桌〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,佛印石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=34;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -758,15 +758,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=35;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖龙晶观音像〗（1级）</font></a>";
-echo "<font color=black>（8金豆,金刚石四×40）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖龙晶观音像〗（1级）</p></a>";
+echo "<p style='color: black'>（8金豆,金刚石四×40）</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=35;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 
 }
 
@@ -777,14 +777,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=40;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖方口宝箱〗（1级）</font></a>";
-echo "<font color=black>（6金豆,百年魔珠×100）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖方口宝箱〗（1级）</p></a>";
+echo "<p style='color: black'>（6金豆,百年魔珠×100）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=40;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -794,14 +794,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=158;
 $npc[]=41;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖金柜〗（1级）</font></a>";
-echo "<font color=black>（3金豆,百年魔珠×100）</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖金柜〗（1级）</p></a>";
+echo "<p style='color: black'>（3金豆,百年魔珠×100）</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=159;
 $npc[]=41;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打造</p></a>"."<br>";
 }
 
 
@@ -815,7 +815,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>打造</fo
 
 
 } else{
-echo "<font color=black>未获取到住宅信息请联系gm进行解决</font>"."<br>";
+echo "<p style='color: black'>未获取到住宅信息请联系gm进行解决</p>"."<br>";
 
 }
 	
@@ -826,7 +826,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=7;
 $npc[]=5387;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回管家</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回管家</p></a>"."<br>";
 
 
 
@@ -838,9 +838,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

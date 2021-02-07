@@ -75,9 +75,7 @@ header("Content-type: text/html; charset=utf-8");
         $pass = md5($_POST['password'] . 'ALL_PS');
         $name = $info1['name'];
         //$ps = $us ? md5($_POST['password'].'ALL_PS' ) == $row['password'] : 'FALSE';
-        if ($pass != "" || $pass1 != "") {
-
-        } else {
+        if ($pass == "" && $pass1 == "") {
             $pass = 1;
         }
         if ($pass == $pass1) {
@@ -98,9 +96,7 @@ header("Content-type: text/html; charset=utf-8");
         }
     }
     if ($user == 1) {
-        $zcxx = "<font color=red>用户名或密码错误</font>" . "<br>";
-    } else {
-
+        $zcxx = "<p style='color: red'>用户名或密码错误</p>" . "<br>";
     }
 ?>
 
@@ -127,11 +123,11 @@ header("Content-type: text/html; charset=utf-8");
                 <input type="submit" name="submit" value="登录" id="search1"><br>
             </form>
             <br>
-            <a href='/xxjy/regist.php'><font color=blue>注册账号</font></a>
-            <font color=black>|</font>
-            <a href='/xxjy/xxjyxg.php'><font color=blue>修改密码</font></a>
-            <font color=black>|</font>
-            <a href='/xxjy/xxjywj.php'><font color=blue>忘记密码</font></a>
+            <a href='/xxjy/regist.php'><p style='color: blue'>注册账号</p></a>
+            <p style='color: black'>|</p>
+            <a href='/xxjy/xxjyxg.php'><p style='color: blue'>修改密码</p></a>
+            <p style='color: black'>|</p>
+            <a href='/xxjy/xxjywj.php'><p style='color: blue'>忘记密码</p></a>
             <br><br><br>
             <div class="article-content" style="font-size: 15px;margin-top: 10px;"></div>
         </div>

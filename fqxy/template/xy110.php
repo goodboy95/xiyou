@@ -50,7 +50,7 @@ $iniFile->delItem('玩家vip', $ltpx);
 $iniFile->delItem('玩家名字', $ltpx);
 
 
-echo "<font color=red>你拒绝了加入".$ckname."的组队伍中！</font>"."<br>";
+echo "<p style='color: red'>你拒绝了加入".$ckname."的组队伍中！</p>"."<br>";
 
 
 

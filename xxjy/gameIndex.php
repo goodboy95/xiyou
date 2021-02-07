@@ -17,7 +17,7 @@ $pass=($iniFile->getItem('验证信息','玩家验证'));
 if($pass==$password&&$password!=""&&$pass!=""){
 $name=($iniFile->getItem('验证信息','玩家昵称'));
 
-$zcxx="<font color=red>欢迎【".$name."】来到小轩娱乐游戏社区！！</font>";
+$zcxx="<p style='color: red'>欢迎【".$name."】来到小轩娱乐游戏社区！！</p>";
 $xxjyurl="?wjid=".$wjid."&&pass=".$password;
 }else{
 $xxjyurl="";

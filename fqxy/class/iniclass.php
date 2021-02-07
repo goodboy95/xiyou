@@ -55,11 +55,11 @@ class iniFile
         if (is_array($item_name)) {
             $arr = array();
             foreach ($item_name as $value) {
-                $arr[$value] = $this->iniFileHandle[$category_name][$value];
+                $arr[$value] = array_key_exists($value, $this->iniFileHandle[$category_name]) ? $this->iniFileHandle[$category_name][$value] : null;
             }
             return $arr;
         } else {
-            return $this->iniFileHandle[$category_name][$item_name];
+            return array_key_exists($item_name, $this->iniFileHandle[$category_name]) ? $this->iniFileHandle[$category_name][$item_name] : null;
         }
     }
 

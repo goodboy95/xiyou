@@ -16,12 +16,12 @@ $wpbd="是";
 $wpbd="否";
 
 }
-echo "<font color=red>".$wpmz."</font>"."<br>";
-echo "<font color=black>描述：".$wpms."</font>"."<br>"; 	
-echo "<font color=black>价格：".$wpjg."两</font>"."<br>";
-echo "<font color=black>需要等级：".$wpdj."级</font>"."<br>"; 
-echo "<font color=black>重量：".$wpzl."</font>"."<br>";
-echo "<font color=black>是否绑定：".$wpbd."</font>"."<br>"; 	
+echo "<p style='color: red'>".$wpmz."</p>"."<br>";
+echo "<p style='color: black'>描述：".$wpms."</p>"."<br>";
+echo "<p style='color: black'>价格：".$wpjg."两</p>"."<br>";
+echo "<p style='color: black'>需要等级：".$wpdj."级</p>"."<br>";
+echo "<p style='color: black'>重量：".$wpzl."</p>"."<br>";
+echo "<p style='color: black'>是否绑定：".$wpbd."</p>"."<br>";
 
 /*
 //cmd及超链接值
@@ -29,39 +29,39 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=498;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>〖拍卖〗</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>〖拍卖〗</p></a>";
 */
 
-//echo "<font color=black>◎</font></a>";
+//echo "<p style='color: black'>◎</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=218;
 $npc[]=$npcc;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>〖挂出销售〗</font></a>"."<br>";
-echo "<font color=black>☆☆☆☆☆☆☆☆☆☆☆</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>〖挂出销售〗</p></a>"."<br>";
+echo "<p style='color: black'>☆☆☆☆☆☆☆☆☆☆☆</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=37;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用</p></a>";
 
-echo "<font color=black>◎</font></a>";
+echo "<p style='color: black'>◎</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=124;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>丢弃</font></a>";
-echo "<font color=black>◎</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>丢弃</p></a>";
+echo "<p style='color: black'>◎</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=126;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>丢弃全部</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>丢弃全部</p></a>"."<br>";
 
 
 echo "<br>";
@@ -80,7 +80,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=27;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回书卷</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回书卷</p></a>"."<br>";
 
 
 } elseif($ymid==28){ //背包材料
@@ -90,7 +90,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=28;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回材料</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回材料</p></a>"."<br>";
 
 
 
@@ -101,7 +101,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=30;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回商城</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回商城</p></a>"."<br>";
 
 
 } elseif($ymid==31){ //背包丹药
@@ -110,7 +110,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=31;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回丹药</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回丹药</p></a>"."<br>";
 
 
 } elseif($ymid==32){ //背包任务
@@ -120,7 +120,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=32;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回任务</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回任务</p></a>"."<br>";
 
 
 
@@ -131,7 +131,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=33;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回农场</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回农场</p></a>"."<br>";
 
 
 
@@ -143,7 +143,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=34;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宝箱</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宝箱</p></a>"."<br>";
 
 
 
@@ -155,7 +155,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
@@ -177,7 +177,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

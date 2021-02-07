@@ -23,7 +23,7 @@ $ym=$fz01['初始'];
 $km=0;
 if($m >=1){
 	
-	echo "<font color=black>请选择你要踢出的玩家</font>"."<br>";
+	echo "<p style='color: black'>请选择你要踢出的玩家</p>"."<br>";
 	
 	echo "<br>";
 	
@@ -55,20 +55,20 @@ $xxh=$xxh+1;
 $fary01=$keyfz01[$i];
 $fary02=$keyfz02[$i];
 $fary03=$keyfz03[$i];
-	echo "<font color=black>".$xxh.".</font>";	
+	echo "<p style='color: black'>".$xxh.".</p>";
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$fary01;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$fary02."</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$fary02."</p></a>";
+echo "<p style='color: black'>|</p>";
 		//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=170;
 $npc[]=$fary01;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>请TA离开</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>请TA离开</p></a>"."<br>";
 	
 	
 	}
@@ -84,7 +84,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>请TA离�
 	
 		} else{	
 
-echo "<font color=black>你的住所鬼都没有一个</font>"."<br>";
+echo "<p style='color: black'>你的住所鬼都没有一个</p>"."<br>";
 
 
 	} 
@@ -96,9 +96,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

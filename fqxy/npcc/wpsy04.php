@@ -24,7 +24,7 @@ $wpsl=$xzcs;
 } else{
 //include("./wj/wpxx.php");
 
-echo "<font color=red>对不起！".$wpmz."使用已达到".$xzcs."次上限</font><br>";
+echo "<p style='color: red'>对不起！".$wpmz."使用已达到".$xzcs."次上限</p><br>";
 
 $inina="yl.ini";
 $path='ache/'.$wjid;

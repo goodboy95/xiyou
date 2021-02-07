@@ -22,15 +22,15 @@ $iniFile->updItem('宠物出战状态', [$zbid => '1']);
 $cwmz1=($iniFile->getItem('宠物原始名字',$zbid));
 $cwmz2=($iniFile->getItem('宠物名字',$zbid));
 if($cwmz2!=""){
-echo "<font color=red>你将".$cwmz1."（".$cwmz2."）召回了回来！！</font>"."<br>";
+echo "<p style='color: red'>你将".$cwmz1."（".$cwmz2."）召回了回来！！</p>"."<br>";
 } else{	
-echo "<font color=red>你将".$cwmz1."召回了回来！！</font>"."<br>";
+echo "<p style='color: red'>你将".$cwmz1."召回了回来！！</p>"."<br>";
 }
 
 
 
 } else{	
-echo "<font color=red>召回宠物有误！！请联系GM解决此问题</font>"."<br>";
+echo "<p style='color: red'>召回宠物有误！！请联系GM解决此问题</p>"."<br>";
 }
 
 include("template/xy362.php");

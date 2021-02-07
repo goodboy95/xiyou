@@ -33,7 +33,7 @@ $iniFile->delItem('好友分类', $xlh);
 # 删除一个子项
 $iniFile->delItem('好友名字', $xlh);
 
-echo "<font color=red>你删除了好友：".$wpmz."</font>"."<br>";
+echo "<p style='color: red'>你删除了好友：".$wpmz."</p>"."<br>";
 
 include("template/xy114.php");
 //不走xy.php直接调用xy文件需要加pz01配置

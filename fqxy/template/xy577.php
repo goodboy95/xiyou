@@ -1,6 +1,6 @@
 <?php
 
-echo "<font color=black>请扫描下方二维码或者点击一键启动进行购买</font>"."<br>";
+echo "<p style='color: black'>请扫描下方二维码或者点击一键启动进行购买</p>"."<br>";
 
 
 if($npcc==1){   
@@ -99,7 +99,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=575;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

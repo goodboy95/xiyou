@@ -2,8 +2,8 @@
 
 
 include("wp/wpxx.php");
-echo "<font color=red>".$wpmz."</font>"."<br>";
-echo "<font color=black>描述：".$wpms."</font>"."<br>"; 	
+echo "<p style='color: red'>".$wpmz."</p>"."<br>";
+echo "<p style='color: black'>描述：".$wpms."</p>"."<br>"; 	
 
 
 echo "<br>";
@@ -13,7 +13,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=535;
 $npc[]=0;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>返回上级</p></a>"."<br>";
 
 
 

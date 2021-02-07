@@ -7,7 +7,7 @@ $dmid=$npcc;
 if($dmid==1){
 	
 	
-echo "<font color=black>这是一扇已被损坏的【城池大门】</font>"."<br>";
+echo "<p style='color: black'>这是一扇已被损坏的【城池大门】</p>"."<br>";
 
 } elseif($dmid==2){ 
 $bossid=1;
@@ -63,12 +63,12 @@ $cpll1=$cpll. "%";
 
 //计算百分比
 
-echo "<font color=black>【城池大门】</font>"."<br>";
-echo "<font color=black>城池大门：$hp/$maxhp</font>"."<br>";
-echo "<font color=black>破损程度：".$cpll1."</font>"."<br>";
+echo "<p style='color: black'>【城池大门】</p>"."<br>";
+echo "<p style='color: black'>城池大门：$hp/$maxhp</p>"."<br>";
+echo "<p style='color: black'>破损程度：".$cpll1."</p>"."<br>";
 
 } elseif($dmid==3){ 
-echo "<font color=black>这是一扇已被损坏的【城池中门】</font>"."<br>";
+echo "<p style='color: black'>这是一扇已被损坏的【城池中门】</p>"."<br>";
 
 } elseif($dmid==4){ 
 $bossid=2;
@@ -123,9 +123,9 @@ $cpll1=$cpll. "%";
 
 //计算百分比
 
-echo "<font color=black>【城池中门】</font>"."<br>";
-echo "<font color=black>城池中门：$hp/$maxhp</font>"."<br>";
-echo "<font color=black>破损程度：".$cpll1."</font>"."<br>";
+echo "<p style='color: black'>【城池中门】</p>"."<br>";
+echo "<p style='color: black'>城池中门：$hp/$maxhp</p>"."<br>";
+echo "<p style='color: black'>破损程度：".$cpll1."</p>"."<br>";
 
 
 } elseif($dmid==5){ 
@@ -136,11 +136,11 @@ $npcc=$bossid;
 include("./npc/bossxx.php");
 $maxhp=$nmaxhp;
 
-echo "<font color=black>【神兽守卫】</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】</p>"."<br>";
 if($hp>=0){ 
-echo "<font color=black>体力：$hp/$maxhp</font>"."<br>";
+echo "<p style='color: black'>体力：$hp/$maxhp</p>"."<br>";
 } else {
-echo "<font color=black>【神兽守卫】已被敌方国家击败</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】已被敌方国家击败</p>"."<br>";
 
 } 
 
@@ -155,11 +155,11 @@ $npcc=$bossid;
 include("./npc/bossxx.php");
 $maxhp=$nmaxhp;
 
-echo "<font color=black>【神兽守卫】</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】</p>"."<br>";
 if($hp>=0){ 
-echo "<font color=black>体力：$hp/$maxhp</font>"."<br>";
+echo "<p style='color: black'>体力：$hp/$maxhp</p>"."<br>";
 } else {
-echo "<font color=black>【神兽守卫】已被敌方国家击败</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】已被敌方国家击败</p>"."<br>";
 
 } 
 
@@ -171,11 +171,11 @@ $npcc=$bossid;
 include("./npc/bossxx.php");
 $maxhp=$nmaxhp;
 
-echo "<font color=black>【神兽守卫】</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】</p>"."<br>";
 if($hp>=0){ 
-echo "<font color=black>体力：$hp/$maxhp</font>"."<br>";
+echo "<p style='color: black'>体力：$hp/$maxhp</p>"."<br>";
 } else {
-echo "<font color=black>【神兽守卫】已被敌方国家击败</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】已被敌方国家击败</p>"."<br>";
 
 } 
 
@@ -187,11 +187,11 @@ $hp=($iniFile->getItem('世界BOSS属性','血'));
 $npcc=$bossid;
 include("./npc/bossxx.php");
 $maxhp=$nmaxhp;
-echo "<font color=black>【神兽守卫】</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】</p>"."<br>";
 if($hp>=0){ 
-echo "<font color=black>体力：$hp/$maxhp</font>"."<br>";
+echo "<p style='color: black'>体力：$hp/$maxhp</p>"."<br>";
 } else {
-echo "<font color=black>【神兽守卫】已被敌方国家击败</font>"."<br>";
+echo "<p style='color: black'>【神兽守卫】已被敌方国家击败</p>"."<br>";
 
 } 
 
@@ -214,7 +214,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
@@ -225,7 +225,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

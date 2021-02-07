@@ -27,7 +27,7 @@ $rwflmz="（活动）";
 $rwflmz="（日常）";
 } else {
 }
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 
 $strr1=$rwbl1[$i]."_".$rwbl5[$i]."_".$npcc;
 
@@ -36,7 +36,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=43;
 $npc[]=$strr1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$rwbl6[$i].$rwflmz."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$rwbl6[$i].$rwflmz."</p></a>"."<br>";
 }
 }
 ?>

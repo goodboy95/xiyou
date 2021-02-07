@@ -5,7 +5,7 @@
 
 $wpsy=2;//使用成功
 $ysmz1="〖国庆宝箱〗";
-echo "<font color=black>恭喜你！打开了".$ysmz1."</font><br>";
+echo "<p style='color: black'>恭喜你！打开了".$ysmz1."</p><br>";
 
 
 $bz= rand(1, 100);
@@ -473,7 +473,7 @@ include("./pz/ini_pz01.php");//调用ini缓存位置
 	if($dd >=1){
 
 } else{
-echo "<font color=black>居然人品大爆发了居然是个空箱子</font>"."<br>";
+echo "<p style='color: black'>居然人品大爆发了居然是个空箱子</p>"."<br>";
 	} 		
 
 

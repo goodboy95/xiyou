@@ -9,7 +9,7 @@ include("./ini/zsini.php");
 if($zsspd==1){
 
 
-echo "<font color=black>称号一览：</font>"."<br>";
+echo "<p style='color: black'>称号一览：</p>"."<br>";
 
 
 
@@ -137,13 +137,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=477;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上一页</font>|</a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上一页</p>|</a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=562;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下一页</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下一页</p></a>"."<br>";
 
 
 echo "<br>";
@@ -164,7 +164,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我的状态</p></a>"."<br>";
 
 
 

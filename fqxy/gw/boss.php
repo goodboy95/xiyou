@@ -19,9 +19,9 @@ $second2=$msgtime-$second1;
 $time1=floor($second2/60);
 $time2=floor($second2%60);
 if($time1 >0){
-$bossts="<font color=red>提示：".$bossmz."还剩".$time1."分钟后出现</font>"."<br>";	
+$bossts="<p style='color: red'>提示：".$bossmz."还剩".$time1."分钟后出现</p>"."<br>";
 } else{
-$bossts="<font color=red>提示：".$bossmz."还剩".$time2."秒后出现</font>"."<br>";		
+$bossts="<p style='color: red'>提示：".$bossmz."还剩".$time2."秒后出现</p>"."<br>";
 } 
 } else{
 $bossxs=1;		
@@ -41,7 +41,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=$bosid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$bossmz."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$bossmz."</p></a>";
 }
 
 

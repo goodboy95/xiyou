@@ -29,7 +29,7 @@ $wprl=$ckbbrla+$rl;
 if($wprl<=$bbrlb){
 if($wpsl<$sl){
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 } elseif($wpsl>$sl&&$sl!=0){  
 //验证时间戳
@@ -310,12 +310,12 @@ $wjid=$wjid1;
 
 
 
-echo "<font color=red>你用了".$ylxx."两，购买".$wpmz."x".$sl."</font>";
+echo "<p style='color: red'>你用了".$ylxx."两，购买".$wpmz."x".$sl."</p>";
 
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>(附带".$ylxx."两手续费)</font>";	
+echo "<p style='color: red'>(附带".$ylxx."两手续费)</p>";
 echo "<br>";
 
 
@@ -355,7 +355,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$ymid;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回拍卖行</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回拍卖行</p></a>"."<br>";
 echo "<br>";
 
 
@@ -363,7 +363,7 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>对不起！！该物品已被买走或者下架了</font>"."<br>";
+echo "<p style='color: red'>对不起！！该物品已被买走或者下架了</p>"."<br>";
 echo "<br>";
 }
 
@@ -701,12 +701,12 @@ $wjid=$wjid1;
 
 
 
-echo "<font color=red>你用了".$ylxx."两，购买".$wpmz."x".$sl."</font>";
+echo "<p style='color: red'>你用了".$ylxx."两，购买".$wpmz."x".$sl."</p>";
 
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>(附带".$ylxx."两手续费)</font>";	
+echo "<p style='color: red'>(附带".$ylxx."两手续费)</p>";
 echo "<br>";
 
 
@@ -753,13 +753,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$ymid;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回拍卖行</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回拍卖行</p></a>"."<br>";
 echo "<br>";
 
 
 } else {
 $dqwp=0;
-echo "<font color=red>对不起！！该物品已被买走或者下架了</font>"."<br>";
+echo "<p style='color: red'>对不起！！该物品已被买走或者下架了</p>"."<br>";
 echo "<br>";
 }
 
@@ -771,22 +771,22 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 } else{
 $dqwp=0;
-echo "<font color=red>对不起，你的背包已放不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的背包已放不下任何东西了</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 } else {
@@ -796,7 +796,7 @@ $dqwp=0;
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>对不起！你银两不足！(附带".$ylxx."两手续费)</font>"."<br>";
+echo "<p style='color: red'>对不起！你银两不足！(附带".$ylxx."两手续费)</p>"."<br>";
 echo "<br>";
 }
 

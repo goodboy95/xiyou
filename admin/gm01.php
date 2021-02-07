@@ -46,14 +46,14 @@ $name=($iniFile->getItem('验证信息','玩家昵称'));
 include("../url/url.php");
 
 
-echo "<font color=red>【请选择你需要要操作项目】</font>"."<br>";
+echo "<p style='color: red'>【请选择你需要要操作项目】</p>"."<br>";
 
-echo "<a href=http://".$xxjyurl."/admin/gm02.php?wjid=$wjid&&pass=$password><font color=blue>【提取注册码】</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/gm02.php?wjid=$wjid&&pass=$password><p style='color: blue'>【提取注册码】</p></a>"."<br>";
 
-//echo "<a href=".$url1."/fqxy/admin/gm01.php?wjid=$wjid&&pass=$password><font color=blue>西游管理（1区）</font></a>"."<br>";
+//echo "<a href=".$url1."/fqxy/admin/gm01.php?wjid=$wjid&&pass=$password><p style='color: blue'>西游管理（1区）</p></a>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 
@@ -63,12 +63,12 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><fo
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 
 ?>

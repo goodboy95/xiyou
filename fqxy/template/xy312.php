@@ -25,7 +25,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【英雄牌】x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【英雄牌】x10</p>" . "<br>";
         }
     } elseif ($npcc == 2) {
         $npcc11 = $npcc;//存值
@@ -49,7 +49,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金豆〗x1</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金豆〗x1</p>" . "<br>";
         }
     } elseif ($npcc == 3) {
         $npcc11 = $npcc;//存值
@@ -73,7 +73,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】（碎片）x20</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】（碎片）x20</p>" . "<br>";
         }
     } elseif ($npcc == 4) {
         $npcc11 = $npcc;//存值
@@ -97,7 +97,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x5</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x5</p>" . "<br>";
         }
     } elseif ($npcc == 5) {
         $npcc11 = $npcc;//存值
@@ -121,7 +121,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x5</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x5</p>" . "<br>";
         }
     } elseif ($npcc == 6) {
         $npcc11 = $npcc;//存值
@@ -145,7 +145,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x10</p>" . "<br>";
         }
     } elseif ($npcc == 7) {
         $npcc11 = $npcc;//存值
@@ -169,7 +169,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x30</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x30</p>" . "<br>";
         }
     } elseif ($npcc == 8) {
         $npcc11 = $npcc;//存值
@@ -193,7 +193,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x30</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x30</p>" . "<br>";
         }
     } elseif ($npcc == 9) {
         $npcc11 = $npcc;//存值
@@ -217,7 +217,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】（碎片）x200</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】（碎片）x200</p>" . "<br>";
         }
     } elseif ($npcc == 10) {
         $npcc11 = $npcc;//存值
@@ -241,7 +241,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x30</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x30</p>" . "<br>";
         }
     } elseif ($npcc == 11) {
         $npcc11 = $npcc;//存值
@@ -265,7 +265,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x50</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x50</p>" . "<br>";
         }
     } elseif ($npcc == 12) {
         $npcc11 = $npcc;//存值
@@ -289,7 +289,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【才子印记】x500</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【才子印记】x500</p>" . "<br>";
         }
     } elseif ($npcc == 13) {
         $npcc11 = $npcc;//存值
@@ -322,16 +322,16 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=black>恭喜你！祝融" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: black'>恭喜你！祝融" . $wpdz1[0] . "成功了！！</p><br>";
                 include("./ini/zt_ini.php");
                 $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                 $xtxx = "恭喜玩家" . $wjmz . "祝融" . $wpdz1[0] . "成功了！！";
                 include("./msg/msgg02.php");
             } else {
-                echo "<font color=black>很遗憾！祝融" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！祝融" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！祝融〖银星升星符〗需要〖银符碎片〗x5〖金豆〗x5</font>" . "<br>";
+            echo "<p style='color: black'>对不起！祝融〖银星升星符〗需要〖银符碎片〗x5〖金豆〗x5</p>" . "<br>";
         }
     } elseif ($npcc == 14) {
         $npcc11 = $npcc;//存值
@@ -364,16 +364,16 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=black>恭喜你！祝融" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: black'>恭喜你！祝融" . $wpdz1[0] . "成功了！！</p><br>";
                 include("./ini/zt_ini.php");
                 $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                 $xtxx = "恭喜玩家" . $wjmz . "祝融" . $wpdz1[0] . "成功了！！";
                 include("./msg/msgg02.php");
             } else {
-                echo "<font color=black>很遗憾！祝融" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！祝融" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！祝融〖金星升星符〗需要〖金符碎片〗x10〖金豆〗x20</font>" . "<br>";
+            echo "<p style='color: black'>对不起！祝融〖金星升星符〗需要〖金符碎片〗x10〖金豆〗x20</p>" . "<br>";
         }
     } elseif ($npcc == 15) {
         $npcc11 = $npcc;//存值
@@ -406,16 +406,16 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=black>恭喜你！祝融" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: black'>恭喜你！祝融" . $wpdz1[0] . "成功了！！</p><br>";
                 include("./ini/zt_ini.php");
                 $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                 $xtxx = "恭喜玩家" . $wjmz . "祝融" . $wpdz1[0] . "成功了！！";
                 include("./msg/msgg02.php");
             } else {
-                echo "<font color=black>很遗憾！祝融" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！祝融" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！祝融〖钻星升星符〗需要〖钻符碎片〗x20〖金豆〗x50</font>" . "<br>";
+            echo "<p style='color: black'>对不起！祝融〖钻星升星符〗需要〖钻符碎片〗x20〖金豆〗x50</p>" . "<br>";
         }
     } elseif ($npcc == 16) {
         $npcc11 = $npcc;//存值
@@ -448,16 +448,16 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=black>恭喜你！祝融" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: black'>恭喜你！祝融" . $wpdz1[0] . "成功了！！</p><br>";
                 include("./ini/zt_ini.php");
                 $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                 $xtxx = "恭喜玩家" . $wjmz . "祝融" . $wpdz1[0] . "成功了！！";
                 include("./msg/msgg02.php");
             } else {
-                echo "<font color=black>很遗憾！祝融" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！祝融" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！祝融〖陨星升星符〗需要〖陨符碎片〗x40〖金豆〗x100</font>" . "<br>";
+            echo "<p style='color: black'>对不起！祝融〖陨星升星符〗需要〖陨符碎片〗x40〖金豆〗x100</p>" . "<br>";
         }
     } elseif ($npcc == 17) {
         $npcc11 = $npcc;//存值
@@ -481,7 +481,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x1</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x1</p>" . "<br>";
         }
     } elseif ($npcc == 18) {
         $npcc11 = $npcc;//存值
@@ -505,7 +505,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 19) {
         $npcc11 = $npcc;//存值
@@ -529,7 +529,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x1</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x1</p>" . "<br>";
         }
     } elseif ($npcc == 20) {
         $npcc11 = $npcc;//存值
@@ -553,7 +553,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 21) {
         $npcc11 = $npcc;//存值
@@ -577,7 +577,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x1</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x1</p>" . "<br>";
         }
     } elseif ($npcc == 22) {
         $npcc11 = $npcc;//存值
@@ -601,7 +601,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 23) {
         $npcc11 = $npcc;//存值
@@ -625,7 +625,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x1</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x1</p>" . "<br>";
         }
     } elseif ($npcc == 24) {
         $npcc11 = $npcc;//存值
@@ -649,7 +649,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖万能字〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖万能字〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 25) {
         $npcc11 = $npcc;//存值
@@ -688,7 +688,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【清】【凉】【一】【夏】每个字需要大于10个</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【清】【凉】【一】【夏】每个字需要大于10个</p>" . "<br>";
         }
     } elseif ($npcc == 26) {
         $npcc11 = $npcc;//存值
@@ -727,7 +727,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【清】【凉】【一】【夏】每个字需要大于100个</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【清】【凉】【一】【夏】每个字需要大于100个</p>" . "<br>";
         }
     } elseif ($npcc == 27) {
         $npcc11 = $npcc;//存值
@@ -751,7 +751,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>下蛋失败需要〖大圣精魄〗x10</font>" . "<br>";
+            echo "<p style='color: black'>下蛋失败需要〖大圣精魄〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 28) {
         $npcc11 = $npcc;//存值
@@ -774,7 +774,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>打包失败需要〖百年魔珠〗x1000，〖钻魂〗x50</font>" . "<br>";
+            echo "<p style='color: black'>打包失败需要〖百年魔珠〗x1000，〖钻魂〗x50</p>" . "<br>";
         }
     } elseif ($npcc == 29) {
         $npcc11 = $npcc;//存值
@@ -798,7 +798,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>打包失败需要〖百年魔珠〗x5000，〖钻魂〗x200</font>" . "<br>";
+            echo "<p style='color: black'>打包失败需要〖百年魔珠〗x5000，〖钻魂〗x200</p>" . "<br>";
         }
     } elseif ($npcc == 30) {
         $npcc11 = $npcc;//存值
@@ -822,7 +822,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>打包失败需要〖百年魔珠〗x10000，〖钻魂〗x350</font>" . "<br>";
+            echo "<p style='color: black'>打包失败需要〖百年魔珠〗x10000，〖钻魂〗x350</p>" . "<br>";
         }
     } elseif ($npcc == 31) {
         $npcc11 = $npcc;//存值
@@ -846,7 +846,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【恶魔符文】x1000</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【恶魔符文】x1000</p>" . "<br>";
         }
     } elseif ($npcc == 32) {
         $npcc11 = $npcc;//存值
@@ -870,7 +870,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【恶魔符文】x200</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【恶魔符文】x200</p>" . "<br>";
         }
     } elseif ($npcc == 33) {
         include("./ini/zt_ini.php");
@@ -899,10 +899,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>兑换失败需要【恶魔符文】x1000</font>" . "<br>";
+                echo "<p style='color: black'>兑换失败需要【恶魔符文】x1000</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！仅仅只为vip3以上玩家提供兑换</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！仅仅只为vip3以上玩家提供兑换</p>" . "<br>";
         }
     } elseif ($npcc == 34) {
         include("./ini/zt_ini.php");
@@ -931,10 +931,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>兑换失败需要【恶魔符文】x200</font>" . "<br>";
+                echo "<p style='color: black'>兑换失败需要【恶魔符文】x200</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！仅仅只为vip3以上玩家提供兑换</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！仅仅只为vip3以上玩家提供兑换</p>" . "<br>";
         }
     } elseif ($npcc == 35) {   //银山
         $npcc11 = $npcc;//存值
@@ -954,9 +954,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 36) {   //金山
         $npcc11 = $npcc;//存值
@@ -976,9 +976,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 37) {   //〖探险符〗
         $npcc11 = $npcc;//存值
@@ -1005,9 +1005,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 38) {   //〖探险符〗
         $npcc11 = $npcc;//存值
@@ -1034,9 +1034,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 39) {   //〖探险符〗
         $npcc11 = $npcc;//存值
@@ -1063,9 +1063,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 40) {   //〖钻星升星符〗
         $npcc11 = $npcc;//存值
@@ -1092,9 +1092,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 41) {   //〖齐天大圣〗（宠物蛋）
         $npcc11 = $npcc;//存值
@@ -1121,9 +1121,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 42) {   //〖荣誉宝石包〗（2个）
         $npcc11 = $npcc;//存值
@@ -1150,9 +1150,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 43) {   //〖圣灵锻造图纸〗
         $npcc11 = $npcc;//存值
@@ -1179,9 +1179,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 44) {
         $npcc11 = $npcc;//存值
@@ -1208,10 +1208,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>很遗憾！孵化" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！孵化" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！【喜鹊蛋】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！【喜鹊蛋】不足</p>" . "<br>";
         }
     } elseif ($npcc == 45) {
         $npcc11 = $npcc;//存值
@@ -1238,10 +1238,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>很遗憾！孵化" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！孵化" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！【喜鹊蛋】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！【喜鹊蛋】不足</p>" . "<br>";
         }
     } elseif ($npcc == 46) {
         $npcc11 = $npcc;//存值
@@ -1268,10 +1268,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>很遗憾！孵化" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！孵化" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！【喜鹊蛋】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！【喜鹊蛋】不足</p>" . "<br>";
         }
     } elseif ($npcc == 47) {
         $npcc11 = $npcc;//存值
@@ -1298,10 +1298,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>很遗憾！孵化" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！孵化" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！【喜鹊蛋】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！【喜鹊蛋】不足</p>" . "<br>";
         }
     } elseif ($npcc == 48) {
         $npcc11 = $npcc;//存值
@@ -1327,16 +1327,16 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=black>恭喜你！孵化出了" . $wpdz1[0] . "x" . $wpdz4[0] . "只！！见证了牛郎与织女的爱情故事</font><br>";
+                echo "<p style='color: black'>恭喜你！孵化出了" . $wpdz1[0] . "x" . $wpdz4[0] . "只！！见证了牛郎与织女的爱情故事</p><br>";
                 include("./ini/zt_ini.php");
                 $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                 $xtxx = "恭喜玩家" . $wjmz . "孵化出了" . $wpdz1[0] . "x" . $wpdz4[0] . "只！！见证了牛郎与织女的爱情故事！！";
                 include("./msg/msgg02.php");
             } else {
-                echo "<font color=black>很遗憾！孵化" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！孵化" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！【喜鹊蛋】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！【喜鹊蛋】不足</p>" . "<br>";
         }
     } elseif ($npcc == 49) {
         $npcc11 = $npcc;//存值
@@ -1362,16 +1362,16 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=black>恭喜你！孵化出了" . $wpdz1[0] . "x" . $wpdz4[0] . "只！！见证了牛郎与织女的爱情故事</font><br>";
+                echo "<p style='color: black'>恭喜你！孵化出了" . $wpdz1[0] . "x" . $wpdz4[0] . "只！！见证了牛郎与织女的爱情故事</p><br>";
                 include("./ini/zt_ini.php");
                 $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                 $xtxx = "恭喜玩家" . $wjmz . "孵化出了" . $wpdz1[0] . "x" . $wpdz4[0] . "只！！见证了牛郎与织女的爱情故事！！";
                 include("./msg/msgg02.php");
             } else {
-                echo "<font color=black>很遗憾！孵化" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: black'>很遗憾！孵化" . $wpdz1[0] . "失败了！！</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！【喜鹊蛋】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！【喜鹊蛋】不足</p>" . "<br>";
         }
     } elseif ($npcc == 50) {   //〖攻之龙丹〗
         $npcc11 = $npcc;//存值
@@ -1394,7 +1394,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 51) {   //〖魔之龙丹〗
         $npcc11 = $npcc;//存值
@@ -1417,7 +1417,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 52) {   //〖防之龙丹〗
         $npcc11 = $npcc;//存值
@@ -1440,7 +1440,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 53) {   //〖血之龙丹〗
         $npcc11 = $npcc;//存值
@@ -1463,7 +1463,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 54) {   //〖荣誉宝石包〗
         $npcc11 = $npcc;//存值
@@ -1486,7 +1486,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 55) {   //〖齐天大圣〗（宠物蛋）
         $npcc11 = $npcc;//存值
@@ -1509,7 +1509,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 56) {   //〖至尊天圣〗
         $npcc11 = $npcc;//存值
@@ -1532,7 +1532,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 57) {   //〖圣灵锻造图纸〗
         $npcc11 = $npcc;//存值
@@ -1555,7 +1555,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】不足</p>" . "<br>";
         }
     } elseif ($npcc == 58) {   //〖诛仙令〗
         $npcc11 = $npcc;//存值
@@ -1578,7 +1578,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 59) {   //〖双倍掉宝符〗
         $npcc11 = $npcc;//存值
@@ -1601,7 +1601,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 60) {   //〖四倍掉宝符〗
         $npcc11 = $npcc;//存值
@@ -1624,7 +1624,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 61) {   //〖八倍掉宝符〗
         $npcc11 = $npcc;//存值
@@ -1647,7 +1647,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 62) {   //【喜鹊令】
         $npcc11 = $npcc;//存值
@@ -1675,7 +1675,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的【小喜鹊】或者〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的【小喜鹊】或者〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 63) {   //〖万能钥匙〗
         $npcc11 = $npcc;//存值
@@ -1699,7 +1699,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【英雄牌】x100</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【英雄牌】x100</p>" . "<br>";
         }
     } elseif ($npcc == 64) {
         $npcc11 = $npcc;//存值
@@ -1723,7 +1723,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金豆〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金豆〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 65) {
         $npcc11 = $npcc;//存值
@@ -1747,7 +1747,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金豆〗x1</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金豆〗x1</p>" . "<br>";
         }
     } elseif ($npcc == 66) {
         $npcc11 = $npcc;//存值
@@ -1771,7 +1771,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金豆〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金豆〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 67) {
         $npcc11 = $npcc;//存值
@@ -1795,7 +1795,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要5000万银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要5000万银两</p>" . "<br>";
         }
     } elseif ($npcc == 68) {
         $npcc11 = $npcc;//存值
@@ -1819,7 +1819,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要5亿银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要5亿银两</p>" . "<br>";
         }
     } elseif ($npcc == 69) {
         $npcc11 = $npcc;//存值
@@ -1858,7 +1858,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x20，〖七彩祥云〗x20，〖紫霞眼泪〗x20，〖紧箍咒〗x20</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x20，〖七彩祥云〗x20，〖紫霞眼泪〗x20，〖紧箍咒〗x20</p>" . "<br>";
         }
     } elseif ($npcc == 70) {
         $npcc11 = $npcc;//存值
@@ -1897,7 +1897,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x200，〖七彩祥云〗x200，〖紫霞眼泪〗x200，〖紧箍咒〗x200</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x200，〖七彩祥云〗x200，〖紫霞眼泪〗x200，〖紧箍咒〗x200</p>" . "<br>";
         }
     } elseif ($npcc == 71) {
         $npcc11 = $npcc;//存值
@@ -1936,7 +1936,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x5，〖七彩祥云〗x5，〖紫霞眼泪〗x5，〖紧箍咒〗x5</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x5，〖七彩祥云〗x5，〖紫霞眼泪〗x5，〖紧箍咒〗x5</p>" . "<br>";
         }
     } elseif ($npcc == 72) {
         $npcc11 = $npcc;//存值
@@ -1975,7 +1975,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x50，〖七彩祥云〗x50，〖紫霞眼泪〗x5，〖紧箍咒〗x50</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x50，〖七彩祥云〗x50，〖紫霞眼泪〗x5，〖紧箍咒〗x50</p>" . "<br>";
         }
     } elseif ($npcc == 73) {
         $npcc11 = $npcc;//存值
@@ -2014,7 +2014,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x10，〖七彩祥云〗x10，〖紫霞眼泪〗x10，〖紧箍咒〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x10，〖七彩祥云〗x10，〖紫霞眼泪〗x10，〖紧箍咒〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 74) {
         $npcc11 = $npcc;//存值
@@ -2053,7 +2053,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x100，〖七彩祥云〗x100，〖紫霞眼泪〗x100，〖紧箍咒〗x100</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x100，〖七彩祥云〗x100，〖紫霞眼泪〗x100，〖紧箍咒〗x100</p>" . "<br>";
         }
     } elseif ($npcc == 75) {
         $npcc11 = $npcc;//存值
@@ -2092,7 +2092,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x5，〖七彩祥云〗x5，〖紫霞眼泪〗x5，〖紧箍咒〗x5</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x5，〖七彩祥云〗x5，〖紫霞眼泪〗x5，〖紧箍咒〗x5</p>" . "<br>";
         }
     } elseif ($npcc == 76) {
         $npcc11 = $npcc;//存值
@@ -2131,7 +2131,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要〖金甲圣衣〗x10，〖七彩祥云〗x10，〖紫霞眼泪〗x10，〖紧箍咒〗x10</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要〖金甲圣衣〗x10，〖七彩祥云〗x10，〖紫霞眼泪〗x10，〖紧箍咒〗x10</p>" . "<br>";
         }
     } elseif ($npcc == 77) {
         $npcc11 = $npcc;//存值
@@ -2155,7 +2155,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要5000万银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要5000万银两</p>" . "<br>";
         }
     } elseif ($npcc == 78) {
         $npcc11 = $npcc;//存值
@@ -2179,7 +2179,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要5亿银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要5亿银两</p>" . "<br>";
         }
     } elseif ($npcc == 79) {
         $npcc11 = $npcc;//存值
@@ -2203,7 +2203,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要500万银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要500万银两</p>" . "<br>";
         }
     } elseif ($npcc == 80) {
         $npcc11 = $npcc;//存值
@@ -2227,7 +2227,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要5000万银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要5000万银两</p>" . "<br>";
         }
     } elseif ($npcc == 81) {
         $npcc11 = $npcc;//存值
@@ -2251,7 +2251,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要5亿银两</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要5亿银两</p>" . "<br>";
         }
     } elseif ($npcc == 82) {
         $npcc11 = $npcc;//存值
@@ -2287,26 +2287,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 82;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 82;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 83) {
         $npcc11 = $npcc;//存值
@@ -2342,26 +2342,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 83;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 83;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 84) {
         $npcc11 = $npcc;//存值
@@ -2397,26 +2397,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 84;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 84;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 85) {
         $npcc11 = $npcc;//存值
@@ -2452,26 +2452,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 85;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 85;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 86) {
         $npcc11 = $npcc;//存值
@@ -2507,26 +2507,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 86;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 86;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 87) {
         $npcc11 = $npcc;//存值
@@ -2562,26 +2562,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 87;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 87;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 88) {
         $npcc11 = $npcc;//存值
@@ -2605,7 +2605,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！需要银两100万</font><br>";
+            echo "<p style='color: black'>对不起！需要银两100万</p><br>";
         }
     } elseif ($npcc == 89) {
         $npcc11 = $npcc;//存值
@@ -2629,7 +2629,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！需要银两1000万</font><br>";
+            echo "<p style='color: black'>对不起！需要银两1000万</p><br>";
         }
     } elseif ($npcc == 90) {
         $npcc11 = $npcc;//存值
@@ -2653,7 +2653,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！需要银两1亿</font><br>";
+            echo "<p style='color: black'>对不起！需要银两1亿</p><br>";
         }
     } elseif ($npcc == 91) {
         $npcc11 = $npcc;//存值
@@ -2677,7 +2677,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！需要银两10亿</font><br>";
+            echo "<p style='color: black'>对不起！需要银两10亿</p><br>";
         }
     } elseif ($npcc == 92) {
         $npcc11 = $npcc;//存值
@@ -2703,7 +2703,7 @@ if ($zsspd == 1) {
 //随机
             $bz = rand(1, 100);
             if ($bz >= 1 && $bz <= 20) {
-                echo "<font color=red>恭喜你！许愿成功！大罗金仙来相助~~~</font><br>";
+                echo "<p style='color: red'>恭喜你！许愿成功！大罗金仙来相助~~~</p><br>";
                 $manzu1 = "";
 //物品加
                 $wpdz1[] = "〖大号财宝箱〗";//名字
@@ -2714,17 +2714,17 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=red>很遗憾！许愿失败了~~~</font><br>";
+                echo "<p style='color: red'>很遗憾！许愿失败了~~~</p><br>";
             }
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 92;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再许愿一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再许愿一次</p></a>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！每次许愿需要银两5000万</font><br>";
+            echo "<p style='color: black'>对不起！每次许愿需要银两5000万</p><br>";
         }
     } elseif ($npcc == 93) {
         $npcc11 = $npcc;//存值
@@ -2750,7 +2750,7 @@ if ($zsspd == 1) {
 //随机
             $bz = rand(1, 90);
             if ($bz >= 1 && $bz <= 100) {
-                echo "<font color=red>恭喜你！许愿成功！大罗金仙来相助~~~</font><br>";
+                echo "<p style='color: red'>恭喜你！许愿成功！大罗金仙来相助~~~</p><br>";
                 $manzu1 = "";
                 $bz = rand(1, 100);
                 if ($bz >= 1 && $bz <= 40) {
@@ -2775,17 +2775,17 @@ if ($zsspd == 1) {
 //银两加
                 }
             } else {
-                echo "<font color=red>很遗憾！许愿失败了~~~</font><br>";
+                echo "<p style='color: red'>很遗憾！许愿失败了~~~</p><br>";
             }
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 93;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再许愿一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再许愿一次</p></a>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！每次许愿需要银两5000万</font><br>";
+            echo "<p style='color: black'>对不起！每次许愿需要银两5000万</p><br>";
         }
     } elseif ($npcc == 94) {
         $npcc11 = $npcc;//存值
@@ -2821,26 +2821,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 94;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 94;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 95) {
         $npcc11 = $npcc;//存值
@@ -2876,26 +2876,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 95;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 95;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 96) {
         $npcc11 = $npcc;//存值
@@ -2931,26 +2931,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 96;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 96;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 97) {
         $npcc11 = $npcc;//存值
@@ -2986,26 +2986,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 97;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 97;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 98) {
         $npcc11 = $npcc;//存值
@@ -3041,26 +3041,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 98;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 98;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 99) {
         $npcc11 = $npcc;//存值
@@ -3096,26 +3096,26 @@ if ($zsspd == 1) {
                 $wpdz5[] = 1;//	重量
 //物品加
                 include("./rwmap/rwget.php");
-                echo "<font color=red>恭喜你！练星-" . $wpdz1[0] . "成功了！！</font><br>";
+                echo "<p style='color: red'>恭喜你！练星-" . $wpdz1[0] . "成功了！！</p><br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 99;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             } else {
-                echo "<font color=red>很遗憾！练星-" . $wpdz1[0] . "失败了！！</font>" . "<br>";
+                echo "<p style='color: red'>很遗憾！练星-" . $wpdz1[0] . "失败了！！</p>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 312;
                 $npc[] = 99;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一次</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一次</p></a>" . "<br>";
                 echo "<br>";
             }
         } else {
-            echo "<font color=black>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！练星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "西游声望" . $wpdz4[1] . "银两" . $wpdz4[2] . "</p><br>";
         }
     } elseif ($npcc == 100) {   //〖探险符〗
         $npcc11 = $npcc;//存值
@@ -3142,9 +3142,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 101) {   //〖探险符〗
         $npcc11 = $npcc;//存值
@@ -3171,9 +3171,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 102) {   //〖许愿符〗
         $npcc11 = $npcc;//存值
@@ -3196,7 +3196,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖许愿符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖许愿符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 103) {   //〖许愿符〗
         $npcc11 = $npcc;//存值
@@ -3219,7 +3219,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖许愿符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖许愿符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 104) {   //〖许愿符〗
         $npcc11 = $npcc;//存值
@@ -3242,7 +3242,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖许愿符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖许愿符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 105) {   //〖情圣〗
         $npcc11 = $npcc;//存值
@@ -3265,7 +3265,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 106) {   //〖万人迷〗
         $npcc11 = $npcc;//存值
@@ -3288,7 +3288,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 107) {   //〖天作之合〗
         $npcc11 = $npcc;//存值
@@ -3311,7 +3311,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 108) {   //〖爱你一万年〗
         $npcc11 = $npcc;//存值
@@ -3334,7 +3334,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 109) {   //〖真爱无敌〗
         $npcc11 = $npcc;//存值
@@ -3357,7 +3357,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 110) {   //〖绝世情圣〗
         $npcc11 = $npcc;//存值
@@ -3380,7 +3380,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 111) {   //〖天下最倾城〗
         $npcc11 = $npcc;//存值
@@ -3403,7 +3403,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 112) {   //〖天下最风流〗
         $npcc11 = $npcc;//存值
@@ -3426,7 +3426,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【鹊翎】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【鹊翎】不足</p>" . "<br>";
         }
     } elseif ($npcc == 113) {   //【甜】
         $npcc11 = $npcc;//存值
@@ -3449,7 +3449,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 114) {   //【蜜】
         $npcc11 = $npcc;//存值
@@ -3472,7 +3472,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 115) {   //【七】
         $npcc11 = $npcc;//存值
@@ -3495,7 +3495,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 116) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3518,7 +3518,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 117) {   //〖七夕宝箱〗
         $npcc11 = $npcc;//存值
@@ -3556,7 +3556,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 118) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3594,7 +3594,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 119) {   //【甜】
         $npcc11 = $npcc;//存值
@@ -3617,7 +3617,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 120) {   //【蜜】
         $npcc11 = $npcc;//存值
@@ -3640,7 +3640,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 121) {   //【七】
         $npcc11 = $npcc;//存值
@@ -3663,7 +3663,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 122) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3686,7 +3686,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖七夕万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖七夕万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 123) {   //〖七夕宝箱〗
         $npcc11 = $npcc;//存值
@@ -3724,7 +3724,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 124) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3762,7 +3762,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 125) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3800,7 +3800,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 126) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3838,7 +3838,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 127) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3876,7 +3876,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字不足</p>" . "<br>";
         }
     } elseif ($npcc == 128) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3918,7 +3918,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字，或者金豆不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字，或者金豆不足</p>" . "<br>";
         }
     } elseif ($npcc == 129) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3960,7 +3960,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【甜】【蜜】【七】【夕】四字，或者金豆不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【甜】【蜜】【七】【夕】四字，或者金豆不足</p>" . "<br>";
         }
     } elseif ($npcc == 130) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -3997,7 +3997,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</p>" . "<br>";
         }
     } elseif ($npcc == 131) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -4034,7 +4034,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</p>" . "<br>";
         }
     } elseif ($npcc == 132) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -4071,7 +4071,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</p>" . "<br>";
         }
     } elseif ($npcc == 133) {   //【夕】
         $npcc11 = $npcc;//存值
@@ -4108,7 +4108,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖鸳鸯帕〗〖姻缘草〗〖银心铃〗，或者金豆不足</p>" . "<br>";
         }
     } elseif ($npcc == 134) {   //〖练星符〗（绿）
         $npcc11 = $npcc;//存值
@@ -4136,9 +4136,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 135) {   //〖练星符〗（绿）
         $npcc11 = $npcc;//存值
@@ -4166,9 +4166,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 136) {   //〖练星符〗（绿）
         $npcc11 = $npcc;//存值
@@ -4196,9 +4196,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 137) {   //〖碎银〗
         $npcc11 = $npcc;//存值
@@ -4234,12 +4234,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 137;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 138) {   //〖银块〗
@@ -4276,12 +4276,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 138;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 139) {   //〖银锭〗
@@ -4318,12 +4318,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 139;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 140) {   //〖金块〗
@@ -4360,12 +4360,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 140;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 141) {   //〖金锭〗
@@ -4402,12 +4402,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 141;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 142) {   //〖碎银〗
@@ -4440,9 +4440,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 142;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖碎银〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖碎银〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 143) {   //〖银块〗
         $npcc11 = $npcc;//存值
@@ -4474,9 +4474,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 143;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖银块〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖银块〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 144) {   //〖银锭〗
         $npcc11 = $npcc;//存值
@@ -4508,9 +4508,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 144;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖银锭〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖银锭〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 145) {   //〖金块〗
         $npcc11 = $npcc;//存值
@@ -4542,9 +4542,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 145;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖金块〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金块〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 146) {   //〖金锭〗
         $npcc11 = $npcc;//存值
@@ -4576,9 +4576,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 146;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖金锭〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金锭〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 147) {   //
 //加pk值
@@ -4587,13 +4587,13 @@ if ($zsspd == 1) {
         if ($pkzzz >= 1) {
             $pkzzz = $pkzzz - 1;
             $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
-            echo "<font color=red>忏悔成功！恶名值-1（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+            echo "<p style='color: red'>忏悔成功！恶名值-1（当前恶名:" . $pkzzz . "）</p>" . "<br>";
 //加pk值
             include("./ini/tltime_ini.php");
             $nowtime = date('Y-m-d H:i:s');
             $iniFile->updItem('天牢时间', ['初始' => $nowtime]);
         } else {
-            echo "<font color=red>你是个好人（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+            echo "<p style='color: red'>你是个好人（当前恶名:" . $pkzzz . "）</p>" . "<br>";
         }
     } elseif ($npcc == 148) {   //〖免罪金牌〗
         $npcc11 = $npcc;//存值
@@ -4617,7 +4617,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 149) {   //【善果】
         $npcc11 = $npcc;//存值
@@ -4641,7 +4641,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 150) {   //【善果】
         $npcc11 = $npcc;//存值
@@ -4665,7 +4665,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 151) {   //
 //加pk值
@@ -4689,13 +4689,13 @@ if ($zsspd == 1) {
                 $pkzzz = ($iniFile->getItem('玩家信息', '恶名值'));
                 $pkzzz = $pkzzz - 1;
                 $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
-                echo "<font color=red>赎罪成功！恶名值-1（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+                echo "<p style='color: red'>赎罪成功！恶名值-1（当前恶名:" . $pkzzz . "）</p>" . "<br>";
 //加pk值
             } else {
-                echo "<font color=black>对不起你的【善果】不足</font>" . "<br>";
+                echo "<p style='color: black'>对不起你的【善果】不足</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>你是个好人（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+            echo "<p style='color: red'>你是个好人（当前恶名:" . $pkzzz . "）</p>" . "<br>";
         }
     } elseif ($npcc == 152) {   //
 //加pk值
@@ -4722,13 +4722,13 @@ if ($zsspd == 1) {
                     $pkzzz = 0;
                 }
                 $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
-                echo "<font color=red>赎罪成功！恶名值-10（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+                echo "<p style='color: red'>赎罪成功！恶名值-10（当前恶名:" . $pkzzz . "）</p>" . "<br>";
 //加pk值
             } else {
-                echo "<font color=black>对不起你的【善果】不足</font>" . "<br>";
+                echo "<p style='color: black'>对不起你的【善果】不足</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>你是个好人（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+            echo "<p style='color: red'>你是个好人（当前恶名:" . $pkzzz . "）</p>" . "<br>";
         }
     } elseif ($npcc == 153) {   //
 //加pk值
@@ -4751,13 +4751,13 @@ if ($zsspd == 1) {
                 $pkzzz = 0;
                 include("./ini/zt_ini.php");
                 $iniFile->updItem('玩家信息', ['恶名值' => $pkzzz]);
-                echo "<font color=red>赎罪成功！（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+                echo "<p style='color: red'>赎罪成功！（当前恶名:" . $pkzzz . "）</p>" . "<br>";
 //加pk值
             } else {
-                echo "<font color=black>对不起你的〖免罪金牌〗不足</font>" . "<br>";
+                echo "<p style='color: black'>对不起你的〖免罪金牌〗不足</p>" . "<br>";
             }
         } else {
-            echo "<font color=red>你是个好人（当前恶名:" . $pkzzz . "）</font>" . "<br>";
+            echo "<p style='color: red'>你是个好人（当前恶名:" . $pkzzz . "）</p>" . "<br>";
         }
     } elseif ($npcc == 154) {   //〖西游新秀〗
         $npcc11 = $npcc;//存值
@@ -4781,7 +4781,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【铅球】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【铅球】不足</p>" . "<br>";
         }
     } elseif ($npcc == 155) {   //〖科举答题〗
         $npcc11 = $npcc;//存值
@@ -4805,7 +4805,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 156) {   //〖举人〗
         $npcc11 = $npcc;//存值
@@ -4829,7 +4829,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 157) {   //〖榜眼〗
         $npcc11 = $npcc;//存值
@@ -4853,7 +4853,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 158) {   //【1万西游声望卷轴】
         $npcc11 = $npcc;//存值
@@ -4877,7 +4877,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 159) {   //【1万西游声望卷轴】
         $npcc11 = $npcc;//存值
@@ -4901,7 +4901,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 160) {   //【1万法宝经验卷轴】
         $npcc11 = $npcc;//存值
@@ -4925,7 +4925,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 161) {   //【1万法宝经验卷轴】
         $npcc11 = $npcc;//存值
@@ -4949,7 +4949,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【奖状】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【奖状】不足</p>" . "<br>";
         }
     } elseif ($npcc == 162) {   //〖开学礼包〗
         $npcc11 = $npcc;//存值
@@ -4993,7 +4993,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【粉笔】【橡皮擦】【铅笔】【墨水】〖女神同桌〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【粉笔】【橡皮擦】【铅笔】【墨水】〖女神同桌〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 163) {   //〖开学大礼包〗
         $npcc11 = $npcc;//存值
@@ -5037,7 +5037,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的【粉笔】【橡皮擦】【铅笔】【墨水】〖女神同桌〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的【粉笔】【橡皮擦】【铅笔】【墨水】〖女神同桌〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 164) {   //〖女神同桌〗
         $npcc11 = $npcc;//存值
@@ -5060,7 +5060,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 165) {   //〖女神同桌〗
         $npcc11 = $npcc;//存值
@@ -5083,7 +5083,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 166) {   //〖女神同桌〗
         $npcc11 = $npcc;//存值
@@ -5106,7 +5106,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 167) {   //〖女神同桌〗
         $npcc11 = $npcc;//存值
@@ -5129,7 +5129,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的〖金豆〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的〖金豆〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 168) {   //〖金豆〗
         $npcc11 = $npcc;//存值
@@ -5152,7 +5152,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的〖神仙果〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的〖神仙果〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 169) {   //〖金豆〗
         $npcc11 = $npcc;//存值
@@ -5175,7 +5175,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~你的〖神仙果〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~你的〖神仙果〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 170) {   //〖BOSS杀手〗
         $npcc11 = $npcc;//存值
@@ -5203,7 +5203,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 171) {   //〖猎魔之王〗
         $npcc11 = $npcc;//存值
@@ -5231,7 +5231,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 172) {   //〖BOSS终结者〗
         $npcc11 = $npcc;//存值
@@ -5259,7 +5259,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 173) {   //〖一骑当先〗
         $npcc11 = $npcc;//存值
@@ -5287,7 +5287,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 174) {   //〖新妖之王〗
         $npcc11 = $npcc;//存值
@@ -5315,7 +5315,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 175) {   //〖七夕令〗
         $npcc11 = $npcc;//存值
@@ -5343,7 +5343,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起~~需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 176) {   //〖碎银〗
         $npcc11 = $npcc;//存值
@@ -5379,12 +5379,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 176;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 177) {   //〖碎银〗
@@ -5421,12 +5421,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 177;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 178) {   //〖碎银〗
@@ -5463,12 +5463,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 178;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再买一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再买一个</p></a>" . "<br>";
         } else {
 //数字转汉字
             $yl = $yl1;
             include("./pz/ylts.php");
-            echo "<font color=red>对不起！！你的银两不足" . $ylxx . "两</font>";
+            echo "<p style='color: red'>对不起！！你的银两不足" . $ylxx . "两</p>";
             echo "<br>";
         }
     } elseif ($npcc == 179) {   //〖碎银〗
@@ -5501,9 +5501,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 179;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖碎银〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖碎银〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 180) {   //〖碎银〗
         $npcc11 = $npcc;//存值
@@ -5535,9 +5535,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 180;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖碎银〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖碎银〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 181) {   //〖碎银〗
         $npcc11 = $npcc;//存值
@@ -5569,9 +5569,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 181;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再卖一个</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再卖一个</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖碎银〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖碎银〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 182) {//占星
         $npcc11 = $npcc;//存值
@@ -5601,29 +5601,29 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 182;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 183) {//占星
         $npcc11 = $npcc;//存值
@@ -5653,7 +5653,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "进行了【极品占星】获得了" . $wpdz1[0] . "x" . $wpdz4[0];
@@ -5663,23 +5663,23 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 183;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 184) {//占星
         $npcc11 = $npcc;//存值
@@ -5709,29 +5709,29 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 184;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 185) {//占星
         $npcc11 = $npcc;//存值
@@ -5761,7 +5761,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "进行了【极品占星】获得了" . $wpdz1[0] . "x" . $wpdz4[0];
@@ -5771,23 +5771,23 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 185;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 186) {//占星
         $npcc11 = $npcc;//存值
@@ -5817,7 +5817,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "进行了【完美占星】获得了" . $wpdz1[0] . "x" . $wpdz4[0];
@@ -5827,23 +5827,23 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 186;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 187) {//占星
         $npcc11 = $npcc;//存值
@@ -5873,29 +5873,29 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 187;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 188) {//占星
         $npcc11 = $npcc;//存值
@@ -5925,7 +5925,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "进行了【极品占星】获得了" . $wpdz1[0] . "x" . $wpdz4[0];
@@ -5935,23 +5935,23 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 188;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 189) {//占星
         $npcc11 = $npcc;//存值
@@ -5981,29 +5981,29 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 189;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 190) {//占星
         $npcc11 = $npcc;//存值
@@ -6033,7 +6033,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "进行了【极品占星】获得了" . $wpdz1[0] . "x" . $wpdz4[0];
@@ -6043,23 +6043,23 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 190;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 191) {//占星
         $npcc11 = $npcc;//存值
@@ -6089,7 +6089,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！占星获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "进行了【完美占星】获得了" . $wpdz1[0] . "x" . $wpdz4[0];
@@ -6099,23 +6099,23 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 312;
             $npc[] = 191;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再占星一次</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再占星一次</p></a>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</font><br>";
+            echo "<p style='color: black'>对不起！占星需要" . $wpdz1[0] . "x" . $wpdz4[0] . "银两" . $wpdz4[1] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 585;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 192) {//占星
         $npcc11 = $npcc;//存值
@@ -6138,23 +6138,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 193) {//占星
         $npcc11 = $npcc;//存值
@@ -6177,23 +6177,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 194) {//占星
         $npcc11 = $npcc;//存值
@@ -6216,23 +6216,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 195) {//占星
         $npcc11 = $npcc;//存值
@@ -6255,23 +6255,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 196) {//占星
         $npcc11 = $npcc;//存值
@@ -6294,23 +6294,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 197) {//占星
         $npcc11 = $npcc;//存值
@@ -6333,23 +6333,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 198) {//占星
         $npcc11 = $npcc;//存值
@@ -6372,23 +6372,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 199) {//占星
         $npcc11 = $npcc;//存值
@@ -6411,23 +6411,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 200) {//占星
         $npcc11 = $npcc;//存值
@@ -6450,23 +6450,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 201) {//占星
         $npcc11 = $npcc;//存值
@@ -6489,23 +6489,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 202) {//占星
         $npcc11 = $npcc;//存值
@@ -6528,23 +6528,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 203) {//占星
         $npcc11 = $npcc;//存值
@@ -6567,23 +6567,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 204) {
         $npcc11 = $npcc;//存值
@@ -6607,7 +6607,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【恶魔符文】x1万</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【恶魔符文】x1万</p>" . "<br>";
         }
     } elseif ($npcc == 205) {
         $npcc11 = $npcc;//存值
@@ -6631,7 +6631,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【恶魔符文】x2000</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【恶魔符文】x2000</p>" . "<br>";
         }
     } elseif ($npcc == 206) {
         $npcc11 = $npcc;//存值
@@ -6655,7 +6655,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【恶魔符文】x10万</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【恶魔符文】x10万</p>" . "<br>";
         }
     } elseif ($npcc == 207) {
         $npcc11 = $npcc;//存值
@@ -6679,7 +6679,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>兑换失败需要【恶魔符文】x2万</font>" . "<br>";
+            echo "<p style='color: black'>兑换失败需要【恶魔符文】x2万</p>" . "<br>";
         }
     } elseif ($npcc == 208) {
         include("./ini/zt_ini.php");
@@ -6708,10 +6708,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>兑换失败需要【恶魔符文】x1万</font>" . "<br>";
+                echo "<p style='color: black'>兑换失败需要【恶魔符文】x1万</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！仅仅只为vip3以上玩家提供兑换</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！仅仅只为vip3以上玩家提供兑换</p>" . "<br>";
         }
     } elseif ($npcc == 209) {
         include("./ini/zt_ini.php");
@@ -6740,10 +6740,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>兑换失败需要【恶魔符文】x2000</font>" . "<br>";
+                echo "<p style='color: black'>兑换失败需要【恶魔符文】x2000</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！仅仅只为vip3以上玩家提供兑换</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！仅仅只为vip3以上玩家提供兑换</p>" . "<br>";
         }
     } elseif ($npcc == 210) {
         include("./ini/zt_ini.php");
@@ -6772,10 +6772,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>兑换失败需要【恶魔符文】x10万</font>" . "<br>";
+                echo "<p style='color: black'>兑换失败需要【恶魔符文】x10万</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！仅仅只为vip3以上玩家提供兑换</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！仅仅只为vip3以上玩家提供兑换</p>" . "<br>";
         }
     } elseif ($npcc == 211) {
         include("./ini/zt_ini.php");
@@ -6804,10 +6804,10 @@ if ($zsspd == 1) {
 //物品加
                 include("./rwmap/rwget.php");
             } else {
-                echo "<font color=black>兑换失败需要【恶魔符文】x2万</font>" . "<br>";
+                echo "<p style='color: black'>兑换失败需要【恶魔符文】x2万</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！仅仅只为vip3以上玩家提供兑换</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！仅仅只为vip3以上玩家提供兑换</p>" . "<br>";
         }
     } elseif ($npcc == 212) {//占星
         $npcc11 = $npcc;//存值
@@ -6830,23 +6830,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 213) {//占星
         $npcc11 = $npcc;//存值
@@ -6869,23 +6869,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 214) {//占星
         $npcc11 = $npcc;//存值
@@ -6908,23 +6908,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 215) {//占星
         $npcc11 = $npcc;//存值
@@ -6947,23 +6947,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 216) {//占星
         $npcc11 = $npcc;//存值
@@ -6986,23 +6986,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 217) {//占星
         $npcc11 = $npcc;//存值
@@ -7025,23 +7025,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 218) {//秘宝合成
         $npcc11 = $npcc;//存值
@@ -7064,23 +7064,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 219) {//秘宝合成
         $npcc11 = $npcc;//存值
@@ -7103,23 +7103,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 220) {//秘宝合成
         $npcc11 = $npcc;//存值
@@ -7142,23 +7142,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 221) {//秘宝合成
         $npcc11 = $npcc;//存值
@@ -7181,23 +7181,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 608;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 222) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7220,23 +7220,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 223) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7259,23 +7259,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 224) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7298,23 +7298,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 225) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7337,23 +7337,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 226) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7376,23 +7376,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 227) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7415,23 +7415,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 228) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7454,23 +7454,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 229) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7493,23 +7493,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 230) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7532,23 +7532,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 231) {//中秋称号兑换
         $npcc11 = $npcc;//存值
@@ -7571,23 +7571,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 232) {//【糯米粉】
         $npcc11 = $npcc;//存值
@@ -7610,23 +7610,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 233) {//【糯米粉】
         $npcc11 = $npcc;//存值
@@ -7649,23 +7649,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 234) {//【糯米粉】
         $npcc11 = $npcc;//存值
@@ -7688,23 +7688,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 235) {//〖风花月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -7737,23 +7737,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 236) {//〖雪月月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -7786,23 +7786,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 237) {//〖金秋月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -7835,23 +7835,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 238) {//〖鸿福月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -7884,23 +7884,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 239) {//〖风花月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -7933,23 +7933,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 240) {//〖雪月月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -7982,23 +7982,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 241) {//〖金秋月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -8031,23 +8031,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 242) {//〖鸿福月饼礼盒〗
         $npcc11 = $npcc;//存值
@@ -8080,23 +8080,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！制作了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</font><br>";
+            echo "<p style='color: black'>对不起！制作需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         }
     } elseif ($npcc == 243) {//〖时装凭证〗
         $npcc11 = $npcc;//存值
@@ -8119,16 +8119,16 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换了" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 2;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
         }
     } elseif ($npcc == 244) {   //〖圣灵锻造图纸〗
         $npcc11 = $npcc;//存值
@@ -8155,9 +8155,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 245) {   //〖云梯石〗
         $npcc11 = $npcc;//存值
@@ -8180,7 +8180,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【英雄牌】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【英雄牌】不足</p>" . "<br>";
         }
     } elseif ($npcc == 246) {   //〖云梯石〗
         $npcc11 = $npcc;//存值
@@ -8203,7 +8203,7 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的【英雄牌】不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的【英雄牌】不足</p>" . "<br>";
         }
     } elseif ($npcc == 247) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8226,23 +8226,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 248) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8265,23 +8265,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 249) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8304,23 +8304,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 250) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8343,23 +8343,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 251) {//占星
         $npcc11 = $npcc;//存值
@@ -8382,23 +8382,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 252) {//占星
         $npcc11 = $npcc;//存值
@@ -8421,23 +8421,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 253) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8460,23 +8460,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 254) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8499,23 +8499,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 255) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8538,23 +8538,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 256) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8577,23 +8577,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 257) {//占星
         $npcc11 = $npcc;//存值
@@ -8616,23 +8616,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 258) {//占星
         $npcc11 = $npcc;//存值
@@ -8655,23 +8655,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 259) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8694,23 +8694,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 260) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8733,23 +8733,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 261) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8772,23 +8772,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 262) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -8811,23 +8811,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 263) {//占星
         $npcc11 = $npcc;//存值
@@ -8850,23 +8850,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 264) {//占星
         $npcc11 = $npcc;//存值
@@ -8889,23 +8889,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 265) {//兑换占星
         $npcc11 = $npcc;//存值
@@ -8928,23 +8928,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 266) {//兑换占星
         $npcc11 = $npcc;//存值
@@ -8967,23 +8967,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 267) {//兑换占星
         $npcc11 = $npcc;//存值
@@ -9006,23 +9006,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 268) {//兑换占星
         $npcc11 = $npcc;//存值
@@ -9045,23 +9045,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 269) {//占星
         $npcc11 = $npcc;//存值
@@ -9084,23 +9084,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 270) {//占星
         $npcc11 = $npcc;//存值
@@ -9123,23 +9123,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！兑换获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 587;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 271) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -9162,23 +9162,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 272) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -9201,23 +9201,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 273) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -9240,23 +9240,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 274) {//熔炼占星
         $npcc11 = $npcc;//存值
@@ -9279,23 +9279,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 275) {//占星
         $npcc11 = $npcc;//存值
@@ -9318,23 +9318,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 276) {//占星
         $npcc11 = $npcc;//存值
@@ -9357,23 +9357,23 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！熔炼获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！熔炼需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 631;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
         }
     } elseif ($npcc == 277) {//国庆字体兑换
         $npcc11 = $npcc;//存值
@@ -9396,10 +9396,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 278) {//国庆字体兑换
@@ -9423,10 +9423,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 279) {//国庆字体兑换
@@ -9450,10 +9450,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 280) {//国庆字体兑换
@@ -9477,10 +9477,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 281) {//国庆字体兑换
@@ -9504,10 +9504,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 282) {//国庆字体兑换
@@ -9531,10 +9531,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 283) {//国庆字体兑换
@@ -9558,10 +9558,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 284) {//国庆字体兑换
@@ -9585,10 +9585,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 285) {//国庆宝箱兑换
@@ -9627,10 +9627,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 286) {//国庆宝箱兑换
@@ -9669,10 +9669,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 287) {//国庆字体兑换
@@ -9696,10 +9696,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 288) {//国庆字体兑换
@@ -9723,10 +9723,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 289) {//国庆字体兑换
@@ -9750,10 +9750,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 290) {//国庆字体兑换
@@ -9777,10 +9777,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 291) {//国庆字体兑换
@@ -9804,10 +9804,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 292) {//国庆字体兑换
@@ -9831,10 +9831,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 293) {//国庆字体兑换
@@ -9858,10 +9858,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 294) {//国庆字体兑换
@@ -9885,10 +9885,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 295) {   //〖时装碎片〗
@@ -9917,9 +9917,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 296) {   //〖时装契约〗
         $npcc11 = $npcc;//存值
@@ -9947,9 +9947,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 297) {   //〖时装碎片〗
         $npcc11 = $npcc;//存值
@@ -9977,9 +9977,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 298) {   //〖时装契约〗
         $npcc11 = $npcc;//存值
@@ -10007,9 +10007,9 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 454;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回金银山</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回金银山</p></a>" . "<br>";
         } else {
-            echo "<font color=black>对不起你的〖探险符〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖探险符〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 299) {   //【尊享VIP】（月卡）
         $npcc11 = $npcc;//存值
@@ -10033,7 +10033,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起你的〖采花花魁〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起你的〖采花花魁〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 300) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10104,7 +10104,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 301) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10175,7 +10175,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 302) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10246,7 +10246,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 303) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10317,7 +10317,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 304) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10388,7 +10388,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 305) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10459,7 +10459,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 306) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10530,7 +10530,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 307) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10601,7 +10601,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 308) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10672,7 +10672,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 309) {   //蛋糕制作
         $npcc11 = $npcc;//存值
@@ -10743,7 +10743,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 310) {   //饼干
         $npcc11 = $npcc;//存值
@@ -10814,7 +10814,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 311) {   //饼干
         $npcc11 = $npcc;//存值
@@ -10885,7 +10885,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 312) {   //饼干
         $npcc11 = $npcc;//存值
@@ -10956,7 +10956,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 313) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11027,7 +11027,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 314) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11098,7 +11098,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 315) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11169,7 +11169,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 316) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11240,7 +11240,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 317) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11311,7 +11311,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 318) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11382,7 +11382,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 319) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11453,7 +11453,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 320) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11524,7 +11524,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 321) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11595,7 +11595,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 322) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11666,7 +11666,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 323) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11737,7 +11737,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 324) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11808,7 +11808,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 325) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11879,7 +11879,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 326) {   //饼干
         $npcc11 = $npcc;//存值
@@ -11950,7 +11950,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 327) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12021,7 +12021,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 328) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12092,7 +12092,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 329) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12163,7 +12163,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 330) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12234,7 +12234,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 331) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12305,7 +12305,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 332) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12376,7 +12376,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 333) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12447,7 +12447,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 334) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12518,7 +12518,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 335) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12589,7 +12589,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 336) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12660,7 +12660,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 337) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12731,7 +12731,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 338) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12802,7 +12802,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 339) {   //饼干
         $npcc11 = $npcc;//存值
@@ -12873,7 +12873,7 @@ if ($zsspd == 1) {
             }
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 340) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -12922,7 +12922,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . $wpdz1[4] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . $wpdz1[4] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 341) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -12971,7 +12971,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . $wpdz1[4] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . $wpdz1[4] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 342) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13020,7 +13020,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . $wpdz1[4] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . $wpdz1[1] . $wpdz1[2] . $wpdz1[3] . $wpdz1[4] . "每样不足" . $wpdz4[0] . "或者银两不足" . $wpdz4[4] . "</p>" . "<br>";
         }
     } elseif ($npcc == 343) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13044,7 +13044,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 344) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13068,7 +13068,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 345) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13092,7 +13092,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 346) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13116,7 +13116,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 347) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13140,7 +13140,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 348) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13164,7 +13164,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 349) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13188,7 +13188,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 350) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13212,7 +13212,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 351) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13236,7 +13236,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 352) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13260,7 +13260,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 353) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13284,7 +13284,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 354) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13308,7 +13308,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 355) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13332,7 +13332,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 356) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13356,7 +13356,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 357) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13380,7 +13380,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 358) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13404,7 +13404,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 359) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13428,7 +13428,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 360) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13452,7 +13452,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 361) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13476,7 +13476,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 362) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13500,7 +13500,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 363) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13524,7 +13524,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 364) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13548,7 +13548,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 365) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13572,7 +13572,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 366) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13596,7 +13596,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 367) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13620,7 +13620,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 368) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13644,7 +13644,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 369) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13668,7 +13668,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 370) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13692,7 +13692,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 371) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13716,7 +13716,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 372) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13740,7 +13740,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 373) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13764,7 +13764,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 374) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13788,7 +13788,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 375) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13812,7 +13812,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 376) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13836,7 +13836,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 377) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13860,7 +13860,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 378) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13884,7 +13884,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 379) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13908,7 +13908,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 380) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13932,7 +13932,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 381) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13956,7 +13956,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 382) {   //礼盒
         $npcc11 = $npcc;//存值
@@ -13980,7 +13980,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 383) {   //【伏羲阵图】
         $npcc11 = $npcc;//存值
@@ -14004,7 +14004,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 384) {   //【伏羲阵图】
         $npcc11 = $npcc;//存值
@@ -14028,7 +14028,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 385) {   //【伏羲阵图】
         $npcc11 = $npcc;//存值
@@ -14052,7 +14052,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 386) {   //〖护身符〗
         $npcc11 = $npcc;//存值
@@ -14076,7 +14076,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 387) {   //〖护身符〗
         $npcc11 = $npcc;//存值
@@ -14100,7 +14100,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 388) {   //〖护身符〗
         $npcc11 = $npcc;//存值
@@ -14124,7 +14124,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！你的" . $wpdz1[0] . "不足" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 389) {   //【重阳糕】
         $npcc11 = $npcc;//存值
@@ -14163,7 +14163,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！制作【重阳糕】需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "," . $wpdz1[2] . "x" . $wpdz4[2] . "," . $wpdz1[3] . "x" . $wpdz4[3] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！制作【重阳糕】需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "," . $wpdz1[2] . "x" . $wpdz4[2] . "," . $wpdz1[3] . "x" . $wpdz4[3] . "</p>" . "<br>";
         }
     } elseif ($npcc == 390) {   //【重阳糕】
         $npcc11 = $npcc;//存值
@@ -14202,7 +14202,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！制作【重阳糕】需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "," . $wpdz1[2] . "x" . $wpdz4[2] . "," . $wpdz1[3] . "x" . $wpdz4[3] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！制作【重阳糕】需要" . $wpdz1[0] . "x" . $wpdz4[0] . "," . $wpdz1[1] . "x" . $wpdz4[1] . "," . $wpdz1[2] . "x" . $wpdz4[2] . "," . $wpdz1[3] . "x" . $wpdz4[3] . "</p>" . "<br>";
         }
     } elseif ($npcc == 391) {   //【重阳糕】
         $npcc11 = $npcc;//存值
@@ -14226,7 +14226,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 392) {   //【重阳糕】
         $npcc11 = $npcc;//存值
@@ -14255,7 +14255,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 393) {   //【重阳糕】
         $npcc11 = $npcc;//存值
@@ -14284,7 +14284,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 394) {   //【面粉】
         $npcc11 = $npcc;//存值
@@ -14308,7 +14308,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 395) {   //【红枣】
         $npcc11 = $npcc;//存值
@@ -14332,7 +14332,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 396) {   //【栗子】
         $npcc11 = $npcc;//存值
@@ -14356,7 +14356,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 397) {   //【杏仁】
         $npcc11 = $npcc;//存值
@@ -14380,7 +14380,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 398) {   //【面粉】
         $npcc11 = $npcc;//存值
@@ -14404,7 +14404,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 399) {   //【红枣】
         $npcc11 = $npcc;//存值
@@ -14428,7 +14428,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 400) {   //【栗子】
         $npcc11 = $npcc;//存值
@@ -14452,7 +14452,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 401) {   //【杏仁】
         $npcc11 = $npcc;//存值
@@ -14476,7 +14476,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 402) {   //【面粉】
         $npcc11 = $npcc;//存值
@@ -14500,7 +14500,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 403) {   //【红枣】
         $npcc11 = $npcc;//存值
@@ -14524,7 +14524,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 404) {   //【栗子】
         $npcc11 = $npcc;//存值
@@ -14548,7 +14548,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 405) {   //【杏仁】
         $npcc11 = $npcc;//存值
@@ -14572,7 +14572,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 406) {   //【面粉】
         $npcc11 = $npcc;//存值
@@ -14596,7 +14596,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 407) {   //【红枣】
         $npcc11 = $npcc;//存值
@@ -14620,7 +14620,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 408) {   //【栗子】
         $npcc11 = $npcc;//存值
@@ -14644,7 +14644,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 409) {   //【杏仁】
         $npcc11 = $npcc;//存值
@@ -14668,7 +14668,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！购买需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 410) {   //〖小公主の激素〗
         $npcc11 = $npcc;//存值
@@ -14692,7 +14692,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 411) {   //〖小公主の激素〗
         $npcc11 = $npcc;//存值
@@ -14716,7 +14716,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 412) {   //〖小公主の激素〗
         $npcc11 = $npcc;//存值
@@ -14745,7 +14745,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 413) {   //〖小公主の激素〗
         $npcc11 = $npcc;//存值
@@ -14774,7 +14774,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . "</p>" . "<br>";
         }
     } elseif ($npcc == 414) {   //【黑沃土】
         $npcc11 = $npcc;//存值
@@ -14798,7 +14798,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 415) {   //【仙玉露】
         $npcc11 = $npcc;//存值
@@ -14822,7 +14822,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 416) {   //〖小公主の仙竹〗
         $npcc11 = $npcc;//存值
@@ -14846,7 +14846,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 417) {   //【黑沃土】
         $npcc11 = $npcc;//存值
@@ -14870,7 +14870,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 418) {   //【仙玉露】
         $npcc11 = $npcc;//存值
@@ -14894,7 +14894,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 419) {   //〖小公主の仙竹〗
         $npcc11 = $npcc;//存值
@@ -14918,7 +14918,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 420) {   //【黑沃土】
         $npcc11 = $npcc;//存值
@@ -14942,7 +14942,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 421) {   //【仙玉露】
         $npcc11 = $npcc;//存值
@@ -14966,7 +14966,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 422) {   //〖小公主の仙竹〗
         $npcc11 = $npcc;//存值
@@ -14990,7 +14990,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 423) {   //〖小公主の仙竹〗
         $npcc11 = $npcc;//存值
@@ -15014,7 +15014,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
         }
     } elseif ($npcc == 424) {   //〖南瓜宝箱〗
         $npcc11 = $npcc;//存值
@@ -15058,7 +15058,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要万圣节快乐每样x5</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要万圣节快乐每样x5</p>" . "<br>";
         }
     } elseif ($npcc == 425) {   //〖南瓜宝箱〗
         $npcc11 = $npcc;//存值
@@ -15102,7 +15102,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换需要万圣节快乐每样x5</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换需要万圣节快乐每样x5</p>" . "<br>";
         }
     } elseif ($npcc == 426) {   //【万】
         $npcc11 = $npcc;//存值
@@ -15126,7 +15126,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 427) {   //【圣】
         $npcc11 = $npcc;//存值
@@ -15150,7 +15150,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 428) {   //【节】
         $npcc11 = $npcc;//存值
@@ -15174,7 +15174,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 429) {   //【快】
         $npcc11 = $npcc;//存值
@@ -15198,7 +15198,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 430) {   //【乐】
         $npcc11 = $npcc;//存值
@@ -15222,7 +15222,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 431) {   //【万】
         $npcc11 = $npcc;//存值
@@ -15246,7 +15246,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 432) {   //【圣】
         $npcc11 = $npcc;//存值
@@ -15270,7 +15270,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 433) {   //【节】
         $npcc11 = $npcc;//存值
@@ -15294,7 +15294,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 434) {   //【快】
         $npcc11 = $npcc;//存值
@@ -15318,7 +15318,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 435) {   //【乐】
         $npcc11 = $npcc;//存值
@@ -15342,7 +15342,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 436) {   //【乐】
         $npcc11 = $npcc;//存值
@@ -15366,7 +15366,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 437) {   //【乐】
         $npcc11 = $npcc;//存值
@@ -15390,7 +15390,7 @@ if ($zsspd == 1) {
 //物品加
             include("./rwmap/rwget.php");
         } else {
-            echo "<font color=black>对不起！！兑换〖万圣节万能字〗不足</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！兑换〖万圣节万能字〗不足</p>" . "<br>";
         }
     } elseif ($npcc == 438) {//感恩节兑换
         $npcc11 = $npcc;//存值
@@ -15433,10 +15433,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . $wpdz1[4] . "x" . $wpdz4[4] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . $wpdz1[4] . "x" . $wpdz4[4] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 439) {//感恩节兑换
@@ -15480,10 +15480,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . $wpdz1[4] . "x" . $wpdz4[4] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . $wpdz1[4] . "x" . $wpdz4[4] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 440) {//感恩节兑换
@@ -15527,10 +15527,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . $wpdz1[4] . "x" . $wpdz4[4] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . $wpdz1[1] . "x" . $wpdz4[1] . $wpdz1[2] . "x" . $wpdz4[2] . $wpdz1[3] . "x" . $wpdz4[3] . $wpdz1[4] . "x" . $wpdz4[4] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 441) {//感恩节兑换
@@ -15554,10 +15554,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 442) {//感恩节兑换
@@ -15581,10 +15581,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 443) {//感恩节兑换
@@ -15608,10 +15608,10 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 444) {//〖1元奖券〗
@@ -15635,14 +15635,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得了" . $wpdz1[0] . "美滋滋~~~伤不起~~伤不起~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 445) {//〖5元奖券〗
@@ -15666,14 +15666,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得了" . $wpdz1[0] . "美滋滋~~~伤不起~~伤不起~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 446) {//〖10矿金券〗
@@ -15697,14 +15697,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得了" . $wpdz1[0] . "美滋滋~~~伤不起~~伤不起~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 447) {//〖20元奖券〗
@@ -15728,14 +15728,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得了" . $wpdz1[0] . "美滋滋~~~伤不起~~伤不起~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 448) {//〖50元奖券〗
@@ -15759,14 +15759,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得了" . $wpdz1[0] . "美滋滋~~~伤不起~~伤不起~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 449) {//〖100元奖券〗
@@ -15790,14 +15790,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得了" . $wpdz1[0] . "美滋滋~~~伤不起~~伤不起~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 450) {//
@@ -15821,14 +15821,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 451) {//
@@ -15852,14 +15852,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 452) {//
@@ -15883,14 +15883,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 453) {//
@@ -15914,14 +15914,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 454) {//
@@ -15945,14 +15945,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 455) {//
@@ -15976,14 +15976,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 456) {//
@@ -16007,14 +16007,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 457) {//
@@ -16038,14 +16038,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 458) {//
@@ -16069,14 +16069,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     } elseif ($npcc == 459) {//
@@ -16100,14 +16100,14 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=red>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             echo "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "获得:" . $wpdz1[0] . "x" . $wpdz4[0] . "美滋滋~~~";
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</font><br>";
+            echo "<p style='color: black'>对不起！需要" . $wpdz1[0] . "x" . $wpdz4[0] . "</p><br>";
             echo "<br>";
         }
     }
@@ -16116,8 +16116,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

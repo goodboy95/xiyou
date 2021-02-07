@@ -17,7 +17,7 @@ include("./ini/all_lock.php");
 if($zsspd==1&&$all_lock2==1){
 
 
-echo "<font color=red>【天降财神】（统计）已清零</font>"."<br>";
+echo "<p style='color: red'>【天降财神】（统计）已清零</p>"."<br>";
 include("./sql/mysql.php");//调用数据库连接 
 include("./ini/moneyjc_ini.php");
 $iniFile->updItem('财神币总和', ['初始' => 0]);
@@ -32,14 +32,14 @@ $result = mysqli_query($conn, $strsql);
 
 
 echo "<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=53'><font color=blue>【返回上级】</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=53'><p style='color: blue'>【返回上级】</p></a>"."<br>";
 
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjiddd=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjiddd=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 

@@ -22,14 +22,14 @@ $mqlc=($iniFile->getItem('所处楼层','初始'));
 
 if($mqlc==10||$mqlc==20||$mqlc==50||$mqlc==60||$mqlc==80||$mqlc==100||$mqlc==150||$mqlc==200||$mqlc==300||$mqlc==400||$mqlc==500||$mqlc==600||$mqlc==700
 ||$mqlc==800||$mqlc==900||$mqlc==1000){
-echo "<font color=red>恭喜你！！爬上了第".$mqlc."楼（有楼层奖励）</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！爬上了第".$mqlc."楼（有楼层奖励）</p>"."<br>";
 	
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."在【幸运大富翁】爬上了第".$mqlc."楼！！";
 include("./msg/msgg02.php");
 } else{
-echo "<font color=red>恭喜你！！领取了第".$mqlc."楼奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！领取了第".$mqlc."楼奖励</p>"."<br>";
 
 $bz= rand(1,100000000);
 $yl1=$bz;
@@ -51,7 +51,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=626;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【继续】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【继续】</p></a>"."<br>";
 
 echo "<br>";
 
@@ -60,14 +60,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【放弃爬楼】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【放弃爬楼】</p></a>"."<br>";
 
 
 
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

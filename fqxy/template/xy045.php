@@ -16,7 +16,7 @@ if ($zsspd == 1) {
     $ik = 0;
 
     if ($m >= 1) {
-        echo "<font color=black>我的【主线任务】</font>" . "<br>";
+        echo "<p style='color: black'>我的【主线任务】</p>" . "<br>";
 
         foreach (array_keys($rwid) as $key) {
             $keyrwid[] = $rwid[$key];
@@ -38,38 +38,38 @@ if ($zsspd == 1) {
 
                 $rwstr = $keyrwid[$i] . "_" . $keyrwfl[$i];
 
-                echo "<font color=black>" . $ik . ".</font>";
+                echo "<p style='color: black'>" . $ik . ".</p>";
                 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 49;
                 $npc[] = $rwstr;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>" . $keyrwmz[$i] . "</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $keyrwmz[$i] . "</p></a>" . "<br>";
             }
         }
 
     } else {
-        echo "<font color=black>暂时还未接受任何主线任务</font>" . "<br>";
+        echo "<p style='color: black'>暂时还未接受任何主线任务</p>" . "<br>";
 
     }
 
-    echo "<font color=black>----------</font>" . "<br>";
+    echo "<p style='color: black'>----------</p>" . "<br>";
 
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 44;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回任务分类</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回任务分类</p></a>" . "<br>";
     echo "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
     //cmd及超链接值
     include("fhgame.php");
 

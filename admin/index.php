@@ -47,27 +47,27 @@ include("../url/url.php");
 
 
 
-echo "<font color=red>【请选择你需要要管理的项目】</font>"."<br>";
+echo "<p style='color: red'>【请选择你需要要管理的项目】</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/gm01.php?wjid=$wjid&&pass=$password><font color=blue>社区管理（总站）</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/gm01.php?wjid=$wjid&&pass=$password><p style='color: blue'>社区管理（总站）</p></a>"."<br>";
 echo "<br>";
 $qy=1;
 include("../url/yxurl.php");
-echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><font color=blue>1.公测一区西游管理（1区）</font></a>"."<br>";
+echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><p style='color: blue'>1.公测一区西游管理（1区）</p></a>"."<br>";
 echo "<br>";
 $qy=2;
 include("../url/yxurl.php");
-echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><font color=blue>2.花果山西游管理（2区）</font></a>"."<br>";
+echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><p style='color: blue'>2.花果山西游管理（2区）</p></a>"."<br>";
 echo "<br>";
 $qy=3;
 include("../url/yxurl.php");
-echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><font color=blue>3.水帘洞西游管理（3区）</font></a>"."<br>";
+echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><p style='color: blue'>3.水帘洞西游管理（3区）</p></a>"."<br>";
 
 echo "<br>";
 $qy=4;
 include("../url/yxurl.php");
-echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><font color=blue>4.乌鸡国西游管理（4区）</font></a>"."<br>";
+echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><p style='color: blue'>4.乌鸡国西游管理（4区）</p></a>"."<br>";
 
 
 
@@ -77,12 +77,12 @@ echo "<a href=http://".$url."/fqxy/gm.php?wjid=$wjid&&pass=$password&&gid=1><fon
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 
 ?>

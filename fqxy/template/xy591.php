@@ -6,7 +6,7 @@ include("./ini/zsini.php");
 if($zsspd==1){
 
 $xpid=$npcc;
-echo"<font color=black>请放入你需要进星盘的物品</font></a>"."<br>";
+echo"<p style='color: black'>请放入你需要进星盘的物品</p></a>"."<br>";
 
 
 
@@ -104,7 +104,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=592;
 $npc[]=$str;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>"."<font color=blue>x$cl</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>"."<p style='color: blue'>x$cl</p>"."<br>";
 
 }
 
@@ -112,14 +112,14 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</f
 
 
 } else{
-echo "<font color=red>你没有可放入星盘的物品</font>"."<br>";
+echo "<p style='color: red'>你没有可放入星盘的物品</p>"."<br>";
 } 
 
 
 
 
 } else{
-echo "<font color=black>物品错位（联系GM修复）</font>"."<br>";
+echo "<p style='color: black'>物品错位（联系GM修复）</p>"."<br>";
 } 
 
 
@@ -133,7 +133,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=589;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -142,7 +142,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

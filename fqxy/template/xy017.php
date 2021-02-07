@@ -53,7 +53,7 @@ $jnidd=$npcc;
 include("./wp/jnxx.php");
 $iniFile->updItem('快捷名字', [$szmz => $jnmz]);
 
-echo "<font color=black>成功将".$szmz."设置为了".$jnmz."</font>"."<br>";
+echo "<p style='color: black'>成功将".$szmz."设置为了".$jnmz."</p>"."<br>";
 
 include("template/xy014.php");
 //不走xy.php直接调用xy文件需要加pz01配置

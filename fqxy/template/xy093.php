@@ -55,37 +55,37 @@ $nowtime=date('Y-m-d H:i:s');
 if($viptime >$nowtime){
 $vipkg=($iniFile->getItem('尊贵vip开关','1'));
 if($vipkg==2){
-echo "<font color=black>尊享：</font>";
+echo "<p style='color: black'>尊享：</p>";
 $img='pic/vip/zgvip.gif';
 echo '<img src="'.$img.' "alt="图片"/>';
 echo "<br>";	
 echo "<br>";
 } else{	
-echo "<font color=black>尊享：无</font>"."<br>";
+echo "<p style='color: black'>尊享：无</p>"."<br>";
 }
 } else{	
-echo "<font color=black>尊享：无</font>"."<br>";
+echo "<p style='color: black'>尊享：无</p>"."<br>";
 }
 
 if($cklh >=1&&$cklh<=9999999){
 
 
-echo "<font color=black>ID：</font>";
+echo "<p style='color: black'>ID：</p>";
 $img='pic/txpic/lh.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 if($cklh ==1){
-echo "<font color=red>【ʚ？？？ɞ】</font><br>";	
+echo "<p style='color: red'>【ʚ？？？ɞ】</p><br>";
 } else{	
-echo "<font color=red>【".$cklh."】</font><br>";	
+echo "<p style='color: red'>【".$cklh."】</p><br>";
 }
 
 } else{
 
 
 
-echo "<font color=black>ID：".$ckid."</font><br>";
+echo "<p style='color: black'>ID：".$ckid."</p><br>";
 echo "<br>";
 }
 
@@ -203,7 +203,7 @@ $em="【神档杀神~佛档杀佛】"."(".$wjxx['恶名值']."点)";
 	
 $em="【与世无争】"."(".$wjxx['恶名值']."点)";	
 } 
-echo "<font color=red>恶名：".$em."</font><br>";
+echo "<p style='color: red'>恶名：".$em."</p><br>";
 
 
 //cmd及超链接值
@@ -212,27 +212,27 @@ $cdid[]=$cmid;
 $clj[]=522;
 $npc[]=$ckid;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>PK对方</font></a><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>PK对方</p></a><br>";
 
 
 if($xsch==2){
-echo "<font color=black>头衔：".$txmzs."</font><br>";
+echo "<p style='color: black'>头衔：".$txmzs."</p><br>";
 } else{
-echo "<font color=black>头衔：暂无</font><br>";
+echo "<p style='color: black'>头衔：暂无</p><br>";
 }
-echo "<font color=black>昵称：".$ckname."</font><br>";
+echo "<p style='color: black'>昵称：".$ckname."</p><br>";
 if($cksex==1){
-echo "<font color=black>性别：男</font><br>";
+echo "<p style='color: black'>性别：男</p><br>";
 } elseif ($cksex==2){
-echo "<font color=black>性别：女</font><br>";
+echo "<p style='color: black'>性别：女</p><br>";
 } else{
-echo "<font color=black>性别：人妖</font><br>";
+echo "<p style='color: black'>性别：人妖</p><br>";
 }
 
 if($ckpoid>=10000000){
-echo "<font color=black>配偶：</font>".$ckponame."<br>";
+echo "<p style='color: black'>配偶：</p>".$ckponame."<br>";
 } else{
-echo "<font color=black>配偶：暂无</font><br>";	
+echo "<p style='color: black'>配偶：暂无</p><br>";
 } 
 
 
@@ -246,15 +246,15 @@ $zz="官宅";
 } else{
 $zz="住宅";
 }
-echo "<font color=black>".$zz."：</font>".$ckzzmz."<br>";
+echo "<p style='color: black'>".$zz."：</p>".$ckzzmz."<br>";
 } else{
-echo "<font color=black>住宅：暂无</font><br>";	
+echo "<p style='color: black'>住宅：暂无</p><br>";
 } 
 
 if($ckbpid>=1){
-echo "<font color=black>国家：</font>".$ckbpmz."<br>";
+echo "<p style='color: black'>国家：</p>".$ckbpmz."<br>";
 } else{
-echo "<font color=black>国家：无</font><br>";
+echo "<p style='color: black'>国家：无</p><br>";
 }
 if($ckmpp>=1){
 if($ckmpp==1){
@@ -273,10 +273,10 @@ $menp="无门派";
 
 }
 	
-echo "<font color=black>门派：</font>".$menp."<br>";
+echo "<p style='color: black'>门派：</p>".$menp."<br>";
 
 } else{
-echo "<font color=black>门派：无门派</font><br>";
+echo "<p style='color: black'>门派：无门派</p><br>";
 
 }
 
@@ -285,18 +285,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=537;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【赠银】</font></a>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【赠银】</p></a>";
+echo "<p style='color: black'>◎</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=538;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【赠物】</font></a><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【赠物】</p></a><br>";
 
-//echo "<font color=black>【赠物】</font>"."<br>";
-echo "<font color=black>☆☆☆☆☆☆☆☆</font>"."<br>";
+//echo "<p style='color: black'>【赠物】</p>"."<br>";
+echo "<p style='color: black'>☆☆☆☆☆☆☆☆</p>"."<br>";
 
 
 
@@ -308,23 +308,23 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=226;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>挂售</font></a>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>挂售</p></a>";
+echo "<p style='color: black'>◎</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=97;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>私聊</font></a>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>私聊</p></a>";
+echo "<p style='color: black'>◎</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=98;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>组队</font></a><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>组队</p></a><br>";
 
 
 
@@ -333,21 +333,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=104;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>拉黑</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>拉黑</p></a>";
 
 
 
 
 
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>◎</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=100;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>加友</font></a>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>加友</p></a>";
+echo "<p style='color: black'>◎</p>";
 
 
 
@@ -359,7 +359,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=94;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>看装</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>看装</p></a>"."<br>";
 
 
 
@@ -370,24 +370,24 @@ $cdid[]=$cmid;
 $clj[]=96;
 $npc[]=$ckid;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>状态</font></a>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>状态</p></a>";
+echo "<p style='color: black'>◎</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=105;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>宠物</font></a>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>宠物</p></a>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=106;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>宝宝</font></a><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>宝宝</p></a><br>";
 
-echo "<font color=black>☆☆☆☆☆☆☆☆</font>"."<br>";
+echo "<p style='color: black'>☆☆☆☆☆☆☆☆</p>"."<br>";
 
 
 
@@ -397,7 +397,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=103;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>邀请入国</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>邀请入国</p></a>"."<br>";
 
 echo "<br>";
 
@@ -407,9 +407,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

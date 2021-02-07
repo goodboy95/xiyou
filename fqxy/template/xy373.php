@@ -42,9 +42,9 @@ include("./ini/cw_ini.php");
 $cwmz1=($iniFile->getItem('宠物原始名字',$cwidx));
 $cwmz2=($iniFile->getItem('宠物名字',$cwidx));
 if($cwmz2!=""){
-echo "<font color=red>".$cwmz1."（".$cwmz2."）穿戴上了".$zbmz."！！</font>"."<br>";
+echo "<p style='color: red'>".$cwmz1."（".$cwmz2."）穿戴上了".$zbmz."！！</p>"."<br>";
 } else{	
-echo "<font color=red>".$cwmz1."穿戴上了".$zbmz."！！</font>"."<br>";
+echo "<p style='color: red'>".$cwmz1."穿戴上了".$zbmz."！！</p>"."<br>";
 }
 
 
@@ -123,7 +123,7 @@ include("./pz/pz01.php");
 
 
 } else{	
-echo "<font color=red>穿戴宠物装备有误！！请联系GM解决此问题</font>"."<br>";
+echo "<p style='color: red'>穿戴宠物装备有误！！请联系GM解决此问题</p>"."<br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -131,7 +131,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 }
 
 

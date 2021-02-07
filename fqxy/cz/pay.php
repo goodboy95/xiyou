@@ -163,8 +163,8 @@ border: 1px solid #ED6603;
 ini_set("error_reporting","E_ALL & ~E_NOTICE");//防止报错代码
 ini_set("date.timezone","PRC");//时间效准代码
 
-$zcxx="<font color=red>客服QQ：137154720（支付不到账时联系）</font>"."<br>";
-$zcxx1="<font color=red>提示：如需直接一键启动支付宝付款，请不要使用自动，五滴等外挂浏览器建议用正规手机浏览器</font>"."<br>";
+$zcxx="<p style='color: red'>客服QQ：137154720（支付不到账时联系）</p>"."<br>";
+$zcxx1="<p style='color: red'>提示：如需直接一键启动支付宝付款，请不要使用自动，五滴等外挂浏览器建议用正规手机浏览器</p>"."<br>";
 
 ?>
 
@@ -362,7 +362,7 @@ $sid=$_GET['sid'];
 ?>
  <?
 include("../url/url.php");
-echo "<a href=http://".$url."/fqxy/xy.php?uid=$wjid&&cmd=2&&sid=$sid><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href=http://".$url."/fqxy/xy.php?uid=$wjid&&cmd=2&&sid=$sid><p style='color: blue'>返回游戏</p></a>"."<br>";
 ?>
 
 

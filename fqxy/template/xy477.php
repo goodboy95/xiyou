@@ -13,8 +13,8 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=477;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>称号</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>称号</p></a>";
+echo "<p style='color: black'>|</p>";
 
 
 //cmd及超链接值
@@ -22,22 +22,22 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=656;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>半周年称号</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>半周年称号</p></a>";
+echo "<p style='color: black'>|</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=666;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>重阳活动称号</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>重阳活动称号</p></a>";
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=673;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>万圣节活动称号</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>万圣节活动称号</p></a>"."<br>";
 
 
 
@@ -90,7 +90,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=479;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下一页</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下一页</p></a>"."<br>";
 
 
 echo "<br>";
@@ -111,7 +111,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我的状态</p></a>"."<br>";
 
 
 

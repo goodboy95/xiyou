@@ -14,8 +14,8 @@ $rcrwbl=($iniFile->getItem('任务变量',$rwstr));
 $rw5=$rwfl;
 $rw1=$rwidd;
 if ($rcrwbl==1) {
-echo "<font color=black>是这样的我们女儿国需要一大批材料需要用于国家建设！你去找一些来吧！！拜托了</font>"."<br>";
-echo "<font color=black>野兔（掉落：兔毛）</font>"."<br>";
+echo "<p style='color: black'>是这样的我们女儿国需要一大批材料需要用于国家建设！你去找一些来吧！！拜托了</p>"."<br>";
+echo "<p style='color: black'>野兔（掉落：兔毛）</p>"."<br>";
 //任务进程改变
 $rwjc1=2;//任务进程id
 $rwjc2=0;//任务已杀怪
@@ -42,7 +42,7 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 if ($pd==2) {
-echo "<font color=black>年纪轻轻既然如此了得，果然不负众望啊！</font>"."<br>";
+echo "<p style='color: black'>年纪轻轻既然如此了得，果然不负众望啊！</p>"."<br>";
 //银两加
 $yl1=400000;
 $wwpsl=$yl1; 
@@ -80,13 +80,13 @@ $result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动次数', [$hdid => $hdcs]);	
 } else{
-echo "<font color=black>是这样的我们女儿国需要一大批材料需要用于国家建设！你去找一些来吧！！拜托了</font>"."<br>";
+echo "<p style='color: black'>是这样的我们女儿国需要一大批材料需要用于国家建设！你去找一些来吧！！拜托了</p>"."<br>";
 //快速任务
 $ydx=16;//移动坐标x
 $ydy=12;//移动坐标y
 $ydfy=100;//传送费用	
 include("./rw/ksrw.php");	
-echo "<font color=black>需要兔毛x10，快去吧！</font>"."<br>";
+echo "<p style='color: black'>需要兔毛x10，快去吧！</p>"."<br>";
 }
 
 
@@ -94,7 +94,7 @@ echo "<font color=black>需要兔毛x10，快去吧！</font>"."<br>";
 
 
 } else{	
-echo "<font color=red>对不起！请联系小轩GM处理</font></br>"; 	
+echo "<p style='color: red'>对不起！请联系小轩GM处理</p></br>";
 
 }
 

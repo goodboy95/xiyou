@@ -157,13 +157,13 @@ $ltmax=$ltmin1-1+$ltsl;
 
 
 
-echo "<font color=black>私聊频道</font></a>";
+echo "<p style='color: black'>私聊频道</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=24;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新信息</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新信息</p></a>"."<br>";
 
 
 if($m >=1){
@@ -180,7 +180,7 @@ $pxwjname[]=$keyltwjname[$ltmax];
 $pxwjtake[]=$keyltwjtake[$ltmax];
 $pxwjvip[]=$keyltwjvip[$ltmax];
 
-echo "<font color=black>['私聊']</font></a>";
+echo "<p style='color: black'>['私聊']</p></a>";
 
 
 $img='pic/vip/'."vip".$pxwjvip[$i].'.png';
@@ -188,7 +188,7 @@ echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 if($wjid==$pxwjid[$i]){
 
-echo "<font color=black>".$pxwjname[$i]."</font>";
+echo "<p style='color: black'>".$pxwjname[$i]."</p>";
 
 } else{
 
@@ -197,20 +197,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$pxwjid[$i];
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$pxwjname[$i]."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$pxwjname[$i]."</p></a>";
 
 }
 
-echo "<font color=black>对你说：".$pxwjtake[$i]."</font><br>";
+echo "<p style='color: black'>对你说：".$pxwjtake[$i]."</p><br>";
 
 
 $ltmax=$ltmax-1;
 }
 	} else{	
 	echo "<br>";	
-	echo "<font color=red>小轩Say：私聊世界还很清静！！</font><br>";	
+	echo "<p style='color: red'>小轩Say：私聊世界还很清静！！</p><br>";
 		echo "<br>";	
-	echo "<font color=red>没有了爱也没有了烦恼！！</font><br>";	
+	echo "<p style='color: red'>没有了爱也没有了烦恼！！</p><br>";
 	echo "<br>";	
 		
 		
@@ -224,20 +224,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=40;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>首页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>首页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=39;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上页</p></a>";
 
 $f=1;
 
 }
 $mcc=$m/10;
 if($f>0&&$mcc>$ltymid){
-echo  "<font color=blue>|</font></a>";
+echo  "<p style='color: blue'>|</p></a>";
 }
 
 
@@ -250,15 +250,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=38;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=41;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>末页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>末页</p></a>";
 $f=1;
 }
 
@@ -280,32 +280,32 @@ echo "<br>";
 
 
 
-echo "<font color=black>-----------</font></a>"."<br>";
+echo "<p style='color: black'>-----------</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=21;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>公共</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>公共</p></a>";
 
-echo "<font color=black>|</font></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=22;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>组队</font></a>";
-echo "<font color=black>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>组队</p></a>";
+echo "<p style='color: black'>|</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=23;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>国家</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>国家</p></a>";
 
-echo "<font color=black>|</font></a>";
+echo "<p style='color: black'>|</p></a>";
 
-echo "<font color=black>私聊</font></a>"."<br>";
+echo "<p style='color: black'>私聊</p></a>"."<br>";
 
 
 //cmd及超链接值
@@ -313,12 +313,12 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 
-echo "<font color=black>----------------------</font></a>"."<br>";
+echo "<p style='color: black'>----------------------</p></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

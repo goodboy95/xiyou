@@ -27,7 +27,7 @@ if ($zsspd == 1) {
     } elseif ($rw5 == 4) {
         include("./rwxx/hdrwxx.php");//活动
     } else {
-        echo "<font color=black>没有这个任务分类编号" . $rw5 . "请尝试联系gm解决此问题！！</font><br>";
+        echo "<p style='color: black'>没有这个任务分类编号" . $rw5 . "请尝试联系gm解决此问题！！</p><br>";
     }
 
     //cmd及超链接值
@@ -35,7 +35,7 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 44;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回任务分类</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回任务分类</p></a>" . "<br>";
     echo "----------------------" . "<br>";
 
 
@@ -45,9 +45,9 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 

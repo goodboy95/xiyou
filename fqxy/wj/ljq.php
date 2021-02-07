@@ -105,19 +105,19 @@ if($wpmz=="银两"){
 //数字转汉字
 $yl=$wpkc;
 include("./pz/ylts.php");
-$manzu1=$manzu1."<font color=black>失去：".$ylxx."银两</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$ylxx."银两</p>"."<br>";
 $kcyl01=$wpkc;
 include("./pz/ini_pzz012.php");//扣除
 } elseif($wpmz =="声望"){
 //数字转汉字
 $yl=$wpkc;
 include("./pz/ylts.php");
-$manzu1=$manzu1."<font color=black>失去：".$ylxx.$swmz."</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$ylxx.$swmz."</p>"."<br>";
 $kcyl01=$wpkc;
 include("./pz/ini_pzz015.php");//扣除
 
 } else{
-$manzu1=$manzu1."<font color=black>失去：".$wpmz."x".$wpkc."</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$wpmz."x".$wpkc."</p>"."<br>";
 include("./pz/ini_pz01.php");//缓存位置
 include("./pz/ini_pzz04.php");//扣除
 } 
@@ -155,7 +155,7 @@ $result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $viplj=2;
-echo "<font color=red>你来到了vip练级区域！！获得30钟练级特权</font></br>"; 
+echo "<p style='color: red'>你来到了vip练级区域！！获得30钟练级特权</p></br>";
 } else{	
 $viplj=1;
 } 
@@ -171,7 +171,7 @@ echo $manzu1;
 $viplj=1;
 $bumanzu="对不起！进入vip练级区需要：".$wpts;//不满足提示语	
 //	输出不满足提示语言
-echo "<font color=red>".$bumanzu."</font>"."<br>";
+echo "<p style='color: red'>".$bumanzu."</p>"."<br>";
 }
 
 

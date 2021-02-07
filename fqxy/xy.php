@@ -18,6 +18,9 @@ header("Content-type: text/html; charset=utf-8");
 <body>
 <div style='width: device-width;display:block;word-break: break-all;word-wrap: break-word;'>
     <style>
+        p {
+            display: inline;
+        }
         #search {
             width: 235px;
             height: 32px;
@@ -69,7 +72,6 @@ header("Content-type: text/html; charset=utf-8");
         //创建文件
         file_put_contents($file, $ip1);
     }
-    //sleep(1);
     //初始化变量以及接收传过来的数据
     $a1 = "";
     $a2 = "";
@@ -131,7 +133,6 @@ header("Content-type: text/html; charset=utf-8");
                         if ($cljid == 3 || $cljid == 4 || $cljid == 5 || $cljid == 6) {
                             $cljid = 2;
                             $iniFile->updItem('验证信息', ['cmid值' => $cljid]);
-                        } else {
                         }
                         # 获取一个分类下某个子项的值
                         $npcc = ($iniFile->getItem('最后页面id', 'npcid'));
@@ -144,8 +145,6 @@ header("Content-type: text/html; charset=utf-8");
                 }
                 # 获取一个分类下所有数据
                 $user = ($iniFile->getCategory('验证信息'));
-                // $xyid = "";
-                // $xyid = $user['uid'];
                 $tzm = $user['玩家游戏码'];
                 $b1 = $user['年'];
                 $b2 = $user['月'];
@@ -174,8 +173,7 @@ header("Content-type: text/html; charset=utf-8");
                 exit;
             }
             //判断特征码是否合法 后面那一串验证数字hash
-            if ($tzm == $a1) {
-            } else {
+            if ($tzm != $a1) {
                 echo '#2';
                 include("sx.php");
                 exit;
@@ -225,7 +223,6 @@ header("Content-type: text/html; charset=utf-8");
                     $iniFile->updItem('验证信息', ['cmid值' => $cmdd]);
                 }
             }
-            //$wordpost =1;
             //////////////////////////////////////////////////数据结构///////////////////////////////////////
             //调用user.ini是否存在
             include("./ini/user_ini.php");
@@ -282,7 +279,6 @@ header("Content-type: text/html; charset=utf-8");
             }
             if ($wjid == 10000001) {
                 echo "当前页面id(cmid值/$cmdd)：" . $cmdd . "<br>";
-            } else {
             }
             //路径
             $path = 'ache/' . $wjid;
@@ -342,7 +338,7 @@ header("Content-type: text/html; charset=utf-8");
             $etime = microtime(true);
             $total = $etime - $stime;
             $total = substr($total, 0, 5) * 1000;
-            echo "<font color=red>【小轩专属】执行耗时:" . $total . "毫秒</font>" . "<br>";
+            echo "<p style='color: red'>【小轩专属】执行耗时:" . $total . "毫秒</p>" . "<br>";
             //显示时间
             $h = date('H') * 1;
             $i = date('i') * 1;
@@ -380,10 +376,10 @@ header("Content-type: text/html; charset=utf-8");
         # 获取一个分类下某个子项的值
         $symid = ($iniFile->getItem('验证信息', 'cmid值'));
         if ($wjid == 10000001) {//gm号可看
-            echo "<font color=red>----------调试信息-----------</font>" . "<br>";
-            echo "<font color=black>上次页面ID(最后页面id-页面id)：" . $yymid . "</font>" . "<br>";
-            echo "<font color=black>本次页面ID(cmid值)：" . $symid . "</font>" . "<br>";
-            echo "<font color=red>----------调试信息-----------</font>" . "<br>";
+            echo "<p style='color: red'>----------调试信息-----------</p>" . "<br>";
+            echo "<p style='color: black'>上次页面ID(最后页面id-页面id)：" . $yymid . "</p>" . "<br>";
+            echo "<p style='color: black'>本次页面ID(cmid值)：" . $symid . "</p>" . "<br>";
+            echo "<p style='color: red'>----------调试信息-----------</p>" . "<br>";
         }
     } else {
         echo '#5';

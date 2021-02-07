@@ -3,7 +3,7 @@
 include("./time/bhmjtime.php");
 $date = date("H:i:s");
 if ($date > $time1 && $date < $time2) {
-    echo "<font color=red>对不起！！【采花大盗】还未结束不能领奖</font>" . "<br>";
+    echo "<p style='color: red'>对不起！！【采花大盗】还未结束不能领奖</p>" . "<br>";
 } else {
 //验证秘境的时间
     include("./ini/bhmj_ini.php");
@@ -82,7 +82,7 @@ if ($date > $time1 && $date < $time2) {
                     $i = $i + 1;
                     $ik = $ik + 1;
                     if ($wjid == $phidd[$i]) {
-                        echo "<font color=red>恭喜你！！领取到了【采花大盗】第" . $ik . "名奖励，请明天继续加油哦~~</font>" . "<br>";
+                        echo "<p style='color: red'>恭喜你！！领取到了【采花大盗】第" . $ik . "名奖励，请明天继续加油哦~~</p>" . "<br>";
                         if ($ik == 1) {
                             $manzu1 = "";
                             //物品加量
@@ -323,20 +323,20 @@ if ($date > $time1 && $date < $time2) {
                         }
                     }
                     if ($ik >= 10) {
-                        echo "<font color=red>对不起！！【采花大盗】活动你在第十名以外</font>" . "<br>";
+                        echo "<p style='color: red'>对不起！！【采花大盗】活动你在第十名以外</p>" . "<br>";
                         break;
                     }
                 }
  
             } else {
-                echo "<font color=red>对不起！！【采花大盗】排名鬼都没有一个</font>" . "<br>";
+                echo "<p style='color: red'>对不起！！【采花大盗】排名鬼都没有一个</p>" . "<br>";
             }
             flock($fp, LOCK_UN);
         } else {
             echo "服务器开小差了";
         }
     } else {
-        echo "<font color=red>对不起！你今日未曾参加过【采花大盗】活动或已领取过奖励了</font></br>";
+        echo "<p style='color: red'>对不起！你今日未曾参加过【采花大盗】活动或已领取过奖励了</p></br>";
     }
 }
 echo "</br>";
@@ -345,5 +345,5 @@ $cmid = $cmid + 1;
 $cdid[] = $cmid;
 $clj[] = 2;
 $npc[] = 0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 ?>

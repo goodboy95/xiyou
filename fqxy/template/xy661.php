@@ -43,10 +43,10 @@ $zzdj=($iniFile->getItem('种植等级','1'));
 $bz= rand(1, 10);
 if($bz>=6){
 $zzdj=$zzdj+1;
-echo "<font color=black>恭喜您！！种植产物升级成功！！</font>"."<br>";
+echo "<p style='color: black'>恭喜您！！种植产物升级成功！！</p>"."<br>";
 } else{
 $zzdj=$zzdj-1;	
-echo "<font color=black>很遗憾！！种植产物升级失败了！！</font>"."<br>";
+echo "<p style='color: black'>很遗憾！！种植产物升级失败了！！</p>"."<br>";
 } 
 if($zzdj<1){
 $zzdj=1;
@@ -64,19 +64,19 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=658;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 } else{
-echo "<font color=black>对不起！！升级需要".$wpdz1[0]."x".$wpdz4[0]."</font>"."<br>";
+echo "<p style='color: black'>对不起！！升级需要".$wpdz1[0]."x".$wpdz4[0]."</p>"."<br>";
 }
 } else{
-echo "<font color=red>土豪大佬膜拜一下~~~种植产物等级已经满了（上限5级）</font>"."<br>";
+echo "<p style='color: red'>土豪大佬膜拜一下~~~种植产物等级已经满了（上限5级）</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=658;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 } 
 
@@ -88,9 +88,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

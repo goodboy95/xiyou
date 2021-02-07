@@ -103,11 +103,11 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=114;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>好友</font></a>";
-echo "<font color=black>|黑名单</font><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>好友</p></a>";
+echo "<p style='color: black'>|黑名单</p><br>";
 
 
-echo "<font color=black>黑名单列表（".$xxh."个）</font><br>";
+echo "<p style='color: black'>黑名单列表（".$xxh."个）</p><br>";
 
 
 
@@ -139,20 +139,20 @@ $svl=$keyhyfl[$i];
 
 if($svl ==2){
 $xxh=$xxh+1;	
-echo "<font color=black>".$xxh.".</font>";	
+echo "<p style='color: black'>".$xxh.".</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$ivd;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$mvz."</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$mvz."</p></a>";
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=117;
 $npc[]=$ivd;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>删除</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>删除</p></a>"."<br>";
 	
 	
 } elseif($svl ==1){
@@ -171,7 +171,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>删除</fo
 }
 
 if($xxh ==0){
-	echo "<font color=black>目前黑名单内还空空如也</font>"."<br>";
+	echo "<p style='color: black'>目前黑名单内还空空如也</p>"."<br>";
 	
 	
 }
@@ -185,9 +185,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

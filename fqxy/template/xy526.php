@@ -14,7 +14,7 @@ if ($zsspd == 1) {
     include("./pz/ini_pzz026.php");
     $npcc = $npcc11;//返还存值
     if ($pd == 2) {
-        echo "<font color=red>我有钱！我任性你来到了长安城~~</font>" . "<br>";
+        echo "<p style='color: red'>我有钱！我任性你来到了长安城~~</p>" . "<br>";
         include("./ini/user_ini.php");
         $iniFile->updItem('地图坐标', ['x' => '1']);
         $iniFile->updItem('地图坐标', ['y' => '0']);
@@ -43,7 +43,7 @@ if ($zsspd == 1) {
         $iniFile->delItem('国家职务名字值' . $dtx . 'x' . $dty, $wjid);
 //清除附近位置
     } else {
-        echo "<font color=black>对不起！！需要1亿银两才可以诱惑到孟婆~~</font>" . "<br>";
+        echo "<p style='color: black'>对不起！！需要1亿银两才可以诱惑到孟婆~~</p>" . "<br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -51,7 +51,7 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<font color=black></font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<p style='color: black'></p>" . "<br>";
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

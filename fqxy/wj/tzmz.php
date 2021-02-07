@@ -36,34 +36,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 5;//套装id
-    echo "<font color=red>【幻想套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 6;//套装id
-    echo "<font color=red>【幻想套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 7;//套装id
-    echo "<font color=red>【幻想套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 8;//套装id
-    echo "<font color=red>【幻想套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 9;//套装id
-    echo "<font color=red>【幻想套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -84,34 +84,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 10;//套装id
-    echo "<font color=red>【幻想套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 11;//套装id
-    echo "<font color=red>【幻想套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 12;//套装id
-    echo "<font color=red>【幻想套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 13;//套装id
-    echo "<font color=red>【幻想套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 14;//套装id
-    echo "<font color=red>【幻想套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -132,34 +132,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 15;//套装id
-    echo "<font color=red>【幻想套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 16;//套装id
-    echo "<font color=red>【幻想套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 17;//套装id
-    echo "<font color=red>【幻想套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 18;//套装id
-    echo "<font color=red>【幻想套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 19;//套装id
-    echo "<font color=red>【幻想套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -180,34 +180,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 20;//套装id
-    echo "<font color=red>【幻想套（圣级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（圣级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 21;//套装id
-    echo "<font color=red>【幻想套（圣级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（圣级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 22;//套装id
-    echo "<font color=red>【幻想套（圣级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（圣级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 23;//套装id
-    echo "<font color=red>【幻想套（圣级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（圣级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 24;//套装id
-    echo "<font color=red>【幻想套（圣级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【幻想套（圣级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -228,34 +228,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 25;//套装id
-    echo "<font color=red>【诛仙】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【诛仙】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 26;//套装id
-    echo "<font color=red>【诛仙】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【诛仙】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 27;//套装id
-    echo "<font color=red>【诛仙】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【诛仙】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 28;//套装id
-    echo "<font color=red>【诛仙】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【诛仙】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 29;//套装id
-    echo "<font color=red>【诛仙】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【诛仙】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -276,34 +276,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 30;//套装id
-    echo "<font color=red>【圣灵套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 31;//套装id
-    echo "<font color=red>【圣灵套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 32;//套装id
-    echo "<font color=red>【圣灵套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 33;//套装id
-    echo "<font color=red>【圣灵套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 34;//套装id
-    echo "<font color=red>【圣灵套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -324,34 +324,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 35;//套装id
-    echo "<font color=red>【圣灵套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 36;//套装id
-    echo "<font color=red>【圣灵套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 37;//套装id
-    echo "<font color=red>【圣灵套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 38;//套装id
-    echo "<font color=red>【圣灵套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 39;//套装id
-    echo "<font color=red>【圣灵套（灵级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（灵级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -372,34 +372,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 40;//套装id
-    echo "<font color=red>【圣灵套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 41;//套装id
-    echo "<font color=red>【圣灵套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 42;//套装id
-    echo "<font color=red>【圣灵套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 43;//套装id
-    echo "<font color=red>【圣灵套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 44;//套装id
-    echo "<font color=red>【圣灵套（仙级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（仙级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -420,34 +420,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 45;//套装id
-    echo "<font color=red>【圣灵套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 46;//套装id
-    echo "<font color=red>【圣灵套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 47;//套装id
-    echo "<font color=red>【圣灵套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 48;//套装id
-    echo "<font color=red>【圣灵套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 49;//套装id
-    echo "<font color=red>【圣灵套（神级）】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵套（神级）】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -468,34 +468,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 50;//套装id
-    echo "<font color=red>【圣灵☯天元套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵☯天元套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 51;//套装id
-    echo "<font color=red>【圣灵☯天元套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵☯天元套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 52;//套装id
-    echo "<font color=red>【圣灵☯天元套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵☯天元套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 53;//套装id
-    echo "<font color=red>【圣灵☯天元套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵☯天元套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 54;//套装id
-    echo "<font color=red>【圣灵☯天元套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【圣灵☯天元套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -516,34 +516,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 59;//套装id
-    echo "<font color=red>【噬魂套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【噬魂套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 60;//套装id
-    echo "<font color=red>【噬魂套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【噬魂套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 61;//套装id
-    echo "<font color=red>【噬魂套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【噬魂套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 62;//套装id
-    echo "<font color=red>【噬魂套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【噬魂套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 63;//套装id
-    echo "<font color=red>【噬魂套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【噬魂套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -564,34 +564,34 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 66;//套装id
-    echo "<font color=red>【帝王套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【帝王套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 3) {
     $tzid = 67;//套装id
-    echo "<font color=red>【帝王套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【帝王套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 4) {
     $tzid = 68;//套装id
-    echo "<font color=red>【帝王套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【帝王套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 5) {
     $tzid = 69;//套装id
-    echo "<font color=red>【帝王套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【帝王套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 } elseif (count($arr3) == 6) {
     $tzid = 70;//套装id
-    echo "<font color=red>【帝王套】(" . count($arr3) . "/6)</font></a>" . "<br>";
+    echo "<p style='color: red'>【帝王套】(" . count($arr3) . "/6)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 ///////////========================================////////////////////
@@ -605,10 +605,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 1;//套装id
-    echo "<font color=red>【心心】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【心心】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -621,10 +621,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 2;//套装id
-    echo "<font color=red>【灵犀】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【灵犀】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -637,10 +637,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 3;//套装id
-    echo "<font color=red>【海誓】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【海誓】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -653,10 +653,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 4;//套装id
-    echo "<font color=red>【比翼】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【比翼】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -669,10 +669,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 1;//套装id
-    echo "<font color=red>【心心】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【心心】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -685,10 +685,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 55;//套装id
-    echo "<font color=red>【海枯】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【海枯】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -701,10 +701,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 56;//套装id
-    echo "<font color=red>【天作】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【天作】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -717,10 +717,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 57;//套装id
-    echo "<font color=red>【一生所爱】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【一生所爱】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -733,10 +733,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 58;//套装id
-    echo "<font color=red>【恋人未满】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【恋人未满】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -749,10 +749,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 64;//套装id
-    echo "<font color=red>【缘定今生】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【缘定今生】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -765,10 +765,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 65;//套装id
-    echo "<font color=red>【天赐良缘】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【天赐良缘】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -781,10 +781,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 71;//套装id
-    echo "<font color=red>【天仙之恋】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【天仙之恋】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 /////////套装//////////
@@ -797,10 +797,10 @@ $arr3 = array_intersect($arr1, $arr2);
 if (count($arr3) == 1) {
 } elseif (count($arr3) == 2) {
     $tzid = 72;//套装id
-    echo "<font color=red>【天尊之恋】(" . count($arr3) . "/2)</font></a>" . "<br>";
+    echo "<p style='color: red'>【天尊之恋】(" . count($arr3) . "/2)</p></a>" . "<br>";
     include("./wj/tzmzxx.php");
     include("./wj/tzmzxx01.php");
-    echo "<font color=black>" . $tzms . "</font></a>";
+    echo "<p style='color: black'>" . $tzms . "</p></a>";
 }
 /////////套装//////////
 ?>

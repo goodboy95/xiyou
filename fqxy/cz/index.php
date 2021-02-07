@@ -197,15 +197,15 @@ border: 1px solid #ED6603;
 			
 <?
 
-echo "<font color=black>请选择：</font>";
+echo "<p style='color: black'>请选择：</p>";
 $sid=$_GET['sid'];
-echo "<font color=black>【支付宝】</font>";
+echo "<p style='color: black'>【支付宝】</p>";
 
 
 
-echo "<a href=index1.php?uid=$wjid&&sid=$sid><font color=blue>【微信】</font></a>"."<br>";
-echo "<font color=black>==========</font>"."<br>";
-echo "<font color=red>【支付方式】：已选择【支付宝】</font>"."<br>";
+echo "<a href=index1.php?uid=$wjid&&sid=$sid><p style='color: blue'>【微信】</p></a>"."<br>";
+echo "<p style='color: black'>==========</p>"."<br>";
+echo "<p style='color: red'>【支付方式】：已选择【支付宝】</p>"."<br>";
 
 
 
@@ -263,7 +263,7 @@ include("../url/url.php");
 ?>
  <?
 include("../url/url.php");
-echo "<a href=http://".$url."/fqxy/xy.php?uid=$wjid&&cmd=2&&sid=$sid><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href=http://".$url."/fqxy/xy.php?uid=$wjid&&cmd=2&&sid=$sid><p style='color: blue'>返回游戏</p></a>"."<br>";
 ?>
 
 </div>

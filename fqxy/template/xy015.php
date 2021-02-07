@@ -31,8 +31,8 @@ $iniFile->updItem('快捷设置', ['初始' => $npcc]);
 
 
 
-echo "<font color=black>技能|</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>药品</font></a>"."<br>";
-echo "<font color=black>请选择指定的物品作为快捷键以便在战斗中直接使用</font>"."<br>";
+echo "<p style='color: black'>技能|</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>药品</p></a>"."<br>";
+echo "<p style='color: black'>请选择指定的物品作为快捷键以便在战斗中直接使用</p>"."<br>";
 
 
 include("./ini/jn_ini.php");
@@ -75,18 +75,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=17;
 $npc[]=$xxid;
-echo "<font color=black>".$i.".</font>";
+echo "<p style='color: black'>".$i.".</p>";
 
 
 if($xxid==3||$xxid==15){
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."</font></a>"."</br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."</p></a>"."</br>";
 
 
 
 } else{
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."（".$cldj."级）</font></a>"."</br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."（".$cldj."级）</p></a>"."</br>";
 
 
 
@@ -104,11 +104,11 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname.
 
 
 
-echo "<font color=black>你还没有学会任何技能</font>"."<br>";
+echo "<p style='color: black'>你还没有学会任何技能</p>"."<br>";
 
 }
 
-echo "<font color=black>----------</font>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
 
 
 
@@ -126,7 +126,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$cljpost;
 $npc[]=$pkwjid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 } else{
 
@@ -136,13 +136,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$cljpost;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 }
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

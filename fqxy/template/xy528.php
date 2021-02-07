@@ -51,7 +51,7 @@ include("./pz/ini_pzz023.php");
 	
 	
 	
-echo "<font color=black>〖活动〗潇道长：与我生死兮逢此时，愁为子兮日无光辉，焉得羽翼兮将汝归。</font>"."<br>";
+echo "<p style='color: black'>〖活动〗潇道长：与我生死兮逢此时，愁为子兮日无光辉，焉得羽翼兮将汝归。</p>"."<br>";
 echo "<br>";	
 	
 //cmd及超链接值
@@ -59,17 +59,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>"."<br>";
 }
 } elseif ($npcc==2) {
 	//随机
@@ -82,24 +82,24 @@ include("./pz/ini_pzz023.php");
 
 
 	
-echo "<font color=black>〖活动〗潇道长：京华结交尽奇士，意气相期共生死。</font>"."<br>";
+echo "<p style='color: black'>〖活动〗潇道长：京华结交尽奇士，意气相期共生死。</p>"."<br>";
 echo "<br>";	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>"."<br>";
 }
 	
 	
@@ -117,28 +117,28 @@ include("./pz/ini_pzz023.php");
 	
 	
 	
-echo "<font color=black>〖活动〗潇道长：知君用心如明月，事夫誓拟同生死</font>"."<br>";
+echo "<p style='color: black'>〖活动〗潇道长：知君用心如明月，事夫誓拟同生死</p>"."<br>";
 echo "<br>";	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>"."<br>";
 }
 
 } elseif ($npcc==4) {
-echo "<font color=black>〖活动〗潇道长：生死向前去，不劳吏怒嗔。</font>"."<br>";	
+echo "<p style='color: black'>〖活动〗潇道长：生死向前去，不劳吏怒嗔。</p>"."<br>";
 	
 	//随机
 $bz= rand(1, 100);
@@ -160,21 +160,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>"."<br>";
 }
 
 } elseif ($npcc==5) {
-echo "<font color=black>〖活动〗潇道长：悠悠生死别经年，魂魄不曾来入梦。</font>"."<br>";		
+echo "<p style='color: black'>〖活动〗潇道长：悠悠生死别经年，魂魄不曾来入梦。</p>"."<br>";
 	//随机
 $bz= rand(1, 100);
 if($bz <=50){
@@ -193,21 +193,21 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>"."<br>";
 }
 
 } elseif ($npcc==6) {
-echo "<font color=black>〖活动〗潇道长：还君明珠双泪垂，恨不相逢未嫁时。</font>"."<br>";			
+echo "<p style='color: black'>〖活动〗潇道长：还君明珠双泪垂，恨不相逢未嫁时。</p>"."<br>";
 	//随机
 $bz= rand(1, 100);
 if($bz <=50){
@@ -227,17 +227,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=528;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>"."<br>";
 }
 	
 } elseif ($npcc==7) {
@@ -279,7 +279,7 @@ $xtxx= "恭喜玩家".$wjmz."完成了潇道长破解了生死之谜获得大量
 include("./msg/msgg02.php");
 	
 	
-echo "<font color=red>〖活动〗潇道长：恭喜你~~你顺利的解开了七夕生死之谜</font>"."<br>";		
+echo "<p style='color: red'>〖活动〗潇道长：恭喜你~~你顺利的解开了七夕生死之谜</p>"."<br>";
 	
 	
 	
@@ -327,7 +327,7 @@ echo "<font color=red>〖活动〗潇道长：恭喜你~~你顺利的解开了�
 } else{	
 
 
-echo "<font color=red>〖活动〗潇道长：你今日次数已用完！！</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗潇道长：你今日次数已用完！！</p>"."<br>";
 	
 	
 
@@ -361,9 +361,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

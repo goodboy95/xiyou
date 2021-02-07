@@ -22,12 +22,12 @@ $time3=floor($time1/60);
 
 if($time3 > 0){	
 $second=$time1%60;
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time3."时".$second."分</font>"."<br>";	
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time3."时".$second."分</p>"."<br>";
 } else{
 if($time1 >0){
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time1."分钟后出现</font>"."<br>";	
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time1."分钟后出现</p>"."<br>";
 } else{
-$bossts=$bossts."<font color=red>提示：".$bossmz."还剩".$time2."秒后出现</font>"."<br>";		
+$bossts=$bossts."<p style='color: red'>提示：".$bossmz."还剩".$time2."秒后出现</p>"."<br>";
 } 	
 	
 	
@@ -50,7 +50,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=$bosid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$bossmz."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$bossmz."</p></a>";
 }
 
 

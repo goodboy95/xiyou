@@ -21,7 +21,7 @@ $txid=($iniFile->getItem('头衔名字',$npcc));
  
 if ($txid!="") {
 	$wpsy=1;//使用失败
-	echo "<font color=black>对不起！你已经获得过了".$wpmz."称号了！！</font>"."<br>"; 
+	echo "<p style='color: black'>对不起！你已经获得过了".$wpmz."称号了！！</p>"."<br>";
 
 	} else{
   
@@ -75,7 +75,7 @@ $iniFile->updItem('玩家信息', ['魔攻'  => $maxk,'max魔攻'  => $maxq]);
 
 
 
-echo "<font color=black>恭喜你！获得了".$wpmz."称号！！</font>"."<br>"; 
+echo "<p style='color: black'>恭喜你！获得了".$wpmz."称号！！</p>"."<br>";
 $wpsy=2;//使用成功
 //调用tx.ini是否存在
  include("./ini/tx_ini.php");

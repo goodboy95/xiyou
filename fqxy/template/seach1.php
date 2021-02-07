@@ -30,7 +30,7 @@ if($wpsl==""){
 $wpsl=0;
 }
 
-echo "<font color=black>你要赠送给".$ckname."(".$ckid.")多少".$wpmz."呢？(最多可赠".$wpsl."个)</font><br>";
+echo "<p style='color: black'>你要赠送给".$ckname."(".$ckid.")多少".$wpmz."呢？(最多可赠".$wpsl."个)</p><br>";
 
 
 ?>

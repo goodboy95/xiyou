@@ -48,19 +48,19 @@ if ($zsspd == 1) {
             include("./ini/jcyx_ini.php");
             $jcgm = $jcgm + 1;
             $iniFile->updItem('竞猜购买', ['初始' => $jcgm]);
-            echo "<font color=red>恭喜你！！获得了10次竞猜次数</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你！！获得了10次竞猜次数</p>" . "<br>";
         } else {
-            echo "<font color=red>对不起！！〖紫星币〗不足" . $zxb . "个</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！〖紫星币〗不足" . $zxb . "个</p>" . "<br>";
         }
     } else {
-        echo "<font color=red>对不起！！〖紫星币〗购买竞猜达到10次上限，请明日再来</font>" . "<br>";
+        echo "<p style='color: red'>对不起！！〖紫星币〗购买竞猜达到10次上限，请明日再来</p>" . "<br>";
     }
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 682;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回竞猜</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回竞猜</p></a>" . "<br>";
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

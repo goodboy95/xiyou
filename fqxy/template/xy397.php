@@ -63,7 +63,7 @@ $iniFile->delItem('国家职务名字值'.$dtx.'x'.$dty, $wjid);
 
 
 
-echo "<font color=black>国战已结束，请迅速离开战场</font><br>";
+echo "<p style='color: black'>国战已结束，请迅速离开战场</p><br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -71,7 +71,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 echo "<br>";
 

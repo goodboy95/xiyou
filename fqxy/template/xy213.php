@@ -9,21 +9,21 @@ if($zsspd==1){
 
 if($npcc==1){
 
-echo "<font color=red>你确定要花费10金豆用于兑换〖玄铁令〗吗</font>"."<br>";
+echo "<p style='color: red'>你确定要花费10金豆用于兑换〖玄铁令〗吗</p>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=213;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>确认</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>确认</p></a>";
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取消</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取消</p></a>"."<br/>";
 
 
 
@@ -109,11 +109,11 @@ include("./pz/ini_pzz05.php");
 
 
 
-echo "<font color=red>恭喜你！！获得〖玄铁令〗x1</font>"."<br>";
-echo "<font color=red>失去〖金豆〗x10</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！获得〖玄铁令〗x1</p>"."<br>";
+echo "<p style='color: red'>失去〖金豆〗x10</p>"."<br>";
 
 } else{	
-echo "<font color=red>对不起！！兑换〖玄铁令〗金豆不足</font>"."<br>";
+echo "<p style='color: red'>对不起！！兑换〖玄铁令〗金豆不足</p>"."<br>";
 }
 
 
@@ -126,21 +126,21 @@ echo "<font color=red>对不起！！兑换〖玄铁令〗金豆不足</font>"."
 
 
 
-echo "<font color=red>你确定要花费10金豆用于兑换〖求婚玫瑰〗吗</font>"."<br>";
+echo "<p style='color: red'>你确定要花费10金豆用于兑换〖求婚玫瑰〗吗</p>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=213;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>确认</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>确认</p></a>";
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取消</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取消</p></a>"."<br/>";
 
 
 }elseif($npcc==4){
@@ -206,11 +206,11 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件 
 
-echo "<font color=red>恭喜你！！获得〖求婚玫瑰〗x1</font>"."<br>";
-echo "<font color=red>失去〖金豆〗x10</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！获得〖求婚玫瑰〗x1</p>"."<br>";
+echo "<p style='color: red'>失去〖金豆〗x10</p>"."<br>";
 
 } else{	
-echo "<font color=red>对不起！！兑换〖求婚玫瑰〗金豆不足</font>"."<br>";
+echo "<p style='color: red'>对不起！！兑换〖求婚玫瑰〗金豆不足</p>"."<br>";
 }
 
 
@@ -239,7 +239,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br/>";
 
 
 }

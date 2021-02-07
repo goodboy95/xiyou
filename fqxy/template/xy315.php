@@ -28,13 +28,13 @@ if ($zsspd == 1) {
             if ($czsx >= $czcs + 1) {
                 $fbcz1 = 2;
             } else {
-                echo "<font color=black>对不起！！" . $fbmz . "今日重置次数已达到" . $czcs . "次上限！提升vip等级可获得更多重置副本次数</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！" . $fbmz . "今日重置次数已达到" . $czcs . "次上限！提升vip等级可获得更多重置副本次数</p>" . "<br>";
             }
         } else {
-            echo "<font color=black>对不起！！" . $fbmz . "还未完成！无需重置它</font>" . "<br>";
+            echo "<p style='color: black'>对不起！！" . $fbmz . "还未完成！无需重置它</p>" . "<br>";
         }
     } else {
-        echo "<font color=black>没有找到此页面</font>" . "<br>";
+        echo "<p style='color: black'>没有找到此页面</p>" . "<br>";
     }
     if ($fbcz1 == 2) {
 //提供需要扣除的物品作为判读依据
@@ -117,18 +117,18 @@ if ($zsspd == 1) {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz012.php");//扣除
                 } elseif ($wpmz == "声望") {
 //数字转汉字
                     $yl = $wpkc;
                     include("./pz/ylts.php");
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                     $kcyl01 = $wpkc;
                     include("./pz/ini_pzz015.php");//扣除
                 } else {
-                    $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                    $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                     include("./pz/ini_pz01.php");//缓存位置
                     include("./pz/ini_pzz04.php");//扣除
                 }
@@ -178,13 +178,13 @@ if ($zsspd == 1) {
 //判断ini文件是否存在	
             $ininame = $path . "/" . $inina;
             unlink($ininame); //删除文件  
-            echo "<font color=red>恭喜你!重置" . $fbmz . "成功,勇敢的骚年啊快去完成它吧!</font>" . "<br>";
+            echo "<p style='color: red'>恭喜你!重置" . $fbmz . "成功,勇敢的骚年啊快去完成它吧!</p>" . "<br>";
 //	输出满足提示语言
             echo $manzu1;
         } else {
             $bumanzu = "对不起！重置" . $fbmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-            echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+            echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
         }
     }
 //cmd及超链接值
@@ -192,8 +192,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

@@ -16,8 +16,8 @@ include("./ini/all_lock.php");
 
 
 if($zsspd==1&&$all_lock2==1){
-echo "<font color=red>温馨提示：请尽快取出您未拍卖物满7天后将自动删除</font>"."<br>";
-echo "<font color=black>正在进行的拍卖品：</font>"."<br>";
+echo "<p style='color: red'>温馨提示：请尽快取出您未拍卖物满7天后将自动删除</p>"."<br>";
+echo "<p style='color: black'>正在进行的拍卖品：</p>"."<br>";
 
 
 //保存页面id方便分页使用
@@ -172,7 +172,7 @@ $cdid[]=$cmid;
 $clj[]=503;
 $npc[]=$xxid;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."(".$ylxx."两)</font></a>"."<font color=blue>x$cl|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."(".$ylxx."两)</p></a>"."<p style='color: blue'>x$cl|</p>";
 
 
 $str=$xxid."_".$pmxx3;
@@ -182,10 +182,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=504;
 $npc[]=$str;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取回</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取回</p></a>";
 if($t>=3){
 $tm=$t-2;
-echo "<font color=red>（过期".$tm."天）</font>"."<br>";
+echo "<p style='color: red'>（过期".$tm."天）</p>"."<br>";
 }
 echo "<br>";
 
@@ -224,7 +224,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=503;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."(".$ylxx."两)</font></a>"."<font color=blue>x$cl|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."(".$ylxx."两)</p></a>"."<p style='color: blue'>x$cl|</p>";
 
 $str=$xxid."_".$pmxx3;
 //cmd及超链接值
@@ -232,10 +232,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=504;
 $npc[]=$str;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取回</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取回</p></a>";
 if($t>=3){
 $tm=$t-2;
-echo "<font color=red>（过期".$tm."天）</font>"."<br>";
+echo "<p style='color: red'>（过期".$tm."天）</p>"."<br>";
 }
 echo "<br>";
 }
@@ -267,7 +267,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=503;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."(".$ylxx."两)</font></a>"."<font color=blue>x$cl|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."(".$ylxx."两)</p></a>"."<p style='color: blue'>x$cl|</p>";
 
 $str=$xxid."_".$pmxx3;
 //cmd及超链接值
@@ -275,11 +275,11 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=504;
 $npc[]=$str;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>取回</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>取回</p></a>";
 
 if($t>=3){
 $tm=$t-2;
-echo "<font color=red>（过期".$tm."天）</font>"."<br>";
+echo "<p style='color: red'>（过期".$tm."天）</p>"."<br>";
 }
 echo "<br>";
 }
@@ -307,20 +307,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=40;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>首页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>首页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=39;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上页</p></a>";
 
 $f=1;
 
 }
 $mcc=$km/10;
 if($f>0&&$mcc>$ym){
-echo  "<font color=blue>|</font></a>";
+echo  "<p style='color: blue'>|</p></a>";
 }
 
 
@@ -333,15 +333,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=38;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=41;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>末页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>末页</p></a>";
 $f=1;
 }
 
@@ -353,10 +353,10 @@ echo "<br>";
 
 
 } else{
-echo "<font color=red>空空如也</font>"."<br>";
+echo "<p style='color: red'>空空如也</p>"."<br>";
 } 
 } else{
-echo "<font color=red>物品错位（联系GM修复）</font>"."<br>";
+echo "<p style='color: red'>物品错位（联系GM修复）</p>"."<br>";
 } 
 
 
@@ -373,7 +373,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=489;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回拍卖场</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回拍卖场</p></a>"."<br>";
 
 
 //cmd及超链接值
@@ -381,7 +381,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 

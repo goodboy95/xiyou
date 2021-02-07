@@ -23,13 +23,13 @@ header("Content-type: text/html; charset=utf-8");
 <?php
 
 
-echo "<font color=red>纳尼？？你是火星来的的吧？不要妄想找到源代码！！社会社会...</font>"."<br>";
+echo "<p style='color: red'>纳尼？？你是火星来的的吧？不要妄想找到源代码！！社会社会...</p>"."<br>";
 echo "<br>";
 
-echo "<a href='../login.php'><font color=blue>返回登录</font></a>"."<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<a href='../login.php'><p style='color: blue'>返回登录</p></a>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 echo "<br>";
-echo "<a href='../index.php'><font color=blue>返回社区</font></a>"."<br>";
+echo "<a href='../index.php'><p style='color: blue'>返回社区</p></a>"."<br>";
 
 
 

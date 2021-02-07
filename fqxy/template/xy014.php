@@ -19,7 +19,7 @@ $pkwjid=($iniFile->getItem('怪物编号','1号'));
 }
 
 
-echo "<font color=red>战斗场景快捷键设置</font>"."<br>";
+echo "<p style='color: red'>战斗场景快捷键设置</p>"."<br>";
 
 include("./ini/zd_ini.php");
 # 获取一个分类下所有数据
@@ -132,7 +132,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$cljpost;
 $npc[]=$pkwjid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 } else{
 
@@ -142,11 +142,11 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$cljpost;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 }
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

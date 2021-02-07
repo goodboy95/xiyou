@@ -128,7 +128,7 @@ $iniFile->updItem('玩家信息', ['配偶名字' => $pomz]);
  
  
  
-  echo "<font color=red>你接受了求婚请求</font>"."<br>";
+  echo "<p style='color: red'>你接受了求婚请求</p>"."<br>";
  
 
  } else{
@@ -177,7 +177,7 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 	 
 	 
 	 
-echo "<font color=red>对不起！对方已经有配偶了</font>"."<br>";
+echo "<p style='color: red'>对不起！对方已经有配偶了</p>"."<br>";
 }
  
  
@@ -231,7 +231,7 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 	
 	
 	
-echo "<font color=red>对不起！你已经有配偶了</font>"."<br>";
+echo "<p style='color: red'>对不起！你已经有配偶了</p>"."<br>";
 }
  
  

@@ -8,7 +8,7 @@ if ($mysqlroot == 1) {//符合条件爆出
     $conn = @mysqli_connect($mysqla1, $mysqla2, $mysqla3) or die ("连接服务器失败1");
     mysqli_select_db($conn, 'xyy');
     if ($wjid == 10000001) {
-        echo "<font color=pink>数据库调试信息----连接数据库中.......</font>" . "<br>";
+        echo "<p style='color: pink'>数据库调试信息----连接数据库中.......</p>" . "<br>";
     }
 }
 ?>

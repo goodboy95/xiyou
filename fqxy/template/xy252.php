@@ -13,10 +13,10 @@ include("./wp/txxx.php");
 $txid=$wpid;
 $img='pic/txpic/'.$txid.'.png';
 if(!file_exists($img)){
-echo "<font color=black>".$txmzsp."称号图片还未制作</font>"; 
+echo "<p style='color: black'>".$txmzsp."称号图片还未制作</p>";
 $imgg=$txid.".png";
-echo "<font color=black>图片名称:</font>";
-echo "<font color=red>".$imgg."</font>"."<br>"; 
+echo "<p style='color: black'>图片名称:</p>";
+echo "<p style='color: red'>".$imgg."</p>"."<br>";
 
 	} else{
 $img='pic/txpic/'.$txid.'.png';
@@ -27,7 +27,7 @@ echo "<br>";
 
 
 
-echo "<font color=black>描述：".$wpms."</font>"."<br>"; 
+echo "<p style='color: black'>描述：".$wpms."</p>"."<br>";
 
 
 
@@ -38,13 +38,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=251;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回称号</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回称号</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回状态</p></a>"."<br>";
 echo "<br>";
 
 
@@ -53,9 +53,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

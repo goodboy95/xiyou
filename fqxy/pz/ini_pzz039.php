@@ -98,13 +98,13 @@ $cw19x="无变异";
 
 
  if($cwxb >=2&&$cwby>=2){
-echo "<font color=red>恭喜你！！获得了".$cw19x."的".$nname."（".$cw04x."）！！</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！获得了".$cw19x."的".$nname."（".$cw04x."）！！</p>"."<br>";
 } elseif ($cwxb >=2) {//宠物
-echo "<font color=red>恭喜你！！获得了".$nname."（".$cw04x."）！！</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！获得了".$nname."（".$cw04x."）！！</p>"."<br>";
  } elseif ($cwby >=2) {//宠物
-echo "<font color=red>恭喜你！！获得了".$cw19x."的".$nname."！！</font>"."<br>"; 
+echo "<p style='color: red'>恭喜你！！获得了".$cw19x."的".$nname."！！</p>"."<br>";
  } else{
-echo "<font color=red>恭喜你！！获得了".$nname."！！</font>"."<br>";  
+echo "<p style='color: red'>恭喜你！！获得了".$nname."！！</p>"."<br>";
 	 
 } 
 $wpsy=2;//使用成功
@@ -113,7 +113,7 @@ $wpsy=2;//使用成功
 } else{
 	$wpsy=1;//使用失败
 	
-echo "<font color=black>对不起！这只宠物有误联系GM解决</font>"."<br>";
+echo "<p style='color: black'>对不起！这只宠物有误联系GM解决</p>"."<br>";
 	
 }
 
@@ -125,7 +125,7 @@ echo "<font color=black>对不起！这只宠物有误联系GM解决</font>"."<b
 
 } else{
 $wpsy=1;//使用失败	
-echo "<font color=red>对不起，你的宠物背包已满了！请及时清理，以免错过绝世好宠哦</font>"."<br>";  
+echo "<p style='color: red'>对不起，你的宠物背包已满了！请及时清理，以免错过绝世好宠哦</p>"."<br>";
 
 	
 }

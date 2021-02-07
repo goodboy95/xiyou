@@ -16,14 +16,14 @@ $sypt = 1;
 if ($jykg == 0) {
     if ($lvl >= $jfdj && $jy1 >= $lvl1) {
         $wpsy = 1;//使用失败
-        echo "<font color=red>对不起！经验已满（升级提升经验储备）</font><br>";
+        echo "<p style='color: red'>对不起！经验已满（升级提升经验储备）</p><br>";
     } else {
         $sypt = 2;
     }
 } elseif ($jykg == 1) {
     if ($xljy1 == $lvl2) {
         $wpsy = 1;//使用失败
-        echo "<font color=red>对不起！修炼经验已满（升级提升修炼经验储备）</font><br>";
+        echo "<p style='color: red'>对不起！修炼经验已满（升级提升修炼经验储备）</p><br>";
     } else {
         $sypt = 2;
     }
@@ -117,7 +117,7 @@ if ($sypt == 2) {
 
     } else {
         $wpsy = 1;//使用失败
-        echo "<font color=black>你今日已经使用" . $wwpmz . $xzcs . "次了！</font><br>";
+        echo "<p style='color: black'>你今日已经使用" . $wwpmz . $xzcs . "次了！</p><br>";
     }
 }
 $npcc = $zhblq;

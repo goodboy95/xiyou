@@ -69,11 +69,11 @@ include("./ini/yl_ini.php");
 }
 
 if($ylmm ==2){
-echo "<font color=red>银两达到上限，无法获得银两</font><br>";
+echo "<p style='color: red'>银两达到上限，无法获得银两</p><br>";
 
 } else{
 $yl=$wwpsl;
-echo "<font color=black>失去了</font>";
+echo "<p style='color: black'>失去了</p>";
 include("./wp/ylxx.php");//显示为汉字
 }
 

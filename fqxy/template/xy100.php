@@ -78,15 +78,15 @@ unlink($ininame); //删除文件
 //更新缓存数据
 
 
-echo "<font color=red>恭喜你！你和".$ckname."成为了好友</font>"."<br>";
+echo "<p style='color: red'>恭喜你！你和".$ckname."成为了好友</p>"."<br>";
 
 
 } else{
 	if($hmivdd==2){
 	
-echo "<font color=red>对不起！玩家：".$ckname."在你的黑名单内需要移除后才能加友</font>"."<br>";
+echo "<p style='color: red'>对不起！玩家：".$ckname."在你的黑名单内需要移除后才能加友</p>"."<br>";
 	} else{
-		echo "<font color=red>对不起！玩家：".$ckname."已经是你的好友了</font>"."<br>";
+		echo "<p style='color: red'>对不起！玩家：".$ckname."已经是你的好友了</p>"."<br>";
 		
 		} 
 

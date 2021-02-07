@@ -48,7 +48,7 @@ if($sll!=0){
 include("wj/qggz.php");
 } else {
 
-echo "<font color=red>你输入的官宅求购价格有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的官宅求购价格有误请重新输入</p>"."<br>";
 
 }
 
@@ -74,14 +74,14 @@ echo "<font color=red>你输入的官宅求购价格有误请重新输入</font>
 
 } else{
 
-echo "<font color=red>金豆求购价格必须在1-9999之间</font>"."<br>";
+echo "<p style='color: red'>金豆求购价格必须在1-9999之间</p>"."<br>";
 } 
 
 
 } else{
 
 
-echo "<font color=red>字符超过最大限制(6个字以内)</font>"."<br>";
+echo "<p style='color: red'>字符超过最大限制(6个字以内)</p>"."<br>";
 
 }
 
@@ -91,7 +91,7 @@ echo "<font color=red>字符超过最大限制(6个字以内)</font>"."<br>";
 
 
 	} else{
-echo "<font color=red>你输入的官宅求购信息包含敏感字符请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的官宅求购信息包含敏感字符请重新输入</p>"."<br>";
 }
 
 
@@ -107,7 +107,7 @@ echo "<font color=red>你输入的官宅求购信息包含敏感字符请重新�
 } else{
 
 
-echo "<font color=red>求购官宅的信息不能为空</font>"."<br>";
+echo "<p style='color: red'>求购官宅的信息不能为空</p>"."<br>";
 
 }
 
@@ -127,7 +127,7 @@ include("./ini/jsini.php");
 ?>
 
 <form  action="<?echo "xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1";?>" method="POST">
-<font color=black>请输入你要求购官宅的信息及其金豆价格:</font><br>
+<p style='color: black'>请输入你要求购官宅的信息及其金豆价格:</p><br>
 信息：<input  type="text" name="jdqg" placeholder="请输入求购信息"id='search'><br>
 豆价：<input type="tel" name="sl" placeholder="请输入求购价格"id='search'onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><br>
 
@@ -141,9 +141,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

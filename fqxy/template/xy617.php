@@ -66,7 +66,7 @@ unlink($ininame); //删除文件
 //更新缓存数据
 
 include("./ini/ltbwsx_ini.php");							
-echo "<font color=black>你确定要向玩家：".$lt02."（".$ltpmms."）进行比武吗？？</font>"."<br>";		
+echo "<p style='color: black'>你确定要向玩家：".$lt02."（".$ltpmms."）进行比武吗？？</p>"."<br>";
 	
 	
 //cmd及超链接值
@@ -74,18 +74,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=618;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>确定！我要比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>确定！我要比武</p></a>"."<p style='color: black'></p>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>算了！我认怂</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>算了！我认怂</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
 } else{	
-echo "<font color=black>对不起！！你今日比武机会用用完，请明日再来</font>"."<br>";		
+echo "<p style='color: black'>对不起！！你今日比武机会用用完，请明日再来</p>"."<br>";
 	
 	
 } 
@@ -111,7 +111,7 @@ $ltmz9=($iniFile->getItem('占领玩家id','9'));
 $ltmz10=($iniFile->getItem('占领玩家id','10'));
 if($ltmz1!=$wjid&&$ltmz2!=$wjid&&$ltmz3!=$wjid&&$ltmz4!=$wjid&&$ltmz5!=$wjid&&$ltmz6!=$wjid&&$ltmz7!=$wjid&&$ltmz8!=$wjid&&$ltmz9!=$wjid&&$ltmz10!=$wjid){
 
-echo "<font color=black>恭喜你！！获得了".$ltpmms."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！获得了".$ltpmms."</p>"."<br>";
 include("./sql/mysql.php");//调用数据库连接 
    
 include("./ini/zt_ini.php");
@@ -147,7 +147,7 @@ $iniFile->updItem('比武门派', [$zlid => $wd08]);
 
 
 } else{	
-echo "<font color=black>对不起！！您已是我们【天下第一武道会】的成员了~~</font>"."<br>";
+echo "<p style='color: black'>对不起！！您已是我们【天下第一武道会】的成员了~~</p>"."<br>";
 }
 
 
@@ -170,7 +170,7 @@ echo "<font color=black>对不起！！您已是我们【天下第一武道会�
 }
 
 } else{	
-echo "<font color=black>无间道么！？自己和自己比武？</font>"."<br>";
+echo "<p style='color: black'>无间道么！？自己和自己比武？</p>"."<br>";
 }
 
 
@@ -185,17 +185,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

@@ -54,7 +54,7 @@ if($wprl<=$bbrlb){
 
 if($wpsl<$sl){
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 } elseif($wpsl>$sl&&$sl!=0){  
@@ -376,7 +376,7 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('验证信息', ['cmid值' => $ymid]);
-echo "<font color=red>你取出了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你取出了".$wpmz."x".$sl."</p>"."<br>";
 
 
 
@@ -833,7 +833,7 @@ $iniFile = new iniFile($ininame);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('验证信息', ['cmid值' => $ymid]);
 
-echo "<font color=red>你取出了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你取出了".$wpmz."x".$sl."</p>"."<br>";
 
 echo "<br>";
 
@@ -881,7 +881,7 @@ include("./pz/pz01.php");
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -891,7 +891,7 @@ echo "<br>";
 } else{
 $dqwp=0;
 	$qbwp=1;
-echo "<font color=red>对不起，你的背包已放不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的背包已放不下任何东西了</p>"."<br>";
 echo "<br>";
 
 
@@ -900,7 +900,7 @@ echo "<br>";
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -914,7 +914,7 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

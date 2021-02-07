@@ -58,10 +58,10 @@ $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);	
 
 
-echo "<font color=black>恭喜你！！获得〖红包〗x".$csbyq."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！获得〖红包〗x".$csbyq."</p>"."<br>";
 
 } else{
-echo "<font color=black>对不起！！所需要〖碎银块〗不足！！</font>"."<br>";
+echo "<p style='color: black'>对不起！！所需要〖碎银块〗不足！！</p>"."<br>";
 
 }
 
@@ -98,7 +98,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="all_hbmoney";
 $strsql = "update $q2 set money=$csbb where wjid=$wjid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);	
-echo "<font color=black>失去〖红包〗x".$csbyq."</font>"."<br>";
+echo "<p style='color: black'>失去〖红包〗x".$csbyq."</p>"."<br>";
 $manzu1="";
 
 //物品加
@@ -113,12 +113,12 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 
 } else{	
-echo "<font color=black>对不起~~你的红包非法</font>"."<br>";
+echo "<p style='color: black'>对不起~~你的红包非法</p>"."<br>";
 }	
 
 
 } else{	
-echo "<font color=black>对不起~~你的红包不足</font>"."<br>";
+echo "<p style='color: black'>对不起~~你的红包不足</p>"."<br>";
 }	
 
 
@@ -127,7 +127,7 @@ echo "<font color=black>对不起~~你的红包不足</font>"."<br>";
 
 
 } else{	
-echo "<font color=black>没有这个选项</font>"."<br>";
+echo "<p style='color: black'>没有这个选项</p>"."<br>";
 }
 
 
@@ -140,7 +140,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=570;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

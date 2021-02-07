@@ -1,7 +1,7 @@
 <?php
 
 
-echo "<font color=red>【补给背包数据】</font>"."<br>";
+echo "<p style='color: red'>【补给背包数据】</p>"."<br>";
 
 
 $i=0;	
@@ -30,7 +30,7 @@ $iniFile->updItem('玩家信息', ['背包容量' => $bbrlb]);
 
 
 if($wjid==10000001){
-echo "<font color=red>恭喜所有玩家背包补给完毕</font>"."<br>";
+echo "<p style='color: red'>恭喜所有玩家背包补给完毕</p>"."<br>";
 break;
 
 

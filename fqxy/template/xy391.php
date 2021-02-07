@@ -14,8 +14,8 @@ if($zsspd==1&&$zsspd2==1){
 
 	
 
-echo "<font color=black>玩家PK信息（战胜）：</font><br>";
-echo "<font color=black>------------------------------</font><br>";
+echo "<p style='color: black'>玩家PK信息（战胜）：</p><br>";
+echo "<p style='color: black'>------------------------------</p><br>";
 
 $wjid=$wjid1;
 include("./ini/zt_ini.php");
@@ -94,7 +94,7 @@ if($zlbp==$bpid){
 if($gj05>=0){
 $iniFile->updItem('地图坐标', ['y' => '22']);	
 } else{	
-echo "<font color=blue>恭喜你！已成功淘汰掉对方（对方国战死亡次数已用完）</font>"."<br>";
+echo "<p style='color: blue'>恭喜你！已成功淘汰掉对方（对方国战死亡次数已用完）</p>"."<br>";
 $iniFile->updItem('地图坐标', ['x' => '1']);	
 $iniFile->updItem('地图坐标', ['y' => '0']);	
 } 
@@ -103,7 +103,7 @@ $iniFile->updItem('地图坐标', ['y' => '0']);
 if($gj05>=0){
 $iniFile->updItem('地图坐标', ['y' => '16']);	
 } else{	
-echo "<font color=blue>恭喜你！已成功淘汰掉对方（对方国战死亡次数已用完）</font>"."<br>";
+echo "<p style='color: blue'>恭喜你！已成功淘汰掉对方（对方国战死亡次数已用完）</p>"."<br>";
 $iniFile->updItem('地图坐标', ['x' => '1']);	
 $iniFile->updItem('地图坐标', ['y' => '0']);	
 } 
@@ -179,14 +179,14 @@ unlink($ininame); //删除文件
 //更新缓存数据
 } 
 
-echo "<font color=blue>击杀敌对国家玩家获得国家积分+1，个人积分+1</font>"."<br>";
+echo "<p style='color: blue'>击杀敌对国家玩家获得国家积分+1，个人积分+1</p>"."<br>";
 } else{	
-echo "<font color=blue>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</font>"."<br>";
+echo "<p style='color: blue'>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</p>"."<br>";
 
 
 }
 } else{	
-echo "<font color=blue>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</font>"."<br>";
+echo "<p style='color: blue'>不会获得任何积分（造成这种情况因为之前参加国战后没有出去过，请自行解决否则不会获得任何积分）</p>"."<br>";
 
 
 }
@@ -208,7 +208,7 @@ $iniFile->updItem('地图坐标', ['y' => '0']);
 
 $wjid=$ckid;
 
-echo "<font color=red>".$username."被你打死了，并且狠狠被鞭尸一万次</font>"."<br>";
+echo "<p style='color: red'>".$username."被你打死了，并且狠狠被鞭尸一万次</p>"."<br>";
 
 include("./ini/pk_ini.php");
 $iniFile->updItem('玩家pk', [$wjid1 => '1']);	
@@ -232,9 +232,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续走</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续走</p></a>"."<br>";
 echo "<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 
 
 //cmd及超链接值

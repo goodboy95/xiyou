@@ -60,7 +60,7 @@ if($nowtime>=$time1&&$nowtime<=$time2){
 	
 	
 	
-echo "<font color=black>活动截止：".$endtime."晚上23:55</font><br>";
+echo "<p style='color: black'>活动截止：".$endtime."晚上23:55</p><br>";
 
 include("./ini/yd04_ini.php");
 $hdyd=($iniFile->getCategory('摇点信息'));
@@ -110,14 +110,14 @@ $hdyd=($iniFile->getCategory('摇点信息'));
 
 
 
-echo "<font color=red>娱乐项目-【疯狂摇一摇】（铂金场）</font>"."<br>";
-echo "<font color=black>今日点数：</font>";
-echo "<font color=red>".$hdyd['今日点数']."&nbsp点</font>"."<br>";
-echo "<font color=black>活动点数：</font>";
-echo "<font color=red>".$hdyd['活动点数']."&nbsp点</font>"."<br>";
+echo "<p style='color: red'>娱乐项目-【疯狂摇一摇】（铂金场）</p>"."<br>";
+echo "<p style='color: black'>今日点数：</p>";
+echo "<p style='color: red'>".$hdyd['今日点数']."&nbsp点</p>"."<br>";
+echo "<p style='color: black'>活动点数：</p>";
+echo "<p style='color: red'>".$hdyd['活动点数']."&nbsp点</p>"."<br>";
 echo "<br>";
-echo "<font color=black>免费摇点：</font>";
-echo "<font color=red>(".$hdyd['免费次数']."/6次)</font>";
+echo "<p style='color: black'>免费摇点：</p>";
+echo "<p style='color: red'>(".$hdyd['免费次数']."/6次)</p>";
 
 
 //cmd及超链接值
@@ -125,26 +125,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=439;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【免费摇一摇】</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【免费摇一摇】</p></a>"."<p style='color: black'></p>"."<br>";
 echo "<br>";
-echo "<font color=black>金豆摇点：</font>";
-echo "<font color=red>(".$hdyd['收费次数']."/4次)</font>";
+echo "<p style='color: black'>金豆摇点：</p>";
+echo "<p style='color: red'>(".$hdyd['收费次数']."/4次)</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=439;
 $npc[]=8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【金豆摇一摇】</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【金豆摇一摇】</p></a>"."<p style='color: black'></p>"."<br>";
 echo "<br>";
 
 include("./ini/hdjc_ini.php");
 
 $hdjc=($iniFile->getItem('奖金池','4'));
 
-echo "<font color=black>【银两奖池】</font><br>";
-echo "<font color=black>奖池：银两".$hdjc."</font><br>";
-echo "<font color=black>------</font><br>";
-echo "<font color=black>当前奖池分成</font><br>";
+echo "<p style='color: black'>【银两奖池】</p><br>";
+echo "<p style='color: black'>奖池：银两".$hdjc."</p><br>";
+echo "<p style='color: black'>------</p><br>";
+echo "<p style='color: black'>当前奖池分成</p><br>";
 $fc01 = ceil($hdjc*0.6);
 $fc02 = ceil(($hdjc-$fc01)*0.5);
 $fc03 = ceil(($hdjc-$fc01-$fc02)*0.3);
@@ -155,16 +155,16 @@ $fc07 = ceil(($hdjc-$fc01-$fc02-$fc03-$fc04-$fc05-$fc06)*0.04);
 $fc08 = ceil(($hdjc-$fc01-$fc02-$fc03-$fc04-$fc05-$fc06-$fc07)*0.03);
 $fc09 = ceil(($hdjc-$fc01-$fc02-$fc03-$fc04-$fc05-$fc06-$fc07-$fc08)*0.02);
 $fc10 = ceil(($hdjc-$fc01-$fc02-$fc03-$fc04-$fc05-$fc06-$fc07-$fc08-$fc09)*0.01);
-echo "<font color=black>第1名:〖银两〗：".$fc01."</font><br>";
-echo "<font color=black>第2名:〖银两〗：".$fc02."</font><br>";
-echo "<font color=black>第3名:〖银两〗：".$fc03."</font><br>";
-echo "<font color=black>第4名:〖银两〗：".$fc04."</font><br>";
-echo "<font color=black>第5名:〖银两〗：".$fc05."</font><br>";
-echo "<font color=black>第6名:〖银两〗：".$fc06."</font><br>";
-echo "<font color=black>第7名:〖银两〗：".$fc07."</font><br>";
-echo "<font color=black>第8名:〖银两〗：".$fc08."</font><br>";
-echo "<font color=black>第9名:〖银两〗：".$fc09."</font><br>";
-echo "<font color=black>第10名:〖银两〗：".$fc10."</font><br>";
+echo "<p style='color: black'>第1名:〖银两〗：".$fc01."</p><br>";
+echo "<p style='color: black'>第2名:〖银两〗：".$fc02."</p><br>";
+echo "<p style='color: black'>第3名:〖银两〗：".$fc03."</p><br>";
+echo "<p style='color: black'>第4名:〖银两〗：".$fc04."</p><br>";
+echo "<p style='color: black'>第5名:〖银两〗：".$fc05."</p><br>";
+echo "<p style='color: black'>第6名:〖银两〗：".$fc06."</p><br>";
+echo "<p style='color: black'>第7名:〖银两〗：".$fc07."</p><br>";
+echo "<p style='color: black'>第8名:〖银两〗：".$fc08."</p><br>";
+echo "<p style='color: black'>第9名:〖银两〗：".$fc09."</p><br>";
+echo "<p style='color: black'>第10名:〖银两〗：".$fc10."</p><br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -172,7 +172,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 } else{	
@@ -196,16 +196,16 @@ $iniFile->updItem('摇点信息', ['今日点数' => '0','活动点数' => '0'])
 }
 
 
-echo "<font color=red>活动尚未开始或者已结束</font><br>";
-echo "<font color=black>开始时间：".$starttime."晚0点</font><br>";
-echo "<font color=black>截止时间：".$endtime."晚8点</font><br>";
+echo "<p style='color: red'>活动尚未开始或者已结束</p><br>";
+echo "<p style='color: black'>开始时间：".$starttime."晚0点</p><br>";
+echo "<p style='color: black'>截止时间：".$endtime."晚8点</p><br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 
@@ -213,7 +213,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱�
 
  flock($fp,LOCK_UN);
 	} else{	
-echo "<font color=black>服务器睡着了</font><br>";
+echo "<p style='color: black'>服务器睡着了</p><br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -221,7 +221,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回娱乐</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
 
 }
  

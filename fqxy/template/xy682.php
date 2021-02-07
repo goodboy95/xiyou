@@ -7,8 +7,8 @@ $jcidmin = ($iniFile->getItem('竞猜答案2', '初始'));
 $jcgk = ($iniFile->getItem('竞猜关卡', '初始'));
 $jccs = ($iniFile->getItem('竞猜次数', '初始'));
 $jcgm = ($iniFile->getItem('竞猜购买', '初始'));
-echo "<font color=black>竞猜关卡【第" . $jcgk . "关】</font>" . "<br>";
-echo "<font color=black>剩余竞猜【" . $jccs . "次】</font>" . "<br>";
+echo "<p style='color: black'>竞猜关卡【第" . $jcgk . "关】</p>" . "<br>";
+echo "<p style='color: black'>剩余竞猜【" . $jccs . "次】</p>" . "<br>";
 if ($jcgm == 1) {
     $zxb = 10;
 } elseif ($jcgm == 2) {
@@ -40,7 +40,7 @@ if ($jccs >= 1) {
             $cdid[] = $cmid;
             $clj[] = 684;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>购买10次竞猜=【紫星币】x" . $zxb . "</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>购买10次竞猜=【紫星币】x" . $zxb . "</p></a>" . "<br>";
         } else {
         }
         $jcidmax = $jcsz2;
@@ -55,7 +55,7 @@ if ($jccs >= 1) {
                 if ($sll != 0) {
                     if ($sl >= $jcidmin && $sl <= $jcsz2) {
                         if ($jcsz1 == $sl) {//猜中
-                            echo "<font color=red>恭喜你！你猜数字【" . $sl . "】，识破了竞猜大使的秘密</font>" . "<br>";
+                            echo "<p style='color: red'>恭喜你！你猜数字【" . $sl . "】，识破了竞猜大使的秘密</p>" . "<br>";
                             include("./ini/zt_ini.php");
                             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
                             $xtxx = "恭喜玩家" . $wjmz . "在竞猜关卡【第" . $jcgk . "关】使用数字【" . $sl . "】识破了竞猜大使的秘密，获得逆天奖励！！";
@@ -348,7 +348,7 @@ if ($jccs >= 1) {
                             } else {
                                 $xysw1 = 0;
                             }
-                            echo "<font color=red>恭喜你！获得感恩节节日" . $xysw1 . "积分</font><br>";
+                            echo "<p style='color: red'>恭喜你！获得感恩节节日" . $xysw1 . "积分</p><br>";
                             include("./sql/mysql.php");//调用数据库连接 
                             $q2 = "all_hdph01";
                             $sql1 = mysqli_query($conn, "select ds01 from $q2 where wjid=$wjid");
@@ -390,7 +390,7 @@ if ($jccs >= 1) {
                             include("./pz/pz01.php");
                             exit;
                         } else {//未猜中重新出
-                            echo "<font color=red>〖活动〗竞猜使者:哈哈~~猜不中我吧，我就是这么强大！！你猜的数字【" . $sl . "】不正确哦~~~</font>" . "<br>";
+                            echo "<p style='color: red'>〖活动〗竞猜使者:哈哈~~猜不中我吧，我就是这么强大！！你猜的数字【" . $sl . "】不正确哦~~~</p>" . "<br>";
                             echo "<br>";
                             if ($jcsz1 > $sl) {
                                 include("./ini/jcyx_ini.php");
@@ -416,22 +416,22 @@ if ($jccs >= 1) {
                         include("./ini/jcyx_ini.php");
                         $iniFile->updItem('竞猜次数', ['初始' => $jccs]);
                     } else {
-                        echo "<font color=red>对不起！！不在此范围</font>" . "<br>";
+                        echo "<p style='color: red'>对不起！！不在此范围</p>" . "<br>";
                         echo "<br>";
                     }
                 } else {
                     $dqwp = 0;
-                    echo "<font color=red>输入有误请重新输入</font>" . "<br>";
+                    echo "<p style='color: red'>输入有误请重新输入</p>" . "<br>";
                     echo "<br>";
                 }
             }
         }
         if ($sl != "") {//猜中
-            echo "<font color=red>提示：竞猜数字【" . $jcidmin . "-" . $jcidmax . "】之间</font>" . "<br>";
+            echo "<p style='color: red'>提示：竞猜数字【" . $jcidmin . "-" . $jcidmax . "】之间</p>" . "<br>";
         } else {//未猜中重新出
-            echo "<font color=red>提示：竞猜数字【1-" . $jcidmax . "】之间</font>" . "<br>";
+            echo "<p style='color: red'>提示：竞猜数字【1-" . $jcidmax . "】之间</p>" . "<br>";
         }
-        echo "<font color=black>请输入你要竞猜的数字</font>" . "<br>";
+        echo "<p style='color: black'>请输入你要竞猜的数字</p>" . "<br>";
         ?>
         <form action="" method="POST">
             <input type="tel" name="sl" placeholder="请输入" id='search' onkeyup="this.value=this.value.replace(/\D/g,'')"
@@ -440,10 +440,10 @@ if ($jccs >= 1) {
         </form>
         <?php
     } else {
-        echo "<font color=red>对不起！！您的已完成通关！！</font>" . "<br>";
+        echo "<p style='color: red'>对不起！！您的已完成通关！！</p>" . "<br>";
     }
 } else {
-    echo "<font color=red>对不起！！您的竞猜次数不足！！</font>" . "<br>";
+    echo "<p style='color: red'>对不起！！您的竞猜次数不足！！</p>" . "<br>";
 }
 echo "<br>";
 //cmd及超链接值
@@ -451,5 +451,5 @@ $cmid = $cmid + 1;
 $cdid[] = $cmid;
 $clj[] = 2;
 $npc[] = 0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
 ?>

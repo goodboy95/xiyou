@@ -18,9 +18,9 @@ $minute=floor($minute1/60);
 $second=$minute1%60;
 
 if($minute > 0){		
-echo "<font color=black>区域剩余：".$minute."分".$second."秒</font>"."<br>";
+echo "<p style='color: black'>区域剩余：".$minute."分".$second."秒</p>"."<br>";
 } else{
-echo "<font color=black>区域剩余：".$second."秒</font>"."<br>";
+echo "<p style='color: black'>区域剩余：".$second."秒</p>"."<br>";
 } 	
 $vipqy=2;	
 } else{
@@ -30,14 +30,14 @@ $vipqy=1;
 $vipqy=1;	
 }
 if($vipqy == 1){
-echo "<font color=red>区域时间已到，请迅速离开</font>"."<br>";
+echo "<p style='color: red'>区域时间已到，请迅速离开</p>"."<br>";
 
 
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开伏羲大阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开伏羲大阵</p></a>"."<br>";
 
 } else{
 
@@ -66,7 +66,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=177;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【万象阵】（随机）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【万象阵】（随机）</p></a>"."<br>";
 }
 
 
@@ -80,9 +80,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1211;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【天阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天阵】守卫（已阵亡）</p></br>";
 
 } 
 
@@ -94,9 +94,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1212;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【天阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天阵】守卫（已阵亡）</p></br>";
 }
 $tttid=367;
 include("./rcrw/ttt.php");
@@ -106,9 +106,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1213;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【天阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天阵】守卫（已阵亡）</p></br>";
 }
 
 
@@ -139,9 +139,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=179;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八门阵】（死门）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【八门阵】（死门）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【八门阵】（封印中）</font></a>"."<br>";
+echo "<p style='color: red'>【八门阵】（封印中）</p></a>"."<br>";
 } 
 
 
@@ -155,9 +155,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1214;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【地阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【地阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【地阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【地阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=369;
 include("./rcrw/ttt.php");
@@ -167,9 +167,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1215;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【地阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【地阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【地阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【地阵】守卫（已阵亡）</p></br>";
 }
 $tttid=370;
 include("./rcrw/ttt.php");
@@ -179,9 +179,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1216;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【地阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【地阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【地阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【地阵】守卫（已阵亡）</p></br>";
 }
 include("mapxx.php");//地图出入口
 
@@ -200,14 +200,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -219,9 +219,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1217;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【人阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【人阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=372;
 include("./rcrw/ttt.php");
@@ -231,9 +231,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1218;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【人阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【人阵】守卫（已阵亡）</p></br>";
 }
 $tttid=373;
 include("./rcrw/ttt.php");
@@ -243,9 +243,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1219;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【人阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【人阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【人阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【人阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 
@@ -263,14 +263,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -282,9 +282,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1220;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=375;
 include("./rcrw/ttt.php");
@@ -294,9 +294,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1221;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风阵】守卫（已阵亡）</p></br>";
 }
 $tttid=376;
 include("./rcrw/ttt.php");
@@ -306,9 +306,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1222;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -326,14 +326,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -346,9 +346,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1223;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【云阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【云阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【云阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【云阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=378;
 include("./rcrw/ttt.php");
@@ -358,9 +358,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1224;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【云阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【云阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【云阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【云阵】守卫（已阵亡）</p></br>";
 }
 $tttid=379;
 include("./rcrw/ttt.php");
@@ -370,9 +370,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1225;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【云阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【云阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【云阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【云阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -389,14 +389,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -408,9 +408,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1226;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【龙阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【龙阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【龙阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【龙阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=381;
 include("./rcrw/ttt.php");
@@ -420,9 +420,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1227;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【龙阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【龙阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【龙阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【龙阵】守卫（已阵亡）</p></br>";
 }
 $tttid=382;
 include("./rcrw/ttt.php");
@@ -432,9 +432,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1228;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【龙阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【龙阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【龙阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【龙阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -453,14 +453,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 $tttid=383;
@@ -471,9 +471,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1229;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【虎阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【虎阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【虎阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【虎阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=384;
 include("./rcrw/ttt.php");
@@ -483,9 +483,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1230;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【虎阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【虎阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【虎阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【虎阵】守卫（已阵亡）</p></br>";
 }
 $tttid=385;
 include("./rcrw/ttt.php");
@@ -495,9 +495,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1231;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【虎阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【虎阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【虎阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【虎阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -516,14 +516,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -535,9 +535,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1232;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【神阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=387;
 include("./rcrw/ttt.php");
@@ -547,9 +547,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1233;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【神阵】守卫（已阵亡）</p></br>";
 }
 $tttid=388;
 include("./rcrw/ttt.php");
@@ -559,9 +559,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1234;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【神阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -579,14 +579,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -598,9 +598,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1235;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【鬼阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【鬼阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【神阵】守卫（已阵亡）</p></br>";
 } 
 $tttid=390;
 include("./rcrw/ttt.php");
@@ -610,9 +610,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1236;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【鬼阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【鬼阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【神阵】守卫（已阵亡）</p></br>";
 }
 $tttid=391;
 include("./rcrw/ttt.php");
@@ -622,9 +622,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1237;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【鬼阵】守卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【鬼阵】守卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神阵】守卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【神阵】守卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -642,14 +642,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -661,9 +661,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1238;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【休门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【休门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【休门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【休门】守将（已阵亡）</p></br>";
 } 
 $tttid=393;
 include("./rcrw/ttt.php");
@@ -673,9 +673,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1239;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【休门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【休门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【休门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【休门】守将（已阵亡）</p></br>";
 }
 $tttid=394;
 include("./rcrw/ttt.php");
@@ -685,9 +685,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1240;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【休门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【休门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【休门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【休门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -714,9 +714,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=181;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八卦阵】（乾阵）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【八卦阵】（乾阵）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【八卦阵】（封印中）</font></a>"."<br>";
+echo "<p style='color: red'>【八卦阵】（封印中）</p></a>"."<br>";
 } 
 
 
@@ -732,9 +732,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1241;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【生门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【生门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【生门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【生门】守将（已阵亡）</p></br>";
 } 
 $tttid=396;
 include("./rcrw/ttt.php");
@@ -744,9 +744,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1242;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【生门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【生门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【生门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【生门】守将（已阵亡）</p></br>";
 }
 $tttid=397;
 include("./rcrw/ttt.php");
@@ -756,9 +756,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1243;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【生门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【生门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【生门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【生门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////可以进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -775,14 +775,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -794,9 +794,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1244;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【伤门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【伤门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【伤门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【伤门】守将（已阵亡）</p></br>";
 } 
 $tttid=399;
 include("./rcrw/ttt.php");
@@ -806,9 +806,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1245;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【伤门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【伤门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【伤门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【伤门】守将（已阵亡）</p></br>";
 }
 $tttid=400;
 include("./rcrw/ttt.php");
@@ -818,9 +818,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1246;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【伤门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【伤门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【伤门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【伤门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -837,14 +837,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -856,9 +856,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1247;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【杜门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【杜门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【杜门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【杜门】守将（已阵亡）</p></br>";
 } 
 $tttid=402;
 include("./rcrw/ttt.php");
@@ -868,9 +868,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1248;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【杜门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【杜门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【杜门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【杜门】守将（已阵亡）</p></br>";
 }
 $tttid=403;
 include("./rcrw/ttt.php");
@@ -880,9 +880,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1249;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【杜门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【杜门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【杜门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【杜门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -899,14 +899,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -918,9 +918,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1250;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【景门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【景门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【景门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【景门】守将（已阵亡）</p></br>";
 } 
 $tttid=405;
 include("./rcrw/ttt.php");
@@ -930,9 +930,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1251;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【景门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【景门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【景门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【景门】守将（已阵亡）</p></br>";
 }
 $tttid=406;
 include("./rcrw/ttt.php");
@@ -942,9 +942,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1252;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【景门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【景门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【景门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【景门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -970,7 +970,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=180;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八门阵】（随机）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【八门阵】（随机）</p></a>"."<br>";
 }
 
 $tttid=407;
@@ -981,9 +981,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1253;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【死门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【死门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【死门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【死门】守将（已阵亡）</p></br>";
 } 
 $tttid=408;
 include("./rcrw/ttt.php");
@@ -993,9 +993,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1254;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【死门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【死门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【死门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【死门】守将（已阵亡）</p></br>";
 }
 $tttid=409;
 include("./rcrw/ttt.php");
@@ -1005,9 +1005,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1255;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【死门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【死门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【死门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【死门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1025,14 +1025,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1044,9 +1044,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1256;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【惊门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【惊门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【惊门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【惊门】守将（已阵亡）</p></br>";
 } 
 $tttid=411;
 include("./rcrw/ttt.php");
@@ -1056,9 +1056,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1257;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【惊门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【惊门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【惊门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【惊门】守将（已阵亡）</p></br>";
 }
 $tttid=412;
 include("./rcrw/ttt.php");
@@ -1068,9 +1068,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1258;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【惊门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【惊门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【惊门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【惊门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1088,14 +1088,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1107,9 +1107,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1259;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【开门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【开门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【开门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【开门】守将（已阵亡）</p></br>";
 } 
 $tttid=414;
 include("./rcrw/ttt.php");
@@ -1119,9 +1119,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1260;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【开门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【开门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【开门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【开门】守将（已阵亡）</p></br>";
 }
 $tttid=415;
 include("./rcrw/ttt.php");
@@ -1131,9 +1131,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1261;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【开门】守将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【开门】守将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【开门】守将（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【开门】守将（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1157,7 +1157,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=182;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八卦阵】（随机）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【八卦阵】（随机）</p></a>"."<br>";
 }
 
 $tttid=416;
@@ -1168,9 +1168,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1262;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【乾阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【乾阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【乾阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【乾阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=417;
 include("./rcrw/ttt.php");
@@ -1180,9 +1180,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1263;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【乾阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【乾阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【乾阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【乾阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=418;
 include("./rcrw/ttt.php");
@@ -1192,9 +1192,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1264;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【乾阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【乾阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【乾阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【乾阵】仙卫（已阵亡）</p></br>";
 }
 
 
@@ -1216,14 +1216,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1235,9 +1235,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1265;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【震阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【震阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【震阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【震阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=420;
 include("./rcrw/ttt.php");
@@ -1247,9 +1247,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1266;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【震阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【震阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【震阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【震阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=421;
 include("./rcrw/ttt.php");
@@ -1259,9 +1259,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1267;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【震阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【震阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【震阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【震阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1278,14 +1278,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1297,9 +1297,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1268;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【坎阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【坎阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【坎阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【坎阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=423;
 include("./rcrw/ttt.php");
@@ -1309,9 +1309,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1269;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【坎阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【坎阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【坎阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【坎阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=424;
 include("./rcrw/ttt.php");
@@ -1321,9 +1321,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1270;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【坎阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【坎阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【坎阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【坎阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1339,14 +1339,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1358,9 +1358,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1271;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【艮阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【艮阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【艮阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【艮阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=426;
 include("./rcrw/ttt.php");
@@ -1370,9 +1370,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1272;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【艮阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【艮阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【艮阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【艮阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=427;
 include("./rcrw/ttt.php");
@@ -1382,9 +1382,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1273;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【艮阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【艮阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【艮阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【艮阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1409,9 +1409,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=183;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八阵图】（天覆阵）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【八阵图】（天覆阵）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【八阵图】（封印中）</font></a>"."<br>";
+echo "<p style='color: red'>【八阵图】（封印中）</p></a>"."<br>";
 } 
 
 $tttid=428;
@@ -1422,9 +1422,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1274;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【坤阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【坤阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【坤阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【坤阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=429;
 include("./rcrw/ttt.php");
@@ -1434,9 +1434,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1275;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【坤阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【坤阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【坤阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【坤阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=430;
 include("./rcrw/ttt.php");
@@ -1446,9 +1446,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1276;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【坤阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【坤阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【坤阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【坤阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1465,14 +1465,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1484,9 +1484,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1277;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【巽阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【巽阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巽阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巽阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=432;
 include("./rcrw/ttt.php");
@@ -1496,9 +1496,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1278;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【巽阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【巽阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巽阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巽阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=433;
 include("./rcrw/ttt.php");
@@ -1508,9 +1508,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1279;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【巽阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【巽阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巽阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巽阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1527,14 +1527,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1547,9 +1547,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1280;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【离阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【离阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【离阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【离阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=435;
 include("./rcrw/ttt.php");
@@ -1559,9 +1559,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1281;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【离阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【离阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【离阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【离阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=436;
 include("./rcrw/ttt.php");
@@ -1571,9 +1571,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1282;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【离阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【离阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【离阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【离阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1590,14 +1590,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1609,9 +1609,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1283;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【兑阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【兑阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【兑阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【兑阵】仙卫（已阵亡）</p></br>";
 } 
 $tttid=438;
 include("./rcrw/ttt.php");
@@ -1621,9 +1621,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1284;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【兑阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【兑阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【兑阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【兑阵】仙卫（已阵亡）</p></br>";
 }
 $tttid=439;
 include("./rcrw/ttt.php");
@@ -1633,9 +1633,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1285;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【兑阵】仙卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【兑阵】仙卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【兑阵】仙卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【兑阵】仙卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1662,7 +1662,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=184;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【八阵图】（随机）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【八阵图】（随机）</p></a>"."<br>";
 }
 
 
@@ -1675,9 +1675,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1286;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天覆阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【天覆阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天覆阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天覆阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=441;
 include("./rcrw/ttt.php");
@@ -1687,9 +1687,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1287;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天覆阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【天覆阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天覆阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天覆阵】神卫（已阵亡）</p></br>";
 }
 $tttid=442;
 include("./rcrw/ttt.php");
@@ -1699,9 +1699,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1288;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天覆阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【天覆阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天覆阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天覆阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1727,9 +1727,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=185;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【神仙气阵图】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【神仙气阵图】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【神仙气阵图】（封印中）</font></a>"."<br>";
+echo "<p style='color: red'>【神仙气阵图】（封印中）</p></a>"."<br>";
 } 
 $tttid=443;
 include("./rcrw/ttt.php");
@@ -1739,9 +1739,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1289;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【地载阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【地载阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【地载阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【地载阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=444;
 include("./rcrw/ttt.php");
@@ -1751,9 +1751,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1290;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【地载阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【地载阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【地载阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【地载阵】神卫（已阵亡）</p></br>";
 }
 $tttid=445;
 include("./rcrw/ttt.php");
@@ -1763,9 +1763,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1291;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【地载阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【地载阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【地载阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【地载阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1783,14 +1783,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1802,9 +1802,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1292;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风扬阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风扬阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风扬阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风扬阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=447;
 include("./rcrw/ttt.php");
@@ -1814,9 +1814,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1293;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风扬阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风扬阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风扬阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风扬阵】神卫（已阵亡）</p></br>";
 }
 $tttid=448;
 include("./rcrw/ttt.php");
@@ -1826,9 +1826,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1294;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风扬阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风扬阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风扬阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风扬阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1845,14 +1845,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1864,9 +1864,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1295;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【云垂阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【云垂阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【云垂阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【云垂阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=450;
 include("./rcrw/ttt.php");
@@ -1876,9 +1876,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1296;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【云垂阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【云垂阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【云垂阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【云垂阵】神卫（已阵亡）</p></br>";
 }
 $tttid=451;
 include("./rcrw/ttt.php");
@@ -1888,9 +1888,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1297;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【云垂阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【云垂阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【云垂阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【云垂阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1907,14 +1907,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1927,9 +1927,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1298;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【龙飞阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【龙飞阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【龙飞阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【龙飞阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=453;
 include("./rcrw/ttt.php");
@@ -1939,9 +1939,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1299;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【龙飞阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【龙飞阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【龙飞阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【龙飞阵】神卫（已阵亡）</p></br>";
 }
 $tttid=454;
 include("./rcrw/ttt.php");
@@ -1951,9 +1951,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1300;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【龙飞阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【龙飞阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【龙飞阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【龙飞阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -1971,14 +1971,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -1990,9 +1990,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1301;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【虎翼阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【虎翼阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【虎翼阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【虎翼阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=456;
 include("./rcrw/ttt.php");
@@ -2002,9 +2002,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1302;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【虎翼阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【虎翼阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【虎翼阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【虎翼阵】神卫（已阵亡）</p></br>";
 }
 $tttid=457;
 include("./rcrw/ttt.php");
@@ -2014,9 +2014,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1303;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【虎翼阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【虎翼阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【虎翼阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【虎翼阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -2034,14 +2034,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -2053,9 +2053,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1304;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【鸟翔阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【鸟翔阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【鸟翔阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【鸟翔阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=459;
 include("./rcrw/ttt.php");
@@ -2065,9 +2065,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1305;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【鸟翔阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【鸟翔阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【鸟翔阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【鸟翔阵】神卫（已阵亡）</p></br>";
 }
 $tttid=460;
 include("./rcrw/ttt.php");
@@ -2077,9 +2077,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1306;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【鸟翔阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【鸟翔阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【鸟翔阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【鸟翔阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -2097,14 +2097,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 echo "<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=657;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>使用〖护身符〗跳阵</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>使用〖护身符〗跳阵</p></a>"."<br>";
 
 
 
@@ -2117,9 +2117,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1307;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【蛇蟠阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【蛇蟠阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【蛇蟠阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【蛇蟠阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=462;
 include("./rcrw/ttt.php");
@@ -2129,9 +2129,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1308;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【蛇蟠阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【蛇蟠阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【蛇蟠阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【蛇蟠阵】神卫（已阵亡）</p></br>";
 }
 $tttid=463;
 include("./rcrw/ttt.php");
@@ -2141,9 +2141,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1309;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【蛇蟠阵】神卫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【蛇蟠阵】神卫</p></a>"."<br>";
 } else{	
-echo "<font color=red>【蛇蟠阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【蛇蟠阵】神卫（已阵亡）</p></br>";
 }
 /////////////////////////////////////////////不能进入下一阵///////////////////////////////////
 include("mapxx.php");//地图出入口
@@ -2161,7 +2161,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=178;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>离开".$map01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离开".$map01."</p></a>"."<br>";
 
 
 
@@ -2182,9 +2182,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=653;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【如来佛祖】（实现愿望）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【如来佛祖】（实现愿望）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【如来佛祖】（实现愿望）（封印中）</font></a>"."<br>";
+echo "<p style='color: red'>【如来佛祖】（实现愿望）（封印中）</p></a>"."<br>";
 } 
 
 
@@ -2198,9 +2198,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1310;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神仙气阵图】神将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神仙气阵图】神将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【蛇蟠阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【蛇蟠阵】神卫（已阵亡）</p></br>";
 } 
 $tttid=465;
 include("./rcrw/ttt.php");
@@ -2210,9 +2210,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1311;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神仙气阵图】神将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神仙气阵图】神将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【蛇蟠阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【蛇蟠阵】神卫（已阵亡）</p></br>";
 }
 $tttid=466;
 include("./rcrw/ttt.php");
@@ -2222,9 +2222,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1312;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【神仙气阵图】神将</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【神仙气阵图】神将</p></a>"."<br>";
 } else{	
-echo "<font color=red>【蛇蟠阵】神卫（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【蛇蟠阵】神卫（已阵亡）</p></br>";
 }
 
 $tttid=467;
@@ -2235,9 +2235,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1313;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【如来佛祖】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【如来佛祖】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【如来佛祖】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【如来佛祖】（已阵亡）</p></br>";
 }
 
 

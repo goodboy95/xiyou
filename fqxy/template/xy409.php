@@ -7,7 +7,7 @@ if($zsspd==1){
 
 
 
-echo "<font color=red>小轩西游福利中心</font>"."<br>";	
+echo "<p style='color: red'>小轩西游福利中心</p>"."<br>";
 	
 
 
@@ -16,25 +16,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=307;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>每日福利</font></a>";
-echo "<font color=black>|</font>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>每日福利</p></a>";
+echo "<p style='color: black'>|</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=408;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>每日活跃</font></a>";
-echo "<font color=blue>|</font>";	
-echo "<font color=black>每日签到</font>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>每日活跃</p></a>";
+echo "<p style='color: blue'>|</p>";
+echo "<p style='color: black'>每日签到</p>";
 
-echo "<font color=black>|</font>";	
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=410;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>每日宣传</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>每日宣传</p></a>"."<br>";
 
 
 
@@ -44,32 +44,32 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=417;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>黄金贵族</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>黄金贵族</p></a>";
 
-echo "<font color=black>|</font>";	
+echo "<p style='color: black'>|</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=418;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>铂金贵族</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>铂金贵族</p></a>";
 
-echo "<font color=black>|</font>";	
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=419;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>钻石皇族</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>钻石皇族</p></a>";
 
-echo "<font color=black>|</font>";	
+echo "<p style='color: black'>|</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=420;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>至尊皇族</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>至尊皇族</p></a>"."<br>";
 
 		
 	echo "<br>";
@@ -111,17 +111,17 @@ $qdy="错误月";
 include("./ini/qd_ini.php");
 
 $qdxx1=($iniFile->getCategory('签到信息'));
-echo "<font color=red>【".$qdy."签到活动】</font>"."<br>";
+echo "<p style='color: red'>【".$qdy."签到活动】</p>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=412;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【".$qdy."签到奖励一览】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【".$qdy."签到奖励一览】</p></a>"."<br>";
 
 
-echo "<font color=black>今日签到情况：</font>";
+echo "<p style='color: black'>今日签到情况：</p>";
 include("./ini/hd_ini.php");
 $hdtime=($iniFile->getItem('活动时间','30'));
 $hdlq=1;
@@ -141,9 +141,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=302;
 $npc[]=30;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【每日签到】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【每日签到】</p></a>"."<br>";
 } else{	
-echo "<font color=red>已签到</font></br>"; 
+echo "<p style='color: red'>已签到</p></br>";
 } 
 
 
@@ -155,7 +155,7 @@ echo "<font color=red>已签到</font></br>";
 
 
 echo "<br>";
-echo "<font color=black>1.</font><font color=wathet>2次签到奖励--</font>";
+echo "<p style='color: black'>1.</p><p style='color: wathet'>2次签到奖励--</p>";
 
 
 
@@ -164,57 +164,57 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=411;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【领取】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【领取】</p></a>"."<br>";
 
 
 
 echo "<br>";
-echo "<font color=black>1.</font><font color=wathet>5次签到奖励--</font>";
+echo "<p style='color: black'>1.</p><p style='color: wathet'>5次签到奖励--</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=411;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【领取】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【领取】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>1.</font><font color=wathet>10次签到奖励--</font>";
+echo "<p style='color: black'>1.</p><p style='color: wathet'>10次签到奖励--</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=411;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【领取】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【领取】</p></a>"."<br>";
 
 
 echo "<br>";
-echo "<font color=black>1.</font><font color=wathet>15次签到奖励--</font>";
+echo "<p style='color: black'>1.</p><p style='color: wathet'>15次签到奖励--</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=411;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【领取】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【领取】</p></a>"."<br>";
 
 
 echo "<br>";
-echo "<font color=black>1.</font><font color=wathet>25次签到奖励--</font>";
+echo "<p style='color: black'>1.</p><p style='color: wathet'>25次签到奖励--</p>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=411;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【领取】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【领取】</p></a>"."<br>";
 
 
-echo "<font color=red>本月已累计签到&nbsp".$qdxx1['签到次数']."&nbsp次</font><br>";
+echo "<p style='color: red'>本月已累计签到&nbsp".$qdxx1['签到次数']."&nbsp次</p><br>";
 
-echo "<font color=black>介绍：玩家每天可签到一次，每月1日清零</font><br>";
-echo "<font color=black>当累计达到2,5,10,15,25可领取丰厚的奖励</font><br>";
+echo "<p style='color: black'>介绍：玩家每天可签到一次，每月1日清零</p><br>";
+echo "<p style='color: black'>当累计达到2,5,10,15,25可领取丰厚的奖励</p><br>";
 echo "<br>";
 
 
@@ -223,9 +223,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

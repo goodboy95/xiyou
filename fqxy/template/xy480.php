@@ -34,7 +34,7 @@ $iniFile->updItem('活动次数', [$hdid => $hdcs]);
 
 
 
-echo "<font color=black>〖活动〗紫霞仙子：我的意中人是一位盖世英雄,有一天他会身披金甲圣衣、驾着七彩祥云来娶我，你会娶我吗？</font>"."<br>";
+echo "<p style='color: black'>〖活动〗紫霞仙子：我的意中人是一位盖世英雄,有一天他会身披金甲圣衣、驾着七彩祥云来娶我，你会娶我吗？</p>"."<br>";
 echo "<br>";
 
 
@@ -57,13 +57,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>曾经有一份真挚的爱情摆在我的面前</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>曾经有一份真挚的爱情摆在我的面前</p></a>"."<br>";
 
 
 
 } else{
 		
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 	
 
 }
@@ -74,7 +74,7 @@ echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故�
 } else{	
 
 
-echo "<font color=red>〖活动〗紫霞仙子：你今日已假扮至尊宝骗我很多次了！！</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：你今日已假扮至尊宝骗我很多次了！！</p>"."<br>";
 	
 	
 
@@ -108,9 +108,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

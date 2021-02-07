@@ -197,7 +197,7 @@ if ($zsspd == 1) {
                         $wjgjzw = ($iniFile->getItem('国家职务名字值' . $dtx . 'x' . $dty, $v));
                         if ($i == 1) {
                         } else {
-                            echo "<font color=black>,</font>";
+                            echo "<p style='color: black'>,</p>";
                         }
                         if ($wjvip != "") {
                             $img = 'pic/vip/' . "vip" . $wjvip . '.png';
@@ -210,20 +210,20 @@ if ($zsspd == 1) {
                         $clj[] = 93;
                         $npc[] = $v;
                         if ($wjgjmz != "") {
-                            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>" . $wjmz . "【" . $wjgjmz . "】（" . $wjgjzw . "）</font></a>";
+                            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjmz . "【" . $wjgjmz . "】（" . $wjgjzw . "）</p></a>";
                         } else {
-                            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>" . $wjmz . "</font></a>";
+                            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjmz . "</p></a>";
                         }
-                        // echo "<font color=black>".$wjmz."</font>"; 	 
+                        // echo "<p style='color: black'>".$wjmz."</p>";
                     }
                     if ($i == 4) {
-                        echo "<font color=black>,</font>";
+                        echo "<p style='color: black'>,</p>";
 //cmd及超链接值
                         $cmid = $cmid + 1;
                         $cdid[] = $cmid;
                         $clj[] = 92;
                         $npc[] = 0;
-                        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>更多....</font></a>";
+                        echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>更多....</p></a>";
                         break;
                     }
                 }

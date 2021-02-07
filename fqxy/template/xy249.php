@@ -30,8 +30,8 @@ if ($zsspd == 1) {
             } else {
                 $bz1 = rand(1, 100);//随机//逃跑概率
                 if ($bz1 >= 1 && $bz1 <= $tpgl) {
-                    echo "<font color=red>你对" . $nname . "使用了捕捉！！</font>" . "<br>";
-                    echo "<font color=red>但是捕捉失败了！！</font>" . "<br>";
+                    echo "<p style='color: red'>你对" . $nname . "使用了捕捉！！</p>" . "<br>";
+                    echo "<p style='color: red'>但是捕捉失败了！！</p>" . "<br>";
                     include("template/xy010.php");
 //不走xy.php直接调用xy文件需要加pz01配置
                     include("./pz/pz01.php");
@@ -50,14 +50,14 @@ if ($zsspd == 1) {
         if ($yymid == 130) {
             $npcc = ($iniFile->getItem('怪物编号', '1号'));
             include("./npc/bossxx.php");
-            echo "<font color=red>对不起！！你不能对" . $nname . "使用宠物捕捉！！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你不能对" . $nname . "使用宠物捕捉！！！</p>" . "<br>";
             include("template/xy130.php");
 //不走xy.php直接调用xy文件需要加pz01配置
             include("./pz/pz01.php");
         } else {
             $npcc = ($iniFile->getItem('怪物编号', '1号'));
             include("./npc/npcxx.php");
-            echo "<font color=red>对不起！！你不能对" . $nname . "使用宠物捕捉！！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你不能对" . $nname . "使用宠物捕捉！！！</p>" . "<br>";
             include("template/xy010.php");
 //不走xy.php直接调用xy文件需要加pz01配置
             include("./pz/pz01.php");

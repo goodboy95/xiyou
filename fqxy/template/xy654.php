@@ -16,13 +16,13 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=black>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "【如来佛祖】帮助他实现了他的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0];
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</font>" . "<br>";
+            echo "<p style='color: black'>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</p>" . "<br>";
         }
     } elseif ($npcc == 2) {
 //随机
@@ -37,13 +37,13 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=black>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "【如来佛祖】帮助他实现了他的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0];
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</font>" . "<br>";
+            echo "<p style='color: black'>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</p>" . "<br>";
         }
     } elseif ($npcc == 3) {
 //随机
@@ -63,13 +63,13 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=black>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "【如来佛祖】帮助他实现了他的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0];
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</font>" . "<br>";
+            echo "<p style='color: black'>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</p>" . "<br>";
         }
     } elseif ($npcc == 4) {
 //随机
@@ -89,13 +89,13 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=black>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "【如来佛祖】帮助他实现了他的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0];
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</font>" . "<br>";
+            echo "<p style='color: black'>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</p>" . "<br>";
         }
     } elseif ($npcc == 5) {
 //随机
@@ -115,13 +115,13 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
 //物品加
             include("./rwmap/rwget.php");
-            echo "<font color=black>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</font>" . "<br>";
+            echo "<p style='color: black'>恭喜你！！【如来佛祖】帮助实现了你的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0] . "</p>" . "<br>";
             include("./ini/zt_ini.php");
             $wjmz = ($iniFile->getItem('玩家信息', '玩家名字'));
             $xtxx = "恭喜玩家" . $wjmz . "【如来佛祖】帮助他实现了他的愿望，获得" . $wpdz1[0] . "x" . $wpdz4[0];
             include("./msg/msgg02.php");
         } else {
-            echo "<font color=black>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</font>" . "<br>";
+            echo "<p style='color: black'>很遗憾！！你的愿望落空了【如来佛祖】都在嫌弃你</p>" . "<br>";
         }
     }
     include("./ini/user_ini.php");
@@ -134,8 +134,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

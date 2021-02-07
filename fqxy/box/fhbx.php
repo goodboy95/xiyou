@@ -4,7 +4,7 @@
 
 $wpsy=2;//使用成功
 $ysmz1="〖风花月饼礼盒〗";
-echo "<font color=black>恭喜你！打开了".$ysmz1."</font><br>";
+echo "<p style='color: black'>恭喜你！打开了".$ysmz1."</p><br>";
 
 
 
@@ -191,7 +191,7 @@ include("./msg/msgg02.php");
 
 if($dd >=1){
 } else{
-echo "<font color=black>居然人品大爆发了居然是个空礼盒</font>"."<br>";
+echo "<p style='color: black'>居然人品大爆发了居然是个空礼盒</p>"."<br>";
 	} 		
 
 	

@@ -54,7 +54,7 @@ if($wprl<=$bbrlb){
 
 if($wpsl<$sl){
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 } elseif($wpsl>$sl&&$sl!=0){  
@@ -252,7 +252,7 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
 //////////////////////////////////////////////////////////////////缓存背包容量修改/////////////////////////////////////////
 
-echo "<font color=red>你下架了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你下架了".$wpmz."x".$sl."</p>"."<br>";
 
 include("template/xy219.php");
 //不走xy.php直接调用xy文件需要加pz01配置
@@ -457,7 +457,7 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
 
 
-echo "<font color=red>你下架了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你下架了".$wpmz."x".$sl."</p>"."<br>";
 
 
 if($sl>1){  
@@ -474,7 +474,7 @@ include("./pz/pz01.php");
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -484,7 +484,7 @@ echo "<br>";
 } else{
 $dqwp=0;
 	//$qbwp=1;
-echo "<font color=red>对不起，你的背包已放不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的背包已放不下任何东西了</p>"."<br>";
 echo "<br>";
 
 
@@ -493,7 +493,7 @@ echo "<br>";
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -507,7 +507,7 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

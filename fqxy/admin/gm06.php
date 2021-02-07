@@ -1,6 +1,6 @@
 <?php
 
-echo "<font color=red>【发放物品】</font>"."<br>";
+echo "<p style='color: red'>【发放物品】</p>"."<br>";
 
 if($_POST['submit']){
 $wpid= $_POST['wp'];	
@@ -19,24 +19,24 @@ $npcc=$wpid;
 include("./wp/wpxx.php");
 if($wpmz!=""){
 
-echo "<font color=red>确定要向玩家【".$wjname."】（".$wjid."）发放".$wpmz."x".$wpsl."吗？</font>"."<br>";
+echo "<p style='color: red'>确定要向玩家【".$wjname."】（".$wjid."）发放".$wpmz."x".$wpsl."吗？</p>"."<br>";
 
 
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=7&&user=$wjid&&wpid=$wpid&&wpsl=$wpsl&&wpmz=$wpmz&&wjname=$wjname&&wpfl=$wpfl'><font color=blue>是的~~我确认</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>不~~我点错了</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=7&&user=$wjid&&wpid=$wpid&&wpsl=$wpsl&&wpmz=$wpmz&&wjname=$wjname&&wpfl=$wpfl'><p style='color: blue'>是的~~我确认</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>不~~我点错了</p></a>"."<br>";
 
 
 } else{
-echo "<font color=red>你输入的物品ID有误请重新输入（没有数据）</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>返回重新输入</font></a>"."<br>";
+echo "<p style='color: red'>你输入的物品ID有误请重新输入（没有数据）</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>返回重新输入</p></a>"."<br>";
 }
 } else{
-echo "<font color=red>你输入的物品ID有误请重新输入（范围1-5000内）</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>返回重新输入</font></a>"."<br>";
+echo "<p style='color: red'>你输入的物品ID有误请重新输入（范围1-5000内）</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>返回重新输入</p></a>"."<br>";
 }
 } else{
-echo "<font color=red>你输入的物品数量有误请重新输入（范围1-5000内）</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>返回重新输入</font></a>"."<br>";
+echo "<p style='color: red'>你输入的物品数量有误请重新输入（范围1-5000内）</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>返回重新输入</p></a>"."<br>";
 }
 
 
@@ -58,14 +58,14 @@ include("./ini/jsini.php");
 
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 

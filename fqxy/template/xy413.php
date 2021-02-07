@@ -19,7 +19,7 @@ $bz= rand(1, 100);
 
 if($bz >=50 ){//答对
 
-echo "<font color=red>我：So-esay太简单了，来真正有技术含量的（你识破了班主任的套路）</font>"."<br>";
+echo "<p style='color: red'>我：So-esay太简单了，来真正有技术含量的（你识破了班主任的套路）</p>"."<br>";
 $bz= rand(1, 100);	
 
 
@@ -82,7 +82,7 @@ include("./pz/ini_pzz023.php");
 
 
 } else{
-echo "<font color=red>班主任：平时都不认真上学居然答对了，我不信（被班主任套路了）</font>"."<br>";
+echo "<p style='color: red'>班主任：平时都不认真上学居然答对了，我不信（被班主任套路了）</p>"."<br>";
 $bz= rand(1, 100);	
 if($bz >=1&&$bz <=11){
 //物品加
@@ -127,7 +127,7 @@ include("./pz/ini_pzz023.php");
 
 
 } else{	//打错
-echo "<font color=red>班主任：还不认真上学，长大后，小狗会饿死，工作会没了（很遗憾你居然能答错）</font>"."<br>";
+echo "<p style='color: red'>班主任：还不认真上学，长大后，小狗会饿死，工作会没了（很遗憾你居然能答错）</p>"."<br>";
 //经验	
 $jy=50000;
 include("./pz/ini_pzz023.php");
@@ -153,9 +153,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

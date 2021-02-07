@@ -28,10 +28,10 @@ if ($zsspd == 1) {
                 $syz = $sjwpsl1 * 500;//值
                 include("./pz/ini_pzz035.php");
             } else {
-                echo "<font color=black>对不起,你的〖百年魔珠〗不足50个无法兑换</font><br>";
+                echo "<p style='color: black'>对不起,你的〖百年魔珠〗不足50个无法兑换</p><br>";
             }
         } else {
-            echo "<font color=black>对不起,你的〖百年魔珠〗不足50个无法兑换</font><br>";
+            echo "<p style='color: black'>对不起,你的〖百年魔珠〗不足50个无法兑换</p><br>";
         }
     } elseif ($npcc == 2) {
         $sjcs = 1;
@@ -897,7 +897,7 @@ if ($zsspd == 1) {
             $syz = $xysw1;//值
             include("./pz/ini_pzz035.php");
         } else {
-            echo "<font color=black>对不起,你没有副本材料可以兑换西游声望</font><br>";
+            echo "<p style='color: black'>对不起,你没有副本材料可以兑换西游声望</p><br>";
         }
     } elseif ($npcc == 3) {
         $sjcs = 10;
@@ -924,10 +924,10 @@ if ($zsspd == 1) {
                 $syz = $sjwpsl1 * 50;//值
                 include("./pz/ini_pzz035.php");
             } else {
-                echo "<font color=black>对不起,你的【恶魔符文】不足10个无法兑换</font><br>";
+                echo "<p style='color: black'>对不起,你的【恶魔符文】不足10个无法兑换</p><br>";
             }
         } else {
-            echo "<font color=black>对不起,你的【恶魔符文】不足10个无法兑换</font><br>";
+            echo "<p style='color: black'>对不起,你的【恶魔符文】不足10个无法兑换</p><br>";
         }
     } elseif ($npcc == 4) {
         $sjcs = 1;
@@ -1145,7 +1145,7 @@ if ($zsspd == 1) {
             $syz = $xysw1;//值
             include("./pz/ini_pzz035.php");
         } else {
-            echo "<font color=black>对不起,你没有任意5级石头可以兑换西游声望</font><br>";
+            echo "<p style='color: black'>对不起,你没有任意5级石头可以兑换西游声望</p><br>";
         }
     } elseif ($npcc == 5) {
         $sjcs = 1;
@@ -1363,7 +1363,7 @@ if ($zsspd == 1) {
             $syz = $xysw1;//值
             include("./pz/ini_pzz035.php");
         } else {
-            echo "<font color=black>对不起,你没有任意6级石头可以兑换西游声望</font><br>";
+            echo "<p style='color: black'>对不起,你没有任意6级石头可以兑换西游声望</p><br>";
         }
     } elseif ($npcc == 6) {
         $sjcs = 1;
@@ -1635,7 +1635,7 @@ if ($zsspd == 1) {
             $syz = $xysw1;//值
             include("./pz/ini_pzz035.php");
         } else {
-            echo "<font color=black>对不起,你没有任意一样区域或者师门卷轴可以兑换西游声望</font><br>";
+            echo "<p style='color: black'>对不起,你没有任意一样区域或者师门卷轴可以兑换西游声望</p><br>";
         }
     }
 //cmd及超链接值
@@ -1643,8 +1643,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

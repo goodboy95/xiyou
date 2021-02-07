@@ -46,7 +46,7 @@ $name=($iniFile->getItem('验证信息','玩家昵称'));
 include("../url/url.php");
 include("../sql/mysql.php");//调用数据库连接
 
-echo "<font color=red>【提取成功】</font>"."<br>";
+echo "<p style='color: red'>【提取成功】</p>"."<br>";
 
 
 //随机产生一个玩家的特征码写入数据库验证网址信息
@@ -90,21 +90,21 @@ $sql = "insert into $q2 (id,zem,sy)  values('$maxidd','$a2','1')";
 
 
 
-echo "<font color=black>【注册码】</font>"."<br>";
+echo "<p style='color: black'>【注册码】</p>"."<br>";
 
 
-echo "<font color=red>恭喜你成功提取到一条注册码</font>"."<br>";
-echo "<font color=red>请复制以下注册码进行注册:</font>"."<br>";
-echo "<font color=black>$a2</font>"."<br>";
+echo "<p style='color: red'>恭喜你成功提取到一条注册码</p>"."<br>";
+echo "<p style='color: red'>请复制以下注册码进行注册:</p>"."<br>";
+echo "<p style='color: black'>$a2</p>"."<br>";
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
 
 
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 
@@ -114,12 +114,12 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><fo
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 } else {
 include("../url/url.php");
 $xyurl="http://".$xxjyurl."/admin/login.php";
-$zcxx="<font color=red>当前验证信息失效,请重新登录</font>"."<br><br><a href='login.php'><font color=blue>返回GM登录</font></a>"."<br>";
+$zcxx="<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br><br><a href='login.php'><p style='color: blue'>返回GM登录</p></a>"."<br>";
 }
 
 ?>

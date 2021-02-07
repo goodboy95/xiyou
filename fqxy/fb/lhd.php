@@ -21,14 +21,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【普通】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -41,21 +41,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【普通】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=20;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【普通】</p></a>"."<br>";
 
 } 
 	
@@ -72,14 +72,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=19;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【普通】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【普通】</p></a>"."<br>";
 
 
 
@@ -115,14 +115,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【困难】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -135,21 +135,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【困难】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=22;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【困难】</p></a>"."<br>";
 
 } 
 	
@@ -166,14 +166,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=21;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【困难】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【困难】</p></a>"."<br>";
 
 
 
@@ -201,14 +201,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【梦魇】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -221,21 +221,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【梦魇】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=24;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【梦魇】</p></a>"."<br>";
 
 } 
 	
@@ -252,14 +252,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=23;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【梦魇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【梦魇】</p></a>"."<br>";
 
 
 
@@ -285,14 +285,14 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=87;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【地狱】</p></a>"."<br>";
 } else{
 	
 $fbtime=$gwbl['激活时间'];
@@ -305,21 +305,21 @@ $img='pic/ts/ts1.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>！</font>"; 
+echo "<p style='color: black'>！</p>";
 }	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=85;
 $npc[]=$fbid;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【地狱】</p></a>"."<br>";
 }else{ 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=68;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【地狱】</p></a>"."<br>";
 
 } 
 	
@@ -335,14 +335,14 @@ $img='pic/ts/ts2.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";
 } else{
-echo "<font color=black>？</font>"; 
+echo "<p style='color: black'>？</p>";
 }
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=88;
 $npc[]=67;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>激活莲花洞副本【地狱】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>激活莲花洞副本【地狱】</p></a>"."<br>";
 
 
 

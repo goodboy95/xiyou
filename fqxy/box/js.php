@@ -445,7 +445,7 @@ if($h ==11||$h ==17||$h ==21){
 	
 if($iii >=1&&$iii <=10){
 	
-echo "<font color=black>【幸运女神与财神时间，他们会擦出怎么样的火花呢】</font>"."<br>";
+echo "<p style='color: black'>【幸运女神与财神时间，他们会擦出怎么样的火花呢】</p>"."<br>";
 } else {
 }
 
@@ -455,7 +455,7 @@ if($iii==1&&$sss==10||$iii==1&&$sss==20||$iii==1&&$sss==30||$iii==1&&$sss==40||$
 //随机
 $bz= rand(1, 2);
 if($bz ==1){
-echo "<font color=red>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</font>"."<br>";
+echo "<p style='color: red'>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</p>"."<br>";
 
 
 
@@ -507,7 +507,7 @@ if($iii==3&&$sss==10||$iii==3&&$sss==20||$iii==3&&$sss==30||$iii==3&&$sss==40||$
 //随机
 $bz= rand(1, 2);
 if($bz ==1){
-echo "<font color=red>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</font>"."<br>";
+echo "<p style='color: red'>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</p>"."<br>";
 
 
 $bz= rand(1, 10);
@@ -550,7 +550,7 @@ if($iii==5&&$sss==10||$iii==5&&$sss==20||$iii==5&&$sss==30||$iii==5&&$sss==40||$
 //随机
 $bz= rand(1, 2);
 if($bz ==1){
-echo "<font color=red>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</font>"."<br>";
+echo "<p style='color: red'>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</p>"."<br>";
 $bz= rand(1, 10);
 //物品加
 $wpdz1[]="【金秋的思念】";//名字
@@ -596,7 +596,7 @@ if($iii==7&&$sss==10||$iii==7&&$sss==20||$iii==7&&$sss==30||$iii==7&&$sss==40||$
 //随机
 $bz= rand(1, 2);
 if($bz ==1){
-echo "<font color=red>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</font>"."<br>";
+echo "<p style='color: red'>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</p>"."<br>";
 
 $bz= rand(1, 10);
 //物品加
@@ -644,7 +644,7 @@ if($iii==10&&$sss==10||$iii==10&&$sss==20||$iii==10&&$sss==30||$iii==10&&$sss==4
 //随机
 $bz= rand(1, 2);
 if($bz ==1){
-echo "<font color=red>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</font>"."<br>";
+echo "<p style='color: red'>你受到了幸运女神的垂爱（运气爆棚~~财神驾到）</p>"."<br>";
 
 $bz= rand(1, 10);
 //物品加

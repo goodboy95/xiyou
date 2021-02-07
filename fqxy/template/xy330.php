@@ -119,7 +119,7 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('验证信息', ['cmid值' => $ymid]);
-echo "<font color=red>你使用了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你使用了".$wpmz."x".$sl."</p>"."<br>";
 
 //调用使用信息
 include("./wp/wpsy.php");
@@ -311,7 +311,7 @@ $ininame = $path."/".$inina;
 $iniFile = new iniFile($ininame);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('验证信息', ['cmid值' => $ymid]);
-echo "<font color=red>你使用了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你使用了".$wpmz."x".$sl."</p>"."<br>";
 
 //调用使用信息
 include("./wp/wpsy.php");
@@ -357,7 +357,7 @@ include("./pz/pz01.php");
 
 } else{
 
-echo "<font color=black>对不起！你没有1".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: black'>对不起！你没有1".$wpmz."x".$sl."</p>"."<br>";
 
 }
 

@@ -232,11 +232,11 @@ $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
 
 	
-	echo "<font color=black>你取出了".$zbxjj.$xxxbs.$clname."</font>"."<br>";
+	echo "<p style='color: black'>你取出了".$zbxjj.$xxxbs.$clname."</p>"."<br>";
 	
 	
 } else{
-echo "<font color=black>你已取出过该装备了！！</font>"."<br>";
+echo "<p style='color: black'>你已取出过该装备了！！</p>"."<br>";
 
 } 
 
@@ -245,7 +245,7 @@ echo "<font color=black>你已取出过该装备了！！</font>"."<br>";
 } else{
 
 	$dqwp=0;
-echo "<font color=red>对不起，你的背包已放不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的背包已放不下任何东西了</p>"."<br>";
 echo "<br>";
 
 
@@ -257,7 +257,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=280;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>"."<br>";
 
 
 echo "<br>";
@@ -267,9 +267,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

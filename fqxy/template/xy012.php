@@ -28,8 +28,8 @@ $keyjnnid[]=$jnnid[$key];
 foreach(array_keys($jnndj) as $key){
 $keyjnndj[]=$jnndj[$key];
 }
-echo "<font color=black>我的技能</font>"."<br>";
-echo "<font color=black>----------</font>"."<br>";
+echo "<p style='color: black'>我的技能</p>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
 
 if($m>0){
 
@@ -46,18 +46,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=13;
 $npc[]=$xxid;
-echo "<font color=black>".$i.".</font>";
+echo "<p style='color: black'>".$i.".</p>";
 
 
 if($xxid==3||$xxid==15){
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."</font></a>"."</br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."</p></a>"."</br>";
 
 
 
 } else{
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname."（".$cldj."级）</font></a>"."</br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$clname."（".$cldj."级）</p></a>"."</br>";
 
 
 
@@ -75,11 +75,11 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$clname.
 
 
 
-echo "<font color=black>你还没有学会任何技能</font>"."<br>";
+echo "<p style='color: black'>你还没有学会任何技能</p>"."<br>";
 
 }
 
-echo "<font color=black>----------</font>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
 
 
 
@@ -88,16 +88,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我的状态</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

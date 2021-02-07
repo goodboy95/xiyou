@@ -194,13 +194,13 @@ $iniFile->addItem('玩家发言',[$lttmax1 => $wjtake]);
 
 
 
-	echo "<font color=black>你对".$ckname."回复说：".$wjtake."</font><br>";
+	echo "<p style='color: black'>你对".$ckname."回复说：".$wjtake."</p><br>";
 	
 		
 		} else{
 			
 			
-echo "<font color=red>对不起！".$ckname."已将你拉黑无法发送消息给对方</font><br>";
+echo "<p style='color: red'>对不起！".$ckname."已将你拉黑无法发送消息给对方</p><br>";
 			
 			
 	} 
@@ -210,12 +210,12 @@ echo "<font color=red>对不起！".$ckname."已将你拉黑无法发送消息�
 
 
 
-echo "<font color=red>你输入的内容包含敏感字符请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的内容包含敏感字符请重新输入</p>"."<br>";
 }
 } else{
 
 
-echo "<font color=red>长度不能超过20个字符</font><br>";
+echo "<p style='color: red'>长度不能超过20个字符</p><br>";
 
 
 }
@@ -224,7 +224,7 @@ echo "<font color=red>长度不能超过20个字符</font><br>";
 } else{
 
 
-echo "<font color=red>内容不能为空</font><br>";
+echo "<p style='color: red'>内容不能为空</p><br>";
 
 
 }
@@ -235,7 +235,7 @@ echo "<font color=red>内容不能为空</font><br>";
 
 }
 $wjid=$wjid1;
-echo "<font color=black>请输入你想回复".$ckname."的话</font><br>";
+echo "<p style='color: black'>请输入你想回复".$ckname."的话</p><br>";
 
 ?>
 
@@ -251,18 +251,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回玩家</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回玩家</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 
-echo "<font color=black>----------------------</font></a>"."<br>";
+echo "<p style='color: black'>----------------------</p></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

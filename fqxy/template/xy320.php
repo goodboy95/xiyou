@@ -24,7 +24,7 @@ $qgmzid=($iniFile->getCategory('求购人id'));
 $qgjg=($iniFile->getCategory('求购价格'));
 $m=count($qgxx,0)-1; 
 
-echo "<font color=black>求购描述/求购人/求购价格</font>"."<br>";
+echo "<p style='color: black'>求购描述/求购人/求购价格</p>"."<br>";
 echo "<br>";
 if($m>=1){
 
@@ -59,7 +59,7 @@ $qg04= $keyqgjg[$i];
 
 
 
-echo "<font color=black>".$xhh.".".$qg01."-".$qg02."(".$qg04."豆/1套)|</font>";
+echo "<p style='color: black'>".$xhh.".".$qg01."-".$qg02."(".$qg04."豆/1套)|</p>";
 
 
 if($qg03==$wjid){
@@ -69,7 +69,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=321;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>撤消求购</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>撤消求购</p></a>"."<br>";
 
 } else{	
 //cmd及超链接值
@@ -77,7 +77,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=322;
 $npc[]=$qg03;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>出售官宅</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>出售官宅</p></a>"."<br>";
 
 
 }
@@ -101,7 +101,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>出售官�
 } else{	
 
 
-echo "<font color=black>暂时没有官宅求购信息</font>"."<br>";
+echo "<p style='color: black'>暂时没有官宅求购信息</p>"."<br>";
 
 
 
@@ -128,9 +128,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

@@ -16,7 +16,7 @@ include("./sql/mysql.php");//调用数据库连接
 $q2="sw".$wjid;
 $strsql = "update $q2 set swzz=$sw where swid=$swidx";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
-echo "<font color=black>获得".$syz.$swmzx."！！</font><br>";
+echo "<p style='color: black'>获得".$syz.$swmzx."！！</p><br>";
 
 
 

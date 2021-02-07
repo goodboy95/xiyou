@@ -1604,6 +1604,6 @@ if ($npcc == 1301) {
     $wpdz7[] = $oysbv;//	多少爆率
 } else {
     $nccp = 2;
-    echo "<font color=black>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</font><br>";
+    echo "<p style='color: black'>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</p><br>";
 }
 ?>

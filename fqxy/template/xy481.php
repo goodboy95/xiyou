@@ -101,7 +101,7 @@ include("./pz/ini_pzz023.php");
 	
 	
 	
-echo "<font color=black>〖活动〗紫霞仙子：你是我要找的至尊宝吗？</font>"."<br>";
+echo "<p style='color: black'>〖活动〗紫霞仙子：你是我要找的至尊宝吗？</p>"."<br>";
 echo "<br>";	
 	
 //cmd及超链接值
@@ -109,9 +109,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我没有好好珍惜</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我没有好好珍惜</p></a>"."<br>";
 } else{	
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 }
 } elseif ($npcc==2) {
 	//随机
@@ -169,16 +169,16 @@ include("./pz/ini_pzz023.php");
 	
 	
 	
-echo "<font color=black>〖活动〗紫霞仙子：当年下嫁牛魔王时为何不来找我？</font>"."<br>";
+echo "<p style='color: black'>〖活动〗紫霞仙子：当年下嫁牛魔王时为何不来找我？</p>"."<br>";
 echo "<br>";	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>等到失去时，才感到后悔</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>等到失去时，才感到后悔</p></a>"."<br>";
 } else{	
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 }
 	
 	
@@ -239,20 +239,20 @@ include("./pz/ini_pzz023.php");
 	
 	
 	
-echo "<font color=black>〖活动〗紫霞仙子：你认为老天还会给我们机会吗？</font>"."<br>";
+echo "<p style='color: black'>〖活动〗紫霞仙子：你认为老天还会给我们机会吗？</p>"."<br>";
 echo "<br>";	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>如果老天能够再给我一次机会</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>如果老天能够再给我一次机会</p></a>"."<br>";
 } else{	
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 }
 
 } elseif ($npcc==4) {
-echo "<font color=black>〖活动〗紫霞仙子：那你会对她说什么呢？</font>"."<br>";	
+echo "<p style='color: black'>〖活动〗紫霞仙子：那你会对她说什么呢？</p>"."<br>";
 	
 	//随机
 $bz= rand(1, 100);
@@ -318,13 +318,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我回对那个女孩说，我爱你</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我回对那个女孩说，我爱你</p></a>"."<br>";
 } else{	
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 }
 
 } elseif ($npcc==5) {
-echo "<font color=black>〖活动〗紫霞仙子：爱我？是多久呢？</font>"."<br>";		
+echo "<p style='color: black'>〖活动〗紫霞仙子：爱我？是多久呢？</p>"."<br>";
 	//随机
 $bz= rand(1, 100);
 if($bz <=50){
@@ -391,13 +391,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>如果非要在这个爱上加个期限的话</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>如果非要在这个爱上加个期限的话</p></a>"."<br>";
 } else{	
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 }
 
 } elseif ($npcc==6) {
-echo "<font color=black>〖活动〗紫霞仙子：期限是多久呢？</font>"."<br>";			
+echo "<p style='color: black'>〖活动〗紫霞仙子：期限是多久呢？</p>"."<br>";
 	//随机
 $bz= rand(1, 100);
 if($bz <=50){
@@ -464,9 +464,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=481;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我希望是。一万年。。。</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我希望是。一万年。。。</p></a>"."<br>";
 } else{	
-echo "<font color=red>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：(ˇˍˇ) 什么狗屁爱情故事，都是骗人的（紫霞仙子识破了你）</p>"."<br>";
 }
 	
 } elseif ($npcc==7) {
@@ -495,7 +495,7 @@ include("./rwmap/rwget.php");
 	
 	
 	
-echo "<font color=red>〖活动〗紫霞仙子：原来你是我苦苦寻找已久的那位盖世英雄啊~~~呜呜~~（你捕获到了紫霞仙子芳心）</font>"."<br>";		
+echo "<p style='color: red'>〖活动〗紫霞仙子：原来你是我苦苦寻找已久的那位盖世英雄啊~~~呜呜~~（你捕获到了紫霞仙子芳心）</p>"."<br>";
 	
 	
 	
@@ -543,7 +543,7 @@ echo "<font color=red>〖活动〗紫霞仙子：原来你是我苦苦寻找已�
 } else{	
 
 
-echo "<font color=red>〖活动〗紫霞仙子：你今日已假扮至尊宝骗我很多次了！！</font>"."<br>";	
+echo "<p style='color: red'>〖活动〗紫霞仙子：你今日已假扮至尊宝骗我很多次了！！</p>"."<br>";
 	
 	
 
@@ -577,9 +577,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

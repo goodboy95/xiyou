@@ -134,8 +134,8 @@ $q2="all_bp";
 $strsql = "update $q2 set bpdj=$bpdj,bprsmax=$bpbb01,bprsmax=$bpbb01,bpjymax=$bpbb02,bpyl=$bpcc01,bpsw=$bpcc03 where bpid=$bpid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 
-echo "<font color=red>恭喜你！！成功将".$bpmz."升级到了".$bpdj."级！！</font><br>";
-echo "<font color=red>".$bpmz."人口提升为".$bpbb01."人口！！</font><br>";
+echo "<p style='color: red'>恭喜你！！成功将".$bpmz."升级到了".$bpdj."级！！</p><br>";
+echo "<p style='color: red'>".$bpmz."人口提升为".$bpbb01."人口！！</p><br>";
 
 
 
@@ -152,14 +152,14 @@ echo "<br>";
 
 
 } else{
-echo "<font color=black>对不起！！升级".$bpmz."需要：国家资金".$bpcc01."，国家经验".$bpcc02."，国家声望".$bpcc03."</font><br>";
+echo "<p style='color: black'>对不起！！升级".$bpmz."需要：国家资金".$bpcc01."，国家经验".$bpcc02."，国家声望".$bpcc03."</p><br>";
 
 
 
 } 
 
 } else{
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }
 
 
@@ -172,15 +172,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=172;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回国家</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回国家</p></a>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

@@ -126,7 +126,7 @@ ini_set("error_reporting", "E_ALL & ~E_NOTICE");//防止报错代码
 include("./url/url.php");
 //$xyurl="http://".$xxjyurl."/index.php";
 $xyurl = "http://" . $xxjyurl . "/xxjy/index.php";
-$zcxx = "<font color=red>当前验证信息失效,请重新登录</font>" . "<br><br><a href='$xyurl'><font color=blue>返回登录</font></a>" . "<br>";
+$zcxx = "<p style='color: red'>当前验证信息失效,请重新登录</p>" . "<br><br><a href='$xyurl'><p style='color: blue'>返回登录</p></a>" . "<br>";
 
 
 ?>

@@ -33,7 +33,7 @@ $bpzw="军团长";
 } else{
 $bpzw="成员";
 }
-echo "<font color=black>请选择你要将谁任命为【".$bpzw."】</font><br>";
+echo "<p style='color: black'>请选择你要将谁任命为【".$bpzw."】</p><br>";
 
 
 
@@ -134,7 +134,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 
 $xxh= $ym*10-9+$i;
 
-echo "<font color=black>".$xxh.".</font>";
+echo "<p style='color: black'>".$xxh.".</p>";
 
 if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
 
@@ -143,10 +143,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>";
 
 } else{
-echo "<font color=red>".$clname.".</font>";
+echo "<p style='color: red'>".$clname.".</p>";
 }
 
 
@@ -172,7 +172,7 @@ $bpzw1="成员";
 
 
 
-echo "<font color=black>[".$bpzw1."]</font>";
+echo "<p style='color: black'>[".$bpzw1."]</p>";
 
 
 if($bpzw1=="成员"){
@@ -183,7 +183,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=178;
 $npc[]=$xxxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任命".$bpzw."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>任命".$bpzw."</p></a>";
 }
 echo "</br>";
 
@@ -212,7 +212,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 
 $xxh= $ym*10-9+$i;
 
-echo "<font color=black>".$xxh.".</font>";
+echo "<p style='color: black'>".$xxh.".</p>";
 if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
 
 //cmd及超链接值
@@ -220,10 +220,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>";
 
 } else{
-echo "<font color=red>".$clname.".</font>";
+echo "<p style='color: red'>".$clname.".</p>";
 }
 
 if($bp['辅助大臣id']==$xxid){  
@@ -245,7 +245,7 @@ $bpzw1="成员";
 }
 
 
-echo "<font color=black>[".$bpzw1."]</font>";
+echo "<p style='color: black'>[".$bpzw1."]</p>";
 
 
 if($bpzw1=="成员"){
@@ -256,7 +256,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=178;
 $npc[]=$xxxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任命".$bpzw."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>任命".$bpzw."</p></a>";
 }
 echo "</br>";
 
@@ -277,7 +277,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 
 $xxh= $ym*10-9+$i;
 	
-echo "<font color=black>".$xxh.".</font>";
+echo "<p style='color: black'>".$xxh.".</p>";
 if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
 
 //cmd及超链接值
@@ -285,10 +285,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$xxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>$clname</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$clname</p></a>";
 
 } else{
-echo "<font color=red>".$clname.".</font>";
+echo "<p style='color: red'>".$clname.".</p>";
 }
 
 if($bp['辅助大臣id']==$xxid){  
@@ -309,7 +309,7 @@ $bpzw1="君主";
 $bpzw1="成员";
 }
 
-echo "<font color=black>[".$bpzw1."]</font>";
+echo "<p style='color: black'>[".$bpzw1."]</p>";
 
 if($bpzw1=="成员"){
 echo "|";	
@@ -319,7 +319,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=178;
 $npc[]=$xxxid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任命".$bpzw."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>任命".$bpzw."</p></a>";
 }
 
 echo "</br>";
@@ -348,20 +348,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=40;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>首页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>首页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=39;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>上页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>上页</p></a>";
 
 $f=1;
 
 }
 $mcc=$m/10;
 if($f>0&&$mcc>$ym){
-echo  "<font color=blue>|</font></a>";
+echo  "<p style='color: blue'>|</p></a>";
 }
 
 
@@ -374,15 +374,15 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=38;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>下页</font></a>";
-echo  "<font color=blue>|</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>下页</p></a>";
+echo  "<p style='color: blue'>|</p></a>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=41;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>末页</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>末页</p></a>";
 $f=1;
 }
 
@@ -393,7 +393,7 @@ echo "<br>";
 
 
 } else{
-echo "<font color=black>没任何国家成员</font></a>"."<br>";
+echo "<p style='color: black'>没任何国家成员</p></a>"."<br>";
 }
 
 
@@ -424,10 +424,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=172;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回国家</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回国家</p></a>"."<br>";
 
 } else{
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }
 
 
@@ -438,7 +438,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 echo "----------------------"."<br>";
 //cmd及超链接值
 include("fhgame.php");

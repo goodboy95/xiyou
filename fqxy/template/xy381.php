@@ -63,16 +63,16 @@ $cgl=100;
 
 
 
-echo "<font color=black>升星下一级所需材料和费用如下：</font></a>"."<br>";
-echo "<font color=black>材料：".$xycl."</font></a>"."<br>";
-echo "<font color=black>费用：".$xyyl."</font></a>"."<br>";
+echo "<p style='color: black'>升星下一级所需材料和费用如下：</p></a>"."<br>";
+echo "<p style='color: black'>材料：".$xycl."</p></a>"."<br>";
+echo "<p style='color: black'>费用：".$xyyl."</p></a>"."<br>";
 
 
 
 if($xyc1!=""&&$cgl1!=100){
-echo "<font color=black>成功率：".$cgl."%</font><font color=red>（附带幸运草提升几率）</font></a>"."<br>";
+echo "<p style='color: black'>成功率：".$cgl."%</p><p style='color: red'>（附带幸运草提升几率）</p></a>"."<br>";
 } else{
-echo "<font color=black>成功率：".$cgl."%</font></a>"."<br>";
+echo "<p style='color: black'>成功率：".$cgl."%</p></a>"."<br>";
 }
 
 
@@ -83,16 +83,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=385;
 $npc[]=$cwid4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【开始升星】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【开始升星】</p></a>"."<br>";
 
 
-echo "<font color=black>温馨提示：材料升星会自动消耗掉提升成功率幸运草不需要请放置仓库！升星失败会造成装备掉星！</font></a>"."<br>";
+echo "<p style='color: black'>温馨提示：材料升星会自动消耗掉提升成功率幸运草不需要请放置仓库！升星失败会造成装备掉星！</p></a>"."<br>";
 
 
 } else{
 	
 	
-echo "<font color=red>该装备已是目前满星级装备无需继续提升了！！</font></a>"."<br>";
+echo "<p style='color: red'>该装备已是目前满星级装备无需继续提升了！！</p></a>"."<br>";
 
 
 
@@ -112,14 +112,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=367;
 $npc[]=$cwid3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>"."<br>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>"."<br>";
 	
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 echo "----------------------"."<br>";

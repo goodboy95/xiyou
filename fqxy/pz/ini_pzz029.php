@@ -27,20 +27,20 @@ $result = @mysqli_query($conn, $strsql);
 
 $npcc=$zbidx;
 include("./wp/zbxx.php");//装备信息
-echo "<font color=black>恭喜你！升级".$wp1."成功</font>"."<br>";
+echo "<p style='color: black'>恭喜你！升级".$wp1."成功</p>"."<br>";
 
 //数字转汉字
 $yl=$fbb1;
 include("./pz/ylts.php");
-$manzu1=$manzu1."<font color=black>失去：".$ylxx."法宝经验</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$ylxx."法宝经验</p>"."<br>";
 //数字转汉字
 $yl=$fbb2;
 include("./pz/ylts.php");
-$manzu1=$manzu1."<font color=black>失去：".$ylxx."修炼经验</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$ylxx."修炼经验</p>"."<br>";
 //数字转汉字
 $yl=$fbb3;
 include("./pz/ylts.php");
-$manzu1=$manzu1."<font color=black>失去：".$ylxx."银两</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$ylxx."银两</p>"."<br>";
 //	输出满足提示语言
 echo $manzu1;
 $npcc=$zbidx;
@@ -61,7 +61,7 @@ $yl=$fbb3;
 include("./pz/ylts.php");
 $wpts=$wpts.$ylxx."银两";	
 
-echo "<font color=black>对不起！升级".$ms1."需要".$wpts."</font>"."<br>";
+echo "<p style='color: black'>对不起！升级".$ms1."需要".$wpts."</p>"."<br>";
 } 
 
 

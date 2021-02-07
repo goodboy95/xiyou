@@ -73,10 +73,8 @@ if ($zsspd == 1) {
                 include("template/xy295.php");
 //不走xy.php直接调用xy文件需要加pz01配置
                 include("./pz/pz01.php");
-            } else {
             }
             exit;
-        } else {
         }
         //调用slt.ini是否存在
         include("./ini/slt_ini.php");
@@ -96,9 +94,7 @@ if ($zsspd == 1) {
             $ltmax1 = max($arr1);
             if ($ltmax1 == "排序") {
                 $ltmax1 = 0;
-            } else {
             }
-//$ltmax1=$ltmax1+1;
 # 获取一个分类下某个子项的值
             $wjfy = ($iniFile->getItem('玩家发言', $ltmax1));
 # 获取一个分类下某个子项的值
@@ -111,12 +107,12 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 108;
             $npc[] = $wjfyid;
-            echo "<font color=black>['私聊']</font>";
+            echo "<p style='color: black'>['私聊']</p>";
             $img = 'pic/vip/' . "vip" . $wjfyvip . '.png';
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>" . $wjfymz . "</font></a>";
-            echo "<font color=black>对你说：" . $wjfy . "</font><br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjfymz . "</p></a>";
+            echo "<p style='color: black'>对你说：" . $wjfy . "</p><br>";
             $zbidd2 = $wjfyid . "_" . $ltmax1;
 # 删除一个子项
             $iniFile->delItem('玩家排序', $zbidd2);
@@ -128,7 +124,6 @@ if ($zsspd == 1) {
             $iniFile->delItem('玩家名字', $ltmax1);
             # 删除一个子项
             $iniFile->delItem('玩家发言', $ltmax1);
-        } else {
         }
 //系统动态msg
         include("./msg/msgg01.php");
@@ -159,7 +154,6 @@ if ($zsspd == 1) {
             $ltmax1 = max($arr3);
             if ($ltmax1 == "排序") {
                 $ltmax1 = 0;
-            } else {
             }
 //$ltmax1=$ltmax1+1;
 # 获取一个分类下某个子项的值
@@ -174,18 +168,17 @@ if ($zsspd == 1) {
             $cdid[] = $cmid;
             $clj[] = 108;
             $npc[] = $wjfyid;
-            echo "<font color=black>[系统]</font>";
+            echo "<p style='color: black'>[系统]</p>";
             if ($wjfyvip >= 0 && $wjfyvip <= 998) {
                 $img = 'pic/vip/' . "vip" . $wjfyvip . '.png';
                 echo '<img src="' . $img . ' "alt="图片"/>';
-                echo "<font color=black>" . $wjfymz . $wjfy . "</font><br>";
+                echo "<p style='color: black'>" . $wjfymz . $wjfy . "</p><br>";
             } else {
                 if ($wjfyvip == 999) {
                     $img = 'pic/vip/' . "vip" . $wjfyvip . '.png';
                     echo '<img src="' . $img . ' "alt="图片"/>';
-                } else {
                 }
-                echo "<font color=red>" . $wjfymz . $wjfy . "</font><br>";
+                echo "<p style='color: red'>" . $wjfymz . $wjfy . "</p><br>";
             }
             $zbidd2 = $wjfyid . "_" . $ltmax1;
 # 删除一个子项
@@ -198,7 +191,6 @@ if ($zsspd == 1) {
             $iniFile->delItem('玩家名字', $ltmax1);
             # 删除一个子项
             $iniFile->delItem('玩家发言', $ltmax1);
-        } else {
         }
 //////////组队邀请
         include("./yq/yq1.php");
@@ -220,7 +212,9 @@ if ($zsspd == 1) {
                 $bpzw = ($iniFile->getItem('玩家信息', '帮派职务'));
             }
 //游戏首页页面模板
+            echo "inina before include: " . $inina . "<br />";
             include("./map/mapid.php");
+            echo "inina after include: " . $inina . "<br />";
 //查询当前地图玩家
             $fjwjpd = $fjwjpd ?? 0;
             $ydtx = $ydtx ?? 0;
@@ -249,7 +243,6 @@ if ($zsspd == 1) {
                         } elseif ($dtx == 73) {
                             $inina = $wjid . "-" . "gzai" . $dtx . "x" . $dty . ".ini";
                             $ininalock = $wjid . "-" . "gzai" . $dtx . "x" . $dty . ".txt";
-                        } else {
                         }
                         //echo $inina;
                     } else {
@@ -262,12 +255,9 @@ if ($zsspd == 1) {
                         } elseif ($dtx == 73) {
                             $inina = $fzpd . "-" . "gzai" . $dtx . "x" . $dty . ".ini";
                             $ininalock = $fzpd . "-" . "gzai" . $dtx . "x" . $dty . ".txt";
-                        } else {
                         }
-                        //echo $inina;
                     }
                     include("./wj/zzwj.php");
-                } else {
                 }
                 if ($dtx != 71 && $dtx != 72 && $dtx != 73 && $ydtx != 71 && $ydtx != 72 && $ydtx != 73) {
                     if ($dtx == 74) {
@@ -280,27 +270,21 @@ if ($zsspd == 1) {
                         $inina = "cac" . $dtx . "x" . $dty . ".ini";
                         $ininalock = "cac" . $dtx . "x" . $dty . ".txt";
                         include("./wj/fjwj.php");
-                    } else {
                     }
                 }
-            } else {
             }
 //玩法
-            echo "<font color=black>----------------------</font>" . "<br>";
-            echo "<font color=black>火热玩法</font>" . "<br>";
+            echo "<p style='color: black'>----------------------</p>" . "<br>";
+            echo "<p style='color: black'>火热玩法</p>" . "<br>";
             if ($dty == 22 || $dty == 23) {
                 if ($dtx == 22) {
                     $sw = 2;
-                } else {
                 }
-            } else {
             }
             if ($dty == 46 || $dty == 47) {
                 if ($dtx == 1) {
                     $sw = 2;
-                } else {
                 }
-            } else {
             }
             if ($sw != 2) {
 //cmd及超链接值
@@ -308,233 +292,198 @@ if ($zsspd == 1) {
                 $cdid[] = $cmid;
                 $clj[] = 450;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>挑战</font></a>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>挑战</p></a>";
             } else {
-                echo "<font color=red>挑战</font>";
+                echo "<p style='color: red'>挑战</p>";
             }
-            echo "<font color=black>◎</font>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 402;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>擂台</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>擂台</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 403;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>娱乐</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>娱乐</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 404;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>攻略</font></a>" . "<br>";
-            echo "<font color=black>----------------------</font>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>攻略</p></a>" . "<br>";
+            echo "<p style='color: black'>----------------------</p>" . "<br>";
 //基础功能
-            echo "<font color=black>基础功能</font>" . "<br>";
+            echo "<p style='color: black'>基础功能</p>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 301;
             $npc[] = 0;
-            echo "<a href='cz/index.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【充值】</font></a>";
-            /*
-            //cmd及超链接值
-            $cmid=$cmid+1;
-            $cdid[]=$cmid;
-            $clj[]=533;
-            $npc[]=0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【充值】</font></a>";
-            */
-            /*
-            //cmd及超链接值
-            $cmid=$cmid+1;
-            $cdid[]=$cmid;
-            $clj[]=489;
-            $npc[]=0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【拍卖】</font></a>";
-            */
-            echo "<font color=black>◎</font>";
+            echo "<a href='cz/index.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【充值】</p></a>";
+            echo "<p style='color: black'>◎</p>";
             if ($sw != 2) {
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 668;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【指引】</font></a>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【指引】</p></a>";
             } else {
-                echo "<font color=red>【指引】</font>";
+                echo "<p style='color: red'>【指引】</p>";
             }
-            echo "<font color=black>◎</font>";
+            echo "<p style='color: black'>◎</p>";
             if ($sw != 2) {
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 476;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【腾云】</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【腾云】</p></a>" . "<br>";
             } else {
-                echo "<font color=red>【腾云】</font>" . "<br>";
+                echo "<p style='color: red'>【腾云】</p>" . "<br>";
             }
-            echo "<font color=black>☆☆☆☆☆☆☆☆☆☆☆</font>" . "<br>";
+            echo "<p style='color: black'>☆☆☆☆☆☆☆☆☆☆☆</p>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 11;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>状态</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>状态</p></a>";
+            echo "<p style='color: black'>◎</p>";
             if ($sw != 2) {
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 27;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>物品</font></a>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>物品</p></a>";
             } else {
-                echo "<font color=red>物品</font>";
+                echo "<p style='color: red'>物品</p>";
             }
-            echo "<font color=black>◎</font>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 114;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>好友</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>好友</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 44;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任务</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>任务</p></a>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 172;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>国家</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>国家</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 21;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>聊天</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>聊天</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 362;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>宠物</font></a>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>宠物</p></a>";
 //cmd及超链接值
-            echo "<font color=black>◎</font>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 53;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>商城</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>商城</p></a>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 111;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>队伍</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>队伍</p></a>";
+            echo "<p style='color: black'>◎</p>";
             if ($sw != 2) {
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 155;
                 $npc[] = 0;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>住宅</font></a>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>住宅</p></a>";
             } else {
-                echo "<font color=red>住宅</font>";
+                echo "<p style='color: red'>住宅</p>";
             }
-            echo "<font color=black>◎</font>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 225;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>挂售</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>挂售</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 57;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>排行</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>排行</p></a>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 301;
             $npc[] = 0;
-            echo "<a href='cz/index.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>充值</font></a>";
-            /*
-            //cmd及超链接值
-            $cmid=$cmid+1;
-            $cdid[]=$cmid;
-            $clj[]=533;
-            $npc[]=0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>充值</font></a>";
-            */
-            echo "<font color=black>◎</font>";
+            echo "<a href='cz/index.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>充值</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 306;
             $npc[] = 1;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>特权</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>特权</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 307;
             $npc[] = 1;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>福利</font></a>";
-            echo "<font color=black>◎</font>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>福利</p></a>";
+            echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 203;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>系统</font></a>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>系统</p></a>" . "<br>";
 //cmd及超链接值
             $cmid = $cmid + 1;
             $cdid[] = $cmid;
             $clj[] = 675;
             $npc[] = 0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>【SDK码兑换】</font></a>" . "<br>";
-            echo "<font color=black>----------------------</font>" . "<br>";
+            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>【SDK码兑换】</p></a>" . "<br>";
+            echo "<p style='color: black'>----------------------</p>" . "<br>";
             include("fhgame.php");
-            /*
-            //cmd及超链接值
-            $cmid=$cmid+1;
-            $cdid[]=$cmid;
-            $clj[]=559;
-            $npc[]=0;
-            echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【天天领红包】</font></a>"."<br>";
-            */
-        } else {
-//组队
         }
     } else {
-        echo "<font color=black>【封号提示】</font>" . "<br>";
-        echo "<font color=red>['自动解封']：" . $jyts . "</font>" . "<br>";
-        echo "<font color=red>['封号描述']：" . $jyts1 . "</font>" . "<br>";
-        echo "<font color=blue>最终解释权归小轩GM所有，请您务必遵守游戏的规则，祝您生活愉快！！</font>" . "<br>";
-        echo "<font color=black>----------------------</font>" . "<br>";
+        echo "<p style='color: black'>【封号提示】</p>" . "<br>";
+        echo "<p style='color: red'>['自动解封']：" . $jyts . "</p>" . "<br>";
+        echo "<p style='color: red'>['封号描述']：" . $jyts1 . "</p>" . "<br>";
+        echo "<p style='color: blue'>最终解释权归小轩GM所有，请您务必遵守游戏的规则，祝您生活愉快！！</p>" . "<br>";
+        echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
         include("fhgame.php");
     }
-} else {
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

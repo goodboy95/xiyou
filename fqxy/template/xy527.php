@@ -29,7 +29,7 @@ if ($zsspd == 1) {
             include("./ini/hd_ini.php");
             $iniFile->updItem('活动时间', [$hdid => $nowtime]);
             $iniFile->updItem('活动次数', [$hdid => $hdcs]);
-            echo "<font color=black>心如七夕女，生死难再匹。</font>" . "<br>";
+            echo "<p style='color: black'>心如七夕女，生死难再匹。</p>" . "<br>";
             echo "<br>";
 //随机出题
 //随机
@@ -43,22 +43,22 @@ if ($zsspd == 1) {
                 $cdid[] = $cmid;
                 $clj[] = 528;
                 $npc[] = 1;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【生】</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【生】</p></a>" . "<br>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 528;
                 $npc[] = 1;
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我猜【死】</font></a>" . "<br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我猜【死】</p></a>" . "<br>";
             } else {
-                echo "<font color=red>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</font>" . "<br>";
+                echo "<p style='color: red'>〖活动〗潇道长：(ˇˍˇ) 你未能识破我的生死之谜（失败了）</p>" . "<br>";
             }
 //随机出题
         } else {
-            echo "<font color=black>对不起！猜生死需要5亿银两</font>" . "<br>";
+            echo "<p style='color: black'>对不起！猜生死需要5亿银两</p>" . "<br>";
         }
     } else {
-        echo "<font color=red>〖活动〗潇道长：你今日次数已用完！！</font>" . "<br>";
+        echo "<p style='color: red'>〖活动〗潇道长：你今日次数已用完！！</p>" . "<br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -66,8 +66,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

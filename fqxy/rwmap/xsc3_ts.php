@@ -10,7 +10,7 @@ if ($m == 1) {
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
         } else {
-            echo "<font color=black>！</font>";
+            echo "<p style='color: black'>！</p>";
         }
     }
     if ($rrw2 == 9) {
@@ -20,7 +20,7 @@ if ($m == 1) {
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
         } else {
-            echo "<font color=black>？</font>";
+            echo "<p style='color: black'>？</p>";
         }
     }
 } else {
@@ -31,7 +31,7 @@ if ($m == 1) {
             echo '<img src="' . $img . ' "alt="图片"/〉';
             echo "<br>";
         } else {
-            echo "<font color=black>！</font>";
+            echo "<p style='color: black'>！</p>";
         }
     }
 }

@@ -4,7 +4,7 @@
 
 
 
-echo "<font color=black>".$nname."被你打死了！！！</font>"."<br>";
+echo "<p style='color: black'>".$nname."被你打死了！！！</p>"."<br>";
 
 
 $zhblq=$npcc;
@@ -14,7 +14,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续走</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续走</p></a>"."<br>";
 
 
 
@@ -235,7 +235,7 @@ $wpkc=$wpdz4[$ii];
 
 
 
-$manzu1=$manzu1."<font color=black>获得：".$wpmz."x".$wpkc.$dbpd1."</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>获得：".$wpmz."x".$wpkc.$dbpd1."</p>"."<br>";
 include("./pz/ini_pz01.php");//缓存位置
 include("./pz/ini_pzz024.php");//增加
 
@@ -296,10 +296,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 ?>

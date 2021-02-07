@@ -30,7 +30,7 @@ if ($npcc >= 1 && $npcc <= 100) {
 } elseif ($npcc == 5196 || $npcc == 5197) {//主线任务特殊npc
 
 } else {
-    echo "<font color=black>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</font><br>";
+    echo "<p style='color: black'>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</p><br>";
 }
 ?>
 

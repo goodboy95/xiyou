@@ -140,7 +140,7 @@ if ($urlid == 1) {//本地游戏地址
 }
 
 $xyurl = "http://" . $xxjyurl . "/xxjy/index.php";
-$zcxx = "<font color=red>当前验证信息失效,请刷新页面</font>" . "<br><br><a href='$xyurl'><font color=blue>返回登录</font></a>" . "<br>";
+$zcxx = "<p style='color: red'>当前验证信息失效,请刷新页面</p>" . "<br><br><a href='$xyurl'><p style='color: blue'>返回登录</p></a>" . "<br>";
 
 ?>
 

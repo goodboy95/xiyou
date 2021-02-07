@@ -31,7 +31,7 @@ $csbs=500;
 
 include("./ini/hbmoneybs_ini.php");
 $iniFile->updItem('财神倍数', ['初始' => $csbs]);
-echo "<font color=red>你选择了【红包挖宝】".$csbs."倍场，加油哦~~~（".$csbs."红包/次）</font>"."<br>";
+echo "<p style='color: red'>你选择了【红包挖宝】".$csbs."倍场，加油哦~~~（".$csbs."红包/次）</p>"."<br>";
 
 
 echo "<br>";
@@ -40,7 +40,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=570;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

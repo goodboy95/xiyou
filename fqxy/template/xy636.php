@@ -46,19 +46,19 @@ $wpdz5[]=1;//	重量
 include("./rwmap/rwget.php");
 
 if($npcc11==1){
-echo "<font color=red>恭喜你！！敲碎了【1号金蛋】获得大量奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！敲碎了【1号金蛋】获得大量奖励</p>"."<br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."在国庆活动中敲碎了【1号金蛋】获得了大量奖励";
 include("./msg/msgg02.php");
 } elseif($npcc11==2){  
-echo "<font color=red>恭喜你！！敲碎了【2号金蛋】获得大量奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！敲碎了【2号金蛋】获得大量奖励</p>"."<br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."在国庆活动中敲碎了【2号金蛋】获得了大量奖励";
 include("./msg/msgg02.php");
 } elseif($npcc11==3){  
-echo "<font color=red>恭喜你！！敲碎了【3号金蛋】获得大量奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！敲碎了【3号金蛋】获得大量奖励</p>"."<br>";
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."在国庆活动中敲碎了【3号金蛋】获得了大量奖励";
@@ -71,7 +71,7 @@ include("./msg/msgg02.php");
 
 
 } else{
-echo "<font color=red>对不起！！敲金蛋需要【国庆金锤】x1</font>"."<br>";
+echo "<p style='color: red'>对不起！！敲金蛋需要【国庆金锤】x1</p>"."<br>";
 
 }
 
@@ -86,9 +86,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

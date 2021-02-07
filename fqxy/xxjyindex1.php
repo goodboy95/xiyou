@@ -65,7 +65,7 @@ ini_set("error_reporting","E_ALL & ~E_NOTICE");//防止报错代码
 include("/url/url.php");
 //$xyurl="http://".$xxjyurl."/index.php";
 $xyurl="http://".$xxjyurl."/xxjy/index.php";
-$zcxx="<font color=red>(づ￣3￣)づ╭❤～亲爱的玩家您好！每日数据安全备份中请稍等....（预计凌晨0点可正常登陆）</font>"."<br>";
+$zcxx="<p style='color: red'>(づ￣3￣)づ╭❤～亲爱的玩家您好！每日数据安全备份中请稍等....（预计凌晨0点可正常登陆）</p>"."<br>";
 
 
 ?>

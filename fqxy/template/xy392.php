@@ -18,7 +18,7 @@ if($zsspd==1&&$zsspd2==1){
 	include("./ini/zt_ini.php");
 $username=($iniFile->getItem('玩家信息','玩家名字'));
 	
-	echo "<font color=black>你被".$username."打死了</font>"."<br>";
+	echo "<p style='color: black'>你被".$username."打死了</p>"."<br>";
 	
 	$wjid=$wjid1;
 		include("./ini/zt_ini.php");
@@ -44,9 +44,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 echo "<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 
 
 //cmd及超链接值

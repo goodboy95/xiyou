@@ -161,24 +161,24 @@ $ltmz10="【暂无】";
 
 
 
-echo "<font color=red>【天下第一武道大会】</font>"."<br>";
+echo "<p style='color: red'>【天下第一武道大会】</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=623;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>武道会玩法说明</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>武道会玩法说明</p></a>"."<p style='color: black'></p>"."<br>";
 	
-echo "<font color=black>我的排名：</font>"."<font color=red>".$ltpmid."</font>"."<br>";
-echo "<font color=black>被人膜拜：</font>"."<font color=red>".$ltpmidx."</font>"."<br>";
-echo "<font color=black>可膜拜数：</font>"."<font color=red>【".$hdcs."次】</font>"."<br>";
-echo "<font color=black>今日比武：</font>"."<font color=red>【".$ltbw."次】</font>"."<br>";
+echo "<p style='color: black'>我的排名：</p>"."<p style='color: red'>".$ltpmid."</p>"."<br>";
+echo "<p style='color: black'>被人膜拜：</p>"."<p style='color: red'>".$ltpmidx."</p>"."<br>";
+echo "<p style='color: black'>可膜拜数：</p>"."<p style='color: red'>【".$hdcs."次】</p>"."<br>";
+echo "<p style='color: black'>今日比武：</p>"."<p style='color: red'>【".$ltbw."次】</p>"."<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=622;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【更新武道会属性】</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【更新武道会属性】</p></a>"."<p style='color: black'></p>"."<br>";
 	
 
 //cmd及超链接值
@@ -186,7 +186,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=624;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>领取武道大会奖励</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>领取武道大会奖励</p></a>"."<p style='color: black'></p>"."<br>";
 	
 
 //cmd及超链接值
@@ -194,7 +194,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=625;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>领取万人膜拜奖励</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>领取万人膜拜奖励</p></a>"."<p style='color: black'></p>"."<br>";
 		
 	
 	
@@ -203,187 +203,187 @@ $img='pic/lt/1.png';
 echo '<img src="'.$img.' "alt="图片"/>';
 
 
-echo "<font color=black>".$ltmz1."</font>";
+echo "<p style='color: black'>".$ltmz1."</p>";
 
 
 
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
 $img='pic/lt/2.png';
 echo '<img src="'.$img.' "alt="图片"/>';
-echo "<font color=black>".$ltmz2."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>".$ltmz2."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 		
 $img='pic/lt/3.png';
 echo '<img src="'.$img.' "alt="图片"/>';
-echo "<font color=black>".$ltmz3."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>".$ltmz3."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 
-echo "<font color=black>4.</font>";
-echo "<font color=black>".$ltmz4."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>4.</p>";
+echo "<p style='color: black'>".$ltmz4."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
 	
-echo "<font color=black>5.</font>";
-echo "<font color=black>".$ltmz5."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>5.</p>";
+echo "<p style='color: black'>".$ltmz5."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
-echo "<font color=black>6.</font>";
-echo "<font color=black>".$ltmz6."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>6.</p>";
+echo "<p style='color: black'>".$ltmz6."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
-echo "<font color=black>7.</font>";
-echo "<font color=black>".$ltmz7."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>7.</p>";
+echo "<p style='color: black'>".$ltmz7."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
-echo "<font color=black>8.</font>";
-echo "<font color=black>".$ltmz8."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>8.</p>";
+echo "<p style='color: black'>".$ltmz8."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
-echo "<font color=black>9.</font>";
-echo "<font color=black>".$ltmz9."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>9.</p>";
+echo "<p style='color: black'>".$ltmz9."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=9;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=9;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
-echo "<font color=black>10.</font>";
-echo "<font color=black>".$ltmz10."</font>";
-echo "<font color=black>◎</font>";
+echo "<p style='color: black'>10.</p>";
+echo "<p style='color: black'>".$ltmz10."</p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=616;
 $npc[]=10;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看</font></a>"."<font color=black></font>";
-echo "<font color=black>◎</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看</p></a>"."<p style='color: black'></p>";
+echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=617;
 $npc[]=10;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>比武</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>比武</p></a>"."<p style='color: black'></p>"."<br>";
 	
 	
 echo "<br>";
@@ -393,8 +393,8 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 } 

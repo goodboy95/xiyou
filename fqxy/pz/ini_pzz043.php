@@ -31,10 +31,10 @@ unlink($ininame); //删除文件
 include("wj/ztt.php");
 include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['红' => $wjxx1['血'],'蓝' => $wjxx1['蓝']]);
-echo "<font color=red>恭喜你！升级了（目前等级：".$lvl."级）</font><br>";
+echo "<p style='color: red'>恭喜你！升级了（目前等级：".$lvl."级）</p><br>";
 $npcc=$npcc1;
 } else{
-echo "<font color=black>对不起！！您使用的【升级卡】目前等级已超过限制（已做回收处理）</font>"."<br>";
+echo "<p style='color: black'>对不起！！您使用的【升级卡】目前等级已超过限制（已做回收处理）</p>"."<br>";
 
 	
 } 

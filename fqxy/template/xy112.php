@@ -130,9 +130,9 @@ $wjid=$wjid1;
 	
 	
 		
-echo "<font color=black>你成功将".$ltwjname."提出了队伍！！</font><br>";			
+echo "<p style='color: black'>你成功将".$ltwjname."提出了队伍！！</p><br>";
 } else{	
-echo "<font color=black>该玩家已经不再队伍当中</font><br>";
+echo "<p style='color: black'>该玩家已经不再队伍当中</p><br>";
 		
 		
 }

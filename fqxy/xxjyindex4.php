@@ -65,7 +65,7 @@ ini_set("error_reporting","E_ALL & ~E_NOTICE");//防止报错代码
 include("/url/url.php");
 //$xyurl="http://".$xxjyurl."/index.php";
 $xyurl="http://".$xxjyurl."/xxjy/index.php";
-$zcxx="<font color=red>亲爱的玩家！！由于游戏出现云梯石BUG造成了无法挽回的损失，玩家也一直未向GM汇报，一直利用导致存在时间周期长，无法补救，深感痛心，具体排查更改和处理方案等通知（需排查完毕后重新开启，积极向GM坦白的可从轻处罚，刷的人永久不予解封不管有无充值）</font>"."<br>";
+$zcxx="<p style='color: red'>亲爱的玩家！！由于游戏出现云梯石BUG造成了无法挽回的损失，玩家也一直未向GM汇报，一直利用导致存在时间周期长，无法补救，深感痛心，具体排查更改和处理方案等通知（需排查完毕后重新开启，积极向GM坦白的可从轻处罚，刷的人永久不予解封不管有无充值）</p>"."<br>";
 
 
 ?>

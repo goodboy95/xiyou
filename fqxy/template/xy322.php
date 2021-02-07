@@ -218,7 +218,7 @@ $wjid=$wjid1;
 
 
 	
-echo "<font color=black>恭喜你!!出售掉自己的房屋现在已是一个无家可归的人了</font>"."<br>";
+echo "<p style='color: black'>恭喜你!!出售掉自己的房屋现在已是一个无家可归的人了</p>"."<br>";
 	
 	
 	
@@ -236,7 +236,7 @@ echo "<font color=black>恭喜你!!出售掉自己的房屋现在已是一个无
 
 
 } else{	
-echo "<font color=black>你没有可以出售的官宅</font>"."<br>";
+echo "<p style='color: black'>你没有可以出售的官宅</p>"."<br>";
 }
 
 
@@ -317,7 +317,7 @@ $wjid=$wjid1;
 
 
 
-echo "<font color=black>对不起！！对方已有房屋了！！</font>"."<br>";
+echo "<p style='color: black'>对不起！！对方已有房屋了！！</p>"."<br>";
 }
 
 
@@ -325,7 +325,7 @@ echo "<font color=black>对不起！！对方已有房屋了！！</font>"."<br>
 
 } else{	
 
-echo "<font color=black>对不起！！此条求购官宅信息不存在！！</font>"."<br>";
+echo "<p style='color: black'>对不起！！此条求购官宅信息不存在！！</p>"."<br>";
 
 
 
@@ -350,9 +350,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

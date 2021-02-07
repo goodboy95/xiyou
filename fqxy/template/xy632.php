@@ -7,8 +7,8 @@ $wpid=$npcc;
 include("./wp/wpxx.php");
 
 
-echo "<font color=red>".$wpmz."</font>"."<br>";
-echo "<font color=black>描述：".$wpms."</font>"."<br>"; 	
+echo "<p style='color: red'>".$wpmz."</p>"."<br>";
+echo "<p style='color: black'>描述：".$wpms."</p>"."<br>";
 
 
 echo "<br>"; 	
@@ -20,7 +20,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=631;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -30,9 +30,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

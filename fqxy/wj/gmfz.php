@@ -46,10 +46,10 @@ $iniFile->updItem('玩家信息', ['住宅分类'=> $fzfl]);
 $iniFile->updItem('玩家信息', ['住宅名字'=> $fzname]);
 include("./ini/yl_ini.php");
 $iniFile->updItem('背包仓库银两', ['背包银两'=> $yll]);
-echo "<font color=black>恭喜你,成功购买到了民宅</font>"."<br>";
-echo "<font color=black>失去银两1000万</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了民宅</p>"."<br>";
+echo "<p style='color: black'>失去银两1000万</p>"."<br>";
 } else{
-echo "<font color=black>对不起,你的银两不足</font>"."<br>";
+echo "<p style='color: black'>对不起,你的银两不足</p>"."<br>";
 
 }
 
@@ -96,13 +96,13 @@ include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['住宅id'=> $fziidd]);
 $iniFile->updItem('玩家信息', ['住宅分类'=> $fzfl]);
 $iniFile->updItem('玩家信息', ['住宅名字'=> $fzname]);
-echo "<font color=black>恭喜你,成功购买到了豪宅</font>"."<br>";
-echo "<font color=black>失去金豆x188</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了豪宅</p>"."<br>";
+echo "<p style='color: black'>失去金豆x188</p>"."<br>";
 
 
 
 } else{
-echo "<font color=black>对不起,你的金豆不足</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足</p>"."<br>";
 
 }
 } elseif($npcc==3){  
@@ -154,20 +154,20 @@ include("./ini/zt_ini.php");
 $iniFile->updItem('玩家信息', ['住宅id'=> $fziidd]);
 $iniFile->updItem('玩家信息', ['住宅分类'=> $fzfl]);
 $iniFile->updItem('玩家信息', ['住宅名字'=> $fzname]);
-echo "<font color=black>恭喜你,成功购买到了豪宅</font>"."<br>";
-echo "<font color=black>失去金豆x88,豪宅优惠券x1</font>"."<br>";
+echo "<p style='color: black'>恭喜你,成功购买到了豪宅</p>"."<br>";
+echo "<p style='color: black'>失去金豆x88,豪宅优惠券x1</p>"."<br>";
 
 
 
 } else{
-echo "<font color=black>对不起,你的金豆不足或者缺少豪宅优惠卷</font>"."<br>";
+echo "<p style='color: black'>对不起,你的金豆不足或者缺少豪宅优惠卷</p>"."<br>";
 
 }
 
 
 } else{
 
-echo "<font color=black>购买住宅出现未知错误请联系购买解决</font>"."<br>";
+echo "<p style='color: black'>购买住宅出现未知错误请联系购买解决</p>"."<br>";
 
 
 }

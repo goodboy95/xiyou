@@ -14,7 +14,7 @@ include("./ini/yl_ini.php");
 //缓存修改
 $iniFile->updItem('背包仓库银两', ['背包银两' => $yll]);
 
-$manzu1=$manzu1."<font color=black>失去：".$kcyl01."银两</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>失去：".$kcyl01."银两</p>"."<br>";
 } 
 //银两扣除		
 	
@@ -42,7 +42,7 @@ echo $manzu1;
 } else{
 	
 //	输出不满足提示语言
-echo "<font color=red>对不起！需要：".$bumanzu."</font>"."<br>";
+echo "<p style='color: red'>对不起！需要：".$bumanzu."</p>"."<br>";
 
 	
 

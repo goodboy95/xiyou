@@ -37,9 +37,9 @@ if($dqwp==1){
 exit();
 }
 
-echo "<font color=red>你最多可下架".$wpmz."x".$wpsl."</font>"."<br>";
-echo "<font color=black>请输入你要下架多少".$wpmz."呢？</font>"."<br>";
-echo "<font color=blue>下架全部（后续更新）</font>"."<br>";
+echo "<p style='color: red'>你最多可下架".$wpmz."x".$wpsl."</p>"."<br>";
+echo "<p style='color: black'>请输入你要下架多少".$wpmz."呢？</p>"."<br>";
+echo "<p style='color: blue'>下架全部（后续更新）</p>"."<br>";
 
 ?>
 <form  action="" method="POST">

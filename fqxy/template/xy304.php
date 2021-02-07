@@ -34,7 +34,7 @@ $cll5=35;
 $cll6=36;
 
 
-$clpl="<font color=red>对不起你的1级红黄蓝宝石水晶任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的1级红黄蓝宝石水晶任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -52,7 +52,7 @@ $cll1=37;
 $cll2=38;
 $cll3=39;
 
-$clpl="<font color=red>对不起你的1级金刚佛印玄武石任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的1级金刚佛印玄武石任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 } elseif($npcc ==3){
@@ -76,7 +76,7 @@ $cll5=44;
 $cll6=45;
 
 
-$clpl="<font color=red>对不起你的2级红黄蓝宝石水晶任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的2级红黄蓝宝石水晶任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -94,7 +94,7 @@ $cll1=46;
 $cll2=47;
 $cll3=48;
 
-$clpl="<font color=red>对不起你的2级金刚佛印玄武石任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的2级金刚佛印玄武石任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 } elseif($npcc ==5){
@@ -118,7 +118,7 @@ $cll5=53;
 $cll6=54;
 
 
-$clpl="<font color=red>对不起你的3级红黄蓝宝石水晶任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的3级红黄蓝宝石水晶任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -136,7 +136,7 @@ $cll1=55;
 $cll2=56;
 $cll3=57;
 
-$clpl="<font color=red>对不起你的3级金刚佛印玄武石任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的3级金刚佛印玄武石任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -161,7 +161,7 @@ $cll5=62;
 $cll6=63;
 
 
-$clpl="<font color=red>对不起你的4级红黄蓝宝石水晶任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的4级红黄蓝宝石水晶任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -179,7 +179,7 @@ $cll1=64;
 $cll2=65;
 $cll3=66;
 
-$clpl="<font color=red>对不起你的5级金刚佛印玄武石任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的5级金刚佛印玄武石任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -204,7 +204,7 @@ $cll5=71;
 $cll6=72;
 
 
-$clpl="<font color=red>对不起你的5级红黄蓝宝石水晶任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的5级红黄蓝宝石水晶任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -222,7 +222,7 @@ $cll1=73;
 $cll2=74;
 $cll3=75;
 
-$clpl="<font color=red>对不起你的3级金刚佛印玄武石任意一样不满足5个</font><br>";
+$clpl="<p style='color: red'>对不起你的3级金刚佛印玄武石任意一样不满足5个</p><br>";
 include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
@@ -240,7 +240,7 @@ include("./pz/ini_pzz028.php");//调用材料批量兑换
 
 
 } else{
-echo "<font color=red>没有找到这个页面</font><br>";
+echo "<p style='color: red'>没有找到这个页面</p><br>";
 
 }
 
@@ -269,9 +269,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

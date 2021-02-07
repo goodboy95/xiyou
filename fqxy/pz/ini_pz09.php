@@ -59,12 +59,12 @@ $sql1 = "insert into $q2 (wpid,n,y,r,s,f,m)  values('$npcc','$y','$m','$d','$h',
 //更新缓存数据
 unlink($ininame); //删除文件  
 //更新缓存数据
-echo "<font color=black>恭喜你获得".$wwpmz."祝福！！</font><br>";
+echo "<p style='color: black'>恭喜你获得".$wwpmz."祝福！！</p><br>";
 
 
 } else{
 $wpsy=1;//使用失败
-echo "<font color=black>对不起！你已有".$wwpmz."祝福，请失效后再用</font><br>";
+echo "<p style='color: black'>对不起！你已有".$wwpmz."祝福，请失效后再用</p><br>";
 }
 
 

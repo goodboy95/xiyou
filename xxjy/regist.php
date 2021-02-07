@@ -135,19 +135,19 @@ if ($isSubmit) {
     $zczh4 = '12345678';
     $zczh6 = $_POST['zc6'];
     if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh1)) {
-        $zcxx = "<font color=red>账号只能为6-12位字母或数字</font>";
+        $zcxx = "<p style='color: red'>账号只能为6-12位字母或数字</p>";
     }
     if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh2)) {
-        $zcxx = "<font color=red>密码只能为6-12位字母或数字</font>";
+        $zcxx = "<p style='color: red'>密码只能为6-12位字母或数字</p>";
     }
     if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh3)) {
-        $zcxx = "<font color=red>密码只能为6-12位字母或数字</font>";
+        $zcxx = "<p style='color: red'>密码只能为6-12位字母或数字</p>";
     }
     if (preg_match('/^[A-Za-z0-9]{6,12}$/', $zczh4)) {
-        $zcxx = "<font color=red>安全码只能为6-12位字母或数字</font>";
+        $zcxx = "<p style='color: red'>安全码只能为6-12位字母或数字</p>";
     }
     if ($zczh6 == "" || strlen($zczh6) > 16) {
-        $zcxx = "<font color=red>昵称为空或超过了最大限制</font>";
+        $zcxx = "<p style='color: red'>昵称为空或超过了最大限制</p>";
     }
     //连接数据库
     include("../sql/mysql.php");//调用数据库连接
@@ -199,10 +199,10 @@ if ($isSubmit) {
             $xyurl = "http://" . $xxjyurl . "/xxjy/xxjyzc.php?zh=$zczh1&&mm=$zczh3&&aqm=$zczh4";
             echo "<META HTTP-EQUIV=REFRESH CONTENT='0;URL=$xyurl'>";
         } else {
-            $zcxx = "<font color=red>对不起！这个昵称太火了换一个吧</font>";
+            $zcxx = "<p style='color: red'>对不起！这个昵称太火了换一个吧</p>";
         }
     } else {
-        $zcxx = "<font color=red>对不起该账号已存在了</font>";
+        $zcxx = "<p style='color: red'>对不起该账号已存在了</p>";
     }
 }
 ?>
@@ -227,16 +227,16 @@ if ($isSubmit) {
 
 
             <form action="<? echo "regist.php"; ?>" method="post">
-                昵----称：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc6" placeholder="昵称" id='search'><font color=red>（4个字符以下）</font><br>
-                账----号：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc1" placeholder="账号" id='search'><font color=red>（6-12位的字母或数字）</font><br>
-                密----码：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc2" placeholder="密码" id='search'><font color=red>（6-12位的字母或数字）</font><br>
-                确认密码：&nbsp&nbsp<input type="text" name="zc3" placeholder="确认密码" id='search'><font color=red>（6-12位的字母或数字）</font><br>
-                <!--['安全码']：&nbsp&nbsp&nbsp<input  type="text" name="zc4" placeholder="安全码"id='search'><font color=red>（6-12位的字母或数字）</font><br>-->
-                <!--['注册码']：&nbsp&nbsp&nbsp<input  type="text" name="zc5" placeholder="注册码"id='search'><font color=red>（请向加QQ群54665469索要）</font><br>-->
+                昵----称：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc6" placeholder="昵称" id='search'><p style='color: red'>（4个字符以下）</p><br>
+                账----号：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc1" placeholder="账号" id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>
+                密----码：&nbsp&nbsp&nbsp&nbsp<input type="text" name="zc2" placeholder="密码" id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>
+                确认密码：&nbsp&nbsp<input type="text" name="zc3" placeholder="确认密码" id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>
+                <!--['安全码']：&nbsp&nbsp&nbsp<input  type="text" name="zc4" placeholder="安全码"id='search'><p style='color: red'>（6-12位的字母或数字）</p><br>-->
+                <!--['注册码']：&nbsp&nbsp&nbsp<input  type="text" name="zc5" placeholder="注册码"id='search'><p style='color: red'>（请向加QQ群54665469索要）</p><br>-->
                 <input type="submit" name="submit" value="注册" id="search1"/><br>
             </form>
             <br>
-            <a href='/xxjy/login.php'><font color=blue>返回登录</font></a>
+            <a href='/xxjy/login.php'><p style='color: blue'>返回登录</p></a>
             <br><br><br>
             <div class="article-content" style="font-size: 15px;margin-top: 10px;"></div>
         </div>

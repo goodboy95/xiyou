@@ -12,16 +12,16 @@ if ($wjid != "" || $password != "") {
     $pass = ($iniFile->getItem('验证信息', '玩家验证'));
     if ($pass == $password && $password != "" && $pass != "") {
         $name = ($iniFile->getItem('验证信息', '玩家昵称'));
-        $zcxx = "<font color=red>欢迎【" . $name . "】来到小轩娱乐游戏社区！！</font>";
+        $zcxx = "<p style='color: red'>欢迎【" . $name . "】来到小轩娱乐游戏社区！！</p>";
         $xxjyurl = "?wjid=" . $wjid . "&&pass=" . $password;
     } else {
         $xxjyurl = "";
-        $zcxx = "<a href='login.php'><font color=red>登录</font></a>" . "<font color=black>亲！你还没有登录哦</font><a href='regist.php'><font color=red>注册</font></a>";
+        $zcxx = "<a href='login.php'><p style='color: red'>登录</p></a>" . "<p style='color: black'>亲！你还没有登录哦</p><a href='regist.php'><p style='color: red'>注册</p></a>";
         $zcxx = "<a href='login.php'>登录</a>";
     }
 } else {
     $xxjyurl = "";
-    $zcxx = "<a href='login.php'><font color=red>登录</font></a>" . "<font color=black>亲！你还没有登录哦</font><a href='regist.php'><font color=red>注册</font></a>";
+    $zcxx = "<a href='login.php'><p style='color: red'>登录</p></a>" . "<p style='color: black'>亲！你还没有登录哦</p><a href='regist.php'><p style='color: red'>注册</p></a>";
 }
 
 ?>
@@ -440,7 +440,7 @@ if ($mmm >= 1) {
     <div class="padding_box font_l">
 
 
-        <a href="/xxjy/shareIndex.php<? echo $xxjyurl; ?>"><font color=Violet><? echo $dtbtt; ?></font></a>
+        <a href="/xxjy/shareIndex.php<? echo $xxjyurl; ?>"><p style='color: Violet'><? echo $dtbtt; ?></p></a>
 
 
     </div>
@@ -494,7 +494,7 @@ if ($mmm >= 1) {
     <div class="padding_box font_l">
 
 
-        <a href="/xxjy/gameIndex.php<? echo $xxjyurl; ?>"> <font color=Violet>小轩家园段子建设中</font></a>
+        <a href="/xxjy/gameIndex.php<? echo $xxjyurl; ?>"> <p style='color: Violet'>小轩家园段子建设中</p></a>
 
 
     </div>
@@ -647,7 +647,7 @@ if ($mmm >= 1) {
     <div class="padding_box font_l">
 
 
-        <font color=Violet><? echo $wjdt; ?></font>
+        <p style='color: Violet'><? echo $wjdt; ?></p>
 
 
     </div>

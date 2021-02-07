@@ -104,7 +104,7 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 
-echo "<font color=red>恭喜你！与".$pomz."离婚成功！！从此寻花问柳，闭口不谈厮守一生~~~</font>"."<br>";
+echo "<p style='color: red'>恭喜你！与".$pomz."离婚成功！！从此寻花问柳，闭口不谈厮守一生~~~</p>"."<br>";
 
 
 
@@ -112,7 +112,7 @@ echo "<font color=red>恭喜你！与".$pomz."离婚成功！！从此寻花问�
 
 
 } else{	
-echo "<font color=red>对不起！你还是单身</font>"."<br>";
+echo "<p style='color: red'>对不起！你还是单身</p>"."<br>";
 }
 
 
@@ -133,7 +133,7 @@ include("./ini/ojsini.php");
 
 } else{	
 
-echo "<font color=red>对不起！你还是单身</font>"."<br>";
+echo "<p style='color: red'>对不起！你还是单身</p>"."<br>";
 }
 
 $wjid=$wjid1;
@@ -144,9 +144,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

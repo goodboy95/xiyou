@@ -132,7 +132,7 @@ unlink($ininame); //删除文件
 	
 	
 	
-echo "<font color=black>你解散了队伍</font><br>";
+echo "<p style='color: black'>你解散了队伍</p><br>";
 	
 	
 	
@@ -244,11 +244,11 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 	$wjid=$wjid1;
-echo "<font color=black>你退出了队伍</font><br>";
+echo "<p style='color: black'>你退出了队伍</p><br>";
 
 
 } else{	
-echo "<font color=black>你退出了队伍</font><br>";
+echo "<p style='color: black'>你退出了队伍</p><br>";
 		
 		
 }

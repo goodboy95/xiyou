@@ -35,7 +35,7 @@ $iniFile->updItem('快捷分类', [$szmz => '2']);
 include("./wp/wpxx.php");
 $iniFile->updItem('快捷名字', [$szmz => $wpmz]);
 
-echo "<font color=black>成功将".$szmz."设置为了".$wpmz."</font>"."<br>";
+echo "<p style='color: black'>成功将".$szmz."设置为了".$wpmz."</p>"."<br>";
 
 include("template/xy014.php");
 //不走xy.php直接调用xy文件需要加pz01配置

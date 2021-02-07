@@ -1,7 +1,7 @@
 <?php
 
 include("./wj/fbmz.php");//调用ini缓存位置
-echo "<font color=black>恭喜你！完成了".$fbmz."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！完成了".$fbmz."</p>"."<br>";
 
 $inina1=$inina;
 
@@ -840,7 +840,7 @@ $wpkc=$wpdz4[$ii];//	需要量
 $wpzl=$wpdz5[$ii];//物品重量
 
 
-$manzu1=$manzu1."<font color=black>获得：".$wpmz."x".$wpkc.$dbpd1."</font>"."<br>";
+$manzu1=$manzu1."<p style='color: black'>获得：".$wpmz."x".$wpkc.$dbpd1."</p>"."<br>";
 include("./pz/ini_pz01.php");//缓存位置
 include("./pz/ini_pzz024.php");//增加
 //背包容量变更加
@@ -866,7 +866,7 @@ echo $manzu1;
 
 
 } else{
-echo "<font color=black>对不起！完成副本领取奖励遭遇异常联系gm解决此问题</font>"."<br>";
+echo "<p style='color: black'>对不起！完成副本领取奖励遭遇异常联系gm解决此问题</p>"."<br>";
 }
 
 

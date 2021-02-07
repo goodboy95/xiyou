@@ -20,17 +20,17 @@ if ($zsspd == 1) {
 //判断ini文件是否存在	
         $ininame = $path . "/" . $inina;
         unlink($ininame); //删除文件  	
-        echo "<font color=black>恭喜你！！重置完毕请在5分钟内抓紧答题</font>" . "<br>";
+        echo "<p style='color: black'>恭喜你！！重置完毕请在5分钟内抓紧答题</p>" . "<br>";
     } else {
-        echo "<font color=black>重置失败需要〖紫星币〗x10</font>" . "<br>";
+        echo "<p style='color: black'>重置失败需要〖紫星币〗x10</p>" . "<br>";
     }
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

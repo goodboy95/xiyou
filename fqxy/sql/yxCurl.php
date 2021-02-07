@@ -37,15 +37,15 @@ if ($yxhe == 2) {
         echo "<br>";
         echo "<br>";
         echo "<br>";
-        echo "<font color=black>---------------------------</font>" . "<br>";
-        echo "<font color=black>请将此页面存为书签,方便下次访问</font>" . "<br>";
-        echo "<font color=red>特别提示:为了你的账号安全请不要将书签发给任何人,如有遗失后果自负</font>" . "<br>";
+        echo "<p style='color: black'>---------------------------</p>" . "<br>";
+        echo "<p style='color: black'>请将此页面存为书签,方便下次访问</p>" . "<br>";
+        echo "<p style='color: red'>特别提示:为了你的账号安全请不要将书签发给任何人,如有遗失后果自负</p>" . "<br>";
         echo "<br>";
         echo "<br>";
-        echo "<font color=red>王者绝非偶然,实力打造非凡</font>" . "<br>";
-        echo "<font color=red>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspby:小轩</font>" . "<br>";
-        echo "<font color=black>---------------------------</font>" . "<br>";
-        echo "<a href='./xy.php?uid=$wjini&&cmd=$kcmid&&sid=$ka1'><font color=blue>【开启游戏之旅】</font></a>" . "<br>";
+        echo "<p style='color: red'>王者绝非偶然,实力打造非凡</p>" . "<br>";
+        echo "<p style='color: red'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspby:小轩</p>" . "<br>";
+        echo "<p style='color: black'>---------------------------</p>" . "<br>";
+        echo "<a href='./xy.php?uid=$wjini&&cmd=$kcmid&&sid=$ka1'><p style='color: blue'>【开启游戏之旅】</p></a>" . "<br>";
 
     } else {
         //不存在用户的信息

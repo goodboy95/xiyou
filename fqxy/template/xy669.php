@@ -41,13 +41,13 @@ include("./ini/hd_ini.php");
 $iniFile->updItem('活动时间', [$hdid => $nowtime]);
 $iniFile->updItem('活动次数', [$hdid => '5']);	
 $hdcs=5;
-echo "<font color=red>恭喜你！！重置大楼成功，是男人就爬上了1000层大楼</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！重置大楼成功，是男人就爬上了1000层大楼</p>"."<br>";
 
 
 
 
 } else{
-echo "<font color=black>对不起！！重置大楼需要".$wpdz1[0]."x".$wpdz4[0]."</font>"."<br>";
+echo "<p style='color: black'>对不起！！重置大楼需要".$wpdz1[0]."x".$wpdz4[0]."</p>"."<br>";
 }
 
 	
@@ -67,14 +67,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=626;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

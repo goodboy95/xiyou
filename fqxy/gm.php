@@ -265,8 +265,8 @@ include("admin/gm63.php");//【全服某个物品数量】
 } else {
 
 include("./url/url.php");
-echo "<font color=red>当前验证信息失效,请重新登录</font>"."<br>";
-echo "<a href=http://".$xxjyurl."/admin/login.php><font color=blue>返回GM登录</font></a>"."<br>";
+echo "<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/login.php><p style='color: blue'>返回GM登录</p></a>"."<br>";
 
 
 }
@@ -276,8 +276,8 @@ echo "<a href=http://".$xxjyurl."/admin/login.php><font color=blue>返回GM登�
 	
 	
 include("./url/url.php");
-echo "<font color=red>当前验证信息失效,请重新登录</font>"."<br>";
-echo "<a href=http://".$xxjyurl."/admin/login.php><font color=blue>返回GM登录</font></a>"."<br>";
+echo "<p style='color: red'>当前验证信息失效,请重新登录</p>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/login.php><p style='color: blue'>返回GM登录</p></a>"."<br>";
 
 }
 

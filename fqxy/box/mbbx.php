@@ -17,7 +17,7 @@ $ysmz="【秘宝钥匙】";
 if($wnys >=$wnyssl){
 $wpsy=2;//使用成功
 $ysmz1="【秘宝宝箱】";
-echo "<font color=black>恭喜你！打开了".$ysmz1."</font><br>";
+echo "<p style='color: black'>恭喜你！打开了".$ysmz1."</p><br>";
 
 
 $bz= rand(1, 100);
@@ -233,7 +233,7 @@ include("./pz/ini_pz01.php");//调用ini缓存位置
 if($dd >=1){
 
 } else{
-echo "<font color=black>居然人品大爆发了居然是个空箱子</font>"."<br>";
+echo "<p style='color: black'>居然人品大爆发了居然是个空箱子</p>"."<br>";
 	} 		
 
 ////////////////////////////////////////////////扣除钥匙//////////////////////////////
@@ -281,11 +281,11 @@ $iniFile->updItem('商城数量', [$ysid => $wnys1]);
 //////////////////////////////////////////////扣除钥匙////////////////////////////////////
 
 
-echo "<font color=black>失去".$ysmz."x".$wnyssl."</font><br>";
+echo "<p style='color: black'>失去".$ysmz."x".$wnyssl."</p><br>";
 
 } else{
 $wpsy=1;//使用失败
-echo "<font color=black>对不起！你需要".$ysmz."x".$wnyssl."才能打开</font><br>";
+echo "<p style='color: black'>对不起！你需要".$ysmz."x".$wnyssl."才能打开</p><br>";
 
 }
 

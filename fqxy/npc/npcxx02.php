@@ -1588,7 +1588,7 @@ if ($npcc == 101) {
     $wpdz4[] = 1;//	掉落的量
     $wpdz5[] = 1;//	重量
     $wpdz6[] = 100;//	爆率百分比
-    $wpdz7[] = 20;//	多少爆率
+    $wpdz7[] = 100;//	多少爆率
 //死亡掉落
 } elseif ($npcc == 151) {
 //名字
@@ -2993,7 +2993,7 @@ if ($npcc == 101) {
     $ntake = "啊~~~哒哒~~~哒~~~~";
 } else {
     $nccp = 2;
-    echo "<font color=black>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</font><br>";
+    echo "<p style='color: black'>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</p><br>";
 }
 
 

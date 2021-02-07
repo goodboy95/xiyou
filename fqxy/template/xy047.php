@@ -31,7 +31,7 @@ $i=0;
 if($m1>=1||$m>=1){
 
 
-echo "<font color=black>我的【日常任务】</font>"."<br>";
+echo "<p style='color: black'>我的【日常任务】</p>"."<br>";
 
 
 if($m1>=1){
@@ -53,13 +53,13 @@ $i=$i+1;
 if($keyrwfl1[$i]==5){
 $ik=$ik+1;
 $rwstr=$keyrwid1[$i]."_".$keyrwfl1[$i];
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=49;
 $npc[]=$rwstr;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyrwmz1[$i]."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keyrwmz1[$i]."</p></a>"."<br>";
 
 }
 
@@ -91,13 +91,13 @@ $keyrwmz[]=$rwmz[$key];
 for($d=0;$d<$m;$d++){
 $i=$i+1;
 $ik=$ik+1;
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=86;
 $npc[]=$keyrwid[$i];
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyrwmz[$i]."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keyrwmz[$i]."</p></a>"."<br>";
 
 }
 
@@ -107,7 +107,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyrwmz
 
 
 } else{	
-echo "<font color=black>暂时还未接受任何副本日常任务</font>"."<br>";
+echo "<p style='color: black'>暂时还未接受任何副本日常任务</p>"."<br>";
 
 }
 
@@ -166,13 +166,13 @@ $ik=$ik+1;
 
 $rwstr=$keyrwid[$i]."_".$keyrwfl[$i];
 
-echo "<font color=black>".$ik.".</font>";
+echo "<p style='color: black'>".$ik.".</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=49;
 $npc[]=$rwstr;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyrwmz[$i]."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keyrwmz[$i]."</p></a>"."<br>";
 
 }
 
@@ -186,7 +186,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$keyrwmz
 
 
 } else{	
-echo "<font color=black>暂时还未接受任何每日日常任务</font>"."<br>";
+echo "<p style='color: black'>暂时还未接受任何每日日常任务</p>"."<br>";
 
 }
 
@@ -203,23 +203,23 @@ echo "<font color=black>暂时还未接受任何每日日常任务</font>"."<br>
 
 
 
-echo "<font color=black>----------</font>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=44;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回任务分类</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回任务分类</p></a>"."<br>";
 echo "<br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

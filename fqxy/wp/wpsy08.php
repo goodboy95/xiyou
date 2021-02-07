@@ -639,7 +639,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -663,7 +663,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -688,7 +688,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 
@@ -712,7 +712,7 @@ include("./pz/ini_pzz08.php");//得到宝石
 $kcrl=$bssl*$wpzl+$kcrl;
 //这里是得到宝石代码
 include("./pz/ini_pzz09.php");
-echo "<font color=black>恭喜你！获得了".$jjmz."x".$bssl."</font>"."<br>";
+echo "<p style='color: black'>恭喜你！获得了".$jjmz."x".$bssl."</p>"."<br>";
 $wpsy=2;//使用成功
 
 

@@ -157,7 +157,7 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
 
-echo "<font color=red>恭喜你！！获得了".$wpmz."x".$wpsl."</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！获得了".$wpmz."x".$wpsl."</p>"."<br>";
 
 
 
@@ -166,7 +166,7 @@ echo "<font color=red>恭喜你！！获得了".$wpmz."x".$wpsl."</font>"."<br>"
 
 
 
-echo "<font color=red>对不起！！".$wpmz."不支持取出联系GM解决（物品类别不匹配）</font>"."<br>";
+echo "<p style='color: red'>对不起！！".$wpmz."不支持取出联系GM解决（物品类别不匹配）</p>"."<br>";
 
 
 }
@@ -175,7 +175,7 @@ echo "<font color=red>对不起！！".$wpmz."不支持取出联系GM解决（�
 
 
 
-echo "<font color=red>对不起！！增值仓库并没有".$wpmz."</font>"."<br>";
+echo "<p style='color: red'>对不起！！增值仓库并没有".$wpmz."</p>"."<br>";
 
 
 }

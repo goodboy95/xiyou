@@ -252,40 +252,40 @@ include("wj/ztt.php");
 include("wj/zfzt.php");
 //玩家对npc和怪物的战斗摸班id提取	
 
-echo "<font color=black>$nname:</font>"."<br>";
+echo "<p style='color: black'>$nname:</p>"."<br>";
 
 
 if($cmdd==348&&$mppppd!=1){
 	
 
 if($cwcz2==2){
-echo "<font color=black>体力:(".$nhp."/".$nmaxhp.")-".$dxsh.",-".$cwdxsh."</font>"."<br>";
+echo "<p style='color: black'>体力:(".$nhp."/".$nmaxhp.")-".$dxsh.",-".$cwdxsh."</p>"."<br>";
 } else{	
-echo "<font color=black>体力:(".$nhp."/".$nmaxhp.")-".$dxsh."</font>"."<br>";
+echo "<p style='color: black'>体力:(".$nhp."/".$nmaxhp.")-".$dxsh."</p>"."<br>";
 }
 
 
 } else{	
-echo "<font color=black>体力:(".$nhp."/".$nmaxhp.")</font>"."<br>";
+echo "<p style='color: black'>体力:(".$nhp."/".$nmaxhp.")</p>"."<br>";
 }
 
 if($nmaxmp>=1){
 
-echo "<font color=black>内力:(".$nmp."/".$nmaxmp.")</font>"."<br>";
+echo "<p style='color: black'>内力:(".$nmp."/".$nmaxmp.")</p>"."<br>";
 }
 
 
 
 
-echo "<font color=black>----------</font>"."<br>";
-echo "<font color=red>自己:</font>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
+echo "<p style='color: red'>自己:</p>"."<br>";
 if($cmdd==348||$cmdd==249&&$mppppd!=1){
-echo "<font color=black>体力:(".$wjxx['红']."/".$wjxx1['血'].")-".$wjsh."</font>"."<br>";
+echo "<p style='color: black'>体力:(".$wjxx['红']."/".$wjxx1['血'].")-".$wjsh."</p>"."<br>";
 } else{	
-echo "<font color=black>体力:(".$wjxx['红']."/".$wjxx1['血'].")</font>"."<br>";
+echo "<p style='color: black'>体力:(".$wjxx['红']."/".$wjxx1['血'].")</p>"."<br>";
 }
 
-echo "<font color=black>内力:(".$wjxx['蓝']."/".$wjxx1['蓝'].")</font>"."<br>";
+echo "<p style='color: black'>内力:(".$wjxx['蓝']."/".$wjxx1['蓝'].")</p>"."<br>";
 
 
 
@@ -293,20 +293,20 @@ echo "<font color=black>内力:(".$wjxx['蓝']."/".$wjxx1['蓝'].")</font>"."<br
 if($cwcz2==2){
 $zbid=$cwidd;
 include("./ini/cw_ini.php");
-echo "<font color=red>宠物:</font>"."<br>";	
-echo "<font color=red>".$cww01."</font>"."<br>";	
+echo "<p style='color: red'>宠物:</p>"."<br>";
+echo "<p style='color: red'>".$cww01."</p>"."<br>";
 if($cmdd==348||$cmdd==249&&$mppppd!=1){
-echo "<font color=black>体力:(".$cww02."/".$cww03.")-".$cwwjsh."</font>"."<br>";
+echo "<p style='color: black'>体力:(".$cww02."/".$cww03.")-".$cwwjsh."</p>"."<br>";
 } else{	
-echo "<font color=black>体力:(".$cww02."/".$cww03.")</font>"."<br>";
+echo "<p style='color: black'>体力:(".$cww02."/".$cww03.")</p>"."<br>";
 }
 } elseif ($cwcz2==3) {
-echo "<font color=red>宠物:</font>"."<br>";	
-echo "<font color=red>".$cww01."（已阵亡）</font>"."<br>";	
+echo "<p style='color: red'>宠物:</p>"."<br>";
+echo "<p style='color: red'>".$cww01."（已阵亡）</p>"."<br>";
 
 }  
 
-echo "<font color=black>----------</font>"."<br>";
+echo "<p style='color: black'>----------</p>"."<br>";
 
 
 
@@ -347,7 +347,7 @@ $jnnamex=$jnmz9;
 $jn=9;
 include("./wj/jnxx.php");
 
-echo "<font color=black>===================</font>"."<br>";
+echo "<p style='color: black'>===================</p>"."<br>";
 
 
 //cmd及超链接值
@@ -355,14 +355,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=14;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快捷键设置</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>快捷键设置</p></a>"."<br>";
 echo "<br>";
 
 
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 
 
 //cmd及超链接值

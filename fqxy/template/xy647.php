@@ -146,10 +146,10 @@ $xljy1=($iniFile->getItem('玩家信息','修炼经验'));
 $jy2=$xljy1+$xysw1;//值
 $iniFile->updItem('玩家信息', ['修炼经验' => $jy2]);
 
-echo "<font color=black>获得：".$xysw1."修炼经验</font><br>";		
+echo "<p style='color: black'>获得：".$xysw1."修炼经验</p><br>";
 
 } else{	
-echo "<font color=black>对不起,你没有修炼丹可兑换</font><br>";
+echo "<p style='color: black'>对不起,你没有修炼丹可兑换</p><br>";
 } 
   
 
@@ -162,9 +162,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

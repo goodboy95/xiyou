@@ -5234,7 +5234,6 @@ if ($npcc == 601) {
         include("./wj/fb4jbs-3.php");
     } elseif ($bossdj == 4) {
         include("./wj/fb4jbs-4.php");
-    } else {
     }
 //死亡掉落
 } elseif ($npcc == 695) {
@@ -5353,6 +5352,6 @@ if ($npcc == 601) {
     $ntake = "啊~~~哒哒~~~哒~~~~";
 } else {
     $nccp = 2;
-    echo "<font color=black>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</font><br>";
+    echo "<p style='color: black'>没有这个id编号" . $npcc . "请尝试联系gm解决此问题！！</p><br>";
 }
 ?>

@@ -17,7 +17,7 @@ header("Content-type: text/html; charset=utf-8");
 </head>
 <body>
 <div style='width: device-width;display:block;word-break: break-all;word-wrap: break-word;'>
-<?php
+    <?php
     ini_set("error_reporting", "E_ALL & ~E_NOTICE");//防止报错代码
     date_default_timezone_set("PRC");
     //安全备份
@@ -36,11 +36,8 @@ header("Content-type: text/html; charset=utf-8");
         //重新登录
         include("xxjyindex.php");
     }
-
-?>
-
+    ?>
 </div>
-
 </body>
 </html>
 

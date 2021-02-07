@@ -58,14 +58,14 @@ $pass=1;
 }
 
 if($pass==$password){
-echo "<font color=black>---------------------------</font>"."<br>";
-echo "<font color=black>请将此页面存为书签,方便下次访问</font>"."<br>";
-echo "<font color=red>特别提示:为了你的账号安全请不要将书签发给任何人,如有遗失后果自负</font>"."<br>";
+echo "<p style='color: black'>---------------------------</p>"."<br>";
+echo "<p style='color: black'>请将此页面存为书签,方便下次访问</p>"."<br>";
+echo "<p style='color: red'>特别提示:为了你的账号安全请不要将书签发给任何人,如有遗失后果自负</p>"."<br>";
 echo "<br>";
 echo "<br>";
-echo "<font color=red>王者绝非偶然,实力打造非凡</font>"."<br>";
-echo "<font color=red>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspby:小轩</font>"."<br>";
-echo "<font color=black>---------------------------</font>"."<br>";	
+echo "<p style='color: red'>王者绝非偶然,实力打造非凡</p>"."<br>";
+echo "<p style='color: red'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspby:小轩</p>"."<br>";
+echo "<p style='color: black'>---------------------------</p>"."<br>";
 	
 	$img='pic/login/1.jpg';
 	echo '<img src="'.$img.' "alt="图片"/〉';
@@ -73,15 +73,15 @@ echo "<font color=black>---------------------------</font>"."<br>";
 	echo "<br>";
 	echo "<br>";
 
-echo "<font color=black>梦轩西游</font>"."<br>";
-echo "<font color=black>古典神话网游，持神兵利器，降五爪金龙，携爱行走西游路……</font>"."<br>";
-echo "<font color=red>热力推荐</font>"."<br>";
+echo "<p style='color: black'>梦轩西游</p>"."<br>";
+echo "<p style='color: black'>古典神话网游，持神兵利器，降五爪金龙，携爱行走西游路……</p>"."<br>";
+echo "<p style='color: red'>热力推荐</p>"."<br>";
 
 
-echo "<a href=/fqxy/xyy.php?wjid=$wjid&&pass=$password><font color=blue>小轩西游（开始游戏）</font></a>"."<br>";
+echo "<a href=/fqxy/xyy.php?wjid=$wjid&&pass=$password><p style='color: blue'>小轩西游（开始游戏）</p></a>"."<br>";
 
 echo "<br>";
-echo "<a href='login.php'><font color=blue>返回登录</font></a>"."<br>";
+echo "<a href='login.php'><p style='color: blue'>返回登录</p></a>"."<br>";
 	
 	
 	
@@ -94,17 +94,17 @@ echo "<a href='login.php'><font color=blue>返回登录</font></a>"."<br>";
 	
 
 } else {
-echo "<font color=black>当前书签已失效,请重新登录保存</font>"."<br>";
+echo "<p style='color: black'>当前书签已失效,请重新登录保存</p>"."<br>";
 echo "<br>";
-echo "<a href='login.php'><font color=blue>返回登录</font></a>"."<br>";
+echo "<a href='login.php'><p style='color: blue'>返回登录</p></a>"."<br>";
 
 }
 
 
 } else {
-echo "<font color=black>当前书签已失效,请重新登录保存</font>"."<br>";
+echo "<p style='color: black'>当前书签已失效,请重新登录保存</p>"."<br>";
 echo "<br>";
-echo "<a href='login.php'><font color=blue>返回登录</font></a>"."<br>";
+echo "<a href='login.php'><p style='color: blue'>返回登录</p></a>"."<br>";
 
 }
 
@@ -118,7 +118,7 @@ $etime=microtime(true);
 
 
  
- echo "<font color=red>【番茄专属】执行耗时:".$total."毫秒</font>"."<br>";	
+ echo "<p style='color: red'>【番茄专属】执行耗时:".$total."毫秒</p>"."<br>";
  
 ?>
 

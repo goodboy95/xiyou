@@ -10,7 +10,7 @@
 
 
 
-echo "<font color=red>【查询玩家】</font>"."<br>";
+echo "<p style='color: red'>【查询玩家】</p>"."<br>";
 if($_POST['submit']){
 $id= $_POST['sl'];
 
@@ -45,7 +45,7 @@ if(file_exists($file)){
 $ininalock=$wjid."_lock".".txt";
 include("./ini/zsini.php");
 if($zsspd==1){
-echo "<font color=red>查询成功玩家信息如下：</font>"."<br>";
+echo "<p style='color: red'>查询成功玩家信息如下：</p>"."<br>";
 //调用zt.ini是否存在
 include("./ini/zt_ini.php");
 # 获取一个分类下所有数据$
@@ -62,16 +62,16 @@ echo "<br>";
 if($wjxx['靓号'] >=100000&&$wjxx['靓号']<=9999999){
 
 
-echo "<font color=black>ID：</font>";
+echo "<p style='color: black'>ID：</p>";
 $img='pic/txpic/lh.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
-echo "<font color=red>【".$wjxx['靓号']."】</font><br>";
+echo "<p style='color: red'>【".$wjxx['靓号']."】</p><br>";
 } else{
 
 
 
-echo "<font color=black>ID：</font>".$wjid."<br>";
+echo "<p style='color: black'>ID：</p>".$wjid."<br>";
 echo "<br>";
 }
 
@@ -85,18 +85,18 @@ echo "<br>";
 
 
 
-echo "<font color=black>昵称:".$wjxx['玩家名字']."</font>"."<br>";
+echo "<p style='color: black'>昵称:".$wjxx['玩家名字']."</p>"."<br>";
 if($wjxx['性别']==1){
-echo "<font color=black>性别：男</font><br>";
+echo "<p style='color: black'>性别：男</p><br>";
 } elseif ($wjxx['性别']==2){
-echo "<font color=black>性别：女</font><br>";
+echo "<p style='color: black'>性别：女</p><br>";
 } else{
-echo "<font color=black>性别：人妖</font><br>";
+echo "<p style='color: black'>性别：人妖</p><br>";
 }
 if($wjxx['配偶id']>=10000000){
-echo "<font color=black>配偶：</font>".$wjxx['配偶名字']."<br>";
+echo "<p style='color: black'>配偶：</p>".$wjxx['配偶名字']."<br>";
 } else{
-echo "<font color=black>配偶：暂无</font><br>";	
+echo "<p style='color: black'>配偶：暂无</p><br>";
 } 
 if($wjxx['住宅id']>=1){
 if($wjxx['住宅分类']==1){
@@ -108,14 +108,14 @@ $zz="官宅";
 } else{
 $zz="住宅";
 }
-echo "<font color=black>".$zz."：</font>".$wjxx['住宅名字']."<br>";
+echo "<p style='color: black'>".$zz."：</p>".$wjxx['住宅名字']."<br>";
 } else{
-echo "<font color=black>住宅：暂无</font><br>";	
+echo "<p style='color: black'>住宅：暂无</p><br>";
 } 	
 if($wjxx['帮派id']>=1){
-echo "<font color=black>国家：</font>".$wjxx['帮派名字']."<br>";
+echo "<p style='color: black'>国家：</p>".$wjxx['帮派名字']."<br>";
 } else{
-echo "<font color=black>国家：无</font><br>";
+echo "<p style='color: black'>国家：无</p><br>";
 }
 
 if($wjxx['门派']>=1){
@@ -132,9 +132,9 @@ $menp="普陀山";
 } else{
 $menp="无门派";
 }
-echo "<font color=black>门派：</font>".$menp."<br>";
+echo "<p style='color: black'>门派：</p>".$menp."<br>";
 } else{
-echo "<font color=black>门派：无门派</font><br>";
+echo "<p style='color: black'>门派：无门派</p><br>";
 }
 include("./ini/alluser_ini.php");
 $jy01=($iniFile->getItem('禁言信息','永久'));
@@ -199,10 +199,10 @@ $jyts="[永久禁言]";
 
 
 
-echo "<font color=red>禁言状态：".$jyts1.$jyts."</font>";
+echo "<p style='color: red'>禁言状态：".$jyts1.$jyts."</p>";
 
 if($jyts1=="[是]"){
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=14&&user=$wjid'><font color=blue>解除</font></a>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=14&&user=$wjid'><p style='color: blue'>解除</p></a>";
 }
 
 echo "<br>";
@@ -269,55 +269,55 @@ $jyts="[永久封号]";
 
 }
 
-echo "<font color=red>封号状态：".$jyts1.$jyts."</font>";
+echo "<p style='color: red'>封号状态：".$jyts1.$jyts."</p>";
 
 if($jyts1=="[是]"){
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=20&&user=$wjid'><font color=blue>解除</font></a>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=20&&user=$wjid'><p style='color: blue'>解除</p></a>";
 }
 
 echo "<br>";
-echo "<font color=black>【请选择对".$wjxx['玩家名字']."(".$wjid.")的操作】</font>"."<br>";
+echo "<p style='color: black'>【请选择对".$wjxx['玩家名字']."(".$wjid.")的操作】</p>"."<br>";
 
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><font color=blue>发放物品</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=5&&user=$wjid'><p style='color: blue'>发放物品</p></a>"."<br>";
 
-echo "<font color=black>【充值红包管理】</font>"."<br>";
-
-
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=47&&user=$wjid'><font color=blue>【充值1元红包】</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=48&&user=$wjid'><font color=blue>【充值10元红包】</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=49&&user=$wjid'><font color=blue>【充值20元红包】</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=50&&user=$wjid'><font color=blue>【充值50元红包】</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=51&&user=$wjid'><font color=blue>【充值100元红包】</font></a>"."<br>";
-
-echo "<font color=black>【充值管理】</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=29&&user=$wjid'><font color=blue>充值〖10元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=30&&user=$wjid'><font color=blue>充值〖20元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=31&&user=$wjid'><font color=blue>充值〖50元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=32&&user=$wjid'><font color=blue>充值〖100元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=33&&user=$wjid'><font color=blue>充值〖200元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=34&&user=$wjid'><font color=blue>充值〖500元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=35&&user=$wjid'><font color=blue>充值〖1000元〗</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=36&&user=$wjid'><font color=blue>充值〖2000元〗</font></a>"."<br>";
+echo "<p style='color: black'>【充值红包管理】</p>"."<br>";
 
 
-echo "<font color=black>【数据管理】</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=21&&user=$wjid'><font color=blue>刷新数据</font></a>"."<br>";
-echo "<font color=black>【禁言处罚】</font>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=47&&user=$wjid'><p style='color: blue'>【充值1元红包】</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=48&&user=$wjid'><p style='color: blue'>【充值10元红包】</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=49&&user=$wjid'><p style='color: blue'>【充值20元红包】</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=50&&user=$wjid'><p style='color: blue'>【充值50元红包】</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=51&&user=$wjid'><p style='color: blue'>【充值100元红包】</p></a>"."<br>";
 
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=9&&user=$wjid'><font color=blue>禁言30分钟</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=10&&user=$wjid'><font color=blue>禁言2小时</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=11&&user=$wjid'><font color=blue>禁言1天</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=12&&user=$wjid'><font color=blue>禁言1周</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=13&&user=$wjid'><font color=blue>永久禁言</font></a>"."<br>";
+echo "<p style='color: black'>【充值管理】</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=29&&user=$wjid'><p style='color: blue'>充值〖10元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=30&&user=$wjid'><p style='color: blue'>充值〖20元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=31&&user=$wjid'><p style='color: blue'>充值〖50元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=32&&user=$wjid'><p style='color: blue'>充值〖100元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=33&&user=$wjid'><p style='color: blue'>充值〖200元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=34&&user=$wjid'><p style='color: blue'>充值〖500元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=35&&user=$wjid'><p style='color: blue'>充值〖1000元〗</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=36&&user=$wjid'><p style='color: blue'>充值〖2000元〗</p></a>"."<br>";
 
 
-echo "<font color=black>【封号处罚】</font>"."<br>";
+echo "<p style='color: black'>【数据管理】</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=21&&user=$wjid'><p style='color: blue'>刷新数据</p></a>"."<br>";
+echo "<p style='color: black'>【禁言处罚】</p>"."<br>";
 
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=15&&user=$wjid'><font color=blue>封号1天</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=16&&user=$wjid'><font color=blue>封号1周</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=17&&user=$wjid'><font color=blue>封号1月</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=18&&user=$wjid'><font color=blue>封号半年</font></a>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=19&&user=$wjid'><font color=blue>永久封号</font></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=9&&user=$wjid'><p style='color: blue'>禁言30分钟</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=10&&user=$wjid'><p style='color: blue'>禁言2小时</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=11&&user=$wjid'><p style='color: blue'>禁言1天</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=12&&user=$wjid'><p style='color: blue'>禁言1周</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=13&&user=$wjid'><p style='color: blue'>永久禁言</p></a>"."<br>";
+
+
+echo "<p style='color: black'>【封号处罚】</p>"."<br>";
+
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=15&&user=$wjid'><p style='color: blue'>封号1天</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=16&&user=$wjid'><p style='color: blue'>封号1周</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=17&&user=$wjid'><p style='color: blue'>封号1月</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=18&&user=$wjid'><p style='color: blue'>封号半年</p></a>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=19&&user=$wjid'><p style='color: blue'>永久封号</p></a>"."<br>";
 
 
 
@@ -331,7 +331,7 @@ include("./ini/jsini.php");
 
 
 }else{
-echo "<font color=red>很抱歉！没有查询到ID为[".$id."]的这位玩家</font>"."<br>";	
+echo "<p style='color: red'>很抱歉！没有查询到ID为[".$id."]的这位玩家</p>"."<br>";
 echo "<br>";
 }
 
@@ -347,14 +347,14 @@ echo "<br>";
 <?
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 ?>
 
 

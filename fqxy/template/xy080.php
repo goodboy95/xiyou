@@ -72,8 +72,8 @@ $bsid=$npcc;
 include("wp/zbbs.php");//npc页面
 
 
-echo "<font color=black>宝石：".$bsmz."</font>"."<br>";
-echo "<font color=black>描述：".$bsms."</font>"."<br>";	
+echo "<p style='color: black'>宝石：".$bsmz."</p>"."<br>";
+echo "<p style='color: black'>描述：".$bsms."</p>"."<br>";
 
 
 
@@ -88,7 +88,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=83;
 $npc[]=$zbid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>"."<br/>";
 
 
 
@@ -98,7 +98,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=11;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回状态</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回状态</p></a>"."<br>";
 
 
 } elseif($yymid ==62){
@@ -108,7 +108,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=62;
 $npc[]=$zbid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br/>";
 
 
 
@@ -118,7 +118,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=29;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回装备</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回装备</p></a>"."<br>";
 
 } elseif($yymid ==367){
 
@@ -129,7 +129,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=367;
 $npc[]=$wk07;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宠物装备</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宠物装备</p></a>"."<br/>";
 
 
 
@@ -139,7 +139,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=365;
 $npc[]=$wk06;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宠物</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宠物</p></a>"."<br>";
 
 
 
@@ -163,7 +163,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br/>";
 
 
 
@@ -177,7 +177,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=1;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏首页</font></a>"."<br/>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏首页</p></a>"."<br/>";
 
 }
 //解锁当前使用的ini

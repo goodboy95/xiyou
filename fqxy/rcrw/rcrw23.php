@@ -16,8 +16,8 @@ $rcrwbl=($iniFile->getItem('任务变量',$rwstr));
 $rw5=$rwfl;
 $rw1=$rwidd;
 if ($rcrwbl==1) {
-echo "<font color=black>为国家出一份力，誓死为国家做贡献</font>"."<br>";
-echo "<font color=black>收集〖铜魂〗x50</font>"."<br>";
+echo "<p style='color: black'>为国家出一份力，誓死为国家做贡献</p>"."<br>";
+echo "<p style='color: black'>收集〖铜魂〗x50</p>"."<br>";
 
 //任务进程改变
 $rwjc1=2;//任务进程id
@@ -39,7 +39,7 @@ $wpdz5[]=1;//	重量
 include("./pz/ini_pzz026.php");
 $npcc=$npcc11;//返还存值
 if ($pd==2) {
-echo "<font color=black>年纪轻轻既然如此了得，果然不负众望啊！</font>"."<br>";
+echo "<p style='color: black'>年纪轻轻既然如此了得，果然不负众望啊！</p>"."<br>";
 
 //银两加
 $yl1=4000000;
@@ -105,9 +105,9 @@ $result = mysqli_query($conn, $strsql);
 include("./ini/hd_ini.php");
 $iniFile->updItem('活动次数', [$hdid => $hdcs]);	
 } else{
-echo "<font color=black>为国家出一份力，誓死为国家做贡献</font>"."<br>";
+echo "<p style='color: black'>为国家出一份力，誓死为国家做贡献</p>"."<br>";
 
-echo "<font color=black>收集〖铜魂〗x50</font>"."<br>";
+echo "<p style='color: black'>收集〖铜魂〗x50</p>"."<br>";
 }
 
 
@@ -115,7 +115,7 @@ echo "<font color=black>收集〖铜魂〗x50</font>"."<br>";
 
 
 } else{	
-echo "<font color=red>对不起！请联系小轩GM处理</font></br>"; 	
+echo "<p style='color: red'>对不起！请联系小轩GM处理</p></br>";
 
 }
 

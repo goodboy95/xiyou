@@ -77,10 +77,10 @@ $dtdx=($iniFile->getItem('地图比例','大小'));
 
 $img='./pic/dtpic/'.$dtx."-".$dty.".jpg";
 if(!file_exists($img)){
-echo "<font color=black>这个区域的地图图片不存在！如果你想弄这个点的地图图片请把这张图片改名发我</font>"."<br>"; 
+echo "<p style='color: black'>这个区域的地图图片不存在！如果你想弄这个点的地图图片请把这张图片改名发我</p>"."<br>";
 $imgg=$dtx."-".$dty.".jpg";
-echo "<font color=black>图片名称:</font>";
-echo "<font color=red>".$imgg."</font>"."<br>"; 
+echo "<p style='color: black'>图片名称:</p>";
+echo "<p style='color: red'>".$imgg."</p>"."<br>";
 
 	} else{
 		echo '<img src="'.$img.' "alt="图片"/〉';
@@ -95,8 +95,8 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

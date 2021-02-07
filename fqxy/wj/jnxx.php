@@ -46,7 +46,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=$cljpost;
 $npc[]=$jnid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jnname."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$jnname."</p></a>";
 	
 	
 } elseif($jnfl ==2){//药品技能
@@ -59,7 +59,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=248;
 $npc[]=$jnid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jnname."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$jnname."</p></a>";
 }else{
 $szid=$jn;
 if($szid==1){
@@ -90,7 +90,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=15;
 $npc[]=$jn;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快捷".$jn."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>快捷".$jn."</p></a>";
 
 
 	
@@ -103,14 +103,14 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=249;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jnname."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$jnname."</p></a>";
 } elseif($jnfl ==4){//查看技能
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=19;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$jnname."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$jnname."</p></a>";
 
 
 	
@@ -128,7 +128,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=15;
 $npc[]=$jn;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快捷".$jn."</font></a>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>快捷".$jn."</p></a>";
 
 }
 
@@ -137,7 +137,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>快捷".$j
 if($jn==3||$jn==6||$jn==9){
 echo "</br>";
 }else{
-echo "<font color=black>|</font>";
+echo "<p style='color: black'>|</p>";
 	
 }
 

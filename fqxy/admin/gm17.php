@@ -2,7 +2,7 @@
 
 
 
-echo "<font color=red>【封号操作】</font>"."<br>";
+echo "<p style='color: red'>【封号操作】</p>"."<br>";
 
 //阻塞代码防止出现脏数据
 $ininalock=$wjid."_lock".".txt";
@@ -114,7 +114,7 @@ unlink($ininame); //删除文件
 
 
 
-echo "<font color=black>成功对".$wjname."进行了1月封号处罚！！</font>"."<br>";
+echo "<p style='color: black'>成功对".$wjname."进行了1月封号处罚！！</p>"."<br>";
 
 
 
@@ -127,7 +127,7 @@ echo "<font color=black>成功对".$wjname."进行了1月封号处罚！！</fon
 
 
 } else{	
-echo "<font color=black>对不起！".$wjname."正处于封号状态！！</font>"."<br>";
+echo "<p style='color: black'>对不起！".$wjname."正处于封号状态！！</p>"."<br>";
 
 }
 
@@ -158,14 +158,14 @@ include("./ini/jsini.php");
 
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 

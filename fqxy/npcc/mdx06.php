@@ -62,7 +62,7 @@ $iniFile->updItem('商城数量', ['128' => $yll]);
 
 
 
-echo "<font color=black>失去：【万能果】x".$wp3pd."</font>"."<br>";
+echo "<p style='color: black'>失去：【万能果】x".$wp3pd."</p>"."<br>";
 
 $wpkc=$sl;
 $npcc1=$npcc;
@@ -91,21 +91,21 @@ include("template/xy422.php");
 include("./pz/pz01.php");
 } else{
 $dqwp=0;
-echo "<font color=red>对不起！购买负重不足</font>"."<br>";
+echo "<p style='color: red'>对不起！购买负重不足</p>"."<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>对不起！购买".$wpmz."x".$sl."【万能果】不足</font>"."<br>";
+echo "<p style='color: red'>对不起！购买".$wpmz."x".$sl."【万能果】不足</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>每次购买只能在1-1000之间</font>"."<br>";
+echo "<p style='color: red'>每次购买只能在1-1000之间</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

@@ -155,7 +155,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx1,'y' => $dty1]);
  
  
  
-  echo "<font color=red>你接受了房屋参观邀请</font>"."<br>";
+  echo "<p style='color: red'>你接受了房屋参观邀请</p>"."<br>";
  
  } else{	
  
@@ -163,7 +163,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx1,'y' => $dty1]);
  
  
  
- echo "<font color=red>对方的房屋已售卖或者不存在</font>"."<br>";
+ echo "<p style='color: red'>对方的房屋已售卖或者不存在</p>"."<br>";
 
 }
  

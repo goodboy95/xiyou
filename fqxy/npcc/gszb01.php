@@ -38,7 +38,7 @@ exit();
 }
 
 
-echo "<font color=black>请输入你要挂售".$wp1."价格</font>"."<br>";
+echo "<p style='color: black'>请输入你要挂售".$wp1."价格</p>"."<br>";
 
 ?>
 <form  action="" method="POST">
@@ -57,9 +57,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=274;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>挂售全部</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>挂售全部</p></a>"."<br>";
 */
-//echo "<font color=blue>挂售全部（后续更新）</font>"."<br>";
+//echo "<p style='color: blue'>挂售全部（后续更新）</p>"."<br>";
 
 
 

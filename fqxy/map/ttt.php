@@ -4,7 +4,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=173;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=red>&nbsp【离开通天塔】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>&nbsp【离开通天塔】</p></a>"."<br>";
 if ($dty==0) {
 
 
@@ -13,7 +13,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 $tttid=32;
@@ -26,9 +26,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=738;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【烈焰土熊】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【烈焰土熊】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【烈焰土熊】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【烈焰土熊】（已阵亡）</p></br>";
 
 } 
 
@@ -40,18 +40,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=739;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【烈焰土熊】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【烈焰土熊】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【烈焰土熊】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【烈焰土熊】（已阵亡）</p></br>";
 } 
   //出口
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（一层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（一层）</p></a>"."<br>";
 
 
 
@@ -60,9 +60,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   //地点描述
-  echo "<font color=black>通天塔（一层）准备往哪里走呢？</font>"."<br>"; 
+  echo "<p style='color: black'>通天塔（一层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==1) {
 
 //地名
@@ -70,7 +70,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
@@ -86,7 +86,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二层】</p></a>"."<br>";
 }
 
 
@@ -100,20 +100,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=740;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【大地之熊】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【大地之熊】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【大地之熊】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【大地之熊】（已阵亡）</p></br>";
 } 
   
 
   //出口
   
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（一层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（一层）</p></a>"."<br>";
 
 
 
@@ -122,9 +122,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   //地点描述
-  echo "<font color=black>通天塔（一层）准备往哪里走呢？</font>"."<br>"; 
+  echo "<p style='color: black'>通天塔（一层）准备往哪里走呢？</p>"."<br>";
 
 } elseif ($dty==2) {
 
@@ -133,7 +133,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 $tttid=35;
 include("./rcrw/ttt.php");
@@ -143,9 +143,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=741;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玄冰毒蚁】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玄冰毒蚁】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玄冰毒蚁】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玄冰毒蚁】（已阵亡）</p></br>";
 } 
 
 $tttid=36;
@@ -156,19 +156,19 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=742;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玄冰毒蚁】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玄冰毒蚁】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玄冰毒蚁】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玄冰毒蚁】（已阵亡）</p></br>";
 } 
 
   //出口
   
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二层）</p></a>"."<br>";
 
 
 
@@ -177,9 +177,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   //地点描述
-  echo "<font color=black>通天塔（二层）准备往哪里走呢？</font>"."<br>"; 
+  echo "<p style='color: black'>通天塔（二层）准备往哪里走呢？</p>"."<br>";
 
 } elseif ($dty==3) {
 
@@ -188,7 +188,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
   //npc
 
 
@@ -205,7 +205,7 @@ if ($pdid1>=2&&$pdid2>=2&$pdid3>=2) {
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔三层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔三层】</p></a>"."<br>";
 }
 $tttid=37;
 include("./rcrw/ttt.php");
@@ -217,20 +217,20 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=743;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【噬魂蚁王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【噬魂蚁王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【噬魂蚁王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【噬魂蚁王】（已阵亡）</p></br>";
 } 
   
 
   //出口
   
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二层）</p></a>"."<br>";
 
 
 
@@ -239,9 +239,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
   //地点描述
-  echo "<font color=black>通天塔（二层）准备往哪里走呢？</font>"."<br>"; 
+  echo "<p style='color: black'>通天塔（二层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -251,7 +251,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=38;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -260,9 +260,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=744;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金丝蚕】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【金丝蚕】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【金丝蚕】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【金丝蚕】（已阵亡）</p></br>";
 } 
 $tttid=39;
 include("./rcrw/ttt.php");
@@ -273,33 +273,33 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=745;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金丝蚕】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【金丝蚕】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【金丝蚕】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【金丝蚕】（已阵亡）</p></br>";
 } 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（三层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（三层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（三层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==5) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=38;
 $tttpdid2=39;
@@ -313,7 +313,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔四层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔四层】</p></a>"."<br>";
 }
 
 $tttid=40;
@@ -325,26 +325,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=746;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【冰火蚕皇】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【冰火蚕皇】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【冰火蚕皇】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【冰火蚕皇】（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（三层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（三层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（三层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==6) {
@@ -353,7 +353,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=41;
 include("./rcrw/ttt.php");
@@ -363,9 +363,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=747;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【风影豹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【风影豹】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风影豹】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风影豹】（已阵亡）</p></br>";
 } 
 
 $tttid=42;
@@ -376,31 +376,31 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=748;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【风影豹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【风影豹】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风影豹】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风影豹】（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（四层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（四层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（四层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==7) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -417,7 +417,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔五层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔五层】</p></a>"."<br>";
 }
 
 $tttid=43;
@@ -428,27 +428,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=749;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【迅影斑斓豹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【迅影斑斓豹】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【迅影斑斓豹】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【迅影斑斓豹】（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（四层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（四层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（四层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==8) {
@@ -457,7 +457,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 $tttid=44;
@@ -468,9 +468,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=750;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【魔音蝙蝠】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【魔音蝙蝠】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【魔音蝙蝠】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【魔音蝙蝠】（已阵亡）</p></br>";
 } 
 
 $tttid=45;
@@ -481,32 +481,32 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=751;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【魔音蝙蝠】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【魔音蝙蝠】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【魔音蝙蝠】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【魔音蝙蝠】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（五层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（五层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（五层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==9) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=44;
 $tttpdid2=45;
 $tttpdid3=46;
@@ -520,7 +520,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔六层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔六层】</p></a>"."<br>";
 }
 $tttid=46;
 include("./rcrw/ttt.php");
@@ -530,28 +530,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=752;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【七翼暗金蝙王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【七翼暗金蝙王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【七翼暗金蝙王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【七翼暗金蝙王】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（五层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（五层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（五层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==10) {
@@ -560,7 +560,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=47;
 include("./rcrw/ttt.php");
@@ -570,9 +570,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=753;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【紫尾貂】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【紫尾貂】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【紫尾貂】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【紫尾貂】（已阵亡）</p></br>";
 } 
 
 $tttid=48;
@@ -584,33 +584,33 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=754;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【紫尾貂】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【紫尾貂】</p></a>"."<br>";
 
 } else{	
-echo "<font color=red>【紫尾貂】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【紫尾貂】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（六层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（六层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（六层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==11) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=47;
 $tttpdid2=48;
@@ -624,7 +624,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔七层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔七层】</p></a>"."<br>";
 }
 $tttid=49;
 include("./rcrw/ttt.php");
@@ -634,27 +634,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=755;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【双翅紫尾貂】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【双翅紫尾貂】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【双翅紫尾貂】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【双翅紫尾貂】（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（六层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（六层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（六层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==12) {
@@ -663,7 +663,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=50;
 include("./rcrw/ttt.php");
@@ -673,9 +673,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=756;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【堕落魔蛹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【堕落魔蛹】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【堕落魔蛹】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【堕落魔蛹】（已阵亡）</p></br>";
 } 
 
 
@@ -687,34 +687,34 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=757;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【堕落魔蛹】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【堕落魔蛹】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【堕落魔蛹】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【堕落魔蛹】（已阵亡）</p></br>";
 } 
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（七层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（七层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（七层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==13) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=50;
 $tttpdid2=51;
@@ -728,7 +728,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔八层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔八层】</p></a>"."<br>";
 }
 
 $tttid=52;
@@ -739,28 +739,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=758;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【深渊邪蛹王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【深渊邪蛹王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【深渊邪蛹王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【深渊邪蛹王】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（七层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（七层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（七层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==14) {
@@ -769,7 +769,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=53;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -778,9 +778,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=759;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【幽冥火狐】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【幽冥火狐】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【幽冥火狐】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【幽冥火狐】（已阵亡）</p></br>";
 } 
 
 
@@ -792,32 +792,32 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=760;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【幽冥火狐】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【幽冥火狐】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【幽冥火狐】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【幽冥火狐】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（八层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（八层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（八层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==15) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=53;
 $tttpdid2=54;
@@ -831,7 +831,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔九层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔九层】</p></a>"."<br>";
 }
 
 $tttid=55;
@@ -842,27 +842,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=761;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九尾天狐】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九尾天狐】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【九尾天狐】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【九尾天狐】（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（八层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（八层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（八层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==16) {
@@ -871,7 +871,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=56;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -880,9 +880,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=762;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【暗夜火鹰】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【暗夜火鹰】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗夜火鹰】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗夜火鹰】（已阵亡）</p></br>";
 } 
 $tttid=57;
 include("./rcrw/ttt.php");
@@ -892,35 +892,35 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=763;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【暗夜火鹰】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【暗夜火鹰】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗夜火鹰】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗夜火鹰】（已阵亡）</p></br>";
 } 
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（九层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（九层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（九层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==17) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=56;
 $tttpdid2=57;
@@ -934,7 +934,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十层】</p></a>"."<br>";
 }
 
 
@@ -946,28 +946,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=764;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【八翼雷鹰王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【八翼雷鹰王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【八翼雷鹰王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【八翼雷鹰王】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（九层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（九层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（九层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==18) {
@@ -976,7 +976,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=59;
 include("./rcrw/ttt.php");
@@ -986,9 +986,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=765;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【暗黑冰龙】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【暗黑冰龙】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗黑冰龙】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗黑冰龙】（已阵亡）</p></br>";
 } 
 
 $tttid=60;
@@ -1000,32 +1000,32 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=766;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【暗黑冰龙】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【暗黑冰龙】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗黑冰龙】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗黑冰龙】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十层）准备往哪里走呢？</p>"."<br>";
 } elseif ($dty==19) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=59;
 $tttpdid2=60;
@@ -1039,7 +1039,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十一层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十一层】</p></a>"."<br>";
 }
 $tttid=61;
 include("./rcrw/ttt.php");
@@ -1049,26 +1049,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=767;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九幽飞天龙王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九幽飞天龙王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【九幽飞天龙王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【九幽飞天龙王】（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==20) {
@@ -1077,7 +1077,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=66;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1086,9 +1086,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=768;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【巨人】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【巨人】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巨人】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巨人】（已阵亡）</p></br>";
 } 
 
 $tttid=67;
@@ -1100,18 +1100,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=769;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【巨人】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【巨人】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巨人】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巨人】（已阵亡）</p></br>";
 } 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十一层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十一层）</p></a>"."<br>";
 
 
 
@@ -1121,9 +1121,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十一层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十一层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1133,7 +1133,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -1149,7 +1149,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十二层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十二层】</p></a>"."<br>";
 }
 
 
@@ -1162,9 +1162,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=770;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【泰坦巨人】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【泰坦巨人】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【泰坦巨人】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【泰坦巨人】（已阵亡）</p></br>";
 } 
 
 
@@ -1172,20 +1172,20 @@ echo "<font color=red>【泰坦巨人】（已阵亡）</font></br>";
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十一层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十一层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十一层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十一层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==22) {
@@ -1194,7 +1194,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -1207,9 +1207,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=771;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【火精灵】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【火精灵】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【火精灵】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【火精灵】（已阵亡）</p></br>";
 } 
 
 $tttid=70;
@@ -1221,19 +1221,19 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=772;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【火精灵】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【火精灵】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【火精灵】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【火精灵】（已阵亡）</p></br>";
 } 
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十二层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十二层）</p></a>"."<br>";
 
 
 
@@ -1242,9 +1242,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十二层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十二层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1254,7 +1254,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=69;
 $tttpdid2=70;
@@ -1268,7 +1268,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十三层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十三层】</p></a>"."<br>";
 }
 $tttid=71;
 include("./rcrw/ttt.php");
@@ -1278,25 +1278,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=773;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【烈火精灵】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【烈火精灵】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【烈火精灵】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【烈火精灵】（已阵亡）</p></br>";
 } 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十二层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十二层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十二层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十二层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==24) {
@@ -1305,7 +1305,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=72;
 include("./rcrw/ttt.php");
@@ -1315,9 +1315,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=774;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【吸血鬼】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【吸血鬼】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【吸血鬼】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【吸血鬼】（已阵亡）</p></br>";
 } 
 
 $tttid=73;
@@ -1329,17 +1329,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=775;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【吸血鬼】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【吸血鬼】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【吸血鬼】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【吸血鬼】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十三层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十三层）</p></a>"."<br>";
 
 
 
@@ -1348,9 +1348,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十三层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1360,7 +1360,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=72;
 $tttpdid2=73;
@@ -1374,7 +1374,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十四层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十四层】</p></a>"."<br>";
 }
 $tttid=74;
 include("./rcrw/ttt.php");
@@ -1384,25 +1384,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=776;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【吸血鬼王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【吸血鬼王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【吸血鬼王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【吸血鬼王】（已阵亡）</p></br>";
 } 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十三层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十三层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十三层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==26) {
@@ -1411,7 +1411,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=75;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1420,9 +1420,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=777;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【美杜莎】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【美杜莎】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎】（已阵亡）</p></br>";
 } 
 
 $tttid=76;
@@ -1434,18 +1434,18 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=778;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【美杜莎】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【美杜莎】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎】（已阵亡）</p></br>";
 } 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十四层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十四层）</p></a>"."<br>";
 
 
 
@@ -1454,9 +1454,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十四层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1466,7 +1466,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=75;
 $tttpdid2=76;
@@ -1480,7 +1480,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十五层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十五层】</p></a>"."<br>";
 }
 
 $tttid=77;
@@ -1491,29 +1491,29 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=779;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【美杜莎女王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【美杜莎女王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（已阵亡）</p></br>";
 } 
 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十四层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十四层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十四层）准备往哪里走呢？</p>"."<br>";
 
 } elseif ($dty==28) {
 //地名
@@ -1521,7 +1521,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=78;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1530,9 +1530,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=780;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【圣婴】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【圣婴】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【圣婴】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【圣婴】（已阵亡）</p></br>";
 } 
 
 $tttid=79;
@@ -1544,17 +1544,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=781;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【圣婴】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【圣婴】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【圣婴】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【圣婴】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十五层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十五层）</p></a>"."<br>";
 
 
 
@@ -1563,9 +1563,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十五层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1575,7 +1575,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=78;
 $tttpdid2=79;
@@ -1589,7 +1589,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十六层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十六层】</p></a>"."<br>";
 }
 $tttid=80;
 include("./rcrw/ttt.php");
@@ -1599,28 +1599,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=782;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【圣婴大王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【圣婴大王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【圣婴大王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【圣婴大王】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十五层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十五层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十五层）准备往哪里走呢？</p>"."<br>";
 
 } elseif ($dty==30) {
 //地名
@@ -1628,7 +1628,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=81;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1637,9 +1637,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=783;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【琵琶精】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【琵琶精】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【琵琶精】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【琵琶精】（已阵亡）</p></br>";
 } 
 
 $tttid=82;
@@ -1651,17 +1651,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=784;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【琵琶精】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【琵琶精】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【琵琶精】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【琵琶精】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十六层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十六层）</p></a>"."<br>";
 
 
 
@@ -1670,9 +1670,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十六层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1682,7 +1682,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=81;
 $tttpdid2=82;
@@ -1696,7 +1696,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十七层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十七层】</p></a>"."<br>";
 }
 
 $tttid=83;
@@ -1707,28 +1707,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=785;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【六耳猕猴】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【六耳猕猴】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【六耳猕猴】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【六耳猕猴】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十六层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十六层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十六层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==32) {
@@ -1737,7 +1737,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=84;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1746,9 +1746,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=786;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【狮猁怪】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【狮猁怪】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【狮猁怪】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【狮猁怪】（已阵亡）</p></br>";
 } 
 
 $tttid=85;
@@ -1760,17 +1760,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=787;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【狮猁怪】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【狮猁怪】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【狮猁怪】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【狮猁怪】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十七层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十七层）</p></a>"."<br>";
 
 
 
@@ -1779,9 +1779,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十七层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1791,7 +1791,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=84;
 $tttpdid2=85;
@@ -1805,7 +1805,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十八层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十八层】</p></a>"."<br>";
 }
 $tttid=86;
 include("./rcrw/ttt.php");
@@ -1815,26 +1815,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=788;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【铁扇公主】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【铁扇公主】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【铁扇公主】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【铁扇公主】（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十七层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十七层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十七层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==34) {
@@ -1843,7 +1843,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=87;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1852,9 +1852,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=789;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玉面狐狸】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玉面狐狸】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉面狐狸】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉面狐狸】（已阵亡）</p></br>";
 } 
 
 $tttid=88;
@@ -1866,17 +1866,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=790;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玉面狐狸】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玉面狐狸】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉面狐狸】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉面狐狸】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十八层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十八层）</p></a>"."<br>";
 
 
 
@@ -1885,9 +1885,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十八层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -1897,7 +1897,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=87;
 $tttpdid2=88;
@@ -1911,7 +1911,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔十九层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔十九层】</p></a>"."<br>";
 }
 $tttid=89;
 include("./rcrw/ttt.php");
@@ -1921,27 +1921,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=791;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【牛魔王】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【牛魔王】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【牛魔王】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【牛魔王】（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十八层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十八层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十八层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==36) {
@@ -1950,7 +1950,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=90;
 include("./rcrw/ttt.php");
 if ($hdcs==1&&$hdcs!="") {
@@ -1959,9 +1959,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=792;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【白面狐狸】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【白面狐狸】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【白面狐狸】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【白面狐狸】（已阵亡）</p></br>";
 } 
 
 $tttid=91;
@@ -1973,17 +1973,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=793;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【白面狐狸】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【白面狐狸】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【白面狐狸】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【白面狐狸】（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十九层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十九层）</p></a>"."<br>";
 
 
 
@@ -1993,9 +1993,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十九层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2005,7 +2005,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（十九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（十九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttpdid1=90;
 $tttpdid2=91;
@@ -2019,7 +2019,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十层】</p></a>"."<br>";
 }
 $tttid=92;
 include("./rcrw/ttt.php");
@@ -2029,26 +2029,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=794;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【九灵元圣】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【九灵元圣】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【九灵元圣】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【九灵元圣】（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（十九层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（十九层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（十九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（十九层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==38) {
@@ -2057,7 +2057,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=93;
 include("./rcrw/ttt.php");
@@ -2067,9 +2067,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=795;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【大鹏金翅雕】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【大鹏金翅雕】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【大鹏金翅雕】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【大鹏金翅雕】（已阵亡）</p></br>";
 } 
 
 $tttid=94;
@@ -2081,16 +2081,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=796;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【大鹏金翅雕】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【大鹏金翅雕】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【大鹏金翅雕】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【大鹏金翅雕】（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十层）</p></a>"."<br>";
 
 
 
@@ -2099,9 +2099,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2111,7 +2111,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=93;
 $tttpdid2=94;
 $tttpdid3=95;
@@ -2124,7 +2124,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十一层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十一层】</p></a>"."<br>";
 
 }
 
@@ -2138,28 +2138,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=797;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【齐天大圣】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【齐天大圣】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【齐天大圣】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【齐天大圣】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==40) {
@@ -2168,7 +2168,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=163;
 include("./rcrw/ttt.php");
@@ -2178,9 +2178,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=861;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玉兔】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玉兔】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉兔】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉兔】（已阵亡）</p></br>";
 } 
 
 $tttid=164;
@@ -2192,17 +2192,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=862;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玉蟾】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玉蟾】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉蟾】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉蟾】（已阵亡）</p></br>";
 } 
 	
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十一层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十一层）</p></a>"."<br>";
 
 
 
@@ -2211,9 +2211,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十一层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十一层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2223,7 +2223,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=163;
 $tttpdid2=164;
 $tttpdid3=165;
@@ -2236,7 +2236,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十二层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十二层】</p></a>"."<br>";
 }
 
 $tttid=165;
@@ -2247,28 +2247,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=863;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【嫦娥】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【嫦娥】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【嫦娥】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【嫦娥】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十一层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十一层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十一层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十一层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==42) {
@@ -2277,7 +2277,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 	
 $tttid=166;
@@ -2288,9 +2288,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=864;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【七仙女】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【七仙女】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【七仙女】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【七仙女】（已阵亡）</p></br>";
 } 
 
 $tttid=167;
@@ -2302,16 +2302,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=865;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【哪吒】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【哪吒】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【哪吒】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【哪吒】（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十二层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十二层）</p></a>"."<br>";
 
 
 
@@ -2320,9 +2320,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十二层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十二层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2332,7 +2332,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=166;
 $tttpdid2=167;
 $tttpdid3=168;
@@ -2345,7 +2345,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十三层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十三层】</p></a>"."<br>";
 }
 
 $tttid=168;
@@ -2356,28 +2356,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=866;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【天蓬元帅】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【天蓬元帅】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【天蓬元帅】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【天蓬元帅】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十二层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十二层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十二层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十二层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==44) {
@@ -2386,7 +2386,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=169;
 include("./rcrw/ttt.php");
@@ -2396,9 +2396,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=867;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【风伯】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【风伯】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风伯】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风伯】（已阵亡）</p></br>";
 } 
 
 $tttid=170;
@@ -2410,17 +2410,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=868;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【雨师】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【雨师】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【雨师】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【雨师】（已阵亡）</p></br>";
 } 
 	
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十三层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十三层）</p></a>"."<br>";
 
 
 
@@ -2429,9 +2429,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十三层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2441,7 +2441,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=169;
 $tttpdid2=170;
 $tttpdid3=171;
@@ -2454,7 +2454,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十四层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十四层】</p></a>"."<br>";
 }
 
 $tttid=171;
@@ -2465,28 +2465,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=869;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【道行天尊】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【道行天尊】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【道行天尊】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【道行天尊】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十三层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十三层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十三层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2496,7 +2496,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 	
 $tttid=172;
@@ -2507,9 +2507,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=870;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【雷公】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【雷公】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【雷公】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【雷公】（已阵亡）</p></br>";
 } 
 
 $tttid=173;
@@ -2521,16 +2521,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=871;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【电母】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【电母】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【电母】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【电母】（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十四层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十四层）</p></a>"."<br>";
 
 
 
@@ -2539,9 +2539,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十四层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2551,7 +2551,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=172;
 $tttpdid2=173;
 $tttpdid3=174;
@@ -2564,7 +2564,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十五层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十五层】</p></a>"."<br>";
 }
 
 $tttid=174;
@@ -2575,28 +2575,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=872;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【清虚道德真君】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【清虚道德真君】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【清虚道德真君】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【清虚道德真君】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十四层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十四层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十四层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2606,7 +2606,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 	
 $tttid=175;
@@ -2617,9 +2617,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=873;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【鹤童】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【鹤童】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【鹤童】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【鹤童】（已阵亡）</p></br>";
 } 
 
 $tttid=176;
@@ -2631,16 +2631,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=874;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【鹿童】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【鹿童】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【鹿童】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【鹿童】（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十五层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十五层）</p></a>"."<br>";
 
 
 
@@ -2649,9 +2649,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十五层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2661,7 +2661,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=175;
 $tttpdid2=176;
 $tttpdid3=177;
@@ -2674,7 +2674,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十六层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十六层】</p></a>"."<br>";
 }
 
 
@@ -2686,27 +2686,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=875;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【南极仙翁】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【南极仙翁】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【南极仙翁】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【南极仙翁】（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十五层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十五层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十五层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==50) {
@@ -2715,7 +2715,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=178;
 include("./rcrw/ttt.php");
@@ -2725,9 +2725,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=876;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金吒】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【金吒】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【金吒】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【金吒】（已阵亡）</p></br>";
 } 
 
 $tttid=179;
@@ -2739,16 +2739,16 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=877;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【木吒】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【木吒】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【木吒】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【木吒】（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十六层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十六层）</p></a>"."<br>";
 
 
 
@@ -2757,9 +2757,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十六层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2769,7 +2769,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=178;
 $tttpdid2=179;
 $tttpdid3=180;
@@ -2782,7 +2782,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十七层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十七层】</p></a>"."<br>";
 }
 
 $tttid=180;
@@ -2793,28 +2793,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=878;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【托塔天王李靖】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【托塔天王李靖】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【托塔天王李靖】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【托塔天王李靖】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十六层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十六层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十六层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==52) {
@@ -2823,7 +2823,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=181;
 include("./rcrw/ttt.php");
@@ -2833,9 +2833,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=879;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【千里眼】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【千里眼】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【千里眼】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【千里眼】（已阵亡）</p></br>";
 } 
 
 $tttid=182;
@@ -2847,17 +2847,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=880;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【顺风耳】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【顺风耳】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【顺风耳】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【顺风耳】（已阵亡）</p></br>";
 } 
 	
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十七层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十七层）</p></a>"."<br>";
 
 
 
@@ -2866,9 +2866,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十七层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2878,7 +2878,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=181;
 $tttpdid2=182;
 $tttpdid3=183;
@@ -2891,7 +2891,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十八层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十八层】</p></a>"."<br>";
 }
 
 $tttid=183;
@@ -2902,28 +2902,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=881;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【太白金星】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【太白金星】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【太白金星】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【太白金星】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十七层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十七层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十七层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2933,7 +2933,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=184;
 include("./rcrw/ttt.php");
@@ -2943,9 +2943,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=882;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【金童】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【金童】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【金童】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【金童】（已阵亡）</p></br>";
 } 
 
 $tttid=185;
@@ -2957,17 +2957,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=883;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玉女】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玉女】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉女】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉女】（已阵亡）</p></br>";
 } 
 	
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十八层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十八层）</p></a>"."<br>";
 
 
 
@@ -2976,9 +2976,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十八层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -2988,7 +2988,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=184;
 $tttpdid2=185;
 $tttpdid3=186;
@@ -3001,7 +3001,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔二十九层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔二十九层】</p></a>"."<br>";
 }
 
 $tttid=186;
@@ -3012,28 +3012,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=884;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【太上老君】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【太上老君】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【太上老君】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【太上老君】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十八层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十八层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十八层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==56) {
@@ -3042,7 +3042,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=187;
 include("./rcrw/ttt.php");
@@ -3052,9 +3052,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=885;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【三圣母】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【三圣母】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【三圣母】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【三圣母】（已阵亡）</p></br>";
 } 
 
 $tttid=188;
@@ -3066,17 +3066,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=886;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【麻姑】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【麻姑】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【麻姑】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【麻姑】（已阵亡）</p></br>";
 } 
 	
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十九层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十九层）</p></a>"."<br>";
 
 
 
@@ -3085,9 +3085,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十九层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3097,7 +3097,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（二十九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（二十九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttpdid1=187;
 $tttpdid2=188;
 $tttpdid3=189;
@@ -3110,7 +3110,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔三十层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔三十层】</p></a>"."<br>";
 }
 
 $tttid=189;
@@ -3121,28 +3121,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=887;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【王母娘娘】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【王母娘娘】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【王母娘娘】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【王母娘娘】（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（二十九层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（二十九层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（二十九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（二十九层）准备往哪里走呢？</p>"."<br>";
 
 } elseif ($dty==58) {
 //地名
@@ -3150,7 +3150,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（三十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（三十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=190;
 include("./rcrw/ttt.php");
@@ -3160,9 +3160,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=888;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【二郎神】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【二郎神】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【二郎神】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【二郎神】（已阵亡）</p></br>";
 } 
 
 $tttid=191;
@@ -3174,17 +3174,17 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=889;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【哮天犬】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【哮天犬】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【哮天犬】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【哮天犬】（已阵亡）</p></br>";
 } 
 	
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（三十层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（三十层）</p></a>"."<br>";
 
 
 
@@ -3193,9 +3193,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（三十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（三十层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3205,8 +3205,8 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（三十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
-echo "<font color=red>【通天塔】：我欲问鼎天下,试问谁与争锋</font>"."<br>";
+echo "<p style='color: black'>通天塔（三十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
+echo "<p style='color: red'>【通天塔】：我欲问鼎天下,试问谁与争锋</p>"."<br>";
 
 $tttpdid1=190;
 $tttpdid2=191;
@@ -3220,7 +3220,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙一层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙一层】</p></a>"."<br>";
 }
 
 
@@ -3239,27 +3239,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=890;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>&nbsp【玉皇大帝】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>&nbsp【玉皇大帝】</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉皇大帝】（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉皇大帝】（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（三十层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（三十层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（三十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（三十层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3270,7 +3270,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=229;
 include("./rcrw/ttt.php");
@@ -3280,9 +3280,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1017;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【烈焰土熊】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【烈焰土熊】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【烈焰土熊】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【烈焰土熊】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=230;
@@ -3294,25 +3294,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1018;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【烈焰土熊】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【烈焰土熊】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【烈焰土熊】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【烈焰土熊】（仙）（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙一层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙一层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙一层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙一层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3323,7 +3323,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙一层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -3340,7 +3340,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙二层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙二层】</p></a>"."<br>";
 }
 
 
@@ -3353,28 +3353,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1019;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【大地之熊】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【大地之熊】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【大地之熊】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【大地之熊】（仙）（已阵亡）</p></br>";
 } 
 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙一层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙一层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙一层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙一层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3384,7 +3384,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 $tttid=232;
@@ -3395,9 +3395,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1020;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【玄冰毒蚁】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【玄冰毒蚁】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玄冰毒蚁】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玄冰毒蚁】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=233;
@@ -3409,28 +3409,28 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1021;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【玄冰毒蚁】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【玄冰毒蚁】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玄冰毒蚁】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玄冰毒蚁】（仙）（已阵亡）</p></br>";
 } 
 
 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙二层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙二层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙二层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙二层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3441,7 +3441,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙二层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙二层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 $tttpdid1=232;
@@ -3456,7 +3456,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙三层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙三层】</p></a>"."<br>";
 }
 
 
@@ -3469,26 +3469,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1022;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【噬魂蚁王】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【噬魂蚁王】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【噬魂蚁王】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【噬魂蚁王】（仙）（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙二层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙二层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙二层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙二层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3498,7 +3498,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=235;
 include("./rcrw/ttt.php");
@@ -3508,9 +3508,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1023;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【金丝蚕】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【金丝蚕】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【金丝蚕】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【金丝蚕】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=236;
@@ -3522,26 +3522,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1024;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【金丝蚕】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【金丝蚕】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【金丝蚕】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【金丝蚕】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙三层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙三层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙三层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3552,7 +3552,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙三层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -3568,7 +3568,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙四层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙四层】</p></a>"."<br>";
 }
 
 
@@ -3581,26 +3581,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1025;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【冰火蚕皇】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【冰火蚕皇】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【冰火蚕皇】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【冰火蚕皇】（仙）（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙三层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙三层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙三层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙三层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3612,7 +3612,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=238;
 include("./rcrw/ttt.php");
@@ -3622,9 +3622,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1026;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风影豹】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风影豹】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风影豹】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风影豹】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=239;
@@ -3636,26 +3636,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1027;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【风影豹】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【风影豹】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【风影豹】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【风影豹】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙四层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙四层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙四层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3666,7 +3666,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙四层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 $tttpdid1=238;
@@ -3681,7 +3681,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙五层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙五层】</p></a>"."<br>";
 }
 
 
@@ -3694,26 +3694,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1028;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【迅影斑斓豹】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【迅影斑斓豹】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【迅影斑斓豹】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【迅影斑斓豹】（仙）（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙四层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙四层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙四层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙四层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3724,7 +3724,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 $tttid=241;
@@ -3735,9 +3735,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1029;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【魔音蝙蝠】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【魔音蝙蝠】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【魔音蝙蝠】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【魔音蝙蝠】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=242;
@@ -3749,25 +3749,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1030;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【魔音蝙蝠】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【魔音蝙蝠】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【魔音蝙蝠】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【魔音蝙蝠】（仙）（已阵亡）</p></br>";
 } 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙五层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙五层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙五层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3778,7 +3778,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙五层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -3794,7 +3794,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙六层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙六层】</p></a>"."<br>";
 }
 
 
@@ -3807,27 +3807,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1031;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【七翼暗金蝙王】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【七翼暗金蝙王】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【七翼暗金蝙王】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【七翼暗金蝙王】（仙）（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙五层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙五层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙五层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙五层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3839,7 +3839,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=244;
 include("./rcrw/ttt.php");
@@ -3849,9 +3849,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1032;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【紫尾貂】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【紫尾貂】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【紫尾貂】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【紫尾貂】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=245;
@@ -3863,26 +3863,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1033;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【紫尾貂】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【紫尾貂】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【紫尾貂】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【紫尾貂】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙六层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙六层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙六层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3893,7 +3893,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙六层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -3909,7 +3909,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙七层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙七层】</p></a>"."<br>";
 }
 
 
@@ -3922,25 +3922,25 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1034;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【双翅紫尾貂】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【双翅紫尾貂】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【双翅紫尾貂】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【双翅紫尾貂】（仙）（已阵亡）</p></br>";
 } 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙六层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙六层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙六层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙六层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -3954,7 +3954,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=247;
 include("./rcrw/ttt.php");
@@ -3964,9 +3964,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1035;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【堕落魔蛹】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【堕落魔蛹】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【堕落魔蛹】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【堕落魔蛹】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=248;
@@ -3978,26 +3978,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1036;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【堕落魔蛹】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【堕落魔蛹】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【堕落魔蛹】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【堕落魔蛹】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙七层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙七层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙七层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4008,7 +4008,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙七层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -4024,7 +4024,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙八层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙八层】</p></a>"."<br>";
 }
 
 
@@ -4037,26 +4037,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1037;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【深渊邪蛹王】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【深渊邪蛹王】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【深渊邪蛹王】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【深渊邪蛹王】（仙）（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙七层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙七层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙七层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙七层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4068,7 +4068,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=250;
 include("./rcrw/ttt.php");
@@ -4078,9 +4078,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1038;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【幽冥火狐】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【幽冥火狐】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【幽冥火狐】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【幽冥火狐】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=251;
@@ -4092,26 +4092,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1039;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【幽冥火狐】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【幽冥火狐】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【幽冥火狐】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【幽冥火狐】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙八层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙八层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙八层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4122,7 +4122,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙八层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -4138,7 +4138,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙九层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙九层】</p></a>"."<br>";
 }
 
 
@@ -4151,26 +4151,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1040;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【九尾天狐】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【九尾天狐】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【九尾天狐】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【九尾天狐】（仙）（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙八层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙八层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙八层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙八层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4180,7 +4180,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=253;
 include("./rcrw/ttt.php");
@@ -4190,9 +4190,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1041;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【暗夜火鹰】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【暗夜火鹰】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗夜火鹰】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗夜火鹰】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=254;
@@ -4204,26 +4204,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1042;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【暗夜火鹰】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【暗夜火鹰】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗夜火鹰】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗夜火鹰】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙九层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙九层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙九层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4234,7 +4234,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙九层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -4250,7 +4250,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔仙十层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔仙十层】</p></a>"."<br>";
 }
 
 
@@ -4263,26 +4263,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1043;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【八翼雷鹰王】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【八翼雷鹰王】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【八翼雷鹰王】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【八翼雷鹰王】（仙）（已阵亡）</p></br>";
 } 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙九层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙九层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙九层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙九层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4294,7 +4294,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 $tttid=256;
 include("./rcrw/ttt.php");
@@ -4304,9 +4304,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1044;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【暗黑冰龙】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【暗黑冰龙】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗黑冰龙】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗黑冰龙】（仙）（已阵亡）</p></br>";
 } 
 
 $tttid=257;
@@ -4318,26 +4318,26 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1045;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【暗黑冰龙】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【暗黑冰龙】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【暗黑冰龙】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【暗黑冰龙】（仙）（已阵亡）</p></br>";
 } 
 
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<font color=black>上:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙十层）</font></a>"."<br>";
+echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙十层）</p></a>"."<br>";
 
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙十层）准备往哪里走呢？</p>"."<br>";
 
 
 
@@ -4348,7 +4348,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<font color=black>通天塔（仙十层）</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>刷新</font></a>"."<br>";
+echo "<p style='color: black'>通天塔（仙十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 
 
 
@@ -4365,7 +4365,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊一层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊一层】</p></a>"."<br>";
 }
 
 
@@ -4378,27 +4378,27 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1046;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【九幽飞天龙王】（仙）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【九幽飞天龙王】（仙）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【九幽飞天龙王】（仙）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【九幽飞天龙王】（仙）（已阵亡）</p></br>";
 } 
 
 
 //出口
-echo "<font color=black>请选择出口</font>"."<br>";
+echo "<p style='color: black'>请选择出口</p>"."<br>";
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
 $npc[]=0;
-echo "<font color=black>下:</font>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>通天塔（仙十层）</font></a>"."<br>";
+echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>通天塔（仙十层）</p></a>"."<br>";
 //查看地图
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=8;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>查看地图</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查看地图</p></a>"."<br>";
 //地点描述
-echo "<font color=black>通天塔（仙十层）准备往哪里走呢？</font>"."<br>"; 
+echo "<p style='color: black'>通天塔（仙十层）准备往哪里走呢？</p>"."<br>";
 
 
 } elseif ($dty==80) {
@@ -4418,9 +4418,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1142;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【巨人】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【巨人】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巨人】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巨人】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=306;
 include("./rcrw/ttt.php");
@@ -4430,9 +4430,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1143;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【巨人】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【巨人】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【巨人】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【巨人】（天尊）（已阵亡）</p></br>";
 } 
 
 
@@ -4460,7 +4460,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊二层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊二层】</p></a>"."<br>";
 }
 
 
@@ -4473,9 +4473,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1144;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【泰坦巨人】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【泰坦巨人】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【泰坦巨人】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【泰坦巨人】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4498,9 +4498,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1145;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【火精灵】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【火精灵】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【火精灵】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【火精灵】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=309;
 include("./rcrw/ttt.php");
@@ -4510,9 +4510,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1146;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【火精灵】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【火精灵】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【火精灵】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【火精灵】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4541,7 +4541,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊三层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊三层】</p></a>"."<br>";
 }
 
 
@@ -4553,9 +4553,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1147;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【烈火精灵】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【烈火精灵】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【烈火精灵】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【烈火精灵】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -4577,9 +4577,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1148;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【吸血鬼】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【吸血鬼】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【吸血鬼】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【吸血鬼】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=312;
 include("./rcrw/ttt.php");
@@ -4589,9 +4589,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1149;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【吸血鬼】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【吸血鬼】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【吸血鬼】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【吸血鬼】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -4618,7 +4618,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊四层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊四层】</p></a>"."<br>";
 }
 
 
@@ -4630,9 +4630,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1150;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【吸血鬼王】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【吸血鬼王】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【吸血鬼王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【吸血鬼王】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -4653,9 +4653,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1151;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【美杜莎】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【美杜莎】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=315;
 include("./rcrw/ttt.php");
@@ -4665,9 +4665,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1152;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【美杜莎】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【美杜莎】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4694,7 +4694,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊五层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊五层】</p></a>"."<br>";
 }
 $tttid=316;
 include("./rcrw/ttt.php");
@@ -4704,9 +4704,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1153;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【美杜莎女王】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【美杜莎女王】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4728,9 +4728,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1154;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【圣婴】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【圣婴】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=318;
 include("./rcrw/ttt.php");
@@ -4740,9 +4740,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1155;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【圣婴】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【圣婴】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4768,7 +4768,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊六层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊六层】</p></a>"."<br>";
 }
 
 $tttid=319;
@@ -4779,9 +4779,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1156;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【圣婴大王】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【圣婴大王】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -4805,9 +4805,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1157;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【琵琶精】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【琵琶精】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=321;
 include("./rcrw/ttt.php");
@@ -4817,9 +4817,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1158;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【琵琶精】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【琵琶精】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【美杜莎女王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【美杜莎女王】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4846,7 +4846,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊七层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊七层】</p></a>"."<br>";
 }
 
 
@@ -4858,9 +4858,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1159;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【六耳猕猴】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【六耳猕猴】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【六耳猕猴】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【六耳猕猴】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -4881,9 +4881,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1160;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【狮猁怪】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【狮猁怪】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【狮猁怪】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【狮猁怪】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=324;
 include("./rcrw/ttt.php");
@@ -4893,9 +4893,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1161;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【狮猁怪】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【狮猁怪】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【狮猁怪】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【狮猁怪】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4922,7 +4922,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊八层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊八层】</p></a>"."<br>";
 }
 
 $tttid=325;
@@ -4933,9 +4933,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1162;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【铁扇公主】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【铁扇公主】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【铁扇公主】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【铁扇公主】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -4957,9 +4957,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1163;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【玉面狐狸】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【玉面狐狸】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉面狐狸】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉面狐狸】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=327;
 include("./rcrw/ttt.php");
@@ -4969,9 +4969,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1164;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【玉面狐狸】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【玉面狐狸】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【玉面狐狸】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【玉面狐狸】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -4998,7 +4998,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊九层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊九层】</p></a>"."<br>";
 }
 
 
@@ -5010,9 +5010,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1165;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【牛魔王】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【牛魔王】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【牛魔王】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【牛魔王】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -5034,9 +5034,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1166;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【白面狐狸】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【白面狐狸】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【白面狐狸】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【白面狐狸】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=330;
 include("./rcrw/ttt.php");
@@ -5046,9 +5046,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1167;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【白面狐狸】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【白面狐狸】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【白面狐狸】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【白面狐狸】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -5075,7 +5075,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔天尊十层】</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔天尊十层】</p></a>"."<br>";
 }
 
 
@@ -5087,9 +5087,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1168;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【九灵元圣】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【九灵元圣】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【九灵元圣】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【九灵元圣】（天尊）（已阵亡）</p></br>";
 } 
 
 include("mapxx.php");//地图出入口
@@ -5111,9 +5111,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1169;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【大鹏金翅雕】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【大鹏金翅雕】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【大鹏金翅雕】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【大鹏金翅雕】（天尊）（已阵亡）</p></br>";
 } 
 $tttid=333;
 include("./rcrw/ttt.php");
@@ -5123,9 +5123,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1170;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【大鹏金翅雕】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【大鹏金翅雕】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【大鹏金翅雕】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【大鹏金翅雕】（天尊）（已阵亡）</p></br>";
 } 
 include("mapxx.php");//地图出入口
 
@@ -5148,14 +5148,14 @@ $pdid1=($iniFile->getItem('活动次数',$tttpdid1));
 $pdid2=($iniFile->getItem('活动次数',$tttpdid2));
 $pdid3=($iniFile->getItem('活动次数',$tttpdid3));
 if ($pdid1>=2&&$pdid2>=2&$pdid3>=2) {
-	echo "<font color=red>进入【通天塔混沌天尊一层】（封印中）</font></a>"."<br>";
+	echo "<p style='color: red'>进入【通天塔混沌天尊一层】（封印中）</p></a>"."<br>";
 	
 	/*
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入【通天塔混沌天尊一层】（封印中）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入【通天塔混沌天尊一层】（封印中）</p></a>"."<br>";
 */
 }
 
@@ -5168,9 +5168,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=10;
 $npc[]=1171;//需要改动
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【齐天大圣】（天尊）</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【齐天大圣】（天尊）</p></a>"."<br>";
 } else{	
-echo "<font color=red>【齐天大圣】（天尊）（已阵亡）</font></br>"; 	
+echo "<p style='color: red'>【齐天大圣】（天尊）（已阵亡）</p></br>";
 } 
 
 

@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $strsql);
 //$npcc=$zbsjid;
 //include("./wp/zbxx.php");//装备信息
 
-//echo "<font color=red>得到了".$wp1."</font>"."<br>"; 
+//echo "<p style='color: red'>得到了".$wp1."</p>"."<br>";
 //更新缓存数据
 $inina="cwzbb_".$cwid3.".ini";
 $path='ache/'.$wjid;

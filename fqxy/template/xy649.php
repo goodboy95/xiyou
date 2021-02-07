@@ -6,7 +6,7 @@ $ininalock=$wjid."_lock".".txt";
 include("./ini/zsini.php");
 if($zsspd==1){
 
-echo "<font color=red>恭喜你打开了尊贵vip特权显示</font>"."<br>";
+echo "<p style='color: red'>恭喜你打开了尊贵vip特权显示</p>"."<br>";
 include("./ini/zgvip_ini.php");
 include("./sql/mysql.php");//调用数据库连接 
 $q2="zgvip".$wjid;

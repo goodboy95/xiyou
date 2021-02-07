@@ -53,8 +53,8 @@ if ($zsspd == 1) {
             if ($ip4 == "") {//如果没有值则添加新数据
                 $ip5 = 2;
             }
-            echo "<font color=red>【V0-V2号限制情况】</font>" . "<br>";
-            echo "<font color=black>【今日绑定IP：" . $ip3 . "】</font>" . "<br>";
+            echo "<p style='color: red'>【V0-V2号限制情况】</p>" . "<br>";
+            echo "<p style='color: black'>【今日绑定IP：" . $ip3 . "】</p>" . "<br>";
             if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $ip5 == 2) {//今天不是今天数据验证
                 //改写ip
                 $nowtime = date('Y-m-d H:i:s');
@@ -231,8 +231,8 @@ if ($zsspd == 1) {
             deldir($path);
         }
     }
-    echo "<font color=black>古典神话网游，持神兵利器，降五爪金龙，携爱行走西游路……</font>" . "<br>";
-    echo "<font color=black>【游戏选项】</font>" . "<br>";
+    echo "<p style='color: black'>古典神话网游，持神兵利器，降五爪金龙，携爱行走西游路……</p>" . "<br>";
+    echo "<p style='color: black'>【游戏选项】</p>" . "<br>";
     //页面值
     $q5 = 1;
     //cmd及超链接值
@@ -240,89 +240,89 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入游戏</font></a>" . "<br>";
-    echo "<font color=black>进入论坛</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>进入论坛</p>" . "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 336;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>增值仓库</font></a>" . "<br>";
-    echo "<font color=black>【官方动态】</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>增值仓库</p></a>" . "<br>";
+    echo "<p style='color: black'>【官方动态】</p>" . "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 34;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【活动-补充值【傲来国】活动】(11-26~~~12-02(23:50))</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【活动-补充值【傲来国】活动】(11-26~~~12-02(23:50))</p></a>" . "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 35;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【活动-纯净新【宝象国】活动】(11-26~~~12-02(23:50))</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【活动-纯净新【宝象国】活动】(11-26~~~12-02(23:50))</p></a>" . "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 36;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>【活动-开区活动】(补充值区与纯净新区同时有效)</font></a>" . "<br>";
-    echo "<font color=black>【游戏指引】</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【活动-开区活动】(补充值区与纯净新区同时有效)</p></a>" . "<br>";
+    echo "<p style='color: black'>【游戏指引】</p>" . "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 1;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>简介</font></a>";
-    echo "<font color=black>|</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>简介</p></a>";
+    echo "<p style='color: black'>|</p>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 2;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>操作</font></a>";
-    echo "<font color=black>|</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>操作</p></a>";
+    echo "<p style='color: black'>|</p>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 3;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>门派</font></a>";
-    echo "<font color=black>|</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>门派</p></a>";
+    echo "<p style='color: black'>|</p>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 4;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>区域</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>区域</p></a>" . "<br>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 5;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>装备</font></a>";
-    echo "<font color=black>|</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>装备</p></a>";
+    echo "<p style='color: black'>|</p>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 6;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>道具</font></a>";
-    echo "<font color=black>|</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>道具</p></a>";
+    echo "<p style='color: black'>|</p>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 7;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任务</font></a>";
-    echo "<font color=black>|</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>任务</p></a>";
+    echo "<p style='color: black'>|</p>";
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 107;
     $npc[] = 8;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>战斗</font></a>" . "<br>";
-    echo "<font color=black>【客服帮助】</font>" . "<br>" . "<font color=black>官方群QQ群:54665469,客服QQ:137154720</font>" . "<br>" . "<font color=black>服务时间(09:30-21:00)</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>战斗</p></a>" . "<br>";
+    echo "<p style='color: black'>【客服帮助】</p>" . "<br>" . "<p style='color: black'>官方群QQ群:54665469,客服QQ:137154720</p>" . "<br>" . "<p style='color: black'>服务时间(09:30-21:00)</p>";
     flock($fp, LOCK_UN);
 } else {
     echo "服务器开小差了";

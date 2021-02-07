@@ -10,7 +10,7 @@
 
 
 
-echo "<font color=red>【发布系统消息】</font>"."<br>";
+echo "<p style='color: red'>【发布系统消息】</p>"."<br>";
 if($_POST['submit']){
 $xtxx= $_POST['sl'];
 
@@ -18,8 +18,8 @@ $xtxx= $_POST['sl'];
 include("./msg/msgg02.php");
 
 if($xtmsg==2){
-echo"<font color=black>发布系统消息成功</font></a>";
-echo"<font color=black>发布内容：".$xtxx."</font></a>";
+echo"<p style='color: black'>发布系统消息成功</p></a>";
+echo"<p style='color: black'>发布内容：".$xtxx."</p></a>";
 }
 
 
@@ -32,14 +32,14 @@ echo"<font color=black>发布内容：".$xtxx."</font></a>";
 <?
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 ?>
 
 

@@ -42,7 +42,7 @@ include("./zbdz/zbsj08.php");//装备描述
 include("./wj/zbpost.php");
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

@@ -18,7 +18,7 @@ include("./wp/jjxx.php");
 include("./ini/jj_ini.php");
 $iniFile->updItem('家具摆放', [$npcc => 2]);
 
-echo "<font color=black>你摆放".$jjmz."！！</font>"."<br>";
+echo "<p style='color: black'>你摆放".$jjmz."！！</p>"."<br>";
 
 	 //更新缓存数据
 $inina="ztt.ini";

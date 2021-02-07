@@ -50,7 +50,7 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 //数字转汉字
 $yl=$ylmm;
 include("./pz/ylts.php");
-echo  "<font color=red>手续费：".$ylxx."银两</font></a></br>";
+echo  "<p style='color: red'>手续费：".$ylxx."银两</p></a></br>";
 //扣除手续费	
 include("./ini/zt_ini.php");
 
@@ -89,7 +89,7 @@ if($wprl<=$cbbrlb){
 
 if($wpsl<$sl){
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 
@@ -227,7 +227,7 @@ include("./pz/ylts.php");
 
 
 
-echo "<font color=red>你以每件".$ylxx."两的价格挂售了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你以每件".$ylxx."两的价格挂售了".$wpmz."x".$sl."</p>"."<br>";
 
 
 echo "<br>";
@@ -421,7 +421,7 @@ $yl=$gsjg;
 include("./pz/ylts.php");
 
 
-echo "<font color=red>你以每件".$ylxx."银两的价格挂售了".$wpmz."x".$sl."</font>"."<br>";
+echo "<p style='color: red'>你以每件".$ylxx."银两的价格挂售了".$wpmz."x".$sl."</p>"."<br>";
 
 echo "<br>";
 
@@ -441,7 +441,7 @@ include("./pz/pz01.php");
 
 } else {
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -451,7 +451,7 @@ echo "<br>";
 } else{
 $dqwp=0;
 	//$qbwp=1;
-echo "<font color=red>对不起，你的挂售已放不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的挂售已放不下任何东西了</p>"."<br>";
 echo "<br>";
 
 include("template/xy035.php");
@@ -464,7 +464,7 @@ include("./pz/pz01.php");
 
 } else {
 	$dqwp=0;
-echo "<font color=red>对不起！绑定物品不能进行挂售</font>"."<br>";
+echo "<p style='color: red'>对不起！绑定物品不能进行挂售</p>"."<br>";
 echo "<br>";
 }
 
@@ -473,14 +473,14 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售手续费不足</font>"."<br>";
+echo "<p style='color: red'>挂售手续费不足</p>"."<br>";
 echo "<br>";
 }
 
 } else{
 
 	$dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 
 
@@ -492,20 +492,20 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售单价超过最大银两限制</font>"."<br>";
+echo "<p style='color: red'>挂售单价超过最大银两限制</p>"."<br>";
 echo "<br>";
 }
 
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售单价必须在1000银两上</font>"."<br>";
+echo "<p style='color: red'>挂售单价必须在1000银两上</p>"."<br>";
 echo "<br>";
 }
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售价格输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>挂售价格输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 
@@ -514,7 +514,7 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

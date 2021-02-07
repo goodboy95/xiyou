@@ -37,7 +37,7 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 //数字转汉字
 $yl=$ylmm;
 include("./pz/ylts.php");
-echo  "<font color=red>手续费：".$ylxx."银两</font></a></br>";
+echo  "<p style='color: red'>手续费：".$ylxx."银两</p></a></br>";
 //扣除手续费	
 
 	
@@ -250,7 +250,7 @@ $iniFile->updItem('挂售已用容量', ['容量' => $wprl]);
 
 
 	
-	echo "<font color=red>你以".$gsjg."银两的价格挂售了".$zbxjj.$xxxbs.$clname."</font>"."<br>";
+	echo "<p style='color: red'>你以".$gsjg."银两的价格挂售了".$zbxjj.$xxxbs.$clname."</p>"."<br>";
 	
 	include("template/xy029.php");
 //不走xy.php直接调用xy文件需要加pz01配置
@@ -259,7 +259,7 @@ include("./pz/pz01.php");
 
 } else{
 	$dqwp=0;
-echo "<font color=black>你已挂售过该装备了！！</font>"."<br>";
+echo "<p style='color: black'>你已挂售过该装备了！！</p>"."<br>";
 
 } 
 
@@ -268,7 +268,7 @@ echo "<font color=black>你已挂售过该装备了！！</font>"."<br>";
 } else{
 
 	$dqwp=0;
-echo "<font color=red>对不起，你的挂售已不下任何东西了</font>"."<br>";
+echo "<p style='color: red'>对不起，你的挂售已不下任何东西了</p>"."<br>";
 echo "<br>";
 
 
@@ -277,7 +277,7 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售价格超过最大银两限制</font>"."<br>";
+echo "<p style='color: red'>挂售价格超过最大银两限制</p>"."<br>";
 echo "<br>";
 }
 
@@ -285,12 +285,12 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售手续费不足</font>"."<br>";
+echo "<p style='color: red'>挂售手续费不足</p>"."<br>";
 echo "<br>";
 }
 } else {
 $dqwp=0;
-echo "<font color=red>挂售价格必须在1000银两上</font>"."<br>";
+echo "<p style='color: red'>挂售价格必须在1000银两上</p>"."<br>";
 echo "<br>";
 }
 
@@ -299,7 +299,7 @@ echo "<br>";
 
 } else {
 $dqwp=0;
-echo "<font color=red>挂售价格输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>挂售价格输入有误请重新输入</p>"."<br>";
 echo "<br>";
 }
 

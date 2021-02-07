@@ -105,13 +105,13 @@ $jnidd=$npcc;
 //调用技能信息
 include("./wp/jnxx.php");
 
-echo "<font color=red>".$jnmz."</font>"."<br>";
-echo "<font color=black>等级:".$ujndj."级</font>"."<br>";
-echo "<font color=black>描述:</font>".$jnms."<br>";
+echo "<p style='color: red'>".$jnmz."</p>"."<br>";
+echo "<p style='color: black'>等级:".$ujndj."级</p>"."<br>";
+echo "<p style='color: black'>描述:</p>".$jnms."<br>";
 
 if($jnsh >=1){
 
-echo "<font color=black>伤害:</font>".$jnsh."-".$maxjnsh."点</font>"."<br>";
+echo "<p style='color: black'>伤害:</p>".$jnsh."-".$maxjnsh."点</p>"."<br>";
 
 }
 
@@ -119,7 +119,7 @@ if($jnid==3||$jnid==15){
 
 } else{
 
-echo "<font color=black>升级".$jnmz."(后期开放)"."</font>"."<br>";
+echo "<p style='color: black'>升级".$jnmz."(后期开放)"."</p>"."<br>";
 
 }
 
@@ -133,7 +133,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=12;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的技能</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我的技能</p></a>"."<br>";
 
 
 echo "<br>";
@@ -143,8 +143,8 @@ $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

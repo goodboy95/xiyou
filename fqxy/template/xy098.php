@@ -101,7 +101,7 @@ $dwid=($iniFile->getItem('队伍id','已加队伍id'));
 
 if($dwid>10000000){
 
-echo "<font color=red>对不起！".$ckname."已经有队伍了！</font>"."<br>";
+echo "<p style='color: red'>对不起！".$ckname."已经有队伍了！</p>"."<br>";
 
 	} else{
 
@@ -151,7 +151,7 @@ if($m>=0&&$m<=3){
 if($wjzd==2){
 
 
-echo "<font color=red>对不起！你已经邀请过".$ckname."组队了！请等待对方同意</font>"."<br>";
+echo "<p style='color: red'>对不起！你已经邀请过".$ckname."组队了！请等待对方同意</p>"."<br>";
 
 
 	} else{
@@ -163,13 +163,13 @@ $iniFile->addItem('玩家id',[$ltmax1 => $wjid1]);
 $iniFile->addItem('玩家vip',[$ltmax1 => $ltbl2]); 
 $iniFile->addItem('玩家名字',[$ltmax1 => $ltbl1]); 
 $iniFile->addItem('玩家组队',[$ltmax1 => '2']); 
-echo "<font color=red>你向玩家：".$ckname."发起了组队邀请，请等待对方同意</font>"."<br>";
+echo "<p style='color: red'>你向玩家：".$ckname."发起了组队邀请，请等待对方同意</p>"."<br>";
 	} 
 
 
 	} else{
 
-echo "<font color=red>对不起！邀请".$ckname."组队失败！队伍已满员</font>"."<br>";
+echo "<p style='color: red'>对不起！邀请".$ckname."组队失败！队伍已满员</p>"."<br>";
 
 	} 
 
@@ -179,7 +179,7 @@ echo "<font color=red>对不起！邀请".$ckname."组队失败！队伍已满�
 	
 } else{
 
-echo "<font color=red>对不起！对方已经把你拉黑，无法组队</font>"."<br>";
+echo "<p style='color: red'>对不起！对方已经把你拉黑，无法组队</p>"."<br>";
 
 }
 	

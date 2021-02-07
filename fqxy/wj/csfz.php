@@ -51,7 +51,7 @@ $iniFile->updItem('背包仓库银两', ['背包银两'=> $yll]);
 
 
 
-echo "<font color=black>恭喜你,出售掉了".$fz01."(".$fz02."),获得100万银两</font>"."<br>";
+echo "<p style='color: black'>恭喜你,出售掉了".$fz01."(".$fz02."),获得100万银两</p>"."<br>";
 
 
 
@@ -178,7 +178,7 @@ $fz02="官宅";
 
 
 
-echo "<font color=black>恭喜你,出售掉了".$fz01."(".$fz02."),获得〖金豆〗x50</font>"."<br>";
+echo "<p style='color: black'>恭喜你,出售掉了".$fz01."(".$fz02."),获得〖金豆〗x50</p>"."<br>";
 
 
 
@@ -199,7 +199,7 @@ $fz02="官宅";
 }
 
 
-echo "<font color=black>你没有".$fz02."可以卖</font>"."<br>";
+echo "<p style='color: black'>你没有".$fz02."可以卖</p>"."<br>";
 
 
 }

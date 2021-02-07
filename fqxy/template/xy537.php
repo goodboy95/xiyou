@@ -14,7 +14,7 @@ $ckid=($iniFile->getItem('赠送人ID','初始'));
 
 
 
-echo "<font color=black>请输入你要赠送给".$ckname."(".$ckid.")的银两:</font><br>";
+echo "<p style='color: black'>请输入你要赠送给".$ckname."(".$ckid.")的银两:</p><br>";
 if($ckid>10000000){
 	
 //阻塞代码防止出现脏数据//自己的id锁
@@ -107,12 +107,12 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $wjyll]);
 //数字转汉字
 $yl=$zssl;
 include("./pz/ylts.php");
-echo "<font color=red>你成功赠送".$ylxx."给了".$ckname."(".$ckid.")</font><br>";
+echo "<p style='color: red'>你成功赠送".$ylxx."给了".$ckname."(".$ckid.")</p><br>";
 
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>附带：（".$ylxx."两手续费用）</font><br>";
+echo "<p style='color: red'>附带：（".$ylxx."两手续费用）</p><br>";
 
 
 
@@ -180,21 +180,21 @@ $wjid=$wjid1;//自己
 //数字转汉字
 $yl=$zssl;
 include("./pz/ylts.php");
-echo "<font color=red>对不起！！赠送".$ylxx."两不足~~</font><br>";
+echo "<p style='color: red'>对不起！！赠送".$ylxx."两不足~~</p><br>";
 
 //数字转汉字
 $yl=$ylsxf;
 include("./pz/ylts.php");
-echo "<font color=red>附带：（".$ylxx."两手续费用）</font><br>";
+echo "<p style='color: red'>附带：（".$ylxx."两手续费用）</p><br>";
 
 
 }
 
 } else{	
-echo "<font color=red>赠送银两必须大于1000两并且小于999亿9999万9999两~~</font><br>";
+echo "<p style='color: red'>赠送银两必须大于1000两并且小于999亿9999万9999两~~</p><br>";
 }
 } else{	
-echo "<font color=red>输入有误，或者不能为空</font><br>";
+echo "<p style='color: red'>输入有误，或者不能为空</p><br>";
 }	
 }
 
@@ -204,7 +204,7 @@ include("./ini/ojsini.php");
 //解锁当前使用的ini
 $wjid=$wjid1;
 } else{	
-echo "<font color=red>对方ID有误~~请重新赠送</font><br>";
+echo "<p style='color: red'>对方ID有误~~请重新赠送</p><br>";
 
 }
 ?>
@@ -228,7 +228,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 //cmd及超链接值
@@ -236,9 +236,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

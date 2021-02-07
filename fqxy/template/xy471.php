@@ -84,7 +84,7 @@ if($qc04==1){
 	
 	
 
-echo "<font color=black>恭喜你！".$qc01."的【金豆泡泡】被你吹破了，获得〖金豆〗x".$qc03."（请到小仓提取）</font></a>"."<br>";
+echo "<p style='color: black'>恭喜你！".$qc01."的【金豆泡泡】被你吹破了，获得〖金豆〗x".$qc03."（请到小仓提取）</p></a>"."<br>";
 
 
 //////////////////////////////单发系统消息//////////////////////////////
@@ -202,7 +202,7 @@ $iniFile->delItem('排行榜值5', $qc05);
 
 
 } else{	
-echo "<font color=black>很遗憾！".$qc01."的【金豆泡泡】把你蒙圈了</font></a>"."<br>";
+echo "<p style='color: black'>很遗憾！".$qc01."的【金豆泡泡】把你蒙圈了</p></a>"."<br>";
 
 
 
@@ -266,7 +266,7 @@ $wwpfl=4;//物品分类
 $wpid=127;//物品id
 $wpkc=$qc03;//	需要扣除的量
 $wpzl=1;//	需要扣物品的重量
-$manzu1="<font color=black>失去：".$wpmz."x".$wpkc."</font>"."<br>";
+$manzu1="<p style='color: black'>失去：".$wpmz."x".$wpkc."</p>"."<br>";
 include("./pz/ini_pz01.php");//缓存位置
 include("./pz/ini_pzz04.php");//扣除
 $kcrl=$wpkc*$wpzl+$kcrl;
@@ -325,13 +325,13 @@ $iniFile->delItem('排行榜值5', $qc05);
 }
 
 } else{	
-echo "<font color=black>已撤销，或者被其他玩家赢走了</font></a>"."<br>";
+echo "<p style='color: black'>已撤销，或者被其他玩家赢走了</p></a>"."<br>";
 
 } 
 
 
 } else{	
-echo "<font color=black>对不起！！你的金豆不足！！</font></a>"."<br>";
+echo "<p style='color: black'>对不起！！你的金豆不足！！</p></a>"."<br>";
 
 } 
 
@@ -350,7 +350,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=467;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>再来一局</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>再来一局</p></a>"."<p style='color: black'></p>"."<br>";
 
  
 

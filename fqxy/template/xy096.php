@@ -48,16 +48,16 @@ $nowtime=date('Y-m-d H:i:s');
 if($viptime >$nowtime){
 $vipkg=($iniFile->getItem('尊贵vip开关','1'));
 if($vipkg==2){
-echo "<font color=black>尊享：</font>";
+echo "<p style='color: black'>尊享：</p>";
 $img='pic/vip/zgvip.gif';
 echo '<img src="'.$img.' "alt="图片"/>';
 echo "<br>";	
 echo "<br>";
 } else{	
-echo "<font color=black>尊享：无</font>"."<br>";
+echo "<p style='color: black'>尊享：无</p>"."<br>";
 }
 } else{	
-echo "<font color=black>尊享：无</font>"."<br>";
+echo "<p style='color: black'>尊享：无</p>"."<br>";
 }
 
 
@@ -65,22 +65,22 @@ echo "<font color=black>尊享：无</font>"."<br>";
 if($cklh >=1&&$cklh<=9999999){
 
 
-echo "<font color=black>ID：</font>";
+echo "<p style='color: black'>ID：</p>";
 $img='pic/txpic/lh.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 if($cklh ==1){
-echo "<font color=red>【ʚ？？？ɞ】</font><br>";	
+echo "<p style='color: red'>【ʚ？？？ɞ】</p><br>";
 } else{	
-echo "<font color=red>【".$cklh."】</font><br>";	
+echo "<p style='color: red'>【".$cklh."】</p><br>";
 }
 
 } else{
 
 
 
-echo "<font color=black>ID：".$ckid."</font><br>";
+echo "<p style='color: black'>ID：".$ckid."</p><br>";
 echo "<br>";
 }
 
@@ -153,10 +153,10 @@ $wjid=$wjid1;
 
 if($xsch==2){
 
-echo "<font color=black>头衔：".$txmzs."</font>"."<br>";
+echo "<p style='color: black'>头衔：".$txmzs."</p>"."<br>";
 } else{
 
-echo "<font color=black>头衔：暂无</font>"."<br>";
+echo "<p style='color: black'>头衔：暂无</p>"."<br>";
 }
 
 
@@ -200,35 +200,35 @@ $em="【神档杀神~佛档杀佛】"."(".$wjxx['恶名值']."点)";
 	
 $em="【与世无争】"."(".$wjxx['恶名值']."点)";	
 } 
-echo "<font color=red>恶名：".$em."</font><br>";
+echo "<p style='color: red'>恶名：".$em."</p><br>";
 
 
 
 
 
-echo "<font color=black>昵称：</font>".$wjxx['玩家名字']."<br>";
+echo "<p style='color: black'>昵称：</p>".$wjxx['玩家名字']."<br>";
 
 
 
 if($wjxx['性别']==1){
-echo "<font color=black>性别：男</font><br>";
+echo "<p style='color: black'>性别：男</p><br>";
 
 
 } elseif ($wjxx['性别']==2){
-echo "<font color=black>性别：女</font><br>";
+echo "<p style='color: black'>性别：女</p><br>";
 } else{
 
 
-echo "<font color=black>性别：人妖</font><br>";
+echo "<p style='color: black'>性别：人妖</p><br>";
 
 }
 
 if($wjxx['配偶id']>=10000000){
 
-echo "<font color=black>配偶：</font>".$wjxx['配偶名字']."<br>";
+echo "<p style='color: black'>配偶：</p>".$wjxx['配偶名字']."<br>";
 } else{
 	
-echo "<font color=black>配偶：暂无</font><br>";	
+echo "<p style='color: black'>配偶：暂无</p><br>";
 
 } 
 	
@@ -246,18 +246,18 @@ $zz="官宅";
 $zz="住宅";
 }
 
-echo "<font color=black>".$zz."：</font>".$wjxx['住宅名字']."<br>";
+echo "<p style='color: black'>".$zz."：</p>".$wjxx['住宅名字']."<br>";
 } else{
 	
-echo "<font color=black>住宅：暂无</font><br>";	
+echo "<p style='color: black'>住宅：暂无</p><br>";
 
 } 
 	
 if($wjxx['帮派id']>=1){
-echo "<font color=black>国家：</font>".$wjxx['帮派名字']."<br>";
+echo "<p style='color: black'>国家：</p>".$wjxx['帮派名字']."<br>";
 
 } else{
-echo "<font color=black>国家：无</font><br>";
+echo "<p style='color: black'>国家：无</p><br>";
 
 }
 
@@ -279,10 +279,10 @@ $menp="无门派";
 
 }
 	
-echo "<font color=black>门派：</font>".$menp."<br>";
+echo "<p style='color: black'>门派：</p>".$menp."<br>";
 
 } else{
-echo "<font color=black>门派：无门派</font><br>";
+echo "<p style='color: black'>门派：无门派</p><br>";
 
 }
 if($wjxx['等级']>=201){
@@ -292,16 +292,16 @@ $wjdj="仙（".$wjdj."级）";
 $wjdj=$wjxx['等级']."级";
 } 
 
-echo "<font color=black>等级：</font>".$wjdj."<br>";
+echo "<p style='color: black'>等级：</p>".$wjdj."<br>";
 
 
-echo  "<font color=black>HP：</font>".$wjxx['红']."<font color=black>/</font>".$wjxx1['血']."<br>";
-echo  "<font color=black>MP：</font>".$wjxx['蓝']."<font color=black>/</font>".$wjxx1['蓝']."<br>";
-echo "<font color=black>攻击：</font>".$wjxx1['攻击']."<font color=black>-</font>".$wjxx1['max攻击']."<br/>";
-echo "<font color=black>魔攻：</font>".$wjxx1['魔攻']."<font color=black>-</font>".$wjxx1['max魔攻']."<br/>";
-echo "<font color=black>防御：</font>".$wjxx1['防御']."<font color=black>-</font>".$wjxx1['max防御']."<br/>";
-echo  "<font color=black>攻击元素：冰+</font>".$wjxx1['冰攻']."<font color=black>&nbsp火+</font>".$wjxx1['火攻']."<font color=black>&nbsp雷+</font>".$wjxx1['雷攻']."<br>";
-echo  "<font color=black>防御元素：冰+</font>".$wjxx1['冰防']."<font color=black>&nbsp火+</font>".$wjxx1['火防']."<font color=black>&nbsp雷+</font>".$wjxx1['雷防']."<br>";
+echo  "<p style='color: black'>HP：</p>".$wjxx['红']."<p style='color: black'>/</p>".$wjxx1['血']."<br>";
+echo  "<p style='color: black'>MP：</p>".$wjxx['蓝']."<p style='color: black'>/</p>".$wjxx1['蓝']."<br>";
+echo "<p style='color: black'>攻击：</p>".$wjxx1['攻击']."<p style='color: black'>-</p>".$wjxx1['max攻击']."<br/>";
+echo "<p style='color: black'>魔攻：</p>".$wjxx1['魔攻']."<p style='color: black'>-</p>".$wjxx1['max魔攻']."<br/>";
+echo "<p style='color: black'>防御：</p>".$wjxx1['防御']."<p style='color: black'>-</p>".$wjxx1['max防御']."<br/>";
+echo  "<p style='color: black'>攻击元素：冰+</p>".$wjxx1['冰攻']."<p style='color: black'>&nbsp火+</p>".$wjxx1['火攻']."<p style='color: black'>&nbsp雷+</p>".$wjxx1['雷攻']."<br>";
+echo  "<p style='color: black'>防御元素：冰+</p>".$wjxx1['冰防']."<p style='color: black'>&nbsp火+</p>".$wjxx1['火防']."<p style='color: black'>&nbsp雷+</p>".$wjxx1['雷防']."<br>";
 
 
 
@@ -310,19 +310,19 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$ckid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回</font></a><br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回</p></a><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

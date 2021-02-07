@@ -44,14 +44,14 @@ $iniFile->updItem('宠物出战状态', [$zbid => '2']);
 $cwmz1=($iniFile->getItem('宠物原始名字',$zbid));
 $cwmz2=($iniFile->getItem('宠物名字',$zbid));
 if($cwmz2!=""){
-echo "<font color=red>".$cwmz1."（".$cwmz2."）加入了战斗！！</font>"."<br>";
+echo "<p style='color: red'>".$cwmz1."（".$cwmz2."）加入了战斗！！</p>"."<br>";
 } else{	
-echo "<font color=red>".$cwmz1."加入了战斗！！</font>"."<br>";
+echo "<p style='color: red'>".$cwmz1."加入了战斗！！</p>"."<br>";
 }
 
 } else{	
 
-echo "<font color=red>对不起！！你已有出战宠物了！！</font>"."<br>";
+echo "<p style='color: red'>对不起！！你已有出战宠物了！！</p>"."<br>";
 
 }
 
@@ -59,7 +59,7 @@ echo "<font color=red>对不起！！你已有出战宠物了！！</font>"."<br
 
 
 } else{	
-echo "<font color=red>出战宠物有误！！请联系GM解决此问题</font>"."<br>";
+echo "<p style='color: red'>出战宠物有误！！请联系GM解决此问题</p>"."<br>";
 }
 
 

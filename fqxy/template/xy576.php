@@ -1,6 +1,6 @@
 <?php
 
-echo "<font color=black>请扫描下方二维码或者点击一键启动进行购买</font>"."<br>";
+echo "<p style='color: black'>请扫描下方二维码或者点击一键启动进行购买</p>"."<br>";
 
 
 if($npcc==1){   
@@ -26,7 +26,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=578;
 $npc[]=1;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>启动支付宝付款</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>启动支付宝付款</p></a>"."<p style='color: black'></p>"."<br>";
 
 } elseif($npcc==2){   
 $img='pic/zfb/10.png';
@@ -47,7 +47,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=578;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>启动支付宝付款</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>启动支付宝付款</p></a>"."<p style='color: black'></p>"."<br>";
 
 } elseif($npcc==3){   
 $img='pic/zfb/20.png';
@@ -69,7 +69,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=578;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>启动支付宝付款</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>启动支付宝付款</p></a>"."<p style='color: black'></p>"."<br>";
 
 } elseif($npcc==4){   
 $img='pic/zfb/50.png';
@@ -90,7 +90,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=578;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>启动支付宝付款</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>启动支付宝付款</p></a>"."<p style='color: black'></p>"."<br>";
 
 } elseif($npcc==5){   
 $img='pic/zfb/100.png';
@@ -111,7 +111,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=578;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>启动支付宝付款</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>启动支付宝付款</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 
@@ -133,7 +133,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=574;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 

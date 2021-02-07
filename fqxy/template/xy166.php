@@ -57,8 +57,8 @@ if($svl ==2){
 }
 
 }
-echo "<font color=black>请选择邀请进入的好友</font>"."<br>";
-echo "<font color=black>好友列表（".$xxh."个）</font><br>";
+echo "<p style='color: black'>请选择邀请进入的好友</p>"."<br>";
+echo "<p style='color: black'>好友列表（".$xxh."个）</p><br>";
 
 
 
@@ -94,21 +94,21 @@ if($svl ==2){
 
 } elseif($svl ==1){
 $xxh=$xxh+1;	
-echo "<font color=black>".$xxh.".</font>";	
+echo "<p style='color: black'>".$xxh.".</p>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$ivd;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>".$mvz."</font></a>";
-echo "<font color=black>|</font>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$mvz."</p></a>";
+echo "<p style='color: black'>|</p>";
 
 	//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=167;
 $npc[]=$ivd;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>邀请</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>邀请</p></a>"."<br>";
 	
 }
 
@@ -122,7 +122,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>邀请</fo
 }
 
 if($xxh ==0){
-	echo "<font color=black>目前还没有结交到好友</font>"."<br>";
+	echo "<p style='color: black'>目前还没有结交到好友</p>"."<br>";
 	
 	
 }
@@ -136,9 +136,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

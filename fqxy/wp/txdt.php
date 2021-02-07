@@ -9,10 +9,10 @@ $picmz="png";
 
 $img='pic/txpic/'.$txid.".".$picmz;
 if(!file_exists($img)){
-echo "<font color=black>".$txmzsp."称号图片还未制作</font>"; 
+echo "<p style='color: black'>".$txmzsp."称号图片还未制作</p>";
 $imgg=$txid.".".$picmz;
-echo "<font color=black>图片名称:</font>";
-echo "<font color=red>".$imgg."</font>"."<br>"; 
+echo "<p style='color: black'>图片名称:</p>";
+echo "<p style='color: red'>".$imgg."</p>"."<br>";
 
 	} else{
 	

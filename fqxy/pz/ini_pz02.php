@@ -1,7 +1,7 @@
 <?php
 
 
-echo "<font color=black>得到了".$wwpmz."x".$wwpsl."</font><br>";
+echo "<p style='color: black'>得到了".$wwpmz."x".$wwpsl."</p><br>";
 $wjwp=($iniFile->getItem($wpzzz,$wwpid));
 
 if($wjwp >=1){

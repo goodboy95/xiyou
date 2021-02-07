@@ -36,8 +36,8 @@ if($dqwp==1){
 exit();
 }
 
-echo "<font color=red>你最多可拍卖".$wpmz."x".$wpsl."</font>"."<br>";
-echo "<font color=black>请输入你要拍卖".$wpmz."数量和单价</font>"."<br>";
+echo "<p style='color: red'>你最多可拍卖".$wpmz."x".$wpsl."</p>"."<br>";
+echo "<p style='color: black'>请输入你要拍卖".$wpmz."数量和单价</p>"."<br>";
 
 ?>
 <form  action="" method="POST">
@@ -57,9 +57,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=274;
 $npc[]=$npcc;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>挂售全部</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>挂售全部</p></a>"."<br>";
 */
-//echo "<font color=blue>挂售全部（后续更新）</font>"."<br>";
+//echo "<p style='color: blue'>挂售全部（后续更新）</p>"."<br>";
 if($ymid==27){//背包书卷
 
 //cmd及超链接值
@@ -67,7 +67,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=27;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回书卷</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回书卷</p></a>"."<br>";
 } elseif($ymid==28){ //背包材料
 
 //cmd及超链接值
@@ -75,7 +75,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=28;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回材料</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回材料</p></a>"."<br>";
 
 
 
@@ -86,7 +86,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=30;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回商城</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回商城</p></a>"."<br>";
 
 
 } elseif($ymid==31){ //背包丹药
@@ -95,7 +95,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=31;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回丹药</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回丹药</p></a>"."<br>";
 
 
 } elseif($ymid==32){ //背包任务
@@ -105,7 +105,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=32;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回任务</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回任务</p></a>"."<br>";
 
 
 
@@ -116,7 +116,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=33;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回农场</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回农场</p></a>"."<br>";
 
 
 
@@ -128,7 +128,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=34;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宝箱</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宝箱</p></a>"."<br>";
 
 } elseif($ymid==35){ //背包其他
 
@@ -137,7 +137,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=35;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其他</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回其他</p></a>"."<br>";
 
 
 

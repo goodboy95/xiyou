@@ -4,9 +4,7 @@ $file = "";
 $inina = "zt.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-
-} else {
+if (!file_exists($file)) {
     //连接数据库提取数据写入ini
     include("./sql/mysql.php");//调用数据库连接
     $q2 = "all_zt";
@@ -60,8 +58,6 @@ if (file_exists($file)) {
         } else {
             $bpzw2 = "成员";
         }
-    } else {
-
     }
     $inina = "zt.ini";
     $path = 'ache/' . $wjid;

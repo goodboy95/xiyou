@@ -1,6 +1,6 @@
 <?php
-echo "<font color=black>【初始化奖池】</font>"."<br>";
-echo "<font color=black>所有奖池已初始化完毕</font>"."<br>";
+echo "<p style='color: black'>【初始化奖池】</p>"."<br>";
+echo "<p style='color: black'>所有奖池已初始化完毕</p>"."<br>";
 
 
 include("./sql/mysql.php");//调用数据库连接 
@@ -20,14 +20,14 @@ unlink($ininame); //删除文件
 
 
 
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 ?>
 
 

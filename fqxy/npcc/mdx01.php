@@ -42,7 +42,7 @@ exit();
 
 
 
-echo "<font color=black>请输入你要购买多少".$wpmz."呢？</font>"."<br>";
+echo "<p style='color: black'>请输入你要购买多少".$wpmz."呢？</p>"."<br>";
 
 
 ?>

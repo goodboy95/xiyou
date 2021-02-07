@@ -128,24 +128,24 @@ if ($zsspd == 1) {
             $wpdz5[] = 1;//	重量
         }
         include("./rwmap/rwget.php");
-        echo "<font color=red>恭喜你！！挖开了国庆宝藏获得大量奖励</font>" . "<br>";
+        echo "<p style='color: red'>恭喜你！！挖开了国庆宝藏获得大量奖励</p>" . "<br>";
     } else {
-        echo "<font color=red>对不起！！挖宝需要对应的图纸和对应铲子</font>" . "<br>";
+        echo "<p style='color: red'>对不起！！挖宝需要对应的图纸和对应铲子</p>" . "<br>";
     }
     //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 639;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
     echo "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

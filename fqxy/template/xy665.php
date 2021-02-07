@@ -47,9 +47,9 @@ $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期�
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
-echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
+echo "<p style='color: black'>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</p>"."<br>";
 } else{
-echo "<font color=black>对不起！！需要〖小公主の激素〗x1</font>"."<br>";
+echo "<p style='color: black'>对不起！！需要〖小公主の激素〗x1</p>"."<br>";
 }
 
 
@@ -89,9 +89,9 @@ $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期�
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
-echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
+echo "<p style='color: black'>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</p>"."<br>";
 } else{
-echo "<font color=black>对不起！！需要〖小公主の激素〗x1</font>"."<br>";
+echo "<p style='color: black'>对不起！！需要〖小公主の激素〗x1</p>"."<br>";
 }
 
 
@@ -131,9 +131,9 @@ $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期�
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
-echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
+echo "<p style='color: black'>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</p>"."<br>";
 } else{
-echo "<font color=black>对不起！！需要〖小公主の激素〗x1</font>"."<br>";
+echo "<p style='color: black'>对不起！！需要〖小公主の激素〗x1</p>"."<br>";
 }
 
 } elseif($npcc==4){   
@@ -172,14 +172,14 @@ $tiemxx=date("Y-m-d H:i:s",strtotime("$shtime   -$time1   minute"));   //日期�
 $strsql = "update $q2 set shtime='$tiemxx' where id=1";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('收获时间', ['1' => $tiemxx]);
-echo "<font color=black>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</font>"."<br>";
+echo "<p style='color: black'>恭喜您！！使用了〖小公主の激素〗！伤不起~~~伤不起!!（收获时间提升".$time1."分钟）</p>"."<br>";
 } else{
-echo "<font color=black>对不起！！需要〖小公主の激素〗x1</font>"."<br>";
+echo "<p style='color: black'>对不起！！需要〖小公主の激素〗x1</p>"."<br>";
 }
 
 
 } else{
-echo "<font color=black>为添加</font>"."<br>";
+echo "<p style='color: black'>为添加</p>"."<br>";
 }
 
 
@@ -199,7 +199,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=658;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -215,7 +215,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=658;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回农场</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回农场</p></a>"."<br>";
 
 
 
@@ -227,9 +227,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

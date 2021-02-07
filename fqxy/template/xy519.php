@@ -39,16 +39,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖生命之源〗x5,银两1亿</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖生命之源〗x5,银两1亿</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖生命之源〗x5,银两1亿</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖生命之源〗x5,银两1亿</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 2) {
 
@@ -86,16 +86,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖攻击之源〗x5,银两1亿</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖攻击之源〗x5,银两1亿</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖攻击之源〗x5,银两1亿</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖攻击之源〗x5,银两1亿</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 3) {
 
@@ -133,16 +133,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖魔攻之源〗x5,银两1亿</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖魔攻之源〗x5,银两1亿</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖魔攻之源〗x5,银两1亿</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖魔攻之源〗x5,银两1亿</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 4) {
 
@@ -180,16 +180,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖防御之源〗x5,银两1亿</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖防御之源〗x5,银两1亿</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖防御之源〗x5,银两1亿</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖防御之源〗x5,银两1亿</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 5) {
 
@@ -232,16 +232,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖荣誉宝石〗x5,银两5亿,〖金豆〗x5</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖荣誉宝石〗x5,银两5亿,〖金豆〗x5</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖荣誉宝石〗x5,银两5亿,〖金豆〗x5</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖荣誉宝石〗x5,银两5亿,〖金豆〗x5</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 6) {
 
@@ -284,16 +284,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖冠军宝石〗x5,银两15亿,〖金豆〗x15</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖冠军宝石〗x5,银两15亿,〖金豆〗x15</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖冠军宝石〗x5,银两15亿,〖金豆〗x15</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖冠军宝石〗x5,银两15亿,〖金豆〗x15</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 7) {
 
@@ -336,16 +336,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖王者宝石〗x5,银两30亿,〖金豆〗x30</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖王者宝石〗x5,银两30亿,〖金豆〗x30</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖王者宝石〗x5,银两30亿,〖金豆〗x30</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖王者宝石〗x5,银两30亿,〖金豆〗x30</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 8) {
 
@@ -388,16 +388,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖皇者宝石〗x5,银两50亿,〖金豆〗x50</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖皇者宝石〗x5,银两50亿,〖金豆〗x50</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖皇者宝石〗x5,银两50亿,〖金豆〗x50</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖皇者宝石〗x5,银两50亿,〖金豆〗x50</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 9) {
 
@@ -440,16 +440,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖圣贤宝石〗x5,银两60亿,〖金豆〗x60</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖圣贤宝石〗x5,银两60亿,〖金豆〗x60</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖圣贤宝石〗x5,银两60亿,〖金豆〗x60</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖圣贤宝石〗x5,银两60亿,〖金豆〗x60</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 10) {
 
@@ -497,16 +497,16 @@ if ($zsspd == 1) {
                     $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                     include("./pz/ini_pzz09.php");
-                    echo "<font color=black>恭喜你！！升级镶嵌宝石成功！！</font>" . "<br>";
+                    echo "<p style='color: black'>恭喜你！！升级镶嵌宝石成功！！</p>" . "<br>";
                 } else {
-                    echo "<font color=black>对不起！！升级需要〖至尊宝石〗x5,银两100亿,〖金豆〗x100,〖帝王石〗x10</font>" . "<br>";
+                    echo "<p style='color: black'>对不起！！升级需要〖至尊宝石〗x5,银两100亿,〖金豆〗x100,〖帝王石〗x10</p>" . "<br>";
                 }
             } else {
-                echo "<font color=black>对不起！！升级需要〖至尊宝石〗x5,银两100亿,〖金豆〗x100,〖帝王石〗x10</font>" . "<br>";
+                echo "<p style='color: black'>对不起！！升级需要〖至尊宝石〗x5,银两100亿,〖金豆〗x100,〖帝王石〗x10</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     }
     echo "<br>";
@@ -515,7 +515,7 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 517;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>" . "<br>";
 }
 //解锁当前使用的ini
 include("./ini/jsini.php");

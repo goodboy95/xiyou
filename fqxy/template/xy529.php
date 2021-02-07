@@ -164,15 +164,15 @@ if ($zsspd == 1) {
         $syz = $xysw1;//值
         include("./pz/ini_pzz035.php");
     } else {
-        echo "<font color=black>对不起,你没有升星魂可以熔炼西游声望</font><br>";
+        echo "<p style='color: black'>对不起,你没有升星魂可以熔炼西游声望</p><br>";
     }
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

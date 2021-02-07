@@ -38,7 +38,7 @@ if($wpsl>=1){
 } else{
 include("./wj/dyxx.php");
 
-echo "<font color=red>对不起！你的".$wpzz3."已满不需要恢复了</font><br>";
+echo "<p style='color: red'>对不起！你的".$wpzz3."已满不需要恢复了</p><br>";
 
 $inina="yl.ini";
 $path='ache/'.$wjid;

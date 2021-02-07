@@ -227,7 +227,7 @@ $wp10=5;//分类
 
 } else{
 
-echo "<font color=red>物品描述信息有误，请联系gm进行纠正，错误ID：$npcc</font></a>"."<br>";
+echo "<p style='color: red'>物品描述信息有误，请联系gm进行纠正，错误ID：$npcc</p></a>"."<br>";
 
 }
 ?>

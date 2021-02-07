@@ -73,7 +73,7 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $ssyl1, '仓库银两
 	
 ////////////////////////////////缓存更新///////////////////////
 	
-	echo "<font color=red>恭喜你存入了银两：</font>";
+	echo "<p style='color: red'>恭喜你存入了银两：</p>";
 	$yl=$sl;
 	$clor="red";
 		include("./wp/sxf.php");
@@ -86,30 +86,30 @@ $iniFile->updItem('背包仓库银两', ['背包银两' => $ssyl1, '仓库银两
 		
 } else {
 
-echo "<font color=red>对不起!你身上没有那么多银两哦!</font>"."<br>";
+echo "<p style='color: red'>对不起!你身上没有那么多银两哦!</p>"."<br>";
 
 }
 	} else {
 
-echo "<font color=red>对不起!你本次存款达到了仓库银两上限!请重新输入</font>"."<br>";
+echo "<p style='color: red'>对不起!你本次存款达到了仓库银两上限!请重新输入</p>"."<br>";
 
 }	
 } else {
 
-echo "<font color=red>对不起!你身上没有那么多银两哦!</font>"."<br>";
+echo "<p style='color: red'>对不起!你身上没有那么多银两哦!</p>"."<br>";
 
 }
 
 } else {
 
-echo "<font color=red>最大不能超过999亿9999万9999两</font>"."<br>";
+echo "<p style='color: red'>最大不能超过999亿9999万9999两</p>"."<br>";
 
 }
 
 
 } else {
 
-echo "<font color=red>输入有误请重新输入</font>"."<br>";
+echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 
 }
 
@@ -120,12 +120,12 @@ echo "<font color=red>输入有误请重新输入</font>"."<br>";
 
 
 
-echo"<font color=black>钱庄存款：</font></a>";
+echo"<p style='color: black'>钱庄存款：</p></a>";
 include("wp/ckwarehouse.php");
-echo "<font color=black>------</font>"."<br>";
-echo"<font color=black>身上银子：</font></a>";
+echo "<p style='color: black'>------</p>"."<br>";
+echo"<p style='color: black'>身上银子：</p></a>";
 include("wp/warehouse.php");
-echo"<font color=black>请输入存入的银两：</font></a>";
+echo"<p style='color: black'>请输入存入的银两：</p></a>";
 ?>
 
 
@@ -144,10 +144,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=257;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>放弃存款</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>放弃存款</p></a>"."<br>";
 
 
-echo "<font color=black>------</font>"."<br>";
+echo "<p style='color: black'>------</p>"."<br>";
 
 
 
@@ -157,9 +157,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

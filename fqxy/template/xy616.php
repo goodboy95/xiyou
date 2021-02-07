@@ -32,7 +32,7 @@ $ltpmms="【武道大会◎第十名】";
 $ltpmms="【未取得信息】";	
 } 
 
-echo "<font color=red>".$ltpmms."</font>"."<br>";
+echo "<p style='color: red'>".$ltpmms."</p>"."<br>";
 
 echo "<br>";
 
@@ -53,7 +53,7 @@ $ltmz08=($iniFile->getItem('比武门派',$zlid));
 $mgg = ceil(($djmg)/ 1.3);
 
 
-echo "<font color=black>名字：".$ltmz01."</font>"."<br>";
+echo "<p style='color: black'>名字：".$ltmz01."</p>"."<br>";
 
 if($ltmz08>=1){
 if($ltmz08==1){
@@ -69,9 +69,9 @@ $menp="普陀山";
 } else{
 $menp="无门派";
 }	
-echo "<font color=black>门派：</font>".$menp."<br>";
+echo "<p style='color: black'>门派：</p>".$menp."<br>";
 } else{
-echo "<font color=black>门派：无门派</font><br>";
+echo "<p style='color: black'>门派：无门派</p><br>";
 }
 $gjj = ceil(($ltmz05)/ 1.3);
 $maxgj=$ltmz05;
@@ -80,12 +80,12 @@ $maxmg=$ltmz06;
 $fyy = ceil(($ltmz07)/ 1.3);
 $maxfy=$ltmz07;
 
-echo "<font color=black>HP：".$ltmz04."</font>"."<br>";
-echo "<font color=black>攻击：".$gjj."-".$maxgj."</font>"."<br>";
-echo "<font color=black>魔攻：".$mgg."-".$maxmg."</font>"."<br>";
-echo "<font color=black>防御：".$fyy."-".$maxfy."</font>"."<br>";
-echo "<font color=black>受人膜拜：".$ltmz03."次</font>"."<br>";
-echo "<font color=black>比武时间：".$ltmz02."</font>"."<br>";
+echo "<p style='color: black'>HP：".$ltmz04."</p>"."<br>";
+echo "<p style='color: black'>攻击：".$gjj."-".$maxgj."</p>"."<br>";
+echo "<p style='color: black'>魔攻：".$mgg."-".$maxmg."</p>"."<br>";
+echo "<p style='color: black'>防御：".$fyy."-".$maxfy."</p>"."<br>";
+echo "<p style='color: black'>受人膜拜：".$ltmz03."次</p>"."<br>";
+echo "<p style='color: black'>比武时间：".$ltmz02."</p>"."<br>";
 
 
 $startdate=$ltmz02;
@@ -110,7 +110,7 @@ $bossts=$time2."秒";
 } 
 } 
 }
-echo "<font color=black>独占风骚：</font><font color=red>".$bossts."</font>"."<br>";
+echo "<p style='color: black'>独占风骚：</p><p style='color: red'>".$bossts."</p>"."<br>";
 
 
 //cmd及超链接值
@@ -118,7 +118,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=621;
 $npc[]=$zlid;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>膜拜他/她</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>膜拜他/她</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 
@@ -126,7 +126,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>膜拜他/
 
 } else{	
 
-echo "<font color=black>目前无任何玩家（点击比武即可属于你）</font>"."<br>";
+echo "<p style='color: black'>目前无任何玩家（点击比武即可属于你）</p>"."<br>";
 
 
 }
@@ -139,7 +139,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 
@@ -153,10 +153,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 }

@@ -116,18 +116,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -146,17 +146,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 2) {
 //得到第一个物品
@@ -269,18 +269,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -299,17 +299,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 5) {
 //得到第一个物品
@@ -422,18 +422,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -452,17 +452,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 6) {
 //得到第一个物品
@@ -575,18 +575,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -605,17 +605,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 9) {
 //得到第一个物品
@@ -728,18 +728,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -758,17 +758,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 10) {
 //得到第一个物品
@@ -881,18 +881,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -911,17 +911,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 11) {
 //得到第一个物品
@@ -1034,18 +1034,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1064,17 +1064,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 12) {
 //得到第一个物品
@@ -1187,18 +1187,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1217,17 +1217,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 13) {
     } elseif ($npcc == 14) {
@@ -1342,18 +1342,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1372,17 +1372,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 16) {
 //得到第一个物品
@@ -1495,18 +1495,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1525,17 +1525,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 17) {
     } elseif ($npcc == 18) {
@@ -1650,18 +1650,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1680,17 +1680,17 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } elseif ($npcc == 20) {
 //得到第一个物品
@@ -1803,18 +1803,18 @@ if ($zsspd == 1) {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . "银两</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . "银两</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz012.php");//扣除
                     } elseif ($wpmz == "声望") {
 //数字转汉字
                         $yl = $wpkc;
                         include("./pz/ylts.php");
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $ylxx . $swmz . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $ylxx . $swmz . "</p>" . "<br>";
                         $kcyl01 = $wpkc;
                         include("./pz/ini_pzz015.php");//扣除
                     } else {
-                        $manzu1 = $manzu1 . "<font color=black>失去：" . $wpmz . "x" . $wpkc . "</font>" . "<br>";
+                        $manzu1 = $manzu1 . "<p style='color: black'>失去：" . $wpmz . "x" . $wpkc . "</p>" . "<br>";
                         include("./pz/ini_pz01.php");//缓存位置
                         include("./pz/ini_pzz04.php");//扣除
                     }
@@ -1833,20 +1833,20 @@ if ($zsspd == 1) {
                 $kcrl = $bssl * $wpzl + $kcrl;
 //这里是得到宝石代码
                 include("./pz/ini_pzz09.php");
-                echo "<font color=black>恭喜你！获得了" . $jjmz . "</font>" . "<br>";
+                echo "<p style='color: black'>恭喜你！获得了" . $jjmz . "</p>" . "<br>";
 //	输出满足提示语言
                 echo $manzu1;
             } else {
                 $bumanzu = "对不起！打磨" . $jjmz . "需要：" . $wpts;//不满足提示语	
 //	输出不满足提示语言
-                echo "<font color=red>" . $bumanzu . "</font>" . "<br>";
+                echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
             }
         } else {
 //	输出负重不满足提示语言
-            echo "<font color=red>对不起！！你的负重不足！！</font>" . "<br>";
+            echo "<p style='color: red'>对不起！！你的负重不足！！</p>" . "<br>";
         }
     } else {
-        echo "<font color=black>对不起！没有找到需要打磨的宝石/font>" . "<br>";
+        echo "<p style='color: black'>对不起！没有找到需要打磨的宝石/font>" . "<br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -1854,8 +1854,8 @@ if ($zsspd == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
-    echo "<font color=black>----------------------</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
+    echo "<p style='color: black'>----------------------</p>" . "<br>";
 //cmd及超链接值
     include("fhgame.php");
 }

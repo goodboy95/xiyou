@@ -106,7 +106,7 @@ unlink($ininame); //删除文件
 
 
 
-echo "<font color=red>你退出了".$gjmz."</font><br>";
+echo "<p style='color: red'>你退出了".$gjmz."</p><br>";
 
 
 
@@ -123,7 +123,7 @@ echo "<font color=red>你退出了".$gjmz."</font><br>";
 } else{
 	
 
-echo "<font color=black>你还未加入任何国家！！</font><br>";
+echo "<p style='color: black'>你还未加入任何国家！！</p><br>";
 }
 
 
@@ -154,9 +154,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

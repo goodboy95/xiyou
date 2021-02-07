@@ -19,15 +19,15 @@ if($zsspd==1&&$all_lock2==1){
 $csbyq=500;
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
-echo "<font color=red>【充值成功】</font>"."<br>";
+echo "<p style='color: red'>【充值成功】</p>"."<br>";
 
-echo "<font color=red>---------------------</font>"."<br>";
-echo "<font color=black>ID：".$wjid."</font>"."<br>";
-echo "<font color=black>玩家：".$wjmz."</font>"."<br>";
-echo "<font color=black>价格：50元</font>"."<br>";
-echo "<font color=black>红包：".$csbyq."个</font>"."<br>";
+echo "<p style='color: red'>---------------------</p>"."<br>";
+echo "<p style='color: black'>ID：".$wjid."</p>"."<br>";
+echo "<p style='color: black'>玩家：".$wjmz."</p>"."<br>";
+echo "<p style='color: black'>价格：50元</p>"."<br>";
+echo "<p style='color: black'>红包：".$csbyq."个</p>"."<br>";
 
-echo "<font color=red>---------------------</font>"."<br>";
+echo "<p style='color: red'>---------------------</p>"."<br>";
 
 include("./ini/hbmoney_ini.php");
 $csb=($iniFile->getItem('财神币','初始'));
@@ -88,14 +88,14 @@ $iniFile->addItem('玩家发言',[$ltmax1 => $wjtake]);
 
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
-echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><font color=blue>【返回GM管理首页】</font></a>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
+echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=1'><p style='color: blue'>【返回GM管理首页】</p></a>"."<br>";
 
 echo "<br>";
-echo "<font color=black>---------------------</font>"."<br>";
+echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
-echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><font color=blue>返回GM管理平台</font></a>"."<br>";
+echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
 }

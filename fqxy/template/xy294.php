@@ -67,7 +67,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=278;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回书卷</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回书卷</p></a>"."<br>";
 } elseif($ymid==279){ //背包材料
 
 //cmd及超链接值
@@ -75,7 +75,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=279;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回材料</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回材料</p></a>"."<br>";
 
 
 
@@ -86,7 +86,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=281;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回商城</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回商城</p></a>"."<br>";
 
 
 } elseif($ymid==282){ //背包丹药
@@ -95,7 +95,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=282;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回丹药</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回丹药</p></a>"."<br>";
 
 
 } elseif($ymid==283){ //背包任务
@@ -105,7 +105,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=283;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回任务</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回任务</p></a>"."<br>";
 
 
 
@@ -116,7 +116,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=284;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回农场</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回农场</p></a>"."<br>";
 
 
 
@@ -128,7 +128,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=285;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宝箱</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宝箱</p></a>"."<br>";
 } elseif($ymid==286){ //背包宝箱
 
 //cmd及超链接值
@@ -136,7 +136,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=286;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回其他</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回其他</p></a>"."<br>";
 
 
 
@@ -149,13 +149,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 
 
-echo "<font color=black>----------------------</font></a>"."<br>";
+echo "<p style='color: black'>----------------------</p></a>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

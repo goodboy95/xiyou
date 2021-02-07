@@ -81,19 +81,19 @@ include("./ini/cw_ini.php");
 
 $iniFile->updItem('宠物名字', [$cwidd => $wjtake]);
 
-echo "<font color=red>恭喜你！！你将宠物名字改为了".$wjtake."</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！你将宠物名字改为了".$wjtake."</p>"."<br>";
 
 	
 	} else{
 
 
 
-echo "<font color=red>你输入的名字包含敏感字符请重新输入</font>"."<br>";
+echo "<p style='color: red'>你输入的名字包含敏感字符请重新输入</p>"."<br>";
 }
 } else{
 
 
-echo "<font color=red>名字长度不能超过限制</font><br>";
+echo "<p style='color: red'>名字长度不能超过限制</p><br>";
 
 
 }
@@ -102,7 +102,7 @@ echo "<font color=red>名字长度不能超过限制</font><br>";
 } else{
 
 
-echo "<font color=red>名字不能为空</font><br>";
+echo "<p style='color: red'>名字不能为空</p><br>";
 
 
 }
@@ -132,7 +132,7 @@ echo "<font color=red>名字不能为空</font><br>";
 
 ?>
 <form  action="" method="POST">
-<font color=black>你输入你想要给宠物取的名字</font><br>
+<p style='color: black'>你输入你想要给宠物取的名字</p><br>
 <input  type="text" name="wjtoke" placeholder="新宠名字"id='search'><br>
 <input  type="submit" name="submit" value="改名"id="search1" ><br>
 </form>
@@ -143,14 +143,14 @@ $cdid[]=$cmid;
 $clj[]=365;
 $npc[]=$cwidd;
 
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=362;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回宠物</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回宠物</p></a>"."<br>";
 echo "<br>";
 
 //cmd及超链接值
@@ -158,12 +158,12 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
 
 } else{	
-echo "<font color=red>宠物有误！！请联系GM解决此问题</font>"."<br>";
+echo "<p style='color: red'>宠物有误！！请联系GM解决此问题</p>"."<br>";
 
 echo "<br>";
 //cmd及超链接值
@@ -171,7 +171,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 }
 
 

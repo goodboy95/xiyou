@@ -21,13 +21,13 @@ if($npcc ==0){
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>大唐年间,妖魔四起,无数百姓处于水生火热当中!！</font><br>";
+echo "<p style='color: black'>大唐年间,妖魔四起,无数百姓处于水生火热当中!！</p><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=2;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 } elseif($npcc ==2){
 	$img='pic/login/img2.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
@@ -36,13 +36,13 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>十万天兵天将与众妖魔战斗的难解难分！</font><br>";
+echo "<p style='color: black'>十万天兵天将与众妖魔战斗的难解难分！</p><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=99;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 
 
 } elseif($npcc ==99){
@@ -54,13 +54,13 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>不断有英雄侠女从亿万百姓中脱颖而出，踏上降妖除魔的征程！</font><br>";
+echo "<p style='color: black'>不断有英雄侠女从亿万百姓中脱颖而出，踏上降妖除魔的征程！</p><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=3;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 
 	} elseif($npcc ==3){
 	
@@ -71,13 +71,13 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</fo
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>由东海龙王敖广一手创办，希望收罗天下有识之士，借以壮大龙宫</font><br>";
+echo "<p style='color: black'>由东海龙王敖广一手创办，希望收罗天下有识之士，借以壮大龙宫</p><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=4;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择龙宫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>选择龙宫</p></a>"."<br>";
 
 		$img='pic/login/img5.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
@@ -86,7 +86,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择龙�
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>选择月宫(限女玩家)</font><br>";
+echo "<p style='color: black'>选择月宫(限女玩家)</p><br>";
 
 if($sex ==2){
 //cmd及超链接值
@@ -94,9 +94,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=5;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择月宫</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>选择月宫</p></a>"."<br>";
 	} else{
-echo "<font color=black>选择月宫</font><br>";		
+echo "<p style='color: black'>选择月宫</p><br>";
 		}
 			$img='pic/login/img6.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
@@ -105,13 +105,13 @@ echo "<font color=black>选择月宫</font><br>";
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>大唐将军府由当朝太祖钦命秦琼立派授徒</font><br>";
+echo "<p style='color: black'>大唐将军府由当朝太祖钦命秦琼立派授徒</p><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=6;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择将军府</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>选择将军府</p></a>"."<br>";
 		
 			$img='pic/login/img7.png';
 	echo '<img src="'.$img.' "alt="图片"/〉';
@@ -120,7 +120,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择将�
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>南海普陀山乃是救苦救难大慈大悲观音菩萨宣讲佛法之所在！(限男弟子)</font><br>";
+echo "<p style='color: black'>南海普陀山乃是救苦救难大慈大悲观音菩萨宣讲佛法之所在！(限男弟子)</p><br>";
 
 
 if($sex ==1){
@@ -129,9 +129,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=7;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择普陀山</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>选择普陀山</p></a>"."<br>";
 	} else{
-echo "<font color=black>选择普陀山</font><br>";		
+echo "<p style='color: black'>选择普陀山</p><br>";
 		}
 
 
@@ -144,7 +144,7 @@ echo "<font color=black>选择普陀山</font><br>";
 	echo "<br>";
 	
 //调用游戏开局
-echo "<font color=black>灵台方寸山开山祖师是菩提祖师，传说他是佛的十大弟子之一！</font><br>";
+echo "<p style='color: black'>灵台方寸山开山祖师是菩提祖师，传说他是佛的十大弟子之一！</p><br>";
 
 
 
@@ -153,7 +153,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=295;
 $npc[]=8;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>选择方寸山</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>选择方寸山</p></a>"."<br>";
 
 
 
@@ -167,13 +167,13 @@ $result = mysqli_query($conn, $strsql);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '2']);
 	
-	echo "<font color=black>龙宫弟子借助龙宫得天独厚的灵气修得一身防御功夫是五门派中最强的，虽然法术与物攻都并非最强，但是一套风波叉法使出来倒也没有人敢小看！</font><br>";	
+	echo "<p style='color: black'>龙宫弟子借助龙宫得天独厚的灵气修得一身防御功夫是五门派中最强的，虽然法术与物攻都并非最强，但是一套风波叉法使出来倒也没有人敢小看！</p><br>";
 		//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 		} elseif($npcc ==5){	
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
@@ -183,13 +183,13 @@ $result = mysqli_query($conn, $strsql);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '3']);
 
-	echo "<font color=black>月宫弟子为法术门派,男子谢绝入内!法术惊人</font><br>";	
+	echo "<p style='color: black'>月宫弟子为法术门派,男子谢绝入内!法术惊人</p><br>";
 		//cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 			} elseif($npcc ==6){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
@@ -199,13 +199,13 @@ $strsql = "update $q2 set mpp=1 where wjid=$wjid";//物品id号必改值
 $iniFile->updItem('玩家信息', ['门派' => '1']);
 
 $result = mysqli_query($conn, $strsql);
-echo "<font color=black>将军府为物攻门派，物理攻击为五门派中最高！一套霸王枪法使出来是威势惊人，难以匹敌！</font><br>";
+echo "<p style='color: black'>将军府为物攻门派，物理攻击为五门派中最高！一套霸王枪法使出来是威势惊人，难以匹敌！</p><br>";
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 
 
 			} elseif($npcc ==7){
@@ -218,7 +218,7 @@ $result = mysqli_query($conn, $strsql);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '5']);
 				
-echo "<font color=black>南海普陀从来只收男弟子，女子谢绝入内。普陀山为法术攻击门派，大乘佛法法力无边，无与伦比，是五门派中法术攻击最高的！	</font><br>";				
+echo "<p style='color: black'>南海普陀从来只收男弟子，女子谢绝入内。普陀山为法术攻击门派，大乘佛法法力无边，无与伦比，是五门派中法术攻击最高的！	</p><br>";
 		
 				
 		
@@ -227,7 +227,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";	
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 			} elseif($npcc ==8){
 include("./sql/mysql.php");//调用数据库连接 
 $q2="all_zt";
@@ -238,7 +238,7 @@ $result = mysqli_query($conn, $strsql);
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('玩家信息', ['门派' => '4']);
 				
-	echo "<font color=black>方寸山为法术攻击门派，道家仙法法力无边，可谓妙道通天，是五门派中法术暴击最高的门派！</font><br>";				
+	echo "<p style='color: black'>方寸山为法术攻击门派，道家仙法法力无边，可谓妙道通天，是五门派中法术暴击最高的门派！</p><br>";
 		
 	
 //cmd及超链接值
@@ -246,7 +246,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>继续</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>继续</p></a>"."<br>";
 }
 
 

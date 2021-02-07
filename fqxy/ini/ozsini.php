@@ -1,7 +1,7 @@
 <?php
 
 
-//echo "<font color=black>操作ID：</font>".$wjid."<br>";
+//echo "<p style='color: black'>操作ID：</p>".$wjid."<br>";
 
 
 

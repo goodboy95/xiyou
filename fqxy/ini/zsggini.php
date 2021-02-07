@@ -1,6 +1,6 @@
 <?php
 if ($wjid == 10000001) {//gm号可看
-    echo "<font color=black>操作公共资源：</font>" . $ininalock1 . "<br>";
+    echo "<p style='color: black'>操作公共资源：</p>" . $ininalock1 . "<br>";
 }
 $zspd1 = 0;
 $zsspd1 = 0;

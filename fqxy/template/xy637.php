@@ -146,7 +146,7 @@ include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $xtxx= "恭喜玩家".$wjmz."提交了〖国庆愉快卡〗获得".$xysw1."国庆积分，还没提交的小伙伴加油了哦，祝全体仙友国庆愉快";
 include("./msg/msgg02.php");	
-echo "<font color=black>恭喜你！获得".$xysw1."国庆积分</font><br>";	
+echo "<p style='color: black'>恭喜你！获得".$xysw1."国庆积分</p><br>";
 	
 
 	
@@ -207,7 +207,7 @@ unlink($ininame); //删除文件
 
 
 
-echo "<font color=black>对不起,你没有〖国庆愉快卡〗</font><br>";
+echo "<p style='color: black'>对不起,你没有〖国庆愉快卡〗</p><br>";
 } 
   
 
@@ -217,7 +217,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 
@@ -234,7 +234,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游�
 
 	 flock($fp,LOCK_UN);
 	} else{	
-echo "<font color=black>服务器睡着了</font><br>";
+echo "<p style='color: black'>服务器睡着了</p><br>";
 
 		echo "<br>";
 //cmd及超链接值
@@ -242,7 +242,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<p style='color: black'></p>"."<br>";
 
 
 }

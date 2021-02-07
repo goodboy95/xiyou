@@ -8,72 +8,72 @@ $lockmz = 'pm_lock.txt';//文件
 include("./ini/all_lock.php");
 /////////公共锁
 if ($zsspd == 1 && $all_lock2 == 1) {
-    echo "<font color=red>〖全区拍卖场〗</font>" . "<br>";
+    echo "<p style='color: red'>〖全区拍卖场〗</p>" . "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 502;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>我的拍卖</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>我的拍卖</p></a>" . "<br>";
 //调用wp.ini是否存在
     include("./ini/pm_nc_ini.php");
-    echo "<font color=black>☆☆☆☆☆☆☆☆</font>" . "<br>";
+    echo "<p style='color: black'>☆☆☆☆☆☆☆☆</p>" . "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 489;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>书卷</font></a>";
-    echo "<font color=black>◎</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>书卷</p></a>";
+    echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 490;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>材料</font></a>";
-    echo "<font color=black>◎</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>材料</p></a>";
+    echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 491;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>装备</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>装备</p></a>" . "<br>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 492;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>商城</font></a>";
-    echo "<font color=black>◎</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>商城</p></a>";
+    echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 493;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>丹药</font></a>";
-    echo "<font color=black>◎</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>丹药</p></a>";
+    echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 494;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>任务</font></a>" . "<br>";
-    echo "<font color=black>农场</font>";
-    echo "<font color=black>◎</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>任务</p></a>" . "<br>";
+    echo "<p style='color: black'>农场</p>";
+    echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 496;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>宝箱</font></a>";
-    echo "<font color=black>◎</font>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>宝箱</p></a>";
+    echo "<p style='color: black'>◎</p>";
 //cmd及超链接值
     $cmid = $cmid + 1;
     $cdid[] = $cmid;
     $clj[] = 497;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>宝石</font></a>" . "<br>";
-    echo "<font color=black>☆☆☆☆☆☆☆☆</font>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>宝石</p></a>" . "<br>";
+    echo "<p style='color: black'>☆☆☆☆☆☆☆☆</p>" . "<br>";
 # 获取一个分类下所有数据
     $pmxxl = ($iniFile->getCategory('排序'));
     $pmwjid = ($iniFile->getCategory('玩家id'));
@@ -161,25 +161,25 @@ if ($zsspd == 1 && $all_lock2 == 1) {
             foreach ($keypmwpidd as $k => $v) {
                 $pmid[] = $v;
             }
-            echo "<font color=black>全区玩家拍卖如下：</font>" . "<br>";
+            echo "<p style='color: black'>全区玩家拍卖如下：</p>" . "<br>";
             $km = 0;
             $i = 0;
             for ($x = 0; $x < $m; $x++) {
                 $i = $i + 1;
                 $km = $km + 1;
-                echo "<font color=black>" . $km . ".</font>";
+                echo "<p style='color: black'>" . $km . ".</p>";
 //cmd及超链接值
                 $cmid = $cmid + 1;
                 $cdid[] = $cmid;
                 $clj[] = 513;
                 $npc[] = $pmid[$i];
-                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>" . $pmmz[$i] . "</font></a></br>";
+                echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $pmmz[$i] . "</p></a></br>";
             }
         } else {
-            echo "<font color=black>暂无任何拍卖信息</font>" . "<br>";
+            echo "<p style='color: black'>暂无任何拍卖信息</p>" . "<br>";
         }
     } else {
-        echo "<font color=red>物品错位（联系GM修复）</font>" . "<br>";
+        echo "<p style='color: red'>物品错位（联系GM修复）</p>" . "<br>";
     }
     echo "<br>";
 //cmd及超链接值
@@ -187,7 +187,7 @@ if ($zsspd == 1 && $all_lock2 == 1) {
     $cdid[] = $cmid;
     $clj[] = 2;
     $npc[] = 0;
-    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>" . "<br>";
+    echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
     echo "<br>";
     include("fhgame.php");
 }

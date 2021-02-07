@@ -15,7 +15,7 @@ include("./pz/ylts.php");
 
 
 
-echo "<font color=black>获得".$ylxx."法宝经验！！</font><br>";
+echo "<p style='color: black'>获得".$ylxx."法宝经验！！</p><br>";
 
 
 

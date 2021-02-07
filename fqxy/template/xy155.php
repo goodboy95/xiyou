@@ -19,7 +19,7 @@ $dtx=($iniFile->getItem('地图坐标','x'));
 
 
 if($dtx==78||$dtx==79){
- echo "<font color=black>对不起！！你正在挑战内请先离开</font><br>";
+ echo "<p style='color: black'>对不起！！你正在挑战内请先离开</p><br>";
   	
 	
 } else{	
@@ -42,12 +42,12 @@ $dty=($iniFile->getItem('地图坐标','y'));
 
 
 if($dtx ==71||$dtx==72||$dtx==73){
-echo "<font color=black>你已经在住宅里面了无需重复进入</font>"."<br>";
+echo "<p style='color: black'>你已经在住宅里面了无需重复进入</p>"."<br>";
 
 
 } else{
 
-	echo "<font color=red>".$fz01."</font>"."<br>";
+	echo "<p style='color: red'>".$fz01."</p>"."<br>";
 	
 	
 	
@@ -72,13 +72,13 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=$fz02;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>进入".$fz01."</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进入".$fz01."</p></a>"."<br>";
 	
 	} else{	
 
 
 
-echo "<font color=black>进入住宅出现问题请联系小轩GM解决</font>"."<br>";
+echo "<p style='color: black'>进入住宅出现问题请联系小轩GM解决</p>"."<br>";
 
 	
 }
@@ -106,7 +106,7 @@ echo "<font color=black>进入住宅出现问题请联系小轩GM解决</font>".
 
 
 } else{	
-echo "<font color=black>你暂时还没有住宅,请前往开封广场进行选购</font>"."<br>";
+echo "<p style='color: black'>你暂时还没有住宅,请前往开封广场进行选购</p>"."<br>";
 }
 
 
@@ -122,9 +122,9 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

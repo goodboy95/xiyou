@@ -19,7 +19,7 @@ $coco="颜色";
 $colorid=($iniFile->getItem('正确文字','初始'));
 $coco="文字";
 } else {
-echo "<font color=red>错误</font>"."<br>";		
+echo "<p style='color: red'>错误</p>"."<br>";
 }
 
 
@@ -43,7 +43,7 @@ $colormz="黄色";
 $colormz="粉色";
 } else {
 }		
-echo "<font color=red>恭喜你！！找出了【".$colormz.$coco."】糖果获得了糖果奖励</font>"."<br>";
+echo "<p style='color: red'>恭喜你！！找出了【".$colormz.$coco."】糖果获得了糖果奖励</p>"."<br>";
 
 $bz= rand(1, 550);
 if ($bz>=1&&$bz<=60) {
@@ -180,7 +180,7 @@ $colormz="黄色";
 $colormz="粉色";
 } else {
 }	
-echo "<font color=red>很遗憾！！我需要您找【".$colormz.$coco."】糖果（找错了万圣节活动时间-10秒）</font>"."<br>";	
+echo "<p style='color: red'>很遗憾！！我需要您找【".$colormz.$coco."】糖果（找错了万圣节活动时间-10秒）</p>"."<br>";
 include("./ini/color1_ini.php");
 
 
@@ -199,7 +199,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=7;
 $npc[]=1319;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回上级</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回上级</p></a>"."<br>";
 
 
 
@@ -212,10 +212,10 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=2;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回游戏</font></a>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>"."<br>";
 
 
-echo "<font color=black>----------------------</font>"."<br>";
+echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 

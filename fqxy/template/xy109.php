@@ -56,7 +56,7 @@ $dwid=($iniFile->getItem('队伍id','已加队伍id'));
 
 
 if($dwid>10000000){
-echo "<font color=red>对不起！你已经有队伍了！</font>"."<br>";
+echo "<p style='color: red'>对不起！你已经有队伍了！</p>"."<br>";
 
 
 	} else{
@@ -285,7 +285,7 @@ $iniFile->addItem('玩家vip',[$ltmax1 => $ltbl2]);
 $iniFile->addItem('玩家名字',[$ltmax1 => $ltbl1]); 
 $iniFile->updItem('队伍id', ['已加队伍id' => $npcc]);
 
-echo "<font color=red>恭喜你！成功加入到了".$ckname."的组队伍中！</font>"."<br>";
+echo "<p style='color: red'>恭喜你！成功加入到了".$ckname."的组队伍中！</p>"."<br>";
 if($m==0){
 $ltmax1=$ltmax1+1;
 $zbidd2=$ltwjid."_".$ltmax1;
@@ -303,7 +303,7 @@ $iniFile->addItem('玩家名字',[$ltmax1 => $ckname]);
 
 
 
-echo "<font color=red>对不起！".$ckname."的队伍已满！</font>"."<br>";
+echo "<p style='color: red'>对不起！".$ckname."的队伍已满！</p>"."<br>";
 
 
 

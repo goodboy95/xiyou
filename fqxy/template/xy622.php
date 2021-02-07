@@ -62,7 +62,7 @@ $ltbw=($iniFile->getItem('擂台更新','初始'));
 if($ltbw>=1){	
 $ltbw=$ltbw-1;
 $iniFile->updItem('擂台更新', ['初始' => $ltbw]);	
-echo "<font color=black>恭喜你！！【天下第一武道会】的属性已更新，接受来自全区的大佬比武中</font>"."<br>";
+echo "<p style='color: black'>恭喜你！！【天下第一武道会】的属性已更新，接受来自全区的大佬比武中</p>"."<br>";
 
 
 $zlid=$ltid;
@@ -96,7 +96,7 @@ $iniFile->updItem('比武防御', [$zlid => $wd07]);
 $iniFile->updItem('比武门派', [$zlid => $wd08]);
 
 } else{	
-echo "<font color=black>对不起！！您今日在【天下第一武道会】的更新次数已用完</font>"."<br>";
+echo "<p style='color: black'>对不起！！您今日在【天下第一武道会】的更新次数已用完</p>"."<br>";
 
 }
 
@@ -104,7 +104,7 @@ echo "<font color=black>对不起！！您今日在【天下第一武道会】�
 
 
 } else{	
-echo "<font color=black>对不起！！您还未在【天下第一武道会】拿到名次，无需更新武道会属性</font>"."<br>";
+echo "<p style='color: black'>对不起！！您还未在【天下第一武道会】拿到名次，无需更新武道会属性</p>"."<br>";
 }
 
 
@@ -116,7 +116,7 @@ $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=402;
 $npc[]=0;
-echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><font color=blue>返回武道场</font></a>"."<font color=black></font>"."<br>";
+echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回武道场</p></a>"."<p style='color: black'></p>"."<br>";
 
 }
 
