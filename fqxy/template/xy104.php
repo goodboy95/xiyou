@@ -80,7 +80,7 @@ $ivdd=($iniFile->getItem('序列',$npcc));
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('好友分类', [$ivdd => '2']);
 echo "<p style='color: red'>恭喜你！成功将".$ckname."拉进了黑名单</p>"."<br>";
-} elseif($ivdd1==""){
+} elseif (!$ivdd1){
 
 
 include("./sql/mysql.php");//调用数据库连接 
@@ -89,7 +89,7 @@ $q2="hy".$wjid;
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -192,7 +192,7 @@ include("./ini/ojsini.php");
 //解锁当前使用的ini
 
 
-?>
+
 
 
 

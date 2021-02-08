@@ -121,4 +121,3 @@ $cdid[]=$cmid;
 $clj[]=463;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回小仓</p></a>"."<p style='color: black'></p>"."<br>";
-?>

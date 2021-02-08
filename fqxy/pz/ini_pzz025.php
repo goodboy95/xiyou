@@ -19,4 +19,4 @@ $iniFile->updItem('要杀怪', [$rwcurl => $rwjc3]);
 $iniFile->updItem('任务名字', [$rwcurl => $rwjc4]);
 
 
-?>
+

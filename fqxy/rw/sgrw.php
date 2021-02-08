@@ -13,7 +13,7 @@ if ($npcc == 335) {//杀螃蟹
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>螃蟹泛滥（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -51,7 +51,7 @@ if ($npcc == 336) {//杀潮水螃蟹
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：潮洞蟹成灾（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -89,7 +89,7 @@ if ($npcc == 445) {//杀大螃蟹
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：调查洞穴【大螃蟹】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -127,7 +127,7 @@ if ($npcc == 227) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -152,7 +152,7 @@ if ($npcc == 229) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗烈炽灵狐（分身一）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             $iniFile->updItem('已杀怪', [$str4 => '0']);
             $iniFile->updItem('要杀怪', [$str4 => '1']);
             include("./sql/mysql.php");//调用数据库连接 
@@ -179,7 +179,7 @@ if ($npcc == 233) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗烈炽灵狐（分身二）</p>" . "<br>";
-        if ($rw3 >= $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 >= $rw4 && $rw3 && $rw4) {
             $iniFile->updItem('已杀怪', [$str4 => '0']);
             $iniFile->updItem('要杀怪', [$str4 => '1']);
             include("./sql/mysql.php");//调用数据库连接 
@@ -206,7 +206,7 @@ if ($npcc == 234) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗烈炽灵狐（分身三）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             $iniFile->updItem('已杀怪', [$str4 => '0']);
             $iniFile->updItem('要杀怪', [$str4 => '1']);
             include("./sql/mysql.php");//调用数据库连接 
@@ -233,7 +233,7 @@ if ($npcc == 235) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗烈炽灵狐（真身）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             $iniFile->updItem('已杀怪', [$str4 => '0']);
             $iniFile->updItem('要杀怪', [$str4 => '1']);
             include("./sql/mysql.php");//调用数据库连接 
@@ -260,7 +260,7 @@ if ($npcc == 767) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -285,7 +285,7 @@ if ($npcc == 782) {//杀转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：159转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -310,7 +310,7 @@ if ($npcc == 1011) {//杀大唐皇帝转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -348,7 +348,7 @@ if ($npcc == 1012) {//杀万年妖蛇转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -373,7 +373,7 @@ if ($npcc == 1013) {//杀万年妖蛇转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -398,7 +398,7 @@ if ($npcc == 1015) {//杀白转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             $iniFile->updItem('已杀怪', [$str4 => '0']);
             $iniFile->updItem('要杀怪', [$str4 => '1']);
             include("./sql/mysql.php");//调用数据库连接 
@@ -425,7 +425,7 @@ if ($npcc == 1016) {//杀黑转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -450,7 +450,7 @@ if ($npcc == 860) {//杀【阎罗王】转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -475,7 +475,7 @@ if ($npcc == 920) {//杀菩提转职任务
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>任务：199转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -500,7 +500,7 @@ if ($npcc == 150) {//杀大老鼠
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【董老板的请求】老鼠（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -538,7 +538,7 @@ if ($npcc == 698) {//杀黑衣大汉
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【睡房打探】教训黑衣大汉（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -563,7 +563,7 @@ if ($npcc == 699) {//杀黑衣头领
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【黑衣客人】教训黑衣头领（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -588,7 +588,7 @@ if ($npcc == 700) {//杀小流氓
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【野蛮丫头】教训小流氓（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -613,7 +613,7 @@ if ($npcc == 701) {//杀野蛮丫头
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【野蛮丫头】教训野蛮丫头（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -638,7 +638,7 @@ if ($npcc == 702) {//杀众酒客
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【患难之交】教训众酒客（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -663,7 +663,7 @@ if ($npcc == 703) {//杀项长老
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【天法长老】打倒项长老（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -688,7 +688,7 @@ if ($npcc == 706) {//杀飞贼
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【追踪飞贼】教训飞贼（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -706,7 +706,7 @@ if ($npcc == 706) {//杀飞贼
             $iniFile->updItem('已杀怪', [$str4 => $rw3]);
             $rw3 = ($iniFile->getItem('已杀怪', $str4));
             echo "<p style='color: black'>【追踪飞贼】教训飞贼（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-            if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+            if ($rw3 == $rw4 && $rw3 && $rw4) {
                 include("./sql/mysql.php");//调用数据库连接 
                 $q2 = "yxrw" . $wjid;
                 $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -732,7 +732,7 @@ if ($npcc == 704) {//杀萧凌月
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【调查真相】打败凌月（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -757,7 +757,7 @@ if ($npcc == 705) {//杀绿衣女子
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【调查真相】打败绿衣女子（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -775,7 +775,7 @@ if ($npcc == 705) {//杀绿衣女子
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【调查真相】打败绿衣女子（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -800,7 +800,7 @@ if ($npcc == 707) {//杀萧晓月
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【比武招亲】打败萧晓月（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -825,7 +825,7 @@ if ($npcc == 708) {//杀清风道长
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【方寸奇遇】教训清风道长（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -850,7 +850,7 @@ if ($npcc == 709) {//杀狐妖女
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【大雁塔除妖】杀死狐妖女（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -875,7 +875,7 @@ if ($npcc == 710) {//杀蛇妖男
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【大雁塔除妖】杀死蛇妖男（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -900,7 +900,7 @@ if ($npcc == 711) {//杀死喽罗
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【赤血龙王】杀死喽罗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -925,7 +925,7 @@ if ($npcc == 712) {//杀赤血龙王
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【赤血龙王】杀死赤血龙王（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -950,7 +950,7 @@ if ($npcc == 713) {//杀酒鬼
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【意外重逢】教训酒鬼（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -975,7 +975,7 @@ if ($npcc == 714) {//杀守门兵俑
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【天法长老】打倒守门兵俑（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1000,7 +1000,7 @@ if ($npcc == 335) {//杀螃蟹（每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（1-20）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1038,7 +1038,7 @@ if ($npcc == 337) {//杀海贼（每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（20-40）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1076,7 +1076,7 @@ if ($npcc == 370) {//蜡烛怪 （每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（40-60）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1114,7 +1114,7 @@ if ($npcc == 387) {//蟠龙  （每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（60-80）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1152,7 +1152,7 @@ if ($npcc == 386) {//蟠璃 （每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（80-100）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1190,7 +1190,7 @@ if ($npcc == 414) {//雪莲精 （每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（100-120）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1228,7 +1228,7 @@ if ($npcc == 413) {//雪妖 （每日任务）
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】大唐国师的请求（120-140）（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1266,7 +1266,7 @@ if ($npcc == 356) {//【西瓜精】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（10-20）【西瓜精】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1304,7 +1304,7 @@ if ($npcc == 368) {//【扫帚怪】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（20-40）【扫帚怪】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1342,7 +1342,7 @@ if ($npcc == 371) {//【蜡烛怪】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（40-60）【蜡烛怪】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1380,7 +1380,7 @@ if ($npcc == 359) {//【青蛇怪】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（60-80）【青蛇怪】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1418,7 +1418,7 @@ if ($npcc == 400) {//【僵尸怪】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（80-100）【僵尸怪】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1456,7 +1456,7 @@ if ($npcc == 397) {//【骷髅怪】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（100-120）【骷髅怪】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1494,7 +1494,7 @@ if ($npcc == 408) {//【野獾精】(每日材料)
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>【每日】宝象国国师的请求（120-140）【野獾精】（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1532,7 +1532,7 @@ if ($npcc == 1317) {//杀蟠桃
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>仙20转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1557,7 +1557,7 @@ if ($npcc == 890) {//杀玉皇大帝
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>仙20转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1582,7 +1582,7 @@ if ($npcc == 1313) {//杀如来佛祖
         $iniFile->updItem('已杀怪', [$str4 => $rw3]);
         $rw3 = ($iniFile->getItem('已杀怪', $str4));
         echo "<p style='color: black'>仙20转职任务〖关键〗（" . $rw3 . "/" . $rw4 . "）</p>" . "<br>";
-        if ($rw3 == $rw4 && $rw3 != "" && $rw4 != "") {
+        if ($rw3 == $rw4 && $rw3 && $rw4) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "yxrw" . $wjid;
             $strsql = "update $q2 set rwbl=$rwbl where rwid=$rwid and rwfl=$rwfl";//物品id号必改值
@@ -1593,4 +1593,3 @@ if ($npcc == 1313) {//杀如来佛祖
         }
     }
 }
-?>

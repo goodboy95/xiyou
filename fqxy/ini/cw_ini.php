@@ -58,14 +58,14 @@ $mysql002=$wjid;
 //宠物
 $mysql003="cw".$mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`cwid` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物id',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`cwid` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物id',
  `cwmz` text NOT  NULL  COMMENT  '宠物名字',
-`cwdj` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物等级',
-`cwxj` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物星级',
-`cwby` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物变异',
-`cwxb` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物品质',
-`cwcz` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物出战')
+`cwdj` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物等级',
+`cwxj` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物星级',
+`cwby` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物变异',
+`cwxb` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物品质',
+`cwcz` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物出战')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
@@ -179,4 +179,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

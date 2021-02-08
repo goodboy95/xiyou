@@ -199,7 +199,7 @@ if ($zsspd == 1) {
                         } else {
                             echo "<p style='color: black'>,</p>";
                         }
-                        if ($wjvip != "") {
+                        if ($wjvip) {
                             $img = 'pic/vip/' . "vip" . $wjvip . '.png';
                             echo '<img src="' . $img . ' "alt="图片"/〉';
                             echo "<br>";
@@ -209,7 +209,7 @@ if ($zsspd == 1) {
                         $cdid[] = $cmid;
                         $clj[] = 93;
                         $npc[] = $v;
-                        if ($wjgjmz != "") {
+                        if ($wjgjmz) {
                             echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjmz . "【" . $wjgjmz . "】（" . $wjgjzw . "）</p></a>";
                         } else {
                             echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjmz . "</p></a>";
@@ -236,7 +236,7 @@ if ($zsspd == 1) {
 //移动清除掉上次地图坐标
     if ($ydtx == $dtx && $ydty == $dty) {
     } else {
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -251,7 +251,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('玩家id值' . $ydtx . 'x' . $ydty, $wjid);
         }
 //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -267,7 +267,7 @@ if ($zsspd == 1) {
         }
         ////////玩家名字值暂时用id代替后期更新
 //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -282,7 +282,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('玩家vip值' . $ydtx . 'x' . $ydty, $wjid);
         }
 //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -297,7 +297,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('国家名字值' . $ydtx . 'x' . $ydty, $wjid);
         }
 //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -312,7 +312,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('国家职务名字值' . $ydtx . 'x' . $ydty, $wjid);
         }
 //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -332,4 +332,4 @@ if ($zsspd == 1) {
 } else {
     echo "fm";
 }
-?>
+

@@ -150,7 +150,7 @@ if ($zsspd == 1) {
         }
     }
     echo "<p style='color: black'>您的时装如下：</p></a>" . "<br>";
-    if ($czbmz1 != "") {
+    if ($czbmz1) {
         echo "<p style='color: black'>翅膀：</p></a>";
 //cmd及超链接值
         $cmid = $cmid + 1;
@@ -178,7 +178,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>翅膀：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz2 != "") {
+    if ($czbmz2) {
         echo "<p style='color: black'>武器：</p></a>";
 //颜色控制
         $arr = explode("_", $strr2);
@@ -206,7 +206,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>武器：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz3 != "") {
+    if ($czbmz3) {
         echo "<p style='color: black'>副手：</p></a>";
 //颜色控制
         $arr = explode("_", $strr3);
@@ -234,7 +234,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>副手：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz4 != "") {
+    if ($czbmz4) {
         echo "<p style='color: black'>面具：</p></a>";
 //颜色控制
         $arr = explode("_", $strr4);
@@ -262,7 +262,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>面具：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz5 != "") {
+    if ($czbmz5) {
         echo "<p style='color: black'>衣服：</p></a>";
 //颜色控制
         $arr = explode("_", $strr5);
@@ -290,7 +290,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>衣服：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz6 != "") {
+    if ($czbmz6) {
         echo "<p style='color: black'>鞋子：</p></a>";
 //颜色控制
         $arr = explode("_", $strr6);
@@ -318,7 +318,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>鞋子：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz7 != "") {
+    if ($czbmz7) {
         echo "<p style='color: black'>戒指：</p></a>";
 //颜色控制
         $arr = explode("_", $strr7);
@@ -346,7 +346,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>戒指：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz8 != "") {
+    if ($czbmz8) {
         echo "<p style='color: black'>项链：</p></a>";
 //颜色控制
         $arr = explode("_", $strr8);
@@ -374,7 +374,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>项链：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz9 != "") {
+    if ($czbmz9) {
         echo "<p style='color: black'>披风：</p></a>";
 //颜色控制
         $arr = explode("_", $strr9);
@@ -402,7 +402,7 @@ if ($zsspd == 1) {
         $zbmz1 = "无";
         echo "<p style='color: black'>披风：" . $zbmz1 . "</p></a>" . "<br>";
     }
-    if ($czbmz10 != "") {
+    if ($czbmz10) {
         echo "<p style='color: black'>勋章：</p></a>";
 //颜色控制
         $arr = explode("_", $strr10);
@@ -454,4 +454,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

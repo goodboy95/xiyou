@@ -91,6 +91,6 @@ echo "<p style='color: red'>6.每天神仙姐姐送〖金豆〗x5</p>"."<br>";
 echo "<p style='color: black'>没有找到相对应的特权</p>"."<br>";
 }
 
-?>
+
 
 

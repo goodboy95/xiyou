@@ -2,7 +2,7 @@
 
 
 echo "<p style='color: black'>请选择出口</p>"."<br>";
-if ($map03!="") {
+if ($map03) {
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=3;
@@ -10,7 +10,7 @@ $npc[]=0;
 echo "<p style='color: black'>上:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$map03."</p></a>"."<br>";
 } else {
 }
-if ($map04!="") {
+if ($map04) {
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=4;
@@ -18,7 +18,7 @@ $npc[]=0;
 echo "<p style='color: black'>下:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$map04."</p></a>"."<br>";
 } else {
 }
-if ($map05!="") {
+if ($map05) {
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=5;
@@ -26,7 +26,7 @@ $npc[]=0;
 echo "<p style='color: black'>左:</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$map05."</p></a>"."<br>";
 } else {
 }
-if ($map06!="") {
+if ($map06) {
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=6;
@@ -44,4 +44,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查�
 echo "<p style='color: black'>".$map01."往哪里走呢？</p>"."<br>";
 
 
-?>

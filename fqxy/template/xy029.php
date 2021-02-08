@@ -216,7 +216,7 @@ if ($zsspd == 1) {
                 $str = $idd[$ym * 10 - 9 + $i];
                 $xxxbs = $xxbs[$ym * 10 - 9 + $i];
                 $zbxjj = $xvj[$ym * 10 - 9 + $i];
-                if ($clname == "") {
+                if (!$clname) {
                     break;
                 }
 //cmd及超链接值
@@ -240,7 +240,7 @@ if ($zsspd == 1) {
                 $str = $idd[$ym * 10 - 9 + $i];
                 $xxxbs = $xxbs[$ym * 10 - 9 + $i];
                 $zbxjj = $xvj[$ym * 10 - 9 + $i];
-                if ($clname != "") {
+                if ($clname) {
 //cmd及超链接值
                     $cmid = $cmid + 1;
                     $cdid[] = $cmid;
@@ -311,4 +311,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

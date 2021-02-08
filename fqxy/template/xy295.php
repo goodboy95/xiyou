@@ -285,7 +285,7 @@ include("./ini/jsini.php");
 
 
 
-?>
+
 
 
 

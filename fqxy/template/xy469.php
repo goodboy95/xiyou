@@ -80,7 +80,7 @@ $q2="all_jdjc";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{

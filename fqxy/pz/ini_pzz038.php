@@ -15,4 +15,4 @@ $path='ache/'.$wjid;
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 //更新缓存数据
-?>
+

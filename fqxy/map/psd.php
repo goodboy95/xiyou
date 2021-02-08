@@ -672,4 +672,3 @@ echo "<p style='color: black'>盘丝洞(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

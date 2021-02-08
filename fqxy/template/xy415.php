@@ -160,4 +160,3 @@ include("fhgame.php");
 
 
 
-?>

@@ -19,7 +19,7 @@ $iniFile = new iniFile($ininame);
 $txid=($iniFile->getItem('头衔名字',$npcc));
  include("./wp/txxx.php");
  
-if ($txid!="") {
+if ($txid) {
 	$wpsy=1;//使用失败
 	echo "<p style='color: black'>对不起！你已经获得过了".$wpmz."称号了！！</p>"."<br>";
 
@@ -87,4 +87,4 @@ $wpsy=2;//使用成功
 
 
 
-?>
+

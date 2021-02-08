@@ -67,7 +67,7 @@ if ($zsspd == 1) {
         if ($svl == 2) {
             $txid = $keywpidp[$i];
             $txmzsp = $keywpmzp[$i];
-            if ($txmzs == "") {
+            if (!$txmzs) {
                 $txmzs = $keywpmzp[$i];
             }
 //调用头衔图片	
@@ -319,4 +319,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

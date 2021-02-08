@@ -17,7 +17,7 @@ if($zqda ==2){//答对
 $zqda=2;
 $bz= rand(1, 100);
 
-if($bz >=50 ){//答对
+if($bz >=50){//答对
 
 echo "<p style='color: red'>我：So-esay太简单了，来真正有技术含量的（你识破了班主任的套路）</p>"."<br>";
 $bz= rand(1, 100);	
@@ -159,4 +159,3 @@ echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-?>

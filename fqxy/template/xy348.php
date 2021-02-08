@@ -75,11 +75,11 @@ echo "<p style='color: black'>对不起！你的MP不足以使用".$jnmz."</p>".
 
 
 
-if($wjssh!=""&&$wjssh<=0){//自己死亡
+if($wjssh&&$wjssh<=0){//自己死亡
 include("template/xy349.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-} elseif ($dxssh!=""&&$dxssh<=0){//对象死亡
+} elseif ($dxssh&&$dxssh<=0){//对象死亡
 
 
 //获取返回战斗页面
@@ -118,7 +118,7 @@ include("./pz/pz01.php");
 
 
 
-} elseif ($dxssh!=""&&$wjssh!=""&&$wjssh>0&&$dxssh>0) {//正在战斗未分出胜负
+} elseif ($dxssh&&$wjssh&&$wjssh>0&&$dxssh>0) {//正在战斗未分出胜负
 
 //获取返回战斗页面
 include("./ini/npc_ini.php");
@@ -205,4 +205,3 @@ include("./ini/jsini.php");
 
 
 
-?>

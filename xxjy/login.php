@@ -20,6 +20,9 @@ header("Content-type: text/html; charset=utf-8");
     <link rel="stylesheet" href="../css/touchScreen/ccolorbutton.css"/>
     <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
     <style>
+        p {
+            display: inline;
+        }
         #search {
             width: 235px;
             height: 32px;
@@ -74,7 +77,7 @@ header("Content-type: text/html; charset=utf-8");
         $uid = $info1['uid'];
         $pass = md5($_POST['password'] . 'ALL_PS');
         $name = $info1['name'];
-        //$ps = $us ? md5($_POST['password'].'ALL_PS' ) == $row['password'] : 'FALSE';
+        //$ps = $us ? md5($_POST['password'].'ALL_PS') == $row['password'] : 'FALSE';
         if ($pass == "" && $pass1 == "") {
             $pass = 1;
         }

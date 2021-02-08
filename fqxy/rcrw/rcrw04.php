@@ -88,4 +88,3 @@ echo "<p style='color: red'>对不起！请联系小轩GM处理</p></br>";
 }
 
 
-?>

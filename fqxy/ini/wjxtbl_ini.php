@@ -30,4 +30,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

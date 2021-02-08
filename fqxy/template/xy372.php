@@ -12,7 +12,7 @@ $cwzbfl=$arr1[0];
 $cwidx1=$arr1[1];
 $cwidx2=$arr1[2];
 $cwidx=$cwidx1."_".$cwidx2;
-if($cwidd!=""){
+if($cwidd){
 
 
 # 修改一个分类下子项的值(也可以修改多个)
@@ -176,4 +176,3 @@ include("./ini/jsini.php");
 
 
 
-?>

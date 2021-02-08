@@ -5,7 +5,7 @@ $rwstr=$rwidd."_".$rwfl;
 $rwpd=($iniFile->getItem('任务id',$rwstr));
 
 //数据库为空则新增最开始的任务点
-if($rwpd=="") {
+if (!$rwpd) {
 $inina='zxrw.ini';
 $path='./ache/'.$wjid;
 //判断ini文件是否存在	
@@ -17,7 +17,7 @@ $q2="yxrw".$wjid;
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -35,7 +35,7 @@ include("./ini/zxrw_ini.php");
 
 $m=$m+1;
 //数据库为空则新增最开始的任务点
-?>
+
 
 
 

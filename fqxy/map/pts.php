@@ -588,4 +588,3 @@ echo "<p style='color: black'>听经石往哪里走呢？</p>"."<br>";
 
 
 
-?>

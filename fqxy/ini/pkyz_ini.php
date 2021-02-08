@@ -23,4 +23,3 @@ $iniFile->addItem('pk验证',['初始' => 123]);
 $iniFile = new iniFile($file);
 
 
-?>

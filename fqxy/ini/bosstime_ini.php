@@ -34,4 +34,3 @@ $iniFile->addItem('死亡时间',['初始' => $nowtime]);
 $iniFile = new iniFile($file);
 
 
-?>

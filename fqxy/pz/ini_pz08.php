@@ -56,7 +56,7 @@ $iniFile->updItem($wpzz1, [$wpzz3 => $maxk,$wpzz2 => $maxq]);
 
 
 	
-} elseif($wpsycs ==""){
+} elseif (!$wpsycs){
 $wpsycs=$sl;
 $max1=$max*$sl;
 $xzcs1=$xzcs-$wpsycs;
@@ -101,4 +101,4 @@ $wpsy=1;//使用失败
 
 
 
-?>
+

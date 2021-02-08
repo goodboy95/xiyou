@@ -32,4 +32,3 @@ $iniFile->addItem('防守国家id',['初始' => 0]);
 $iniFile = new iniFile($file);
 
 
-?>

@@ -69,7 +69,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 $zh1=$_GET['xzh'];
 $ma1=$_GET['xmm'];
 
-if($zh1!=""&&ma1!=""){
+if($zh1&&ma1){
 
 
 $zcxx="<p style='color: red'>恭喜你修改密码成功<br>请牢记你的帐号密码与安全码<br>帐号:".$zh1."<br>密码:".$ma1."</p>"."<br>";

@@ -8,6 +8,7 @@ if ($zsspd == 1) {
     $jy01 = ($iniFile->getItem('封号信息', '永久'));
     $jy02 = ($iniFile->getItem('封号信息', '封号时间'));
     $jy03 = ($iniFile->getItem('封号信息', '解除变量'));
+    if (!isset($fhbl)) $fhbl = 0;
     if ($jy01 != 2) {
         if ($jy03 >= 1) {
             $startdate = $jy02;
@@ -65,7 +66,7 @@ if ($zsspd == 1) {
                 include("template/xy297.php");
 //不走xy.php直接调用xy文件需要加pz01配置
                 include("./pz/pz01.php");
-            } elseif ($jcmz == "") {
+            } elseif (!$jcmz) {
                 include("template/xy298.php");
 //不走xy.php直接调用xy文件需要加pz01配置
                 include("./pz/pz01.php");
@@ -212,9 +213,7 @@ if ($zsspd == 1) {
                 $bpzw = ($iniFile->getItem('玩家信息', '帮派职务'));
             }
 //游戏首页页面模板
-            echo "inina before include: " . $inina . "<br />";
             include("./map/mapid.php");
-            echo "inina after include: " . $inina . "<br />";
 //查询当前地图玩家
             $fjwjpd = $fjwjpd ?? 0;
             $ydtx = $ydtx ?? 0;
@@ -276,6 +275,7 @@ if ($zsspd == 1) {
 //玩法
             echo "<p style='color: black'>----------------------</p>" . "<br>";
             echo "<p style='color: black'>火热玩法</p>" . "<br>";
+            if (!isset($sw)) $sw = 0;
             if ($dty == 22 || $dty == 23) {
                 if ($dtx == 22) {
                     $sw = 2;
@@ -488,4 +488,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

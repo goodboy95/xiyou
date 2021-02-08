@@ -23,7 +23,7 @@ if ($yxhe == 2) {
     if ($hf == 2) {
         $pass = ($iniFile->getItem('验证信息', '玩家验证'));
     }
-    if ($pass == $xxjy_pass && $xxjy_pass != "" && $pass != "") {
+    if ($pass == $xxjy_pass && $xxjy_pass && $pass) {
         //存在用户的信息
         $wjid = $wjini;
         echo 'beforehand';
@@ -51,7 +51,7 @@ if ($yxhe == 2) {
         //不存在用户的信息
 
         //检测uid是否存在如果存在整么社区号修改过密码需要重新更新游戏数据
-        if ($uid != "") {
+        if ($uid) {
             //更改密码后的操作
             $zcxx1 = "小轩娱乐温馨提醒（由于小轩一站式通行证进行过修改数据验证已同步至游戏，重新登录下即可）";
             include("mysql.php");//调用数据库连接
@@ -88,4 +88,3 @@ if ($yxhe == 2) {
     include("../xxjyindex.php");
 }
 
-?>

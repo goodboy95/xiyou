@@ -42,7 +42,7 @@ include("./ini/ckrl_ini.php");
 
 
 
-?>
+
 
 
 

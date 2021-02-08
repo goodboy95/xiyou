@@ -31,7 +31,7 @@ $q2="all_bp";
 $sql1=mysqli_query($conn, "select bpid from $q2 where bpmz='$wjtake'");
 $info1=@mysqli_fetch_array($sql1);
 $pdbp2=$info1['bpid'];
-if($pdbp2==""){
+if (!$pdbp2){
 
 
 
@@ -39,7 +39,7 @@ $q2="all_bp";
 $sql1=mysqli_query($conn, "select MAX(bpid) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -67,13 +67,13 @@ $bpid=$maxidd;
 
 $mysql003="bp".$bpid;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '国家ID编号',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '国家ID编号',
  `usermz` text NOT  NULL  COMMENT  '国家人员名字',
-`userid` int( 11  )  NOT  NULL default  '0' COMMENT  '国家人员id',
-`gx` int( 11  )  NOT  NULL default  '0' COMMENT  '贡献',
-`bpswcs` int( 11  )  NOT  NULL default  '0' COMMENT  '国战死亡次数',
-`bpjf` int( 11  )  NOT  NULL default  '0' COMMENT  '国战积分',
-`lsgx` int( 11  )  NOT  NULL default  '0' COMMENT  '历史贡献')
+`userid` int( 11 )  NOT  NULL default  '0' COMMENT  '国家人员id',
+`gx` int( 11 )  NOT  NULL default  '0' COMMENT  '贡献',
+`bpswcs` int( 11 )  NOT  NULL default  '0' COMMENT  '国战死亡次数',
+`bpjf` int( 11 )  NOT  NULL default  '0' COMMENT  '国战积分',
+`lsgx` int( 11 )  NOT  NULL default  '0' COMMENT  '历史贡献')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
@@ -195,6 +195,6 @@ echo "<p style='color: red'>对不起！建立国家需要银两1亿和玄铁令
 echo "<p style='color: red'>对不起！你已经有国家了无法创建</p>"."<br>";
 }
 
-?>
+
 
 

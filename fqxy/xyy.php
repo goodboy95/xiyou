@@ -17,6 +17,11 @@ header("Content-type: text/html; charset=utf-8");
 </head>
 <body>
 <div style='width: device-width;display:block;word-break: break-all;word-wrap: break-word;'>
+    <style>
+        p {
+            display: inline;
+        }
+    </style>
     <?php
     ini_set("error_reporting", "E_ALL & ~E_NOTICE");//防止报错代码
     date_default_timezone_set("PRC");
@@ -28,7 +33,7 @@ header("Content-type: text/html; charset=utf-8");
     $wjid = $_GET['wjid'];
     $password = $_GET['pass'];
     $qy = $_GET['qy'];
-    if ($wjid != "" && $password != "" && $qy != "") {
+    if ($wjid && $password && $qy) {
         //验证家园社区id的合法性
         include("./sql/xxjyCurl.php");//向小轩家园总站发送数据验证
         //验证成功或者失败代码在fqxy/sql/yxCurl.php

@@ -121,12 +121,12 @@ $iniFile->updItem('玩家信息', ['住宅分类'=> 0]);
 $iniFile->updItem('玩家信息', ['住宅名字'=> 0]);
 
 $jdd=$qgjd+$jd;
-if($jd==""){  
+if (!$jd){  
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -362,4 +362,3 @@ include("fhgame.php");
 include("./ini/jsggini.php");
 //解锁当前使用的ini
 
-?>

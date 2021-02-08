@@ -51,7 +51,7 @@ $ivdd=($iniFile->getItem('序列',$wjid1));
 
 # 获取一个分类下某个子项的值
 $ivdd1=($iniFile->getItem('好友分类',$ivdd));
-if($ivdd==""){
+if (!$ivdd){
 $ivdd1=1;
 }
 
@@ -72,7 +72,7 @@ $wjtake10= $_POST['wjtoke'];
 $wjtakes2=iconv_strlen($wjtake10,"UTF-8");
 $wjtake = iconv("utf-8","gbk",$wjtake10);  
 
-if($wjtake10!=""){
+if($wjtake10){
 if($wjtakes2>0&&$wjtakes2<=20||$wjtakes2>0&&$wjtakes2<=20){
 if($wjtakes2>0){
 $wjtake=$wjtake10;

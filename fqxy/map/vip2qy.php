@@ -16,7 +16,7 @@ $vipqytime=300;//系统消息存活秒数5分钟
 
 
 
-if ($hdtime!="") {
+if ($hdtime) {
 $startdate=$hdtime;
 $enddate=date('Y-m-d H:i:s');
 $minute=floor((strtotime($enddate)-strtotime($startdate)));
@@ -754,4 +754,3 @@ echo "<p style='color: black'>【铜矿山】(4,1)往哪里走呢？</p>"."<br>"
 
 
 
-?>

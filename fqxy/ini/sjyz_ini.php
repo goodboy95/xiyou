@@ -19,4 +19,3 @@ if (file_exists($file)) {
     $iniFile->addItem('毫秒时间', ['时间' => $time]);
 }
 $iniFile = new iniFile($file);
-?>

@@ -180,5 +180,5 @@ include("template/xy195.php");//查询国战信息
 
 
 
-?>
+
 

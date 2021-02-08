@@ -25,16 +25,16 @@ include("./zbdz/xycl.php");
 if($cgl!=0){
 include("./ini/sc_ini.php");
 $xyc1=($iniFile->getItem('商城数量','126'));
-if($xyc1==""){
+if (!$xyc1){
 $xyc1=($iniFile->getItem('商城数量','307'));
 } 
 
 
 
 //幸运草几率
-if($xyc1!=""){
+if($xyc1){
 $xyc=5;
-} elseif($xyc1!=""){   
+} elseif($xyc1){   
 $xyc=10;
 } else{
 $xyc=0;
@@ -63,7 +63,7 @@ echo "<p style='color: black'>费用：".$xyyl."</p></a>"."<br>";
 
 
 
-if($xyc1!=""&&$cgl1!=100){
+if($xyc1&&$cgl1!=100){
 echo "<p style='color: black'>成功率：".$cgl."%</p><p style='color: red'>（附带幸运草提升几率）</p></a>"."<br>";
 } else{
 echo "<p style='color: black'>成功率：".$cgl."%</p></a>"."<br>";
@@ -127,4 +127,3 @@ include("./ini/jsini.php");
 
 
 
-?>

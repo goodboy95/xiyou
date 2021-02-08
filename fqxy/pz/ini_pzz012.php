@@ -8,4 +8,4 @@ $result = mysqli_query($conn, $strsql);
 
 //缓存修改
 $iniFile->updItem('背包仓库银两', ['背包银两' => $yll]);
-?>
+

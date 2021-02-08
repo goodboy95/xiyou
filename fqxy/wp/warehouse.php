@@ -94,4 +94,4 @@ if ($yl == 0) {
     echo "<p style='color: black'>$yl</p>";
 }
 echo "<p style='color: black'>两</p>" . "<br>";
-?>
+

@@ -92,7 +92,7 @@ $iniFile->updItem('摇点信息', ['今日点数' => '0','活动点数' => '0'])
 
 
 $nowtime1 = substr($nowtime,0,10); 	
-if($hdtime1!=$nowtime1&&$hdtime1!=""){//今天不是今天数据验证
+if($hdtime1!=$nowtime1&&$hdtime1){//今天不是今天数据验证
 $hdyd="";
 //更新摇点每日限制
 
@@ -245,4 +245,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返�
 
 
 	
-?>

@@ -12,7 +12,7 @@ if ($urlid==1) {//本地游戏地址
     $xxjyurl=config_item('host');//返回官网地址
     $url=config_item('host');//游戏地址
 }
-?>
+
 
 
 

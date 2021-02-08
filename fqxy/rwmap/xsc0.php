@@ -118,7 +118,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>村�
 
 //查询npc是否有任务
 
-?>
+
 
 
 

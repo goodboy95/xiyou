@@ -58,4 +58,3 @@ $iniFilexx=$iniFile;
 
 */
 $iniFile=$iniFilexx;
-?>

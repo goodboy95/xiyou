@@ -33,4 +33,3 @@ $iniFile->addItem('玩家发言',['初始' => 123]);
 $iniFile = new iniFile($file);
 
 
-?>

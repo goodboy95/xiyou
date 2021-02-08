@@ -20,7 +20,7 @@ $tttid=103;
 include("./rcrw/ttt.php");
 
 
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -34,7 +34,7 @@ echo "<p style='color: red'>【拔舌鬼】（已阵亡）</p></br>";
 
 $tttid=104;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -95,7 +95,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=105;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -141,7 +141,7 @@ echo "<p style='color: black'>阴曹地府（二层）</p>"."<a href='xy.php?uid
   //npc
 $tttid=106;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -154,7 +154,7 @@ echo "<p style='color: red'>【剪刀鬼】（已阵亡）</p></br>";
 
 $tttid=107;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
   //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -213,7 +213,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 $tttid=108;
 include("./rcrw/ttt.php");
 
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -257,7 +257,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=109;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -269,7 +269,7 @@ echo "<p style='color: red'>【铁树鬼】（已阵亡）</p></br>";
 } 
 $tttid=110;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -323,7 +323,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=111;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -364,7 +364,7 @@ echo "<p style='color: black'>阴曹地府（四层）</p>"."<a href='xy.php?uid
 
 $tttid=112;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -377,7 +377,7 @@ echo "<p style='color: red'>【孽镜鬼】（已阵亡）</p></br>";
 
 $tttid=113;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -431,7 +431,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=114;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -473,7 +473,7 @@ echo "<p style='color: black'>阴曹地府（五层）</p>"."<a href='xy.php?uid
 
 $tttid=115;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -486,7 +486,7 @@ echo "<p style='color: red'>【蒸笼鬼】（已阵亡）</p></br>";
 
 $tttid=116;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -537,7 +537,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=117;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -579,7 +579,7 @@ echo "<p style='color: black'>阴曹地府（六层）</p>"."<a href='xy.php?uid
 
 $tttid=118;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -592,7 +592,7 @@ echo "<p style='color: red'>【铜柱鬼】（已阵亡）</p></br>";
 
 $tttid=119;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -645,7 +645,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=120;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -686,7 +686,7 @@ echo "<p style='color: black'>阴曹地府（七层）</p>"."<a href='xy.php?uid
 
 $tttid=121;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -700,7 +700,7 @@ echo "<p style='color: red'>【刀山鬼】（已阵亡）</p></br>";
 
 $tttid=122;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -754,7 +754,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=123;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -795,7 +795,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=124;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -809,7 +809,7 @@ echo "<p style='color: red'>【冰山鬼】（已阵亡）</p></br>";
 
 $tttid=125;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -861,7 +861,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=126;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -901,7 +901,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=127;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -913,7 +913,7 @@ echo "<p style='color: red'>【油锅鬼】（已阵亡）</p></br>";
 } 
 $tttid=128;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -968,7 +968,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=129;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1010,7 +1010,7 @@ echo "<p style='color: black'>阴曹地府（十层）</p>"."<a href='xy.php?uid
 
 $tttid=130;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1023,7 +1023,7 @@ echo "<p style='color: red'>【牛坑鬼】（已阵亡）</p></br>";
 
 $tttid=131;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1075,7 +1075,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=132;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1114,7 +1114,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=133;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1127,7 +1127,7 @@ echo "<p style='color: red'>【石压鬼】（已阵亡）</p></br>";
 
 $tttid=134;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1190,7 +1190,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=135;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1237,7 +1237,7 @@ echo "<p style='color: black'>阴曹地府（十二层）</p>"."<a href='xy.php?
 
 $tttid=136;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1250,7 +1250,7 @@ echo "<p style='color: red'>【舂臼鬼】（已阵亡）</p></br>";
 
 $tttid=137;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1308,7 +1308,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=138;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1347,7 +1347,7 @@ echo "<p style='color: black'>阴曹地府（十三层）</p>"."<a href='xy.php?
 
 $tttid=139;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1360,7 +1360,7 @@ echo "<p style='color: red'>【血池鬼】（已阵亡）</p></br>";
 
 $tttid=140;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1417,7 +1417,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=141;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1455,7 +1455,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=142;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1468,7 +1468,7 @@ echo "<p style='color: red'>【枉死鬼】（已阵亡）</p></br>";
 
 $tttid=143;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1527,7 +1527,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=144;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1568,7 +1568,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=145;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1581,7 +1581,7 @@ echo "<p style='color: red'>【磔刑鬼】（已阵亡）</p></br>";
 
 $tttid=146;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1637,7 +1637,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=147;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1677,7 +1677,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=148;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1690,7 +1690,7 @@ echo "<p style='color: red'>【火山鬼】（已阵亡）</p></br>";
 
 $tttid=149;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1748,7 +1748,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=150;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1789,7 +1789,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=151;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1802,7 +1802,7 @@ echo "<p style='color: red'>【石磨鬼】（已阵亡）</p></br>";
 
 $tttid=152;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1859,7 +1859,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=153;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1898,7 +1898,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=154;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1911,7 +1911,7 @@ echo "<p style='color: red'>【刀锯鬼】（已阵亡）</p></br>";
 
 $tttid=155;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1968,7 +1968,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=156;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2008,7 +2008,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（十九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=157;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2021,7 +2021,7 @@ echo "<p style='color: red'>【无边鬼】（已阵亡）</p></br>";
 
 $tttid=158;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2079,7 +2079,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=159;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2119,7 +2119,7 @@ echo "<p style='color: black'>阴曹地府（二十层）</p>"."<a href='xy.php?
 
 $tttid=160;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2132,7 +2132,7 @@ echo "<p style='color: red'>【无尽鬼】（已阵亡）</p></br>";
 
 $tttid=161;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2189,7 +2189,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=162;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2235,7 +2235,7 @@ echo "<p style='color: black'>阴曹地府（二十一层）</p>"."<a href='xy.p
 
 $tttid=193;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2248,7 +2248,7 @@ echo "<p style='color: red'>【巨蟒怪】（已阵亡）</p></br>";
 
 $tttid=194;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2304,7 +2304,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=195;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2345,7 +2345,7 @@ echo "<p style='color: black'>阴曹地府（二十二层）</p>"."<a href='xy.p
 	
 $tttid=196;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2358,7 +2358,7 @@ echo "<p style='color: red'>【蜘蛛精】（已阵亡）</p></br>";
 
 $tttid=197;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2413,7 +2413,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=198;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2453,7 +2453,7 @@ echo "<p style='color: black'>阴曹地府（二十三层）</p>"."<a href='xy.p
 
 $tttid=199;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2466,7 +2466,7 @@ echo "<p style='color: red'>【金鱼精】（已阵亡）</p></br>";
 
 $tttid=200;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2522,7 +2522,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=201;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2563,7 +2563,7 @@ echo "<p style='color: black'>阴曹地府（二十四层）</p>"."<a href='xy.p
 
 $tttid=202;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2576,7 +2576,7 @@ echo "<p style='color: red'>【狐妖】（已阵亡）</p></br>";
 
 $tttid=203;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2632,7 +2632,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=204;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2674,7 +2674,7 @@ echo "<p style='color: black'>阴曹地府（二十五层）</p>"."<a href='xy.p
 	
 $tttid=205;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2687,7 +2687,7 @@ echo "<p style='color: red'>【如意牛精】（已阵亡）</p></br>";
 
 $tttid=206;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2742,7 +2742,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=207;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2782,7 +2782,7 @@ echo "<p style='color: black'>阴曹地府（二十六层）</p>"."<a href='xy.p
 
 $tttid=208;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2795,7 +2795,7 @@ echo "<p style='color: red'>【青狮精】（已阵亡）</p></br>";
 
 $tttid=209;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2851,7 +2851,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=210;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2891,7 +2891,7 @@ echo "<p style='color: black'>阴曹地府（二十七层）</p>"."<a href='xy.p
 
 $tttid=211;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2904,7 +2904,7 @@ echo "<p style='color: red'>【白骨精】（已阵亡）</p></br>";
 
 $tttid=212;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2960,7 +2960,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=213;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3001,7 +3001,7 @@ echo "<p style='color: black'>阴曹地府（二十八层）</p>"."<a href='xy.p
 
 $tttid=214;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3014,7 +3014,7 @@ echo "<p style='color: red'>【蜈蚣精】（已阵亡）</p></br>";
 
 $tttid=215;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3070,7 +3070,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=216;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3110,7 +3110,7 @@ echo "<p style='color: black'>阴曹地府（二十九层）</p>"."<a href='xy.p
 
 $tttid=217;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3123,7 +3123,7 @@ echo "<p style='color: red'>【蝎子精】（已阵亡）</p></br>";
 
 $tttid=218;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3179,7 +3179,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=219;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3218,7 +3218,7 @@ echo "<p style='color: black'>阴曹地府（三十层）</p>"."<a href='xy.php?
 
 $tttid=220;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3231,7 +3231,7 @@ echo "<p style='color: red'>【镇元大仙】（已阵亡）</p></br>";
 
 $tttid=221;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3293,7 +3293,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=222;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3332,7 +3332,7 @@ echo "<p style='color: black'>阴曹地府（魔一层）</p>"."<a href='xy.php?
 
 $tttid=259;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3345,7 +3345,7 @@ echo "<p style='color: red'>【拔舌鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=260;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3407,7 +3407,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=261;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3447,7 +3447,7 @@ echo "<p style='color: black'>阴曹地府（魔二层）</p>"."<a href='xy.php?
 
 $tttid=262;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3460,7 +3460,7 @@ echo "<p style='color: red'>【剪刀鬼】（魔）</p></br>";
 
 $tttid=263;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3522,7 +3522,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=264;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3563,7 +3563,7 @@ echo "<p style='color: black'>阴曹地府（魔三层）</p>"."<a href='xy.php?
 
 $tttid=265;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3576,7 +3576,7 @@ echo "<p style='color: red'>【铁树鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=266;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3635,7 +3635,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=267;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3678,7 +3678,7 @@ echo "<p style='color: black'>阴曹地府（魔四层）</p>"."<a href='xy.php?
 
 $tttid=268;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3691,7 +3691,7 @@ echo "<p style='color: red'>【孽镜鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=269;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3751,7 +3751,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=270;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3792,7 +3792,7 @@ echo "<p style='color: black'>阴曹地府（魔五层）</p>"."<a href='xy.php?
 
 $tttid=271;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3805,7 +3805,7 @@ echo "<p style='color: red'>【蒸笼鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=272;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3866,7 +3866,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=273;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3907,7 +3907,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（魔六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=274;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3920,7 +3920,7 @@ echo "<p style='color: red'>【铜柱鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=275;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3981,7 +3981,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=276;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4025,7 +4025,7 @@ echo "<p style='color: black'>阴曹地府（魔七层）</p>"."<a href='xy.php?
 
 $tttid=277;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4038,7 +4038,7 @@ echo "<p style='color: red'>【刀山鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=278;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4099,7 +4099,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=279;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4141,7 +4141,7 @@ echo "<p style='color: black'>阴曹地府（魔八层）</p>"."<a href='xy.php?
 
 $tttid=280;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4154,7 +4154,7 @@ echo "<p style='color: red'>【冰山鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=281;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4212,7 +4212,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=282;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4253,7 +4253,7 @@ echo "<p style='color: black'>阴曹地府（魔九层）</p>"."<a href='xy.php?
 
 $tttid=283;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4266,7 +4266,7 @@ echo "<p style='color: red'>【油锅鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=284;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4326,7 +4326,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=285;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4367,7 +4367,7 @@ $npc[]=0;
 echo "<p style='color: black'>阴曹地府（魔十层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=286;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4380,7 +4380,7 @@ echo "<p style='color: red'>【牛坑鬼】（魔）（已阵亡）</p></br>";
 
 $tttid=287;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4444,7 +4444,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=288;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4484,7 +4484,7 @@ include("maptop.php");//地图顶端
 
 $tttid=335;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4496,7 +4496,7 @@ echo "<p style='color: red'>【石压鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=336;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4539,7 +4539,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=337;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4564,7 +4564,7 @@ include("maptop.php");//地图顶端
 
 $tttid=338;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4576,7 +4576,7 @@ echo "<p style='color: red'>【舂臼鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=339;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4619,7 +4619,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=340;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4643,7 +4643,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=341;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4655,7 +4655,7 @@ echo "<p style='color: red'>【血池鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=342;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4696,7 +4696,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=343;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4719,7 +4719,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=344;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4731,7 +4731,7 @@ echo "<p style='color: red'>【枉死鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=345;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4770,7 +4770,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }  
 $tttid=346;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4794,7 +4794,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=347;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4806,7 +4806,7 @@ echo "<p style='color: red'>【磔刑鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=348;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4845,7 +4845,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=349;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4871,7 +4871,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=350;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4883,7 +4883,7 @@ echo "<p style='color: red'>【火山鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=351;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4924,7 +4924,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=352;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4947,7 +4947,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=353;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4959,7 +4959,7 @@ echo "<p style='color: red'>【石磨鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=354;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4999,7 +4999,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=355;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5023,7 +5023,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=356;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5035,7 +5035,7 @@ echo "<p style='color: red'>【刀锯鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=357;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5076,7 +5076,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=358;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5100,7 +5100,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=359;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5112,7 +5112,7 @@ echo "<p style='color: red'>【无边鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=360;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5153,7 +5153,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=361;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5177,7 +5177,7 @@ $map06="";//出口右
 include("maptop.php");//地图顶端
 $tttid=362;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5189,7 +5189,7 @@ echo "<p style='color: red'>【无尽鬼】（魔尊）（已阵亡）</p></br>"
 } 
 $tttid=363;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5234,7 +5234,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=364;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -5272,4 +5272,3 @@ include("mapxx.php");//地图出入口
 
 
 
-?>

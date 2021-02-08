@@ -25,15 +25,15 @@ if ($zsspd == 1) {
         $xyc1 = ($iniFile->getItem('商城数量', '126'));
         $xycid = 126;
         $xycmz = "小幸运草";
-        if ($xyc1 == "") {
+        if (!$xyc1) {
             $xyc1 = ($iniFile->getItem('商城数量', '307'));
             $xycid = 307;
             $xycmz = "大幸运草";
         }
 //幸运草几率
-        if ($xyc1 != "") {
+        if ($xyc1) {
             $xyc = 5;
-        } elseif ($xyc1 != "") {
+        } elseif ($xyc1) {
             $xyc = 10;
         } else {
             $xyc = 0;
@@ -46,7 +46,7 @@ if ($zsspd == 1) {
         $zbidx = $npcc;//当前装备id赋值
 //提供需要扣除的物品作为判读依据
 //用幸运草
-        if ($xyc1 != "" && $cgl1 != 100) {
+        if ($xyc1 && $cgl1 != 100) {
             $wpdz1[] = $xycmz;//名字
             $wpdz2[] = 4;//物品分类
             $wpdz3[] = $xycid;//物品id
@@ -219,4 +219,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

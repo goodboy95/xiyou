@@ -182,7 +182,7 @@ $jn=3;
 include("./wj/ltxx.php");
 if($dxsh>=1){
 $dxsh="-".$dxsh;
-} elseif($dxsh==0&&$dxsh!=""){  
+} elseif($dxsh==0&&$dxsh){  
 $dxsh="-".$dxsh;
 } else{
 $dxsh="";	
@@ -193,7 +193,7 @@ if($pk003>=1){
 $wjsh=$pk003;
 if($wjsh>=1){
 $wjsh="-".$wjsh;
-} elseif($wjsh==0&&$wjsh!=""){  
+} elseif($wjsh==0&&$wjsh){  
 $wjsh="-".$wjsh;
 } else{
 $wjsh="";	
@@ -202,7 +202,7 @@ $wjsh="";
 if($wjsh>=1){
 
 $wjsh="-".$wjsh;
-} elseif($wjsh==0&&$wjsh!=""){  
+} elseif($wjsh==0&&$wjsh){  
 $wjsh="-".$wjsh;
 } else{
 $wjsh="";	
@@ -294,4 +294,3 @@ include("./ini/jsini.php");
 //解锁当前使用的ini
 
 
-?>

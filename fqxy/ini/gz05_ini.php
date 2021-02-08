@@ -40,4 +40,3 @@ $iniFile->addCategory('国战判断时间', [$row['id']=>$row['gztime']]);
 }
 
 $iniFile = new iniFile($file);
-?>

@@ -96,4 +96,3 @@ if (!file_exists($file)) {
     //数据库数据导入ini文件
 }
 $iniFile = new iniFile($file);
-?>

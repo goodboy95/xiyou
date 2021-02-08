@@ -52,4 +52,3 @@ $iniFile->addCategory('夺仗人id', [$row['zcid']=>$row['czzid']]);
 $iniFile = new iniFile($file);
 
 
-?>

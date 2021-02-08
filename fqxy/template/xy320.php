@@ -140,4 +140,3 @@ include("fhgame.php");
 include("./ini/jsggini.php");
 //解锁当前使用的ini
 
-?>

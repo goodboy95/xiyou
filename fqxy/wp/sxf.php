@@ -105,7 +105,7 @@ echo "<p style='color: ".$clor."'>$yl</p>";
 echo "<p style='color: ".$clor."'>两</p>";
 
 
-?>
+
 
 
 

@@ -9,7 +9,7 @@ $date = date("Y-m-d H:i:s");
 if ($date > $mb) {
     $mbxs = 2;
 }
-?>
+
 
 
 

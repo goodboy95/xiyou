@@ -3,7 +3,7 @@
 
 include("./ini/hd_ini.php");
 $hdcs=($iniFile->getItem('活动次数',$gzcardid));
-if($hdcs ==""){
+if (!$hdcs){
 include("./sql/mysql.php");//调用数据库连接 
 
 $nowtime=date("Y-m-d",strtotime("-1 day"));
@@ -30,4 +30,4 @@ $iniFile->updItem('活动次数', [$gzcardid => $hdcs]);
 } 
 
 
-?>
+

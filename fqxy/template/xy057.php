@@ -95,4 +95,3 @@ include("fhgame.php");
 
 
 
-?>

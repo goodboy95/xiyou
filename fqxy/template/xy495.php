@@ -197,4 +197,3 @@ include("./ini/jszsini.php");
 //解锁当前使用的ini
 include("./ini/all_lock1.php");
 //解锁当前使用的ini
-?>

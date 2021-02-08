@@ -345,6 +345,6 @@ echo "<p style='color: red'>你对".$nmz."使用了一招迷魂心法</p>"."<br>
 
 
 
-?>
+
 
 

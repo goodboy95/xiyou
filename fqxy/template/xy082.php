@@ -106,7 +106,7 @@ if ($zsspd == 1) {
                     $szbxqq3 = ($iniFile->getItem('装备镶嵌3', $szbid));
                     $szbxqq4 = ($iniFile->getItem('装备镶嵌4', $szbid));
                     $szbxqq5 = ($iniFile->getItem('装备镶嵌5', $szbid));
-                    if ($szbmz != "") {
+                    if ($szbmz) {
                         $q2 = "zbb" . $wjid;
                         include("./sql/mysql.php");//调用数据库连接
 //$sql1=mysqli_query($conn, "select zbid from $q2 where zbfl=$wp30");
@@ -120,7 +120,7 @@ if ($zsspd == 1) {
                         $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
                         $abc = mysqli_fetch_array($sql1);
                         $maxid = $abc[0];
-                        if ($maxid == "") {
+                        if (!$maxid) {
                             $maxid = 0;
                             $maxidd = $maxid + 1;
                         } else {
@@ -138,7 +138,7 @@ if ($zsspd == 1) {
                         $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
                         $abc = mysqli_fetch_array($sql1);
                         $maxid = $abc[0];
-                        if ($maxid == "") {
+                        if (!$maxid) {
                             $maxid = 0;
                             $maxidd = $maxid + 1;
                         } else {
@@ -194,7 +194,7 @@ if ($zsspd == 1) {
                         echo "<p style='color: black'>你卸下了" . $wp1 . "</p>" . "<br>";
                     }
                 } else {
-                    if ($cwp1 != "") {
+                    if ($cwp1) {
                         $q2 = "zb" . $wjid;
                         include("./sql/mysql.php");//调用数据库连接
                         $strsql = "delete from $q2 where id=$xnpcc ";//物品id号必改值
@@ -205,7 +205,7 @@ if ($zsspd == 1) {
                         $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
                         $abc = mysqli_fetch_array($sql1);
                         $maxid = $abc[0];
-                        if ($maxid == "") {
+                        if (!$maxid) {
                             $maxid = 0;
                             $maxidd = $maxid + 1;
                         } else {
@@ -280,4 +280,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

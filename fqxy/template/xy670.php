@@ -54,7 +54,7 @@ $q2="all_hdph01";
 $sql1=mysqli_query($conn, "select ds01 from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
 $ds01=$info1[ds01];
-if($ds01 ==""){
+if (!$ds01){
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
 $vip=($iniFile->getItem('玩家信息','vip等级'));
@@ -63,7 +63,7 @@ $q2="all_hdph01";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -124,7 +124,7 @@ $q2="all_hdph01";
 $sql1=mysqli_query($conn, "select ds01 from $q2 where wjid=$wjid");
 $info1=@mysqli_fetch_array($sql1);
 $ds01=$info1[ds01];
-if($ds01 ==""){
+if (!$ds01){
 $xysw1=0;	
 include("./ini/zt_ini.php");
 $wjmz=($iniFile->getItem('玩家信息','玩家名字'));
@@ -134,7 +134,7 @@ $q2="all_hdph01";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -200,4 +200,3 @@ include("./ini/jsini.php");
 //解锁当前使用的ini
 
 	
-?>

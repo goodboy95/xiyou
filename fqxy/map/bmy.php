@@ -659,4 +659,3 @@ echo "<p style='color: black'>兵马俑(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

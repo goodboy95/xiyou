@@ -13,7 +13,7 @@ $npcc=$hdid;
 include("./ini/hd_ini.php");
 $hdtime=($iniFile->getItem('活动时间',$hdid));
 $hdcs=($iniFile->getItem('活动次数',$hdid));
-if ($hdtime=="") {//如果没有值则添加新数据
+if (!$hdtime) {//如果没有值则添加新数据
 include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间',$hdid));
@@ -25,7 +25,7 @@ $hdlq=2;
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
 $nowtime1 = substr($nowtime,0,10); 	
-if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
+if($hdtime1!=$nowtime1&&$hdtime1||$hdlq==2){//今天不是今天数据验证
 $inina="ltmb.ini";
 $path='ache/'.$wjid;
 //判断ini文件是否存在	
@@ -403,4 +403,3 @@ include("fhgame.php");
 include("./ini/all_lock1.php");
 //解锁当前使用的ini
 
-?>

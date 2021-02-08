@@ -819,4 +819,3 @@ if ($npcc >= 738 && $npcc <= 787 || $npcc >= 768 && $npcc <= 797 || $npcc >= 801
     include("./ini/hd_ini.php");
     $iniFile->updItem('活动次数', [$hdid => $hdcs]);
 }
-?>

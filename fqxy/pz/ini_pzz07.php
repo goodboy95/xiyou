@@ -15,4 +15,4 @@ $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('家具等级', [$jjid => $jjdj]);
 //更新缓存数据
 
-?>
+

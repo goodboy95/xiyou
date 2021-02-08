@@ -97,7 +97,7 @@ $pass=($iniFile->getItem('验证信息','玩家验证'));
 
 
 
-	if($pass!=""||$password!=""){
+	if($pass||$password){
 
 }else{
 $pass=1;

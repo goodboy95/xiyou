@@ -53,7 +53,7 @@ unlink($ininame); //删除文件
 
 
 
-if($xtbl1==""){
+if (!$xtbl1){
 //新增数据
 $q2="xtbl";
 $sql = "insert into $q2 (id,bl1,bl2)  values('1','$m','$d')";
@@ -114,7 +114,7 @@ unlink($ininame); //删除文件
 
 
 
-if($xtbl1==""){
+if (!$xtbl1){
 //新增数据
 $q2="xtbl";
 $sql = "insert into $q2 (id,bl1,bl2)  values('1','$m','$d')";
@@ -175,7 +175,7 @@ $i=$i+1;
 $ik=$i;
 $gj01= $keygjmz[$i];
 $gj02=$keyjzmz[$i];
-if($gj01!=""){
+if($gj01){
 
 echo "<p style='color: black'>".$ik.".</p>";
 echo "<p style='color: black'>".$gj01."（".$gj02."）</p>"."<br>";
@@ -244,4 +244,3 @@ include("fhgame.php");
 
 
 
-?>

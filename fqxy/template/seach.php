@@ -12,7 +12,7 @@ $wjtakes2=iconv_strlen($wjtake10,"UTF-8");
 $wjtake = iconv("utf-8","gbk",$wjtake10);  
 
 
-if($wjtake10!=""){
+if($wjtake10){
 if($wjtakes2>0&&$wjtakes2<=10||$wjtakes2>0&&$wjtakes2<=10){	
 if($wjtakes2>0){
 $wjtake=$wjtake10;

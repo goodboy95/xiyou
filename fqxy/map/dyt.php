@@ -669,4 +669,3 @@ echo "<p style='color: black'>大雁塔(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

@@ -8,7 +8,7 @@
     }else {
         $xxjyurl=config_item('host');//小轩家园本地地址
     }
-?>
+
 
 
 

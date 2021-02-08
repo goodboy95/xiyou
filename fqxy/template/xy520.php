@@ -11,7 +11,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $hdidd));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $hdidd));
@@ -20,7 +20,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             if ($vip == 0) {
                 $ylsl = 20000000;
             } elseif ($vip == 1) {
@@ -171,4 +171,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

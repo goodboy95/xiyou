@@ -123,6 +123,6 @@ $iniFile->updItem('宠物hp', [$ztcwid => $cwhp]);
 
 
 
-?>
+
 
 

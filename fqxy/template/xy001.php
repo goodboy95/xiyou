@@ -34,7 +34,7 @@ if ($zsspd == 1) {
     if ($vip == 0 || $vip == 1 || $vip == 2) {
         $ip1 = $_SERVER['REMOTE_ADDR'];
         $ip2 = $_SERVER['HTTP_X_FORWARDED_FOR'];
-        if ($ip1 != "" && $ip2 == "") {
+        if ($ip1 && $ip2 == "") {
             //更新缓存数据
             $inina = "all_ip_ini.ini";
             $path = 'acher/hdjc';
@@ -50,12 +50,12 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($ip4, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($ip4 == "") {//如果没有值则添加新数据
+            if (!$ip4) {//如果没有值则添加新数据
                 $ip5 = 2;
             }
             echo "<p style='color: red'>【V0-V2号限制情况】</p>" . "<br>";
             echo "<p style='color: black'>【今日绑定IP：" . $ip3 . "】</p>" . "<br>";
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $ip5 == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $ip5 == 2) {//今天不是今天数据验证
                 //改写ip
                 $nowtime = date('Y-m-d H:i:s');
                 include("./sql/mysql.php");//调用数据库连接
@@ -78,7 +78,7 @@ if ($zsspd == 1) {
             include("./ini/all_ip_ini.php");
             $ip0 = ($iniFile->getItem('玩家id', $ip1));
             $ip3 = ($iniFile->getItem('ip地址', $ip0));
-            if ($ip3 == "") {
+            if (!$ip3) {
                 $nowtime = date('Y-m-d H:i:s');
                 include("./sql/mysql.php");//调用数据库连接
                 $q2 = "all_ip";
@@ -124,13 +124,13 @@ if ($zsspd == 1) {
     $jcmz = ($iniFile->getItem('玩家信息', '玩家名字'));
     $jcmp = ($iniFile->getItem('玩家信息', '门派'));
     $jcxb = ($iniFile->getItem('玩家信息', '性别'));
-    if ($jcmz != "" && $jcmp >= 1 && $jcxb >= 1) {
+    if ($jcmz && $jcmp >= 1 && $jcxb >= 1) {
         $hdid = 5;
         $npcc = $hdid;
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $hdid));
         $hdcs = ($iniFile->getItem('活动次数', $hdid));
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $hdid));
@@ -142,7 +142,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" && $wjid != 10000001 || $hdlq == 2 && $wjid != 10000001) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1 && $wjid != 10000001 || $hdlq == 2 && $wjid != 10000001) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
@@ -183,13 +183,13 @@ if ($zsspd == 1) {
             $sql1 = mysqli_query($conn, "select wjid from $q2 where wjid=$wjid");
             $info1 = @mysqli_fetch_array($sql1);
             $phwjid = $info1['wjid'];
-            if ($phwjid == "") {
+            if (!$phwjid) {
                 //获取最大值
                 $q2 = "all_phb";
                 $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
                 $abc = mysqli_fetch_array($sql1);
                 $maxid = $abc[0];
-                if ($maxid == "") {
+                if (!$maxid) {
                     $maxid = 0;
                     $maxidd = $maxid + 1;
                 } else {
@@ -327,4 +327,4 @@ if ($zsspd == 1) {
 } else {
     echo "服务器开小差了";
 }
-?>
+

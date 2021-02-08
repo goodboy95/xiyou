@@ -73,7 +73,7 @@ echo "<p style='color: black'>？</p>";
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>点点蓝光</p></a>"."<br>";
 }
 
-?>
+
 
 
 

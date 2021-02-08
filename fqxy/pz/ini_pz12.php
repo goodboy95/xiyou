@@ -20,4 +20,4 @@ echo "<p style='color: red'>恭喜你！获得的全区唯一靓号ID[".$lh."]</
 $wpsy=2;//使用成功		
 } 
 
-?>
+

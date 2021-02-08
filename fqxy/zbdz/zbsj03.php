@@ -5634,7 +5634,7 @@ echo "<p style='color: red'>".$bumanzu."</p>"."<br>";
 
 
 }
-?>
+
 
 
 

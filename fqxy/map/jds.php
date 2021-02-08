@@ -681,4 +681,3 @@ echo "<p style='color: black'>金兜山(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

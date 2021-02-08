@@ -14,7 +14,7 @@ $wk03=$arr[3];
 $wk04=$arr[4];
 $wk06=$wk03."_".$wk04;
 
-if($wk04!=""&&$npccdd!=0){
+if($wk04&&$npccdd!=0){
 include("./ini/cw_ini.php");
 $iniFile->updItem('宠物星级', ['初始' => $npccdd]);
 
@@ -37,7 +37,7 @@ $wk06=$wk03."_".$wk04;
 
 
 
-if($wk04!=""){
+if($wk04){
 $wk07=$wk05."_".$wk06;	
 	
 $zbid=$wk06;
@@ -376,4 +376,3 @@ include("./ini/jsini.php");
 //解锁当前使用的ini
 
 
-?>

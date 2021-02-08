@@ -30,12 +30,12 @@ $q2="all_qtjc";
 if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
 $sql = " CREATE  TABLE  $q2 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
-`wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
-`vip` int( 11  )  NOT  NULL default  '0' COMMENT  'vip等级',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号id',
+`wjid` int( 11 )  NOT  NULL default  '0' COMMENT  '玩家id',
+`vip` int( 11 )  NOT  NULL default  '0' COMMENT  'vip等级',
  `wjmz` text NOT  NULL  COMMENT  '玩家名字',
  `jcjg` text NOT  NULL  COMMENT  '竞猜价格',
-`cq` int( 11  )  NOT  NULL default  '0' COMMENT  '出拳',
+`cq` int( 11 )  NOT  NULL default  '0' COMMENT  '出拳',
 `timex` text NOT  NULL  COMMENT  '竞猜时间')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
@@ -97,4 +97,3 @@ $iniFile = new iniFile($file);
 	
 	
 	
-?>

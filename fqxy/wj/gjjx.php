@@ -202,6 +202,6 @@ echo "<p style='color: red'>每次最少捐献100万以上的银两哦</p>"."<br
 } else {
 echo "<p style='color: red'>输入有误请重新输入</p>"."<br>";
 }
-?>
+
 
 

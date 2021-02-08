@@ -123,7 +123,7 @@ $svl=$keytxxsp[$i];
 if($svl ==2){
 $txid=$keywpidp[$i];
 $txmzsp=$keywpmzp[$i];
-if($txmzs ==""){
+if (!$txmzs){
 $txmzs=$keywpmzp[$i];
 }
 
@@ -332,4 +332,3 @@ include("./ini/ojsini.php");
 
 
 
-?>

@@ -165,4 +165,3 @@ include("fhgame.php");
 include("./ini/all_lock1.php");
 //解锁当前使用的ini
 
-?>

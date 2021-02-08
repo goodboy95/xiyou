@@ -16,7 +16,7 @@ $path='acher/guoz';
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 //更新缓存数据
-if($xtbl1==""){
+if (!$xtbl1){
 //新增数据
 $q2="xtbl";
 $sql = "insert into $q2 (id,bl1,bl2)  values('1','$m','$d')";
@@ -62,6 +62,6 @@ $iniFile->updItem('国战判断时间', ['日' => $d]);
 
 
 
-?>
+
 
 

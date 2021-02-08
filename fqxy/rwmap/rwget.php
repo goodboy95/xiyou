@@ -29,11 +29,11 @@ for ($d = 0; $d < $ccm; $d++) {
         $kcrl = $wpkc * $wpzl + $kcrl;
     }
 }
-if ($kcrl != "") {
+if ($kcrl) {
     include("./pz/ini_pzz09.php");
     echo $manzu1;
 }
-?>
+
 
 
 

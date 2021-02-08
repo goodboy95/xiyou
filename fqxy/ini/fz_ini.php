@@ -22,4 +22,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

@@ -83,7 +83,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'>飞贼背影</p></a>"."<br>
 
 
 
-?>
+
 
 
 

@@ -46,7 +46,7 @@ echo "<p style='color: black'>没有这个boss=id编号".$npcc."请尝试联系g
 
 
 
-?>
+
 
 
 

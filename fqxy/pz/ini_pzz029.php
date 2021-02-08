@@ -73,4 +73,4 @@ echo "<p style='color: black'>对不起！升级".$ms1."需要".$wpts."</p>"."<b
 
 
 
-?>
+

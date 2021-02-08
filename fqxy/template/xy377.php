@@ -13,7 +13,7 @@ $wk04=$arr[4];
 $wk06=$wk03."_".$wk04;
 $wk07=$wk05."_".$wk06;	
 
-if($wk04!=""){
+if($wk04){
 
 
 $ddfz=1;
@@ -313,4 +313,3 @@ include("./ini/jsini.php");
 //解锁当前使用的ini
 
 
-?>

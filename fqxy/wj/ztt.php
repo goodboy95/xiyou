@@ -403,6 +403,6 @@ $ininame = $path . "/" . $inina;
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 $wjxx1 = ($iniFile->getCategory('玩家信息'));
-?>
+
 
 

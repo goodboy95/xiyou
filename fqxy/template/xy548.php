@@ -170,7 +170,7 @@ $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
-if($ckwpid==""){
+if (!$ckwpid){
 
 //获取最大值
 $q2="wp".$wjid;
@@ -178,7 +178,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -403,7 +403,7 @@ $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
-if($ckwpid==""){
+if (!$ckwpid){
 
 //获取最大值
 $q2="wp".$wjid;
@@ -411,7 +411,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -637,4 +637,3 @@ include("./ini/jsini.php");
 
 
 
-?>

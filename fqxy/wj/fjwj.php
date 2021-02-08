@@ -37,10 +37,10 @@ if ($zsspd == 1) {
         $counter_file = $ininame;//文件名及路径,在当前目录下新建aa.txt文件
         $fopen = fopen($counter_file, 'wb ');//新建文件命令
         fputs($fopen, '[地图信息]');//向文件中写入内容;
-		# 实例化ini文件操作类，并载入 .ini文件
-		$iniFile = new iniFile($ininame);
-		fclose($fopen);
-	} else {
+        # 实例化ini文件操作类，并载入 .ini文件
+        $iniFile = new iniFile($ininame);
+        fclose($fopen);
+    } else {
         # 实例化ini文件操作类，并载入 .ini文件
         $iniFile = new iniFile($ininame);
     }
@@ -166,11 +166,10 @@ if ($zsspd == 1) {
                     $wjvip = ($iniFile->getItem('玩家vip值' . $dtx . 'x' . $dty, $v));
                     $wjgjmz = ($iniFile->getItem('国家名字值' . $dtx . 'x' . $dty, $v));
                     $wjgjzw = ($iniFile->getItem('国家职务名字值' . $dtx . 'x' . $dty, $v));
-                    if ($i == 1) {
-                    } else {
+                    if ($i != 1) {
                         echo "<p style='color: black'>,</p>";
                     }
-                    if ($wjvip != "") {
+                    if ($wjvip) {
                         $img = 'pic/vip/' . "vip" . $wjvip . '.png';
                         echo '<img src="' . $img . ' "alt="图片"/〉';
                         echo "<br>";
@@ -180,7 +179,7 @@ if ($zsspd == 1) {
                     $cdid[] = $cmid;
                     $clj[] = 93;
                     $npc[] = $v;
-                    if ($wjgjmz != "") {
+                    if ($wjgjmz) {
                         echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjmz . "【" . $wjgjmz . "】（" . $wjgjzw . "）</p></a>";
                     } else {
                         echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>" . $wjmz . "</p></a>";
@@ -206,7 +205,7 @@ if ($zsspd == 1) {
     $ydtx = $ydtx ?? "";
     $ydty = $ydty ?? "";
     if ($ydtx != $dtx || $ydty != $dty) {
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -221,7 +220,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('玩家id值' . $ydtx . 'x' . $ydty, $wjid);
         }
         //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -237,7 +236,7 @@ if ($zsspd == 1) {
         }
         // 玩家名字值暂时用id代替后期更新
         // 移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -252,7 +251,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('玩家vip值' . $ydtx . 'x' . $ydty, $wjid);
         }
         // 移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -267,7 +266,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('国家名字值' . $ydtx . 'x' . $ydty, $wjid);
         }
         //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -282,7 +281,7 @@ if ($zsspd == 1) {
             $iniFile->delItem('国家职务名字值' . $ydtx . 'x' . $ydty, $wjid);
         }
         //移动清除掉上次地图坐标
-        if ($ydtx != "" && $dtx != "" && $ydtx != $dtx || $ydtx != "" && $dtx != "" && $ydty != $dty) {
+        if ($ydtx && $dtx && $ydtx != $dtx || $ydtx && $dtx && $ydty != $dty) {
             $path = 'acher/map';
             include("mapid.php");
             $ininames = $path . "/" . $inina;
@@ -301,4 +300,4 @@ if ($zsspd == 1) {
 } else {
     echo "fm";
 }
-?>
+

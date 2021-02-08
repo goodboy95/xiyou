@@ -52,20 +52,20 @@ $mysql002=$wjid;
  //宠物身上装备
 $mysql003="cwzbb".$mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`zbid` int( 11  )  NOT  NULL default  '0' COMMENT  '装备ID',
-`zbxj` int( 11  )  NOT  NULL default  '0' COMMENT  '装备星级',
-`zbk1` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔1',
-`zbxq1` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌1',
-`zbk2` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔2',
-`zbxq2` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌2',
-`zbk3` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔3',
-`zbxq3` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌3',
-`zbk4` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔4',
-`zbxq4` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌4',
-`zbk5` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔5',
-`zbxq5` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌5',
-`zbfl` int( 11  )  NOT  NULL default  '0' COMMENT  '装备分类',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`zbid` int( 11 )  NOT  NULL default  '0' COMMENT  '装备ID',
+`zbxj` int( 11 )  NOT  NULL default  '0' COMMENT  '装备星级',
+`zbk1` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔1',
+`zbxq1` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌1',
+`zbk2` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔2',
+`zbxq2` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌2',
+`zbk3` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔3',
+`zbxq3` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌3',
+`zbk4` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔4',
+`zbxq4` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌4',
+`zbk5` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔5',
+`zbxq5` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌5',
+`zbfl` int( 11 )  NOT  NULL default  '0' COMMENT  '装备分类',
  `cwid` text NOT  NULL  COMMENT  '宠物ID')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
@@ -164,4 +164,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

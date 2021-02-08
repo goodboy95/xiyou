@@ -136,7 +136,7 @@ $xxh= $ym*10-9+$i;
 
 echo "<p style='color: black'>".$xxh.".</p>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -213,7 +213,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 
 echo "<p style='color: black'>".$xxh.".</p>";
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -278,7 +278,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 	
 echo "<p style='color: black'>".$xxh.".</p>";
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -463,4 +463,3 @@ include("./ini/jsini.php");
 
 
 
-?>

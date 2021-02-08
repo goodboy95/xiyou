@@ -284,6 +284,6 @@ $inina="bjt_fb.ini";
 
 
 
-?>
+
 
 

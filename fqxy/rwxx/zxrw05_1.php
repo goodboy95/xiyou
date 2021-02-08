@@ -612,4 +612,3 @@ echo "<p style='color: black'>没有这个任务变量：".$rid."请尝试联系
 
 
 
-?>

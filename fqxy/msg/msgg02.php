@@ -63,4 +63,4 @@ echo \"<p style='color: " . $msgcolor . "'>[系统]" . $msg . "</p>\";
         break;
     }
 }
-?>
+

@@ -248,7 +248,7 @@ include("wpsyts.php");
 
 	
 
-?>
+
 
 
 

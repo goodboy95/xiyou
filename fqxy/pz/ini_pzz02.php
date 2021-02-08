@@ -48,4 +48,4 @@ echo "<p style='color: red'>对不起！需要：".$bumanzu."</p>"."<br>";
 
 }
 
-?>
+

@@ -59,4 +59,3 @@ $iniFile->addCategory('国家积分', [$row['id']=>$row['gjjf']]);
 $iniFile = new iniFile($file);
 
 
-?>

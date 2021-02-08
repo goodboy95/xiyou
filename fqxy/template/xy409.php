@@ -125,7 +125,7 @@ echo "<p style='color: black'>今日签到情况：</p>";
 include("./ini/hd_ini.php");
 $hdtime=($iniFile->getItem('活动时间','30'));
 $hdlq=1;
-if ($hdtime=="") {//如果没有值则添加新数据
+if (!$hdtime) {//如果没有值则添加新数据
 include("./yxpz/hd_pz.php");
 include("./ini/hd_ini.php");//重新获取缓存数据
 $hdtime=($iniFile->getItem('活动时间','30'));
@@ -135,7 +135,7 @@ $hdlq=2;
 $nowtime=date('Y-m-d H:i:s');
 $hdtime1 = substr($hdtime,0,10); 
 $nowtime1 = substr($nowtime,0,10); 	
-if($hdtime1!=$nowtime1&&$hdtime1!=""||$hdlq==2){//今天不是今天数据验证
+if($hdtime1!=$nowtime1&&$hdtime1||$hdlq==2){//今天不是今天数据验证
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -250,4 +250,3 @@ include("./ini/jsini.php");
 
 
 
-?>

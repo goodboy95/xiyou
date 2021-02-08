@@ -3179,6 +3179,6 @@ $jjlf=0;//雷防
 echo "<p style='color: black'>未获取到家具信息请联系gm进行解决</p>"."<br>";
 
 }
-?>
+
 
 

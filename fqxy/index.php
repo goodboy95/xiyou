@@ -2,7 +2,7 @@
 error_reporting(E_ALL & ~E_NOTICE); 
 $wjid=$_GET['wjid'];
 $password=$_GET['pass'];
-if($wjid!=""||$password!=""){
+if($wjid||$password){
 //ini文件名字
 $inina="user.ini";
 //路径
@@ -13,7 +13,7 @@ include("../class/iniclass.php");//调用iniclass文件
 # 实例化ini文件操作类，并载入 .ini文件
 $iniFile = new iniFile($ininame);
 $pass=($iniFile->getItem('验证信息','玩家验证'));
-if($pass==$password&&$password!=""&&$pass!=""){
+if($pass==$password&&$password&&$pass){
 $name=($iniFile->getItem('验证信息','玩家昵称'));
 $xxjyurl="?wjid=".$wjid."&&pass=".$password;
 }else{

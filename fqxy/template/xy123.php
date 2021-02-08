@@ -598,4 +598,3 @@ include("template/xy002.php");//游戏主页
 include("./ini/jsini.php");
 //解锁当前使用的ini
 
-?>

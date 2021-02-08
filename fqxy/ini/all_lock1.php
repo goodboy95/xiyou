@@ -7,4 +7,3 @@ if ($all_lock2 == 1) {
     echo "服务器开小差了";
 }
 fclose($allfp);
-?>

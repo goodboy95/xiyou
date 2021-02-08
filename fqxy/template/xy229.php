@@ -235,7 +235,7 @@ $xxxbs=$xxbs[$ym*10-9+$i];
 $zbxjj=$xvj[$ym*10-9+$i];
 $gsjgg=$gsjg[$ym*10-9+$i];
 
-if($clname!=""){
+if($clname){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -375,4 +375,3 @@ include("fhgame.php");
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

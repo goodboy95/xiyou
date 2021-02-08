@@ -64,6 +64,6 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>$cpl
 
 
 
-?>
+
 
 

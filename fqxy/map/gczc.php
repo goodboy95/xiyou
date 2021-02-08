@@ -144,7 +144,7 @@ $hdtime=($iniFile->getItem('防守时间','初始'));
 $fsgj=($iniFile->getItem('防守国家','初始'));
 $fsgjid=($iniFile->getItem('防守国家id','初始'));
 $vipqytime=300;//秒数30分钟
-if ($hdtime!="") {
+if ($hdtime) {
 $startdate=$hdtime;
 $enddate=date('Y-m-d H:i:s');
 $minute=floor((strtotime($enddate)-strtotime($startdate)));
@@ -1923,4 +1923,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查�
 
 
 
-?>

@@ -9,7 +9,7 @@ $q2 = "o_user_list";
 $sql1 = mysqli_query($conn, "select MAX(uid) from $q2");
 $abc = mysqli_fetch_array($sql1);
 $maxid = $abc[0];
-if ($maxid == "") {
+if (!$maxid) {
     $maxidd = $maxid + 1;
 } else {
     $maxidd = $maxid + 1;
@@ -51,55 +51,55 @@ if (!mysqli_query($conn, $sql)) {
 //仓库其他
 $mysql003 = "ckqt" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库其他ID',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库其他数量')
+(  `wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库其他ID',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库其他数量')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //仓库物品
 $mysql003 = "ckwp" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库物品ID',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库物品数量',
-`wpfl` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库物品分类')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库物品ID',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库物品数量',
+`wpfl` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库物品分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //仓库装备
 $mysql003 = "ckzb" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`zbid` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备ID',
-`zbxj` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备星级',
-`zbk1` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备孔1',
-`zbxq1` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库镶嵌1',
-`zbk2` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备孔2',
-`zbxq2` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库镶嵌2',
-`zbk3` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备孔3',
-`zbxq3` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库镶嵌3',
-`zbk4` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备孔4',
-`zbxq4` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库镶嵌4',
-`zbk5` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备孔5',
-`zbxq5` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库镶嵌5',
-`zbpd` int( 11  )  NOT  NULL default  '0' COMMENT  '仓库装备佩戴')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`zbid` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备ID',
+`zbxj` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备星级',
+`zbk1` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备孔1',
+`zbxq1` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库镶嵌1',
+`zbk2` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备孔2',
+`zbxq2` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库镶嵌2',
+`zbk3` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备孔3',
+`zbxq3` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库镶嵌3',
+`zbk4` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备孔4',
+`zbxq4` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库镶嵌4',
+`zbk5` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备孔5',
+`zbxq5` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库镶嵌5',
+`zbpd` int( 11 )  NOT  NULL default  '0' COMMENT  '仓库装备佩戴')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //丹药使用限制表
 $mysql003 = "dyxx" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '丹药ID',
-`sycs` int( 11  )  NOT  NULL default  '0' COMMENT  '丹药使用次数')
+(  `wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '丹药ID',
+`sycs` int( 11 )  NOT  NULL default  '0' COMMENT  '丹药使用次数')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //挂售其他
 $mysql003 = "gsqt" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售其他id',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售其他数量',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售其他id',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售其他数量',
  `gsjg` text NOT  NULL  COMMENT  '挂售价格')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
@@ -107,9 +107,9 @@ mysqli_query($conn, $sql);
 //挂售物品
 $mysql003 = "gswp" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售物品id',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售物品数量',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售物品id',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售物品数量',
  `gsjg` text NOT  NULL  COMMENT  '挂售价格')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
@@ -117,20 +117,20 @@ mysqli_query($conn, $sql);
 //挂售装备
 $mysql003 = "gszb" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`zbid` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备ID',
-`zbxj` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备星级',
-`zbk1` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备孔1',
-`zbxq1` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售镶嵌1',
-`zbk2` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备孔2',
-`zbxq2` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售镶嵌2',
-`zbk3` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备孔3',
-`zbxq3` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售镶嵌3',
-`zbk4` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备孔4',
-`zbxq4` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售镶嵌4',
-`zbk5` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备孔5',
-`zbxq5` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售镶嵌5',
-`zbpd` int( 11  )  NOT  NULL default  '0' COMMENT  '挂售装备佩戴',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`zbid` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备ID',
+`zbxj` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备星级',
+`zbk1` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备孔1',
+`zbxq1` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售镶嵌1',
+`zbk2` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备孔2',
+`zbxq2` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售镶嵌2',
+`zbk3` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备孔3',
+`zbxq3` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售镶嵌3',
+`zbk4` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备孔4',
+`zbxq4` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售镶嵌4',
+`zbk5` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备孔5',
+`zbxq5` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售镶嵌5',
+`zbpd` int( 11 )  NOT  NULL default  '0' COMMENT  '挂售装备佩戴',
  `gsjg` text NOT  NULL  COMMENT  '挂售价格')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
@@ -138,19 +138,19 @@ mysqli_query($conn, $sql);
 //好友
 $mysql003 = "hy" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`hyid` int( 11  )  NOT  NULL default  '0' COMMENT  '好友id',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`hyid` int( 11 )  NOT  NULL default  '0' COMMENT  '好友id',
  `hymz` text NOT  NULL  COMMENT  '好友名字',
-`hyfl` int( 11  )  NOT  NULL default  '0' COMMENT  '好友分类')
+`hyfl` int( 11 )  NOT  NULL default  '0' COMMENT  '好友分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //技能
 $mysql003 = "jnn" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`jnid` int( 11  )  NOT  NULL default  '0' COMMENT  '技能id',
-`jndj` int( 11  )  NOT  NULL default  '0' COMMENT  '技能等级')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`jnid` int( 11 )  NOT  NULL default  '0' COMMENT  '技能id',
+`jndj` int( 11 )  NOT  NULL default  '0' COMMENT  '技能等级')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 $sql = "insert into $mysql003 (id,jnid,jndj)  values('1','15','1')";
@@ -167,16 +167,16 @@ if (!mysqli_query($conn, $sql)) {
 //其他
 $mysql003 = "qt" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '其他ID',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '其他数量')
+(  `wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '其他ID',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '其他数量')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //声望
 $mysql003 = "sw" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `swid` int( 11  )  NOT  NULL default  '0' COMMENT  '声望ID',
-`swzz` int( 11  )  NOT  NULL default  '0' COMMENT  '声望值')
+(  `swid` int( 11 )  NOT  NULL default  '0' COMMENT  '声望ID',
+`swzz` int( 11 )  NOT  NULL default  '0' COMMENT  '声望值')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
@@ -238,176 +238,176 @@ if (!mysqli_query($conn, $sql)) {
 //头衔
 $mysql003 = "tx" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `txid` int( 11  )  NOT  NULL default  '0' COMMENT  '头衔ID',
-`txxs` int( 11  )  NOT  NULL default  '0' COMMENT  '头衔显示')
+(  `txid` int( 11 )  NOT  NULL default  '0' COMMENT  '头衔ID',
+`txxs` int( 11 )  NOT  NULL default  '0' COMMENT  '头衔显示')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //物品
 $mysql003 = "wp" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '物品ID',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '物品数量',
-`wpfl` int( 11  )  NOT  NULL default  '0' COMMENT  '物品分类')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '物品ID',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '物品数量',
+`wpfl` int( 11 )  NOT  NULL default  '0' COMMENT  '物品分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //每日物品使用次数
 $mysql003 = "wpp" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '物品ID',
-`n` int( 11  )  NOT  NULL default  '0' COMMENT  '年',
-`y` int( 11  )  NOT  NULL default  '0' COMMENT  '月',
-`r` int( 11  )  NOT  NULL default  '0' COMMENT  '日',
-`s` int( 11  )  NOT  NULL default  '0' COMMENT  '时',
-`f` int( 11  )  NOT  NULL default  '0' COMMENT  '分',
-`m` int( 11  )  NOT  NULL default  '0' COMMENT  '秒',
-`wpcs` int( 11  )  NOT  NULL default  '0' COMMENT  '物品使用次数')
+(  `wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '物品ID',
+`n` int( 11 )  NOT  NULL default  '0' COMMENT  '年',
+`y` int( 11 )  NOT  NULL default  '0' COMMENT  '月',
+`r` int( 11 )  NOT  NULL default  '0' COMMENT  '日',
+`s` int( 11 )  NOT  NULL default  '0' COMMENT  '时',
+`f` int( 11 )  NOT  NULL default  '0' COMMENT  '分',
+`m` int( 11 )  NOT  NULL default  '0' COMMENT  '秒',
+`wpcs` int( 11 )  NOT  NULL default  '0' COMMENT  '物品使用次数')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //背包装备
 $mysql003 = "zb" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`zbid` int( 11  )  NOT  NULL default  '0' COMMENT  '装备ID',
-`zbxj` int( 11  )  NOT  NULL default  '0' COMMENT  '装备星级',
-`zbk1` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔1',
-`zbxq1` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌1',
-`zbk2` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔2',
-`zbxq2` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌2',
-`zbk3` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔3',
-`zbxq3` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌3',
-`zbk4` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔4',
-`zbxq4` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌4',
-`zbk5` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔5',
-`zbxq5` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌5',
-`zbpd` int( 11  )  NOT  NULL default  '0' COMMENT  '装备佩戴')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`zbid` int( 11 )  NOT  NULL default  '0' COMMENT  '装备ID',
+`zbxj` int( 11 )  NOT  NULL default  '0' COMMENT  '装备星级',
+`zbk1` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔1',
+`zbxq1` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌1',
+`zbk2` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔2',
+`zbxq2` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌2',
+`zbk3` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔3',
+`zbxq3` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌3',
+`zbk4` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔4',
+`zbxq4` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌4',
+`zbk5` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔5',
+`zbxq5` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌5',
+`zbpd` int( 11 )  NOT  NULL default  '0' COMMENT  '装备佩戴')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //身上装备
 $mysql003 = "zbb" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`zbid` int( 11  )  NOT  NULL default  '0' COMMENT  '装备ID',
-`zbxj` int( 11  )  NOT  NULL default  '0' COMMENT  '装备星级',
-`zbk1` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔1',
-`zbxq1` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌1',
-`zbk2` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔2',
-`zbxq2` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌2',
-`zbk3` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔3',
-`zbxq3` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌3',
-`zbk4` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔4',
-`zbxq4` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌4',
-`zbk5` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔5',
-`zbxq5` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌5',
-`zbfl` int( 11  )  NOT  NULL default  '0' COMMENT  '装备分类')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`zbid` int( 11 )  NOT  NULL default  '0' COMMENT  '装备ID',
+`zbxj` int( 11 )  NOT  NULL default  '0' COMMENT  '装备星级',
+`zbk1` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔1',
+`zbxq1` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌1',
+`zbk2` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔2',
+`zbxq2` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌2',
+`zbk3` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔3',
+`zbxq3` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌3',
+`zbk4` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔4',
+`zbxq4` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌4',
+`zbk5` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔5',
+`zbxq5` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌5',
+`zbfl` int( 11 )  NOT  NULL default  '0' COMMENT  '装备分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //祝福状态
 $mysql003 = "zf" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '祝福id',
-`n` int( 11  )  NOT  NULL default  '0' COMMENT  '年',
-`y` int( 11  )  NOT  NULL default  '0' COMMENT  '月',
-`r` int( 11  )  NOT  NULL default  '0' COMMENT  '日',
-`s` int( 11  )  NOT  NULL default  '0' COMMENT  '时',
-`f` int( 11  )  NOT  NULL default  '0' COMMENT  '分',
-`m` int( 11  )  NOT  NULL default  '0' COMMENT  '秒')
+(  `wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '祝福id',
+`n` int( 11 )  NOT  NULL default  '0' COMMENT  '年',
+`y` int( 11 )  NOT  NULL default  '0' COMMENT  '月',
+`r` int( 11 )  NOT  NULL default  '0' COMMENT  '日',
+`s` int( 11 )  NOT  NULL default  '0' COMMENT  '时',
+`f` int( 11 )  NOT  NULL default  '0' COMMENT  '分',
+`m` int( 11 )  NOT  NULL default  '0' COMMENT  '秒')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //增值仓库
 $mysql003 = "zzck" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`wpid` int( 11  )  NOT  NULL default  '0' COMMENT  '物品ID',
-`wpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '物品数量',
-`wpfl` int( 11  )  NOT  NULL default  '0' COMMENT  '物品分类')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`wpid` int( 11 )  NOT  NULL default  '0' COMMENT  '物品ID',
+`wpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '物品数量',
+`wpfl` int( 11 )  NOT  NULL default  '0' COMMENT  '物品分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //副本
 $mysql003 = "fb" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
 `fb` datetime  NOT  NULL  COMMENT  '副本时间',
-`wc` int( 11  )  NOT  NULL default  '0' COMMENT  '副本完成',
-`cs` int( 11  )  NOT  NULL default  '0' COMMENT  '副本次数')
+`wc` int( 11 )  NOT  NULL default  '0' COMMENT  '副本完成',
+`cs` int( 11 )  NOT  NULL default  '0' COMMENT  '副本次数')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //家具
 $mysql003 = "jj" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`jjid` int( 11  )  NOT  NULL default  '0' COMMENT  '家具ID',
-`jjdj` int( 11  )  NOT  NULL default  '0' COMMENT  '家具等级',
-`jjbf` int( 11  )  NOT  NULL default  '0' COMMENT  '家具摆放')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`jjid` int( 11 )  NOT  NULL default  '0' COMMENT  '家具ID',
+`jjdj` int( 11 )  NOT  NULL default  '0' COMMENT  '家具等级',
+`jjbf` int( 11 )  NOT  NULL default  '0' COMMENT  '家具摆放')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //游戏任务
 $mysql003 = "yxrw" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`rwid` int( 11  )  NOT  NULL default  '0' COMMENT  '任务ID',
-`rwbl` int( 11  )  NOT  NULL default  '0' COMMENT  '任务变量',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`rwid` int( 11 )  NOT  NULL default  '0' COMMENT  '任务ID',
+`rwbl` int( 11 )  NOT  NULL default  '0' COMMENT  '任务变量',
  `rwmz` text NOT  NULL  COMMENT  '任务名字',
-`yisg` int( 11  )  NOT  NULL default  '0' COMMENT  '已杀怪',
-`ysg` int( 11  )  NOT  NULL default  '0' COMMENT  '要杀怪',
-`rwfl` int( 11  )  NOT  NULL default  '0' COMMENT  '任务分类')
+`yisg` int( 11 )  NOT  NULL default  '0' COMMENT  '已杀怪',
+`ysg` int( 11 )  NOT  NULL default  '0' COMMENT  '要杀怪',
+`rwfl` int( 11 )  NOT  NULL default  '0' COMMENT  '任务分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //活动
 $mysql003 = "hd" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `hdid` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
+(  `hdid` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
 `hdtime` datetime  NOT  NULL  COMMENT  '活动时间',
-`hdcs` int( 11  )  NOT  NULL default  '0' COMMENT  '活动次数')
+`hdcs` int( 11 )  NOT  NULL default  '0' COMMENT  '活动次数')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //宠物
 $mysql003 = "cw" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`cwid` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物id',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`cwid` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物id',
  `cwmz` text NOT  NULL  COMMENT  '宠物名字',
-`cwdj` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物等级',
-`cwxj` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物星级',
-`cwby` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物变异',
-`cwxb` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物品质',
-`cwcz` int( 11  )  NOT  NULL default  '0' COMMENT  '宠物出战')
+`cwdj` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物等级',
+`cwxj` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物星级',
+`cwby` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物变异',
+`cwxb` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物品质',
+`cwcz` int( 11 )  NOT  NULL default  '0' COMMENT  '宠物出战')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
 //宠物身上装备
 $mysql003 = "cwzbb" . $mysql002;
 $sql = " CREATE  TABLE  $mysql003 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号ID',
-`zbid` int( 11  )  NOT  NULL default  '0' COMMENT  '装备ID',
-`zbxj` int( 11  )  NOT  NULL default  '0' COMMENT  '装备星级',
-`zbk1` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔1',
-`zbxq1` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌1',
-`zbk2` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔2',
-`zbxq2` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌2',
-`zbk3` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔3',
-`zbxq3` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌3',
-`zbk4` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔4',
-`zbxq4` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌4',
-`zbk5` int( 11  )  NOT  NULL default  '0' COMMENT  '装备孔5',
-`zbxq5` int( 11  )  NOT  NULL default  '0' COMMENT  '镶嵌5',
-`zbfl` int( 11  )  NOT  NULL default  '0' COMMENT  '装备分类',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号ID',
+`zbid` int( 11 )  NOT  NULL default  '0' COMMENT  '装备ID',
+`zbxj` int( 11 )  NOT  NULL default  '0' COMMENT  '装备星级',
+`zbk1` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔1',
+`zbxq1` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌1',
+`zbk2` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔2',
+`zbxq2` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌2',
+`zbk3` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔3',
+`zbxq3` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌3',
+`zbk4` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔4',
+`zbxq4` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌4',
+`zbk5` int( 11 )  NOT  NULL default  '0' COMMENT  '装备孔5',
+`zbxq5` int( 11 )  NOT  NULL default  '0' COMMENT  '镶嵌5',
+`zbfl` int( 11 )  NOT  NULL default  '0' COMMENT  '装备分类',
  `cwid` text NOT  NULL  COMMENT  '宠物ID')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 
-?>
+
 
 
 

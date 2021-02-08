@@ -491,6 +491,6 @@ echo "<p style='color: black'>对不起！你需要".$ysmz."x".$wnyssl."才能�
 include("./ini/jsini.php");
 //解锁当前使用的ini
 
-?>
+
 
 

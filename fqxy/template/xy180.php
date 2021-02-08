@@ -104,7 +104,7 @@ $iniFile->updItem('玩家信息', ['帮派职务' => $bpzw2]);
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -230,7 +230,7 @@ include("./pz/pz01.php");
 include("./ini/ojsini.php");
 //解锁当前使用的ini
 
-?>
+
 
 
 

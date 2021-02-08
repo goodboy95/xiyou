@@ -32,13 +32,13 @@ $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['xlid'];
-if($xlpd ==""){
+if (!$xlpd){
 //获取最大值
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -67,13 +67,13 @@ $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['xlid'];
-if($xlpd ==""){
+if (!$xlpd){
 //获取最大值
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -100,13 +100,13 @@ $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['xlid'];
-if($xlpd ==""){
+if (!$xlpd){
 //获取最大值
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -122,13 +122,13 @@ $q2="all_jc";
 $sql1=mysqli_query($conn, "select xlid from $q2 where xlid=$xlidd");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['xlid'];
-if($xlpd ==""){
+if (!$xlpd){
 //获取最大值
 $q2="all_jc";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -189,4 +189,3 @@ $iniFile = new iniFile($file);
 	
 	
 	
-?>

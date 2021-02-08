@@ -76,4 +76,4 @@ if ($mkk >= 1) {//改动
 } else {
     echo $clpl;
 }
-?>
+

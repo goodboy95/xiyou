@@ -76,14 +76,14 @@ if($_POST['submit']){
 		
 $zczh1= $_POST['zc1'];	
 	
-if($zczh1!=""){
+if($zczh1){
 $zczh2= $_POST['zc2'];	
-if($zczh2!=""){
+if($zczh2){
 	$zczh3= $_POST['zc3'];	
-if($zczh3!=""){
+if($zczh3){
 	
 	$zczh4= $_POST['zc4'];	
-if($zczh4!=""){
+if($zczh4){
 	if($zczh2==$zczh3){	
 	
 		

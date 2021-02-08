@@ -12,7 +12,7 @@ $wjtake10= $_POST['jdqg'];
 $wjtakes2=iconv_strlen($wjtake10,"UTF-8");
 $wjtake = iconv("utf-8","gbk",$wjtake10);  
 
-if($wjtake!=""){
+if($wjtake){
 	
 		
 if(preg_match("/[ ';~`@#$%^&+=)(<>{}]|\]|\[|\/|\\\|\"|\|/",$wjtake)){ 

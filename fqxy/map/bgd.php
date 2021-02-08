@@ -677,4 +677,3 @@ echo "<p style='color: black'>白骨洞(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

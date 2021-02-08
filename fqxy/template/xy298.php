@@ -7,7 +7,7 @@ if ($zsspd == 1) {
         $wjtake10 = $_POST['wjtoke'];
         $wjtakes2 = iconv_strlen($wjtake10, "UTF-8");
         $wjtake = iconv("utf-8", "gbk", $wjtake10);
-        if ($wjtake10 != "") {
+        if ($wjtake10) {
             if ($wjtakes2 > 0 && $wjtakes2 <= 7 || $wjtakes2 > 0 && $wjtakes2 <= 7) {
                 if ($wjtakes2 > 0) {
                     $wjtake = $wjtake10;
@@ -23,7 +23,7 @@ if ($zsspd == 1) {
                     $sql1 = mysqli_query($conn, "select username from $q2 where username='$wjtake'");
                     $info1 = @mysqli_fetch_array($sql1);
                     $pdbp2 = $info1['username'];
-                    if ($pdbp2 == "") {
+                    if (!$pdbp2) {
                         $q2 = "all_zt";
                         $strsql = "update $q2 set username='$wjtake' where wjid=$wjid";//物品id号必改值
                         $result = mysqli_query($conn, $strsql);

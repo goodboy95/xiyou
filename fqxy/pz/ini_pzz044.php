@@ -25,4 +25,4 @@ $xtxx= "恭喜玩家".$wjmz."获得了尊享VIP特权".$addtime."天（到期时
 include("./msg/msgg02.php");
 
 
-?>
+

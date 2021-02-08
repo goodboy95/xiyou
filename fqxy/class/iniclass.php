@@ -47,7 +47,7 @@ class iniFile
 
     public function getCategory($category_name)
     {
-        return $this->iniFileHandle[$category_name];
+        return array_key_exists($category_name, $this->iniFileHandle) ?  $this->iniFileHandle[$category_name] : null;
     }
 
     public function getItem($category_name, $item_name)
@@ -103,4 +103,3 @@ class iniFile
         }
     }
 }
-?>

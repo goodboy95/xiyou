@@ -22,7 +22,7 @@ $wjwp=($iniFile->getItem($wpzzz,$wwpid));
 
 
 $q2="all_yl";  
-if($wjwp !=""){
+if($wjwp){
 $xwpsl=$wjwp-$wwpsl;
 
 
@@ -90,4 +90,4 @@ echo "<br>";
 
 
 
-?>
+

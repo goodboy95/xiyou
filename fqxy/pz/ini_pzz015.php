@@ -9,4 +9,4 @@ $result = mysqli_query($conn, $strsql);
 
 //缓存修改
 $iniFile->updItem('声望值', [$swmz => $yll]);
-?>
+

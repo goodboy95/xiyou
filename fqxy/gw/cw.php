@@ -5,7 +5,7 @@ if ($dtx==$bossx&&$dty==$bossy) {
 //调用小boss
 include("./ini/qycw_ini.php");
 $bossdate1=($iniFile->getItem('boss',$bosid));
-if ($bossdate1!="") {
+if ($bossdate1) {
 $startdate=$bossdate1;
 $enddate=date('Y-m-d H:i:s');
 $date=floor((strtotime($enddate)-strtotime($startdate)));
@@ -55,7 +55,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$b
 
 
 
-?>
+
 
 
 

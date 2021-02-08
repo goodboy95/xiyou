@@ -33,7 +33,7 @@ echo "<p style='color: black'>没有这个装备id编号".$npcc."请尝试联系
 
 }
 
-?>
+
 
 
 

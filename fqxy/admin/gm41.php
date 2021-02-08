@@ -14,7 +14,7 @@ $wjname=($iniFile->getItem('玩家信息','玩家名字'));
 $npcc=$wpid;
 //调用物品信息
 include("./wp/wpxx.php");
-if($wpmz!=""){
+if($wpmz){
 
 echo "<p style='color: red'>确定要向【全服所有玩家】发放".$wpmz."x".$wpsl."吗？</p>"."<br>";
 
@@ -65,4 +65,4 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p 
 
 
 
-?>
+

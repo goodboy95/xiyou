@@ -15,7 +15,7 @@ $wjwp = ($iniFile->getItem($wpzzz, $wwpid));
 
 include("./sql/mysql.php");//调用数据库连接
 $q2 = "all_yl";
-if ($wjwp != "") {
+if ($wjwp) {
     $xwpsl = $wjwp + $wwpsl;
     if ($xwpsl > 99999999999) {
         $xwpsl = 99999999999;
@@ -58,4 +58,4 @@ if ($ylmm == 2) {
 echo "<br>";
 
 
-?>
+

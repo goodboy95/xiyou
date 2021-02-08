@@ -12,4 +12,3 @@ if ($npcc == 1 && $npcc <= 100) {
 } else {
     echo "<p style='color: black'>没有这个任务id编号" . $npcc . "请尝试联系gm解决此问题！！</p><br>";
 }
-?>

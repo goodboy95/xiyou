@@ -48,14 +48,14 @@ $npccid=$arr[1];
 $cwidd=$npcc."_".$npccid;
 
 
-if($npccid!=""){
+if($npccid){
 
 //调用cw.ini是否存在
 include("./ini/cw_ini.php");
 $cw01x=($iniFile->getItem('宠物原始名字',$zbid));
 $cw02x=($iniFile->getItem('宠物名字',$zbid));
 
-if($cw02x==""){
+if (!$cw02x){
 $cw02x="无";	
 }
 
@@ -206,4 +206,3 @@ include("fhgame.php");
 include("./ini/ojsini.php");
 //解锁当前使用的ini
 
-?>

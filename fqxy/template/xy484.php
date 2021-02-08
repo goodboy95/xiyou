@@ -9,7 +9,7 @@ if($zsspd==1){
 $cwidd=$npcc;
 
 
-if($cwidd!=""){
+if($cwidd){
 
 
 
@@ -26,7 +26,7 @@ include("./ini/cw_ini.php");
 $cwmz1=($iniFile->getItem('宠物原始名字',$cwidd));
 $cwmz2=($iniFile->getItem('宠物名字',$cwidd));
 $cwxj=($iniFile->getItem('宠物星级',$cwidd));
-if($cwmz2!=""){
+if($cwmz2){
 $cwmz3="<p style='color: red'>".$cwmz1."（".$cwmz2."）</p>"."<br>";
 } else{	
 $cwmz3="<p style='color: red'>".$cwxj."</p>"."<br>";
@@ -114,4 +114,3 @@ include("./ini/jsini.php");
 
 
 
-?>

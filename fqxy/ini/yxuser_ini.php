@@ -19,7 +19,7 @@ if ($xxjy_qy == 1) {
 } else {
     $uid = "";
 }
-if ($uid != "") {
+if ($uid) {
     $inina = "yxuser.ini";
     $path = '../ache/' . $wjini;
     $file = $path . "/" . $inina;
@@ -36,7 +36,7 @@ if ($uid != "") {
             mkdir($dir, 0777, true);
         }
 
-        if ($uid != "") {
+        if ($uid) {
             $hf = 2;
             file_put_contents($file, "[玩家信息]");
             # 实例化ini文件操作类，并载入 .ini文件
@@ -52,4 +52,3 @@ if ($uid != "") {
         $iniFile = new iniFile($file);
     }
 }
-?>

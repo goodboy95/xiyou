@@ -27,7 +27,7 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p 
 
 
 
-?>
+
 
 
 

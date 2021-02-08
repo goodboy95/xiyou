@@ -381,4 +381,3 @@ include("fhgame.php");
 include("./ini/ojsini.php");
 //解锁当前使用的ini
 
-?>

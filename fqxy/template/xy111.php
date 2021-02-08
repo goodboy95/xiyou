@@ -223,7 +223,7 @@ echo "<p style='color: black'>----------------------</p></a>"."<br>";
 include("fhgame.php");
 
 
-?>
+
 
 
 

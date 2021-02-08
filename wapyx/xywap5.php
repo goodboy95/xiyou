@@ -12,7 +12,7 @@ if ($qy == 1) {
 
 }
 
-if ($yxname != "") {
+if ($yxname) {
     //调用wjdt.ini是否存在
     //玩家动态
     include("../ini/wjdt_ini.php");
@@ -67,4 +67,3 @@ if ($yxname != "") {
 
 }
 
-?>

@@ -127,4 +127,3 @@ echo "<p style='color: black'>----------------------</p>"."<br>";
 include("fhgame.php");
 
 
-?>

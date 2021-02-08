@@ -3678,7 +3678,7 @@ $wp30=4;//装备分类
 echo "<p style='color: black'>没有这个装备id编号".$npcc."请尝试联系gm解决此问题！！</p><br>";
 }
 
-?>
+
 
 
 

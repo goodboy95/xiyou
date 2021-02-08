@@ -971,7 +971,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查�
 include("./ini/pksw_ini.php");
 $hdtime=($iniFile->getItem('死亡时间','初始'));
 $vipqytime=600;//系统消息存活秒数30分钟
-if ($hdtime!="") {
+if ($hdtime) {
 $startdate=$hdtime;
 $enddate=date('Y-m-d H:i:s');
 $minute=floor((strtotime($enddate)-strtotime($startdate)));
@@ -1046,7 +1046,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查�
   include("./ini/pksw_ini.php");
 $hdtime=($iniFile->getItem('死亡时间','初始'));
 $vipqytime=600;//系统消息存活秒数30分钟
-if ($hdtime!="") {
+if ($hdtime) {
 $startdate=$hdtime;
 $enddate=date('Y-m-d H:i:s');
 $minute=floor((strtotime($enddate)-strtotime($startdate)));
@@ -1120,4 +1120,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>查�
 
 
 
-?>

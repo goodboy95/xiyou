@@ -9,7 +9,7 @@ if($zsspd==1){
 $cwidd=$npcc;
 
 
-if($cwidd!=""){
+if($cwidd){
 
 
 
@@ -17,7 +17,7 @@ if($cwidd!=""){
 include("./ini/cw_ini.php");
 $cwmz1=($iniFile->getItem('宠物原始名字',$cwidd));
 $cwmz2=($iniFile->getItem('宠物名字',$cwidd));
-if($cwmz2!=""){
+if($cwmz2){
 $cwmz3="<p style='color: red'>".$cwmz1."（".$cwmz2."）装备如下：</p>"."<br>";
 } else{	
 $cwmz3="<p style='color: red'>".$cwmz1."装备如下：</p>"."<br>";
@@ -203,7 +203,7 @@ $strr10=$str;
 
 
 /*
-if($czbmz1!=""){
+if($czbmz1){
 $strr1=$strr1."_".$cwidd;	
 echo "<p style='color: black'>法宝：</p></a>";
 $strr1=$strr1."_".$cwidd;
@@ -241,7 +241,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 /*
 
-if($czbmz2!=""){
+if($czbmz2){
 echo "<p style='color: black'>坐骑：</p></a>";
 $strr2=$strr2."_".$cwidd;
 //cmd及超链接值
@@ -274,7 +274,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 */
 
-if($czbmz3!=""){
+if($czbmz3){
 echo "<p style='color: black'>手持：</p></a>";
 $strr3=$strr3."_".$cwidd;
 
@@ -307,7 +307,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 }
 
 
-if($czbmz4!=""){
+if($czbmz4){
 echo "<p style='color: black'>身穿：</p></a>";
 $strr4=$strr4."_".$cwidd;
 //cmd及超链接值
@@ -339,7 +339,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 }
 
-if($czbmz5!=""){
+if($czbmz5){
 echo "<p style='color: black'>头戴：</p></a>";
 $strr5=$strr5."_".$cwidd;
 //cmd及超链接值
@@ -371,7 +371,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 }
 
 
-if($czbmz6!=""){
+if($czbmz6){
 
 
 echo "<p style='color: black'>脚穿：</p></a>";
@@ -415,7 +415,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 
 
-if($czbmz7!=""){
+if($czbmz7){
 echo "<p style='color: black'>佩戴：</p></a>";
 $strr7=$strr7."_".$cwidd;
 //cmd及超链接值
@@ -449,7 +449,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 
 
-if($czbmz8!=""){
+if($czbmz8){
 echo "<p style='color: black'>首饰：</p></a>";
 $strr8=$strr8."_".$cwidd;
 //cmd及超链接值
@@ -484,7 +484,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 /*
 
-if($czbmz9!=""){
+if($czbmz9){
 echo "<p style='color: black'>婚戒：</p></a>";
 $strr9=$strr9."_".$cwidd;
 //cmd及超链接值
@@ -520,7 +520,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>穿�
 
 
 
-if($czbmz10!=""){
+if($czbmz10){
 echo "<p style='color: black'>婚链：</p></a>";
 $strr10=$strr10."_".$cwidd;
 //cmd及超链接值
@@ -627,4 +627,3 @@ include("./ini/jsini.php");
 
 
 
-?>

@@ -79,7 +79,7 @@ $iniFile->updItem('国战积分', [$xl => $bpjf]);
 
 include("./ini/gz04_ini.php");
 $jfpd=($iniFile->getItem($wjid,'玩家id'));
-if($jfpd!=""){
+if($jfpd){
 include("./ini/gz04_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('个人积分', [$wjid => $gjjf]);
@@ -89,7 +89,7 @@ $q2="gz04";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 }
 include("./ini/zt_ini.php");
@@ -383,4 +383,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返�
 echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
-?>

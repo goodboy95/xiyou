@@ -74,4 +74,3 @@ include("./ini/ojsini.php");
 
 
 
-?>

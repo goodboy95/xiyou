@@ -35,11 +35,11 @@ $q2="zz".$wjid;
 if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
 $sql = " CREATE  TABLE  $q2 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
-`zzdj` int( 11  )  NOT  NULL default  '0' COMMENT  '种植等级',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号id',
+`zzdj` int( 11 )  NOT  NULL default  '0' COMMENT  '种植等级',
 `zzwpmz` text NOT  NULL  COMMENT  '种植名字',
-`zzwpid` int( 11  )  NOT  NULL default  '0' COMMENT  '种植物品id',
-`zzwpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '种植数量',
+`zzwpid` int( 11 )  NOT  NULL default  '0' COMMENT  '种植物品id',
+`zzwpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '种植数量',
 `zztime` datetime  NOT  NULL  COMMENT  '种植时间',
 `sftime` datetime  NOT  NULL  COMMENT  '施肥时间',
 `shtime` datetime  NOT  NULL  COMMENT  '收获时间')
@@ -67,13 +67,13 @@ $q2="zz".$wjid;
 $sql1=mysqli_query($conn, "select id from $q2 where id=$zzid");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['id'];
-if($xlpd ==""){
+if (!$xlpd){
 //获取最大值
 $q2="zz".$wjid;
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -152,4 +152,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

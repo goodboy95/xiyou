@@ -61,4 +61,3 @@ include("fhgame.php");
 
 
 
-?>

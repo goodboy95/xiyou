@@ -76,7 +76,7 @@ if ($zsspd == 1) {
         if ($hdyd['收费次数'] < $hdydtz) {//判断是否超限制
             $hdydcs = $hdyd['收费次数'] + 1;
             $jdsl = ($hdyd['收费次数'] + 1) * 10;
-            if ($jdsl == "") {
+            if (!$jdsl) {
                 $jdsl = 999;
             }
 //提供需要扣除的物品作为判读依据
@@ -186,7 +186,7 @@ if ($zsspd == 1) {
         if ($hdyd['收费次数'] < $hdydtz) {//判断是否超限制
             $hdydcs = $hdyd['收费次数'] + 1;
             $jdsl = ($hdyd['收费次数'] + 1) * 20;
-            if ($jdsl == "") {
+            if (!$jdsl) {
                 $jdsl = 999;
             }
 //提供需要扣除的物品作为判读依据
@@ -296,7 +296,7 @@ if ($zsspd == 1) {
         if ($hdyd['收费次数'] < $hdydtz) {//判断是否超限制
             $hdydcs = $hdyd['收费次数'] + 1;
             $jdsl = ($hdyd['收费次数'] + 1) * 10;
-            if ($jdsl == "") {
+            if (!$jdsl) {
                 $jdsl = 999;
             }
 //提供需要扣除的物品作为判读依据
@@ -407,7 +407,7 @@ if ($zsspd == 1) {
         if ($hdyd['收费次数'] < $hdydtz) {//判断是否超限制
             $hdydcs = $hdyd['收费次数'] + 1;
             $jdsl = ($hdyd['收费次数'] + 1) * 10;
-            if ($jdsl == "") {
+            if (!$jdsl) {
                 $jdsl = 999;
             }
 //提供需要扣除的物品作为判读依据
@@ -489,4 +489,3 @@ if ($zsspd == 1) {
     $npc[] = 0;
     echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<p style='color: black'></p>" . "<br>";
 }
-?>

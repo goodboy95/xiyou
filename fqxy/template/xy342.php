@@ -135,7 +135,7 @@ $gzname="";
 
 
 
-if($gzname!=""){
+if($gzname){
 include("./ini/gz_ini.php");
 $gzfzid=$npcc;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
@@ -184,7 +184,7 @@ echo "<p style='color: black'>进入住宅出现问题请联系小轩GM解决</p
 
 
 
-} elseif ($gzfz01=="") {
+} elseif (!$gzfz01) {
 echo "<p style='color: black'>".$gzname."还未出售，可前往开封广场进行购买</p>"."<br>";
 
 
@@ -230,4 +230,3 @@ include("./ini/jsggini.php");
 
 
 
-?>

@@ -32,4 +32,3 @@ $iniFile->addItem('玩家攻击语',['初始' => 123]);
 $iniFile = new iniFile($file);
 
 
-?>

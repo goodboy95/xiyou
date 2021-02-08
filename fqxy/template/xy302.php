@@ -10,7 +10,7 @@ if ($zsspd == 1) {
             include("./ini/hd_ini.php");
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -19,7 +19,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $q2 = "hd" . $wjid;
                 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -50,7 +50,7 @@ if ($zsspd == 1) {
             include("./ini/hd_ini.php");
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -59,7 +59,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $q2 = "hd" . $wjid;
                 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -780,7 +780,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -789,7 +789,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1059,7 +1059,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1068,7 +1068,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1092,7 +1092,7 @@ if ($zsspd == 1) {
         $hdcs = ($iniFile->getItem('活动次数', $npcc));
         if ($hdcs >= 1) {
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1101,7 +1101,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $hdcs = $hdcs - 1;
                 $q2 = "hd" . $wjid;
@@ -1143,7 +1143,7 @@ if ($zsspd == 1) {
         $hdcs = ($iniFile->getItem('活动次数', $npcc));
         if ($hdcs >= 1) {
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1152,7 +1152,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $hdcs = $hdcs - 1;
                 $q2 = "hd" . $wjid;
@@ -1194,7 +1194,7 @@ if ($zsspd == 1) {
         $hdcs = ($iniFile->getItem('活动次数', $npcc));
         if ($hdcs >= 1) {
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1203,7 +1203,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $hdcs = $hdcs - 1;
                 $q2 = "hd" . $wjid;
@@ -1245,7 +1245,7 @@ if ($zsspd == 1) {
         $hdcs = ($iniFile->getItem('活动次数', $npcc));
         if ($hdcs >= 1) {
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1254,7 +1254,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $hdcs = $hdcs - 1;
                 $q2 = "hd" . $wjid;
@@ -1294,7 +1294,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1303,7 +1303,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1330,7 +1330,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1339,7 +1339,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1362,7 +1362,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1371,7 +1371,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1493,7 +1493,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1502,7 +1502,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1530,7 +1530,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1539,7 +1539,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1581,7 +1581,7 @@ if ($zsspd == 1) {
             include("./ini/hd_ini.php");
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
             $hdlq = 1;
-            if ($hdtime == "") {//如果没有值则添加新数据
+            if (!$hdtime) {//如果没有值则添加新数据
                 include("./yxpz/hd_pz.php");
                 include("./ini/hd_ini.php");//重新获取缓存数据
                 $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1590,7 +1590,7 @@ if ($zsspd == 1) {
             $nowtime = date('Y-m-d H:i:s');
             $hdtime1 = substr($hdtime, 0, 10);
             $nowtime1 = substr($nowtime, 0, 10);
-            if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+            if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
                 include("./sql/mysql.php");//调用数据库连接 
                 $q2 = "hd" . $wjid;
                 $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1616,7 +1616,7 @@ if ($zsspd == 1) {
         include("./ini/hd_ini.php");
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
         $hdlq = 1;
-        if ($hdtime == "") {//如果没有值则添加新数据
+        if (!$hdtime) {//如果没有值则添加新数据
             include("./yxpz/hd_pz.php");
             include("./ini/hd_ini.php");//重新获取缓存数据
             $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -1625,7 +1625,7 @@ if ($zsspd == 1) {
         $nowtime = date('Y-m-d H:i:s');
         $hdtime1 = substr($hdtime, 0, 10);
         $nowtime1 = substr($nowtime, 0, 10);
-        if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+        if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "hd" . $wjid;
             $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
@@ -1671,4 +1671,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

@@ -86,7 +86,7 @@ $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
 
-if($ckwpid==""){
+if (!$ckwpid){
 
 $ckwpsl=$ckwpsl+$sl;
 
@@ -221,7 +221,7 @@ $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
-if($ckwpid==""){
+if (!$ckwpid){
 
 $ckwpsl=$ckwpsl+$sl;
 //调用物品信息
@@ -433,7 +433,7 @@ echo "<br>";
 }
 
 
-?>
+
 
 
 

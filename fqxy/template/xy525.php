@@ -12,7 +12,7 @@ if($zsspd==1){
 include("./ini/pksw_ini.php");
 $hdtime=($iniFile->getItem('死亡时间','初始'));
 $vipqytime=600;//系统消息存活秒数30分钟
-if ($hdtime!="") {
+if ($hdtime) {
 $startdate=$hdtime;
 $enddate=date('Y-m-d H:i:s');
 $minute=floor((strtotime($enddate)-strtotime($startdate)));
@@ -109,4 +109,3 @@ include("./ini/jsini.php");
 //解锁当前使用的ini
 
 
-?>

@@ -57,7 +57,7 @@ $qc06=($iniFile->getItem('排行榜值6',$npcc));//时间搓
 
 
 
-if($qc04==1&&$qc05>=1&&$qc06==$npccid&&$qc06!=""&&$npccid!=""||$qc04==2&&$qc05>=1&&$qc06==$npccid&&$qc06!=""&&$npccid!=""){
+if($qc04==1&&$qc05>=1&&$qc06==$npccid&&$qc06&&$npccid||$qc04==2&&$qc05>=1&&$qc06==$npccid&&$qc06&&$npccid){
 
 echo "<p style='color: black'>恭喜你！撤销了此条记录".$qc03."银两（请到小仓提取）</p></a>"."<br>";
 //赢取奖励
@@ -167,4 +167,3 @@ echo "服务器开小差了";
 
 
 
-?>

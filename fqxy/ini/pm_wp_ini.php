@@ -46,16 +46,16 @@ $q2="all_pm";
 if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
 $sql = " CREATE  TABLE  $q2 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '标识',
-`wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '标识',
+`wjid` int( 11 )  NOT  NULL default  '0' COMMENT  '玩家id',
 `wjmz` text NOT  NULL  COMMENT  '玩家名字',
 `pmtime` datetime  NOT  NULL  COMMENT  '拍卖时间',
-`pmwpid` int( 11  )  NOT  NULL default  '0' COMMENT  '拍卖物品id',
+`pmwpid` int( 11 )  NOT  NULL default  '0' COMMENT  '拍卖物品id',
 `pmwpmz` text NOT  NULL  COMMENT  '拍卖物品名字',
-`pmwpsl` int( 11  )  NOT  NULL default  '0' COMMENT  '拍卖物品数量',
+`pmwpsl` int( 11 )  NOT  NULL default  '0' COMMENT  '拍卖物品数量',
 `pmwpjg` text NOT  NULL  COMMENT  '拍卖物品价格',
-`pmsjc` int( 11  )  NOT  NULL default  '0' COMMENT  '拍卖时间搓',
-`pmwpfl` int( 11  )  NOT  NULL default  '0' COMMENT  '拍卖物品分类')
+`pmsjc` int( 11 )  NOT  NULL default  '0' COMMENT  '拍卖时间搓',
+`pmwpfl` int( 11 )  NOT  NULL default  '0' COMMENT  '拍卖物品分类')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 }
@@ -113,4 +113,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

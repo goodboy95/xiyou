@@ -14,7 +14,7 @@ $xw03=$arr2[4];
 $szbid=$xw01."_".$xw04;
 $cwidx=$xw02."_".$xw03;
 
-if($xw01!=""){
+if($xw01){
 
 
 
@@ -41,7 +41,7 @@ $zbxqq5=($iniFile->getItem('装备镶嵌5',$szbid));
 include("./ini/cw_ini.php");
 $cwmz1=($iniFile->getItem('宠物原始名字',$cwidx));
 $cwmz2=($iniFile->getItem('宠物名字',$cwidx));
-if($cwmz2!=""){
+if($cwmz2){
 echo "<p style='color: red'>".$cwmz1."（".$cwmz2."）穿戴上了".$zbmz."！！</p>"."<br>";
 } else{	
 echo "<p style='color: red'>".$cwmz1."穿戴上了".$zbmz."！！</p>"."<br>";
@@ -56,7 +56,7 @@ include("./sql/mysql.php");//调用数据库连接
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -143,4 +143,3 @@ include("./ini/jsini.php");
 
 
 
-?>

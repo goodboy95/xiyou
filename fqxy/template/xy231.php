@@ -54,7 +54,7 @@ if($wprl<=$ckbbrla){
 	include("./ini/gszb_ini.php");
 $zbzz=($iniFile->getItem('装备id',$zbid));
 
-if($zbzz !=""){
+if($zbzz){
 
 ///////////////////////////////////////////////////////////////////////////////////数据库修改///////////////////////////////////////////////////
 
@@ -84,7 +84,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -262,4 +262,3 @@ include("./pz/pz01.php");
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

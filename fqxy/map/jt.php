@@ -689,4 +689,3 @@ echo "<p style='color: black'>金塔(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

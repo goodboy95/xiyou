@@ -5,7 +5,7 @@ $wjid1 = $wjid;
 //阻塞代码防止出现脏数据//自己的id锁
 $ininalock = $wjid . "_lock" . ".txt";
 include("./ini/zsini.php");
-if ($ckid != "") {
+if ($ckid) {
     $wjid = $ckid;
 } else {
     $wjid = $npcc;
@@ -357,7 +357,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                 $iniFile->delItem('玩家攻击语', $ckid);
                 $iniFile->delItem('玩家伤害', $ckid);
 //提取玩家伤害语
-                if ($pk004 != "") {
+                if ($pk004) {
                     echo "<p style='color: red'>" . $pk004 . "造成了" . $pk003 . "点伤害</p>" . "<br>";
                 }
                 include("./ini/zd_ini.php");
@@ -419,7 +419,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                 include("./wj/pkxx.php");
                 if ($dxsh >= 1) {
                     $dxsh = "-" . $dxsh;
-                } elseif ($dxsh == 0 && $dxsh != "") {
+                } elseif ($dxsh == 0 && $dxsh) {
                     $dxsh = "-" . $dxsh;
                 } else {
                     $dxsh = "";
@@ -428,7 +428,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                     $wjsh = $pk003;
                     if ($wjsh >= 1) {
                         $wjsh = "-" . $wjsh;
-                    } elseif ($wjsh == 0 && $wjsh != "") {
+                    } elseif ($wjsh == 0 && $wjsh) {
                         $wjsh = "-" . $wjsh;
                     } else {
                         $wjsh = "";
@@ -436,7 +436,7 @@ if ($zsspd == 1 && $zsspd2 == 1) {
                 } else {
                     if ($wjsh >= 1) {
                         $wjsh = "-" . $wjsh;
-                    } elseif ($wjsh == 0 && $wjsh != "") {
+                    } elseif ($wjsh == 0 && $wjsh) {
                         $wjsh = "-" . $wjsh;
                     } else {
                         $wjsh = "";
@@ -536,4 +536,3 @@ if ($zsspd == 1 && $zsspd2 == 1) {
 //解锁当前使用的ini
 include("./ini/ojsini.php");
 //解锁当前使用的ini
-?>

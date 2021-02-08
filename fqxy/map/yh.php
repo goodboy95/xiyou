@@ -656,4 +656,3 @@ echo "<p style='color: black'>银河(4,1)往哪里走呢？</p>"."<br>";
 }
 
 
-?>

@@ -200,4 +200,4 @@ if ($cmdd == 401) {
 } elseif ($cmdd == 500) {
     include("template/xy500.php");//拍卖页面
 }
-?>
+

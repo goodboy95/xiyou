@@ -127,7 +127,7 @@ header("Content-type: text/html; charset=utf-8");
                 } else {
                     # 获取一个分类下某个子项的值
                     $cljid = ($iniFile->getItem('超链接值', $cmd));
-                    if ($cljid == "") {
+                    if (!$cljid) {
                         # 获取一个分类下某个子项的值
                         $cljid = ($iniFile->getItem('最后页面id', '页面id'));
                         if ($cljid == 3 || $cljid == 4 || $cljid == 5 || $cljid == 6) {
@@ -214,7 +214,7 @@ header("Content-type: text/html; charset=utf-8");
                 } else {
                     include("./ini/zt_ini.php");
                     $jcmz = ($iniFile->getItem('玩家信息', '玩家名字'));
-                    if ($jcmz == "") {
+                    if (!$jcmz) {
                         $cmdd = 298;
                     } else {
                         $cmdd = 334;

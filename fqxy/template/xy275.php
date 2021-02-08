@@ -86,7 +86,7 @@ $iniFile = new iniFile($ininame);
 # 获取一个分类下某个子项的值
 $zbzz=($iniFile->getItem('装备id',$zbid));
 
-if($zbzz !=""){
+if($zbzz){
 
 ///////////////////////////////////////////////////////////////////////////////////数据库修改///////////////////////////////////////////////////
 
@@ -116,7 +116,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -277,4 +277,3 @@ include("fhgame.php");
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

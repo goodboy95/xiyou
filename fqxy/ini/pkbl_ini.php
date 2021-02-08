@@ -34,4 +34,3 @@ $iniFile->addItem('被打死',['初始' => 123]);
 }
 $iniFile = new iniFile($file);
 
-?>

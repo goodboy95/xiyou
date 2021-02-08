@@ -286,7 +286,7 @@ $wpsl=($iniFile->getItem('农场数量',$npcc));
 include("./ini/bx_ini.php");
 $wpsl=($iniFile->getItem('宝箱数量',$npcc));
 }
-if($wpsl!=""){
+if($wpsl){
 include("wp/wpsy.php");
 
 
@@ -430,4 +430,3 @@ include("./ini/jsini.php");
 
 
 
-?>

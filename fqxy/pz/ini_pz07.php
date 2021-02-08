@@ -89,4 +89,4 @@ echo "<p style='color: black'>对不起！此物品不能在快捷键使用</p><
 
 
 
-?>
+

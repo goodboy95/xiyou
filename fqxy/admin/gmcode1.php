@@ -15,7 +15,7 @@ echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=27'><p style='color: blu
 
 
 
-?>
+
 
 
 

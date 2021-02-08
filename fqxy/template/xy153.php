@@ -32,7 +32,7 @@ echo "<p style='color: blue'>===============================</p>"."<br>";
 echo "<p style='color: black'>【君临天下】(2888金豆)</p>";
 $gzfzid=5;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -47,7 +47,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【龙吟九霄】(1888金豆)</p>";
 $gzfzid=10;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -62,7 +62,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【唯我独尊】(888金豆)</p>";
 $gzfzid=6;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -77,7 +77,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【雄霸天下】(888金豆)</p>";
 $gzfzid=7;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -91,7 +91,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【盖世英雄】(888金豆)</p>";
 $gzfzid=8;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -105,7 +105,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【绝世枭雄】(888金豆)</p>";
 $gzfzid=9;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -120,7 +120,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【钟灵毓秀】（仙）(1888金豆)</p>";
 $gzfzid=11;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -138,7 +138,7 @@ echo "<p style='color: black'>【青龙居】（仙）(888金豆)</p>";
 
 $gzfzid=1;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -154,7 +154,7 @@ echo "<p style='color: black'>【朱雀居】（仙）(888金豆)</p>";
 
 $gzfzid=2;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -171,7 +171,7 @@ echo "<p style='color: black'>【玄武居】（仙）(888金豆)</p>";
 
 $gzfzid=3;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -187,7 +187,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【白虎居】（仙）(888金豆)</p>";
 $gzfzid=4;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -205,7 +205,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【招财进宝】（仙）(888金豆)</p>";
 $gzfzid=12;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -220,7 +220,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【富可敌国】（仙）(888金豆)</p>";
 $gzfzid=13;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -234,7 +234,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【富贵荣华】（仙）(888金豆)</p>";
 $gzfzid=14;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -249,7 +249,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【金玉满堂】（仙）(888金豆)</p>";
 $gzfzid=15;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -265,7 +265,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【至尊神殿】（仙）(888金豆)</p>";
 $gzfzid=16;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -280,7 +280,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【飘渺阁】（仙）(888金豆)</p>";
 $gzfzid=17;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -294,7 +294,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【醉心阁】（仙）(888金豆)</p>";
 $gzfzid=18;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -308,7 +308,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【凌烟阁】（仙）(888金豆)</p>";
 $gzfzid=19;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -323,7 +323,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【藏龙阁】（仙）(888金豆)</p>";
 $gzfzid=20;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -338,7 +338,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【绝天魔宫】（仙）(888金豆)</p>";
 $gzfzid=21;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -362,7 +362,7 @@ echo "<p style='color: blue'>===============================</p>"."<br>";
 echo "<p style='color: black'>【君临天下】（魔）(2888金豆)</p>";
 $gzfzid=26;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -377,7 +377,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【龙吟九霄】（魔）(1888金豆)</p>";
 $gzfzid=31;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -392,7 +392,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【唯我独尊】（魔）(888金豆)</p>";
 $gzfzid=27;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -407,7 +407,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【雄霸天下】（魔）(888金豆)</p>";
 $gzfzid=28;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -421,7 +421,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【盖世英雄】（魔）(888金豆)</p>";
 $gzfzid=29;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -435,7 +435,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【绝世枭雄】（魔）(888金豆)</p>";
 $gzfzid=30;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -450,7 +450,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【钟灵毓秀】（魔）(1888金豆)</p>";
 $gzfzid=32;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -468,7 +468,7 @@ echo "<p style='color: black'>【青龙居】（魔）(888金豆)</p>";
 
 $gzfzid=22;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -484,7 +484,7 @@ echo "<p style='color: black'>【朱雀居】（魔）(888金豆)</p>";
 
 $gzfzid=23;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -501,7 +501,7 @@ echo "<p style='color: black'>【玄武居】（魔）(888金豆)</p>";
 
 $gzfzid=24;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -517,7 +517,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【白虎居】（魔）(888金豆)</p>";
 $gzfzid=25;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -535,7 +535,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【招财进宝】（魔）(888金豆)</p>";
 $gzfzid=33;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -550,7 +550,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【富可敌国】（魔）(888金豆)</p>";
 $gzfzid=34;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -564,7 +564,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【富贵荣华】（魔）(888金豆)</p>";
 $gzfzid=35;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -579,7 +579,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【金玉满堂】（魔）(888金豆)</p>";
 $gzfzid=36;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -595,7 +595,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【至尊神殿】（魔）(888金豆)</p>";
 $gzfzid=37;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -610,7 +610,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【飘渺阁】（魔）(888金豆)</p>";
 $gzfzid=38;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -624,7 +624,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【醉心阁】（魔）(888金豆)</p>";
 $gzfzid=39;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -638,7 +638,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【凌烟阁】（魔）(888金豆)</p>";
 $gzfzid=40;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -653,7 +653,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【藏龙阁】（魔）(888金豆)</p>";
 $gzfzid=41;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -668,7 +668,7 @@ echo "<p style='color: black'>（已销售）</p>"."<br>";
 echo "<p style='color: black'>【绝天魔宫】（魔）(888金豆)</p>";
 $gzfzid=42;
 $gzfz01=($iniFile->getItem('官宅持有人id',$gzfzid));
-if($gzfz01==""){
+if (!$gzfz01){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -712,4 +712,3 @@ include("fhgame.php");
 include("./ini/jsggini.php");
 //解锁当前使用的ini
 
-?>

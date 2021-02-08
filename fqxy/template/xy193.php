@@ -53,7 +53,7 @@ if($zlgjid!=$bpid){
 include("./ini/gz01_ini.php");
 //多仗变量
 $iniFile->updItem('夺仗人', ['初始' => '2']);//写入战斗页面
-if($zlgjid!=""){
+if($zlgjid){
 include("./ini/gz01_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('国家名字', ['100' => $bpmz]);
@@ -201,7 +201,7 @@ $iniFile->updItem('国战积分', [$xl => $bpjf]);
 
 include("./ini/gz04_ini.php");
 $jfpd=($iniFile->getItem($wjid,'玩家id'));
-if($jfpd!=""){
+if($jfpd){
 include("./ini/gz04_ini.php");
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('个人积分', [$wjid => $gjjf]);
@@ -211,7 +211,7 @@ $q2="gz04";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 } 
 include("./ini/zt_ini.php");
@@ -345,4 +345,3 @@ include("fhgame.php");
 
 
 
-?>

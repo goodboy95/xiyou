@@ -47,6 +47,6 @@ $iniFile->updItem('怪物1号属性', ['hp' => $dxssh]);
 
 
 
-?>
+
 
 

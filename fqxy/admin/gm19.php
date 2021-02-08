@@ -24,7 +24,7 @@ $wjname=($iniFile->getItem('玩家信息','玩家名字'));
 
 //查询封号是否到期永久则不行
 
-if($jy03!=""){
+if($jy03){
 
 if($jy01!=2){
 
@@ -80,7 +80,7 @@ $jy03="";
 
 
 
-if($jy03==""){
+if (!$jy03){
    //连接数据库提取数据写入ini 
    
 include("./sql/mysql.php");//调用数据库连接 
@@ -89,7 +89,7 @@ $q2="all_user";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -184,7 +184,7 @@ echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p 
 
 
 
-?>
+
 
 
 

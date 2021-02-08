@@ -82,6 +82,6 @@ if ($jnlvl == 1) {
 } else {
     $jnsh = 1;
 }
-?>
+
 
 

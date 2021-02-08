@@ -51,7 +51,7 @@ $iniFile = new iniFile($ininame);
 $pass=($iniFile->getItem('验证信息','玩家验证'));
 	
 
-	if($pass!=""||$pass1!=""){
+	if($pass||$pass1){
 
 }else{
 $pass=1;

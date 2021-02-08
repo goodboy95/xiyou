@@ -148,7 +148,7 @@ echo "<p style='color: black'>？</p>";
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>杀死蛇妖男</p></a>"."<br>";
 }
 
-?>
+
 
 
 

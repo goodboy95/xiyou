@@ -19,4 +19,3 @@ $response = curl_exec($ch);
 //打印服务器返回的数据
 curl_close($ch);
 
-?>

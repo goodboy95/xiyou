@@ -11,11 +11,11 @@ if (!file_exists($file)) {
     $sql1 = mysqli_query($conn, "select * from $q2 where wjid=$wjid");
     $info1 = @mysqli_fetch_array($sql1);
     $id = $info1['id'];
-    if ($id == "") {
+    if (!$id) {
         $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
         $abc = mysqli_fetch_array($sql1);
         $maxid = $abc[0];
-        if ($maxid == "") {
+        if (!$maxid) {
             $maxidd = $maxid + 1;
         } else {
             $maxidd = $maxid + 1;
@@ -59,4 +59,3 @@ if (!file_exists($file)) {
 //数据库数据导入ini文件
 }
 $iniFile = new iniFile($file);
-?>

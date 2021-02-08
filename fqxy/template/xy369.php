@@ -6,7 +6,7 @@ if($zsspd==1){
 
 $cwidd=$npcc;
 
-if($cwidd!=""){
+if($cwidd){
 
 //调用cw.ini是否存在
 include("./ini/cw_ini.php");
@@ -42,7 +42,7 @@ $wjtake10= $_POST['wjtoke'];
 $wjtakes2=iconv_strlen($wjtake10,"UTF-8");
 $wjtake = iconv("utf-8","gbk",$wjtake10);  
 
-if($wjtake10!=""){
+if($wjtake10){
 if($wjtakes2>0&&$wjtakes2<=7||$wjtakes2>0&&$wjtakes2<=7){
 if($wjtakes2>0){
 $wjtake=$wjtake10;

@@ -100,6 +100,6 @@ $dxsh=ceil($d*$jnsh);
 $dxsh=1;
 }
 
-?>
+
 
 

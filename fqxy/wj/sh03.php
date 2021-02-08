@@ -100,6 +100,6 @@ $iniFile->updItem('玩家信息', ['红' => $wjssh]);
 
 
 
-?>
+
 
 

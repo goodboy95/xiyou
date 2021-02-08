@@ -49,7 +49,7 @@ $path='acher/guoz';
 $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 //更新缓存数据
-if($xtbl1==""){
+if (!$xtbl1){
 //新增数据
 $q2="xtbl";
 $sql = "insert into $q2 (id,bl1,bl2)  values('1','$m','$d')";
@@ -119,7 +119,7 @@ if($bpzw>=2&&$bpzw<=8){
 include("./ini/gz05_ini.php");
 $gztime=($iniFile->getItem('国战判断时间','1'));
 
-if($gztime==""){	
+if (!$gztime){
 	
 include("./sql/mysql.php");//调用数据库连接 
 $nowtime=date('Y-m-d H:i:s');	
@@ -154,7 +154,7 @@ $gztime1 = substr($gztime,0,10);
 $nowtime1 = substr($nowtime,0,10); 
 
 
-if($gztime1==$nowtime1&&$gztime1!=""){//今天不是今天数据验证
+if($gztime1==$nowtime1&&$gztime1){//今天不是今天数据验证
 
 } else{
 include("./sql/mysql.php");//调用数据库连接 	
@@ -193,7 +193,7 @@ unlink($ininame); //删除文件
 
 include("./ini/gz05_ini.php");
 $gztime=($iniFile->getItem('国战判断时间','2'));
-if($gztime==""){	
+if (!$gztime){
 	
 include("./sql/mysql.php");//调用数据库连接 
 $nowtime=date('Y-m-d H:i:s');	
@@ -224,7 +224,7 @@ $gztime=($iniFile->getItem('国战判断时间','2'));
 $nowtime=date('Y-m-d H:i:s');
 $gztime1 = substr($gztime,0,10); 
 $nowtime1 = substr($nowtime,0,10); 
-if($gztime1==$nowtime1&&$gztime1!=""){//今天不是今天数据验证
+if($gztime1==$nowtime1&&$gztime1){//今天不是今天数据验证
 
 } else{
 include("./sql/mysql.php");//调用数据库连接 	
@@ -272,7 +272,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 $sql = "insert into $q2 (id,gjmz,gjid,jzmz,jzid,gjjf)  values('$maxidd','$bpmzr','$bpid','$xbzmz','$xwjid','0')";
@@ -311,14 +311,14 @@ unlink($ininame); //删除文件
 //更新国家积分榜
 include("./ini/gz03_ini.php");
 $gjmz=($iniFile->getItem('已报名国家','国家名字'));
-if($gjmz==""){
+if (!$gjmz){
 
 $q2="gz03";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 
 $maxid=0;
 $maxidd=$maxid+1;
@@ -532,4 +532,3 @@ include("fhgame.php");
 
 
 
-?>

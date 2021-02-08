@@ -77,7 +77,7 @@ echo "<p style='color: red'>【确定升级】（封印状态-你的等级不足
 
 echo "<br>";
 
-if($cwid1!=""){
+if($cwid1){
 $cwid3=$zbid."_".$cwid3;
 
 //cmd及超链接值
@@ -118,4 +118,3 @@ include("./ini/jsini.php");
 
 
 
-?>

@@ -12,7 +12,7 @@ $xw04=$arr2[3];
 $szbid=$xw01."_".$xw02;
 $cwidx=$xw03."_".$xw04;
 
-if($xw01!=""){
+if($xw01){
 
 
 include("./ini/cw_ini.php");
@@ -37,7 +37,7 @@ $zbxqq4=($iniFile->getItem('装备镶嵌4',$szbid));
 $zbxqq5=($iniFile->getItem('装备镶嵌5',$szbid));
 $zbfll=($iniFile->getItem('装备分类',$szbid));
 
-if($cwmz2!=""){
+if($cwmz2){
 echo "<p style='color: red'>".$cwmz1."（".$cwmz2."）卸下了".$zbmz."！！</p>"."<br>";
 } else{	
 echo "<p style='color: red'>".$cwmz1."卸下了".$zbmz."！！</p>"."<br>";
@@ -49,7 +49,7 @@ include("./sql/mysql.php");//调用数据库连接
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -123,4 +123,3 @@ include("./ini/jsini.php");
 
 
 
-?>

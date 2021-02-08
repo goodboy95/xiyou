@@ -28,4 +28,4 @@ $iniFile->updItem($wpzz1, [$wpzz2 => $ckrl1]);
 $wpsy=2;//使用成功
 echo "<p style='color: black'>恭喜你！".$wpzz2."+".$ckkr."</p><br>";
 
-?>
+

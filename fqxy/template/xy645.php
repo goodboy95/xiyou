@@ -9,7 +9,7 @@ if ($date > $time1 && $date < $time2) {
     include("./ini/bhmj_ini.php");
     $mjtime = ($iniFile->getItem('百花秘境时间', '初始'));
     $nowtime = date('Y-m-d');
-    if ($nowtime == $mjtime && $mjtime != "") {
+    if ($nowtime == $mjtime && $mjtime) {
         $yseday = date("Y-m-d", strtotime("-1 day"));
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('百花秘境时间', ['初始' => $yseday]);
@@ -346,4 +346,3 @@ $cdid[] = $cmid;
 $clj[] = 2;
 $npc[] = 0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回游戏</p></a>" . "<br>";
-?>

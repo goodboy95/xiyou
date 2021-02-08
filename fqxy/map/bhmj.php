@@ -9,7 +9,7 @@ $nowtime=date('Y-m-d');
 //验证时间
 include("./time/bhmjtime.php");
 $date=date("H:i:s");
-if ($nowtime==$mjtime&&$mjtime!=""&&$date> $time1 && $date < $time2) {
+if ($nowtime==$mjtime&&$mjtime&&$date> $time1 && $date < $time2) {
 
 
 
@@ -923,4 +923,3 @@ exit;
 
 
 
-?>

@@ -50,7 +50,7 @@ class iniFile
 	}
 	//获取单个分类
 	public function getCategory($category_name){
-		return $this->iniFileHandle[$category_name];
+        return array_key_exists($category_name, $this->iniFileHandle) ?  $this->iniFileHandle[$category_name] : null;
 	}
 	//获取子项值
 	public function getItem($category_name, $item_name){
@@ -103,4 +103,3 @@ class iniFile
 		}
 	}
 }
-?>

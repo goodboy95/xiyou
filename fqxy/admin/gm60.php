@@ -12,7 +12,7 @@ function randomkeys($length) {
     $returnStr='';
     $pattern = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLOMNOPQRSTUVWXYZ';
     for($i = 0; $i < $length; $i ++) {
-        $returnStr .= $pattern {mt_rand ( 0, 61 )}; //生成php随机数
+        $returnStr .= $pattern {mt_rand ( 0, 61)}; //生成php随机数
     }
     return $returnStr;
 }
@@ -28,7 +28,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{

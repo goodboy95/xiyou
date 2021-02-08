@@ -178,4 +178,4 @@ if ($cmdd == 301) {
 } elseif ($cmdd == 400) {
     include("template/xy400.php");//物品详情
 }
-?>
+

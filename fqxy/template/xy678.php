@@ -167,4 +167,3 @@ include("fhgame.php");
 
 
 
-?>

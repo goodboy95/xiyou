@@ -121,7 +121,7 @@ $sl=$dywpsl;
 
 }
 	
-} elseif($wpsycs ==""){
+} elseif (!$wpsycs){
 if($sl >=$xzcs){	
 $sl=$xzcs;
 
@@ -521,4 +521,3 @@ include("./wp/wpsy.php");
 include("./ini/jsini.php");
 //解锁当前使用的ini
 
-?>

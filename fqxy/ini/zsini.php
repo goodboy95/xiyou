@@ -48,4 +48,3 @@ if(flock($fp,LOCK_EX | LOCK_NB)){
 
 
 
-?>

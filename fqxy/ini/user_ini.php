@@ -44,4 +44,3 @@ if (!file_exists($file)) {
     //file_put_contents($file,"[超链接npc值]");
 }
 $iniFile = new iniFile($file);
-?>

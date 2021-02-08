@@ -16,4 +16,4 @@ echo "<p style='color: black'>---------------------</p>"."<br>";
 echo "<a href=http://".$xxjyurl."/admin/index.php?wjiddd=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
 
 
-?>
+

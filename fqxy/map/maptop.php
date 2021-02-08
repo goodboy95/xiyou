@@ -9,4 +9,3 @@ echo "<p style='color: black'>".$map01."</p>"."<a href='xy.php?uid=$wjid&&cmd=$c
 
 
 
-?>

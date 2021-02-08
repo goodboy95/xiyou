@@ -25,7 +25,7 @@ $wpsl=($iniFile->getItem('宝箱数量',$npcc));
 include("./ini/post_ini.php");
 $ckname=($iniFile->getItem('赠送人','初始'));
 $ckid=($iniFile->getItem('赠送人ID','初始'));
-if($wpsl==""){ 
+if (!$wpsl){
 
 $wpsl=0;
 }

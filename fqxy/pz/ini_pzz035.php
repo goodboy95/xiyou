@@ -21,4 +21,4 @@ echo "<p style='color: black'>获得".$syz.$swmzx."！！</p><br>";
 
 
 
-?>
+

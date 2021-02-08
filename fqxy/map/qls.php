@@ -660,4 +660,3 @@ echo "<p style='color: black'>麒麟山(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

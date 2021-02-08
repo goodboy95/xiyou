@@ -36,4 +36,3 @@ echo "<p style='color: black'>----------------------</p>"."<br>";
 //cmd及超链接值
 include("fhgame.php");
 
-?>

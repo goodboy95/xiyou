@@ -16,4 +16,3 @@ $ininame = $path."/".$inina;
 unlink($ininame); //删除文件  
 
 
-?>

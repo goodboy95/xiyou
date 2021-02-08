@@ -145,7 +145,7 @@ if($dywpsl>=sl){
 $sl=$sxsl;
 }
 }
-} elseif($wpsycs ==""){
+} elseif (!$wpsycs){
 
 if($sl >=$xzcs){	
 $sl=$sxsl;
@@ -626,4 +626,3 @@ include("./ini/jsini.php");
 
 
 
-?>

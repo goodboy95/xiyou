@@ -37,7 +37,7 @@ if ($jykg == 0) {
             $iniFile->updItem('玩家信息', ['红' => $wjxx1['血'], '蓝' => $wjxx1['蓝']]);
         } else {
             $iniFile->updItem('玩家信息', ['经验' => $jy2]);
-            if ($jyts != "") {
+            if ($jyts) {
                 echo "<p style='color: red'>祝福：" . $jyts . "</p><br>";
             }
             //数字转汉字
@@ -57,7 +57,7 @@ if ($jykg == 0) {
         echo "<p style='color: red'>对不起！修炼经验已满（升级提升修炼经验储备）</p><br>";
     } else {
         $iniFile->updItem('玩家信息', ['修炼经验' => $jy2]);
-        if ($jyts != "") {
+        if ($jyts) {
             echo "<p style='color: red'>祝福：" . $jyts . "</p><br>";
         }
         //数字转汉字
@@ -66,4 +66,4 @@ if ($jykg == 0) {
         echo "<p style='color: black'>获得：" . $ylxx . "修炼经验</p><br>";
     }
 }
-?>
+

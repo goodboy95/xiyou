@@ -13,7 +13,7 @@ $wjtake10= $_POST['jdqg'];
 $wjtakes2=iconv_strlen($wjtake10,"UTF-8");
 $wjtake = iconv("utf-8","gbk",$wjtake10);  
 
-if($wjtake!=""){
+if($wjtake){
 if(preg_match("/[ ';~`@#$%^&+=)(<>{}]|\]|\[|\/|\\\|\"|\|/",$wjtake)){ 
 
 
@@ -58,7 +58,7 @@ $q2="o_user_list";
 $sql1=mysqli_query($conn, "select uid from $q2 where uid=$wjjdqgp");
 $info1=@mysqli_fetch_array($sql1);	
 $uid=$info1['uid'];
-if($uid!=""){
+if($uid){
 include("./ini/zt_ini.php");
 $jh01=($iniFile->getItem('玩家信息','性别'));
 $jh02=($iniFile->getItem('玩家信息','配偶id'));

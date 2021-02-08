@@ -18,7 +18,7 @@ $q2="all_ylck";
 if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
 $sql = " CREATE  TABLE  $q2 
-(`wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
+(`wjid` int( 11 )  NOT  NULL default  '0' COMMENT  '玩家id',
 `yl01` text NOT  NULL  COMMENT  '银两',
 `yl02` text NOT  NULL  COMMENT  '金豆',
 `yl03` text NOT  NULL  COMMENT  '金带')
@@ -79,4 +79,3 @@ $iniFile = new iniFile($file);
 	
 	
 	
-?>

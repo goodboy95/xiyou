@@ -151,7 +151,7 @@ echo "<p style='color: black'>？</p>";
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>杀死狐妖女</p></a>"."<br>";
 }
 
-?>
+
 
 
 

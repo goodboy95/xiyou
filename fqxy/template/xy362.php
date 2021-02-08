@@ -123,7 +123,7 @@ $cw19x="";
 
 $ik=$ym*10-9+$i;
 include("wp/zbxj.php");
-if($clname!=""){
+if($clname){
 
 
 echo "<p style='color: black'>".$ik.".</p>";
@@ -262,4 +262,3 @@ include("./ini/jsini.php");
 
 
 
-?>

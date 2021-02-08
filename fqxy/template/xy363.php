@@ -10,7 +10,7 @@ $zbid=$npcc;
 $arr = explode("_",$npcc);
 $npcc=$arr[0];
 $npccid=$arr[1];
-if($npccid!=""){
+if($npccid){
 	
 include("./ini/cw_ini.php");
 	
@@ -43,7 +43,7 @@ $result = mysqli_query($conn, $strsql);
 $iniFile->updItem('宠物出战状态', [$zbid => '2']);
 $cwmz1=($iniFile->getItem('宠物原始名字',$zbid));
 $cwmz2=($iniFile->getItem('宠物名字',$zbid));
-if($cwmz2!=""){
+if($cwmz2){
 echo "<p style='color: red'>".$cwmz1."（".$cwmz2."）加入了战斗！！</p>"."<br>";
 } else{	
 echo "<p style='color: red'>".$cwmz1."加入了战斗！！</p>"."<br>";
@@ -81,4 +81,3 @@ include("./ini/jsini.php");
 
 
 
-?>

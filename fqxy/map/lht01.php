@@ -20,7 +20,7 @@ $tttid=32;
 include("./rcrw/ttt.php");
 
 
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -34,7 +34,7 @@ echo "<p style='color: red'>【烈焰土熊】（已阵亡）</p></br>";
 
 $tttid=33;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -94,7 +94,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=34;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -137,7 +137,7 @@ echo "<p style='color: black'>十八罗汉（二层）</p>"."<a href='xy.php?uid
   //npc
 $tttid=35;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -150,7 +150,7 @@ echo "<p style='color: red'>【玄冰毒蚁】（已阵亡）</p></br>";
 
 $tttid=36;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
   //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -210,7 +210,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 $tttid=37;
 include("./rcrw/ttt.php");
 
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -254,7 +254,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（三层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=38;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -266,7 +266,7 @@ echo "<p style='color: red'>【金丝蚕】（已阵亡）</p></br>";
 } 
 $tttid=39;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -318,7 +318,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=40;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -357,7 +357,7 @@ echo "<p style='color: black'>十八罗汉（四层）</p>"."<a href='xy.php?uid
 
 $tttid=41;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -370,7 +370,7 @@ echo "<p style='color: red'>【风影豹】（已阵亡）</p></br>";
 
 $tttid=42;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -422,7 +422,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=43;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -462,7 +462,7 @@ echo "<p style='color: black'>十八罗汉（五层）</p>"."<a href='xy.php?uid
 
 $tttid=44;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -475,7 +475,7 @@ echo "<p style='color: red'>【魔音蝙蝠】（已阵亡）</p></br>";
 
 $tttid=45;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -524,7 +524,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=46;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -564,7 +564,7 @@ echo "<p style='color: black'>十八罗汉（六层）</p>"."<a href='xy.php?uid
 
 $tttid=47;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -577,7 +577,7 @@ echo "<p style='color: red'>【紫尾貂】（已阵亡）</p></br>";
 
 $tttid=48;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -628,7 +628,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=49;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -667,7 +667,7 @@ echo "<p style='color: black'>十八罗汉（七层）</p>"."<a href='xy.php?uid
 
 $tttid=50;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -681,7 +681,7 @@ echo "<p style='color: red'>【堕落魔蛹】（已阵亡）</p></br>";
 
 $tttid=51;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -733,7 +733,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=52;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -772,7 +772,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=53;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -786,7 +786,7 @@ echo "<p style='color: red'>【幽冥火狐】（已阵亡）</p></br>";
 
 $tttid=54;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -836,7 +836,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=55;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -874,7 +874,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=56;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -886,7 +886,7 @@ echo "<p style='color: red'>【暗夜火鹰】（已阵亡）</p></br>";
 } 
 $tttid=57;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -940,7 +940,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=58;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -980,7 +980,7 @@ echo "<p style='color: black'>十八罗汉（十层）</p>"."<a href='xy.php?uid
 
 $tttid=59;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -993,7 +993,7 @@ echo "<p style='color: red'>【暗黑冰龙】（已阵亡）</p></br>";
 
 $tttid=60;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1043,7 +1043,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=61;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1080,7 +1080,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十一层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=66;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1093,7 +1093,7 @@ echo "<p style='color: red'>【巨人】（已阵亡）</p></br>";
 
 $tttid=67;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1156,7 +1156,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=68;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1201,7 +1201,7 @@ echo "<p style='color: black'>十八罗汉（十二层）</p>"."<a href='xy.php?
 
 $tttid=69;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1214,7 +1214,7 @@ echo "<p style='color: red'>【火精灵】（已阵亡）</p></br>";
 
 $tttid=70;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1272,7 +1272,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=71;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1309,7 +1309,7 @@ echo "<p style='color: black'>十八罗汉（十三层）</p>"."<a href='xy.php?
 
 $tttid=72;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1322,7 +1322,7 @@ echo "<p style='color: red'>【吸血鬼】（已阵亡）</p></br>";
 
 $tttid=73;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1378,7 +1378,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=74;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1414,7 +1414,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十四层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=75;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1427,7 +1427,7 @@ echo "<p style='color: red'>【美杜莎】（已阵亡）</p></br>";
 
 $tttid=76;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1485,7 +1485,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=77;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1524,7 +1524,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十五层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=78;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1537,7 +1537,7 @@ echo "<p style='color: red'>【圣婴】（已阵亡）</p></br>";
 
 $tttid=79;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1593,7 +1593,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=80;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1631,7 +1631,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十六层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=81;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1644,7 +1644,7 @@ echo "<p style='color: red'>【琵琶精】（已阵亡）</p></br>";
 
 $tttid=82;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1701,7 +1701,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=83;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1740,7 +1740,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十七层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=84;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1753,7 +1753,7 @@ echo "<p style='color: red'>【狮猁怪】（已阵亡）</p></br>";
 
 $tttid=85;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1809,7 +1809,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=86;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1846,7 +1846,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十八层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=87;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1859,7 +1859,7 @@ echo "<p style='color: red'>【玉面狐狸】（已阵亡）</p></br>";
 
 $tttid=88;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -1915,7 +1915,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=89;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1953,7 +1953,7 @@ $npc[]=0;
 echo "<p style='color: black'>十八罗汉（十九层）</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>刷新</p></a>"."<br>";
 $tttid=90;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -1966,7 +1966,7 @@ echo "<p style='color: red'>【白面狐狸】（已阵亡）</p></br>";
 
 $tttid=91;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2023,7 +2023,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 }
 $tttid=92;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2061,7 +2061,7 @@ echo "<p style='color: black'>十八罗汉（二十层）</p>"."<a href='xy.php?
 
 $tttid=93;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2074,7 +2074,7 @@ echo "<p style='color: red'>【大鹏金翅雕】（已阵亡）</p></br>";
 
 $tttid=94;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2132,7 +2132,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=95;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2172,7 +2172,7 @@ echo "<p style='color: black'>十八罗汉（二十一层）</p>"."<a href='xy.p
 
 $tttid=163;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2185,7 +2185,7 @@ echo "<p style='color: red'>【玉兔】（已阵亡）</p></br>";
 
 $tttid=164;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2241,7 +2241,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=165;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2282,7 +2282,7 @@ echo "<p style='color: black'>十八罗汉（二十二层）</p>"."<a href='xy.p
 	
 $tttid=166;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2295,7 +2295,7 @@ echo "<p style='color: red'>【七仙女】（已阵亡）</p></br>";
 
 $tttid=167;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2350,7 +2350,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=168;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2390,7 +2390,7 @@ echo "<p style='color: black'>十八罗汉（二十三层）</p>"."<a href='xy.p
 
 $tttid=169;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2403,7 +2403,7 @@ echo "<p style='color: red'>【风伯】（已阵亡）</p></br>";
 
 $tttid=170;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2459,7 +2459,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=171;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2501,7 +2501,7 @@ echo "<p style='color: black'>十八罗汉（二十四层）</p>"."<a href='xy.p
 	
 $tttid=172;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2514,7 +2514,7 @@ echo "<p style='color: red'>【雷公】（已阵亡）</p></br>";
 
 $tttid=173;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2569,7 +2569,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=174;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2611,7 +2611,7 @@ echo "<p style='color: black'>十八罗汉（二十五层）</p>"."<a href='xy.p
 	
 $tttid=175;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2624,7 +2624,7 @@ echo "<p style='color: red'>【鹤童】（已阵亡）</p></br>";
 
 $tttid=176;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2680,7 +2680,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=177;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2719,7 +2719,7 @@ echo "<p style='color: black'>十八罗汉（二十六层）</p>"."<a href='xy.p
 
 $tttid=178;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2732,7 +2732,7 @@ echo "<p style='color: red'>【金吒】（已阵亡）</p></br>";
 
 $tttid=179;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2787,7 +2787,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=180;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2827,7 +2827,7 @@ echo "<p style='color: black'>十八罗汉（二十七层）</p>"."<a href='xy.p
 
 $tttid=181;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2840,7 +2840,7 @@ echo "<p style='color: red'>【千里眼】（已阵亡）</p></br>";
 
 $tttid=182;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -2896,7 +2896,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=183;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2937,7 +2937,7 @@ echo "<p style='color: black'>十八罗汉（二十八层）</p>"."<a href='xy.p
 
 $tttid=184;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -2950,7 +2950,7 @@ echo "<p style='color: red'>【金童】（已阵亡）</p></br>";
 
 $tttid=185;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3006,7 +3006,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=186;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3046,7 +3046,7 @@ echo "<p style='color: black'>十八罗汉（二十九层）</p>"."<a href='xy.p
 
 $tttid=187;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3059,7 +3059,7 @@ echo "<p style='color: red'>【三圣母】（已阵亡）</p></br>";
 
 $tttid=188;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3115,7 +3115,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=189;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3154,7 +3154,7 @@ echo "<p style='color: black'>十八罗汉（三十层）</p>"."<a href='xy.php?
 
 $tttid=190;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3167,7 +3167,7 @@ echo "<p style='color: red'>【二郎神】（已阵亡）</p></br>";
 
 $tttid=191;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3233,7 +3233,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=192;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3274,7 +3274,7 @@ echo "<p style='color: black'>十八罗汉（仙一层）</p>"."<a href='xy.php?
 
 $tttid=229;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3287,7 +3287,7 @@ echo "<p style='color: red'>【烈焰土熊】（仙）（已阵亡）</p></br>"
 
 $tttid=230;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3347,7 +3347,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=231;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3389,7 +3389,7 @@ echo "<p style='color: black'>十八罗汉（仙二层）</p>"."<a href='xy.php?
 
 $tttid=232;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3402,7 +3402,7 @@ echo "<p style='color: red'>【玄冰毒蚁】（仙）（已阵亡）</p></br>"
 
 $tttid=233;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3463,7 +3463,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=234;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3502,7 +3502,7 @@ echo "<p style='color: black'>十八罗汉（仙三层）</p>"."<a href='xy.php?
 
 $tttid=235;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3515,7 +3515,7 @@ echo "<p style='color: red'>【金丝蚕】（仙）（已阵亡）</p></br>";
 
 $tttid=236;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3575,7 +3575,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=237;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3616,7 +3616,7 @@ echo "<p style='color: black'>十八罗汉（仙四层）</p>"."<a href='xy.php?
 
 $tttid=238;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3629,7 +3629,7 @@ echo "<p style='color: red'>【风影豹】（仙）（已阵亡）</p></br>";
 
 $tttid=239;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3688,7 +3688,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=240;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3729,7 +3729,7 @@ echo "<p style='color: black'>十八罗汉（仙五层）</p>"."<a href='xy.php?
 
 $tttid=241;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3742,7 +3742,7 @@ echo "<p style='color: red'>【魔音蝙蝠】（仙）（已阵亡）</p></br>"
 
 $tttid=242;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3801,7 +3801,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=243;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3843,7 +3843,7 @@ echo "<p style='color: black'>十八罗汉（仙六层）</p>"."<a href='xy.php?
 
 $tttid=244;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3856,7 +3856,7 @@ echo "<p style='color: red'>【紫尾貂】（仙）（已阵亡）</p></br>";
 
 $tttid=245;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -3916,7 +3916,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=246;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3958,7 +3958,7 @@ echo "<p style='color: black'>十八罗汉（仙七层）</p>"."<a href='xy.php?
 
 $tttid=247;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -3971,7 +3971,7 @@ echo "<p style='color: red'>【堕落魔蛹】（仙）（已阵亡）</p></br>"
 
 $tttid=248;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4031,7 +4031,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=249;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4072,7 +4072,7 @@ echo "<p style='color: black'>十八罗汉（仙八层）</p>"."<a href='xy.php?
 
 $tttid=250;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4085,7 +4085,7 @@ echo "<p style='color: red'>【幽冥火狐】（仙）（已阵亡）</p></br>"
 
 $tttid=251;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4145,7 +4145,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=252;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4184,7 +4184,7 @@ echo "<p style='color: black'>十八罗汉（仙九层）</p>"."<a href='xy.php?
 
 $tttid=253;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4197,7 +4197,7 @@ echo "<p style='color: red'>【暗夜火鹰】（仙）（已阵亡）</p></br>"
 
 $tttid=254;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4257,7 +4257,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>进�
 
 $tttid=255;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4298,7 +4298,7 @@ echo "<p style='color: black'>十八罗汉（仙十层）</p>"."<a href='xy.php?
 
 $tttid=256;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4311,7 +4311,7 @@ echo "<p style='color: red'>【暗黑冰龙】（仙）（已阵亡）</p></br>"
 
 $tttid=257;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -4383,7 +4383,7 @@ echo "<p style='color: res'>进入【十八罗汉仙十一层】（封印中）<
 
 $tttid=258;
 include("./rcrw/ttt.php");
-if ($hdcs==1&&$hdcs!="") {
+if ($hdcs==1&&$hdcs) {
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -4436,4 +4436,3 @@ echo "<p style='color: black'>十八罗汉（仙十层）准备往哪里走呢�
 
 
 
-?>

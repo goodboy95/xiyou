@@ -36,4 +36,3 @@ $iniFile = new iniFile($file);
 $xtbl1=($iniFile->getItem('国战判断时间','月'));
 $xtbl2=($iniFile->getItem('国战判断时间','日'));
 
-?>

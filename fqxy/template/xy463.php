@@ -54,4 +54,3 @@ $cdid[]=$cmid;
 $clj[]=403;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返回娱乐</p></a>"."<p style='color: black'></p>"."<br>";
-?>

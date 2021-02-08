@@ -230,7 +230,7 @@ $wp10=5;//分类
 echo "<p style='color: red'>物品描述信息有误，请联系gm进行纠正，错误ID：$npcc</p></a>"."<br>";
 
 }
-?>
+
 
 
 

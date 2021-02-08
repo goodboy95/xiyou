@@ -46,7 +46,7 @@ include("wj/ztt.php");
 include("./ini/zt_ini.php");
 $wjxx=($iniFile->getCategory('玩家信息'));
 
-if($wjxx['玩家名字']!=""){
+if($wjxx['玩家名字']){
 $maxidd=$maxidd+1;
 $q2="all_phb";
 $sql = "insert into $q2 (id,wjid,wjmz,vip,phb1,phb2,phb3,phb4,phb5,phb6,phb7,phb8)  values('$maxidd','$wjid','$wjxx['玩家名字']','$wjxx['vip等级']','$wjxx1['血']','$wjxx1['max攻击']','$wjxx1['max魔攻']','$wjxx1['max防御']','$wjxx['等级']','0','0','0')";
@@ -113,7 +113,7 @@ echo "<p style='color: black'>---------------------</p>"."<br>";
 
 
 echo "<a href=http://".$xxjyurl."/admin/index.php?wjid=$wjid&&pass=$password><p style='color: blue'>返回GM管理平台</p></a>"."<br>";
-?>
+
 
 
 

@@ -10,7 +10,7 @@ $zbid=$npcc;
 $arr = explode("_",$npcc);
 $npcc=$arr[0];
 $npccid=$arr[1];
-if($npccid!=""){
+if($npccid){
 //修改为休息状态
 include("./sql/mysql.php");//调用数据库连接 
 $q2="cw".$wjid;
@@ -21,7 +21,7 @@ include("./ini/cw_ini.php");
 $iniFile->updItem('宠物出战状态', [$zbid => '1']);
 $cwmz1=($iniFile->getItem('宠物原始名字',$zbid));
 $cwmz2=($iniFile->getItem('宠物名字',$zbid));
-if($cwmz2!=""){
+if($cwmz2){
 echo "<p style='color: red'>你将".$cwmz1."（".$cwmz2."）召回了回来！！</p>"."<br>";
 } else{	
 echo "<p style='color: red'>你将".$cwmz1."召回了回来！！</p>"."<br>";
@@ -47,4 +47,3 @@ include("./ini/jsini.php");
 
 
 
-?>

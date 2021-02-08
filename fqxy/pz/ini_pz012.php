@@ -72,4 +72,4 @@ echo "<p style='color: black'>宠物获得：".$ylxx."经验</p><br>";
 
 
 
-?>
+

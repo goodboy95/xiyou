@@ -206,4 +206,3 @@ echo "<p style='color: red'>对不起！对方已经把你拉黑，无法组队<
 include("template/xy093.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
-?>

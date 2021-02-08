@@ -4,9 +4,7 @@ $file = "";
 $inina = "all_user.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-
-} else {
+if (!file_exists($file)) {
     //连接数据库提取数据写入ini
     include("./sql/mysql.php");//调用数据库连接
     $q2 = "all_user";
@@ -27,7 +25,7 @@ if (file_exists($file)) {
     //数据库数据导入ini文件
     # 添加一个分类并直接添加子项
     $iniFile->addItem('禁言信息', ['初始' => 123]);
-    if ($wjuserid != "") {
+    if ($wjuserid) {
         $iniFile->addCategory('禁言信息', ['玩家名字' => $uname, '禁言时间' => $wjtime, '解除变量' => $time, '永久' => $yj]);
         //数据库数据导入ini文件
     }
@@ -40,10 +38,9 @@ if (file_exists($file)) {
     $time = $info1['utime'];
     $yj = $info1['yj'];
     $iniFile->addItem('封号信息', ['初始' => 123]);
-    if ($wjuserid != "") {
+    if ($wjuserid) {
         $iniFile->addCategory('封号信息', ['玩家名字' => $uname, '封号时间' => $wjtime, '解除变量' => $time, '永久' => $yj]);
         //数据库数据导入ini文件
     }
 }
 $iniFile = new iniFile($file);
-?>

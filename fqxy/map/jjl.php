@@ -661,4 +661,3 @@ echo "<p style='color: black'>荆棘岭(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

@@ -12,7 +12,7 @@ $arr = explode("_",$npcc);
 $npcc=$arr[0];
 $npccid=$arr[1];
 $cwidd=$npcc."_".$npccid;
-if($npccid!=""){
+if($npccid){
 
 
 //调用cw.ini是否存在
@@ -198,4 +198,3 @@ include("./ini/jsini.php");
 
 
 
-?>

@@ -2877,7 +2877,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>30�
     include("./ini/tltime_ini.php");
     $hdtime = ($iniFile->getItem('天牢时间', '初始'));
     $vipqytime = 300;//系统消息存活秒数30分钟
-    if ($hdtime != "") {
+    if ($hdtime) {
         $startdate = $hdtime;
         $enddate = date('Y-m-d H:i:s');
         $minute = floor((strtotime($enddate) - strtotime($startdate)));
@@ -6281,4 +6281,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>30�
 } else {
     echo "错误地图,编号：" . $dty . "<br>";
 }
-?>

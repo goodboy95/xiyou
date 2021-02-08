@@ -14,6 +14,6 @@ $clj[]=15;
 $npc[]=$jn;
 echo "<p style='color: black'>快捷键".$jn.":</p>"."<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>选择</p></a>"."<br>";
 }
-?>
+
 
 

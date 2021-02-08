@@ -16,7 +16,7 @@ $cwid4=$zbidx."_".$cwid3;
 
 
 
-if($cwid3!=""&&$zbidx!=""){
+if($cwid3&&$zbidx){
 
 //调用装备信息
 include("./wp/zbxx.php");
@@ -514,4 +514,3 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>返�
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

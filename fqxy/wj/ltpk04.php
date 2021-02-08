@@ -28,6 +28,6 @@ $iniFile->updItem('擂台玩家属性', ['玩家hp' => $pkhp]);
 
 
 
-?>
+
 
 

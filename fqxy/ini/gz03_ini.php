@@ -50,4 +50,3 @@ $iniFile->addCategory('领取', [$row['gjid']=>$row['lq']]);
 $iniFile = new iniFile($file);
 
 
-?>

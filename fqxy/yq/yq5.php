@@ -60,4 +60,3 @@ if($pk==4){//被打死
     include("template/xy394.php");
     include("./pz/pz01.php");
 }
-?>

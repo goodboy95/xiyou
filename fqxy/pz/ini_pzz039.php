@@ -14,7 +14,7 @@ $npcc=$boxcwid;
 
 include("./npc/npcxx.php");
 
-if($cwid !=""){
+if($cwid){
 
 include("./cw/cwxx.php");
 
@@ -38,7 +38,7 @@ $q2="cw".$wjid;
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -132,4 +132,4 @@ echo "<p style='color: red'>对不起，你的宠物背包已满了！请及时�
 
 $npcc=$npcccz;
 
-?>
+

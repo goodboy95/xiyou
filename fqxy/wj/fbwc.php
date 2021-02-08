@@ -788,7 +788,7 @@ $sl="";
 
 
 
-if ($sl!="") {
+if ($sl) {
 
 
 
@@ -849,7 +849,7 @@ $kcrl=$wpkc*$wpzl+$kcrl;
 
 }
 }
-if ($kcrl!="") {
+if ($kcrl) {
 include("./pz/ini_pzz09.php");
 echo $manzu1;
 }
@@ -890,6 +890,6 @@ echo "<p style='color: black'>对不起！完成副本领取奖励遭遇异常�
 
 
 
-?>
+
 
 

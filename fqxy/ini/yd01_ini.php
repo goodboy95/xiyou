@@ -6,21 +6,20 @@ $file = "";
 $inina = "yd01.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-} else {
+if (!file_exists($file)) {
     //连接数据库提取数据写入ini 
     include("./sql/mysql.php");//调用数据库连接 
     $q2 = "all_yd01";
     $sql1 = mysqli_query($conn, "select * from $q2 where wjid=$wjid");
     $info1 = @mysqli_fetch_array($sql1);
     $ydid = $info1['wjid'];
-    if ($ydid == "") {
+    if (!$ydid) {
 //获取最大值
         $q2 = "all_yd01";
         $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
         $abc = mysqli_fetch_array($sql1);
         $maxid = $abc[0];
-        if ($maxid == "") {
+        if (!$maxid) {
             $maxidd = $maxid + 1;
         } else {
             $maxidd = $maxid + 1;
@@ -52,4 +51,3 @@ if (file_exists($file)) {
     $iniFile->addCategory('摇点信息', ['今日点数' => $ds01, '活动点数' => $ds02, '摇点时间' => $dy01_time, '免费次数' => $yd01, '收费次数' => $yd02]);
 }
 $iniFile = new iniFile($file);
-?>

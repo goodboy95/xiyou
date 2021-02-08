@@ -710,6 +710,6 @@ include("./rwmap/rwget.php");
 
 }
 
-?>
+
 
 

@@ -40,4 +40,4 @@ echo "<p style='color: black'>获得".$ylxx."法宝经验！！</p><br>";
 
 
 
-?>
+

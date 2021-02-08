@@ -21,14 +21,14 @@ $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select wpsl from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpsl=$info1['wpsl'];
-if($ckwpsl ==""){
+if (!$ckwpsl){
 $ckwpsl=0;
 }
 $q2="ckwp".$wjid;
 $sql1=mysqli_query($conn, "select wpsl from $q2 where wpid=$czid");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpsl1=$info1['wpsl'];
-if($ckwpsl1 ==""){
+if (!$ckwpsl1){
 $ckwpsl1=0;
 }
 
@@ -83,7 +83,7 @@ echo "<a href='gm.php?wjid=$wjiddd&&pass=$password&&gid=3'><p style='color: blue
 
 
 
-?>
+
 
 
 

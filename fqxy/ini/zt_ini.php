@@ -77,4 +77,3 @@ if (!file_exists($file)) {
     //初始
 }
 $iniFile = new iniFile($file);
-?>

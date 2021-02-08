@@ -6,7 +6,7 @@ if($zsspd==1){
 
 $cwidd=$npcc;
 
-if($cwidd!=""){
+if($cwidd){
 
 
 
@@ -15,7 +15,7 @@ include("./ini/cw_ini.php");
 $cwmz1=($iniFile->getItem('宠物原始名字',$cwidd));
 $cwmz2=($iniFile->getItem('宠物名字',$cwidd));
 
-if($cwmz2!=""){
+if($cwmz2){
 echo "<p style='color: red'>你成功要将".$cwmz1."（".$cwmz2."）放生了！</p>"."<br>";
 } else{	
 echo "<p style='color: red'>你成功要将".$cwmz1."放生了！</p>"."<br>";
@@ -104,4 +104,3 @@ include("./ini/jsini.php");
 
 
 
-?>

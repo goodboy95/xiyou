@@ -32,7 +32,7 @@ $wpsy=1;//使用失败
 		} else{
 $iniFile->updItem('玩家信息', ['修炼经验' => $jy2]);	
 
-	if($jyts !=""){
+	if($jyts){
 echo "<p style='color: red'>祝福：".$jyts."</p><br>";
 	}
 
@@ -75,4 +75,4 @@ echo "<p style='color: black'>获得：".$ylxx."修炼经验</p><br>";
 
 
 
-?>
+

@@ -15,7 +15,7 @@ if ($zsspd == 1) {
         include("./ini/npc_ini.php");
         $npcc = ($iniFile->getItem('怪物编号', '1号'));
         include("./npc/npcxx.php");
-        if ($wjssh != "" && $wjssh <= 0) {//自己死亡
+        if ($wjssh && $wjssh <= 0) {//自己死亡
             include("template/xy349.php");
 //不走xy.php直接调用xy文件需要加pz01配置
             include("./pz/pz01.php");
@@ -67,4 +67,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

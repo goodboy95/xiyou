@@ -52,7 +52,7 @@ include("./ini/jsini.php");
 
 
 
-?>
+
 
 
 

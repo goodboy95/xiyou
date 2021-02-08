@@ -25,4 +25,3 @@ if (file_exists($file)) {
     }
 }
 $iniFile = new iniFile($file);
-?>

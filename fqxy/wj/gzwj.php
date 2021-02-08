@@ -287,7 +287,7 @@ $i=0;
 //if($dtx!=71||$dtx!=72||$dtx!=73){
 	//不在住宅
 	
-foreach( $array2 as $v ) 
+foreach( $array2 as $v)
 { 
 
 
@@ -316,7 +316,7 @@ $wjgjzw=($iniFile->getItem('国家职务名字值'.$dtx.'x'.$dty,$v));
 	 echo "<p style='color: black'>,</p>";
 	  } 
 	  
-	  	if ($wjvip!="") {	 
+	  	if ($wjvip) {
 $img='pic/vip/'."vip".$wjvip.'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
@@ -332,7 +332,7 @@ $npc[]=$v;
 
 
 
-	if ($wjgjmz!="") {	
+	if ($wjgjmz) {
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$wjmz."【".$wjgjmz."】（".$wjgjzw."）</p></a>";
 
 } else{
@@ -406,7 +406,7 @@ echo "</br>";
 
 }else{
 
-	if($ydtx!=""&&$dtx!=""&&$ydtx!=$dtx||$ydtx!=""&&$dtx!=""&&$ydty!=$dty){
+	if($ydtx&&$dtx&&$ydtx!=$dtx||$ydtx&&$dtx&&$ydty!=$dty){
 	$path='acher/map';
     include("mapid.php");
 	$ininames = $path."/".$inina;	
@@ -433,7 +433,7 @@ $iniFile->delItem('玩家id值'.$ydtx.'x'.$ydty, $wjid);
 //移动清除掉上次地图坐标
 
 
-		if($ydtx!=""&&$dtx!=""&&$ydtx!=$dtx||$ydtx!=""&&$dtx!=""&&$ydty!=$dty){
+		if($ydtx&&$dtx&&$ydtx!=$dtx||$ydtx&&$dtx&&$ydty!=$dty){
 	$path='acher/map';
     include("mapid.php");
 	$ininames = $path."/".$inina;	
@@ -461,7 +461,7 @@ $iniFile->delItem('玩家名字值'.$ydtx.'x'.$ydty, $wjid);
 //移动清除掉上次地图坐标
 
 
-	if($ydtx!=""&&$dtx!=""&&$ydtx!=$dtx||$ydtx!=""&&$dtx!=""&&$ydty!=$dty){
+	if($ydtx&&$dtx&&$ydtx!=$dtx||$ydtx&&$dtx&&$ydty!=$dty){
 	$path='acher/map';
     include("mapid.php");
 	$ininames = $path."/".$inina;	
@@ -485,7 +485,7 @@ $iniFile->delItem('玩家vip值'.$ydtx.'x'.$ydty, $wjid);
 //移动清除掉上次地图坐标
 
 
-	if($ydtx!=""&&$dtx!=""&&$ydtx!=$dtx||$ydtx!=""&&$dtx!=""&&$ydty!=$dty){
+	if($ydtx&&$dtx&&$ydtx!=$dtx||$ydtx&&$dtx&&$ydty!=$dty){
 	$path='acher/map';
     include("mapid.php");
 	$ininames = $path."/".$inina;	
@@ -508,7 +508,7 @@ $iniFile->delItem('国家名字值'.$ydtx.'x'.$ydty, $wjid);
 //移动清除掉上次地图坐标
 
 
-	if($ydtx!=""&&$dtx!=""&&$ydtx!=$dtx||$ydtx!=""&&$dtx!=""&&$ydty!=$dty){
+	if($ydtx&&$dtx&&$ydtx!=$dtx||$ydtx&&$dtx&&$ydty!=$dty){
 	$path='acher/map';
     include("mapid.php");
 	$ininames = $path."/".$inina;	
@@ -533,7 +533,7 @@ $iniFile->delItem('国家职务名字值'.$ydtx.'x'.$ydty, $wjid);
 
 
 
-	if($ydtx!=""&&$dtx!=""&&$ydtx!=$dtx||$ydtx!=""&&$dtx!=""&&$ydty!=$dty){
+	if($ydtx&&$dtx&&$ydtx!=$dtx||$ydtx&&$dtx&&$ydty!=$dty){
 	$path='acher/map';
     include("mapid.php");
 	$ininames = $path."/".$inina;	
@@ -587,6 +587,6 @@ echo "fm";
  
  
 
-?>
+
 
 

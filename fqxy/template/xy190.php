@@ -71,27 +71,27 @@ $mt=$mt+1;
 include("./ini/gz01_ini.php");
 
 $zlf1=($iniFile->getItem('国家名字','1'));
-if($zlf1 ==""){
+if (!$zlf1){
 $zlf1="未";
 }
 $zlf2=($iniFile->getItem('国家名字','2'));
-if($zlf2 ==""){
+if (!$zlf2){
 $zlf2="未";
 }
 $zlf3=($iniFile->getItem('国家名字','3'));
-if($zlf3 ==""){
+if (!$zlf3){
 $zlf3="未";
 }
 $zlf4=($iniFile->getItem('国家名字','4'));
-if($zlf4 ==""){
+if (!$zlf4){
 $zlf4="未";
 }
 $zlf5=($iniFile->getItem('国家名字','5'));
-if($zlf5 ==""){
+if (!$zlf5){
 $zlf5="未";
 }
 $zlf7=($iniFile->getItem('国家名字','7'));
-if($zlf7 ==""){
+if (!$zlf7){
 $zlf7="未";
 }
 $weekarray=array("7","1","2","3","4","5","6");
@@ -102,7 +102,7 @@ $gjjz="休整";
 } else{
 $zlgj=($iniFile->getItem('国家名字',$week));
 $gjjz=($iniFile->getItem('君主名字',$week));
-if($zlgj ==""){
+if (!$zlgj){
 $zlgj="无";
 $gjjz="无";
 }
@@ -177,4 +177,3 @@ include("fhgame.php");
 
 
 
-?>

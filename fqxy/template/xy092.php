@@ -176,26 +176,26 @@ $keydtt05=$keydt05[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 echo "<p style='color: black'>".$xxh.".</p>";
 
- 	if ($keydtt03!="") {	 
+ 	if ($keydtt03) {
 $img='pic/vip/'."vip".$keydtt03.'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
 }
-if($keydtt01!=$wjid&&$keydtt01!=""&&$wjid!=""){
+if($keydtt01!=$wjid&&$keydtt01&&$wjid){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keydtt01;
-if ($keydtt04!="") {	
+if ($keydtt04) {
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p></a>";
 } else{
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."</p></a>";
 }
 } else{
-	if ($keydtt04!="") {	
+	if ($keydtt04) {
 echo "<p style='color: red'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p>";
 } else{
 echo "<p style='color: red'>".$keydtt02.".</p>";
@@ -220,26 +220,26 @@ $keydtt05=$keydt05[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 echo "<p style='color: black'>".$xxh.".</p>";
 
- 	if ($keydtt03!="") {	 
+ 	if ($keydtt03) {
 $img='pic/vip/'."vip".$keydtt03.'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
 }
-if($keydtt01!=$wjid&&$keydtt01!=""&&$wjid!=""){
+if($keydtt01!=$wjid&&$keydtt01&&$wjid){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keydtt01;
-if ($keydtt04!="") {	
+if ($keydtt04) {
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p></a>";
 } else{
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."</p></a>";
 }
 } else{
-	if ($keydtt04!="") {	
+	if ($keydtt04) {
 echo "<p style='color: red'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p>";
 } else{
 echo "<p style='color: red'>".$keydtt02.".</p>";
@@ -265,26 +265,26 @@ $keydtt05=$keydt05[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 echo "<p style='color: black'>".$xxh.".</p>";
 
- 	if ($keydtt03!="") {	 
+ 	if ($keydtt03) {
 $img='pic/vip/'."vip".$keydtt03.'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
 
 
 }
-if($keydtt01!=$wjid&&$keydtt01!=""&&$wjid!=""){
+if($keydtt01!=$wjid&&$keydtt01&&$wjid){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
 $clj[]=93;
 $npc[]=$keydtt01;
-if ($keydtt04!="") {	
+if ($keydtt04) {
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p></a>";
 } else{
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$keydtt02."</p></a>";
 }
 } else{
-	if ($keydtt04!="") {	
+	if ($keydtt04) {
 echo "<p style='color: red'>".$keydtt02."【".$keydtt04."】（".$keydtt05."）</p>";
 } else{
 echo "<p style='color: red'>".$keydtt02.".</p>";
@@ -451,4 +451,3 @@ echo "fm";
 
 
 
-?>

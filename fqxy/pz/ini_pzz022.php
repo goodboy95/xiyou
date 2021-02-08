@@ -7,7 +7,7 @@
 $wpsl=($iniFile->getItem($wpzzz,$wpid));
 $wpsll=$wpsl+$wpkc;
 
-if($wpsl!=""){
+if($wpsl){
 $q2="wp".$wjid;
 $strsql = "update $q2 set wpsl=$wpsll where wpid=$wpid";//物品id号必改值
 $result = mysqli_query($conn, $strsql);
@@ -20,7 +20,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -72,4 +72,4 @@ unlink($ininame); //删除文件
  echo "<p style='color: black'>得到了".$wpmz."x".$wpkc."</p>"."<br>";
 
 
-?>
+

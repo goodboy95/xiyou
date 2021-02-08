@@ -15,4 +15,3 @@ if (file_exists($file)) {
     $iniFile->addItem('赠送人', ['初始' => 123]);
 }
 $iniFile = new iniFile($file);
-?>

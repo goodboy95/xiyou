@@ -5325,7 +5325,7 @@ include("fhgame.php");
 
 
 
-?>
+
 
 
 

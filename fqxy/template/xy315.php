@@ -23,7 +23,7 @@ if ($zsspd == 1) {
             } elseif ($vip >= 6) {
                 $czsx = 3;
             } else {
-                $czsx = 0;
+                $czsx = 10000; //duwei: 后续改为0，并探索新的重置方式
             }
             if ($czsx >= $czcs + 1) {
                 $fbcz1 = 2;
@@ -41,8 +41,8 @@ if ($zsspd == 1) {
         $wpdz1[] = "【副本重置令】";//名字
         $wpdz2[] = 4;//物品分类
         $wpdz3[] = 409;//物品id
-        $wpdz4[] = 1;//	需要扣除的量
-        $wpdz5[] = 1;//	重量
+        $wpdz4[] = 0;//	需要扣除的量  duwei:后续改为1
+        $wpdz5[] = 0;//	重量
 //提供需要扣除的物品作为判读依据
         $m = count($wpdz1, 0);
         $km = $m;
@@ -163,7 +163,7 @@ if ($zsspd == 1) {
             $sql1 = mysqli_query($conn, "select MAX(id) from $q2");
             $abc = mysqli_fetch_array($sql1);
             $maxid = $abc[0];
-            if ($maxid == "") {
+            if (!$maxid) {
                 $maxid = 0;
                 $maxidd = $maxid + 1;
             } else {
@@ -200,4 +200,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

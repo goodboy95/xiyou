@@ -3,7 +3,7 @@ function calc($m,$n,$x){
   $errors=array(
     '被除数不能为零',
     '负数没有平方根'
-  );
+ );
   switch($x){
     case 'add':
       $t=bcadd($m,$n);
@@ -47,7 +47,7 @@ return $t;
 //方法:
 //calc(参数1参数2,参数3);
 //参数3指定运算方法:add加,sub减,mul乖,div除,pow幂,mod取模,sqrt求算术平方根
-?>
+
 
 
 

@@ -250,7 +250,7 @@ $wjid=$wjid1;
 echo"<p style='color: black'>".$ckname."的装备如下：</p></a>"."<br>";
 
 
-if($czbmz1!=""){
+if($czbmz1){
 echo "<p style='color: black'>法宝：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -268,7 +268,7 @@ echo "<p style='color: black'>法宝：".$zbmz1."</p></a>"."<br>";
 
 
 
-if($czbmz2!=""){
+if($czbmz2){
 echo "<p style='color: black'>坐骑：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -283,7 +283,7 @@ echo "<p style='color: black'>坐骑：".$zbmz1."</p></a>"."<br>";
 
 
 
-if($czbmz3!=""){
+if($czbmz3){
 echo "<p style='color: black'>手持：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -298,7 +298,7 @@ echo "<p style='color: black'>手持：".$zbmz1."</p></a>"."<br>";
 }
 
 
-if($czbmz4!=""){
+if($czbmz4){
 echo "<p style='color: black'>身穿：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -311,7 +311,7 @@ $zbmz1="无";
 echo "<p style='color: black'>身穿：".$zbmz1."</p></a>"."<br>";
 }
 
-if($czbmz5!=""){
+if($czbmz5){
 echo "<p style='color: black'>头戴：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -325,7 +325,7 @@ echo "<p style='color: black'>头戴：".$zbmz1."</p></a>"."<br>";
 }
 
 
-if($czbmz6!=""){
+if($czbmz6){
 echo "<p style='color: black'>脚穿：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -343,7 +343,7 @@ echo "<p style='color: black'>脚穿：".$zbmz1."</p></a>"."<br>";
 
 
 
-if($czbmz7!=""){
+if($czbmz7){
 echo "<p style='color: black'>佩戴：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -359,7 +359,7 @@ echo "<p style='color: black'>佩戴：".$zbmz1."</p></a>"."<br>";
 
 
 
-if($czbmz8!=""){
+if($czbmz8){
 echo "<p style='color: black'>首饰：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -376,7 +376,7 @@ echo "<p style='color: black'>首饰：".$zbmz1."</p></a>"."<br>";
 
 
 
-if($czbmz9!=""){
+if($czbmz9){
 echo "<p style='color: black'>婚戒：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -391,7 +391,7 @@ echo "<p style='color: black'>婚戒：".$zbmz1."</p></a>"."<br>";
 
 
 
-if($czbmz10!=""){
+if($czbmz10){
 echo "<p style='color: black'>婚链：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -405,7 +405,7 @@ $zbmz1="无";
 echo "<p style='color: black'>婚链：".$zbmz1."</p></a>"."<br>";
 }
 
-if($czbmz11!=""){
+if($czbmz11){
 echo "<p style='color: black'>披风：</p></a>";
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -452,4 +452,3 @@ include("./ini/ojsini.php");
 
 
 
-?>

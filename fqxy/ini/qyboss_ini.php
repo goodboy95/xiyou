@@ -46,4 +46,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

@@ -189,4 +189,3 @@ echo "<p style='color: black'>一片废墟不知通向哪里？</p>"."<br>";
 
 
 
-?>

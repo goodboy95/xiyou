@@ -79,7 +79,7 @@ $q2="all_pm";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -385,7 +385,7 @@ $q2="all_pm";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -812,7 +812,7 @@ echo "<p style='color: red'>你以每件".$ylxx."两的价格拍卖了".$wpmz."x
 echo "<br>";
 
 
-if($ymid==""){//背包书卷
+if (!$ymid){//背包书卷
 $ymid=27;
 }
 
@@ -920,7 +920,7 @@ echo "<br>";
 }
 
 
-?>
+
 
 
 

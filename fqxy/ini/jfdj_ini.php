@@ -25,8 +25,8 @@ $q2="jfdj".$wjid;
 if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
 $sql = " CREATE  TABLE  $q2 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
-`jfdj` int( 11  )  NOT  NULL default  '0' COMMENT  '解封等级')
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号id',
+`jfdj` int( 11 )  NOT  NULL default  '0' COMMENT  '解封等级')
 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci";
 mysqli_query($conn, $sql);
 }
@@ -38,7 +38,7 @@ $q2="jfdj".$wjid;
 $sql1=mysqli_query($conn, "select id from $q2 where id=1");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['id'];
-if($xlpd ==""){
+if (!$xlpd){
 
 $sql = "insert into $q2 (id,jfdj)  values('1','159')";
  if (!mysqli_query($conn, $sql)){
@@ -87,4 +87,3 @@ $iniFile = new iniFile($file);
 	
 	
 	
-?>

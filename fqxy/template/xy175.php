@@ -116,7 +116,7 @@ $xxh= $ym*10-9+$i;
 
 echo "<p style='color: black'>".$xxh.".</p>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -155,7 +155,7 @@ if($bp['辅助大臣id']==$wjid||$wjid==$bp['现任君主id']){
 
 echo "<p style='color: black'>[".$bpzw1."]|".$lsgx."点|</p>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 if($bpzw1!="成员"){
 if($bpzw1=="辅助大臣"){
 $gzzid=2;
@@ -204,7 +204,7 @@ echo "</br>";
 } elseif($bp['军机大臣id']==$wjid||$bp['财政大臣id']==$wjid||$bp['工部大臣id']==$wjid||$bp['外交大臣id']==$wjid||$bp['军团长id']==$wjid){
 echo "<p style='color: black'>[".$bpzw1."]|".$lsgx."点|</p>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp['现任君主id']){
+if($xxid!=$wjid&&$xxid&&$wjid&&$xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -245,7 +245,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 
 echo "<p style='color: black'>".$xxh.".</p>";
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -281,7 +281,7 @@ $bpzw1="成员";
 if($bp['辅助大臣id']==$wjid||$wjid==$bp['现任君主id']){
 
 echo "<p style='color: black'>[".$bpzw1."]|".$lsgx."点|</p>";
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 if($bpzw1!="成员"){
 	if($bpzw1=="辅助大臣"){
 $gzzid=2;
@@ -326,7 +326,7 @@ echo "</br>";
 } elseif($bp['军机大臣id']==$wjid||$bp['财政大臣id']==$wjid||$bp['工部大臣id']==$wjid||$bp['外交大臣id']==$wjid||$bp['军团长id']==$wjid){
 echo "<p style='color: black'>[".$bpzw1."]|".$lsgx."点|</p>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp['现任君主id']){
+if($xxid!=$wjid&&$xxid&&$wjid&&$xxid!=$bp['现任君主id']){
 //cmd及超链接值
 $cmid=$cmid+1;
 $cdid[]=$cmid;
@@ -364,7 +364,7 @@ $lsgx=$keygjlsgx[$ym*10-9+$i];
 $xxh= $ym*10-9+$i;
 	
 echo "<p style='color: black'>".$xxh.".</p>";
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -400,7 +400,7 @@ $bpzw1="成员";
 if($bp['辅助大臣id']==$wjid||$wjid==$bp['现任君主id']){
 
 echo "<p style='color: black'>[".$bpzw1."]|".$lsgx."点|</p>";
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""){
+if($xxid!=$wjid&&$xxid&&$wjid){
 if($bpzw1!="成员"){
 if($bpzw1=="辅助大臣"){
 $gzzid=2;
@@ -449,7 +449,7 @@ echo "</br>";
 } elseif($bp['军机大臣id']==$wjid||$bp['财政大臣id']==$wjid||$bp['工部大臣id']==$wjid||$bp['外交大臣id']==$wjid||$bp['军团长id']==$wjid){
 echo "<p style='color: black'>[".$bpzw1."]|".$lsgx."点|</p>";
 
-if($xxid!=$wjid&&$xxid!=""&&$wjid!=""&&$xxid!=$bp['现任君主id']){
+if($xxid!=$wjid&&$xxid&&$wjid&&$xxid!=$bp['现任君主id']){
 
 //cmd及超链接值
 $cmid=$cmid+1;
@@ -612,4 +612,3 @@ include("./ini/jsini.php");
 //解锁当前使用的ini
 
 
-?>

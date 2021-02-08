@@ -80,4 +80,3 @@ include("fhgame.php");
 
 
 
-?>

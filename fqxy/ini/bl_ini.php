@@ -28,4 +28,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

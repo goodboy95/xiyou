@@ -11,7 +11,7 @@ if ($zsspd == 1 && $zsspd1 == 1) {
         $wjtake10 = $_POST['wjtoke'];
         $wjtakes2 = iconv_strlen($wjtake10, "UTF-8");
         $wjtake = iconv("utf-8", "gbk", $wjtake10);
-        if ($wjtake10 != "") {
+        if ($wjtake10) {
             include("./sql/mysql.php");//调用数据库连接 
             $q2 = "all_sdk";
             $sql1 = mysqli_query($conn, "select * from $q2 where sdk='$wjtake10'");
@@ -21,9 +21,9 @@ if ($zsspd == 1 && $zsspd1 == 1) {
             $sdk3 = $info1['sdkfl'];
             $sdk4 = $info1['sdksy'];
 //验证是否存在	
-            if ($sdk1 != "") {
+            if ($sdk1) {
 //验证是否使用		
-                if ($sdk4 != "" && $sdk4 != 2) {
+                if ($sdk4 && $sdk4 != 2) {
                     $nowtime = date('Y-m-d H:i:s');
 //验证是否过期	
                     if ($nowtime <= $sdk2) {

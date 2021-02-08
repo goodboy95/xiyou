@@ -19,7 +19,6 @@ if ($zsspd == 1) {
         $iniFile = new iniFile($file);
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('背包页面', ['页面id' => $cmdd]);
-    } else {
     }
 //ini文件名字
     $inina = "zt.ini";
@@ -398,4 +397,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

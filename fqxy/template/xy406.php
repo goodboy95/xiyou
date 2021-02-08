@@ -32,4 +32,3 @@ include("fhgame.php");
 
 
 
-?>

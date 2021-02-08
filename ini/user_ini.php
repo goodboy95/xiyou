@@ -24,7 +24,7 @@ if (file_exists($file)) {
     $pass = md5($_POST['password'] . 'ALL_PS');
     $name = $info1['name'];
     $wjini = $uid + 10000000;
-    if ($uid != "") {
+    if ($uid) {
         $hf = 2;
         file_put_contents($file, "[小轩家园玩家信息]");
 # 实例化ini文件操作类，并载入 .ini文件
@@ -39,4 +39,3 @@ if (file_exists($file)) {
 if ($hf == 2) {
     $iniFile = new iniFile($file);
 }
-?>

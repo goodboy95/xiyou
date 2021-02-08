@@ -15,7 +15,7 @@ $tzms=$tzms."魔攻+".$tzmg."&nbsp";
 if($tzfy>=1){
 $tzms=$tzms."防御+".$tzmg."&nbsp";	
 }
-if($tzms!=""){
+if($tzms){
 $tzms=$tzms."</br>";		
 }
 if($tzbg>=1){
@@ -46,6 +46,6 @@ $tzms=$tzms."</br>";
 
 
 
-?>
+
 
 

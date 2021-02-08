@@ -23,4 +23,4 @@ echo "<p style='color: black'>（".$wpsycs."/".$xzcs."）</p>"."<br>";
 
 	
 
-?>
+

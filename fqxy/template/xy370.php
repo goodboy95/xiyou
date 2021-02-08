@@ -6,7 +6,7 @@ if($zsspd==1){
 
 $cwidd=$npcc;
 
-if($cwidd!=""){
+if($cwidd){
 //调用cw.ini是否存在
 
 include("./ini/cw_ini.php");
@@ -14,7 +14,7 @@ $cwmz1=($iniFile->getItem('宠物原始名字',$cwidd));
 $cwmz2=($iniFile->getItem('宠物名字',$cwidd));
 
 echo "<p style='color: red'>温馨提示：放生宠物后宠物星级品质以及本只宠物身上所穿戴的装备一切回归大自然</p><br>";
-if($cwmz2!=""){
+if($cwmz2){
 echo "<p style='color: red'>你确定要将".$cwmz1."（".$cwmz2."）放生吗？</p>"."<br>";
 } else{	
 echo "<p style='color: red'>你确定要将".$cwmz1."进行放生么？</p>"."<br>";
@@ -94,4 +94,3 @@ include("./ini/jsini.php");
 
 
 
-?>

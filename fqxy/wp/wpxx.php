@@ -58,7 +58,7 @@ echo "<p style='color: black'>没有这个物品id编号".$npcc."请尝试联系
 
 	
 
-?>
+
 
 
 

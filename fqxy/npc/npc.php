@@ -276,7 +276,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【玄武居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -319,7 +319,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【欢欢居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -402,7 +402,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【朱雀居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -456,7 +456,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【喜喜居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -500,7 +500,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【梦之居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -568,7 +568,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【白虎居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -611,7 +611,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【水仙居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -643,7 +643,7 @@ if ($npcc == 1) {
     $info1 = @mysqli_fetch_array($sql1);
     $gzid = $info1['fzid'];
     $npcname = "【天然居】";
-    if ($gzid != "") {
+    if ($gzid) {
         $q2 = "houres";
         $sql1 = mysqli_query($conn, "select * from $q2 where fzid=$gzid");
         $info1 = @mysqli_fetch_array($sql1);
@@ -6269,7 +6269,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>兑�
     include("./ini/hd_ini.php");
     $hdtime = ($iniFile->getItem('活动时间', $hdid));
     $hdcs = ($iniFile->getItem('活动次数', $hdid));
-    if ($hdtime == "") {//如果没有值则添加新数据
+    if (!$hdtime) {//如果没有值则添加新数据
         include("./yxpz/hd_pz.php");
         include("./ini/hd_ini.php");//重新获取缓存数据
         $hdtime = ($iniFile->getItem('活动时间', $hdid));
@@ -6280,7 +6280,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>兑�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -6808,7 +6808,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打�
     include("./ini/hd_ini.php");
     $hdtime = ($iniFile->getItem('活动时间', $hdid));
     $hdcs = ($iniFile->getItem('活动次数', $hdid));
-    if ($hdtime == "") {//如果没有值则添加新数据
+    if (!$hdtime) {//如果没有值则添加新数据
         include("./yxpz/hd_pz.php");
         include("./ini/hd_ini.php");//重新获取缓存数据
         $hdtime = ($iniFile->getItem('活动时间', $hdid));
@@ -6819,7 +6819,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -7026,7 +7026,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打�
     include("./ini/hd_ini.php");
     $hdtime = ($iniFile->getItem('活动时间', $hdid));
     $hdcs = ($iniFile->getItem('活动次数', $hdid));
-    if ($hdtime == "") {//如果没有值则添加新数据
+    if (!$hdtime) {//如果没有值则添加新数据
         include("./yxpz/hd_pz.php");
         include("./ini/hd_ini.php");//重新获取缓存数据
         $hdtime = ($iniFile->getItem('活动时间', $hdid));
@@ -7037,7 +7037,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>打�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -7273,7 +7273,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>兑�
     include("./ini/hd_ini.php");
     $hdtime = ($iniFile->getItem('活动时间', $hdid));
     $hdcs = ($iniFile->getItem('活动次数', $hdid));
-    if ($hdtime == "") {//如果没有值则添加新数据
+    if (!$hdtime) {//如果没有值则添加新数据
         include("./yxpz/hd_pz.php");
         include("./ini/hd_ini.php");//重新获取缓存数据
         $hdtime = ($iniFile->getItem('活动时间', $hdid));
@@ -7284,7 +7284,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>兑�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime',hdcs=0 where hdid=$hdid";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -9028,7 +9028,7 @@ echo "<p style='color: red'>提示：活动期间每天可获取〖小公主の�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $nowtime = date('Y-m-d H:i:s');
         $iniFile->updItem('答题时间', ['初始' => $nowtime]);
     }
@@ -9036,7 +9036,7 @@ echo "<p style='color: red'>提示：活动期间每天可获取〖小公主の�
     include("./ini/color_ini.php");
     $hdtime = ($iniFile->getItem('答题时间', '初始'));
     $vipqytime = 300;//系统消息存活秒数5分钟
-    if ($hdtime != "") {
+    if ($hdtime) {
         $startdate = $hdtime;
         $enddate = date('Y-m-d H:i:s');
         $minute = floor((strtotime($enddate) - strtotime($startdate)));
@@ -9331,7 +9331,7 @@ echo "<p style='color: red'>提示：活动期间每天可获取〖小公主の�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $nowtime = date('Y-m-d H:i:s');
         $iniFile->updItem('答题时间', ['初始' => $nowtime]);
     }
@@ -9339,7 +9339,7 @@ echo "<p style='color: red'>提示：活动期间每天可获取〖小公主の�
     include("./ini/color1_ini.php");
     $hdtime = ($iniFile->getItem('答题时间', '初始'));
     $vipqytime = 180;//系统消息存活秒数3分钟
-    if ($hdtime != "") {
+    if ($hdtime) {
         $startdate = $hdtime;
         $enddate = date('Y-m-d H:i:s');
         $minute = floor((strtotime($enddate) - strtotime($startdate)));
@@ -9741,7 +9741,7 @@ echo "<p style='color: red'>提示：活动期间每天可获取〖小公主の�
     include("./ini/hd_ini.php");
     $hdtime = ($iniFile->getItem('活动时间', $npcc));
     $hdlq = 1;
-    if ($hdtime == "") {//如果没有值则添加新数据
+    if (!$hdtime) {//如果没有值则添加新数据
         include("./yxpz/hd_pz.php");
         include("./ini/hd_ini.php");//重新获取缓存数据
         $hdtime = ($iniFile->getItem('活动时间', $npcc));
@@ -9750,7 +9750,7 @@ echo "<p style='color: red'>提示：活动期间每天可获取〖小公主の�
     $nowtime = date('Y-m-d H:i:s');
     $hdtime1 = substr($hdtime, 0, 10);
     $nowtime1 = substr($nowtime, 0, 10);
-    if ($hdtime1 != $nowtime1 && $hdtime1 != "" || $hdlq == 2) {//今天不是今天数据验证
+    if ($hdtime1 != $nowtime1 && $hdtime1  || $hdlq == 2) {//今天不是今天数据验证
         $q2 = "hd" . $wjid;
         $strsql = "update $q2 set hdtime='$nowtime' where hdid=$npcc";//物品id号必改值
         $result = mysqli_query($conn, $strsql);
@@ -10072,4 +10072,4 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>领�
     echo "<p style='color: black'>=======〖金矿券〗换购【充值卡】========</p>" . "<br>";
 } else {
 }
-?>
+

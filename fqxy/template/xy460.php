@@ -60,7 +60,7 @@ $cqyl=($iniFile->getItem('背包仓库银两','背包银两'));
 if($cqyl>=$qc03){
 
 
-if($qc04==1&&$qc05>=1&&$qc06==$npccid&&$qc06!=""&&$npccid!=""||$qc04==2&&$qc05>=1&&$qc06==$npccid&&$qc06!=""&&$npccid!=""){
+if($qc04==1&&$qc05>=1&&$qc06==$npccid&&$qc06&&$npccid||$qc04==2&&$qc05>=1&&$qc06==$npccid&&$qc06&&$npccid){
 
 if($qc04==1){
 
@@ -353,4 +353,3 @@ echo "服务器开小差了";
 
 
 
-?>

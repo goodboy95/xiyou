@@ -24,7 +24,7 @@ $wjid=$ckid;//对方
 include("./ini/gsqt_ini.php");
 # 获取一个分类下某个子项的值
 $zbzz=($iniFile->getItem('其他id',$zbid));
-if($zbzz !=""){
+if($zbzz){
 	
 if($wpsl>=$sl){
 	
@@ -105,7 +105,7 @@ $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
-if($ckwpid==""){
+if (!$ckwpid){
 
 
 $ckwpsl=$ckwpsl+$sl;
@@ -333,7 +333,7 @@ $sql1=mysqli_query($conn, "select * from $q2 where wpid=$npcc");
 $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
-if($ckwpid==""){
+if (!$ckwpid){
 
 $ckwpsl=$ckwpsl+$sl;
 //调用物品信息
@@ -568,7 +568,7 @@ echo "<p style='color: red'>对不起！你银两不足！</p>"."<br>";
 echo "<br>";
 }
 
-?>
+
 
 
 

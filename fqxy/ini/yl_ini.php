@@ -24,10 +24,10 @@ $ckyl=$info1['ckyl'];
  //echo $uname;
  
  
-if($bbyl==""){
+if (!$bbyl){
 $bbyl=0;
 }
-if($ckyl==""){
+if (!$ckyl){
 $ckyl=0;
 }
 if($bbyl==""&&$ckyl==""){
@@ -66,4 +66,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

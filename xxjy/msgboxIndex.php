@@ -4,11 +4,11 @@ error_reporting(E_ALL & ~E_NOTICE);
 include("../class/iniclass.php");//调用iniclass文件
 $wjid = $_GET['wjid'];
 $password = $_GET['pass'];
-if ($wjid != "" || $password != "") {
+if ($wjid  || $password) {
     //调用user.ini是否存在
     include("../ini/user_ini.php");
     $pass = ($iniFile->getItem('验证信息', '玩家验证'));
-    if ($pass == $password && $password != "" && $pass != "") {
+    if ($pass == $password && $password && $pass) {
         $name = ($iniFile->getItem('验证信息', '玩家昵称'));
         $zcxx = "<p style='color: red'>欢迎【" . $name . "】来到小轩娱乐游戏社区！！</p>";
         $xxjyurl = "?wjid=" . $wjid . "&&pass=" . $password;

@@ -647,4 +647,3 @@ echo "<p style='color: black'>雪山迷宫(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

@@ -85,11 +85,11 @@ $pass1=$info1['password'];
 $uid=$info1['uid'];
 $pass=md5($_POST['password'].'ALL_PS');
 $name=$info1['name'];
-//$ps = $us ? md5($_POST['password'].'ALL_PS' ) == $row['password'] : 'FALSE';
+//$ps = $us ? md5($_POST['password'].'ALL_PS') == $row['password'] : 'FALSE';
 
 
 
-if($pass!=""||$pass1!=""){
+if($pass||$pass1){
 
 }else{
 $pass=1;

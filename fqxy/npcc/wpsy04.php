@@ -17,7 +17,7 @@ if($wpsl >$dywpsl){
 $wpsl=$dywpsl;
 }
 	
-} elseif($wpsycs ==""){
+} elseif (!$wpsycs){
 if($wpsl >$xzcs){	
 $wpsl=$xzcs;
 }
@@ -82,7 +82,7 @@ exit;
 
 
 
-?>
+
 
 
 

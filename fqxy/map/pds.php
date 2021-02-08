@@ -679,4 +679,3 @@ echo "<p style='color: black'>平顶山(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

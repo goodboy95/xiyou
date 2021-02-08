@@ -111,7 +111,7 @@ $q2="all_xjhb";
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
- if($maxid ==""){
+ if (!$maxid){
 $maxidd=$maxid+1;
 } else{
 $maxidd=$maxid+1;
@@ -184,7 +184,7 @@ include("./ini/jszsini.php");
 //解锁当前使用的ini
 include("./ini/all_lock1.php");
 //解锁当前使用的ini
-?>
+
 
 
 

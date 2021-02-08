@@ -53,4 +53,3 @@ $iniFile->addCategory('声望值', [$swmz=> $row['swzz']]);
 $iniFile = new iniFile($file);
 
 
-?>

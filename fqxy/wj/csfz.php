@@ -101,12 +101,12 @@ $iniFile->updItem('玩家信息', ['住宅名字'=> 0]);
 $kcjd=$jd+50;
 
 
-if($jd==""){  
+if (!$jd){
 $q2="wp".$wjid;
 $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -221,6 +221,6 @@ echo "<p style='color: black'>你没有".$fz02."可以卖</p>"."<br>";
 
 
 
-?>
+
 
 

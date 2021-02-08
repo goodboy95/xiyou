@@ -16,7 +16,7 @@ $qy = $xxyou_qy;
 include("../url/yxurl.php");
 echo $url;
 if ($xxyou_url == $url) {
-    if ($wjid > 10000000 && $xxjy_pass != "") {
+    if ($wjid > 10000000 && $xxjy_pass) {
         include("../class/iniclass.php");//调用iniclass文件
         //调用user.ini是否存在
         include("../ini/user_ini.php");
@@ -26,7 +26,7 @@ if ($xxyou_url == $url) {
             $pass = ($iniFile->getItem('验证信息', '玩家验证'));
         }
 
-        if ($pass == $xxjy_pass && $xxjy_pass != "" && $pass != "") {
+        if ($pass == $xxjy_pass && $xxjy_pass && $pass) {
             //echo "合法";
             //echo "</br>";
             $yxhe = 2;
@@ -62,4 +62,3 @@ $response = curl_exec($ch);
 //打印服务器返回的数据
 //var_dump($response);
 curl_close($ch);
-?>

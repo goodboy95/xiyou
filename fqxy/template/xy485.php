@@ -4,7 +4,7 @@ $ininalock = $wjid . "_lock" . ".txt";
 include("./ini/zsini.php");
 if ($zsspd == 1) {
     $cwidd = $npcc;
-    if ($cwidd != "") {
+    if ($cwidd) {
 //调用cw.ini是否存在
         include("./ini/cw_ini.php");
         $cw01x = ($iniFile->getItem('宠物原始名字', $cwidd));
@@ -120,4 +120,3 @@ if ($zsspd == 1) {
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>

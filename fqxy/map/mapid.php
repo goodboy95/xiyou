@@ -29,7 +29,7 @@ if ($wjid == 10000001) {//gm号可看
     echo "</br>";
     echo "<p style='color: red'>-----当前地图坐标-----</p>" . "</br>";
 }
-if ($dty == "") {
+if (!$dty) {
     # 添加一个分类并直接添加子项
     $iniFile->addCategory('地图坐标', ['x' => '0', 'y' => '0']);
 }
@@ -669,5 +669,4 @@ if ($dtx == 0) {
 } else {
     echo "Have a good night!.";
 }
-echo "inina end of included file: " . $inina . "<br />";
-?>
+

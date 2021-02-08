@@ -10,4 +10,3 @@ if ($npcc == 1) {
 } elseif ($npcc == 5) {
     echo "<META HTTP-EQUIV=REFRESH CONTENT='0;URL=HTTPS://QR.ALIPAY.COM/FKX08556BDIBLK9BGD7H03'>";
 }
-?>

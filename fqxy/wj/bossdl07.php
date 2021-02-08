@@ -418,6 +418,6 @@ include("./rwmap/rwget.php");
 
 }
 
-?>
+
 
 

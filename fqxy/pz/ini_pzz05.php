@@ -5,4 +5,4 @@ $wprl=$bbrla-$kcrl;
 $iniFile->updItem('背包已用容量', ['容量' => $wprl]);
 
 
-?>
+

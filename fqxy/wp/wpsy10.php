@@ -710,7 +710,7 @@ include("wpsyts.php");
 
 	
 
-?>
+
 
 
 

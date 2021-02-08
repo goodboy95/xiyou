@@ -8,7 +8,7 @@ include("./ini/hd_ini.php");
 $hdtime=($iniFile->getItem('活动时间','7'));
 $vipqytime=1800;//系统消息存活秒数30分钟
 
-if ($hdtime!="") {
+if ($hdtime) {
 $startdate=$hdtime;
 $enddate=date('Y-m-d H:i:s');
 $minute=floor((strtotime($enddate)-strtotime($startdate)));
@@ -693,4 +693,3 @@ echo "<p style='color: black'>宠物岛(4,1)往哪里走呢？</p>"."<br>";
 
 
 
-?>

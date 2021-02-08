@@ -41,11 +41,11 @@ $q2="all_ltbw";
 if(mysqli_num_rows(mysqli_query($conn, "SHOW TABLES LIKE '". $q2."'"))==1) {
 } else {
 $sql = " CREATE  TABLE  $q2 
-(  `id` int( 11  )  NOT  NULL default  '0' COMMENT  '编号id',
-`wjid` int( 11  )  NOT  NULL default  '0' COMMENT  '玩家id',
+(  `id` int( 11 )  NOT  NULL default  '0' COMMENT  '编号id',
+`wjid` int( 11 )  NOT  NULL default  '0' COMMENT  '玩家id',
 `wjmz` text NOT  NULL  COMMENT  '玩家名字',
 `zltime` datetime  NOT  NULL  COMMENT  '占领时间',
-`zlmb` int( 11  )  NOT  NULL default  '0' COMMENT  '占领膜拜',
+`zlmb` int( 11 )  NOT  NULL default  '0' COMMENT  '占领膜拜',
  `lthp` text NOT  NULL  COMMENT  '擂台hp',
 `ltgj` text NOT  NULL  COMMENT  '擂台攻击',
 `ltmg` text NOT  NULL  COMMENT  '擂台魔攻',
@@ -75,7 +75,7 @@ $sql1=mysqli_query($conn, "select id from $q2 where id=$ltid");
 $info1=@mysqli_fetch_array($sql1);
 $xlpd=$info1['id'];
 
-if($xlpd ==""){
+if (!$xlpd){
 $ltid01=123;
 $ltid02=123;
 
@@ -157,4 +157,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

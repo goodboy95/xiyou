@@ -222,4 +222,3 @@ include("template/xy429.php");
 //不走xy.php直接调用xy文件需要加pz01配置
 include("./pz/pz01.php");
 
-?>

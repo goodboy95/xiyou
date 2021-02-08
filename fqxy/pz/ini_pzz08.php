@@ -8,7 +8,7 @@ $info1=@mysqli_fetch_array($sql1);
 $ckwpid=$info1['wpid'];
 $ckwpsl=$info1['wpsl'];
 
-if($ckwpid==""){
+if (!$ckwpid){
 
 
 $q2="qt".$wjid;
@@ -53,4 +53,4 @@ $iniFile->updItem('其他数量', [$bsid => $ckwpsl]);
 
 
 
-?>
+

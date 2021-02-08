@@ -21,7 +21,7 @@ $zlgjid=($iniFile->getItem('国家id','100'));
 
 
 
-if($zlgj!=""){
+if($zlgj){
 
 $gj01=$zlgj;
 
@@ -248,4 +248,3 @@ include("fhgame.php");
 
 
 
-?>

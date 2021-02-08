@@ -42,4 +42,3 @@ if(flock($fp2,LOCK_EX | LOCK_NB)){
 
 
 
-?>

@@ -17,7 +17,7 @@ $clj[]=478;
 $npc[]=$txid;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>".$wpmz."</p></a>";
 
-if($txidd !=""){
+if($txidd){
 echo "<p style='color: red'>（已获得）</p>"."<br>";
 } else{
 echo "<p style='color: black'>（未获得）</p>"."<br>";
@@ -27,4 +27,4 @@ echo "<p style='color: black'>（未获得）</p>"."<br>";
 
 	
 
-?>
+

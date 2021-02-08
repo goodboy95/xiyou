@@ -38,7 +38,7 @@ $mwjmoney=$info1['money'];
  
  
  
- if($mwjid==""){	
+ if (!$mwjid){	
 $q2="all_money";	
 $sql = "insert into $q2 (wjid,wjmz,money)  values('$wjid','$wjmz','0')";
  if (!mysqli_query($conn, $sql)){
@@ -71,4 +71,3 @@ $iniFile = new iniFile($file);
 
 
 
-?>

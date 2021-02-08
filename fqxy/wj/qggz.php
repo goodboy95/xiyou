@@ -31,7 +31,7 @@ include("./ini/qggz_ini.php");
 
 $qgid=($iniFile->getItem('求购人id',$wjid));
 
-if($qgid==""){
+if (!$qgid){
 
 include("./sql/mysql.php");//调用数据库连接 
 //获取最大值
@@ -40,7 +40,7 @@ $sql1=mysqli_query($conn, "select MAX(id) from $q2");
 $abc=mysqli_fetch_array($sql1);
 $maxid=$abc[0];	
 
-if($maxid ==""){
+if (!$maxid){
 $maxid=0;
 $maxidd=$maxid+1;
 } else{
@@ -153,6 +153,6 @@ echo "<p style='color: red'>对不起！！你的金豆不足".$wjjdqg."个</p>"
 include("./ini/jsini.php");
 //解锁当前使用的ini
 
-?>
+
 
 

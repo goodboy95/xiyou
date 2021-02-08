@@ -52,4 +52,3 @@ include("fhgame.php");
 
 
 
-?>

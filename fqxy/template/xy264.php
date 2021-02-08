@@ -390,4 +390,3 @@ include("fhgame.php");
 include("./ini/jsini.php");
 //解锁当前使用的ini
 
-?>

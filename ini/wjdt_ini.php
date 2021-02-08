@@ -20,4 +20,3 @@ if (file_exists($file)) {
     $iniFile->addItem('秒', ['初始' => 123]);
 }
 $iniFile = new iniFile($file);
-?>

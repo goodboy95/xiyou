@@ -18,7 +18,7 @@ $fz="豪宅";
 } elseif($fzfl ==3){
 $fz="官宅";
 }
-	  	if ($wjvip!="") {	 
+	  	if ($wjvip) {
 $img='pic/vip/'."vip".$wjvip.'.png';
 echo '<img src="'.$img.' "alt="图片"/〉';
 echo "<br>";	
@@ -857,4 +857,3 @@ include("fhgame.php");
 //解锁当前使用的ini
 include("./ini/jsini.php");
 //解锁当前使用的ini
-?>
