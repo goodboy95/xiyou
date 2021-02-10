@@ -31,7 +31,7 @@ echo "<p style='color: red'>恶魔广场时间已到，【恶魔小怪】已经�
 
 }
 
-if ($dty==0) {
+if ($dty == 999) {
 
   //地名
 

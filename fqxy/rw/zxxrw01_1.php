@@ -366,7 +366,7 @@ if ($npcc == 20) {
             $iniFile = new iniFile($ininame);
             $ininame1 = $ininame;
             $dtx = 1;
-            $dty = 0;
+            $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
             $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
         } else {
@@ -502,7 +502,7 @@ if ($npcc == 20) {
             $iniFile = new iniFile($ininame);
             $ininame1 = $ininame;
             $dtx = 1;
-            $dty = 0;
+            $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
             $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
         } else {

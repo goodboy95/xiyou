@@ -14,7 +14,7 @@ if (!file_exists($file)) {
     while (!!$row = mysqli_fetch_array($result)) {
         if ($row['wpsl'] > 0) {
             $wpidd[] = $row['wpid'];
-            $wpsll[] = $row['wpsl'];
+            $wpslArr[] = $row['wpsl'];
             $hm = $hm + 1;
         }
     }
@@ -26,7 +26,7 @@ if (!file_exists($file)) {
             $npcc = $wpidd[$i];
 //调用物品信息
             include("./wp/wpxx.php");
-            $bwp = $wpsll[$i] * $wpzl + $bwp;
+            $bwp = $wpslArr[$i] * $wpzl + $bwp;
         }
     } else {
         $bwp = 0;
@@ -40,7 +40,7 @@ if (!file_exists($file)) {
     while (!!$row = mysqli_fetch_array($result)) {
         if ($row['wpsl'] > 0) {
             $wpidd1[] = $row['wpid'];
-            $wpsll1[] = $row['wpsl'];
+            $wpslArr1[] = $row['wpsl'];
             $hm = $hm + 1;
         }
     }
@@ -52,7 +52,7 @@ if (!file_exists($file)) {
             $bsid = $wpidd[$i];
 //调用物品信息
             include("./wp/zbbs.php");
-            $bwp1 = $wpsll1[$i] * $bszl + $bwp1;
+            $bwp1 = $wpslArr1[$i] * $bszl + $bwp1;
         }
     } else {
         $bwp1 = 0;

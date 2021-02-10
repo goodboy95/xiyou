@@ -46,7 +46,7 @@ echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>离�
 
 
 
-if ($dty==0) {
+if ($dty == 999) {
 $map01="【万象阵】（天阵）";//地名
 $map03="";//出口上
 $map04="";//出口下

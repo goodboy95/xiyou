@@ -40,7 +40,7 @@ if ($zsspd == 1) {
     } elseif ($csm == 2) {
 //进入傲来国--入口--3-1
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 3) {
@@ -58,7 +58,7 @@ if ($zsspd == 1) {
     } elseif ($csm == 5) {
 //开封广场--李白--0-1
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 6) {
@@ -70,7 +70,7 @@ if ($zsspd == 1) {
     } elseif ($csm == 7) {
 //月宫--张果老--0-1
         $dtx = 7;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 8) {
@@ -82,13 +82,13 @@ if ($zsspd == 1) {
     } elseif ($csm == 9) {
 //方寸山--张果老--0-1
         $dtx = 10;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 10) {
 //普陀山--张果老--0-1
         $dtx = 13;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 11) {
@@ -112,7 +112,7 @@ if ($zsspd == 1) {
     } elseif ($csm == 14) {
 //高家大门--张果老--0-1
         $dtx = 21;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 15) {
@@ -130,55 +130,55 @@ if ($zsspd == 1) {
     } elseif ($csm == 17) {
 //天宫--张果老--0-1
         $dtx = 23;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 18) {
 //地府--张果老--0-1
         $dtx = 22;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 19) {
 //傲来国--张果老--0-1
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 20) {
 //宝象国--张果老--0-1
         $dtx = 25;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 21) {
 //长安城--龙宫大弟子--2-1
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 22) {
 //傲来国--龙宫大弟子--3-1
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 23) {
 //海底莽林--龙宫大弟子--3-1
         $dtx = 3;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 24) {
 //长安城--傲来国武士--24-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 25) {
 //宝象国--傲来国武士--24-0
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 26) {
@@ -190,25 +190,25 @@ if ($zsspd == 1) {
     } elseif ($csm == 27) {
 //地府--宫兵（传送）--25-0
         $dtx = 22;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 28) {
 //天宫--宫兵（传送）--25-0
         $dtx = 23;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 29) {
 //长安城--宫兵（传送）--25-0
         $dtx = 25;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 30) {
 //傲来国--宫兵（传送）--25-0
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 31) {
@@ -220,13 +220,13 @@ if ($zsspd == 1) {
     } elseif ($csm == 32) {
 //波月洞--宫兵（传送）--25-0
         $dtx = 37;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 33) {
 //白骨陵墓--宫兵（传送）--25-0
         $dtx = 38;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 34) {
@@ -238,7 +238,7 @@ if ($zsspd == 1) {
     } elseif ($csm == 35) {
 //长安城--推磨鬼（传送）--22-2
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 36) {
@@ -262,37 +262,37 @@ if ($zsspd == 1) {
     } elseif ($csm == 39) {
 //长安城--痴梦仙姑（传送）--7-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 40) {
 //傲来国--痴梦仙姑（传送）--7-0
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 41) {
 //长安城--山门迎客晨月（传送）--10-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 42) {
 //开封府--山门迎客晨月（传送）--10-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 43) {
 //高家庄--山门迎客晨月（传送）--10-0
         $dtx = 21;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 44) {
 //长安城--知客僧（传送）--13-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 45) {
@@ -304,43 +304,43 @@ if ($zsspd == 1) {
     } elseif ($csm == 46) {
 //紫竹北林(1000两)--知客僧（传送）--13-0
         $dtx = 14;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 47) {
 //长安城--看门大爷老余头（传送）--21-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 48) {
 //开封府--看门大爷老余头（传送）--21-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 49) {
 //方寸山--看门大爷老余头（传送）--21-0
         $dtx = 10;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 50) {
 //长安城--接引仙子（传送）--23-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 51) {
 //开封府（待续）--接引仙子（传送）--23-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 52) {
 //傲来国--接引仙子（传送）--23-0
         $dtx = 24;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 53) {
@@ -358,13 +358,13 @@ if ($zsspd == 1) {
     } elseif ($csm == 55) {
 //长安城--傲来国武士（传送）--24-0
         $dtx = 1;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 56) {
 //宝象国--傲来国武士（传送）--24-0
         $dtx = 25;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 57) {
@@ -556,7 +556,7 @@ if ($zsspd == 1) {
     } elseif ($csm == 98) {
 //乌鸡国---平顶山--26-14
         $dtx = 39;
-        $dty = 0;
+        $dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
         $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);
     } elseif ($csm == 99) {

@@ -50,7 +50,7 @@ class iniFile
 	}
 	//获取单个分类
 	public function getCategory($category_name){
-        return array_key_exists($category_name, $this->iniFileHandle) ?  $this->iniFileHandle[$category_name] : null;
+        return isset($this->iniFileHandle[$category_name]) ?  $this->iniFileHandle[$category_name] : null;
 	}
 	//获取子项值
 	public function getItem($category_name, $item_name){
@@ -58,11 +58,11 @@ class iniFile
 		if (is_array($item_name)) {
 			$arr = array();
 			foreach ($item_name as $value) {
-				$arr[$value] = array_key_exists($value, $this->iniFileHandle[$category_name]) ? $this->iniFileHandle[$category_name][$value] : null;
+				$arr[$value] = isset($this->iniFileHandle[$category_name][$value]) ? $this->iniFileHandle[$category_name][$value] : null;
 			}
 			return $arr;
 		}else{
-			return array_key_exists($item_name, $this->iniFileHandle[$category_name]) ? $this->iniFileHandle[$category_name][$item_name] : "";
+			return isset($this->iniFileHandle[$category_name][$item_name]) ? $this->iniFileHandle[$category_name][$item_name] : "";
 		}
 	}
 	//更改ini

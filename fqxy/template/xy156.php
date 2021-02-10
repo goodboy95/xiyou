@@ -10,13 +10,13 @@ include("./ini/user.php");
 
 if($npcc==1){	
 $dtx=71;
-$dty=0;
+$dty = 999;
 } elseif($npcc ==2){
 $dtx=72;
-$dty=0;
+$dty = 999;
 } elseif($npcc ==3){
 $dtx=73;
-$dty=0;
+$dty = 999;
 } else{
 $zzcw=1;
 }

@@ -5,7 +5,7 @@ $cdid[]=$cmid;
 $clj[]=20;
 $npc[]=173;//需要改动
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: red'>&nbsp【离开十八罗汉】</p></a>"."<br>";
-if ($dty==0) {
+if ($dty == 999) {
 
 
 //地名

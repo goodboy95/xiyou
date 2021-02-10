@@ -575,4 +575,3 @@ if ($npcc == 1) {
         echo "<p style='color: red'>" . $bumanzu . "</p>" . "<br>";
     }
 }
-

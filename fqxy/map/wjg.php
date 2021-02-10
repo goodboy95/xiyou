@@ -1,5 +1,5 @@
 <?php
-if ($dty == 0) {
+if ($dty == 999) {
     //地名
     $cmid = $cmid + 1;
     $cdid[] = $cmid;

@@ -66,7 +66,7 @@ $dty=14;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==5){
 $dtx=49;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////冰晶塔/////////////////
 
@@ -99,7 +99,7 @@ $dty=32;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==12){
 $dtx=38;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////白骨陵墓/////////////////
 
@@ -131,7 +131,7 @@ $dty=10;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==19){
 $dtx=37;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////波月洞/////////////////
 
@@ -204,7 +204,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////老君炉/////////////////
 } elseif($csm ==33){
 $dtx=34;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==34){
 $dtx=34;
@@ -315,7 +315,7 @@ $dty=39;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==55){
 $dtx=41;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
@@ -328,7 +328,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==56){
 $dtx=33;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==57){
 $dtx=33;
@@ -452,7 +452,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==76){
 $dtx=81;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
@@ -474,7 +474,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==79){
 $dtx=80;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
@@ -512,7 +512,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==85){
 $dtx=56;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 
@@ -563,7 +563,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==93){
 $dtx=82;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////盘丝洞/////////////////
 
@@ -582,7 +582,7 @@ $dty=8;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==97){
 $dtx=83;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////狮驼洞/////////////////
 
@@ -606,7 +606,7 @@ $dty=9;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==102){
 $dtx=84;
-$dty=0;
+$dty = 999;
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 ///////////////////无底洞/////////////////
 

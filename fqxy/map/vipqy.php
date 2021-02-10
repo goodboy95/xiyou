@@ -37,7 +37,7 @@ echo "<p style='color: red'>VIP练级区域时间已到，【唐小僧】已前�
 
 }
 
-if ($dty==0) {
+if ($dty == 999) {
 
   //地名
 

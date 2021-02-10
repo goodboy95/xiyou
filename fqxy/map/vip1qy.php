@@ -92,7 +92,7 @@ $oysxxmz="鸿运当头";
 $oysxxmz="祸不单行";
 } 
 echo "<p style='color: red'>当前运势：【".$oysxxmz."】</p>"."<br>";
-if ($dty==0) {
+if ($dty == 999) {
 
   //地名
 

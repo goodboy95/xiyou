@@ -36,7 +36,7 @@ echo "<p style='color: red'>宠物岛停留时间已到，所有宠物逃跑了�
 
 } 
 
-if ($dty==0) {
+if ($dty == 999) {
 
   //地名
 

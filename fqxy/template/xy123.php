@@ -87,7 +87,7 @@ include("template/xy002.php");//游戏主页
 //长安城
 } elseif ($npcc==8) {
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了长安城！</p>"."<br>";
@@ -95,7 +95,7 @@ include("template/xy002.php");//游戏主页
 //天宫
 } elseif ($npcc==9) {
 $dtx=23;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了天宫！</p>"."<br>";
@@ -111,7 +111,7 @@ include("template/xy002.php");//游戏主页
 //傲来国
 } elseif ($npcc==11) {
 $dtx=24;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了傲来国！</p>"."<br>";
@@ -119,7 +119,7 @@ include("template/xy002.php");//游戏主页
 //宝象国
 } elseif ($npcc==12) {
 $dtx=25;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了宝象国！</p>"."<br>";
@@ -127,7 +127,7 @@ include("template/xy002.php");//游戏主页
 //乌鸡国
 } elseif ($npcc==13) {
 $dtx=26;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了乌鸡国！</p>"."<br>";
@@ -135,7 +135,7 @@ include("template/xy002.php");//游戏主页
 //车迟国
 } elseif ($npcc==14) {
 $dtx=27;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了车迟国！</p>"."<br>";
@@ -143,7 +143,7 @@ include("template/xy002.php");//游戏主页
 //女儿国
 } elseif ($npcc==15) {
 $dtx=28;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了女儿国！</p>"."<br>";
@@ -151,7 +151,7 @@ include("template/xy002.php");//游戏主页
 //祭赛国
 } elseif ($npcc==16) {
 $dtx=29;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了祭赛国！</p>"."<br>";
@@ -159,7 +159,7 @@ include("template/xy002.php");//游戏主页
 //朱紫国
 } elseif ($npcc==17) {
 $dtx=30;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了朱紫国！</p>"."<br>";
@@ -167,7 +167,7 @@ include("template/xy002.php");//游戏主页
 //比丘国
 } elseif ($npcc==18) {
 $dtx=60;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了比丘国！</p>"."<br>";
@@ -183,7 +183,7 @@ include("template/xy002.php");//游戏主页
 //风仙郡
 } elseif ($npcc==20) {
 $dtx=62;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了风仙郡！</p>"."<br>";
@@ -191,7 +191,7 @@ include("template/xy002.php");//游戏主页
 //玉华郡
 } elseif ($npcc==21) {
 $dtx=63;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了玉华郡！</p>"."<br>";
@@ -199,7 +199,7 @@ include("template/xy002.php");//游戏主页
 //金平府
 } elseif ($npcc==22) {
 $dtx=64;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了金平府！</p>"."<br>";
@@ -215,7 +215,7 @@ include("template/xy002.php");//游戏主页
 //月宫
 } elseif ($npcc==24) {
 $dtx=7;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了月宫！</p>"."<br>";
@@ -223,7 +223,7 @@ include("template/xy002.php");//游戏主页
 //普陀
 } elseif ($npcc==25) {
 $dtx=13;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了普陀山！</p>"."<br>";
@@ -231,7 +231,7 @@ include("template/xy002.php");//游戏主页
 //方寸
 } elseif ($npcc==26) {
 $dtx=10;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了方寸山！</p>"."<br>";
@@ -304,7 +304,7 @@ include("template/xy002.php");//游戏主页
 //冰晶塔
 } elseif ($npcc==35) {
 $dtx=43;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了冰晶塔！</p>"."<br>";
@@ -328,7 +328,7 @@ include("template/xy002.php");//游戏主页
 //白骨陵墓
 } elseif ($npcc==38) {
 $dtx=38;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了白骨陵墓！</p>"."<br>";
@@ -360,7 +360,7 @@ include("template/xy002.php");//游戏主页
 //波月洞
 } elseif ($npcc==42) {
 $dtx=37;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了波月洞！</p>"."<br>";
@@ -376,7 +376,7 @@ include("template/xy002.php");//游戏主页
 //压龙洞
 } elseif ($npcc==44) {
 $dtx=41;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了压龙洞！</p>"."<br>";
@@ -416,7 +416,7 @@ include("template/xy002.php");//游戏主页
 //芭蕉洞
 } elseif ($npcc==49) {
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了芭蕉洞！</p>"."<br>";
@@ -425,7 +425,7 @@ include("template/xy002.php");//游戏主页
 //小雷音寺
 } elseif ($npcc==50) {
 $dtx=56;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了小雷音寺！</p>"."<br>";
@@ -433,7 +433,7 @@ include("template/xy002.php");//游戏主页
 //盘丝洞
 } elseif ($npcc==51) {
 $dtx=57;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了盘丝洞！</p>"."<br>";
@@ -458,7 +458,7 @@ include("template/xy002.php");//游戏主页
 //狮驼洞
 } elseif ($npcc==54) {
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了狮驼洞！</p>"."<br>";
@@ -472,7 +472,7 @@ include("template/xy002.php");//游戏主页
 //天竺国
 } elseif ($npcc==55) {
 $dtx=65;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了天竺国！</p>"."<br>";
@@ -481,7 +481,7 @@ include("template/xy002.php");//游戏主页
 //因果岛
 } elseif ($npcc==56) {
 $dtx=66;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了因果岛！</p>"."<br>";
@@ -491,7 +491,7 @@ include("template/xy002.php");//游戏主页
 //止戈镇
 } elseif ($npcc==57) {
 $dtx=67;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了止戈镇！</p>"."<br>";
@@ -502,7 +502,7 @@ include("template/xy002.php");//游戏主页
 //通天水府
 }elseif($npcc ==58){
 $dtx=81;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了通天水府！</p>"."<br>";
@@ -511,7 +511,7 @@ include("template/xy002.php");//游戏主页
 //芭蕉洞
 }elseif($npcc ==59){
 $dtx=80;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了芭蕉洞！</p>"."<br>";
@@ -520,7 +520,7 @@ include("template/xy002.php");//游戏主页
 //盘丝洞
 }elseif($npcc ==60){
 $dtx=82;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了盘丝洞！</p>"."<br>";
@@ -530,7 +530,7 @@ include("template/xy002.php");//游戏主页
 //狮驼洞
 }elseif($npcc ==61){
 $dtx=83;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了狮驼洞！</p>"."<br>";
@@ -540,7 +540,7 @@ include("template/xy002.php");//游戏主页
 //无底洞
 }elseif($npcc ==62){
 $dtx=84;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了无底洞！</p>"."<br>";
@@ -582,7 +582,7 @@ include("template/xy002.php");//游戏主页
 
 }elseif($npcc ==67){
 $dtx=23;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 echo "<p style='color: black'>你腾云驾雾来到了接引殿！</p>"."<br>";

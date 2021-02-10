@@ -91,7 +91,7 @@ $oysxxmz="祸不单行";
 } 
 echo "<p style='color: red'>当前运势：【".$oysxxmz."】</p>"."<br>";
 echo "<p style='color: red'>【金矿山（100倍场）掉落物品x100倍】</p>"."<br>";
-if ($dty==0) {
+if ($dty == 999) {
 
   //地名
 

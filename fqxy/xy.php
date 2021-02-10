@@ -21,6 +21,7 @@ header("Content-type: text/html; charset=utf-8");
         p {
             display: inline;
         }
+
         #search {
             width: 235px;
             height: 32px;
@@ -31,6 +32,7 @@ header("Content-type: text/html; charset=utf-8");
             background-color: transparent;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         }
+
         #search1 {
             width: 82px;
             height: 38px;
@@ -42,6 +44,7 @@ header("Content-type: text/html; charset=utf-8");
             font-size: 16px;
             cursor: pointer;
         }
+
         input:focus {
             border-color: #66AFE9 !important;
             outline: 0;
@@ -49,10 +52,12 @@ header("Content-type: text/html; charset=utf-8");
             -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
         }
+
         ::-webkit-input-placeholder {
             text-indent: 20px;
             font-size: 16px;
         }
+
         ::-moz-input-placeholder {
             text-indent: 20px;
             font-size: 16px;
@@ -236,13 +241,13 @@ header("Content-type: text/html; charset=utf-8");
             $ddfz = 0;
             $pd = 0;
             $kcrl = 0;
-            $wpdz1=[];
-            $wpdz2=[];
-            $wpdz3=[];
-            $wpdz4=[];
-            $wpdz5=[];
-            $wpdz6=[];
-            $wpdz7=[];
+            $wpdz1 = [];
+            $wpdz2 = [];
+            $wpdz3 = [];
+            $wpdz4 = [];
+            $wpdz5 = [];
+            $wpdz6 = [];
+            $wpdz7 = [];
             if ($cmdd >= 1 && $cmdd <= 100) {
                 include("xy01.php");
             } elseif ($cmdd >= 101 && $cmdd <= 200) {

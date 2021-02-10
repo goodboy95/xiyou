@@ -38,7 +38,7 @@ $clj[]=644;
 $npc[]=0;
 echo "<a href='xy.php?uid=$wjid&&cmd=$cmid&&sid=$a1'><p style='color: blue'>【查看采花大盗排名】</p></a>"."<br>";
 
-if ($dty==0) {
+if ($dty == 999) {
 //地名
 $cmid=$cmid+1;
 $cdid[]=$cmid;

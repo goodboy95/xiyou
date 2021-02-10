@@ -200,7 +200,7 @@ include("./msg/msgg02.php");
 
 }
 echo "<br>";
-if ($dty==0) {
+if ($dty == 999) {
 
 
 

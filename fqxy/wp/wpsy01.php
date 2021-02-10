@@ -14,7 +14,7 @@ if ($npcc == 1) {//回城卷
     $ydtx = $dtx;
     $ydty = $dty;
     $dtx = 1;
-    $dty = 0;
+    $dty = 999;
     $wpsy = 2;//使用成功
 # 修改一个分类下子项的值(也可以修改多个)
     $iniFile->updItem('地图坐标', ['x' => $dtx, 'y' => $dty]);

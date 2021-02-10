@@ -2,7 +2,7 @@
 
 
 
-if ($dty==0) {
+if ($dty == 999) {
 
 
 $cmid=$cmid+1;

@@ -56,27 +56,27 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==108){
 //紫竹北竹林---变异紫竹林--14-12
 $dtx=45;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==109){
 //白骨陵墓---白骨洞--46-0
 $dtx=38;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==110){
 //白骨洞---白骨陵墓--38-0
 $dtx=46;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==111){
 //枉死城--夜游鬼（传送）--22-18
 $dtx=47;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -90,21 +90,21 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==113){
 //天宫----瑶池--23-23
 $dtx=48;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==114){
 //冰晶塔---冰风谷--49-0
 $dtx=43;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==115){
 //冰晶塔守卫---冰晶塔--43-0
 $dtx=49;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -114,26 +114,26 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==116){
 //波月洞---金塔--50-0
 $dtx=37;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==117){
 //金塔---波月洞--37-0
 $dtx=50;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==118){
 //压龙洞---压龙山--51-0
 $dtx=41;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==119){
 //压龙山---压龙洞--41-0
 $dtx=51;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -148,7 +148,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==121){
 //平顶山---莲花洞--39-3
 $dtx=52;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -162,7 +162,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==123){
 //金兜山---金兜洞--54-12
 $dtx=53;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==124){
@@ -174,7 +174,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==125){
 //女儿国---金兜山--28-11
 $dtx=54;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -200,7 +200,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==129){
 //朱紫国】---小雷音寺--30-33
 $dtx=56;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -271,7 +271,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==139){
 //车迟国--驿站官员--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -280,7 +280,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==140){
 //女儿国--女儿国马夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -288,21 +288,21 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==141){
 //祭赛国--祭赛国车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==142){
 //朱紫国--马倌--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==143){
 //比丘国--比丘国车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -310,7 +310,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==144){
 //天发国--天发国车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -319,21 +319,21 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==145){
 //凤仙郡--凤仙郡车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==146){
 //玉华郡--玉华郡车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==147){
 //金平符--金平符车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -341,35 +341,35 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==148){
 //天竺国--天竺国车夫--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==149){
 //止戈将军--止戈将军--24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==150){
 //止戈将军--止戈将军--24-0
 $dtx=67;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==151){
 //止戈将军--因果到--24-0
 $dtx=66;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 } elseif($csm ==152){
 //离开【大小遗迹】
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -377,7 +377,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==153){
 //长安--开封广场--24-0
 $dtx=70;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -385,7 +385,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==154){
 //开封广场--长安—24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -394,7 +394,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } elseif($csm ==155){
 //住宅--长安—24-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -564,7 +564,7 @@ echo "<p style='color: red'>对不起！你还没有国家</p>"."<br>";
 } elseif($csm ==157){
 //战场--长安—1-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -587,7 +587,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 //战场--长安—1-0
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -611,7 +611,7 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--vip练级1-0
 $dtx=75;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
@@ -630,7 +630,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 	
 //密室
 $dtx=74;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -654,7 +654,7 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--宠物岛1-0
 $dtx=76;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
@@ -673,7 +673,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 //恶魔离开
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -684,7 +684,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 //离开VIP练级区
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -692,7 +692,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 }elseif($csm ==166){
 	
 $dtx=71;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -700,20 +700,20 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 }elseif($csm ==167){
 	
 $dtx=72;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 }elseif($csm ==168){
 	
 $dtx=73;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 }elseif($csm ==169){//宠物岛
 	
 $dtx=23;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -722,7 +722,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 }elseif($csm ==170){
 
 $dtx=23;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -734,12 +734,12 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--宠物岛1-0
 $dtx=77;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
 $dtx=23;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 }
@@ -749,7 +749,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 //通天塔
 $dtx=78;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -757,7 +757,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 //通天塔
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -766,7 +766,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 //18层地狱
 $dtx=79;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -780,7 +780,7 @@ $date=date("H:i:s");
 if ($date> $time1 && $date < $time2) {
 //百花秘境
 $dtx=85;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -837,7 +837,7 @@ exit;
 }elseif($csm ==176){
 //百花秘境
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -885,7 +885,7 @@ $dty=7;
 echo "<p style='color: red'>恭喜你！！来到了【万象阵】的【鬼阵】</p>"."<br>";
 $dty=8;
 } else{
-$dty=0;	
+$dty = 999;
 }
 
 # 修改一个分类下子项的值(也可以修改多个)
@@ -893,7 +893,7 @@ $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
 }elseif($csm ==178){//离开阵跳阵
 $dtx=1;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 
@@ -944,7 +944,7 @@ $dty=15;
 echo "<p style='color: red'>恭喜你！！来到了【八门阵】的【开门】</p>"."<br>";
 $dty=16;
 } else{
-$dty=0;	
+$dty = 999;
 }
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
@@ -996,7 +996,7 @@ echo "<p style='color: red'>恭喜你！！来到了【八卦阵】的【兑阵�
 $dty=24;
 
 } else{
-$dty=0;	
+$dty = 999;
 }
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
@@ -1046,7 +1046,7 @@ $dty=31;
 echo "<p style='color: red'>恭喜你！！来到了【八阵图】的【蛇蟠阵】</p>"."<br>";
 $dty=32;
 } else{
-$dty=0;	
+$dty = 999;
 }
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
@@ -1069,7 +1069,7 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--vip练级1-0
 $dtx=86;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
@@ -1157,7 +1157,7 @@ if($viplj ==2){
 	
 //长安--铁矿山1-0
 $dtx=87;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
@@ -1175,7 +1175,7 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--铁矿山1-0
 $dtx=88;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
@@ -1193,7 +1193,7 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--铁矿山1-0
 $dtx=89;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
@@ -1211,7 +1211,7 @@ $iniFile = new iniFile($ininame1);
 if($viplj ==2){
 //长安--铁矿山1-0
 $dtx=90;
-$dty=0;
+$dty = 999;
 # 修改一个分类下子项的值(也可以修改多个)
 $iniFile->updItem('地图坐标', ['x' => $dtx,'y' => $dty]);
 } else{
