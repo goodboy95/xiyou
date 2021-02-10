@@ -14,7 +14,6 @@ $xxyou_qy = $a[3];
 //判断区域是否正确防止网页修改
 $qy = $xxyou_qy;
 include("../url/yxurl.php");
-echo $url;
 if ($xxyou_url == $url) {
     if ($wjid > 10000000 && $xxjy_pass) {
         include("../class/iniclass.php");//调用iniclass文件

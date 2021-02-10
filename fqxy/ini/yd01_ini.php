@@ -38,9 +38,6 @@ if (!file_exists($file)) {
     $dy01_time = $info1['dy01_time'];
     $yd01 = $info1['yd01'];
     $yd02 = $info1['yd02'];
-    $inina = "yd01.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
 //创建文件
     file_put_contents($file, "[玩家]");
 # 实例化ini文件操作类，并载入 .ini文件

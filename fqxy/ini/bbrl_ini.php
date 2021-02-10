@@ -66,7 +66,6 @@ if (!file_exists($file)) {
         $wpidd[] = $row['zbid'];
         $hm = $hm + 1;
     }
-
     if ($hm > 0) {
         $i = -1;
         $bwp2 = 0;
@@ -81,10 +80,6 @@ if (!file_exists($file)) {
         $bwp2 = 0;
     }
     $bwp3 = $bwp + $bwp1 + $bwp2;
-    //装备重量
-    $inina = "bbrl.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
     //创建文件
     file_put_contents($file, "[玩家]");
     # 实例化ini文件操作类，并载入 .ini文件

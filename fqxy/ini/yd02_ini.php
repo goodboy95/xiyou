@@ -6,8 +6,7 @@ $file = "";
 $inina = "yd02.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-} else {
+if (!file_exists($file)) {
     //连接数据库提取数据写入ini
     include("./sql/mysql.php");//调用数据库连接
     $q2 = "all_yd02";
@@ -30,19 +29,15 @@ if (file_exists($file)) {
         if (!mysqli_query($conn, $sql)) {
             die('Error: ' . mysqli_error($conn));
         }
-    } else {
     }
     $q2 = "all_yd02";
     $sql1 = mysqli_query($conn, "select * from $q2 where wjid=$wjid");
     $info1 = @mysqli_fetch_array($sql1);
-    $ds01 = $info1[ds01];
-    $ds02 = $info1[ds02];
-    $dy01_time = $info1[dy01_time];
-    $yd01 = $info1[yd01];
-    $yd02 = $info1[yd02];
-    $inina = "yd02.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
+    $ds01 = $info1['ds01'];
+    $ds02 = $info1['ds02'];
+    $dy01_time = $info1['dy01_time'];
+    $yd01 = $info1['yd01'];
+    $yd02 = $info1['yd02'];
 //创建文件
     file_put_contents($file, "[玩家]");
 # 实例化ini文件操作类，并载入 .ini文件

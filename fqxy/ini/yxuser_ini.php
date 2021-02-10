@@ -35,7 +35,6 @@ if ($uid) {
         if (!file_exists($dir)) {
             mkdir($dir, 0777, true);
         }
-
         if ($uid) {
             $hf = 2;
             file_put_contents($file, "[玩家信息]");

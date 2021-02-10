@@ -26,7 +26,6 @@ if ($yxhe == 2) {
     if ($pass == $xxjy_pass && $xxjy_pass && $pass) {
         //存在用户的信息
         $wjid = $wjini;
-        echo 'beforehand';
         include("../ini/xuser_ini.php");
         # 获取一个分类下某个子项的值
         $uwjid = ($iniFile->getItem('验证信息', '玩家id'));

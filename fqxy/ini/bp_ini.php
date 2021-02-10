@@ -32,10 +32,6 @@ if (!file_exists($file)) {
     $bpjymax = $info1['bpjymax'];
     $bpyl = $info1['bpyl'];
     $bpsw = $info1['bpsw'];
-
-    $inina = "bp" . $bpid . ".ini";
-    $path = 'acher/bp';
-    $file = $path . "/" . $inina;
     //创建文件
     file_put_contents($file, "[国家]");
     # 实例化ini文件操作类，并载入 .ini文件

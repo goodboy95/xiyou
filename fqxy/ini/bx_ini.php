@@ -3,12 +3,8 @@
 $inina = "bx.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-} else {
-    //连接数据库提取数据写入ini 
-    $inina = "bx.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
+if (!file_exists($file)) {
+    //连接数据库提取数据写入ini
 //创建文件
     file_put_contents($file, "[玩家背包]");
 # 实例化ini文件操作类，并载入 .ini文件

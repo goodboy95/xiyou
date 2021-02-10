@@ -1,68 +1,37 @@
 <?php
-
 //判断ini文件是否存在如不没有则从数据库提取并且写入ini
-$inina="yl.ini";
-$path='ache/'.$wjid;
-$file = $path."/".$inina;	
-if(file_exists($file))
-{
-
-
-}
-else
-{
-   //连接数据库提取数据写入ini 
-   
-include("./sql/mysql.php");//调用数据库连接 
-   
-$q2="all_yl";
-$sql1=mysqli_query($conn, "select * from $q2 where wjid=$wjid");
-$info1=@mysqli_fetch_array($sql1);
-$bbyl=$info1['bbyl'];
-$ckyl=$info1['ckyl'];
-
- //echo $uname;
- 
- 
-if (!$bbyl){
-$bbyl=0;
-}
-if (!$ckyl){
-$ckyl=0;
-}
-if($bbyl==""&&$ckyl==""){
-$sql = "insert into $q2 (wjid,bbyl,ckyl)  values($wjid,$bbyl,$ckyl)";
- if (!mysqli_query($conn, $sql))
- {
-   die('Error: ' . mysqli_error($conn));
- }
-}
-
-
-$inina="yl.ini";
-$path='ache/'.$wjid;
-$file = $path."/".$inina;	
+$inina = "yl.ini";
+$path = 'ache/' . $wjid;
+$file = $path . "/" . $inina;
+if (!file_exists($file)) {
+    include("./sql/mysql.php");//调用数据库连接 
+    $q2 = "all_yl";
+    $sql1 = mysqli_query($conn, "select * from $q2 where wjid=$wjid");
+    $info1 = @mysqli_fetch_array($sql1);
+    $bbyl = $info1['bbyl'];
+    $ckyl = $info1['ckyl'];
+    //echo $uname;
+    if (!$bbyl) {
+        $bbyl = 0;
+    }
+    if (!$ckyl) {
+        $ckyl = 0;
+    }
+    if ($bbyl == "" && $ckyl == "") {
+        $sql = "insert into $q2 (wjid,bbyl,ckyl)  values($wjid,$bbyl,$ckyl)";
+        if (!mysqli_query($conn, $sql)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
 //创建文件
-file_put_contents($file,"[玩家]");
-
-
+    file_put_contents($file, "[玩家]");
 # 实例化ini文件操作类，并载入 .ini文件
-$iniFile = new iniFile($file);
+    $iniFile = new iniFile($file);
 //数据库数据导入ini文件
 # 添加一个分类并直接添加子项
-$iniFile->addItem('背包仓库银两',['初始' => 123]);
-$iniFile->addCategory('背包仓库银两', ['背包银两' => $bbyl, '仓库银两' => $ckyl]);
-
-$iniFile->addItem('背包页面',['页面id' => $cmdd]);
-
+    $iniFile->addItem('背包仓库银两', ['初始' => 123]);
+    $iniFile->addCategory('背包仓库银两', ['背包银两' => $bbyl, '仓库银两' => $ckyl]);
+    $iniFile->addItem('背包页面', ['页面id' => $cmdd]);
 //数据库数据导入ini文件
-
-
-
 }
-
-
 $iniFile = new iniFile($file);
-
-
-

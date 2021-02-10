@@ -1,6 +1,5 @@
 <?php
 echo "<p style='color: red'>Sorry！！为提高游戏性能，禁止页面非法刷新或者后退操作</p>" . "<br>";
-echo "this 335";
 echo "<br>";
 echo "<br>";
 //cmd及超链接值

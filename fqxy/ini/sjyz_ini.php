@@ -3,13 +3,7 @@
 $inina = "sjyz.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-    # 实例化ini文件操作类，并载入 .ini文件
-    $iniFile = new iniFile($file);
-} else {
-    $inina = "sjyz.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
+if (!file_exists($file)) {
     //创建文件
     file_put_contents($file, "[刷新时间]");
     # 实例化ini文件操作类，并载入 .ini文件

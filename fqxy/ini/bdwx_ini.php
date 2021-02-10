@@ -4,10 +4,7 @@ $inina = "bdwx.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
 if (!file_exists($file)) {
-    //连接数据库提取数据写入ini 
-    $inina = "bdwx.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
+    //连接数据库提取数据写入ini
 //创建文件
     file_put_contents($file, "[微信]");
 # 实例化ini文件操作类，并载入 .ini文件

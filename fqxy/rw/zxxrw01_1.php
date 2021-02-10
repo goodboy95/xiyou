@@ -348,7 +348,6 @@ if ($npcc == 20) {
         $ydfy = 100000;//传送费用	
         include("./rw/ksrw.php");
 //快速任务
-    } else {
     }
 } elseif ($npcc == 205) {
     $npcname = "菩提祖师(转职)";

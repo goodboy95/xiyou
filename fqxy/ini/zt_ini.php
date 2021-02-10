@@ -59,9 +59,6 @@ if (!file_exists($file)) {
             $bpzw2 = "成员";
         }
     }
-    $inina = "zt.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
     //创建文件
     file_put_contents($file, "[玩家]");
     # 实例化ini文件操作类，并载入 .ini文件

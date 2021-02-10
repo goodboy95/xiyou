@@ -4,10 +4,7 @@ $inina = "boss_" . $bossid . ".ini";
 $path = 'acher/all_boss';
 $file = $path . "/" . $inina;
 if (!file_exists($file)) {
-    //连接数据库提取数据写入ini 
-    $inina = "boss_" . $bossid . ".ini";
-    $path = 'acher/all_boss';
-    $file = $path . "/" . $inina;
+    //连接数据库提取数据写入ini
 //创建文件
     file_put_contents($file, "[boss信息]");
 # 实例化ini文件操作类，并载入 .ini文件

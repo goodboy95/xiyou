@@ -1,11 +1,8 @@
 <?php
-
 $inina = "user.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
 if (!file_exists($file)) {
-    //ini文件名字
-    $inina = "user.ini";
     //判断文件夹是否存在
     //路径
     $path = '../ache/' . $wjid;

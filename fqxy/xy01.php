@@ -166,4 +166,3 @@ if ($cmdd == 1) {
 } elseif ($cmdd == 100) {
     include("template/xy100.php");//加好友
 }
-

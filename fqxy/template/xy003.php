@@ -20,8 +20,7 @@ if ($zsspd == 1) {
 # 获取一个分类下所有数据
     $wjfyid = ($iniFile->getCategory('玩家id'));
     $mm04 = count($wjfyid, 0) - 1;
-    if ($mm01 >= 1 || $mm02 >= 1 || $mm03 >= 1 || $mm04 >= 1) {
-    } else {
+    if ($mm01 < 1 && $mm02 < 1 && $mm03 < 1 && $mm04 < 1) {
         include("./ini/user_ini.php");
 # 获取一个分类下某个子项的值
         $dtx = ($iniFile->getItem('地图坐标', 'x'));
@@ -32,204 +31,23 @@ if ($zsspd == 1) {
 //保存上次的地图值移动清除
 //新手村地图
         if ($dtx == 0) {
-//ini文件名字
-//$inina="xsc.ini";
-            if ($dty == 1) {
-                $dty = 0;
-            } elseif ($dty == 8) {
-                $dty = 13;
-            } elseif ($dty == 2) {
-                $dty = 1;
-            } elseif ($dty == 4) {
-                $dty = 5;
-            } elseif ($dty == 9) {
-                $dty = 10;
-            } elseif ($dty == 12) {
-                $dty = 11;
-            } elseif ($dty == 7) {
-                $dty = 14;
-            } elseif ($dty == 15) {
-                $dty = 6;
-            } elseif ($dty == 16) {
-                $dty = 15;
-            } elseif ($dty == 17) {
-                $dty = 16;
-            } elseif ($dty == 18) {
-                $dty = 17;
-            } elseif ($dty == 21) {
-                $dty = 22;
-            } elseif ($dty == 22) {
-                $dty = 23;
-            } elseif ($dty == 24) {
-                $dty = 25;
-            } elseif ($dty == 23) {
-                $dty = 24;
-            } elseif ($dty == 25) {
-                $dty = 26;
-            } elseif ($dty == 29) {
-                $dty = 28;
-            } elseif ($dty == 32) {
-                $dty = 29;
-            } elseif ($dty == 19) {
-                $dty = 32;
-            } elseif ($dty == 20) {
-                $dty = 31;
-            } elseif ($dty == 31) {
-                $dty = 30;
-            } elseif ($dty == 30) {
-                $dty = 27;
-            } elseif ($dty == 33) {
-                $dty = 20;
-            } else {
-                echo "错误地图,编号：" . $dty . "<br>";
-            }
+            $dtyMap = array(1 => 0, 8 => 13, 2 => 1, 4 => 5, 9 => 10, 12 => 11, 7 => 14, 15 => 6, 16 => 15, 17 => 16,
+                18 => 17, 21 => 22, 22 => 23, 24 => 25, 23 => 24, 25 => 26, 29 => 28, 32 => 29, 19 => 32, 20 => 31,
+                31 => 30, 30 => 27, 33 => 20);
+            $dty = $dtyMap[$dty];
+            // echo "错误地图,编号：" . $dty . "<br>";
 //长安城地图
         } elseif ($dtx == 1) {
-            if ($dty == 0) {
-                $dty = 1;
-            } elseif ($dty == 1) {
-                $dty = 2;
-            } elseif ($dty == 2) {
-                $dty = 3;
-            } elseif ($dty == 3) {
-                $dty = 4;
-            } elseif ($dty == 4) {
-                $dty = 5;
-            } elseif ($dty == 9) {
-                $dty = 8;
-            } elseif ($dty == 8) {
-                $dty = 7;
-            } elseif ($dty == 7) {
-                $dty = 6;
-            } elseif ($dty == 6) {
-                $dty = 0;
-            } elseif ($dty == 21) {
-                $dty = 19;
-            } elseif ($dty == 31) {
-                $dty = 32;
-            } elseif ($dty == 33) {
-                $dty = 31;
-            } elseif ($dty == 10) {
-                $dty = 36;
-            } elseif ($dty == 37) {
-                $dty = 10;
-            } elseif ($dty == 38) {
-                $dty = 11;
-            } elseif ($dty == 39) {
-                $dty = 38;
-            } elseif ($dty == 40) {
-                $dty = 39;
-            } elseif ($dty == 41) {
-                $dty = 40;
-            } elseif ($dty == 11) {
-                $dty = 44;
-            } elseif ($dty == 44) {
-                $dty = 45;
-            } elseif ($dty == 12) {
-                $dty = 48;
-            } elseif ($dty == 48) {
-                $dty = 49;
-            } elseif ($dty == 50) {
-                $dty = 12;
-            } elseif ($dty == 13) {
-                $dty = 51;
-            } elseif ($dty == 51) {
-                $dty = 52;
-            } elseif ($dty == 52) {
-                $dty = 53;
-            } elseif ($dty == 58) {
-                $dty = 13;
-            } elseif ($dty == 59) {
-                $dty = 58;
-            } elseif ($dty == 60) {
-                $dty = 59;
-            } elseif ($dty == 61) {
-                $dty = 60;
-            } elseif ($dty == 62) {
-                $dty = 61;
-            } elseif ($dty == 15) {
-                $dty = 69;
-            } elseif ($dty == 70) {
-                $dty = 15;
-            } elseif ($dty == 16) {
-                $dty = 71;
-            } elseif ($dty == 72) {
-                $dty = 16;
-            } elseif ($dty == 73) {
-                $dty = 72;
-            } elseif ($dty == 74) {
-                $dty = 73;
-            } elseif ($dty == 81) {
-                $dty = 82;
-            } elseif ($dty == 17) {
-                $dty = 81;
-            } elseif ($dty == 81) {
-                $dty = 82;
-            } elseif ($dty == 83) {
-                $dty = 17;
-            } elseif ($dty == 84) {
-                $dty = 83;
-            } elseif ($dty == 85) {
-                $dty = 84;
-            } elseif ($dty == 86) {
-                $dty = 85;
-            } elseif ($dty == 97) {
-                $dty = 96;
-            } elseif ($dty == 100) {
-                $dty = 99;
-            } elseif ($dty == 102) {
-                $dty = 103;
-            } elseif ($dty == 103) {
-                $dty = 104;
-            } elseif ($dty == 108) {
-                $dty = 102;
-            } elseif ($dty == 109) {
-                $dty = 110;
-            } elseif ($dty == 115) {
-                $dty = 114;
-            } elseif ($dty == 130) {
-                $dty = 86;
-            } elseif ($dty == 117) {
-                $dty = 9;
-            } elseif ($dty == 118) {
-                $dty = 117;
-            } elseif ($dty == 119) {
-                $dty = 118;
-            } elseif ($dty == 124) {
-                $dty = 126;
-            } elseif ($dty == 127) {
-                $dty = 124;
-            } elseif ($dty == 89) {
-                $dty = 12;
-//区域转换
-                $dtx = 20;
-            } elseif ($dty == 116) {
-                $dty = 12;
-//区域转换
-                $dtx = 5;
-            } elseif ($dty == 105) {
-                $dty = 12;
-//区域转换
-                $dtx = 43;
-            } elseif ($dty == 122) {
-                $dty = 12;
-//区域转换
-                $dtx = 16;
-            } elseif ($dty == 123) {
-                $dty = 21;
-//区域转换
-                $dtx = 22;
-            } elseif ($dty == 104) {
-                $dty = 13;
-//区域转换
-                $dtx = 7;
-            } elseif ($dty == 113) {
-                $dty = 14;
-//区域转换
-                $dtx = 10;
-            } else {
-                echo "错误地图,编号：" . $dty . "<br>";
-            }
+            $dtyMap = array(0 => 1, 1 => 2, 2 => 3, 3 => 4, 4 => 5, 9 => 8, 8 => 7, 7 => 6, 6 => 0, 21 => 19, 31 => 32,
+                33 => 31, 10 => 36, 37 => 10, 38 => 11, 39 => 38, 40 => 39, 41 => 40, 11 => 44, 44 => 45, 12 => 48,
+                48 => 49, 50 => 12, 13 => 51, 51 => 52, 52 => 53, 58 => 13, 59 => 58, 60 => 59, 61 => 60, 62 => 61,
+                15 => 69, 70 => 15, 16 => 71, 72 => 16, 73 => 72, 74 => 73, 81 => 82, 17 => 81, 83 => 17, 84 => 83,
+                85 => 84, 86 => 85, 97 => 96, 100 => 99, 102 => 103, 103 => 104, 108 => 102, 109 => 110, 115 => 114,
+                130 => 86, 117 => 9, 118 => 117, 119 => 118, 124 => 126, 127 => 124, 89 => 12, 116 => 12, 105 => 12,
+                122 => 12, 123 => 21, 104 => 13, 113 => 14);
+            $dtxMap = array(89 => 20, 116 => 5, 105 => 43, 122 => 16, 123 => 22, 104 => 7, 113 => 10);
+            $dty = $dtyMap[$dty];
+            $dtx = array_key_exists($dtx, $dtxMap) ? $dtxMap[$dtx] : $dtx;
 //龙宫地图
         } elseif ($dtx == 2) {
             if ($dty == 5) {

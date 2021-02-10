@@ -1,5 +1,4 @@
 <?php
-echo 'step0';
 $inina = "user.ini";
 $path = '../ache/' . $wjid;
 $file = $path . "/" . $inina;

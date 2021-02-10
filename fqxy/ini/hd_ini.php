@@ -3,8 +3,7 @@
 $inina = "hd.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-} else {
+if (!file_exists($file)) {
     //连接数据库提取数据写入ini 
     include("./sql/mysql.php");//调用数据库连接 
 //创建文件

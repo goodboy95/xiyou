@@ -3,9 +3,7 @@
 $inina = "wjdt.ini";
 $path = '../acher';
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-
-} else {
+if (!file_exists($file)) {
     file_put_contents($file, "[玩家动态]");
     # 实例化ini文件操作类，并载入 .ini文件
     $iniFile = new iniFile($file);

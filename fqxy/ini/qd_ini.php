@@ -45,9 +45,6 @@ if (!file_exists($file)) {
         $qd4 = $info1['qd4'];
         $qd5 = $info1['qd5'];
     }
-    $inina = "qd.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
 //创建文件
     file_put_contents($file, "[玩家]");
 # 实例化ini文件操作类，并载入 .ini文件

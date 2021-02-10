@@ -15,9 +15,6 @@ if (!file_exists($file)) {
     $wjtime = $info1['wjtime'];
     $time = $info1['utime'];
     $yj = $info1['yj'];
-    $inina = "all_user.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
     //创建文件
     file_put_contents($file, "[信息]");
     # 实例化ini文件操作类，并载入 .ini文件

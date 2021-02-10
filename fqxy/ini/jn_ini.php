@@ -1,17 +1,9 @@
 <?php
-
 //判断ini文件是否存在如不没有则从数据库提取并且写入ini
 $inina = "jn.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-
-} else {
-    //连接数据库提取数据写入ini
-
-    $inina = "jn.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
+if (!file_exists($file)) {
     //创建文件
     file_put_contents($file, "[玩家技能]");
     # 实例化ini文件操作类，并载入 .ini文件
@@ -22,7 +14,7 @@ if (file_exists($file)) {
     $iniFile->addItem('技能等级', ['初始' => 123]);
     include("./sql/mysql.php");//调用数据库连接
     $q2 = "jnn" . $wjid;
-        $str = "select id,jnid,jndj from $q2";
+    $str = "select id,jnid,jndj from $q2";
     $result = mysqli_query($conn, $str) or die('SQL语句有误');
     //把有值的数据存入一个数组
     $m = 0;
@@ -37,6 +29,4 @@ if (file_exists($file)) {
         $iniFile->addCategory('技能名字', [$row['jnid'] => $jnmz]);
     }
 }
-
 $iniFile = new iniFile($file);
-

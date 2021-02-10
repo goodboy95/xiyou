@@ -3,11 +3,7 @@
 $inina = "post.ini";
 $path = 'ache/' . $wjid;
 $file = $path . "/" . $inina;
-if (file_exists($file)) {
-} else {
-    $inina = "post.ini";
-    $path = 'ache/' . $wjid;
-    $file = $path . "/" . $inina;
+if (!file_exists($file)) {
 //创建文件
     file_put_contents($file, "[玩家]");
     $iniFile = new iniFile($file);
